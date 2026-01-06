@@ -83,8 +83,8 @@ These three fields are **mandatory** and together determine where application se
   The full application name that is used for the application identity.  
   Internally, this is used as the application name when storing settings (for example via `qApp->setApplicationName(<full_name>)`).
 
-> **Note**  
-> These three properties are crucial. Changes here will affect the location where ManiVault stores user and application settings. You generally want to set them once when designing the app and not change them afterwards.
+```{note}
+These three properties are crucial. Changes here will affect the location where ManiVault stores user and application settings. You generally want to set them once when designing the app and not change them afterwards.
 
 ### Display name and version
 
