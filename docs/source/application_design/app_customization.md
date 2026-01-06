@@ -1,3 +1,5 @@
+# App customization
+
 ## Customizing a ManiVault-based Application
 
 A ManiVault “application” (or *viewer*) consists of:
