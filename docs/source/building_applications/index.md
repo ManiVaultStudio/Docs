@@ -1,7 +1,7 @@
 Building Applications
 ==================
 
-```toctree::
+```{toctree}
 :maxdepth: 2
 
 app_customization
