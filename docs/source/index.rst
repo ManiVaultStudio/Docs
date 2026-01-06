@@ -7,12 +7,21 @@ Welcome to ManiVault's documentation!
 
    This project is under active development.
 
-Contents
---------
-
 .. toctree::
+   :maxdepth: 2
+   :caption: User Guide
 
    usage
    application_design/index
-   plugin_development
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Plugin Development
+
+   plugin_development/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference
+
    api
