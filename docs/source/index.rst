@@ -14,5 +14,6 @@ Contents
 
    usage
    application_design
+      app_customization
    plugin_development
    api
