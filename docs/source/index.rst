@@ -13,7 +13,6 @@ Contents
 .. toctree::
 
    usage
-   application_design
-      app_customization
+   application_design/index
    plugin_development
    api
