@@ -1,4 +1,4 @@
-Application Design
+Building plugins
 ==================
 
 .. toctree::

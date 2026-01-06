@@ -12,13 +12,18 @@ Welcome to ManiVault's documentation!
    :caption: User Guide
 
    usage
-   application_design/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Plugin Development
+   :caption: Building applications
 
-   plugin_development/index
+   building_applications/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Building plugins
+
+   building_plugins/index
 
 .. toctree::
    :maxdepth: 2
