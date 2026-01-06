@@ -15,14 +15,9 @@ Welcome to ManiVault's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Building applications
+   :caption: Extending ManiVault
 
    building_applications/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Building plugins
-
    building_plugins/index
 
 .. toctree::
