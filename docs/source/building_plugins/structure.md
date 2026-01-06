@@ -1,3 +1,5 @@
+# Plugin structure
+
 ## Plugin class
 The heart of every plugin is the class deriving from one of the ManiVault base plugin classes (ViewPlugin, AnalysisPlugin, etc.). This class represents an opened instance of that specific plugin. An example plugin class derived from ViewPlugin is shown below:
 
