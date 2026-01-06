@@ -62,5 +62,5 @@ Examples of transformation plugins would be:
 
 Our example plugins repository contains an example [transformation plugin](https://github.com/ManiVaultStudio/ExamplePlugins/tree/master/ExampleTransformation).
 
-# Setting up the plugin
+## Setting up the plugin
 The easiest way to set up your new plugin is to build on one of the example projects listed above. Each of these projects contains a main plugin class, which extends from one of the base plugin classes (ViewPlugin, AnalysisPlugin, etc.). In addition, a plugin factory is defined which is reponsible for initializing the plugin itself.
