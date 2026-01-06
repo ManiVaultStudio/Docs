@@ -9,10 +9,6 @@ Overview
 
 The system allows for creating custom visualization applications tailored to your specific field, data, and preferences. Applications are composed of several modular plugins, that can be combined to fit your needs. The plugins are fully self-encapsulated but can communicate through ManiVault's [core](https://github.com/ManiVaultStudio/core).
 
-
-
-
-
 ## Using the system
 You can get started using the system with a selection of plug-ins right now by downloading the [**ManiVault Studio Installer**](https://github.com/ManiVaultStudio/Installer/releases).
 

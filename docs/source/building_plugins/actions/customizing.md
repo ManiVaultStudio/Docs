@@ -1,4 +1,4 @@
-# Customizing Actions
+# Customizing actions
 
 When an action creates its GUI representation, **widget flags** determine which UI elements are shown and how they are arranged. These flags allow application and plugin developers to adapt the look and behavior of actions to different contexts.
 
@@ -6,7 +6,7 @@ There are three supported ways to customize widget flags, plus an advanced optio
 
 ---
 
-## 1. Default Widget Flags
+## 1. Default widget flags
 
 Default widget flags define the *standard* appearance of an action whenever its widget is created without additional overrides.
 
@@ -16,19 +16,19 @@ For example, the default widget flags of `mv::gui::DecimalAction` (derived from 
 
 **Default widget flags**
 
-![Decimal action with default widget flags](https://github.com/ManiVaultStudio/DeveloperWiki.wiki/raw/master/assets/decimal_action_default_widget_flags.png)
+![Decimal action with default widget flags](../../assets/decimal_action_default_widget_flags.png)
 
 *The default widget flags (`DecimalAction::WidgetFlag::Default`) show both a spin box and a slider.*
 
 **Spin box only**
 
-![Decimal action with spinbox widget flag only](https://github.com/ManiVaultStudio/DeveloperWiki.wiki/raw/master/assets/decimal_action_spinbox.png)
+![Decimal action with spinbox widget flag only](../../assets/decimal_action_spinbox.png)
 
 *Using only `DecimalAction::WidgetFlag::SpinBox`.*
 
 **Slider only**
 
-![Decimal action with slider widget flag only](https://github.com/ManiVaultStudio/DeveloperWiki.wiki/raw/master/assets/decimal_action_slider.png)
+![Decimal action with slider widget flag only](../../assets/decimal_action_slider.png)
 
 *Using only `DecimalAction::WidgetFlag::Slider`.*
 
@@ -52,7 +52,7 @@ layout->addWidget(decimalActionSlider->createWidget(this));
 
 ---
 
-## 2. Overriding Widget Flags at Widget Creation Time
+## 2. Overriding widget flags at widget creation time
 
 Widget flags can also be specified **when creating the widget itself**. This allows the same action instance to appear differently in multiple places.
 
@@ -83,7 +83,7 @@ This approach does **not** modify the action’s default flags; it only affects 
 
 ---
 
-## 3. Overriding Widget Flags in Group-Based Actions
+## 3. Overriding widget flags in group-based actions
 
 When an action is added to a group-based action (for example, a `GroupAction` or `HorizontalGroupAction`), widget flags can be specified per action entry. These flags override the action’s default widget flags within the group.
 
@@ -108,7 +108,7 @@ This is useful when related actions should share a container but require differe
 
 ---
 
-## Advanced: Widget Post-Processing
+## Advanced: widget post-processing
 
 If widget flags are not sufficient, the created widget can be customized **after creation** using a widget configuration function.
 
