@@ -9,3 +9,5 @@ Action GUI building blocks
 what_are_actions
 how_actions_work
 use_in_manivault
+adding
+customizing
