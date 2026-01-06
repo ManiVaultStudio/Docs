@@ -96,8 +96,3 @@ All downloadable files (**tutorials JSON** file and the project **.mv** files) m
 - Use **HTTPS** whenever possible: This avoids security warnings or failed downloads in corporate/firewalled environments.
 - Test everything: Always test your setup in a clean **ManiVault Studio** environment before sharing with users.
 - Latency or failure fallback: If a tutorial and/or its associated project fails to download or is offline, it will not be shown. Ensure your hosting is reliable.
-
-~~Make sure:~~
-~~- To check the names of the plugins; the name should be the same as in the plugin **JSON** file. If they are not, the tutorial will not be listed on the start page tutorials section.~~
-~~- That the **tutorials JSON** file adheres to the [tutorials JSON schema](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/tutorials.schema.json). If your tutorials do not appear on the start page, check the **ManiVault Studio** console output; it will give hints where the problem is located~~
-
