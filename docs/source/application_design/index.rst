@@ -2,7 +2,7 @@ Application Design
 ==================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    app_customization
    splash_screen_customization
