@@ -12,11 +12,11 @@ One core use of actions is to make plugin state serializable and easily saved. E
 3. **Parameter Linking and Communication**</br>
 Actions are also the mechanism for ManiVault’s interactive linking of parameters between plugins. If two plugins have actions of the same type (e.g. a **DecimalAction** controlling a certain parameter), ManiVault allows the user to connect them so that one shared value drives both plugins. The system’s messaging API uses actions as the endpoints for these connections. For example, the Mean-Shift clustering plugin and a Scatterplot view plugin might both have a “Sigma” parameter (one in an analysis context, one in a visualization context). In *Studio* mode, the Sigma action from one plugin is *published* and *subscribed* to from the other. From that point on, the two are linked – adjusting the value in one UI automatically updates the other and vice versa.<br/><br/> 
 The underlined labels on actions indicate that an action can be *published* or *subscribed* (meaning it’s eligible for linking):<br/>
-![Underlined action labels](https://github.com/ManiVaultStudio/DeveloperWiki/blob/master/assets/mean_shift_gui.png)<br/><br/>
+![Underlined action labels](../../assets/assets/mean_shift_gui.png)<br/><br/>
 ManiVault italicizes the action’s label once connected:<br/>
-![Connected action](https://github.com/ManiVaultStudio/DeveloperWiki/blob/master/assets/mean_shift_sigma_connected.png)<br/><br/>
+![Connected action](../../assets/mean_shift_sigma_connected.png)<br/><br/>
 Users can click an action’s label to get a menu for *publishing* it to a shared parameter pool or *subscribing* it to an existing shared parameter:<br/>
-![Context menu](https://github.com/ManiVaultStudio/DeveloperWiki/blob/master/assets/mean_shift_connection_gui.png)<br/><br/>
+![Context menu](../../assets/mean_shift_connection_gui.png)<br/><br/>
 In summary, actions double as communication conduits: by using actions for plugin parameters, you automatically enable those parameters to be shared and synchronized across modules (a key design goal of **ManiVault Studio**).
 
 4. **Exposing Data-Driven Actions**<br/>
