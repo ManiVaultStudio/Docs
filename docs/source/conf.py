@@ -17,7 +17,18 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'BioVault'
+    'myst_parser',
+]
+
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
+
+myst_enable_extensions = [
+    'colon_fence',   # useful for admonitions in Markdown
+    'deflist',       # definition lists
+    'linkify',       # auto-links plain URLs
 ]
 
 intersphinx_mapping = {
