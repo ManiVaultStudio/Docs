@@ -13,6 +13,4 @@ Contents
 .. toctree::
 
    usage
-   application_design
-   plugin_development
    api
