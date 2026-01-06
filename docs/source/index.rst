@@ -30,4 +30,4 @@ Welcome to ManiVault's documentation!
    :caption: Reference
 
    api
-   release_notes
+   release_notes/index
