@@ -21,7 +21,7 @@ In summary, actions double as communication conduits: by using actions for plugi
 
 4. **Exposing Data-Driven Actions**<br/>
 Beyond plugin settings, actions can represent operations attached to data objects. For instance, an analytics plugin might attach a **TriggerAction** to a data model (say, a “Refine clustering” button attached to a clustering result). Other plugins that deal with that data can detect the attached action and present a GUI control for it in context:<br/>
-![Refine analysis plugin from view plugin](https://github.com/ManiVaultStudio/DeveloperWiki/blob/master/assets/scatterplot_refine_hsne.png)<br/>
+![Refine analysis plugin from view plugin](../../assets/scatterplot_refine_hsne.png)<br/>
 *The scatterplot view plugin exposes actions from the HSNE analysis plugin*<br/><br/>
 ManiVault’s [core](https://github.com/ManiVaultStudio/core/) manages these links so that a view plugin can show, for example, a context menu item “Refine Clustering” if it finds that action on a dataset, even though the action’s logic lives in the analytics plugin. This is an advanced use, but it shows that actions are not limited to static plugin panels – they can also enable cross-plugin functionality by surfacing one plugin’s capabilities inside another’s interface. In short, actions help decouple functionality: any plugin can offer actions (parameters or triggers) that other plugins can discover and incorporate, fostering an extensible, interconnected system.
 
