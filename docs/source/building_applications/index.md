@@ -2,7 +2,7 @@ Building Applications
 ==================
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 app_customization
 splash_screen_customization
