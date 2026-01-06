@@ -10,9 +10,9 @@ ManiVault/res/html/SplashScreenTemplate.html
 
 You can use this file as a reference when designing your own splash screen.
 
-> **Note**  
-> The **customization directory** location can differ per platform or application bundle layout.  
-> If you are unsure where it is, query it from C++ using From C++ code, you can query this location via [mv::util::StandardPaths::getCustomizationDirectory()](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/src/util/StandardPaths.h).
+```{note}
+The **customization directory** location can differ per platform or application bundle layout.  
+If you are unsure where it is, query it from C++ using From C++ code, you can query this location via [mv::util::StandardPaths::getCustomizationDirectory()](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/src/util/StandardPaths.h).
 
 ---
 
