@@ -8,3 +8,5 @@ types
 structure
 settings
 support_drag_and_drop
+icons
+actions/index
