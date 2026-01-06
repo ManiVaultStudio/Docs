@@ -1,3 +1,5 @@
+# Hosting tutorials
+
 Make your plugin even more useful by exposing remote tutorials directly from the **ManiVault Studio** start page.
 
 <img src="https://github.com/user-attachments/assets/4f9b0de9-c927-41e6-b560-93268356addd" alt="TutorialTeaser" width="500">  

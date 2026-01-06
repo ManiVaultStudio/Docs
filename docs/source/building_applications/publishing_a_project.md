@@ -1,4 +1,4 @@
-## Publishing a Project
+# Publishing a Project
 
 In ManiVault-based applications, a **published project** is a special, “baked” variant of a normal project. Published projects are typically used in **tailor-made applications** and viewer distributions, where you want a controlled experience for end users.
 

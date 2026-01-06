@@ -1,3 +1,5 @@
+# Hosting projects
+
 Make your plugin even more useful by exposing remote projects directly from the **ManiVault Studio** start page.
 
 <img src="https://github.com/user-attachments/assets/22c51124-ec89-45a0-8efc-2d620e10682f" alt="Project Teaser" width="500">  

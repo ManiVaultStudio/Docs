@@ -1,4 +1,4 @@
-# Customizing the Splash Screen
+# Splash screen customization
 
 The ManiVault Studio splash screen is implemented as **HTML**, which makes it easy to change the look and feel of your application without recompiling.
 
