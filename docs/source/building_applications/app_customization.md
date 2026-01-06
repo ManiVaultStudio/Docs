@@ -190,9 +190,7 @@ When DSNs are configured correctly:
 - Projects from those DSNs become available on the **start page**, and  
 - They also appear in the **Projects** main menu inside the application.
 
-The DSN configuration is stored in `projects.json` in the customization directory. Each DSN describes how to reach a projects repository (local or remote). For full details on remote projects and DSN formats, see:
-
-> [ManiVault Developer Wiki – Adding remote projects](https://github.com/ManiVaultStudio/DeveloperWiki/wiki/adding-remote-projects)
+The DSN configuration is stored in `projects.json` in the customization directory. Each DSN describes how to reach a projects repository (local or remote). For full details on remote projects and DSN formats, see the {doc}`Hosting projects <hosting_projects>` guide for details.
 
 In short:
 
