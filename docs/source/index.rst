@@ -15,11 +15,10 @@ Welcome to ManiVault's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Extending ManiVault
+   :caption: Development
 
-   building_plugins/index
-   building_applications/index
-
+   development/index
+   
 .. toctree::
    :maxdepth: 2
    :caption: Reference
