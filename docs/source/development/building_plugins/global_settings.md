@@ -89,8 +89,9 @@ The prefix determines:
 
 All actions contained in the global settings group automatically store and retrieve their values under this prefix.
 
-> **Note**  
-> The global settings prefix should be treated as **stable API**. Changing it will cause previously stored user settings to be ignored or lost.
+```{note} 
+The global settings prefix should be treated as **stable API**. Changing it will cause previously stored user settings to be ignored or lost.
+```
 
 ---
 
