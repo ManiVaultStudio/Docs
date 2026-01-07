@@ -61,11 +61,11 @@ Before you publish, it helps to:
 ---
 
 ### Publishing a project
-<img width="811" height="645" alt="image" src="https://github.com/user-attachments/assets/46b12982-f156-4cd2-9d3d-49578d0de545" />
+<img width="811" height="645" alt="image" src="../../assets/46b12982-f156-4cd2-9d3d-49578d0de545" />
 
 *Example of the “Publish project” dialog.*
 
-<img width="431" height="544" alt="image" src="https://github.com/user-attachments/assets/fcf75778-e147-41f9-97c7-1e527773c085" />
+<img width="431" height="544" alt="image" src="../../assets/fcf75778-e147-41f9-97c7-1e527773c085" />
 
 *The advanced settings panel is opened by clicking the gear icon.*
 
