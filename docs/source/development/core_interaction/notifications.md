@@ -103,7 +103,7 @@ addNotification(
 );
 ```
 
-## Foreground Task Notifications
+## Foreground task notifications
 
 Tasks that run with **Foreground GUI scope** are presented to the user as **temporary notifications**.
 
