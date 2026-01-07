@@ -26,6 +26,7 @@ Typical use cases include:
 - Plugin-wide preferences that should survive application restarts
 
 The API for plugin global settings is in the `mv::plugin::PluginFactory`, or a derived factory.
+
 ---
 
 ## Global settings group action
