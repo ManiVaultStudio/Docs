@@ -102,3 +102,28 @@ addNotification(
     util::Notification::DurationType::Fixed
 );
 ```
+
+## Foreground Task Notifications
+
+Tasks that run with **Foreground GUI scope** are presented to the user as **temporary notifications**.
+
+While the task is running:
+
+- A notification is shown automatically.
+- The notification includes a **progress indicator**.
+- No user interaction is required.
+
+When the task finishes:
+
+- The notification is dismissed automatically.
+- The user does not need to manually close or acknowledge it.
+
+### Example
+
+```cpp
+auto foregroundTask = new mv::ForegroundTask(this, "My foreground task");
+foregroundTask->setRunning();
+```
+
+*Creating a `ForegroundTask` and marking it as running will display a transient notification with a progress bar for the duration of the task. Once the task completes, the notification disappears automatically.*
+
