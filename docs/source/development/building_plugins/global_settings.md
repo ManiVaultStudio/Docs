@@ -4,7 +4,7 @@ Some plugins expose **global settings** that apply to the plugin as a whole, rat
 
 This page explains how plugin-wide global settings work, how they are registered, and how they are stored.
 
-![Global settings](../../assets/global_settings.gif)
+![Global settings](../../assets/global_settings.png)
 
 *The Example View plugin exposes a global default point size and opacity for all Example View instances.*
 
@@ -25,6 +25,7 @@ Typical use cases include:
 - Paths, thresholds, or limits that apply to all instances
 - Plugin-wide preferences that should survive application restarts
 
+The API for plugin global settings is in the `mv::plugin::PluginFactory`, or a derived factory.
 ---
 
 ## Global settings group action
@@ -32,7 +33,7 @@ Typical use cases include:
 Global settings are exposed through a **group action** of type:
 
 ```cpp
-gui::PluginGlobalSettingsGroupAction
+mv::gui::PluginGlobalSettingsGroupAction
 ```
 
 This group action contains the actions (checkboxes, numeric fields, selectors, etc.) that make up the plugin’s global settings UI.
@@ -40,7 +41,7 @@ This group action contains the actions (checkboxes, numeric fields, selectors, e
 ### Querying the global settings group action
 
 ```cpp
-virtual gui::PluginGlobalSettingsGroupAction* getGlobalSettingsGroupAction() const;
+mv::gui::PluginGlobalSettingsGroupAction* mv::plugin::PluginFactory::getGlobalSettingsGroupAction() const;
 ```
 
 Returns a pointer to the plugin’s global settings group action, or `nullptr` if the plugin does not define global settings.
@@ -48,9 +49,7 @@ Returns a pointer to the plugin’s global settings group action, or `nullptr` i
 ### Registering the global settings group action
 
 ```cpp
-void setGlobalSettingsGroupAction(
-    gui::PluginGlobalSettingsGroupAction* pluginGlobalSettingsGroupAction
-);
+void mv::plugin::PluginFactory::setGlobalSettingsGroupAction(gui::PluginGlobalSettingsGroupAction* pluginGlobalSettingsGroupAction);
 ```
 
 When this function is called:
@@ -73,7 +72,7 @@ Each plugin’s global settings are stored under a **plugin-specific prefix** in
 ### Global settings prefix
 
 ```cpp
-virtual QString getGlobalSettingsPrefix() const final;
+QString mv::plugin::PluginFactory::getGlobalSettingsPrefix() const final;
 ```
 
 This function returns the prefix used to namespace the plugin’s global settings.
