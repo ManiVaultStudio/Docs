@@ -64,8 +64,9 @@ When this function is called:
 
 Passing `nullptr` removes the plugin’s global settings from the global settings UI.
 
-> **Important**  
-> Plugin developers do not need to manually insert the group action into any UI. Calling `setGlobalSettingsGroupAction()` is sufficient.
+```{note}
+Plugin developers do not need to manually insert the group action into any UI. Calling `setGlobalSettingsGroupAction()` is sufficient.
+```
 
 ---
 
