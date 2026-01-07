@@ -61,11 +61,11 @@ Before you publish, it helps to:
 ---
 
 ### Publishing a project
-<img width="811" height="645" alt="image" src="../../assets/publish_project_dialog.png" />
+![Publish project dialog](../../assets/publish_project_dialog.png)
 
 *Example of the “Publish project” dialog.*
 
-<img width="431" height="544" alt="image" src="../../assets/publish_project_dialog_advanced.png" />
+![Publish project dialog](../../assets/publish_project_dialog_advanced.png)
 
 *The advanced settings panel is opened by clicking the gear icon.*
 
