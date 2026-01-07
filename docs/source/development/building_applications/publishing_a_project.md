@@ -80,7 +80,7 @@ Before you publish, it helps to:
      ```
    - This opens the publish dialog that contains:
      - Compression settings,
-     - Entry for the project title,
+     - Entry for the project title,s
      - And an advanced **settings panel**, accessible via the gear icon for more detailed configuration (including plugin-related options)
 5. **Use the settings panel to refine behavior (optional but recommended)**
    - Click the **gear icon** in the publish dialog to open the settings panel.

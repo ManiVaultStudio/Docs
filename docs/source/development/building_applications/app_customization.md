@@ -85,7 +85,7 @@ These three fields are **mandatory** and together determine where application se
 
 ```{note}
 These three properties are crucial. Changes here will affect the location where ManiVault stores user and application settings. You generally want to set them once when designing the app and not change them afterwards.
-
+```
 ### Display name and version
 
 - **Base name**  
