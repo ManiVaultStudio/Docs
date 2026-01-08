@@ -6,7 +6,7 @@ An application or viewer will often contain one or more published projects. Whil
 
 ---
 
-### What is a published project?
+## What is a published project?
 
 Conceptually, you can think of a published project as a **read-only, baked project**:
 
@@ -29,7 +29,7 @@ In other words: a published project wraps up your data + layout + plugin configu
 
 ---
 
-### When should you publish a project?
+## When should you publish a project?
 
 Publishing is especially useful when:
 
@@ -42,7 +42,7 @@ If you are working on an exploratory analysis for yourself, a normal (unpublishe
 
 ---
 
-### Preparing a project for publishing
+## Preparing a project for publishing
 
 Before you publish, it helps to:
 
@@ -60,7 +60,7 @@ Before you publish, it helps to:
 
 ---
 
-### Publishing a project
+## Publishing a project
 ![Publish project dialog](../../assets/publish_project_dialog.png)  
 *Example of the “Publish project” dialog.*
 
@@ -98,7 +98,7 @@ Before you publish, it helps to:
 
 ---
 
-### Using a published project in an application
+## Using a published project in an application
 
 After publishing, the resulting project is typically:
 
@@ -117,7 +117,7 @@ How exactly a published project is discovered and presented (start page entries,
 
 ---
 
-### Summary
+## Summary
 
 - A **published project** is a **read-only, baked** variant of a regular project, primarily used in **tailor-made applications**.
 - Publishing lets you fix:
