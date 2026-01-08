@@ -52,8 +52,9 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 breathe_projects = {
-    "ManiVault": os.path.abspath("_build/doxygen/xml"),
+    "ManiVault": os.path.abspath("docs/_build/doxygen/xml"),
 }
+
 breathe_default_project = "ManiVault"
 
 exhale_args = {

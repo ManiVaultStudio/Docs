@@ -6,9 +6,9 @@ OUTPUT_LANGUAGE        = English
 # --- Input ---
 # Set this to your repository root (relative to the Doxyfile location).
 # If your Doxyfile is in docs/, "../" is usually correct.
-INPUT                  = ../ManiVault/src
+INPUT                  = ../external/core/ManiVault/src
 RECURSIVE              = YES
-STRIP_FROM_PATH        = ../ManiVault/src
+STRIP_FROM_PATH        = ../external/core/ManiVault/src
 
 # Only scan code and public headers you want documented
 FILE_PATTERNS          = *.h *.hpp *.hh *.c *.cc *.cpp *.cxx *.inl
@@ -39,7 +39,7 @@ GENERATE_XML           = YES
 XML_OUTPUT             = xml
 
 # Put all Doxygen output under docs/_build/doxygen (or repo/_build/doxygen)
-OUTPUT_DIRECTORY       = _build/doxygen/xml
+OUTPUT_DIRECTORY       = _build/doxygen
 
 # You typically do NOT need Doxygen HTML if Sphinx is your frontend
 GENERATE_HTML          = NO
