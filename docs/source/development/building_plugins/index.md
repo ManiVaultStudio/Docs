@@ -13,3 +13,4 @@ limit_creation
 global_settings
 status_bar
 actions/index
+learning_center/index
