@@ -11,6 +11,10 @@ build:
   apt_packages:
     - doxygen
     - graphviz
+  jobs:
+    pre_build:
+      - mkdir -p docs/_build/doxygen
+      - doxygen docs/Doxyfile
 
 python:
   install:
