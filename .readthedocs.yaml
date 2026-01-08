@@ -11,12 +11,6 @@ build:
   apt_packages:
     - doxygen
     - graphviz
-  jobs:
-    pre_build:
-      - git clone --depth 1 https://github.com/ManiVaultStudio/core.git external/core
-      - test -d external/core/ManiVault/src
-      - mkdir -p docs/_build/doxygen
-      - doxygen docs/Doxyfile
 
 python:
   install:
