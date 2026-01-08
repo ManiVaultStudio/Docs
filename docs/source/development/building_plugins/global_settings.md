@@ -4,8 +4,7 @@ Some plugins expose **global settings** that apply to the plugin as a whole, rat
 
 This page describes how plugin-wide global settings work, how they are registered, how they are stored, and how to persist plugin settings that are not exposed through the UI.
 
-![Global settings](../../assets/global_settings.png)
-
+![Global settings](../../assets/global_settings.png)  
 *The Example View plugin exposes a global default point size and opacity that apply to all Example View instances.*
 
 ---

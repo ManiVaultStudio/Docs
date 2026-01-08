@@ -7,7 +7,7 @@ A **plugin trigger** is an action that, when executed, requests the creation of 
 This page explains what plugin triggers are, how they work, and how to implement them using the Scatterplot view plugin as inspiration.
 
 
-![Plugin triggers](../../assets/plugin_triggers.gif)
+![Plugin triggers](../../assets/plugin_triggers.gif)  
 *Plugin triggers in action; for a set of selected image datasets, the user has control over how these datasets are arranged in a single image view.*
 
 ---

@@ -5,8 +5,7 @@ The **Learning Center** provides **contextual, plugin-specific guidance** while 
 
 It surfaces **just-in-time information**—such as interaction hints and shortcut summaries—based on the currently available plugins and views.
 
-![Learning center](../../assets/learning_center.gif)
-
+![Learning center](../../../assets/learning_center.gif)  
 *Plugin-specific onboarding content in the Learning Center.*
 
 ---

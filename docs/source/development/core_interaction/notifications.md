@@ -2,8 +2,7 @@
 This document describes the two supported ways to send notifications in the plugin system:
 a global notification API and a plugin-scoped convenience wrapper.
 
-![Notifications in action](../../assets/notifications.gif)
-
+![Notifications in action](../../assets/notifications.gif)  
 *Notifications are stacked on top of each other, and disappear automatically.*
 
 ---

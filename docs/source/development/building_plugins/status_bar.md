@@ -4,8 +4,7 @@ Some plugins expose information or controls that are best presented in the **app
 
 This page explains what a plugin status bar action is, how it behaves, and how it is registered via the plugin factory.
 
-![Global settings](../../assets/plugin_status_bar_action.png)
-
+![Global settings](../../assets/plugin_status_bar_action.png)  
 *The [example view GL plugin](https://github.com/ManiVaultStudio/ExamplePlugins/blob/master/ExampleViewOpenGL/src/ExampleViewGLPlugin.cpp) demonstrates the concept of a plugin-specific status bar.*
 
 ---

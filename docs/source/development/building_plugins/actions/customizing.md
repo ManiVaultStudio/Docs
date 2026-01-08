@@ -16,20 +16,17 @@ For example, the default widget flags of `mv::gui::DecimalAction` (derived from 
 
 **Default widget flags**
 
-![Decimal action with default widget flags](../../assets/decimal_action_default_widget_flags.png)
-
+![Decimal action with default widget flags](../../assets/decimal_action_default_widget_flags.png)  
 *The default widget flags (`DecimalAction::WidgetFlag::Default`) show both a spin box and a slider.*
 
 **Spin box only**
 
-![Decimal action with spinbox widget flag only](../../assets/decimal_action_spinbox.png)
-
+![Decimal action with spinbox widget flag only](../../assets/decimal_action_spinbox.png)  
 *Using only `DecimalAction::WidgetFlag::SpinBox`.*
 
 **Slider only**
 
-![Decimal action with slider widget flag only](../../assets/decimal_action_slider.png)
-
+![Decimal action with slider widget flag only](../../assets/decimal_action_slider.png)  
 *Using only `DecimalAction::WidgetFlag::Slider`.*
 
 ### Example: customizing default widget flags
