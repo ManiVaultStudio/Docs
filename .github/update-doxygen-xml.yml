@@ -1,0 +1,42 @@
+name: Update Doxygen XML
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"   # daily
+  # Optional: trigger when Docs repo changes
+  push:
+    branches: [ main ]
+
+jobs:
+  generate:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Docs repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      - name: Checkout core repo
+        run: |
+          mkdir -p external
+          git clone --depth 1 https://github.com/ManiVaultStudio/core.git external/core
+
+      - name: Generate Doxygen XML
+        run: |
+          mkdir -p docs/_doxygen
+          doxygen docs/Doxyfile
+          test -f docs/_doxygen/xml/index.xml
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/_doxygen/xml
+          git diff --cached --quiet || git commit -m "Update Doxygen XML"
+          git push
