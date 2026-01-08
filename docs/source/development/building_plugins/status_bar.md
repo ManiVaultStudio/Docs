@@ -1,4 +1,4 @@
-# Plugin Status Bar Actions
+# Status bar integration
 
 Some plugins expose information or controls that are best presented in the **application status bar**. ManiVault provides `PluginStatusBarAction` as a convenience class for integrating plugin-specific status bar actions that automatically react to plugin lifecycle events.
 
