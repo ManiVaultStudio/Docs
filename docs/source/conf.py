@@ -2,6 +2,9 @@
 
 # -- Project information
 
+import os
+
+
 project = 'ManiVault'
 copyright = '2026, BioVault'
 author = 'BioVault'
@@ -18,6 +21,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
+    'breathe',
+    'exhale'
 ]
 
 source_suffix = {
@@ -45,3 +50,16 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+breathe_projects = {
+    "ManiVault": os.path.abspath("_build/doxygen/xml"),
+}
+breathe_default_project = "ManiVault"
+
+exhale_args = {
+    "containmentFolder": "./api",
+    "rootFileName": "library_root.rst",
+    "rootFileTitle": "API Reference",
+    "doxygenStripFromPath": os.path.abspath("."),
+    "createTreeView": True,
+}

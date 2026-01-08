@@ -1,0 +1,70 @@
+# --- Project identity ---
+PROJECT_NAME           = "ManiVault"
+PROJECT_BRIEF          = "Plugin-based visual analytics platform"
+OUTPUT_LANGUAGE        = English
+
+# --- Input ---
+# Set this to your repository root (relative to the Doxyfile location).
+# If your Doxyfile is in docs/, "../" is usually correct.
+INPUT                  = ../ManiVault/src
+RECURSIVE              = YES
+STRIP_FROM_PATH        = ../ManiVault/src
+
+# Only scan code and public headers you want documented
+FILE_PATTERNS          = *.h *.hpp *.hh *.c *.cc *.cpp *.cxx *.inl
+
+# Exclude build and third-party dirs
+EXCLUDE                = ../build ../Build ../out ../_build ../.git ../.github ../external ../thirdparty ../3rdparty ../vendor
+
+# You can also exclude generated files:
+EXCLUDE_PATTERNS       = */moc_* */ui_*.h */qrc_*.cpp
+
+# Optional but often useful: only document things explicitly marked
+# EXTRACT_ALL            = NO
+EXTRACT_ALL            = YES
+
+# If you mainly want public API:
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+
+# Recurse into subdirectories
+RECURSIVE              = YES
+
+# --- Warnings (useful in CI) ---
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+
+# --- Output: XML for Breathe ---
+GENERATE_XML           = YES
+XML_OUTPUT             = xml
+
+# Put all Doxygen output under docs/_build/doxygen (or repo/_build/doxygen)
+OUTPUT_DIRECTORY       = _build/doxygen/xml
+
+# You typically do NOT need Doxygen HTML if Sphinx is your frontend
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+
+# --- Cross-references / structure ---
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = ../
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = YES
+
+# Improve C++ parsing
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+BUILTIN_STL_SUPPORT    = YES
+CLANG_ASSISTED_PARSING = YES
+
+# --- Graphs (optional; requires graphviz 'dot') ---
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 2
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+INCLUDE_GRAPH          = NO
+INCLUDED_BY_GRAPH      = NO
