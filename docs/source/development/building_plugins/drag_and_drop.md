@@ -1,7 +1,7 @@
 # Adding drag-and-drop behaviour
 The easiest way to allow users to deal with datasets in your plugin is to allow them to drag and drop a dataset onto the plugin widget.
 
-![Drag and drop behaviour in action](../../assets/plugin_triggers.gif)  
+![Drag and drop behaviour in action](../../assets/drag_and_drop.gif)  
 *The core contains standard widgets to normalize drag-and-drop behaviour for datasets and (view) plugins*
 
 The ManiVault library provides a DropWidget class to make this process easier. In order to add it into your custom plugin, add the DropWidget as a class member.
