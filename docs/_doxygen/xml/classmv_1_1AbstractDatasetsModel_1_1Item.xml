@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractDatasetsModel_1_1Item" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractDatasetsModel::Item</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItem</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel_1_1IdItem" prot="public" virt="non-virtual">mv::AbstractDatasetsModel::IdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel_1_1LocationItem" prot="public" virt="non-virtual">mv::AbstractDatasetsModel::LocationItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel_1_1NameItem" prot="public" virt="non-virtual">mv::AbstractDatasetsModel::NameItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel_1_1RawDataNameItem" prot="public" virt="non-virtual">mv::AbstractDatasetsModel::RawDataNameItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel_1_1SourceDatasetIdItem" prot="public" virt="non-virtual">mv::AbstractDatasetsModel::SourceDatasetIdItem</derivedcompoundref>
+    <includes refid="AbstractDatasetsModel_8h" local="no">AbstractDatasetsModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractDatasetsModel_1_1Item_1a8c35234ed71ca9babb117e0159321b0c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractDatasetsModel" kindref="compound">AbstractDatasetsModel</ref> &amp;</type>
+        <definition>AbstractDatasetsModel&amp; mv::AbstractDatasetsModel::Item::_datasetsModel</definition>
+        <argsstring></argsstring>
+        <name>_datasetsModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="111" column="32" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractDatasetsModel_1_1Item_1a3dcde0434039be150abf43c926263edf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::AbstractDatasetsModel::Item::_dataset</definition>
+        <argsstring></argsstring>
+        <name>_dataset</name>
+        <briefdescription>
+<para>Reference to the owing dataset model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="112" column="20" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1_1Item_1af2c8a162103603620aa541eb9bc7e81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractDatasetsModel::Item::Item</definition>
+        <argsstring>(AbstractDatasetsModel &amp;datasetsModel, Dataset&lt; DatasetImpl &gt; dataset, bool editable=false)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractDatasetsModel" kindref="compound">AbstractDatasetsModel</ref> &amp;</type>
+          <declname>datasetsModel</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>editable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct with reference to the owning <computeroutput>datasetsModel</computeroutput> and smart pointer to the <computeroutput>dataset</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetsModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the datasets model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset to display item for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>editable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the model item is editable or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="96" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1_1Item_1a52b58df14604b3f4e7be02770055411a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1AbstractDatasetsModel" kindref="compound">AbstractDatasetsModel</ref> &amp;</type>
+        <definition>AbstractDatasetsModel &amp; mv::AbstractDatasetsModel::Item::getDatasetsModel</definition>
+        <argsstring>()</argsstring>
+        <name>getDatasetsModel</name>
+        <briefdescription>
+<para>Get datasets model return Reference to datasets model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="102" column="31" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1_1Item_1a6b9314c0e72d00224b6272ee8660f21a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+        <definition>Dataset&lt; DatasetImpl &gt; &amp; mv::AbstractDatasetsModel::Item::getDataset</definition>
+        <argsstring>()</argsstring>
+        <name>getDataset</name>
+        <briefdescription>
+<para>Get dataset return Reference to smart pointer to dataset to display item for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="108" column="17" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base standard model item class for a dataset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>mv::AbstractDatasetsModel::LocationItem</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1LocationItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="7">
+        <label>mv::AbstractDatasetsModel::RawDataNameItem</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1RawDataNameItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::AbstractDatasetsModel::IdItem</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1IdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::AbstractDatasetsModel::NameItem</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1NameItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::AbstractDatasetsModel::SourceDatasetIdItem</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1SourceDatasetIdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDatasetsModel::Item</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDatasetsModel::Item</label>
+        <link refid="classmv_1_1AbstractDatasetsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="87" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" bodystart="87" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractDatasetsModel_1_1Item_1a3dcde0434039be150abf43c926263edf" prot="private" virt="non-virtual"><scope>mv::AbstractDatasetsModel::Item</scope><name>_dataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1_1Item_1a8c35234ed71ca9babb117e0159321b0c" prot="private" virt="non-virtual"><scope>mv::AbstractDatasetsModel::Item</scope><name>_datasetsModel</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1_1Item_1a6b9314c0e72d00224b6272ee8660f21a" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel::Item</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1_1Item_1a52b58df14604b3f4e7be02770055411a" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel::Item</scope><name>getDatasetsModel</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1_1Item_1af2c8a162103603620aa541eb9bc7e81d" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel::Item</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

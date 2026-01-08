@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractHeadsUpDisplayModel::Item</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItem</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1DescriptionItem" prot="public" virt="non-virtual">mv::AbstractHeadsUpDisplayModel::DescriptionItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1IdItem" prot="public" virt="non-virtual">mv::AbstractHeadsUpDisplayModel::IdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1TitleItem" prot="public" virt="non-virtual">mv::AbstractHeadsUpDisplayModel::TitleItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1ValueItem" prot="public" virt="non-virtual">mv::AbstractHeadsUpDisplayModel::ValueItem</derivedcompoundref>
+    <includes refid="AbstractHeadsUpDisplayModel_8h" local="no">AbstractHeadsUpDisplayModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1af6c07dfe5d183b827d58fd5d0ba2d0fe" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1util_1aa73381156b73abeab534158c2d21628b" kindref="member">util::HeadsUpDisplayItemSharedPtr</ref></type>
+        <definition>util::HeadsUpDisplayItemSharedPtr mv::AbstractHeadsUpDisplayModel::Item::_headsUpDisplayItem</definition>
+        <argsstring></argsstring>
+        <name>_headsUpDisplayItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" line="53" column="45" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1aa350eb27f7b13c6c8fadfa52df5dffc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractHeadsUpDisplayModel::Item::Item</definition>
+        <argsstring>(const util::HeadsUpDisplayItemSharedPtr &amp;headsUpDisplayItem)</argsstring>
+        <name>Item</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1util_1aa73381156b73abeab534158c2d21628b" kindref="member">util::HeadsUpDisplayItemSharedPtr</ref> &amp;</type>
+          <declname>headsUpDisplayItem</declname>
+        </param>
+        <briefdescription>
+<para>Construct with shared pointer to <computeroutput>headsUpDisplayItem</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>headsUpDisplayItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to heads-up display item </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" line="44" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1a90d469dc0e4036d563dd2e4b8d5b050b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1util_1aa73381156b73abeab534158c2d21628b" kindref="member">util::HeadsUpDisplayItemSharedPtr</ref></type>
+        <definition>HeadsUpDisplayItemSharedPtr mv::AbstractHeadsUpDisplayModel::Item::getHeadsupDisplayItem</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeadsupDisplayItem</name>
+        <briefdescription>
+<para>Get heads-up display item return Shared pointer to heads-up display item. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" line="50" column="43" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base standard model item class for heads-up display item <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mv::AbstractHeadsUpDisplayModel::DescriptionItem</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1DescriptionItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="5">
+        <label>mv::AbstractHeadsUpDisplayModel::TitleItem</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1TitleItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractHeadsUpDisplayModel::Item</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::AbstractHeadsUpDisplayModel::IdItem</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1IdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::AbstractHeadsUpDisplayModel::ValueItem</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1ValueItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractHeadsUpDisplayModel::Item</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" line="37" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHeadsUpDisplayModel.h" bodystart="37" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1af6c07dfe5d183b827d58fd5d0ba2d0fe" prot="private" virt="non-virtual"><scope>mv::AbstractHeadsUpDisplayModel::Item</scope><name>_headsUpDisplayItem</name></member>
+      <member refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1a90d469dc0e4036d563dd2e4b8d5b050b" prot="public" virt="non-virtual"><scope>mv::AbstractHeadsUpDisplayModel::Item</scope><name>getHeadsupDisplayItem</name></member>
+      <member refid="classmv_1_1AbstractHeadsUpDisplayModel_1_1Item_1aa350eb27f7b13c6c8fadfa52df5dffc3" prot="public" virt="non-virtual"><scope>mv::AbstractHeadsUpDisplayModel::Item</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

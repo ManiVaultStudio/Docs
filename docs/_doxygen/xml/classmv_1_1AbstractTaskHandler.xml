@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractTaskHandler" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractTaskHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1BackgroundTaskHandler" prot="public" virt="non-virtual">mv::BackgroundTaskHandler</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1DatasetTaskHandler" prot="public" virt="non-virtual">mv::DatasetTaskHandler</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1ForegroundTaskHandler" prot="public" virt="non-virtual">mv::ForegroundTaskHandler</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1ModalTaskHandler" prot="public" virt="non-virtual">mv::ModalTaskHandler</derivedcompoundref>
+    <includes refid="AbstractTaskHandler_8h" local="no">AbstractTaskHandler.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractTaskHandler_1ae5b49bde448283a7fdd410df4e53f2ca" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+        <definition>Task* mv::AbstractTaskHandler::_task</definition>
+        <argsstring></argsstring>
+        <name>_task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="100" column="20" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractTaskHandler_1a99f6e86bf9084b43a40fe1f5dda16625" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t mv::AbstractTaskHandler::_minimumDuration</definition>
+        <argsstring></argsstring>
+        <name>_minimumDuration</name>
+        <briefdescription>
+<para>Pointer to task to handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="101" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractTaskHandler_1a9a9d74e38fe1467fb5efdbf59ddee2a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractTaskHandler::_enabled</definition>
+        <argsstring></argsstring>
+        <name>_enabled</name>
+        <briefdescription>
+<para>Minimum duration before the handler displays a tasks UI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="102" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1af49e131f1604fc8e877efde744576800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractTaskHandler::AbstractTaskHandler</definition>
+        <argsstring>(QObject *parent, Task *task)</argsstring>
+        <name>AbstractTaskHandler</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Construct task handler with <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to task to handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="37" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1aaf855ec7c865a2c3671fad4667f39aec" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+        <definition>Task * mv::AbstractTaskHandler::getTask</definition>
+        <argsstring>() final</argsstring>
+        <name>getTask</name>
+        <briefdescription>
+<para>Get task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to task </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="43" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1a7490e17b3e69631c7d237607e0271365" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t mv::AbstractTaskHandler::getMinimumDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimumDuration</name>
+        <briefdescription>
+<para>Get the minimum duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Minimum duration before the handler displays a tasks UI </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="49" column="19" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1ab275432b677067deb196ab49dfe4c167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::setMinimumDuration</definition>
+        <argsstring>(std::uint32_t minimumDuration)</argsstring>
+        <name>setMinimumDuration</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>minimumDuration</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimumDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum duration before the handler displays a tasks UI </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="55" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="28" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1a1312dda5658ba347da1ea837a3b7d796" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractTaskHandler::getEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnabled</name>
+        <briefdescription>
+<para>Get enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the task handler is enabled or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="61" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1a828b73d8e80efa157c0df1b55b0571d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::setEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Set enabled to <computeroutput>enabled</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum duration before the handler displays a tasks UI </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="45" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1AbstractTaskHandler_1a33693ac93b4a93924d00abfe847383da" prot="protected" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::setTask</definition>
+        <argsstring>(Task *task) final</argsstring>
+        <name>setTask</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Set handle <computeroutput>task</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to task to handle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="75" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.cpp" bodystart="55" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1AbstractTaskHandler_1a807fc2ba1499c87088416c9f0aa60694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::taskChanged</definition>
+        <argsstring>(Task *previousTask, Task *currentTask)</argsstring>
+        <name>taskChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>previousTask</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>currentTask</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current task has changed from <computeroutput>previousTask</computeroutput> to <computeroutput>currentTask</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to previous task (if any) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current task </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractTaskHandler_1a95d8f074c50a13fc3da94c824eb70844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::minimumDurationChanged</definition>
+        <argsstring>(std::uint32_t previousMinimumDuration, std::uint32_t currentMinimumDuration)</argsstring>
+        <name>minimumDurationChanged</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>previousMinimumDuration</declname>
+        </param>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>currentMinimumDuration</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the minimum duration changed from <computeroutput>previousMinimumDuration</computeroutput> to <computeroutput>currentMinimumDuration</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousMinimumDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previous minimum duration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentMinimumDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current minimum duration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractTaskHandler_1a52ea1dd94c513998750d3aaf1428b677" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskHandler::enabledChanged</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>enabledChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Signals that enabled changed to <computeroutput>enabled</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the task handler is enabled or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="97" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract task handler class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base handler class for interacting with a task.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mv::BackgroundTaskHandler</label>
+        <link refid="classmv_1_1BackgroundTaskHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::ModalTaskHandler</label>
+        <link refid="classmv_1_1ModalTaskHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>mv::ForegroundTaskHandler</label>
+        <link refid="classmv_1_1ForegroundTaskHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::DatasetTaskHandler</label>
+        <link refid="classmv_1_1DatasetTaskHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractTaskHandler</label>
+        <link refid="classmv_1_1AbstractTaskHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractTaskHandler</label>
+        <link refid="classmv_1_1AbstractTaskHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskHandler.h" bodystart="27" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractTaskHandler_1a9a9d74e38fe1467fb5efdbf59ddee2a4" prot="private" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>_enabled</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a99f6e86bf9084b43a40fe1f5dda16625" prot="private" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>_minimumDuration</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1ae5b49bde448283a7fdd410df4e53f2ca" prot="private" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>_task</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1af49e131f1604fc8e877efde744576800" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>AbstractTaskHandler</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a52ea1dd94c513998750d3aaf1428b677" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>enabledChanged</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a1312dda5658ba347da1ea837a3b7d796" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>getEnabled</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a7490e17b3e69631c7d237607e0271365" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>getMinimumDuration</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1aaf855ec7c865a2c3671fad4667f39aec" prot="public" virt="virtual"><scope>mv::AbstractTaskHandler</scope><name>getTask</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a95d8f074c50a13fc3da94c824eb70844" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>minimumDurationChanged</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a828b73d8e80efa157c0df1b55b0571d8" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>setEnabled</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1ab275432b677067deb196ab49dfe4c167" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>setMinimumDuration</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a33693ac93b4a93924d00abfe847383da" prot="protected" virt="virtual"><scope>mv::AbstractTaskHandler</scope><name>setTask</name></member>
+      <member refid="classmv_1_1AbstractTaskHandler_1a807fc2ba1499c87088416c9f0aa60694" prot="public" virt="non-virtual"><scope>mv::AbstractTaskHandler</scope><name>taskChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DatasetChildAddedEvent" kind="class" language="C++" prot="public">
+    <compoundname>mv::DatasetChildAddedEvent</compoundname>
+    <basecompoundref refid="classmv_1_1DatasetEvent" prot="public" virt="non-virtual">mv::DatasetEvent</basecompoundref>
+    <includes refid="Event_8h" local="no">Event.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1DatasetChildAddedEvent_1a5ef816e727e4229b1db1851a4acd6d16" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetChildAddedEvent::_childDataset</definition>
+        <argsstring></argsstring>
+        <name>_childDataset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/event/Event.h" line="287" column="16" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DatasetChildAddedEvent_1a2dcdd0bf695f35cf790ec61553cb31b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::DatasetChildAddedEvent::DatasetChildAddedEvent</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset, const Dataset&lt; DatasetImpl &gt; &amp;childDataset)</argsstring>
+        <name>DatasetChildAddedEvent</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>childDataset</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>childDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the child dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/event/Event.h" line="275" column="5" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="275" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetChildAddedEvent_1ac8b2aa0efd37e049967c43602f3b9ffa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetChildAddedEvent::getChildDataset</definition>
+        <argsstring>() const</argsstring>
+        <name>getChildDataset</name>
+        <briefdescription>
+<para>Get smart pointer to the child dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/event/Event.h" line="282" column="13" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="282" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> child added event class <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> event which is emitted by the core when a child dataset is added to the dataset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mv::DatasetEvent</label>
+        <link refid="classmv_1_1DatasetEvent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::ManiVaultEvent</label>
+        <link refid="classmv_1_1ManiVaultEvent"/>
+      </node>
+      <node id="1">
+        <label>mv::DatasetChildAddedEvent</label>
+        <link refid="classmv_1_1DatasetChildAddedEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>mv::DatasetPrivate</label>
+        <link refid="classmv_1_1DatasetPrivate"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::DatasetEvent</label>
+        <link refid="classmv_1_1DatasetEvent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_dataset</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::ManiVaultEvent</label>
+        <link refid="classmv_1_1ManiVaultEvent"/>
+      </node>
+      <node id="1">
+        <label>mv::DatasetChildAddedEvent</label>
+        <link refid="classmv_1_1DatasetChildAddedEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_childDataset</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::Dataset&lt; mv::DatasetImpl &gt;</label>
+        <link refid="classmv_1_1Dataset"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/event/Event.h" line="266" column="1" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="267" bodyend="288"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DatasetChildAddedEvent_1a5ef816e727e4229b1db1851a4acd6d16" prot="protected" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>_childDataset</name></member>
+      <member refid="classmv_1_1DatasetEvent_1a55d1181672b397a5e38a58fdbb8e5a83" prot="protected" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>_dataset</name></member>
+      <member refid="classmv_1_1DatasetChildAddedEvent_1a2dcdd0bf695f35cf790ec61553cb31b4" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>DatasetChildAddedEvent</name></member>
+      <member refid="classmv_1_1DatasetEvent_1a9809bc53b9809cba125c2b9b333f4743" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>DatasetEvent</name></member>
+      <member refid="classmv_1_1DatasetChildAddedEvent_1ac8b2aa0efd37e049967c43602f3b9ffa" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>getChildDataset</name></member>
+      <member refid="classmv_1_1DatasetEvent_1a2b6425039b405bf5ab19d03c1309f178" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1DatasetEvent_1a1783dc47d6fc7ae5e345680f12f5cccd" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1ManiVaultEvent_1abcd21160044460bec622e216f34dde7d" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>getType</name></member>
+      <member refid="classmv_1_1ManiVaultEvent_1a20d1a3278ef55aba79161e9debff1455" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>ManiVaultEvent</name></member>
+      <member refid="classmv_1_1DatasetEvent_1ab29d790fae40118d68f0901fb2a03161" prot="public" virt="non-virtual"><scope>mv::DatasetChildAddedEvent</scope><name>setDataset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

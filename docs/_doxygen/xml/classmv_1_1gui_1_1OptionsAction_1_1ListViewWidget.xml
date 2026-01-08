@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::OptionsAction::ListViewWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="OptionsAction_8h" local="no">OptionsAction.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1aafbc1ef998367b82238b2728179b0f28" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">OptionsAction</ref> *</type>
+        <definition>OptionsAction* mv::gui::OptionsAction::ListViewWidget::_optionsAction</definition>
+        <argsstring></argsstring>
+        <name>_optionsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="154" column="32" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1afa7cd7072adc0fd71b628b4fade8c574" prot="protected" static="no" mutable="no">
+        <type>QSortFilterProxyModel</type>
+        <definition>QSortFilterProxyModel mv::gui::OptionsAction::ListViewWidget::_filterModel</definition>
+        <argsstring></argsstring>
+        <name>_filterModel</name>
+        <briefdescription>
+<para>Pointer to owning options action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="155" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1a0b0261333b3a7f83573c85289ed25f16" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TableAction" kindref="compound">TableAction</ref></type>
+        <definition>TableAction mv::gui::OptionsAction::ListViewWidget::_tableAction</definition>
+        <argsstring></argsstring>
+        <name>_tableAction</name>
+        <briefdescription>
+<para>For filtering the options. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="156" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1ab27d20529cfe8e3d057b6469dc0cfaec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class OptionsAction</definition>
+        <argsstring></argsstring>
+        <name>OptionsAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">OptionsAction</ref></type>
+        </param>
+        <briefdescription>
+<para>Table view for showing the data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="158" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1ad19af5fd5dea05bdcad4e5769967298e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::OptionsAction::ListViewWidget::ListViewWidget</definition>
+        <argsstring>(QWidget *parent, OptionsAction *optionsAction, const std::int32_t &amp;widgetFlags)</argsstring>
+        <name>ListViewWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">OptionsAction</ref> *</type>
+          <declname>optionsAction</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> widget, <computeroutput>optionsAction</computeroutput> and <computeroutput>completer</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>optionsAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to options action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget flags for the configuration of the widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="151" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.cpp" bodystart="426" bodyend="491"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List view widget class for options action. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::OptionsAction::ListViewWidget</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="15">
+        <label>mv::gui::VerticalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1VerticalGroupAction"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::gui::OptionsAction::FileAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1FileAction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_loadSelectionAction</edgelabel>
+          <edgelabel>_saveSelectionAction</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_optionsAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::OptionsAction::ListViewWidget</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_optionsAction</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_tableAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="11">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="12">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::OptionsAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_optionsModel</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_fileAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="14">
+        <label>mv::gui::TableAction</label>
+        <link refid="classmv_1_1gui_1_1TableAction"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::CheckableStringListModel</label>
+        <link refid="classmv_1_1CheckableStringListModel"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mv::gui::TriggerAction</label>
+        <link refid="classmv_1_1gui_1_1TriggerAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QStringListModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="142" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="142" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1afa7cd7072adc0fd71b628b4fade8c574" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::ListViewWidget</scope><name>_filterModel</name></member>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1aafbc1ef998367b82238b2728179b0f28" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::ListViewWidget</scope><name>_optionsAction</name></member>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1a0b0261333b3a7f83573c85289ed25f16" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::ListViewWidget</scope><name>_tableAction</name></member>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1ad19af5fd5dea05bdcad4e5769967298e" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::ListViewWidget</scope><name>ListViewWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget_1ab27d20529cfe8e3d057b6469dc0cfaec" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::ListViewWidget</scope><name>OptionsAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

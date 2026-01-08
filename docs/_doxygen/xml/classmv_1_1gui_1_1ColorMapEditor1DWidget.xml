@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1ColorMapEditor1DWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::ColorMapEditor1DWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsView</basecompoundref>
+    <includes refid="ColorMapEditor1DWidget_8h" local="no">ColorMapEditor1DWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa00a1156b5cfb2f3b4e0d6563308ed2d" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref> &amp;</type>
+        <definition>ColorMapEditor1DAction&amp; mv::gui::ColorMapEditor1DWidget::_colorMapEditor1DAction</definition>
+        <argsstring></argsstring>
+        <name>_colorMapEditor1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="125" column="52" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a7509d5f8a27aedac265b140154b1a88f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DScene" kindref="compound">ColorMapEditor1DScene</ref></type>
+        <definition>ColorMapEditor1DScene mv::gui::ColorMapEditor1DWidget::_scene</definition>
+        <argsstring></argsstring>
+        <name>_scene</name>
+        <briefdescription>
+<para>Reference to one-dimensional color map editor action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="126" column="53" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a1919b1ff7501cec6c9739c98c5111202" prot="private" static="no" mutable="no">
+        <type>QMargins</type>
+        <definition>QMargins mv::gui::ColorMapEditor1DWidget::_margins</definition>
+        <argsstring></argsstring>
+        <name>_margins</name>
+        <briefdescription>
+<para>Editor graphics scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="127" column="53" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a7fb34acd9c7000201facd911d8b5ddec" prot="private" static="no" mutable="no">
+        <type>QRectF</type>
+        <definition>QRectF mv::gui::ColorMapEditor1DWidget::_graphRectangle</definition>
+        <argsstring></argsstring>
+        <name>_graphRectangle</name>
+        <briefdescription>
+<para>Graph rectangle margins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="128" column="53" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa50eb0f66751f231542bce945b3b8a39" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+        <definition>ColorMapEditor1DNode* mv::gui::ColorMapEditor1DWidget::_currentNode</definition>
+        <argsstring></argsstring>
+        <name>_currentNode</name>
+        <briefdescription>
+<para>Nodes graph rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="129" column="52" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a5a44694065a09937c065d3a38724529f" prot="private" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="classmv_1_1gui_1_1ColorMapEditor1DNodeGraphicsItem" kindref="compound">ColorMapEditor1DNodeGraphicsItem</ref> * &gt;</type>
+        <definition>QVector&lt;ColorMapEditor1DNodeGraphicsItem*&gt; mv::gui::ColorMapEditor1DWidget::_nodes</definition>
+        <argsstring></argsstring>
+        <name>_nodes</name>
+        <briefdescription>
+<para>Currently selected node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="130" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ac18417ad4654eca361b07b627210f473" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage mv::gui::ColorMapEditor1DWidget::_colorMap</definition>
+        <argsstring></argsstring>
+        <name>_colorMap</name>
+        <briefdescription>
+<para>Nodes in the editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="131" column="53" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae96004f40de713f8e31a0d64cb26bdc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::ColorMapEditor1DWidget::ColorMapEditor1DWidget</definition>
+        <argsstring>(QWidget *parent, ColorMapEditor1DAction &amp;colorMapEditor1DAction)</argsstring>
+        <name>ColorMapEditor1DWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref> &amp;</type>
+          <declname>colorMapEditor1DAction</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorMapEditor1DAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to one-dimensional color map editor action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a12df17c1644b711a4d50e98c959faf1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::ColorMapEditor1DWidget::~ColorMapEditor1DWidget</definition>
+        <argsstring>()</argsstring>
+        <name>~ColorMapEditor1DWidget</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="42" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9afb2ae40535bd486252e23ab1f1fa46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::showEvent</definition>
+        <argsstring>(QShowEvent *event) override</argsstring>
+        <name>showEvent</name>
+        <param>
+          <type>QShowEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when the widget is shown. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to show event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="48" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="50" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae5da1713f787013c43fabd5e40aa189b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ColorMapEditor1DWidget::eventFilter</definition>
+        <argsstring>(QObject *target, QEvent *event) override</argsstring>
+        <name>eventFilter</name>
+        <param>
+          <type>QObject *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Respond to target object events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of which an event occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that took place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="55" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="83" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a11909983dd1bb48636eaaeb93214dc5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::addNodeAtScenePosition</definition>
+        <argsstring>(const QPointF &amp;scenePosition)</argsstring>
+        <name>addNodeAtScenePosition</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>scenePosition</declname>
+        </param>
+        <briefdescription>
+<para>Add node at a specific scene position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scenePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position in scene coordinates </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="61" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="127" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9eb11514d914ccd8d036701618534682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::addNodeGraphicsItem</definition>
+        <argsstring>(ColorMapEditor1DNode *node)</argsstring>
+        <name>addNodeGraphicsItem</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Add node graphics item to the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="139" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9fac77def346ae6e61aa16d00ea05e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::removeNodeGraphicsItem</definition>
+        <argsstring>(ColorMapEditor1DNode *node)</argsstring>
+        <name>removeNodeGraphicsItem</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Remove node graphics item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to node to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="73" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="154" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a70d3f245e6915ec27bbff2c93e8d2487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::drawBackground</definition>
+        <argsstring>(QPainter *painter, const QRectF &amp;rect) override</argsstring>
+        <name>drawBackground</name>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Draws the editor background elements (axes etc.) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>painter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to painter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="80" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="170" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a146688810b60903bee38653d49143449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QImage</type>
+        <definition>QImage mv::gui::ColorMapEditor1DWidget::getColorMap</definition>
+        <argsstring>()</argsstring>
+        <name>getColorMap</name>
+        <briefdescription>
+<para>Get the color map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Color map image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="86" column="12" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ab760e21d1cdfb471b79a04907a7d152b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::selectNode</definition>
+        <argsstring>(ColorMapEditor1DNode *node)</argsstring>
+        <name>selectNode</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Select a single node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="92" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a59a6eeb8cf8767fc0456ef6596a8c96a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVector&lt; <ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> * &gt; &amp;</type>
+        <definition>QVector&lt; ColorMapEditor1DNode * &gt; &amp; mv::gui::ColorMapEditor1DWidget::getNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNodes</name>
+        <briefdescription>
+<para>Get nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nodes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="100" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a2ade48ac865fe98dc6aaa8856263515d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const QVector&lt; <ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> * &gt; &amp;</type>
+        <definition>const QVector&lt; ColorMapEditor1DNode * &gt; &amp; mv::gui::ColorMapEditor1DWidget::getNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodes</name>
+        <briefdescription>
+<para>Get nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nodes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="106" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a75028a1d1043be581064e4d90a90191d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+        <definition>ColorMapEditor1DNode * mv::gui::ColorMapEditor1DWidget::getCurrentNode</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentNode</name>
+        <briefdescription>
+<para>Get current node (if one is selected) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to current node (if any) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="112" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a99a561b884a854dfd085e97f24cd8ae6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF mv::gui::ColorMapEditor1DWidget::getGraphRectangle</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraphRectangle</name>
+        <briefdescription>
+<para>Get graph rectangle (in which the nodes reside) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Graph rectangle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="118" column="12" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a22135a59e739445e35d9f8dc64c3a988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref> &amp;</type>
+        <definition>ColorMapEditor1DAction&amp; mv::gui::ColorMapEditor1DWidget::getColorMapEditor1DAction</definition>
+        <argsstring>()</argsstring>
+        <name>getColorMapEditor1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="122" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ad0b39678f506f8b9dc2b589dfc31978c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::colorMapChanged</definition>
+        <argsstring>(const QImage &amp;colorMap)</argsstring>
+        <name>colorMapChanged</name>
+        <param>
+          <type>const QImage &amp;</type>
+          <declname>colorMap</declname>
+        </param>
+        <briefdescription>
+<para>Current color map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals that the color map changed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to color map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="139" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a1deeeb4966b37eca38cb57e2052830cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapEditor1DWidget::currentNodeChanged</definition>
+        <argsstring>(ColorMapEditor1DNode *currentNode)</argsstring>
+        <name>currentNodeChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref> *</type>
+          <declname>currentNode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current node changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentNode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the current node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="145" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Color map editor one-dimensional widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Widget class for drawing the one-dimensional color map editor</para>
+<para><simplesect kind="author"><para>Thomas Kroes and Mitchell M. de Boer </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::ColorMapEditor1DWidget</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QGraphicsView</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::ColorMapEditor1DWidget</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" line="28" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapEditor1DWidget.h" bodystart="29" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ac18417ad4654eca361b07b627210f473" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_colorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa00a1156b5cfb2f3b4e0d6563308ed2d" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_colorMapEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa50eb0f66751f231542bce945b3b8a39" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_currentNode</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a7fb34acd9c7000201facd911d8b5ddec" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_graphRectangle</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a1919b1ff7501cec6c9739c98c5111202" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_margins</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a5a44694065a09937c065d3a38724529f" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_nodes</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a7509d5f8a27aedac265b140154b1a88f" prot="private" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>_scene</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a11909983dd1bb48636eaaeb93214dc5a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>addNodeAtScenePosition</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9eb11514d914ccd8d036701618534682" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>addNodeGraphicsItem</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ad0b39678f506f8b9dc2b589dfc31978c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>colorMapChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae96004f40de713f8e31a0d64cb26bdc8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>ColorMapEditor1DWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a1deeeb4966b37eca38cb57e2052830cd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>currentNodeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a70d3f245e6915ec27bbff2c93e8d2487" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>drawBackground</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae5da1713f787013c43fabd5e40aa189b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>eventFilter</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a146688810b60903bee38653d49143449" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a22135a59e739445e35d9f8dc64c3a988" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getColorMapEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a75028a1d1043be581064e4d90a90191d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getCurrentNode</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a99a561b884a854dfd085e97f24cd8ae6" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getGraphRectangle</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a59a6eeb8cf8767fc0456ef6596a8c96a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getNodes</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a2ade48ac865fe98dc6aaa8856263515d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>getNodes</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9fac77def346ae6e61aa16d00ea05e26" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>removeNodeGraphicsItem</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ab760e21d1cdfb471b79a04907a7d152b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>selectNode</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9afb2ae40535bd486252e23ab1f1fa46" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>showEvent</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a12df17c1644b711a4d50e98c959faf1f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapEditor1DWidget</scope><name>~ColorMapEditor1DWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

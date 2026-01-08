@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1LoggingModel_1_1FunctionItem" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::LoggingModel::FunctionItem</compoundname>
+    <basecompoundref refid="classmv_1_1LoggingModel_1_1Item" prot="public" virt="non-virtual">mv::LoggingModel::Item</basecompoundref>
+    <includes refid="LoggingModel_8h" local="no">LoggingModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1LoggingModel_1_1FunctionItem_1aa484d21d0c018186012ab3350bcbbb77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::LoggingModel::FunctionItem::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="236" column="18" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.cpp" bodystart="168" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LoggingModel_1_1FunctionItem_1a68b2aac0c971560a98c8b61f7a87ac75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::LoggingModel::Item::Item</definition>
+        <argsstring>(LoggingModel &amp;loggingModel, const util::MessageRecord &amp;messageRecord)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classmv_1_1LoggingModel" kindref="compound">LoggingModel</ref> &amp;</type>
+          <declname>loggingModel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmv_1_1util_1_1MessageRecord" kindref="compound">util::MessageRecord</ref> &amp;</type>
+          <declname>messageRecord</declname>
+        </param>
+        <briefdescription>
+<para>No need to override base constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="230" column="9" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1LoggingModel_1_1FunctionItem_1af57f3775d741b7ff1fc242fe1b9e5d91" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>static QVariant mv::LoggingModel::FunctionItem::headerData</definition>
+        <argsstring>(Qt::Orientation orientation, int role)</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>orientation</computeroutput> and <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal/vertical </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="244" column="25" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.h" bodystart="244" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard model item class for displaying the message function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::LoggingModel::Item</label>
+        <link refid="classmv_1_1LoggingModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::LoggingModel::FunctionItem</label>
+        <link refid="classmv_1_1LoggingModel_1_1FunctionItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::LoggingModel::Item</label>
+        <link refid="classmv_1_1LoggingModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::LoggingModel::FunctionItem</label>
+        <link refid="classmv_1_1LoggingModel_1_1FunctionItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="226" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.h" bodystart="226" bodyend="256"/>
+    <listofallmembers>
+      <member refid="classmv_1_1LoggingModel_1_1FunctionItem_1aa484d21d0c018186012ab3350bcbbb77" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>data</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1Item_1af3570bdbac2af13daa5dfce89efda8db" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>getLoggingModel</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1Item_1a115ecd492530c9fc0df1aa07e593f34a" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>getLoggingModel</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1Item_1a97ad0feaf8324a32ad3c080d4ba58a29" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>getMessageRecord</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1FunctionItem_1af57f3775d741b7ff1fc242fe1b9e5d91" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>headerData</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1FunctionItem_1a68b2aac0c971560a98c8b61f7a87ac75" prot="public" virt="non-virtual"><scope>mv::LoggingModel::FunctionItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1LoggingModel_1_1Item_1a68b2aac0c971560a98c8b61f7a87ac75" prot="public" virt="non-virtual" ambiguityscope="mv::LoggingModel::Item::"><scope>mv::LoggingModel::FunctionItem</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

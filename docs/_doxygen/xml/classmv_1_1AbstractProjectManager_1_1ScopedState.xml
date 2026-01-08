@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractProjectManager_1_1ScopedState" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractProjectManager::ScopedState</compoundname>
+    <includes refid="AbstractProjectManager_8h" local="no">AbstractProjectManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractProjectManager_1_1ScopedState_1a091f23d3969f90c6e372d246fae907ac" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractProjectManager" kindref="compound">AbstractProjectManager</ref> *</type>
+        <definition>AbstractProjectManager* mv::AbstractProjectManager::ScopedState::_projectManager</definition>
+        <argsstring></argsstring>
+        <name>_projectManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractProjectManager.h" line="100" column="32" bodyfile="Docs/external/core/ManiVault/src/AbstractProjectManager.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractProjectManager_1_1ScopedState_1a06ef2e3f363b1a63efab9c65e6eb3d46" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractProjectManager_1af72cbffaf71efa08ad819ebd8af0cc17" kindref="member">State</ref></type>
+        <definition>State mv::AbstractProjectManager::ScopedState::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+<para>Pointer to project manager for which to set the state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractProjectManager.h" line="101" column="33" bodyfile="Docs/external/core/ManiVault/src/AbstractProjectManager.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractProjectManager_1_1ScopedState_1a59ccc7a5649eb0fce7eba63236bac2dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractProjectManager::ScopedState::ScopedState</definition>
+        <argsstring>(AbstractProjectManager *projectManager, const State &amp;state)</argsstring>
+        <name>ScopedState</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractProjectManager" kindref="compound">AbstractProjectManager</ref> *</type>
+          <declname>projectManager</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1AbstractProjectManager_1af72cbffaf71efa08ad819ebd8af0cc17" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Construct with initialization state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to project manager for which to set the state </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State at scope begin (reverts to idle when the object gets out of scope) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractProjectManager.h" line="84" column="9" bodyfile="Docs/external/core/ManiVault/src/AbstractProjectManager.h" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractProjectManager_1_1ScopedState_1adb6b4d60c1395a784be2e415c876858d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractProjectManager::ScopedState::~ScopedState</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedState</name>
+        <briefdescription>
+<para>Revert to idle when object goes out of scope. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractProjectManager.h" line="94" column="9" bodyfile="Docs/external/core/ManiVault/src/AbstractProjectManager.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Set state for the duration of the enveloping scope, reverts to idle when the object gets out of scope. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Docs/external/core/ManiVault/src/AbstractProjectManager.h" line="76" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractProjectManager.h" bodystart="76" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractProjectManager_1_1ScopedState_1a091f23d3969f90c6e372d246fae907ac" prot="private" virt="non-virtual"><scope>mv::AbstractProjectManager::ScopedState</scope><name>_projectManager</name></member>
+      <member refid="classmv_1_1AbstractProjectManager_1_1ScopedState_1a06ef2e3f363b1a63efab9c65e6eb3d46" prot="private" virt="non-virtual"><scope>mv::AbstractProjectManager::ScopedState</scope><name>_state</name></member>
+      <member refid="classmv_1_1AbstractProjectManager_1_1ScopedState_1a59ccc7a5649eb0fce7eba63236bac2dd" prot="public" virt="non-virtual"><scope>mv::AbstractProjectManager::ScopedState</scope><name>ScopedState</name></member>
+      <member refid="classmv_1_1AbstractProjectManager_1_1ScopedState_1adb6b4d60c1395a784be2e415c876858d" prot="public" virt="non-virtual"><scope>mv::AbstractProjectManager::ScopedState</scope><name>~ScopedState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

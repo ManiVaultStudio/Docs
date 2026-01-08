@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractManager" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsManager" prot="public" virt="non-virtual">mv::AbstractActionsManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDataHierarchyManager" prot="public" virt="non-virtual">mv::AbstractDataHierarchyManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDataManager" prot="public" virt="non-virtual">mv::AbstractDataManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractErrorManager" prot="public" virt="non-virtual">mv::AbstractErrorManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractEventManager" prot="public" virt="non-virtual">mv::AbstractEventManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHelpManager" prot="public" virt="non-virtual">mv::AbstractHelpManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginManager" prot="public" virt="non-virtual">mv::AbstractPluginManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractProjectManager" prot="public" virt="non-virtual">mv::AbstractProjectManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractScriptingManager" prot="public" virt="non-virtual">mv::AbstractScriptingManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractSettingsManager" prot="public" virt="non-virtual">mv::AbstractSettingsManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractTaskManager" prot="public" virt="non-virtual">mv::AbstractTaskManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractThemeManager" prot="public" virt="non-virtual">mv::AbstractThemeManager</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractWorkspaceManager" prot="public" virt="non-virtual">mv::AbstractWorkspaceManager</derivedcompoundref>
+    <includes refid="AbstractManager_8h" local="no">AbstractManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractManager_1aeb45287cc19a6210aca55db0070e4afc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="212" column="29" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractManager_1a9dd4da7f8a928779391815810e27fd16" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1LockingAction" kindref="compound">gui::LockingAction</ref> *</type>
+        <definition>gui::LockingAction* mv::AbstractManager::_lockingAction</definition>
+        <argsstring></argsstring>
+        <name>_lockingAction</name>
+        <briefdescription>
+<para>Whether the manager is initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="213" column="28" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractManager_1aeb03640f232ed77a93da6dcf1e20e9a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::_coreIsDestroyed</definition>
+        <argsstring></argsstring>
+        <name>_coreIsDestroyed</name>
+        <briefdescription>
+<para>Manager locking action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="214" column="29" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractManager_1a0e45be5091a3f1b3a1371ae78ec99830" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::_isInitializing</definition>
+        <argsstring></argsstring>
+        <name>_isInitializing</name>
+        <briefdescription>
+<para>Boolean determining whether the core is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="215" column="29" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractManager_1a8f532eec4172f3bad2e92439427c8725" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::_isResetting</definition>
+        <argsstring></argsstring>
+        <name>_isResetting</name>
+        <briefdescription>
+<para>Boolean determining whether the manager is being initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="216" column="29" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1AbstractManager_1a4107254ac74f90d4f91e810d755b98c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Core</definition>
+        <argsstring></argsstring>
+        <name>Core</name>
+        <param>
+          <type><ref refid="classmv_1_1Core" kindref="compound">Core</ref></type>
+        </param>
+        <briefdescription>
+<para>Boolean determining whether the manager is resetting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="218" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractManager::AbstractManager</definition>
+        <argsstring>(QObject *parent, const QString &amp;name=&quot;&quot;)</argsstring>
+        <name>AbstractManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object and <computeroutput>name</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Manager name (serialization name) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="40" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="40" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractManager::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="classmv_1_1AbstractTaskManager_1ab989aae9ef1202d1d2c0b776b9e9e393">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1AbstractThemeManager_1aeffc851b10f5be59ee54b0f961b381ef">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1ActionsManager_1a5a173f98615d19f176b3085e39a24959">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1ae64390fb1b665af6e64a24103fcd1553">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a4679fb93d5a9d28a0cfc6f61db6310ff">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1ErrorManager_1a9f006f4f4f8607e7038a1661fb1ebcff">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1EventManager_1ab3d65576ded614e594ffcfa97edbf935">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1HelpManager_1a74f5bcc53667d637e98ee5852bdff16f">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1PluginManager_1a98baa8bfd7fae6a9728b6bfa671416e0">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1ProjectManager_1a7d6b19196749807c2ea321e237ccf554">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1ScriptingManager_1a20d496beacc43f90aa04663f42b1d0c8">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1SettingsManager_1a290171631652f515e338229f5e701aa7">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1TaskManager_1ad934baaad24158ea5a836d80e214b0fd">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1ThemeManager_1aa08f69fc2a77a220f09f909385b95fff">initialize</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1aee42d8f39f2abe000c0042c81c63b9d8">initialize</reimplementedby>
+        <briefdescription>
+<para>Perform manager startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="52" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::beginReset</definition>
+        <argsstring>()</argsstring>
+        <name>beginReset</name>
+        <briefdescription>
+<para>Begin reset operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="57" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractManager::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classmv_1_1ActionsManager_1a1a270688864358eda1dffd0f00a40a7e">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1afb3a46cc1f061f4a0a7125e064223990">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1ab3dfde3a91dbb5ae8690953214c6b573">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1ErrorManager_1aba97eeef4ea49fc12f9380c6b4ee3b5b">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1EventManager_1a63439f834b5f25b83574ccc4a6280048">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1HelpManager_1a8247523b2bd3eedf6a2a5167941b5ea6">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1PluginManager_1aa3f2aa88086e6afd3bc2e8838ececc49">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1ProjectManager_1a09b994594fc1b32b7042a68163e7afea">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1ScriptingManager_1a2f9cfbf48149c9cc81d9d887da8040a1">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1SettingsManager_1a48f7d814a5cb49228c8fe9b3833efd0e">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1TaskManager_1aab62a95f19df55ebb8b1e5e999ef3098">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1ThemeManager_1a676105bb0541bef3c080ac16da44fb97">reset</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a68c038f970042ec7f0e699a86273d2fa">reset</reimplementedby>
+        <briefdescription>
+<para>Resets the contents of the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="68" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="68" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::endReset</definition>
+        <argsstring>()</argsstring>
+        <name>endReset</name>
+        <briefdescription>
+<para>End reset operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::beginInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>beginInitialization</name>
+        <briefdescription>
+<para>Begin the initialization process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="89" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="89" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::endInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>endInitialization</name>
+        <briefdescription>
+<para>End the initialization process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="105" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::isInitialized</definition>
+        <argsstring>() const</argsstring>
+        <name>isInitialized</name>
+        <briefdescription>
+<para>Get whether the manager is initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager is initialized or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="120" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::isInitializing</definition>
+        <argsstring>() const</argsstring>
+        <name>isInitializing</name>
+        <briefdescription>
+<para>Get whether the manager is initializing or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager is initializing or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="128" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::isResetting</definition>
+        <argsstring>() const</argsstring>
+        <name>isResetting</name>
+        <briefdescription>
+<para>Get whether the manager is resetting or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager is resetting or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="136" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>QIcon</type>
+        <definition>virtual QIcon mv::AbstractManager::getIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getIcon</name>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a0d424d718991a40cc63e821e382fece2">getIcon</reimplementedby>
+        <briefdescription>
+<para>Get manager icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Icon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="144" column="19" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::AbstractManager::getSettingsPrefix</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettingsPrefix</name>
+        <briefdescription>
+<para>Get manager settings prefix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Settings manager prefix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="154" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1LockingAction" kindref="compound">gui::LockingAction</ref> &amp;</type>
+        <definition>gui::LockingAction&amp; mv::AbstractManager::getLockingAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLockingAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="160" column="24" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::AbstractManager::mayLock</definition>
+        <argsstring>() const</argsstring>
+        <name>mayLock</name>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1ad7c853bb3c80b84f6e45164dc6851064">mayLock</reimplementedby>
+        <briefdescription>
+<para>Get whether the manager be locked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager be locked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="168" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::AbstractManager::mayUnlock</definition>
+        <argsstring>() const</argsstring>
+        <name>mayUnlock</name>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a627610fbe42a7a4ea02415ed0fb80a3c">mayUnlock</reimplementedby>
+        <briefdescription>
+<para>Get whether the manager be unlocked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager be unlocked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="176" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractManager::isCoreDestroyed</definition>
+        <argsstring>() const</argsstring>
+        <name>isCoreDestroyed</name>
+        <briefdescription>
+<para>Establish whether the core is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the core is destroyed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="193" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::setCoreIsDestroyed</definition>
+        <argsstring>()</argsstring>
+        <name>setCoreIsDestroyed</name>
+        <briefdescription>
+<para>Mark core as destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="183" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="183" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::managerAboutToBeInitialized</definition>
+        <argsstring>()</argsstring>
+        <name>managerAboutToBeInitialized</name>
+        <briefdescription>
+<para>Signals that the initialization process has begun. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::managerInitialized</definition>
+        <argsstring>()</argsstring>
+        <name>managerInitialized</name>
+        <briefdescription>
+<para>Signals that the initialization process has ended. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::managerAboutToBeReset</definition>
+        <argsstring>()</argsstring>
+        <name>managerAboutToBeReset</name>
+        <briefdescription>
+<para>Signals that the manager is about to be reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="206" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractManager::managerReset</definition>
+        <argsstring>()</argsstring>
+        <name>managerReset</name>
+        <briefdescription>
+<para>Signals that the manager has been reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="209" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract manager. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base abstract manager class for the core.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="26">
+        <label>mv::AbstractThemeManager</label>
+        <link refid="classmv_1_1AbstractThemeManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::DataHierarchyManager</label>
+        <link refid="classmv_1_1DataHierarchyManager"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mv::AbstractTaskManager</label>
+        <link refid="classmv_1_1AbstractTaskManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>mv::WorkspaceManager</label>
+        <link refid="classmv_1_1WorkspaceManager"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mv::PluginManager</label>
+        <link refid="classmv_1_1PluginManager"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::AbstractErrorManager</label>
+        <link refid="classmv_1_1AbstractErrorManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mv::EventManager</label>
+        <link refid="classmv_1_1EventManager"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mv::AbstractSettingsManager</label>
+        <link refid="classmv_1_1AbstractSettingsManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::AbstractDataHierarchyManager</label>
+        <link refid="classmv_1_1AbstractDataHierarchyManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="4">
+        <label>mv::AbstractActionsManager</label>
+        <link refid="classmv_1_1AbstractActionsManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mv::AbstractEventManager</label>
+        <link refid="classmv_1_1AbstractEventManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mv::ThemeManager</label>
+        <link refid="classmv_1_1ThemeManager"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::ActionsManager</label>
+        <link refid="classmv_1_1ActionsManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mv::AbstractScriptingManager</label>
+        <link refid="classmv_1_1AbstractScriptingManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mv::AbstractPluginManager</label>
+        <link refid="classmv_1_1AbstractPluginManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::ErrorManager</label>
+        <link refid="classmv_1_1ErrorManager"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::AbstractDataManager</label>
+        <link refid="classmv_1_1AbstractDataManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mv::ProjectManager</label>
+        <link refid="classmv_1_1ProjectManager"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::DataManager</label>
+        <link refid="classmv_1_1DataManager"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mv::AbstractProjectManager</label>
+        <link refid="classmv_1_1AbstractProjectManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mv::AbstractHelpManager</label>
+        <link refid="classmv_1_1AbstractHelpManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>mv::AbstractWorkspaceManager</label>
+        <link refid="classmv_1_1AbstractWorkspaceManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mv::SettingsManager</label>
+        <link refid="classmv_1_1SettingsManager"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mv::HelpManager</label>
+        <link refid="classmv_1_1HelpManager"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mv::TaskManager</label>
+        <link refid="classmv_1_1TaskManager"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mv::ScriptingManager</label>
+        <link refid="classmv_1_1ScriptingManager"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractManager.h" line="29" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractManager.h" bodystart="30" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractManager_1aeb03640f232ed77a93da6dcf1e20e9a5" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>_coreIsDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1aeb45287cc19a6210aca55db0070e4afc" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>_initialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1a0e45be5091a3f1b3a1371ae78ec99830" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>_isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8f532eec4172f3bad2e92439427c8725" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>_isResetting</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9dd4da7f8a928779391815810e27fd16" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>_lockingAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1a4107254ac74f90d4f91e810d755b98c2" prot="private" virt="non-virtual"><scope>mv::AbstractManager</scope><name>Core</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

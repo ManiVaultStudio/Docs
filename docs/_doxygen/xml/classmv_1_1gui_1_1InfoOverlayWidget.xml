@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1InfoOverlayWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::InfoOverlayWidget</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1InfoWidget" prot="public" virt="non-virtual">mv::gui::InfoWidget</basecompoundref>
+    <includes refid="InfoOverlayWidget_8h" local="no">InfoOverlayWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1InfoOverlayWidget_1a81d876fb9cf6345297c61ef5dce99bd2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1util_1_1WidgetOverlayer" kindref="compound">mv::util::WidgetOverlayer</ref></type>
+        <definition>mv::util::WidgetOverlayer mv::gui::InfoOverlayWidget::_widgetOverlayer</definition>
+        <argsstring></argsstring>
+        <name>_widgetOverlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="51" column="33" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1InfoOverlayWidget_1a7a2570ffeb1b142226eabf7a6529b9a2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1util_1_1WidgetFader" kindref="compound">mv::util::WidgetFader</ref></type>
+        <definition>mv::util::WidgetFader mv::gui::InfoOverlayWidget::_widgetFader</definition>
+        <argsstring></argsstring>
+        <name>_widgetFader</name>
+        <briefdescription>
+<para>Utility for layering on top of the target widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="52" column="33" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1InfoOverlayWidget_1a3f98bf16449f8b914d49c3eab5f70819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::InfoOverlayWidget::InfoOverlayWidget</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>InfoOverlayWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.cpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1InfoOverlayWidget_1a43342673b98d83c54effcf1289345718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::InfoOverlayWidget::InfoOverlayWidget</definition>
+        <argsstring>(QWidget *parent, const QIcon &amp;icon, const QString &amp;title, const QString &amp;description=&quot;&quot;)</argsstring>
+        <name>InfoOverlayWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct with \parent, <computeroutput>icon</computeroutput>, <computeroutput>title</computeroutput>, <computeroutput>description</computeroutput>, <computeroutput>backgroundColor</computeroutput> and <computeroutput>textColor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the overlay </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Overlay description </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="42" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1InfoOverlayWidget_1a84853edad53a8efac20f3606ac59227c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1WidgetFader" kindref="compound">util::WidgetFader</ref> &amp;</type>
+        <definition>mv::util::WidgetFader &amp; mv::gui::InfoOverlayWidget::getWidgetFader</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetFader</name>
+        <briefdescription>
+<para>Get widget fader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to widget fader </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="48" column="23" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Info overlay widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Overlays the parent widget with an info widget (and synchronizes with its geometry) .</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::InfoWidget</label>
+        <link refid="classmv_1_1gui_1_1InfoWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::InfoOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1InfoOverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::InfoWidget</label>
+        <link refid="classmv_1_1gui_1_1InfoWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::InfoOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1InfoOverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/InfoOverlayWidget.h" bodystart="26" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1InfoOverlayWidget_1a7a2570ffeb1b142226eabf7a6529b9a2" prot="private" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>_widgetFader</name></member>
+      <member refid="classmv_1_1gui_1_1InfoOverlayWidget_1a81d876fb9cf6345297c61ef5dce99bd2" prot="private" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>_widgetOverlayer</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a8ec7abd57962a82d658032f94b776176" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>backgroundColorChanged</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a9d1759e2fefd504f065c42e78d89f2c2" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>backgroundColorRoleChanged</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a12e69577a9bf1211ef9bcdc29ba1c215" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>foregroundColorChanged</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a069b8b1f76e75765e4dfb6067ce60d18" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>foregroundColorRoleChanged</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1af9ca46a79e2505132c7b003c51301665" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>getBackgroundColor</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a4c2beee40a848fda10a04f018ae6d133" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>getBackgroundColorRole</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1ac8a093b4cfcbd85a2a4d5d2346a056d8" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>getForegroundColor</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a43642c221a19da2252efc61ef96fa89d" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>getForegroundColorRole</name></member>
+      <member refid="classmv_1_1gui_1_1InfoOverlayWidget_1a84853edad53a8efac20f3606ac59227c" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>getWidgetFader</name></member>
+      <member refid="classmv_1_1gui_1_1InfoOverlayWidget_1a3f98bf16449f8b914d49c3eab5f70819" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>InfoOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1InfoOverlayWidget_1a43342673b98d83c54effcf1289345718" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>InfoOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a5c91334b27c4aeec6657824361c9afe8" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>InfoWidget</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1ae8b7183cb873800ff562ea8ec9ddf7ea" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>InfoWidget</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a47b643780b45e67d85118bb85a63b5c4" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>set</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a1c7cccc56173dac0d65381124c61c58f" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setBackgroundColor</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a0a0fa8c49ea4a718ea8a08a6e7b614f9" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setBackgroundColorRole</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a4b2f892b73446c17d642a04c8c3d62f7" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setColorRoles</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a993f79781e6cf579802c4d82d1800943" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setColors</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a01a56682a4cb09099527d6dcba078f06" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setForegroundColor</name></member>
+      <member refid="classmv_1_1gui_1_1InfoWidget_1a590e3a22297dde832df9c663d51550f4" prot="public" virt="non-virtual"><scope>mv::gui::InfoOverlayWidget</scope><name>setForegroundColorRole</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

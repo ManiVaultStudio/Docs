@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classDatasetsToRemoveModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>DatasetsToRemoveModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItemModel</basecompoundref>
+    <includes refid="DatasetsToRemoveModel_8h" local="no">DatasetsToRemoveModel.h</includes>
+    <innerclass refid="classDatasetsToRemoveModel_1_1DatasetIdItem" prot="private">DatasetsToRemoveModel::DatasetIdItem</innerclass>
+    <innerclass refid="classDatasetsToRemoveModel_1_1InfoItem" prot="private">DatasetsToRemoveModel::InfoItem</innerclass>
+    <innerclass refid="classDatasetsToRemoveModel_1_1Item" prot="public">DatasetsToRemoveModel::Item</innerclass>
+    <innerclass refid="classDatasetsToRemoveModel_1_1NameItem" prot="private">DatasetsToRemoveModel::NameItem</innerclass>
+    <innerclass refid="classDatasetsToRemoveModel_1_1Row" prot="protected">DatasetsToRemoveModel::Row</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801aa43df19ab689c970321e2ed422ba81fb" prot="public">
+          <name>Name</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a7ffa0b120357646795ee7817f03392f6" prot="public">
+          <name>DatasetId</name>
+          <briefdescription>
+<para>Name of the dataset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a9e0ef4d88e9bb792d05c1b5a2c14ca91" prot="public">
+          <name>Info</name>
+          <briefdescription>
+<para>Globally unique dataset identifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a603ce5be6934bb9a9e3b1856026f7628" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para><ref refid="classDatasetsToRemoveModel_1_1Item" kindref="compound">Item</ref> info. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Dataset columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" bodystart="30" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1acdc8adac0593e6cbcdb2112cd98ace36" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DatasetsToRemoveModel::DatasetsToRemoveModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>DatasetsToRemoveModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="271" column="14" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="261" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a8e1a08fc989e14a619406741c6dfec76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant DatasetsToRemoveModel::headerData</definition>
+        <argsstring>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+<para>Get header data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Section </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="280" column="14" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="280" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a85777241a9a24dba38461008695e4b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::setDatasets</definition>
+        <argsstring>(mv::Datasets datasets)</argsstring>
+        <name>setDatasets</name>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref></type>
+          <declname>datasets</declname>
+        </param>
+        <briefdescription>
+<para>Set datasets to <computeroutput>datasets</computeroutput> and build the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Datasets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="286" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="300" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a4e615182acf7c95b8cad69358748713b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref></type>
+        <definition>mv::Datasets DatasetsToRemoveModel::getDatasetsToRemove</definition>
+        <argsstring>() const</argsstring>
+        <name>getDatasetsToRemove</name>
+        <briefdescription>
+<para>Get datasets to remove (these are the datasets checked/selected in the selection tree) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Datasets to remove (bottom-up) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="292" column="18" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="386" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a717e8bb39d59fab61789f1e58a057829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ItemType</type>
+            <defval><ref refid="classDatasetsToRemoveModel_1_1Item" kindref="compound">Item</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>ItemType *</type>
+        <definition>ItemType* DatasetsToRemoveModel::getItem</definition>
+        <argsstring>(const QModelIndex &amp;modelIndex)</argsstring>
+        <name>getItem</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>modelIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get item of <computeroutput>ItemType</computeroutput> by <computeroutput>modelIndex</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modelIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDatasetsToRemoveModel_1_1Item" kindref="compound">Item</ref> model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to item </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="300" column="14" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a866cbef4d70cdcaebe8d4b7e24595be5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::checkAll</definition>
+        <argsstring>()</argsstring>
+        <name>checkAll</name>
+        <briefdescription>
+<para>Check all items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="305" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="417" bodyend="421"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a25db6cdb1a3b126c7b315fff46e65506" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::addDataset</definition>
+        <argsstring>(mv::Dataset&lt; mv::DatasetImpl &gt; dataset, mv::Datasets selectedDatasets)</argsstring>
+        <name>addDataset</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">mv::DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref></type>
+          <declname>selectedDatasets</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>dataset</computeroutput> to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the data set to add </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selectedDatasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected datasets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="314" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="348" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a9837476ea3f06fd9ff4058a03e95d2ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::updateReadOnlyForAllNameItems</definition>
+        <argsstring>()</argsstring>
+        <name>updateReadOnlyForAllNameItems</name>
+        <briefdescription>
+<para>Updates the read-only state of all name items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="317" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="405" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a524d447be649a6e0f15f3dba7289809d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::setKeepDescendantsForAllNameItems</definition>
+        <argsstring>()</argsstring>
+        <name>setKeepDescendantsForAllNameItems</name>
+        <briefdescription>
+<para>Set keep descendants to <computeroutput>keepDescendants</computeroutput> for all name items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keepDescendants</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to keep descendants or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="323" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="411" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classDatasetsToRemoveModel_1a92dda50aaaeb728ce187a7c1d6c173e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DatasetsToRemoveModel::updateCheckStatesForAllNameItems</definition>
+        <argsstring>()</argsstring>
+        <name>updateCheckStatesForAllNameItems</name>
+        <briefdescription>
+<para>Updates the check states for all name items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="326" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.cpp" bodystart="423" bodyend="427"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Datasets to remove model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Standard item model for selecting datasets to remove from a model</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>DatasetsToRemoveModel</label>
+        <link refid="classDatasetsToRemoveModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>DatasetsToRemoveModel</label>
+        <link refid="classDatasetsToRemoveModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/private/DatasetsToRemoveModel.h" bodystart="24" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classDatasetsToRemoveModel_1a25db6cdb1a3b126c7b315fff46e65506" prot="private" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>addDataset</name></member>
+      <member refid="classDatasetsToRemoveModel_1a866cbef4d70cdcaebe8d4b7e24595be5" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>checkAll</name></member>
+      <member refid="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>Column</name></member>
+      <member refid="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a603ce5be6934bb9a9e3b1856026f7628" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>Count</name></member>
+      <member refid="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a7ffa0b120357646795ee7817f03392f6" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>DatasetId</name></member>
+      <member refid="classDatasetsToRemoveModel_1acdc8adac0593e6cbcdb2112cd98ace36" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>DatasetsToRemoveModel</name></member>
+      <member refid="classDatasetsToRemoveModel_1a4e615182acf7c95b8cad69358748713b" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>getDatasetsToRemove</name></member>
+      <member refid="classDatasetsToRemoveModel_1a717e8bb39d59fab61789f1e58a057829" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>getItem</name></member>
+      <member refid="classDatasetsToRemoveModel_1a8e1a08fc989e14a619406741c6dfec76" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>headerData</name></member>
+      <member refid="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801a9e0ef4d88e9bb792d05c1b5a2c14ca91" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>Info</name></member>
+      <member refid="classDatasetsToRemoveModel_1a5dae9922df5e0c70fbaa2809425fb801aa43df19ab689c970321e2ed422ba81fb" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>Name</name></member>
+      <member refid="classDatasetsToRemoveModel_1a85777241a9a24dba38461008695e4b59" prot="public" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>setDatasets</name></member>
+      <member refid="classDatasetsToRemoveModel_1a524d447be649a6e0f15f3dba7289809d" prot="private" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>setKeepDescendantsForAllNameItems</name></member>
+      <member refid="classDatasetsToRemoveModel_1a92dda50aaaeb728ce187a7c1d6c173e4" prot="private" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>updateCheckStatesForAllNameItems</name></member>
+      <member refid="classDatasetsToRemoveModel_1a9837476ea3f06fd9ff4058a03e95d2ae" prot="private" virt="non-virtual"><scope>DatasetsToRemoveModel</scope><name>updateReadOnlyForAllNameItems</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

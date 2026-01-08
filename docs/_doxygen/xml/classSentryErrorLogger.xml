@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSentryErrorLogger" kind="class" language="C++" prot="public">
+    <compoundname>SentryErrorLogger</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractErrorLogger" prot="public" virt="non-virtual">mv::AbstractErrorLogger</basecompoundref>
+    <includes refid="SentryErrorLogger_8h" local="no">SentryErrorLogger.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSentryErrorLogger_1ab5a5679cba338c4d5c22f463d2d4fab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SentryErrorLogger::SentryErrorLogger</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>SentryErrorLogger</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="24" column="5" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classSentryErrorLogger_1ae6ebac70bd59abd141a472a2e116f45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SentryErrorLogger::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractErrorLogger_1a3d5b8c9dc7101a494ca99d0958786e25">initialize</reimplements>
+        <briefdescription>
+<para>Connects to the error logging global settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="27" column="10" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSentryErrorLogger_1a3260d3fa2489ee5fe548a1aef6dea568" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString SentryErrorLogger::getCrashpadHandlerExecutableName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCrashpadHandlerExecutableName</name>
+        <briefdescription>
+<para>Get Crashpad handler executable name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name of the Crashpad handler executable name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="35" column="13" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="23" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classSentryErrorLogger_1a1abc257503f2e89bb66a6c1d92658ac0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SentryErrorLogger::start</definition>
+        <argsstring>() override</argsstring>
+        <name>start</name>
+        <reimplements refid="classmv_1_1AbstractErrorLogger_1ab04d8dafa12a635121c32abe48d2235e">start</reimplements>
+        <briefdescription>
+<para>Start error logging to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="38" column="10" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="59" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classSentryErrorLogger_1abe86cd052f1725bb112b9e276118bc12" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SentryErrorLogger::stop</definition>
+        <argsstring>() override</argsstring>
+        <name>stop</name>
+        <reimplements refid="classmv_1_1AbstractErrorLogger_1a2d2f939124474119e1acd65b8ccd27b7">stop</reimplements>
+        <briefdescription>
+<para>Shuts down the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="40" column="10" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classSentryErrorLogger_1a8a86427ba2a539aabbd10e6e3da32f0e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SentryErrorLogger::isDsnValid</definition>
+        <argsstring>() const override</argsstring>
+        <name>isDsnValid</name>
+        <reimplements refid="classmv_1_1AbstractErrorLogger_1a872d9202022720d04c2e65de62198676">isDsnValid</reimplements>
+        <briefdescription>
+<para>Get whether the Sentry data source name (DSN) is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the DSN is valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="52" column="10" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="157" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classSentryErrorLogger_1a07c875bba46e6890c595c1e0191d19bf" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString SentryErrorLogger::getReleaseString</definition>
+        <argsstring>()</argsstring>
+        <name>getReleaseString</name>
+        <briefdescription>
+<para>Get release string for Sentry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Release string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="46" column="20" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.cpp" bodystart="147" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sentry error logger class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For logging errors with Sentry.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>SentryErrorLogger</label>
+        <link refid="classSentryErrorLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractErrorLogger</label>
+        <link refid="classmv_1_1AbstractErrorLogger"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>SentryErrorLogger</label>
+        <link refid="classSentryErrorLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractErrorLogger</label>
+        <link refid="classmv_1_1AbstractErrorLogger"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" line="16" column="1" bodyfile="Docs/external/core/ManiVault/src/private/SentryErrorLogger.h" bodystart="17" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractErrorLogger_1a6bc75a16638515c49c84ae57f5deb2a5" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>AbstractErrorLogger</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a53ac99cebb221662792a2d0e838efe6a" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>addNotification</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a27d5996a9d52b3c3c43ae685317828de" prot="public" virt="virtual"><scope>SentryErrorLogger</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a34146a4c070bda98adcf1c1301c0b8d5" prot="public" virt="virtual"><scope>SentryErrorLogger</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a6389bfeccbcfb448a6c91ea26e593115" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getAskConsentDialogAction</name></member>
+      <member refid="classSentryErrorLogger_1a3260d3fa2489ee5fe548a1aef6dea568" prot="private" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getCrashpadHandlerExecutableName</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1adef132ec97aa8434022e2bba7e3c02a5" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getDsnAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a15486ff300ae3825a99b0b44b7e4e729" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getEnabledAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1ad87868774c853bcd631fd54c7073f6c7" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getLoggerName</name></member>
+      <member refid="classSentryErrorLogger_1a07c875bba46e6890c595c1e0191d19bf" prot="private" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getReleaseString</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a73e12837f73bad6b8cb36011088215b8" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getShowCrashReportDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a33fcb0298f7964cd1aece25b4490ec43" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>getUserHasOptedAction</name></member>
+      <member refid="classSentryErrorLogger_1ae6ebac70bd59abd141a472a2e116f45f" prot="public" virt="virtual"><scope>SentryErrorLogger</scope><name>initialize</name></member>
+      <member refid="classSentryErrorLogger_1a8a86427ba2a539aabbd10e6e3da32f0e" prot="private" virt="virtual"><scope>SentryErrorLogger</scope><name>isDsnValid</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a096e75bf520c441823d7e05396c963e0" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1aebdd1f5c8e90a745c3b80f4f109941cf" prot="protected" virt="non-virtual"><scope>SentryErrorLogger</scope><name>Notifications</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a5777cb58057b4508a01efb03964645ef" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>requestStart</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1aa5f6dd724082e1d32a162bf731427af1" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>requestStop</name></member>
+      <member refid="classSentryErrorLogger_1ab5a5679cba338c4d5c22f463d2d4fab8" prot="public" virt="non-virtual"><scope>SentryErrorLogger</scope><name>SentryErrorLogger</name></member>
+      <member refid="classSentryErrorLogger_1a1abc257503f2e89bb66a6c1d92658ac0" prot="private" virt="virtual"><scope>SentryErrorLogger</scope><name>start</name></member>
+      <member refid="classSentryErrorLogger_1abe86cd052f1725bb112b9e276118bc12" prot="private" virt="virtual"><scope>SentryErrorLogger</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

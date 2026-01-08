@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWorkspaceInventoryModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>WorkspaceInventoryModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItemModel</basecompoundref>
+    <includes refid="WorkspaceInventoryModel_8h" local="no">WorkspaceInventoryModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5af4d9a8ef00fd8a6e2cb990d5e311766c" prot="public">
+          <name>SummaryDelegate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5a817434295a673aed431435658b65d9a7" prot="public">
+          <name>Icon</name>
+          <briefdescription>
+<para>Shows a delegate item with title, description and tags. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5a49ee3087348e8d44e1feda1917443987" prot="public">
+          <name>Name</name>
+          <briefdescription>
+<para>Workspace icon. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5ab5a7adde1af5c87d7fd797b6245c2a39" prot="public">
+          <name>Description</name>
+          <briefdescription>
+<para>Workspace name. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5a189f63f277cd73395561651753563065" prot="public">
+          <name>Tags</name>
+          <briefdescription>
+<para>Workspace description. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5a2fb403e71d8ade2ba79af3f6c4695d09" prot="public">
+          <name>FilePath</name>
+          <briefdescription>
+<para>Workspace tags. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5aa1fa27779242b4902f7ae3bdd5c6d508" prot="public">
+          <name>Type</name>
+          <briefdescription>
+<para>Location of the workspace on disk. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Type of workspace (built-in or recent) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="21" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" bodystart="21" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classWorkspaceInventoryModel_1a663257ed350125cda8c03375a2fbd848" prot="public" static="yes" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" kindref="member">Column</ref>, QPair&lt; QString, QString &gt; &gt;</type>
+        <definition>QMap&lt; WorkspaceInventoryModel::Column, QPair&lt; QString, QString &gt; &gt; WorkspaceInventoryModel::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" kindref="member">WorkspaceInventoryModel::Column</ref>, QPair&lt;QString, QString&gt;&gt;({
+    { <ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5af4d9a8ef00fd8a6e2cb990d5e311766c" kindref="member">WorkspaceInventoryModel::Column::SummaryDelegate</ref>, { &quot;Summary&quot;, &quot;Workspace summary delegate column&quot; }},
+    { WorkspaceInventoryModel::Column::Icon, { &quot;Icon&quot;, &quot;Icon of the workspace&quot; }},
+    { WorkspaceInventoryModel::Column::Name, { &quot;Name&quot;, &quot;Name of the workspace&quot; }},
+    { WorkspaceInventoryModel::Column::Description, { &quot;Description&quot;, &quot;Description of the workspace&quot; }},
+    { WorkspaceInventoryModel::Column::Tags, { &quot;Tags&quot;, &quot;Workspace tags&quot; }},
+    { WorkspaceInventoryModel::Column::FilePath, { &quot;FilePath&quot;, &quot;Location of the workspace on disk&quot; }},
+    { WorkspaceInventoryModel::Column::Type, { &quot;Type&quot;, &quot;Type of workspace (built-in or recent)&quot; }}
+})</initializer>
+        <briefdescription>
+<para>Column name and tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="32" column="17" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWorkspaceInventoryModel_1a9d0de5e45aca62b914e5f46b3d64f4df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WorkspaceInventoryModel::WorkspaceInventoryModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>WorkspaceInventoryModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct workspace inventory model with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="40" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.cpp" bodystart="27" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classWorkspaceInventoryModel_1a61c0812bc570778df815f78d48ba1b22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorkspaceInventoryModel::synchronizeWithWorkspaceManager</definition>
+        <argsstring>()</argsstring>
+        <name>synchronizeWithWorkspaceManager</name>
+        <briefdescription>
+<para>Initializes the model from the contents of the workspace manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="45" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.cpp" bodystart="38" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Workspace inventory model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Model class which contains an inventory of all available workspaces.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WorkspaceInventoryModel</label>
+        <link refid="classWorkspaceInventoryModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QMap&lt; Column, QPair&lt; QString, QString &gt; &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>WorkspaceInventoryModel</label>
+        <link refid="classWorkspaceInventoryModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>columns</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="16" column="1" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" bodystart="17" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>Column</name></member>
+      <member refid="classWorkspaceInventoryModel_1a663257ed350125cda8c03375a2fbd848" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>columns</name></member>
+      <member refid="classWorkspaceInventoryModel_1a61c0812bc570778df815f78d48ba1b22" prot="private" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>synchronizeWithWorkspaceManager</name></member>
+      <member refid="classWorkspaceInventoryModel_1a9d0de5e45aca62b914e5f46b3d64f4df" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>WorkspaceInventoryModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

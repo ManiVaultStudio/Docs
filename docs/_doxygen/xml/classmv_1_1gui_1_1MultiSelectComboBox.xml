@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1MultiSelectComboBox" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::MultiSelectComboBox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QComboBox</basecompoundref>
+    <includes refid="MultiSelectComboBox_8h" local="no">MultiSelectComboBox.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1MultiSelectComboBox_1aff72a0d31a40d16129d67851c53660b3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::MultiSelectComboBox::_preventHidePopup</definition>
+        <argsstring></argsstring>
+        <name>_preventHidePopup</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="60" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1MultiSelectComboBox_1af35d2d2ed8dc67c22c6028ce4109e5c1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::MultiSelectComboBox::MultiSelectComboBox</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MultiSelectComboBox</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="31" column="14" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1MultiSelectComboBox_1a366b26ffa2e0914b0d1640d3fec73b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::MultiSelectComboBox::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Call this post QComboBox::setView() to setup connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1MultiSelectComboBox_1ac2d8a7dea6b101797576bbf3079f298c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::MultiSelectComboBox::hidePopup</definition>
+        <argsstring>() override</argsstring>
+        <name>hidePopup</name>
+        <briefdescription>
+<para>Override to customize popup hide behaviour. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="39" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.cpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1MultiSelectComboBox_1a2c9a9b9f0383d4fe37ae5f4adb199e04" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::MultiSelectComboBox::eventFilter</definition>
+        <argsstring>(QObject *watched, QEvent *event) override</argsstring>
+        <name>eventFilter</name>
+        <param>
+          <type>QObject *</type>
+          <declname>watched</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Called when <computeroutput>event</computeroutput> happens for <computeroutput>watched</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>watched</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to watched object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to event that occurred </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the event was handled or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="48" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.cpp" bodystart="37" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1MultiSelectComboBox_1a65d63a187c80372db5439df9a5b3b1a6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::MultiSelectComboBox::toggleItemCheckState</definition>
+        <argsstring>(const QModelIndex &amp;index) const</argsstring>
+        <name>toggleItemCheckState</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Toggle the check state of <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of which to toggle the check state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Multi-select combobox widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Allows to select multiple items during a single popup sessions.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QComboBox</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::MultiSelectComboBox</label>
+        <link refid="classmv_1_1gui_1_1MultiSelectComboBox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QComboBox</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::MultiSelectComboBox</label>
+        <link refid="classmv_1_1gui_1_1MultiSelectComboBox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" line="20" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/MultiSelectComboBox.h" bodystart="20" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1aff72a0d31a40d16129d67851c53660b3" prot="private" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>_preventHidePopup</name></member>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1a2c9a9b9f0383d4fe37ae5f4adb199e04" prot="protected" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>eventFilter</name></member>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1ac2d8a7dea6b101797576bbf3079f298c" prot="protected" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>hidePopup</name></member>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1a366b26ffa2e0914b0d1640d3fec73b99" prot="public" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>init</name></member>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1af35d2d2ed8dc67c22c6028ce4109e5c1" prot="public" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>MultiSelectComboBox</name></member>
+      <member refid="classmv_1_1gui_1_1MultiSelectComboBox_1a65d63a187c80372db5439df9a5b3b1a6" prot="private" virt="non-virtual"><scope>mv::gui::MultiSelectComboBox</scope><name>toggleItemCheckState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

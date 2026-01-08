@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1LinkedData" kind="class" language="C++" prot="public">
+    <compoundname>mv::LinkedData</compoundname>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <includes refid="LinkedData_8h" local="no">LinkedData.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1LinkedData_1a1f4b20b6a3d1e4f21c22f85e1c32e0fa" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::LinkedData::_sourceDataSet</definition>
+        <argsstring></argsstring>
+        <name>_sourceDataSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="121" column="16" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1LinkedData_1ada0f0b523206ff0606fb7129997ae84e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::LinkedData::_targetDataSet</definition>
+        <argsstring></argsstring>
+        <name>_targetDataSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="122" column="16" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1LinkedData_1adb1808e1c8672ab726d9cc03bedc5b83" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1SelectionMap" kindref="compound">SelectionMap</ref></type>
+        <definition>SelectionMap mv::LinkedData::_mapping</definition>
+        <argsstring></argsstring>
+        <name>_mapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="123" column="29" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1LinkedData_1aeeab1abbc4977590c7f25e562c63e009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::LinkedData::LinkedData</definition>
+        <argsstring>()</argsstring>
+        <name>LinkedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="96" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1aa9dddf9b0be9df1ae88478d4b46da071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::LinkedData::LinkedData</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;sourceDataSet, const Dataset&lt; DatasetImpl &gt; &amp;targetDataSet)</argsstring>
+        <name>LinkedData</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>sourceDataSet</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>targetDataSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="97" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="167" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1ad83487284cd837135245946a4082e5d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>const Dataset&lt;DatasetImpl&gt; mv::LinkedData::getSourceDataSet</definition>
+        <argsstring>() const</argsstring>
+        <name>getSourceDataSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="100" column="19" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1a4a69e2a6b599beba289efef9ddcf0454" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>const Dataset&lt;DatasetImpl&gt; mv::LinkedData::getTargetDataset</definition>
+        <argsstring>() const</argsstring>
+        <name>getTargetDataset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="101" column="19" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1aab86b4bf70e0e763288cbfa5465ff94e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1SelectionMap" kindref="compound">SelectionMap</ref> &amp;</type>
+        <definition>const SelectionMap &amp; mv::LinkedData::getMapping</definition>
+        <argsstring>() const</argsstring>
+        <name>getMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="103" column="24" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1ac2c5f7cc134fdd23fcfa3433036d9e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LinkedData::setMapping</definition>
+        <argsstring>(SelectionMap &amp;map)</argsstring>
+        <name>setMapping</name>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap" kindref="compound">SelectionMap</ref> &amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="105" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1a802ebe037e3e3c42145fd753fffc4b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LinkedData::setMapping</definition>
+        <argsstring>(SelectionMap &amp;&amp;map)</argsstring>
+        <name>setMapping</name>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap" kindref="compound">SelectionMap</ref> &amp;&amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="106" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1ac9b521af054d1526937360c9f6ae3ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::LinkedData::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="112" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="197" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LinkedData_1a97bfdbea6eaa2697166fa7dd91665e21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::LinkedData::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="118" column="17" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="210" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::LinkedData</label>
+        <link refid="classmv_1_1LinkedData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::LinkedData</label>
+        <link refid="classmv_1_1LinkedData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="93" column="1" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="94" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classmv_1_1LinkedData_1adb1808e1c8672ab726d9cc03bedc5b83" prot="private" virt="non-virtual"><scope>mv::LinkedData</scope><name>_mapping</name></member>
+      <member refid="classmv_1_1LinkedData_1a1f4b20b6a3d1e4f21c22f85e1c32e0fa" prot="private" virt="non-virtual"><scope>mv::LinkedData</scope><name>_sourceDataSet</name></member>
+      <member refid="classmv_1_1LinkedData_1ada0f0b523206ff0606fb7129997ae84e" prot="private" virt="non-virtual"><scope>mv::LinkedData</scope><name>_targetDataSet</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::LinkedData</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1LinkedData_1ac9b521af054d1526937360c9f6ae3ffc" prot="public" virt="virtual"><scope>mv::LinkedData</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LinkedData</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LinkedData</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getId</name></member>
+      <member refid="classmv_1_1LinkedData_1aab86b4bf70e0e763288cbfa5465ff94e" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getMapping</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1LinkedData_1ad83487284cd837135245946a4082e5d3" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getSourceDataSet</name></member>
+      <member refid="classmv_1_1LinkedData_1a4a69e2a6b599beba289efef9ddcf0454" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>getTargetDataset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::LinkedData</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::LinkedData</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1LinkedData_1aeeab1abbc4977590c7f25e562c63e009" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>LinkedData</name></member>
+      <member refid="classmv_1_1LinkedData_1aa9dddf9b0be9df1ae88478d4b46da071" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>LinkedData</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>operator==</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>setId</name></member>
+      <member refid="classmv_1_1LinkedData_1ac2c5f7cc134fdd23fcfa3433036d9e6d" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>setMapping</name></member>
+      <member refid="classmv_1_1LinkedData_1a802ebe037e3e3c42145fd753fffc4b87" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>setMapping</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::LinkedData</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1LinkedData_1a97bfdbea6eaa2697166fa7dd91665e21" prot="public" virt="virtual"><scope>mv::LinkedData</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LinkedData</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::LinkedData</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

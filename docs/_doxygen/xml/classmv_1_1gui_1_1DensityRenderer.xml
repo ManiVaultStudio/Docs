@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1DensityRenderer" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::DensityRenderer</compoundname>
+    <basecompoundref refid="classmv_1_1Renderer2D" prot="public" virt="non-virtual">mv::Renderer2D</basecompoundref>
+    <includes refid="DensityRenderer_8h" local="no">DensityRenderer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RenderMode</name>
+        <enumvalue id="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9daff52f1a965a67c27f1b73211c2d58bb7" prot="public">
+          <name>DENSITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9daff96d57794808cc88eadbfcd4b412b66" prot="public">
+          <name>LANDSCAPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="23" column="5" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a6dfbec4e630acb627c4867b24cc29eda" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::DensityRenderer::_isSelecting</definition>
+        <argsstring></argsstring>
+        <name>_isSelecting</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="82" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a52b9cb136271adf5ab3cf7a0bd33eeb6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::DensityRenderer::_hasColorMap</definition>
+        <argsstring></argsstring>
+        <name>_hasColorMap</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="83" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a0288f59abd5412dc1a79e913d9d22d98" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::gui::DensityRenderer::_shaderDensityDraw</definition>
+        <argsstring></argsstring>
+        <name>_shaderDensityDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="85" column="19" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a217206f5f663b399b3d34c38849f755b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::gui::DensityRenderer::_shaderIsoDensityDraw</definition>
+        <argsstring></argsstring>
+        <name>_shaderIsoDensityDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="86" column="19" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1aee3234681b839f79342af9e30d629c0f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DensityComputation" kindref="compound">DensityComputation</ref></type>
+        <definition>DensityComputation mv::gui::DensityRenderer::_densityComputation</definition>
+        <argsstring></argsstring>
+        <name>_densityComputation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="87" column="24" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a0be597da56d2b869719f46c986cdbba6" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D mv::gui::DensityRenderer::_colormap</definition>
+        <argsstring></argsstring>
+        <name>_colormap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="88" column="15" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1ada003d0f1bc011c85260f2c5343ac266" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+        <definition>Vector3f mv::gui::DensityRenderer::_colorMapRange</definition>
+        <argsstring></argsstring>
+        <name>_colorMapRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="90" column="14" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1ae382fd7fe81eb087c7a0c48ceccaa1a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9d" kindref="member">RenderMode</ref></type>
+        <definition>RenderMode mv::gui::DensityRenderer::_renderMode</definition>
+        <argsstring></argsstring>
+        <name>_renderMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="92" column="16" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1ab4dfa9f3de7e0ed624aac356ef533a5f" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint mv::gui::DensityRenderer::_VAO</definition>
+        <argsstring></argsstring>
+        <name>_VAO</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="94" column="13" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a80a0b3af7a4b3207aa672b62939384d0" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint mv::gui::DensityRenderer::_VBO</definition>
+        <argsstring></argsstring>
+        <name>_VBO</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="95" column="13" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DensityRenderer_1a411f40d003fc37e122e728aa804cb402" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint mv::gui::DensityRenderer::_EBO</definition>
+        <argsstring></argsstring>
+        <name>_EBO</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="96" column="13" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a3365018cd6e66feb2088bafed6915b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::DensityRenderer::DensityRenderer</definition>
+        <argsstring>(RenderMode renderMode, QWidget *sourceWidget=nullptr, QObject *parent=nullptr)</argsstring>
+        <name>DensityRenderer</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9d" kindref="member">RenderMode</ref></type>
+          <declname>renderMode</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>sourceWidget</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="27" column="5" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1ab0af0c674705dee76737ad78217dea62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::DensityRenderer::~DensityRenderer</definition>
+        <argsstring>() override</argsstring>
+        <name>~DensityRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="28" column="5" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a9e2faf2dc03bdbb370f43a441a365f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::resize</definition>
+        <argsstring>(QSize renderSize) override</argsstring>
+        <name>resize</name>
+        <reimplements refid="classmv_1_1Renderer_1a477fab21d8dd819618129367dc703fa0">resize</reimplements>
+        <param>
+          <type>QSize</type>
+          <declname>renderSize</declname>
+        </param>
+        <briefdescription>
+<para>Resize the renderer to <computeroutput>renderSize</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of the renderer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a050061fa8f082e484a4284e7c4d5327e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setDataBounds</definition>
+        <argsstring>(const QRectF &amp;dataBounds) override</argsstring>
+        <name>setDataBounds</name>
+        <reimplements refid="classmv_1_1Renderer2D_1a9e9c8dee85eb911726aabd67ddc2bd65">setDataBounds</reimplements>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>dataBounds</declname>
+        </param>
+        <briefdescription>
+<para>Set data bounds to <computeroutput>dataBounds</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="40" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a8b5f13b940731f0a27d514f8226f23e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QRectF</type>
+        <definition>QRectF mv::gui::DensityRenderer::computeWorldBounds</definition>
+        <argsstring>() const override</argsstring>
+        <name>computeWorldBounds</name>
+        <reimplements refid="classmv_1_1Renderer2D_1a8457f92662890392415652efedb4e695">computeWorldBounds</reimplements>
+        <briefdescription>
+<para>Update the world bounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="43" column="12" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="41" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a1b0fa7ca8d3eff1c05f1cb4c0a5de92a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setDensityComputationDataBounds</definition>
+        <argsstring>(const QRectF &amp;bounds)</argsstring>
+        <name>setDensityComputationDataBounds</name>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>bounds</declname>
+        </param>
+        <briefdescription>
+<para>Set density computation data boundss. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Density computation data bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="49" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a3af84699a8da6f8c5e1f8a156e36fde8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setRenderMode</definition>
+        <argsstring>(RenderMode renderMode)</argsstring>
+        <name>setRenderMode</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9d" kindref="member">RenderMode</ref></type>
+          <declname>renderMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="51" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a65fd158b337a1e74575857ffb931b82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setData</definition>
+        <argsstring>(const std::vector&lt; Vector2f &gt; *data)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="52" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a3a2b9a9115ae5a4e652e4462670e36fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setWeights</definition>
+        <argsstring>(const std::vector&lt; float &gt; *weights)</argsstring>
+        <name>setWeights</name>
+        <param>
+          <type>const std::vector&lt; float &gt; *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1ad659c6d3e95af358c8f021998c8a66b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setSigma</definition>
+        <argsstring>(const float sigma)</argsstring>
+        <name>setSigma</name>
+        <param>
+          <type>const float</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="54" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a89fef611af0e14d102ecbfb95a49ee5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::computeDensity</definition>
+        <argsstring>()</argsstring>
+        <name>computeDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="55" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1aa5d27f7e65a0b0bb81a281f891a58fa0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::gui::DensityRenderer::getMaxDensity</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="56" column="11" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a066a3d39682c69b3567a95e16f7eeab7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+        <definition>mv::Vector3f mv::gui::DensityRenderer::getColorMapRange</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorMapRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="57" column="14" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="114" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a90127d7efa06470a23d2c24f3c1e4baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setColormap</definition>
+        <argsstring>(const QImage &amp;image)</argsstring>
+        <name>setColormap</name>
+        <param>
+          <type>const QImage &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Loads a colormap from an image and loads as the current colormap for the landscape view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color map image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="64" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1ab6e2303783129c74be23eb6bce361e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="classmv_1_1Renderer_1ac4814134811de7e8102d64a31f7fa17a">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="66" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="129" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a9476929ad12a1370cd4c8a45e2435b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <reimplements refid="classmv_1_1Renderer_1a33a05c65321ecac20b88ffe7fa45187c">render</reimplements>
+        <briefdescription>
+<para>Render. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="68" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="148" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1ae0343182c16fad29371df29a5221805d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::destroy</definition>
+        <argsstring>() override</argsstring>
+        <name>destroy</name>
+        <reimplements refid="classmv_1_1Renderer_1a4029130c85d5d9a0002ff06c6cd00906">destroy</reimplements>
+        <briefdescription>
+<para>Destroy the renderer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="70" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="167" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a84a87fc7721f300a14ca7367084908cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::setColorMapRange</definition>
+        <argsstring>(const float &amp;min, const float &amp;max)</argsstring>
+        <name>setColorMapRange</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="290" bodyend="293"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1afaf341715674fe6e3d4de6f7a6ab5975" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::drawDensity</definition>
+        <argsstring>()</argsstring>
+        <name>drawDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="75" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="232" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1a92b86a0b52751ab630a46cfecaebe5da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::drawLandscape</definition>
+        <argsstring>()</argsstring>
+        <name>drawLandscape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="76" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="257" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1aac0d978bd0e9eda1d2fe5a7f7a94da84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::updateQuad</definition>
+        <argsstring>()</argsstring>
+        <name>updateQuad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="179" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DensityRenderer_1ab402c12ff3eb6afde2966476009ee9bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DensityRenderer::drawQuad</definition>
+        <argsstring>()</argsstring>
+        <name>drawQuad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="79" column="10" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.cpp" bodystart="223" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::DensityRenderer</label>
+        <link refid="classmv_1_1gui_1_1DensityRenderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::Renderer2D</label>
+        <link refid="classmv_1_1Renderer2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::DensityRenderer</label>
+        <link refid="classmv_1_1gui_1_1DensityRenderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::Renderer2D</label>
+        <link refid="classmv_1_1Renderer2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" line="19" column="1" bodyfile="Docs/external/core/ManiVault/src/renderers/DensityRenderer.h" bodystart="20" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a0be597da56d2b869719f46c986cdbba6" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_colormap</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ada003d0f1bc011c85260f2c5343ac266" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_colorMapRange</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1aee3234681b839f79342af9e30d629c0f" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_densityComputation</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a411f40d003fc37e122e728aa804cb402" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_EBO</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a52b9cb136271adf5ab3cf7a0bd33eeb6" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_hasColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a6dfbec4e630acb627c4867b24cc29eda" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_isSelecting</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ae382fd7fe81eb087c7a0c48ceccaa1a8" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_renderMode</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a0288f59abd5412dc1a79e913d9d22d98" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_shaderDensityDraw</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a217206f5f663b399b3d34c38849f755b" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_shaderIsoDensityDraw</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ab4dfa9f3de7e0ed624aac356ef533a5f" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_VAO</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a80a0b3af7a4b3207aa672b62939384d0" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>_VBO</name></member>
+      <member refid="classmv_1_1Renderer2D_1a4eee721c718b0c713dca02ac3d9b748e" prot="protected" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>beginRender</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a89fef611af0e14d102ecbfb95a49ee5b" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>computeDensity</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a8b5f13b940731f0a27d514f8226f23e7" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>computeWorldBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3629f2c23306eb987c67287cda704b26" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>dataBoundsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9daff52f1a965a67c27f1b73211c2d58bb7" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>DENSITY</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a3365018cd6e66feb2088bafed6915b4a" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>DensityRenderer</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ae0343182c16fad29371df29a5221805d" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>destroy</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1afaf341715674fe6e3d4de6f7a6ab5975" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>drawDensity</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a92b86a0b52751ab630a46cfecaebe5da" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>drawLandscape</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ab402c12ff3eb6afde2966476009ee9bc" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>drawQuad</name></member>
+      <member refid="classmv_1_1Renderer2D_1aaed5c149a993367f0b46a08fe474b9fb" prot="protected" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>endRender</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a066a3d39682c69b3567a95e16f7eeab7" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getColorMapRange</name></member>
+      <member refid="classmv_1_1Renderer2D_1a80877c6e989db1a0821b7af73def06a2" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getCustomNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab6c5206be56e64fad9e0af8e7e0864fe" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getDataBounds</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1aa5d27f7e65a0b0bb81a281f891a58fa0" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getMaxDensity</name></member>
+      <member refid="classmv_1_1Renderer2D_1ac680d51eb9c88039d39f9bc37a83806e" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getModelMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1a6513b079eeaf943a3a10cbb06c3183fd" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getModelViewProjectionMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1af939d04e53092ac584688a8feb5f54d4" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1a26d4f117d129178b3c2ed618f3468c34" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1a0d2484365496bfe8025c4755d25ab9f9" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getNormalizedScreenToScreenMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1a62eb48a605a18b766132a60f113491e0" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getProjectionMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1ad21eab82ab008e642a395d6025a2ca4b" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>getRenderSize</name></member>
+      <member refid="classmv_1_1Renderer2D_1ac4514d6b2e9fd0ab8178ea32863e615d" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getScreenPointToNormalizedScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3862e9e6a17fd6ef510b0b3110bc7fd6" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getScreenPointToWorldPosition</name></member>
+      <member refid="classmv_1_1Renderer2D_1aa70c3dbc18c965dc3d17c76c93e26701" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getScreenRectangleFromWorldRectangle</name></member>
+      <member refid="classmv_1_1Renderer2D_1aebb38ddb3d1ff57a7f24966166b93a2a" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getScreenToNormalizedScreenMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3c78421c28592d1cb559342083bb5b04" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getWorldBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1a13938c9ee40ee85ff4d33a9a9b88aeb6" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getWorldPositionToNormalizedScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a7e83b1e94b12d088ed83a29ce7c10e5a" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getWorldPositionToScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a139fbbfe1a7ac730f010160ee43bfb90" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>getZoomPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ab6e2303783129c74be23eb6bce361e32" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>init</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9daff96d57794808cc88eadbfcd4b412b66" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>LANDSCAPE</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a9476929ad12a1370cd4c8a45e2435b49" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>render</name></member>
+      <member refid="classmv_1_1Renderer_1a1c20f40dd9d84a4cb0c706890fc11ede" prot="protected" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>Renderer</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab22682e9e5385200f47e3a9bda3d8d93" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>Renderer2D</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1af235e54e50bd97e9e410d0ddb0a65d9d" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>RenderMode</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a9e2faf2dc03bdbb370f43a441a365f8a" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>resize</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a90127d7efa06470a23d2c24f3c1e4baf" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setColormap</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a84a87fc7721f300a14ca7367084908cb" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setColorMapRange</name></member>
+      <member refid="classmv_1_1Renderer2D_1a2b2f510a0ad1fb7966939132fb038cc9" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setCustomNavigator</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a65fd158b337a1e74575857ffb931b82b" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setData</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a050061fa8f082e484a4284e7c4d5327e" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>setDataBounds</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a1b0fa7ca8d3eff1c05f1cb4c0a5de92a" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setDensityComputationDataBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab4c861e5f33958e4bb52a33caded042d" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setModelMatrix</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a3af84699a8da6f8c5e1f8a156e36fde8" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setRenderMode</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ad659c6d3e95af358c8f021998c8a66b4" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setSigma</name></member>
+      <member refid="classmv_1_1Renderer2D_1a24d24c57fd5df9468179d93aaa745abc" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setSourceWidget</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1a3a2b9a9115ae5a4e652e4462670e36fa" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>setWeights</name></member>
+      <member refid="classmv_1_1Renderer2D_1a68e45010d76b9950fa488b998c1bd84e" prot="public" virt="virtual"><scope>mv::gui::DensityRenderer</scope><name>setWorldBounds</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1aac0d978bd0e9eda1d2fe5a7f7a94da84" prot="private" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>updateQuad</name></member>
+      <member refid="classmv_1_1Renderer2D_1a2758bb2d8d0eec919a3bf1874a84a298" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>worldBoundsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1DensityRenderer_1ab0af0c674705dee76737ad78217dea62" prot="public" virt="non-virtual"><scope>mv::gui::DensityRenderer</scope><name>~DensityRenderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

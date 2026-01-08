@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1Workspace" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::Workspace</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <includes refid="Workspace_8h" local="no">Workspace.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1Workspace_1afd5b1baa3b18f173b4d34ee44396b1e6" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::Workspace::_filePath</definition>
+        <argsstring></argsstring>
+        <name>_filePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="98" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Workspace_1a8eaa5d80308397e7fe66f8effbada665" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1LockingAction" kindref="compound">gui::LockingAction</ref></type>
+        <definition>gui::LockingAction mv::Workspace::_lockingAction</definition>
+        <argsstring></argsstring>
+        <name>_lockingAction</name>
+        <briefdescription>
+<para>Location on disk where the workspace resides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="99" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Workspace_1afa38b45b369d772d6d3259a40e33d53e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref></type>
+        <definition>gui::StringAction mv::Workspace::_titleAction</definition>
+        <argsstring></argsstring>
+        <name>_titleAction</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> locking action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="100" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Workspace_1ad53d6f30c4578ba39bf7c83b4f4c9e45" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref></type>
+        <definition>gui::StringAction mv::Workspace::_descriptionAction</definition>
+        <argsstring></argsstring>
+        <name>_descriptionAction</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> title action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="101" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Workspace_1af6af25e9a1d09aabd4093ff314b67fec" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref></type>
+        <definition>gui::StringsAction mv::Workspace::_tagsAction</definition>
+        <argsstring></argsstring>
+        <name>_tagsAction</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> description action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="102" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Workspace_1a0ab1e68e0038fe8144f41d984fdfd098" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref></type>
+        <definition>gui::StringAction mv::Workspace::_commentsAction</definition>
+        <argsstring></argsstring>
+        <name>_commentsAction</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> tags action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="103" column="25" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1Workspace_1aae06d56b766d7f8ebe21826fa181eeed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AbstractWorkspaceManager</definition>
+        <argsstring></argsstring>
+        <name>AbstractWorkspaceManager</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractWorkspaceManager" kindref="compound">AbstractWorkspaceManager</ref></type>
+        </param>
+        <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> comments action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="105" column="5" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1Workspace_1a987af952190f0ca96954a5395ba348df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::Workspace::Workspace</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>Workspace</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct workspace with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1ab60d9693044c6bb35fb514e01aebae68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::Workspace::Workspace</definition>
+        <argsstring>(const QString &amp;filePath, QObject *parent=nullptr)</argsstring>
+        <name>Workspace</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct workspace with <computeroutput>parent</computeroutput> and load from <computeroutput>filePath</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the workspace file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="40" column="5" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="33" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1ac1cf7d13815e75c67fbfe16c90ddd944" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::Workspace::getFilePath</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilePath</name>
+        <briefdescription>
+<para>Get workspace file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Location on disk where the workspace resides </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="46" column="13" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a19d762772fa21505c6676510b590da96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Workspace::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load workspace from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>representation of the workspace </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="62" column="10" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="87" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1aaf277af3324947c60aa0f235659a2de2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::Workspace::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save workspace to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="68" column="17" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="100" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1ae0f7923c067eeb0d6b745f9a134a725e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1LockingAction" kindref="compound">gui::LockingAction</ref> &amp;</type>
+        <definition>const gui::LockingAction&amp; mv::Workspace::getLockingAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLockingAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="77" column="30" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a695609256f22dffa0332f50dfe8de959" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>const gui::StringAction&amp; mv::Workspace::getTitleAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getTitleAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="78" column="29" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a22d60c118faeb1e45801dbc9aada896d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>const gui::StringAction&amp; mv::Workspace::getDescriptionAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDescriptionAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="79" column="29" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1ab8790fd365436f2f586b03045aab4c83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref> &amp;</type>
+        <definition>const gui::StringsAction&amp; mv::Workspace::getTagsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getTagsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="80" column="30" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a9743db0660649e7b5b0ddae0d7a2f679" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>const gui::StringAction&amp; mv::Workspace::getCommentsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getCommentsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="81" column="29" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a7ca4d626311324722dce1bff19c3a52f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1LockingAction" kindref="compound">gui::LockingAction</ref> &amp;</type>
+        <definition>gui::LockingAction&amp; mv::Workspace::getLockingAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLockingAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="83" column="24" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a78d119435a740c49f1c67766fe15f2b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>gui::StringAction&amp; mv::Workspace::getTitleAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTitleAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="84" column="23" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a92febb6bd7588d5ad9de1491ca1359e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>gui::StringAction&amp; mv::Workspace::getDescriptionAction</definition>
+        <argsstring>()</argsstring>
+        <name>getDescriptionAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="85" column="23" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1ac70120ce7ed1b4aa73dd511cc87b9740" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref> &amp;</type>
+        <definition>gui::StringsAction&amp; mv::Workspace::getTagsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTagsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="86" column="24" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Workspace_1a3991c8fd33a580c7dca4740ea2844e62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>gui::StringAction&amp; mv::Workspace::getCommentsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCommentsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="87" column="23" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1Workspace_1ab5dceccfc82edf5123a9c31223b77c60" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::Workspace::setFilePath</definition>
+        <argsstring>(const QString &amp;filePath)</argsstring>
+        <name>setFilePath</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Set workspace file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location on disk where the workspace resides </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="54" column="10" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1Workspace_1a0feb0f5f772f7873a2638791d43d19b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::Workspace::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+<para>IsStartup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="73" column="10" bodyfile="Docs/external/core/ManiVault/src/Workspace.cpp" bodystart="113" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1Workspace_1ae6a9682f6e93f6406656119de1f648ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::Workspace::filePathChanged</definition>
+        <argsstring>(const QString &amp;filePath)</argsstring>
+        <name>filePathChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the workspace file path changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location on disk where the workspace resides </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Workspace.h" line="95" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Container class for all view plugins in a ManiVault project.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Workspace</label>
+        <link refid="classmv_1_1Workspace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Workspace</label>
+        <link refid="classmv_1_1Workspace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/Workspace.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/Workspace.h" bodystart="24" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classmv_1_1Workspace_1a0ab1e68e0038fe8144f41d984fdfd098" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_commentsAction</name></member>
+      <member refid="classmv_1_1Workspace_1ad53d6f30c4578ba39bf7c83b4f4c9e45" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_descriptionAction</name></member>
+      <member refid="classmv_1_1Workspace_1afd5b1baa3b18f173b4d34ee44396b1e6" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_filePath</name></member>
+      <member refid="classmv_1_1Workspace_1a8eaa5d80308397e7fe66f8effbada665" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_lockingAction</name></member>
+      <member refid="classmv_1_1Workspace_1af6af25e9a1d09aabd4093ff314b67fec" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_tagsAction</name></member>
+      <member refid="classmv_1_1Workspace_1afa38b45b369d772d6d3259a40e33d53e" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>_titleAction</name></member>
+      <member refid="classmv_1_1Workspace_1aae06d56b766d7f8ebe21826fa181eeed" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>AbstractWorkspaceManager</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>Direction</name></member>
+      <member refid="classmv_1_1Workspace_1ae6a9682f6e93f6406656119de1f648ab" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>filePathChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::Workspace</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1Workspace_1a19d762772fa21505c6676510b590da96" prot="public" virt="virtual"><scope>mv::Workspace</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::Workspace</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::Workspace</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1Workspace_1a9743db0660649e7b5b0ddae0d7a2f679" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getCommentsAction</name></member>
+      <member refid="classmv_1_1Workspace_1a3991c8fd33a580c7dca4740ea2844e62" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getCommentsAction</name></member>
+      <member refid="classmv_1_1Workspace_1a22d60c118faeb1e45801dbc9aada896d" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getDescriptionAction</name></member>
+      <member refid="classmv_1_1Workspace_1a92febb6bd7588d5ad9de1491ca1359e0" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getDescriptionAction</name></member>
+      <member refid="classmv_1_1Workspace_1ac1cf7d13815e75c67fbfe16c90ddd944" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getFilePath</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getId</name></member>
+      <member refid="classmv_1_1Workspace_1ae0f7923c067eeb0d6b745f9a134a725e" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1Workspace_1a7ca4d626311324722dce1bff19c3a52f" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1Workspace_1ab8790fd365436f2f586b03045aab4c83" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getTagsAction</name></member>
+      <member refid="classmv_1_1Workspace_1ac70120ce7ed1b4aa73dd511cc87b9740" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getTagsAction</name></member>
+      <member refid="classmv_1_1Workspace_1a695609256f22dffa0332f50dfe8de959" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getTitleAction</name></member>
+      <member refid="classmv_1_1Workspace_1a78d119435a740c49f1c67766fe15f2b8" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>getTitleAction</name></member>
+      <member refid="classmv_1_1Workspace_1a0feb0f5f772f7873a2638791d43d19b1" prot="private" virt="non-virtual"><scope>mv::Workspace</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::Workspace</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::Workspace</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>operator==</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1Workspace_1ab5dceccfc82edf5123a9c31223b77c60" prot="protected" virt="non-virtual"><scope>mv::Workspace</scope><name>setFilePath</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1Workspace_1aaf277af3324947c60aa0f235659a2de2" prot="public" virt="virtual"><scope>mv::Workspace</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::Workspace</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1Workspace_1a987af952190f0ca96954a5395ba348df" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>Workspace</name></member>
+      <member refid="classmv_1_1Workspace_1ab60d9693044c6bb35fb514e01aebae68" prot="public" virt="non-virtual"><scope>mv::Workspace</scope><name>Workspace</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::Workspace</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractErrorLogger" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::AbstractErrorLogger</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classSentryErrorLogger" prot="public" virt="non-virtual">SentryErrorLogger</derivedcompoundref>
+    <includes refid="AbstractErrorLogger_8h" local="no">AbstractErrorLogger.h</includes>
+    <innerclass refid="structmv_1_1AbstractErrorLogger_1_1Notification" prot="protected">mv::AbstractErrorLogger::Notification</innerclass>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classmv_1_1AbstractErrorLogger_1aebdd1f5c8e90a745c3b80f4f109941cf" prot="protected" static="no">
+        <type>std::map&lt; QString, <ref refid="structmv_1_1AbstractErrorLogger_1_1Notification" kindref="compound">Notification</ref> &gt;</type>
+        <definition>using mv::AbstractErrorLogger::Notifications =  std::map&lt;QString, Notification&gt;</definition>
+        <argsstring></argsstring>
+        <name>Notifications</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractErrorLogger_1a545b2db145acb31fbc36cd0799ccc4e2" prot="private" static="no" mutable="no">
+        <type>const QString</type>
+        <definition>const QString mv::AbstractErrorLogger::_loggerName</definition>
+        <argsstring></argsstring>
+        <name>_loggerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="182" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractErrorLogger_1a19d8706f742cc828f1e48feb8d475041" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::AbstractErrorLogger::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+<para>Name of the logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="183" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractErrorLogger_1a2adb0354bd794c8d8052e58412acee3d" prot="private" static="no" mutable="no">
+        <type>QTimer</type>
+        <definition>QTimer mv::AbstractErrorLogger::_notificationTimer</definition>
+        <argsstring></argsstring>
+        <name>_notificationTimer</name>
+        <briefdescription>
+<para>Boolean determining whether the error logger has been initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="184" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractErrorLogger_1a5e1b5542a7c516d0640fde03996bcf9d" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractErrorLogger_1aebdd1f5c8e90a745c3b80f4f109941cf" kindref="member">Notifications</ref></type>
+        <definition>Notifications mv::AbstractErrorLogger::_notifications</definition>
+        <argsstring></argsstring>
+        <name>_notifications</name>
+        <briefdescription>
+<para><ref refid="structmv_1_1AbstractErrorLogger_1_1Notification" kindref="compound">Notification</ref> timer for preventing unnecessary notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="185" column="21" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a6bc75a16638515c49c84ae57f5deb2a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractErrorLogger::AbstractErrorLogger</definition>
+        <argsstring>(const QString &amp;loggerName, QObject *parent=nullptr)</argsstring>
+        <name>AbstractErrorLogger</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>loggerName</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>loggerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the logger (e.g. Sentry) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="48" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="48" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a3d5b8c9dc7101a494ca99d0958786e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorLogger::initialize</definition>
+        <argsstring>()=0</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="classSentryErrorLogger_1ae6ebac70bd59abd141a472a2e116f45f">initialize</reimplementedby>
+        <briefdescription>
+<para>Connects to the error logging global settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="68" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1ad87868774c853bcd631fd54c7073f6c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::AbstractErrorLogger::getLoggerName</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggerName</name>
+        <briefdescription>
+<para>Get the logger name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Logger name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="74" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a5777cb58057b4508a01efb03964645ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractErrorLogger::requestStart</definition>
+        <argsstring>()</argsstring>
+        <name>requestStart</name>
+        <briefdescription>
+<para>Starts the error logger if the pre-flight conditions are met. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="79" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1aa5f6dd724082e1d32a162bf731427af1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractErrorLogger::requestStop</definition>
+        <argsstring>()</argsstring>
+        <name>requestStop</name>
+        <briefdescription>
+<para>Stops the error logger if it exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="87" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a096e75bf520c441823d7e05396c963e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::AbstractErrorLogger::isInitialized</definition>
+        <argsstring>() const</argsstring>
+        <name>isInitialized</name>
+        <briefdescription>
+<para>Get whether the error logger is initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the error logger is initialized or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="96" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a53ac99cebb221662792a2d0e838efe6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractErrorLogger::addNotification</definition>
+        <argsstring>(const QString &amp;name, const Notification &amp;notification)</argsstring>
+        <name>addNotification</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmv_1_1AbstractErrorLogger_1_1Notification" kindref="compound">Notification</ref> &amp;</type>
+          <declname>notification</declname>
+        </param>
+        <briefdescription>
+<para>Add /p notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the notification </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notification</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structmv_1_1AbstractErrorLogger_1_1Notification" kindref="compound">Notification</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="105" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a27d5996a9d52b3c3c43ae685317828de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorLogger::beginInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>beginInitialization</name>
+        <briefdescription>
+<para>Begin the initialization of the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="110" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="110" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a34146a4c070bda98adcf1c1301c0b8d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorLogger::endInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>endInitialization</name>
+        <briefdescription>
+<para>End the initialization of the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="148" column="18" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1ab04d8dafa12a635121c32abe48d2235e" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorLogger::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <reimplementedby refid="classSentryErrorLogger_1a1abc257503f2e89bb66a6c1d92658ac0">start</reimplementedby>
+        <briefdescription>
+<para>Starts the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="155" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a2d2f939124474119e1acd65b8ccd27b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorLogger::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <reimplementedby refid="classSentryErrorLogger_1abe86cd052f1725bb112b9e276118bc12">stop</reimplementedby>
+        <briefdescription>
+<para>Shuts down the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="158" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a872d9202022720d04c2e65de62198676" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::AbstractErrorLogger::isDsnValid</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isDsnValid</name>
+        <reimplementedby refid="classSentryErrorLogger_1a8a86427ba2a539aabbd10e6e3da32f0e">isDsnValid</reimplementedby>
+        <briefdescription>
+<para>Get whether the Sentry data source name (DSN) is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the DSN is valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="164" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a61095d1c249fb3464318bb3161d6eca2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractErrorLogger::setSettingsDirty</definition>
+        <argsstring>()</argsstring>
+        <name>setSettingsDirty</name>
+        <briefdescription>
+<para>Get action for showing a crash report dialog when the application fails. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set settings dirty (notifies users that a restart is required) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="177" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="177" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a6389bfeccbcfb448a6c91ea26e593115" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref> &amp;</type>
+        <definition>static gui::TriggerAction&amp; mv::AbstractErrorLogger::getAskConsentDialogAction</definition>
+        <argsstring>()</argsstring>
+        <name>getAskConsentDialogAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="168" column="31" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a33fcb0298f7964cd1aece25b4490ec43" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>static gui::ToggleAction&amp; mv::AbstractErrorLogger::getUserHasOptedAction</definition>
+        <argsstring>()</argsstring>
+        <name>getUserHasOptedAction</name>
+        <briefdescription>
+<para>Get action for asking the user for consent to log errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="169" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a15486ff300ae3825a99b0b44b7e4e729" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>static gui::ToggleAction&amp; mv::AbstractErrorLogger::getEnabledAction</definition>
+        <argsstring>()</argsstring>
+        <name>getEnabledAction</name>
+        <briefdescription>
+<para>Get action for user has opted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="170" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1adef132ec97aa8434022e2bba7e3c02a5" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>static gui::StringAction&amp; mv::AbstractErrorLogger::getDsnAction</definition>
+        <argsstring>()</argsstring>
+        <name>getDsnAction</name>
+        <briefdescription>
+<para>Get action for logging enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="171" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorLogger_1a73e12837f73bad6b8cb36011088215b8" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>static gui::ToggleAction&amp; mv::AbstractErrorLogger::getShowCrashReportDialogAction</definition>
+        <argsstring>()</argsstring>
+        <name>getShowCrashReportDialogAction</name>
+        <briefdescription>
+<para>Get action for logging data source name (DSN) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="172" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="172" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract error logger class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for logging errors.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>SentryErrorLogger</label>
+        <link refid="classSentryErrorLogger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractErrorLogger</label>
+        <link refid="classmv_1_1AbstractErrorLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractErrorLogger</label>
+        <link refid="classmv_1_1AbstractErrorLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="28" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractErrorLogger_1a19d8706f742cc828f1e48feb8d475041" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>_initialized</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a545b2db145acb31fbc36cd0799ccc4e2" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>_loggerName</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a5e1b5542a7c516d0640fde03996bcf9d" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>_notifications</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a2adb0354bd794c8d8052e58412acee3d" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>_notificationTimer</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a6bc75a16638515c49c84ae57f5deb2a5" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>AbstractErrorLogger</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a53ac99cebb221662792a2d0e838efe6a" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>addNotification</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a27d5996a9d52b3c3c43ae685317828de" prot="public" virt="virtual"><scope>mv::AbstractErrorLogger</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a34146a4c070bda98adcf1c1301c0b8d5" prot="public" virt="virtual"><scope>mv::AbstractErrorLogger</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a6389bfeccbcfb448a6c91ea26e593115" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getAskConsentDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1adef132ec97aa8434022e2bba7e3c02a5" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getDsnAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a15486ff300ae3825a99b0b44b7e4e729" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getEnabledAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1ad87868774c853bcd631fd54c7073f6c7" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getLoggerName</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a73e12837f73bad6b8cb36011088215b8" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getShowCrashReportDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a33fcb0298f7964cd1aece25b4490ec43" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>getUserHasOptedAction</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a3d5b8c9dc7101a494ca99d0958786e25" prot="public" virt="pure-virtual"><scope>mv::AbstractErrorLogger</scope><name>initialize</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a872d9202022720d04c2e65de62198676" prot="private" virt="pure-virtual"><scope>mv::AbstractErrorLogger</scope><name>isDsnValid</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a096e75bf520c441823d7e05396c963e0" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1aebdd1f5c8e90a745c3b80f4f109941cf" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>Notifications</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a5777cb58057b4508a01efb03964645ef" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>requestStart</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1aa5f6dd724082e1d32a162bf731427af1" prot="public" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>requestStop</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a61095d1c249fb3464318bb3161d6eca2" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>setSettingsDirty</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1ab04d8dafa12a635121c32abe48d2235e" prot="private" virt="pure-virtual"><scope>mv::AbstractErrorLogger</scope><name>start</name></member>
+      <member refid="classmv_1_1AbstractErrorLogger_1a2d2f939124474119e1acd65b8ccd27b7" prot="private" virt="pure-virtual"><scope>mv::AbstractErrorLogger</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

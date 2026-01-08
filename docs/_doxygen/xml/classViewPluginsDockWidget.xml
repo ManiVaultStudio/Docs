@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classViewPluginsDockWidget" kind="class" language="C++" prot="public">
+    <compoundname>ViewPluginsDockWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ads::CDockWidget</basecompoundref>
+    <includes refid="ViewPluginsDockWidget_8h" local="no">ViewPluginsDockWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classViewPluginsDockWidget_1a5f49677b933c7b4d21be1122659f1211" prot="private" static="no" mutable="no">
+        <type>ads::CDockWidget</type>
+        <definition>ads::CDockWidget ViewPluginsDockWidget::_centralDockWidget</definition>
+        <argsstring></argsstring>
+        <name>_centralDockWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="67" column="37" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViewPluginsDockWidget_1a4d099d715a8c6423e12948c6885cd49e" prot="private" static="no" mutable="no">
+        <type><ref refid="classLogoWidget" kindref="compound">LogoWidget</ref></type>
+        <definition>LogoWidget ViewPluginsDockWidget::_logoWidget</definition>
+        <argsstring></argsstring>
+        <name>_logoWidget</name>
+        <briefdescription>
+<para>Central dock widget (show when no view plugins are visible) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="68" column="37" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classViewPluginsDockWidget_1a0bc1617eea228becf2fbec8e72b86768" prot="private" static="yes" mutable="no">
+        <type>QPointer&lt; <ref refid="classDockManager" kindref="compound">DockManager</ref> &gt;</type>
+        <definition>QPointer&lt; DockManager &gt; ViewPluginsDockWidget::dockManager</definition>
+        <argsstring></argsstring>
+        <name>dockManager</name>
+        <initializer>= QPointer&lt;<ref refid="classDockManager" kindref="compound">DockManager</ref>&gt;()</initializer>
+        <briefdescription>
+<para>Logo widget for logo dock widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="70" column="21" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classViewPluginsDockWidget_1aed468295980d84940ad53091974be179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ViewPluginsDockWidget::ViewPluginsDockWidget</definition>
+        <argsstring>(const QPointer&lt; DockManager &gt; &amp;dockManager, QWidget *parent=nullptr)</argsstring>
+        <name>ViewPluginsDockWidget</name>
+        <param>
+          <type>const QPointer&lt; <ref refid="classDockManager" kindref="compound">DockManager</ref> &gt; &amp;</type>
+          <declname>dockManager</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dockManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to docking manager owned by the workspace manager </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="27" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classViewPluginsDockWidget_1a5bab9827e69d1c00132695d2c541ee66" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::updateCentralWidget</definition>
+        <argsstring>()</argsstring>
+        <name>updateCentralWidget</name>
+        <briefdescription>
+<para>Updates the central widget in response to changes in docking and dock widgets visibility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="37" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="56" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginsDockWidget_1a41c0815085ab6a9cd830a70991079efd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::dockWidgetAdded</definition>
+        <argsstring>(const ads::CDockWidget *dockWidget)</argsstring>
+        <name>dockWidgetAdded</name>
+        <param>
+          <type>const ads::CDockWidget *</type>
+          <declname>dockWidget</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when a dock widget is added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dockWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to added dock widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="43" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="71" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginsDockWidget_1a1f4d9ca2081ed960f3106ab5bd22fb96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::dockWidgetAboutToBeRemoved</definition>
+        <argsstring>(const ads::CDockWidget *dockWidget)</argsstring>
+        <name>dockWidgetAboutToBeRemoved</name>
+        <param>
+          <type>const ads::CDockWidget *</type>
+          <declname>dockWidget</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when a dock widget is about to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dockWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to about to be removed dock widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="49" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="91" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classViewPluginsDockWidget_1ae9d627ddf45a3d8021c7f9864e542d4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::isolate</definition>
+        <argsstring>(const mv::plugin::ViewPlugin *viewPlugin, bool isolate)</argsstring>
+        <name>isolate</name>
+        <param>
+          <type>const <ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> *</type>
+          <declname>viewPlugin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isolate</declname>
+        </param>
+        <briefdescription>
+<para>Set <computeroutput>viewPlugin</computeroutput> isolation to <computeroutput>isolate</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>View plugin to isolate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isolate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to isolate the view plugin or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="58" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="103" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginsDockWidget_1ae586b1c344eb64a044e9ef0abd205ca9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::cacheVisibility</definition>
+        <argsstring>()</argsstring>
+        <name>cacheVisibility</name>
+        <briefdescription>
+<para>Caches the visibility of each view plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="61" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginsDockWidget_1ab9311efc146e7d6dba87d19e3ba1142b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginsDockWidget::restoreVisibility</definition>
+        <argsstring>()</argsstring>
+        <name>restoreVisibility</name>
+        <briefdescription>
+<para>Restores the visibility of each view plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="64" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.cpp" bodystart="127" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>View plugins dock widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This dock widget is placed in the center of the main docking manager. All created (non-system view plugins) are docked in the docking manager of this dock widget.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ads::CDockWidget</label>
+      </node>
+      <node id="1">
+        <label>ViewPluginsDockWidget</label>
+        <link refid="classViewPluginsDockWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ads::CDockWidget</label>
+      </node>
+      <node id="1">
+        <label>ViewPluginsDockWidget</label>
+        <link refid="classViewPluginsDockWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" line="21" column="1" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginsDockWidget.h" bodystart="22" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classViewPluginsDockWidget_1a5f49677b933c7b4d21be1122659f1211" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>_centralDockWidget</name></member>
+      <member refid="classViewPluginsDockWidget_1a4d099d715a8c6423e12948c6885cd49e" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>_logoWidget</name></member>
+      <member refid="classViewPluginsDockWidget_1ae586b1c344eb64a044e9ef0abd205ca9" prot="public" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>cacheVisibility</name></member>
+      <member refid="classViewPluginsDockWidget_1a0bc1617eea228becf2fbec8e72b86768" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>dockManager</name></member>
+      <member refid="classViewPluginsDockWidget_1a1f4d9ca2081ed960f3106ab5bd22fb96" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>dockWidgetAboutToBeRemoved</name></member>
+      <member refid="classViewPluginsDockWidget_1a41c0815085ab6a9cd830a70991079efd" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>dockWidgetAdded</name></member>
+      <member refid="classViewPluginsDockWidget_1ae9d627ddf45a3d8021c7f9864e542d4c" prot="public" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>isolate</name></member>
+      <member refid="classViewPluginsDockWidget_1ab9311efc146e7d6dba87d19e3ba1142b" prot="public" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>restoreVisibility</name></member>
+      <member refid="classViewPluginsDockWidget_1a5bab9827e69d1c00132695d2c541ee66" prot="private" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>updateCentralWidget</name></member>
+      <member refid="classViewPluginsDockWidget_1aed468295980d84940ad53091974be179" prot="public" virt="non-virtual"><scope>ViewPluginsDockWidget</scope><name>ViewPluginsDockWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

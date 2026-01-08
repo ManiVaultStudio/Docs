@@ -1,0 +1,712 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractDataHierarchyManager" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::AbstractDataHierarchyManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1DataHierarchyManager" prot="public" virt="non-virtual">mv::DataHierarchyManager</derivedcompoundref>
+    <includes refid="AbstractDataHierarchyManager_8h" local="no">AbstractDataHierarchyManager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1AbstractDataHierarchyManager_1a90bc42cd80270d73dfa9aade4e76528f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DataManager</definition>
+        <argsstring></argsstring>
+        <name>DataManager</name>
+        <param>
+          <type><ref refid="classmv_1_1DataManager" kindref="compound">DataManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="163" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1adb22e936a9bc27162f1a1b6b918a35a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractDataHierarchyManager::AbstractDataHierarchyManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>AbstractDataHierarchyManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a7e379a87e3097040c3342f9fde0a27fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+        <definition>virtual const DataHierarchyItem* mv::AbstractDataHierarchyManager::getItem</definition>
+        <argsstring>(const QString &amp;datasetId) const =0</argsstring>
+        <name>getItem</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a33674d461b17fa69d0271166126ef2fe">getItem</reimplementedby>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Get hierarchy item by <computeroutput>datasetId</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> GUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to data hierarchy item, nullptr if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="48" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a0e04f83f10ec928e3d7d3828ffed75f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+        <definition>virtual DataHierarchyItem* mv::AbstractDataHierarchyManager::getItem</definition>
+        <argsstring>(const QString &amp;datasetId)=0</argsstring>
+        <name>getItem</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a86f28e605330acca9aba88bdf78b2c80">getItem</reimplementedby>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Get hierarchy item by <computeroutput>datasetId</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> GUID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to data hierarchy item, nullptr if not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="55" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a251e9dd61f15a44e3e2a088dabbcb2d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>virtual DataHierarchyItems mv::AbstractDataHierarchyManager::getItems</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getItems</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a8db6213587191e4881db0cabc619b3ec">getItems</reimplementedby>
+        <briefdescription>
+<para>Get all items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of items </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="61" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1aa5d403ac49119f5debcc0e4521bca810" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>virtual DataHierarchyItems mv::AbstractDataHierarchyManager::getChildren</definition>
+        <argsstring>(DataHierarchyItem &amp;dataHierarchyItem, const bool &amp;recursive=true)=0</argsstring>
+        <name>getChildren</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1aa6c66ac970d864038eb9e16f0d0271dc">getChildren</reimplementedby>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> &amp;</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>recursive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get dataset children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to data hierarchy item </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to get all children in a recursive manner </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Children </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="69" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a80226e55f41d3e1946b9fdc4d2b13fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>virtual DataHierarchyItems mv::AbstractDataHierarchyManager::getTopLevelItems</definition>
+        <argsstring>()=0</argsstring>
+        <name>getTopLevelItems</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1acc494020b9e855b97c3b4f06c1f10100">getTopLevelItems</reimplementedby>
+        <briefdescription>
+<para>Get top-level items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Top-level items </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="75" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1ad6a2bc8bdbe322b515260a7dfe685719" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::select</definition>
+        <argsstring>(DataHierarchyItems items, bool clear=true)=0</argsstring>
+        <name>select</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a822cfed1d8362b76a618ff543adce88b">select</reimplementedby>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+          <declname>items</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Select data hierarchy <computeroutput>items</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>items</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of pointers to data hierarchy items to select </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clear the current selections before selection </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="84" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a57d941b0cae2e00085c6d743fae760bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::selectAll</definition>
+        <argsstring>()=0</argsstring>
+        <name>selectAll</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a3855c69d3117807605c6bac7671940d8">selectAll</reimplementedby>
+        <briefdescription>
+<para>Select all items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="87" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1ae707e1edbb0b8fb89e92de2f19bb6652" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::clearSelection</definition>
+        <argsstring>()=0</argsstring>
+        <name>clearSelection</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1ae833075937070e9775f6fb373d8a98c5">clearSelection</reimplementedby>
+        <briefdescription>
+<para>Clear the item selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="90" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1ae0b42d9230813e4e19a4414d0394dc2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>virtual DataHierarchyItems mv::AbstractDataHierarchyManager::getSelectedItems</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getSelectedItems</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1ab2da20beafcf2b130603fd04b44fe6f5">getSelectedItems</reimplementedby>
+        <briefdescription>
+<para>Get selected items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of selected items </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="96" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1ad47faa4c2e477ed790e655b161f12776" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override=0</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a2cbbb908e76fa048daf48e2faf637d29">fromVariantMap</reimplementedby>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>representation of the widget action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1abc5f9885b247daa8bbb41dcef8f1f592" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::AbstractDataHierarchyManager::toVariantMap</definition>
+        <argsstring>() const override=0</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1aaaf16a173e0a0c4eb57938f8367e17a0">toVariantMap</reimplementedby>
+        <briefdescription>
+<para>Save to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="129" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1abe8087d35fd6242a8bc43a6df81f1df0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::addItem</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, Dataset&lt; DatasetImpl &gt; parentDataset, const bool &amp;visible=true)=0</argsstring>
+        <name>addItem</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a307631287f40fee353098773918b5753">addItem</reimplementedby>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>parentDataset</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>visible</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Add a dataset to the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to dataset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to parent dataset (if any) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the dataset is visible in the gui </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="106" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1adb60fe295535a863064e15f435a83d8f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::removeItem</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)=0</argsstring>
+        <name>removeItem</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1a003071963bc7a41975df7628aaf9265a">removeItem</reimplementedby>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Removes data hierarchy for <computeroutput>dataset</computeroutput> from the data hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> to remove the data hierarchy item for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="112" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a51bb94ad9eb5f729ea239b82f89b51ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractDataHierarchyManager::removeAllItems</definition>
+        <argsstring>()=0</argsstring>
+        <name>removeAllItems</name>
+        <reimplementedby refid="classmv_1_1DataHierarchyManager_1aca0100eb0e0d522881f99c39188e27f6">removeAllItems</reimplementedby>
+        <briefdescription>
+<para>Removes all items from the data hierarchy manager in a top-down manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="115" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1af730d3eff3a472fc538da804443737af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemAdded</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is added to the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to added data hierarchy item </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a60728acfff5ab2ce4d2f9ce45d535f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemAboutToBeRemoved</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is about to be removed from the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data hierarchy item which is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a946fe39042ea16b6f9a7b8eb2f12575f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemRemoved</definition>
+        <argsstring>(const QString &amp;datasetId)</argsstring>
+        <name>itemRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that hierarchy item <computeroutput>datasetId</computeroutput> is removed from the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the removed dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a440c7b730fa04df4c446cb8bcdbed4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemParentChanged</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemParentChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the parent of <computeroutput>dataHierarchyItem</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data hierarchy item of which the parent changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1aec40e878dd11ce423042ff43cad07e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::selectedItemsChanged</definition>
+        <argsstring>(DataHierarchyItems selectedItems)</argsstring>
+        <name>selectedItemsChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+          <declname>selectedItems</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the selected items changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selectedItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to selected data hierarchy items </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="161" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract data hierarchy manager. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base abstract data hierarchy manager class for organizing the dataset hierarchy.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>mv::DataHierarchyManager</label>
+        <link refid="classmv_1_1DataHierarchyManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyManager</label>
+        <link refid="classmv_1_1AbstractDataHierarchyManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyManager</label>
+        <link refid="classmv_1_1AbstractDataHierarchyManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="28" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" bodystart="29" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1adb22e936a9bc27162f1a1b6b918a35a8" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>AbstractDataHierarchyManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1abe8087d35fd6242a8bc43a6df81f1df0" prot="protected" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>addItem</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1ae707e1edbb0b8fb89e92de2f19bb6652" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>clearSelection</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a90bc42cd80270d73dfa9aade4e76528f" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>DataManager</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1ad47faa4c2e477ed790e655b161f12776" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractManager::"><scope>mv::AbstractDataHierarchyManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractManager::"><scope>mv::AbstractDataHierarchyManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1aa5d403ac49119f5debcc0e4521bca810" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a7e379a87e3097040c3342f9fde0a27fd" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getItem</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a0e04f83f10ec928e3d7d3828ffed75f8" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getItem</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a251e9dd61f15a44e3e2a088dabbcb2d4" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getItems</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1ae0b42d9230813e4e19a4414d0394dc2e" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSelectedItems</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a80226e55f41d3e1946b9fdc4d2b13fe6" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>getTopLevelItems</name></member>
+      <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a60728acfff5ab2ce4d2f9ce45d535f91" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>itemAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1af730d3eff3a472fc538da804443737af" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>itemAdded</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a440c7b730fa04df4c446cb8bcdbed4a0" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>itemParentChanged</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a946fe39042ea16b6f9a7b8eb2f12575f" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>itemRemoved</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a51bb94ad9eb5f729ea239b82f89b51ab" prot="protected" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>removeAllItems</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1adb60fe295535a863064e15f435a83d8f" prot="protected" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>removeItem</name></member>
+      <member refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1ad6a2bc8bdbe322b515260a7dfe685719" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>select</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1a57d941b0cae2e00085c6d743fae760bc" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>selectAll</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1aec40e878dd11ce423042ff43cad07e9f" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>selectedItemsChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyManager_1abc5f9885b247daa8bbb41dcef8f1f592" prot="public" virt="pure-virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractManager::"><scope>mv::AbstractDataHierarchyManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractDataHierarchyManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

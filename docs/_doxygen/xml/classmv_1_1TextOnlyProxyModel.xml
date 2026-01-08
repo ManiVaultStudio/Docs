@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1TextOnlyProxyModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::TextOnlyProxyModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QIdentityProxyModel</basecompoundref>
+    <includes refid="TextOnlyProxyModel_8h" local="no">TextOnlyProxyModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1TextOnlyProxyModel_1ae8157740fdd1ce38735cf52d22373e1a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mv::TextOnlyProxyModel::_completionColumn</definition>
+        <argsstring></argsstring>
+        <name>_completionColumn</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="61" column="14" bodyfile="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1TextOnlyProxyModel_1ae2b50a65701fc2edecbfabef69a1f25d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::TextOnlyProxyModel::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get the data for the model <computeroutput>index</computeroutput> and <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the data to retrieve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Role of the data to retrieve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data for the model index and role </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="38" column="14" bodyfile="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.cpp" bodystart="12" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TextOnlyProxyModel_1ac14d5ae053947da2b3edcf2b4cbb0055" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::TextOnlyProxyModel::getCompletionColumn</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompletionColumn</name>
+        <briefdescription>
+<para>Get the completion column. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Column index of the completion column </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="44" column="18" bodyfile="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TextOnlyProxyModel_1a49cc38451c479312fefda1dca77b4b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::TextOnlyProxyModel::setCompletionColumn</definition>
+        <argsstring>(std::int32_t completionColumn)</argsstring>
+        <name>setCompletionColumn</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>completionColumn</declname>
+        </param>
+        <briefdescription>
+<para>Set the completion column to <computeroutput>completionColumn</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>completionColumn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column index of the completion column </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="50" column="10" bodyfile="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.cpp" bodystart="33" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1TextOnlyProxyModel_1a1b2e8823b221a07458e3c83319f89ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::TextOnlyProxyModel::completionColumnChanged</definition>
+        <argsstring>(std::int32_t column)</argsstring>
+        <name>completionColumnChanged</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the completion column changed to <computeroutput>column</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column index of the completion column </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="58" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> only proxy model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Forwards only the display role for the specified completion column.</para>
+<para>Note: This is primarily used for use cases where performance in large models is needed.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::TextOnlyProxyModel</label>
+        <link refid="classmv_1_1TextOnlyProxyModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QIdentityProxyModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::TextOnlyProxyModel</label>
+        <link refid="classmv_1_1TextOnlyProxyModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QIdentityProxyModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/models/TextOnlyProxyModel.h" bodystart="23" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classmv_1_1TextOnlyProxyModel_1ae8157740fdd1ce38735cf52d22373e1a" prot="private" virt="non-virtual"><scope>mv::TextOnlyProxyModel</scope><name>_completionColumn</name></member>
+      <member refid="classmv_1_1TextOnlyProxyModel_1a1b2e8823b221a07458e3c83319f89ecd" prot="public" virt="non-virtual"><scope>mv::TextOnlyProxyModel</scope><name>completionColumnChanged</name></member>
+      <member refid="classmv_1_1TextOnlyProxyModel_1ae2b50a65701fc2edecbfabef69a1f25d" prot="public" virt="non-virtual"><scope>mv::TextOnlyProxyModel</scope><name>data</name></member>
+      <member refid="classmv_1_1TextOnlyProxyModel_1ac14d5ae053947da2b3edcf2b4cbb0055" prot="public" virt="non-virtual"><scope>mv::TextOnlyProxyModel</scope><name>getCompletionColumn</name></member>
+      <member refid="classmv_1_1TextOnlyProxyModel_1a49cc38451c479312fefda1dca77b4b81" prot="public" virt="non-virtual"><scope>mv::TextOnlyProxyModel</scope><name>setCompletionColumn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

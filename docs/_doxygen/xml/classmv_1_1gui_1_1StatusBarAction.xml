@@ -1,0 +1,1022 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1StatusBarAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::StatusBarAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetAction" prot="public" virt="non-virtual">mv::gui::WidgetAction</basecompoundref>
+    <derivedcompoundref refid="classBackgroundTasksStatusBarAction" prot="public" virt="non-virtual">BackgroundTasksStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classFrontPagesStatusBarAction" prot="public" virt="non-virtual">FrontPagesStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classLoggingStatusBarAction" prot="public" virt="non-virtual">LoggingStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classManiVaultVersionStatusBarAction" prot="public" virt="non-virtual">ManiVaultVersionStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classPluginsStatusBarAction" prot="public" virt="non-virtual">PluginsStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classSettingsStatusBarAction" prot="public" virt="non-virtual">SettingsStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classWorkspaceStatusBarAction" prot="public" virt="non-virtual">WorkspaceStatusBarAction</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1PluginStatusBarAction" prot="public" virt="non-virtual">mv::gui::PluginStatusBarAction</derivedcompoundref>
+    <includes refid="StatusBarAction_8h" local="no">StatusBarAction.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1StatusBarAction_1_1Widget" prot="public">mv::gui::StatusBarAction::Widget</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1a716cc18ae95d3082319c46548567e152" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref></type>
+        <definition>HorizontalGroupAction mv::gui::StatusBarAction::_barGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_barGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="215" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1a0d48dee9c56ebb064282dbb1ed88f0f5" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref></type>
+        <definition>StringAction mv::gui::StatusBarAction::_iconAction</definition>
+        <argsstring></argsstring>
+        <name>_iconAction</name>
+        <briefdescription>
+<para>Bar group action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="216" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1a3978d73ece29ec4c39e53bad91d81c47" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>WidgetAction* mv::gui::StatusBarAction::_popupAction</definition>
+        <argsstring></argsstring>
+        <name>_popupAction</name>
+        <briefdescription>
+<para>String action for showing a home icon with FontAwesome. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="217" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1a606f2222e3c6078076407edeef95149f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <definition>WidgetActions mv::gui::StatusBarAction::_menuActions</definition>
+        <argsstring></argsstring>
+        <name>_menuActions</name>
+        <briefdescription>
+<para>Pointer to popup action (maybe nullptr) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="218" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1aa01f79a548723107eb1d72e11eba21cb" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::StatusBarAction::_index</definition>
+        <argsstring></argsstring>
+        <name>_index</name>
+        <briefdescription>
+<para>Menu actions for the popup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="219" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StatusBarAction_1ab26fe7fc08cbdef4c1d9b0e9a8768138" prot="private" static="yes" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <definition>WidgetActions mv::gui::StatusBarAction::statusBarActions</definition>
+        <argsstring></argsstring>
+        <name>statusBarActions</name>
+        <briefdescription>
+<para>Position in the status bar where the action is inserted (zero: append, negative; right-to-left, positive: left-to-right) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="221" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1StatusBarAction_1af46c4c4063cc7f0cd57af84371de7a57" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class WidgetActionToolButton</definition>
+        <argsstring></argsstring>
+        <name>WidgetActionToolButton</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetActionToolButton" kindref="compound">WidgetActionToolButton</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="223" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a9b9e15ec47704b69f69dcbc4ea7de802" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::gui::StatusBarAction::getWidget</definition>
+        <argsstring>(QWidget *parent, const std::int32_t &amp;widgetFlags) override</argsstring>
+        <name>getWidget</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33">getWidget</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Get widget representation of the status bar action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1gui_1_1StatusBarAction_1_1Widget" kindref="compound">Widget</ref> flags for the configuration of the widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="78" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a735be9b128ea02b22a7b1b2b98671486" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::showPopup</definition>
+        <argsstring>()</argsstring>
+        <name>showPopup</name>
+        <briefdescription>
+<para>Show the popup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="154" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1ac431da6b4f1a5c5ba47fed4b3d42c820" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::hidePopup</definition>
+        <argsstring>()</argsstring>
+        <name>hidePopup</name>
+        <briefdescription>
+<para>Hide the popup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="157" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="112" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a43154266b65425a6f67f40aa547040af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::StatusBarAction::StatusBarAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const util::StyledIcon &amp;icon=util::StyledIcon())</argsstring>
+        <name>StatusBarAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1StyledIcon" kindref="compound">util::StyledIcon</ref> &amp;</type>
+          <declname>icon</declname>
+          <defval><ref refid="classmv_1_1util_1_1StyledIcon" kindref="compound">util::StyledIcon</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object, <computeroutput>title</computeroutput> and possibly an <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="88" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="21" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a715e312dda6ddf28a7a6008fd1ce2d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::StatusBarAction::StatusBarAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const QString &amp;icon=&quot;&quot;)</argsstring>
+        <name>StatusBarAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>icon</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object, <computeroutput>title</computeroutput> and possibly a FontAwesome <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FontAwesome icon name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="96" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a2d8d2d917f39aec94b1dd1491ce4a454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::StatusBarAction::~StatusBarAction</definition>
+        <argsstring>() override</argsstring>
+        <name>~StatusBarAction</name>
+        <briefdescription>
+<para>Destructor for removing this action from StatusBarAction::statusBarActions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="99" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="50" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a505e31cb36571d54a2275894cfd6c307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>HorizontalGroupAction &amp; mv::gui::StatusBarAction::getBarGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getBarGroupAction</name>
+        <briefdescription>
+<para>Get bar group action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to bar group action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="113" column="27" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a9d28d6460e8610053b7f435cf0b3fa19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref> &amp;</type>
+        <definition>StringAction &amp; mv::gui::StatusBarAction::getBarIconStringAction</definition>
+        <argsstring>()</argsstring>
+        <name>getBarIconStringAction</name>
+        <briefdescription>
+<para>Get bar icon string action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to bar icon string action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="119" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a7ee1d0627b696225136f78318ab572cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>WidgetAction * mv::gui::StatusBarAction::getPopupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getPopupAction</name>
+        <briefdescription>
+<para>Get popup action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to popup action (maybe nullptr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="125" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a58bc2865833e4f1942856a82a4d02a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::setPopupAction</definition>
+        <argsstring>(WidgetAction *popupAction)</argsstring>
+        <name>setPopupAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>popupAction</declname>
+        </param>
+        <briefdescription>
+<para>Set popup action to <computeroutput>popupAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>popupAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to popup action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="131" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="91" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a7e2e88ab52ee41ae1557d0add81bcb4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::addMenuAction</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>addMenuAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>menuAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="137" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="121" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a4c050be7e3fd03e2fe6e51fdc06db895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::removeMenuAction</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>removeMenuAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>menuAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="143" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="133" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a39f5b52c2270bfe923efc4dbf74b01c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <definition>WidgetActions mv::gui::StatusBarAction::getMenuActions</definition>
+        <argsstring>()</argsstring>
+        <name>getMenuActions</name>
+        <briefdescription>
+<para>Get menu actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointers to menu actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="149" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a08bd3dbafc96265fc415645ea44db665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::StatusBarAction::getIndex</definition>
+        <argsstring>()</argsstring>
+        <name>getIndex</name>
+        <briefdescription>
+<para>Get index (must be called prior to main window showing, otherwise it will not have an effect) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Position index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="165" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a96796fee7d8a25084a3c3d16320067b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::setIndex</definition>
+        <argsstring>(std::int32_t index)</argsstring>
+        <name>setIndex</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set index to <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="171" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="155" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a1c69a393075950b8a6483546a629ba6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <definition>WidgetActions mv::gui::StatusBarAction::getStatusBarActions</definition>
+        <argsstring>()</argsstring>
+        <name>getStatusBarActions</name>
+        <briefdescription>
+<para>Get registered status bar action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Status bar actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="105" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1add78d6b111c15aa91f6fe0e731544588" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::initialize</definition>
+        <argsstring>(const QIcon &amp;icon)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the status bar action and applies the <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="179" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="165" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1addb98d7aca3d34b6df8da8d425404348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::popupActionChanged</definition>
+        <argsstring>(WidgetAction *previousPopupAction, WidgetAction *popupAction)</argsstring>
+        <name>popupActionChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>previousPopupAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>popupAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the popup action changed from <computeroutput>previousPopupAction</computeroutput> to <computeroutput>popupAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousPopupAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to previous action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>popupAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1abb390b8dac54d839daedb7c41446da61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::indexChanged</definition>
+        <argsstring>(std::int32_t index)</argsstring>
+        <name>indexChanged</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the position <computeroutput>index</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1ac519d64d1c0cf038ba82acfd0f6bd20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::menuActionAdded</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>menuActionAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>menuAction</computeroutput> was added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1a8e44677ac65e4092d61f52b4e843e59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::menuActionAboutToBeRemoved</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>menuActionAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>menuAction</computeroutput> is about to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="206" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1a8263e95610f0dfe0740081f238d8be0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::requirePopupShow</definition>
+        <argsstring>()</argsstring>
+        <name>requirePopupShow</name>
+        <briefdescription>
+<para>Signals that a popup should be displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="209" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1af1e3283000c43aa2241967c46a5d51e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::requirePopupHide</definition>
+        <argsstring>()</argsstring>
+        <name>requirePopupHide</name>
+        <briefdescription>
+<para>Signals that a popup should be hidden. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="212" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Status bar action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base status bar action class with popup functionality</para>
+<para>There are two methods to add content to the status bar popup:<orderedlist>
+<listitem><para>By setting a popup action: setPopupAction(...)</para>
+</listitem><listitem><para>By adding menu actions: addMenuAction(...)</para>
+</listitem></orderedlist>
+</para>
+<para>The index controls the location w.r.t. the other status bar items:<itemizedlist>
+<listitem><para>When negative, the item is inserted in between existing items(right-to-left)</para>
+</listitem><listitem><para>Wen zero, the item is appended to the existing items at the right</para>
+</listitem><listitem><para>Wen positive, the item is inserted in between existing items(left-to-right)</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>WorkspaceStatusBarAction</label>
+        <link refid="classWorkspaceStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SettingsStatusBarAction</label>
+        <link refid="classSettingsStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::StatusBarAction</label>
+        <link refid="classmv_1_1gui_1_1StatusBarAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mv::gui::PluginStatusBarAction</label>
+        <link refid="classmv_1_1gui_1_1PluginStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PluginsStatusBarAction</label>
+        <link refid="classPluginsStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="8">
+        <label>ManiVaultVersionStatusBarAction</label>
+        <link refid="classManiVaultVersionStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FrontPagesStatusBarAction</label>
+        <link refid="classFrontPagesStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="7">
+        <label>LoggingStatusBarAction</label>
+        <link refid="classLoggingStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>BackgroundTasksStatusBarAction</label>
+        <link refid="classBackgroundTasksStatusBarAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::StatusBarAction</label>
+        <link refid="classmv_1_1gui_1_1StatusBarAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="35" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" bodystart="36" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a716cc18ae95d3082319c46548567e152" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>_barGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a0d48dee9c56ebb064282dbb1ed88f0f5" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>_iconAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1aa01f79a548723107eb1d72e11eba21cb" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>_index</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a606f2222e3c6078076407edeef95149f" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>_menuActions</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a3978d73ece29ec4c39e53bad91d81c47" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>_popupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a7e2e88ab52ee41ae1557d0add81bcb4d" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>addMenuAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StatusBarAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StatusBarAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a505e31cb36571d54a2275894cfd6c307" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getBarGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a9d28d6460e8610053b7f435cf0b3fa19" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getBarIconStringAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a08bd3dbafc96265fc415645ea44db665" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a39f5b52c2270bfe923efc4dbf74b01c4" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getMenuActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a7ee1d0627b696225136f78318ab572cd" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getPopupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a1c69a393075950b8a6483546a629ba6a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getStatusBarActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a9b9e15ec47704b69f69dcbc4ea7de802" prot="protected" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1ac431da6b4f1a5c5ba47fed4b3d42c820" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>hidePopup</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1abb390b8dac54d839daedb7c41446da61" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>indexChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1add78d6b111c15aa91f6fe0e731544588" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a8e44677ac65e4092d61f52b4e843e59e" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>menuActionAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1ac519d64d1c0cf038ba82acfd0f6bd20a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>menuActionAdded</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1addb98d7aca3d34b6df8da8d425404348" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>popupActionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a4c050be7e3fd03e2fe6e51fdc06db895" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>removeMenuAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1af1e3283000c43aa2241967c46a5d51e9" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>requirePopupHide</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a8263e95610f0dfe0740081f238d8be0f" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>requirePopupShow</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a96796fee7d8a25084a3c3d16320067b0" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a58bc2865833e4f1942856a82a4d02a90" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setPopupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a735be9b128ea02b22a7b1b2b98671486" prot="protected" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>showPopup</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a43154266b65425a6f67f40aa547040af" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>StatusBarAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a715e312dda6ddf28a7a6008fd1ce2d25" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>StatusBarAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1ab26fe7fc08cbdef4c1d9b0e9a8768138" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>statusBarActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StatusBarAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1af46c4c4063cc7f0cd57af84371de7a57" prot="private" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>WidgetActionToolButton</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::StatusBarAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1StatusBarAction_1a2d8d2d917f39aec94b1dd1491ce4a454" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>~StatusBarAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::StatusBarAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

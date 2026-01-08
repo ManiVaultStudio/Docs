@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1Renderer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::Renderer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <basecompoundref prot="protected" virt="non-virtual">QOpenGLFunctions_3_3_Core</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1Renderer2D" prot="public" virt="non-virtual">mv::Renderer2D</derivedcompoundref>
+    <includes refid="Renderer_8h" local="no">Renderer.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1Renderer_1a1c20f40dd9d84a4cb0c706890fc11ede" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::Renderer::Renderer</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>Renderer</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="33" column="14" bodyfile="Docs/external/core/ManiVault/src/renderers/Renderer.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1ac4814134811de7e8102d64a31f7fa17a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classmv_1_1gui_1_1DensityRenderer_1ab6e2303783129c74be23eb6bce361e32">init</reimplementedby>
+        <reimplementedby refid="classmv_1_1gui_1_1PointRenderer_1afe25d859501c57cc372ff29f1ddd0be1">init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="38" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1a477fab21d8dd819618129367dc703fa0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::resize</definition>
+        <argsstring>(QSize renderSize)=0</argsstring>
+        <name>resize</name>
+        <reimplementedby refid="classmv_1_1gui_1_1DensityRenderer_1a9e2faf2dc03bdbb370f43a441a365f8a">resize</reimplementedby>
+        <reimplementedby refid="classmv_1_1Renderer2D_1a75c874c3a771a6534d89427e82cf6fd9">resize</reimplementedby>
+        <param>
+          <type>QSize</type>
+          <declname>renderSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1a3ffe60a72b68314e2699cbc709617273" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>QSize</type>
+        <definition>virtual QSize mv::Renderer::getRenderSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getRenderSize</name>
+        <reimplementedby refid="classmv_1_1Renderer2D_1ad21eab82ab008e642a395d6025a2ca4b">getRenderSize</reimplementedby>
+        <briefdescription>
+<para>Get the render size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Render size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="45" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1a1a46ea299242b0a2fdc44d9deee1e79b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::beginRender</definition>
+        <argsstring>()=0</argsstring>
+        <name>beginRender</name>
+        <reimplementedby refid="classmv_1_1Renderer2D_1a4eee721c718b0c713dca02ac3d9b748e">beginRender</reimplementedby>
+        <briefdescription>
+<para>Begin rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1a33a05c65321ecac20b88ffe7fa45187c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::render</definition>
+        <argsstring>()=0</argsstring>
+        <name>render</name>
+        <reimplementedby refid="classmv_1_1gui_1_1DensityRenderer_1a9476929ad12a1370cd4c8a45e2435b49">render</reimplementedby>
+        <reimplementedby refid="classmv_1_1gui_1_1PointRenderer_1ae865ce248761cd63015d0eb2964093f3">render</reimplementedby>
+        <briefdescription>
+<para>Render. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1ab55def105f498a5d124953ebb4f089dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::endRender</definition>
+        <argsstring>()=0</argsstring>
+        <name>endRender</name>
+        <reimplementedby refid="classmv_1_1Renderer2D_1aaed5c149a993367f0b46a08fe474b9fb">endRender</reimplementedby>
+        <briefdescription>
+<para>End rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="54" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Renderer_1a4029130c85d5d9a0002ff06c6cd00906" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::Renderer::destroy</definition>
+        <argsstring>()=0</argsstring>
+        <name>destroy</name>
+        <reimplementedby refid="classmv_1_1gui_1_1DensityRenderer_1ae0343182c16fad29371df29a5221805d">destroy</reimplementedby>
+        <reimplementedby refid="classmv_1_1gui_1_1PointRenderer_1aa676532e5fad18b293043a63ed7ea174">destroy</reimplementedby>
+        <briefdescription>
+<para>Destroy the renderer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="57" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::gui::PointRenderer</label>
+        <link refid="classmv_1_1gui_1_1PointRenderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+      <node id="5">
+        <label>mv::gui::DensityRenderer</label>
+        <link refid="classmv_1_1gui_1_1DensityRenderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::Renderer2D</label>
+        <link refid="classmv_1_1Renderer2D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/renderers/Renderer.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/renderers/Renderer.h" bodystart="26" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classmv_1_1Renderer_1a1a46ea299242b0a2fdc44d9deee1e79b" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>beginRender</name></member>
+      <member refid="classmv_1_1Renderer_1a4029130c85d5d9a0002ff06c6cd00906" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>destroy</name></member>
+      <member refid="classmv_1_1Renderer_1ab55def105f498a5d124953ebb4f089dd" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>endRender</name></member>
+      <member refid="classmv_1_1Renderer_1a3ffe60a72b68314e2699cbc709617273" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>getRenderSize</name></member>
+      <member refid="classmv_1_1Renderer_1ac4814134811de7e8102d64a31f7fa17a" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>init</name></member>
+      <member refid="classmv_1_1Renderer_1a33a05c65321ecac20b88ffe7fa45187c" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>render</name></member>
+      <member refid="classmv_1_1Renderer_1a1c20f40dd9d84a4cb0c706890fc11ede" prot="protected" virt="non-virtual"><scope>mv::Renderer</scope><name>Renderer</name></member>
+      <member refid="classmv_1_1Renderer_1a477fab21d8dd819618129367dc703fa0" prot="protected" virt="pure-virtual"><scope>mv::Renderer</scope><name>resize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

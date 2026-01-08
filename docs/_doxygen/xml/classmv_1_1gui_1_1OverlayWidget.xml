@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1OverlayWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::OverlayWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1Navigator2D_1_1ZoomOverlayWidget" prot="public" virt="non-virtual">mv::Navigator2D::ZoomOverlayWidget</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1ActionOverlayWidget" prot="public" virt="non-virtual">mv::gui::ActionOverlayWidget</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget" prot="public" virt="non-virtual">mv::gui::ViewPluginLearningCenterOverlayWidget</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1ViewPluginOverlayWidget" prot="public" virt="non-virtual">mv::gui::ViewPluginOverlayWidget</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1WidgetActionBadgeOverlayWidget" prot="public" virt="non-virtual">mv::gui::WidgetActionBadgeOverlayWidget</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1WidgetActionHighlightWidget" prot="public" virt="non-virtual">mv::gui::WidgetActionHighlightWidget</derivedcompoundref>
+    <includes refid="OverlayWidget_8h" local="no">OverlayWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1OverlayWidget_1a17a3409f09f51b9bb1d935efae950bbc" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1util_1_1WidgetOverlayer" kindref="compound">mv::util::WidgetOverlayer</ref></type>
+        <definition>mv::util::WidgetOverlayer mv::gui::OverlayWidget::_widgetOverlayer</definition>
+        <argsstring></argsstring>
+        <name>_widgetOverlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="75" column="35" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1a7d999e8b433e469ad8eb8097614c13b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::OverlayWidget::OverlayWidget</definition>
+        <argsstring>(QWidget *target, float initialOpacity=1.0f)</argsstring>
+        <name>OverlayWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialOpacity</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>target</computeroutput> widget and initial opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to target widget (used to synchronize the geometry with) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opacity at initialization </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="41" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="21" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1afc42679a88787233f09777dabecc0cf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1WidgetOverlayer" kindref="compound">mv::util::WidgetOverlayer</ref> &amp;</type>
+        <definition>mv::util::WidgetOverlayer &amp; mv::gui::OverlayWidget::getWidgetOverlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetOverlayer</name>
+        <briefdescription>
+<para>Get the utility class for overlaying the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Widget overlayer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="47" column="31" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1a7626aeac1d58a168131f2444a1312d7b" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::OverlayWidget::addMouseEventReceiverWidget</definition>
+        <argsstring>(QWidget *mouseEventReceiverWidget) final</argsstring>
+        <name>addMouseEventReceiverWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>mouseEventReceiverWidget</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>mouseEventReceiverWidget</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseEventReceiverWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to mouse event receiver widget that should be added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="53" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1adbc1e650ae0cfbaa32da685673a5f213" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::OverlayWidget::removeMouseEventReceiverWidget</definition>
+        <argsstring>(QWidget *mouseEventReceiverWidget) final</argsstring>
+        <name>removeMouseEventReceiverWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>mouseEventReceiverWidget</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>mouseEventReceiverWidget</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mouseEventReceiverWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to mouse event receiver widget that should be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="59" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1a61a04628c5eb98aa4c3715f38c60275b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::OverlayWidget::updateMask</definition>
+        <argsstring>()</argsstring>
+        <name>updateMask</name>
+        <briefdescription>
+<para>Update widget mask to selectively process mouse events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="64" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1OverlayWidget_1ae5cbd8301966b80a7a729b48b8acc33e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::OverlayWidget::resizeEvent</definition>
+        <argsstring>(QResizeEvent *event) override</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Update the mask region when the overlay widget changes size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to resize event that occurred </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.cpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Overlay widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Overlays the target widget with an overlay widget and keeps its geometry in sync with the target widget.</para>
+<para>By default, the overlay widget and its children are immune to mouse events (similar to the Qt widget attribute Qt::WA_TransparentForMouseEvents). To enable/disable child widget mouse events, call OverlayWidget::addMouseEventReceiverWidget(...) or OverlayWidget::removeMouseEventReceiverWidget(...) respectively.</para>
+<para>For more information, refer to the <ref refid="classmv_1_1util_1_1WidgetOverlayer" kindref="compound">mv::util::WidgetOverlayer</ref> class.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>mv::gui::ViewPluginLearningCenterOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::gui::ViewPluginOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1ViewPluginOverlayWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::gui::WidgetActionBadgeOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionBadgeOverlayWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::gui::ActionOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1ActionOverlayWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::Navigator2D::ZoomOverlayWidget</label>
+        <link refid="classmv_1_1Navigator2D_1_1ZoomOverlayWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::gui::WidgetActionHighlightWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionHighlightWidget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" line="32" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/OverlayWidget.h" bodystart="33" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a17a3409f09f51b9bb1d935efae950bbc" prot="private" virt="non-virtual"><scope>mv::gui::OverlayWidget</scope><name>_widgetOverlayer</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7626aeac1d58a168131f2444a1312d7b" prot="public" virt="virtual"><scope>mv::gui::OverlayWidget</scope><name>addMouseEventReceiverWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1afc42679a88787233f09777dabecc0cf7" prot="public" virt="non-virtual"><scope>mv::gui::OverlayWidget</scope><name>getWidgetOverlayer</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7d999e8b433e469ad8eb8097614c13b6" prot="public" virt="non-virtual"><scope>mv::gui::OverlayWidget</scope><name>OverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1adbc1e650ae0cfbaa32da685673a5f213" prot="public" virt="virtual"><scope>mv::gui::OverlayWidget</scope><name>removeMouseEventReceiverWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1ae5cbd8301966b80a7a729b48b8acc33e" prot="protected" virt="non-virtual"><scope>mv::gui::OverlayWidget</scope><name>resizeEvent</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a61a04628c5eb98aa4c3715f38c60275b" prot="public" virt="non-virtual"><scope>mv::gui::OverlayWidget</scope><name>updateMask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

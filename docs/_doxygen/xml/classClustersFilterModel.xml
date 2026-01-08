@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClustersFilterModel" kind="class" language="C++" prot="public">
+    <compoundname>ClustersFilterModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSortFilterProxyModel</basecompoundref>
+    <includes refid="ClustersFilterModel_8h" local="no">ClustersFilterModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClustersFilterModel_1acef4354ceb0030258c9bebea98021b4d" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString ClustersFilterModel::_nameFilter</definition>
+        <argsstring></argsstring>
+        <name>_nameFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="50" column="17" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClustersFilterModel_1a218887be0e8e9046a6a5af02976b4ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ClustersFilterModel::ClustersFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ClustersFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="24" column="5" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classClustersFilterModel_1ad2cda998a1ff5b53ed302de40d34d7a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ClustersFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether a give row with give parent is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="31" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classClustersFilterModel_1a24cc3dd6160628a1b82be4c0645a93fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ClustersFilterModel::lessThan</definition>
+        <argsstring>(const QModelIndex &amp;lhs, const QModelIndex &amp;rhs) const override</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two cluster items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right cluster </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="38" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.cpp" bodystart="26" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classClustersFilterModel_1a3046c3664abd16a1d50c90419c9e2bc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString ClustersFilterModel::getNameFilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getNameFilter</name>
+        <briefdescription>
+<para>Returns the name filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="41" column="13" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classClustersFilterModel_1a1cc4baf7053a2d92471184a244a677bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ClustersFilterModel::setNameFilter</definition>
+        <argsstring>(const QString &amp;nameFilter)</argsstring>
+        <name>setNameFilter</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>nameFilter</declname>
+        </param>
+        <briefdescription>
+<para>Sets the name filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nameFilter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classClusters" kindref="compound">Clusters</ref> filter model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A class for filtering clusters out of the clusters model</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ClustersFilterModel</label>
+        <link refid="classClustersFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSortFilterProxyModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ClustersFilterModel</label>
+        <link refid="classClustersFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSortFilterProxyModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" line="18" column="1" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClustersFilterModel.h" bodystart="18" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classClustersFilterModel_1acef4354ceb0030258c9bebea98021b4d" prot="private" virt="non-virtual"><scope>ClustersFilterModel</scope><name>_nameFilter</name></member>
+      <member refid="classClustersFilterModel_1a218887be0e8e9046a6a5af02976b4ab0" prot="public" virt="non-virtual"><scope>ClustersFilterModel</scope><name>ClustersFilterModel</name></member>
+      <member refid="classClustersFilterModel_1ad2cda998a1ff5b53ed302de40d34d7a7" prot="public" virt="non-virtual"><scope>ClustersFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classClustersFilterModel_1a3046c3664abd16a1d50c90419c9e2bc2" prot="public" virt="non-virtual"><scope>ClustersFilterModel</scope><name>getNameFilter</name></member>
+      <member refid="classClustersFilterModel_1a24cc3dd6160628a1b82be4c0645a93fa" prot="public" virt="non-virtual"><scope>ClustersFilterModel</scope><name>lessThan</name></member>
+      <member refid="classClustersFilterModel_1a1cc4baf7053a2d92471184a244a677bc" prot="public" virt="non-virtual"><scope>ClustersFilterModel</scope><name>setNameFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

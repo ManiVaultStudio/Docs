@@ -1,0 +1,1158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1WorkspaceManager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::WorkspaceManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractWorkspaceManager" prot="public" virt="non-virtual">mv::AbstractWorkspaceManager</basecompoundref>
+    <includes refid="WorkspaceManager_8h" local="no">WorkspaceManager.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ViewMenuOption</name>
+        <enumvalue id="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57adc15372ec71ec32325f754cd967b2b4f" prot="public">
+          <name>LoadSystemViewPlugins</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a8b352c7981dc2cae8ecd357273f8306c" prot="public">
+          <name>LoadViewPlugins</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>Show menu for loading system views. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a04a3ff561b92806bd95d7e1605a5a4bf" prot="public">
+          <name>LoadedViewsSubMenu</name>
+          <initializer>= 0x00004</initializer>
+          <briefdescription>
+<para>Show menu for loading views. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a407d237249bf4c27cff0dcafd6b40661" prot="public">
+          <name>Default</name>
+          <initializer>= LoadSystemViewPlugins | LoadViewPlugins | LoadedViewsSubMenu</initializer>
+          <briefdescription>
+<para>Show menu for toggling loaded views visibility. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>View menu options. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="42" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="42" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a2c378804204409054760a5276ee2ddd2" prot="private" static="no" mutable="no">
+        <type>QScopedPointer&lt; <ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> &gt;</type>
+        <definition>QScopedPointer&lt;Workspace&gt; mv::WorkspaceManager::_workspace</definition>
+        <argsstring></argsstring>
+        <name>_workspace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="234" column="30" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1ae0468232343e00110713c6c865d037b0" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classDockManager" kindref="compound">DockManager</ref> &gt;</type>
+        <definition>QPointer&lt;DockManager&gt; mv::WorkspaceManager::_mainDockManager</definition>
+        <argsstring></argsstring>
+        <name>_mainDockManager</name>
+        <briefdescription>
+<para>Current workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="235" column="28" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a0079da3d9dba30a4ef9c477806892578" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classDockManager" kindref="compound">DockManager</ref> &gt;</type>
+        <definition>QPointer&lt;DockManager&gt; mv::WorkspaceManager::_viewPluginsDockManager</definition>
+        <argsstring></argsstring>
+        <name>_viewPluginsDockManager</name>
+        <briefdescription>
+<para>Dock manager for docking system view plugins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="236" column="28" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1afcac49aef65973d539207a0e0797abd1" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classViewPluginsDockWidget" kindref="compound">ViewPluginsDockWidget</ref> &gt;</type>
+        <definition>QPointer&lt;ViewPluginsDockWidget&gt; mv::WorkspaceManager::_viewPluginsDockWidget</definition>
+        <argsstring></argsstring>
+        <name>_viewPluginsDockWidget</name>
+        <briefdescription>
+<para>Dock manager for docking non-system view plugins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="237" column="18" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a5391a180b97f2f4ad67d877cb1667c0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_resetWorkspaceAction</definition>
+        <argsstring></argsstring>
+        <name>_resetWorkspaceAction</name>
+        <briefdescription>
+<para>Pointer to view plugins dock widget in which non-system view plugins are docked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="238" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1ac9ad6bfcbeb4a5a079272f6214ceafca" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_importWorkspaceAction</definition>
+        <argsstring></argsstring>
+        <name>_importWorkspaceAction</name>
+        <briefdescription>
+<para>Action for resetting the current workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="239" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1aaeffbdbb8196a05d22e27f90c1c33ffb" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_exportWorkspaceAction</definition>
+        <argsstring></argsstring>
+        <name>_exportWorkspaceAction</name>
+        <briefdescription>
+<para>Action for importing a workspace from file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="240" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a1dc81306e245e8ced32808b15eebd5bb" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_exportWorkspaceAsAction</definition>
+        <argsstring></argsstring>
+        <name>_exportWorkspaceAsAction</name>
+        <briefdescription>
+<para>Action for exporting the current workspace to file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="241" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a1d9209529ae4fd746b09be6aa3354dd7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_editWorkspaceSettingsAction</definition>
+        <argsstring></argsstring>
+        <name>_editWorkspaceSettingsAction</name>
+        <briefdescription>
+<para>Action for exporting the current workspace to file with a different path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="242" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a409a2389421801123f5d3528ed5a9858" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref></type>
+        <definition>gui::TriggerAction mv::WorkspaceManager::_importWorkspaceFromProjectAction</definition>
+        <argsstring></argsstring>
+        <name>_importWorkspaceFromProjectAction</name>
+        <briefdescription>
+<para>Action for triggering the workspace settings dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="243" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a78a48344a6bdff7bedea8160c3522956" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1RecentFilesAction" kindref="compound">gui::RecentFilesAction</ref></type>
+        <definition>gui::RecentFilesAction mv::WorkspaceManager::_recentWorkspacesAction</definition>
+        <argsstring></argsstring>
+        <name>_recentWorkspacesAction</name>
+        <briefdescription>
+<para>Action for importing a workspace from a project file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="244" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1a61e4c1a2720995e24ebe2af136dabfcc" prot="private" static="no" mutable="no">
+        <type>QIcon</type>
+        <definition>QIcon mv::WorkspaceManager::_icon</definition>
+        <argsstring></argsstring>
+        <name>_icon</name>
+        <briefdescription>
+<para>Action for saving the current workspace to file with a different path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="245" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceManager_1acb7ba672d6bb2600757ce553bb0cf611" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceManager::_styleSheet</definition>
+        <argsstring></argsstring>
+        <name>_styleSheet</name>
+        <briefdescription>
+<para>Manager icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="246" column="41" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1aff04381c513118ffd899577fe9a22ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::WorkspaceManager::WorkspaceManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>WorkspaceManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="58" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="46" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a58d289156f81c5a4cc5c64de10ff3c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::WorkspaceManager::~WorkspaceManager</definition>
+        <argsstring>() override</argsstring>
+        <name>~WorkspaceManager</name>
+        <briefdescription>
+<para>Reset when destructed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="61" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1aee42d8f39f2abe000c0042c81c63b9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48">initialize</reimplements>
+        <briefdescription>
+<para>Perform manager startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="64" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="141" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a68c038f970042ec7f0e699a86273d2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6">reset</reimplements>
+        <briefdescription>
+<para>Resets the contents of the workspace manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="213" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a0d424d718991a40cc63e821e382fece2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QIcon</type>
+        <definition>QIcon mv::WorkspaceManager::getIcon</definition>
+        <argsstring>() const override</argsstring>
+        <name>getIcon</name>
+        <reimplements refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d">getIcon</reimplements>
+        <briefdescription>
+<para>Get manager icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Icon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="73" column="11" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a7a6b2b71006ffb0f2faf76d1c6118c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::addViewPlugin</definition>
+        <argsstring>(plugin::ViewPlugin *viewPlugin, plugin::ViewPlugin *dockToViewPlugin=nullptr, gui::DockAreaFlag dockArea=gui::DockAreaFlag::Right) override</argsstring>
+        <name>addViewPlugin</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a3046a4151ce0717e41cd485652701151">addViewPlugin</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <declname>viewPlugin</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <declname>dockToViewPlugin</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref></type>
+          <declname>dockArea</declname>
+          <defval><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4da92b09c7c48c520c3c55e497875da437c" kindref="member">gui::DockAreaFlag::Right</ref></defval>
+        </param>
+        <briefdescription>
+<para>Add a view plugin to the <computeroutput>dockArea</computeroutput> of <computeroutput>dockViewPlugin</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to view plugin to add to layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dockToViewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to view plugin to which the view plugin will be docked (docked top-level if nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dockArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dock area in which <computeroutput>dockToViewPlugin</computeroutput> will be docked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="81" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="493" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1acfb1e253b544d5770bc33a74a7afbd39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::addViewPluginFloated</definition>
+        <argsstring>(plugin::ViewPlugin *viewPlugin) override</argsstring>
+        <name>addViewPluginFloated</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1aa094de534e02da535a8dd8f146c1f58e">addViewPluginFloated</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <declname>viewPlugin</declname>
+        </param>
+        <briefdescription>
+<para>Add a <computeroutput>viewPlugin</computeroutput> on top of the main window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to view plugin to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="87" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="515" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a67069127d26ddb2b2b806942a549fb9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::isolateViewPlugin</definition>
+        <argsstring>(plugin::ViewPlugin *viewPlugin, bool isolate) override</argsstring>
+        <name>isolateViewPlugin</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a44cb211719f8c8db00de370926c5af5d">isolateViewPlugin</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <declname>viewPlugin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isolate</declname>
+        </param>
+        <briefdescription>
+<para>Set whether <computeroutput>viewPlugin</computeroutput> is isolated or not (closes all other view plugins when isolated) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to view plugin to add to layout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isolate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to isolate <computeroutput>viewPlugin</computeroutput> or to reset the view layout prior to isolation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="94" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="530" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1ad62c0380286599aa003f26f6ac1dae0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::WorkspaceManager::getWidget</definition>
+        <argsstring>() override</argsstring>
+        <name>getWidget</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1adc86ddc936d3fe6900a6115171dd3992">getWidget</reimplements>
+        <briefdescription>
+<para>Get workspace widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to workspace widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="100" column="13" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="539" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1adbccdc2724bed74cdf689fadd275eefc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::setViewPluginDockWidgetPermissionsGlobally</definition>
+        <argsstring>(const util::DockWidgetPermissions &amp;dockWidgetPermissions=util::DockWidgetPermission::All, bool set=true) override</argsstring>
+        <name>setViewPluginDockWidgetPermissionsGlobally</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a82689323ca56ea20c0124fb2a2286b2f">setViewPluginDockWidgetPermissionsGlobally</reimplements>
+        <param>
+          <type>const util::DockWidgetPermissions &amp;</type>
+          <declname>dockWidgetPermissions</declname>
+          <defval><ref refid="namespacemv_1_1util_1ad6319b26b7a1fbae3860a03f23e80c65ab1c94ca2fbc3e78fc30069c8d0f01680" kindref="member">util::DockWidgetPermission::All</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Freeze all dock widgets with <computeroutput>dockWidgetPermissions</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dockWidgetPermissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global dock widget permission flags </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to set or unset the dock widget permission flags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="109" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="699" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a734dc2d76243dacce3b944a69a967b43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::WorkspaceManager::hasWarmedUpNativeWidgets</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasWarmedUpNativeWidgets</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a592b65c86f74a0bc8d0b5774f438ef82">hasWarmedUpNativeWidgets</reimplements>
+        <briefdescription>
+<para>Get whether the native widgets have been warmed up already, to prevent multiple warmups. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether the native widgets have been warmed up already </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="117" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="715" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1ad7c853bb3c80b84f6e45164dc6851064" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::WorkspaceManager::mayLock</definition>
+        <argsstring>() const override</argsstring>
+        <name>mayLock</name>
+        <reimplements refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c">mayLock</reimplements>
+        <briefdescription>
+<para>Get whether the manager be locked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager be locked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="125" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="723" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a627610fbe42a7a4ea02415ed0fb80a3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::WorkspaceManager::mayUnlock</definition>
+        <argsstring>() const override</argsstring>
+        <name>mayUnlock</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3">mayUnlock</reimplements>
+        <briefdescription>
+<para>Get whether the manager be unlocked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the manager be unlocked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="131" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="732" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a658c722ebe6ba1a43a3693715cd3678e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::newWorkspace</definition>
+        <argsstring>() override</argsstring>
+        <name>newWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a4647f49703a1e26995e8a07a6a03c6af">newWorkspace</reimplements>
+        <briefdescription>
+<para>Creates a new workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="136" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="238" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a3fb192bed3d3e9b33d44355805ddef32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::loadWorkspace</definition>
+        <argsstring>(QString filePath=&quot;&quot;, bool addToRecentWorkspaces=true) override</argsstring>
+        <name>loadWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1afc90170680ed697f965d5d8ab9496fc1">loadWorkspace</reimplements>
+        <param>
+          <type>QString</type>
+          <declname>filePath</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addToRecentWorkspaces</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Load a workspace from disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path of the workspace (choose file path with dialog when empty) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addToRecentWorkspaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to add the workspace file path to the recent workspace file paths </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="143" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="258" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a8da2fabc362bbc44b497eea8b6f9e98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::importWorkspaceFromProjectFile</definition>
+        <argsstring>(QString projectFilePath=&quot;&quot;, bool addToRecentWorkspaces=true) override</argsstring>
+        <name>importWorkspaceFromProjectFile</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a1016af09272f6beec01ba9b0e4f07441">importWorkspaceFromProjectFile</reimplements>
+        <param>
+          <type>QString</type>
+          <declname>projectFilePath</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addToRecentWorkspaces</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Import a workspace from a project file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path of the project (choose file path with dialog when empty) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addToRecentWorkspaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to add the workspace file path to the recent workspace file paths </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="150" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="346" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1afde9bf8286eafa232606f95e74bd6036" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::saveWorkspace</definition>
+        <argsstring>(QString filePath=&quot;&quot;, bool addToRecentWorkspaces=true) override</argsstring>
+        <name>saveWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1acd41f219e106900acbe43f587d495800">saveWorkspace</reimplements>
+        <param>
+          <type>QString</type>
+          <declname>filePath</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addToRecentWorkspaces</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Save a workspace to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path of the workspace (choose file path with dialog when empty) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addToRecentWorkspaces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to add the workspace file path to the recent workspace file paths </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="157" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="396" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1acf3822c5bb1035102e48f9d48df41a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::saveWorkspaceAs</definition>
+        <argsstring>() override</argsstring>
+        <name>saveWorkspaceAs</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a9570ce00842b8fcd823dbde7acfaf607">saveWorkspaceAs</reimplements>
+        <briefdescription>
+<para>Save a workspace to disk on a different location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="160" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="484" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1ae1d94fc981e9cbfca7bca644505d0f2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::WorkspaceManager::hasWorkspace</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a70e054bdc3b510ec78c42ee1013ebeea">hasWorkspace</reimplements>
+        <briefdescription>
+<para>Get whether a workspace exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether a workspace exists </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="166" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a6b504d4859bad8ae2931d9e69a85ef5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> *</type>
+        <definition>const Workspace * mv::WorkspaceManager::getCurrentWorkspace</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCurrentWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a9d1288c427f2f816c84381b834d8bde0">getCurrentWorkspace</reimplements>
+        <briefdescription>
+<para>Get current workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to current workspace (nullptr if no workspace is loaded) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="172" column="21" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="549" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a5be5af4cd854ec52961b5994a85cc66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> *</type>
+        <definition>Workspace * mv::WorkspaceManager::getCurrentWorkspace</definition>
+        <argsstring>() override</argsstring>
+        <name>getCurrentWorkspace</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1ae80987822d7df3c7062360bc1432409e">getCurrentWorkspace</reimplements>
+        <briefdescription>
+<para>Get current workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to current workspace (nullptr if no workspace is loaded) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="178" column="15" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="554" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1abff52053ecdda8d1f75ed867d02ef7d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemv_1aa465fe333d81c115fbc0f34abfd880d1" kindref="member">WorkspaceLocations</ref></type>
+        <definition>WorkspaceLocations mv::WorkspaceManager::getWorkspaceLocations</definition>
+        <argsstring>(const WorkspaceLocation::Types &amp;types=WorkspaceLocation::Type::All) override</argsstring>
+        <name>getWorkspaceLocations</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1abd96395a15e8ff16eb88e41a11ead89c">getWorkspaceLocations</reimplements>
+        <param>
+          <type>const WorkspaceLocation::Types &amp;</type>
+          <declname>types</declname>
+          <defval>WorkspaceLocation::Type::All</defval>
+        </param>
+        <briefdescription>
+<para>Get workspace locations for location <computeroutput>types</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of workspace locations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="184" column="24" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="669" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1aa885ae14ddb31c4ada97f6282ca871bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::WorkspaceManager::getViewPluginNames</definition>
+        <argsstring>(const QString &amp;workspaceJsonFile) const override</argsstring>
+        <name>getViewPluginNames</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1ad4720a9f8e4c5f6b0e7406944edea649">getViewPluginNames</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>workspaceJsonFile</declname>
+        </param>
+        <briefdescription>
+<para>Get view plugin names from <computeroutput>workspaceJsonFile</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>workspaceJsonFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location of the workspace JSON file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="190" column="17" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="741" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a3b37da917c902c037af65ed4333b7859" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QImage</type>
+        <definition>QImage mv::WorkspaceManager::toPreviewImage</definition>
+        <argsstring>() const override</argsstring>
+        <name>toPreviewImage</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1a0148f53f5a4b398240ac0ebae373332c">toPreviewImage</reimplements>
+        <briefdescription>
+<para>Get a preview image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> manager preview image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="196" column="12" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="780" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1ae5b441827d6e569148a18ef8b07f8c61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load layout from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant representation of the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="204" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="559" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a3613911e4bb551bf62f60324351c5584" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::WorkspaceManager::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save layout to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the layout </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="210" column="17" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="585" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a8f54d8db1f9277969ed4ad9dc0f4b04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * mv::WorkspaceManager::getMenu</definition>
+        <argsstring>(QWidget *parent=nullptr) override</argsstring>
+        <name>getMenu</name>
+        <reimplements refid="classmv_1_1AbstractWorkspaceManager_1aef8c5dfac02711fd60aeebc27627eade">getMenu</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Get workspace menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent menu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to created menu </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="219" column="11" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="606" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1adffab7b291a0400fbb3f283a5614287f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref> &amp;</type>
+        <definition>gui::TriggerAction&amp; mv::WorkspaceManager::getEditWorkspaceSettingsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getEditWorkspaceSettingsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="231" column="24" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a26976ef20eb2eb32af8a393fb4faed16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::createWorkspace</definition>
+        <argsstring>()</argsstring>
+        <name>createWorkspace</name>
+        <briefdescription>
+<para>Creates a new workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="224" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="629" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceManager_1a22eff6cc6654adddab48388089f65031" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::WorkspaceManager::createIcon</definition>
+        <argsstring>()</argsstring>
+        <name>createIcon</name>
+        <briefdescription>
+<para>Create custom icon for the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="227" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.cpp" bodystart="640" bodyend="667"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> manager class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages the placement of view plugins on the screen using the Advanced Dock System (ADS) for Qt</para>
+<para>It distinguishes between built-in (system) view plugins (data hierarchy, data properties etc.) and other view plugins (scatter plot, image viewer etc.).</para>
+<para>It has a central area where non-system view plugins are docked, and areas around it (left, right, top and bottom) where system view plugins are docked.</para>
+<para>It uses two ADS dock managers:<itemizedlist>
+<listitem><para>One for the main layout (WorkspaceManager::_dockManager)</para>
+</listitem><listitem><para>One for the docking of non-system view plugins in the central area dock widget (WorkspaceManager::_viewPluginsDockManager)</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::WorkspaceManager</label>
+        <link refid="classmv_1_1WorkspaceManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractWorkspaceManager</label>
+        <link refid="classmv_1_1AbstractWorkspaceManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::WorkspaceManager</label>
+        <link refid="classmv_1_1WorkspaceManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractWorkspaceManager</label>
+        <link refid="classmv_1_1AbstractWorkspaceManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" line="35" column="1" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceManager.h" bodystart="36" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classmv_1_1WorkspaceManager_1a1d9209529ae4fd746b09be6aa3354dd7" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_editWorkspaceSettingsAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1aaeffbdbb8196a05d22e27f90c1c33ffb" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_exportWorkspaceAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a1dc81306e245e8ced32808b15eebd5bb" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_exportWorkspaceAsAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a61e4c1a2720995e24ebe2af136dabfcc" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_icon</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ac9ad6bfcbeb4a5a079272f6214ceafca" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_importWorkspaceAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a409a2389421801123f5d3528ed5a9858" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_importWorkspaceFromProjectAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ae0468232343e00110713c6c865d037b0" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_mainDockManager</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a78a48344a6bdff7bedea8160c3522956" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_recentWorkspacesAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a5391a180b97f2f4ad67d877cb1667c0b" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_resetWorkspaceAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acb7ba672d6bb2600757ce553bb0cf611" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_styleSheet</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a0079da3d9dba30a4ef9c477806892578" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_viewPluginsDockManager</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1afcac49aef65973d539207a0e0797abd1" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_viewPluginsDockWidget</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a2c378804204409054760a5276ee2ddd2" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>_workspace</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1aa4d7f47d937fcb6972eb63ccf9fa93f6" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>AbstractWorkspaceManager</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a7a6b2b71006ffb0f2faf76d1c6118c13" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>addViewPlugin</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acfb1e253b544d5770bc33a74a7afbd39" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>addViewPluginFloated</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a4c0edc4849b8ab8006bf4f6720605266" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>beginLoadWorkspace</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a4b90463b979c222e8dd0d7001a60a4e4" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>beginSaveWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a22eff6cc6654adddab48388089f65031" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>createIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a26976ef20eb2eb32af8a393fb4faed16" prot="private" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>createWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a407d237249bf4c27cff0dcafd6b40661" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a68355e25668e646ba43ee0f91d390674" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>endLoadWorkspace</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a98f5e0c79ec6a069650f96f084180263" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>endSaveWorkspace</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ae5b441827d6e569148a18ef8b07f8c61" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractWorkspaceManager::"><scope>mv::WorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractWorkspaceManager::"><scope>mv::WorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a6b504d4859bad8ae2931d9e69a85ef5a" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getCurrentWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a5be5af4cd854ec52961b5994a85cc66f" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getCurrentWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1adffab7b291a0400fbb3f283a5614287f" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getEditWorkspaceSettingsAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a0d424d718991a40cc63e821e382fece2" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a8f54d8db1f9277969ed4ad9dc0f4b04f" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getMenu</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1aa885ae14ddb31c4ada97f6282ca871bb" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getViewPluginNames</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ad62c0380286599aa003f26f6ac1dae0c" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a551e416fe1b89e5af3e2d5c679dd5c0e" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>getWorkspaceFilePath</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1abff52053ecdda8d1f75ed867d02ef7d5" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>getWorkspaceLocations</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a734dc2d76243dacce3b944a69a967b43" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>hasWarmedUpNativeWidgets</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ae1d94fc981e9cbfca7bca644505d0f2f" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>hasWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a8da2fabc362bbc44b497eea8b6f9e98c" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>importWorkspaceFromProjectFile</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1aee42d8f39f2abe000c0042c81c63b9d8" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a67069127d26ddb2b2b806942a549fb9d" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>isolateViewPlugin</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a04a3ff561b92806bd95d7e1605a5a4bf" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>LoadedViewsSubMenu</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57adc15372ec71ec32325f754cd967b2b4f" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>LoadSystemViewPlugins</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57a8b352c7981dc2cae8ecd357273f8306c" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>LoadViewPlugins</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a3fb192bed3d3e9b33d44355805ddef32" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>loadWorkspace</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1ad7c853bb3c80b84f6e45164dc6851064" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a627610fbe42a7a4ea02415ed0fb80a3c" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a658c722ebe6ba1a43a3693715cd3678e" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>newWorkspace</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a68c038f970042ec7f0e699a86273d2fa" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1afde9bf8286eafa232606f95e74bd6036" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>saveWorkspace</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf3822c5bb1035102e48f9d48df41a9a" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>saveWorkspaceAs</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1adbccdc2724bed74cdf689fadd275eefc" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>setViewPluginDockWidgetPermissionsGlobally</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a5d67e20f998fec738aa9e02c39499651" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>setWorkspaceFilePath</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a3b37da917c902c037af65ed4333b7859" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>toPreviewImage</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a3613911e4bb551bf62f60324351c5584" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractWorkspaceManager::"><scope>mv::WorkspaceManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1acf4e67d3867bb165f07286bbd1008b57" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>ViewMenuOption</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a63bcb18a7be63c8b411ec898acc187c8" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceAboutToBeCreated</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a769301795dac202881e2ad58e9d95a3b" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceAboutToBeLoaded</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a2450ec023ab738628208a66b6dd34c72" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceAboutToBeSaved</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1ad42f3f34bd1f4b97810fab1b34cf3c9e" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceCreated</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1ae949578907ddc5d333818b7158219852" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceFilePathChanged</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1a8a75b737e8561c5ade470e3497e4353e" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceLoaded</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1aff04381c513118ffd899577fe9a22ec0" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>WorkspaceManager</name></member>
+      <member refid="classmv_1_1AbstractWorkspaceManager_1afae817b96fdaff46c234cf11f08cf059" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>workspaceSaved</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::WorkspaceManager</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1WorkspaceManager_1a58d289156f81c5a4cc5c64de10ff3c8d" prot="public" virt="non-virtual"><scope>mv::WorkspaceManager</scope><name>~WorkspaceManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

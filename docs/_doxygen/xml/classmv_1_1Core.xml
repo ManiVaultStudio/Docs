@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1Core" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::Core</compoundname>
+    <basecompoundref refid="classmv_1_1CoreInterface" prot="public" virt="non-virtual">mv::CoreInterface</basecompoundref>
+    <includes refid="Core_8h" local="no">Core.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1Core_1a9738e13d0ae49df33d65c720402f3ac1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classmv_1_1AbstractManager" kindref="compound">AbstractManager</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;AbstractManager&gt; &gt; mv::Core::_managers</definition>
+        <argsstring></argsstring>
+        <name>_managers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="93" column="19" bodyfile="Docs/external/core/ManiVault/src/private/Core.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Core_1a6433d65a640bdda9186a49a0e3470e8e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::Core::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+<para>All managers in the core. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="94" column="53" bodyfile="Docs/external/core/ManiVault/src/private/Core.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1Core_1aef9942e50eada5050ae85fd99e4fb5ae" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::Core::_aboutToBeDestroyed</definition>
+        <argsstring></argsstring>
+        <name>_aboutToBeDestroyed</name>
+        <briefdescription>
+<para>Boolean determining whether the core is initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="95" column="53" bodyfile="Docs/external/core/ManiVault/src/private/Core.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1Core_1a70cbf15c0dcb04f15be46d7fe0059d0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DataHierarchyManager</definition>
+        <argsstring></argsstring>
+        <name>DataHierarchyManager</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyManager" kindref="compound">DataHierarchyManager</ref></type>
+        </param>
+        <briefdescription>
+<para>Boolean determining whether the core is about to be destroyed or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="97" column="5" bodyfile="Docs/external/core/ManiVault/src/private/Core.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1Core_1a42bd1e19b8db5f04e6cc46e85303ce67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::Core::Core</definition>
+        <argsstring>()</argsstring>
+        <name>Core</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="32" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1af45c4c196ddad0a9991bbbc00f9e5401" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::createManagers</definition>
+        <argsstring>() override</argsstring>
+        <name>createManagers</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a6da7f2dc8b824a345b87d8dc9eb476b5">createManagers</reimplements>
+        <briefdescription>
+<para>Creates the core managers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="43" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="51" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a162021824c8fa47e623ca720776f95e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::setManagersCreated</definition>
+        <argsstring>() override</argsstring>
+        <name>setManagersCreated</name>
+        <reimplements refid="classmv_1_1CoreInterface_1adb4ddfacefab0cf37ac99b530e238ea6">setManagersCreated</reimplements>
+        <briefdescription>
+<para>Flag the core managers as created and notify listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="46" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a3a0e49b2163b51e31aa1b8400ef5b543" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classmv_1_1CoreInterface_1ad36ce41c7c42d69e5bd5211ea39b8e49">reset</reimplements>
+        <briefdescription>
+<para>Resets the entire core implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="49" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a71cc205834791d0d7757e938bc72d0b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1CoreInterface_1aeb2efb544e3ed0c08dd4fbd8b078f6e1">initialize</reimplements>
+        <briefdescription>
+<para>Initializes the core. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="54" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="85" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a245d706c85f34e1b289106f4efdefb53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::setAboutToBeInitialized</definition>
+        <argsstring>() override</argsstring>
+        <name>setAboutToBeInitialized</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a715e4b6adc57334f2bd56164a5c16df7">setAboutToBeInitialized</reimplements>
+        <briefdescription>
+<para>Notify listeners that the core is about to be initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1abbfd7d0655cc98a972b64d476ad169cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::Core::setInitialized</definition>
+        <argsstring>() override</argsstring>
+        <name>setInitialized</name>
+        <reimplements refid="classmv_1_1CoreInterface_1abc75a0d587c79ec2fe89d652ec381353">setInitialized</reimplements>
+        <briefdescription>
+<para>Flag the core as initialized and notify listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="60" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1ad789d994c6d3ea33ce9d063abdafd9de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::Core::isInitialized</definition>
+        <argsstring>() const override</argsstring>
+        <name>isInitialized</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a98d40a2c35e71dc0feb772bd9e0aa4e9">isInitialized</reimplements>
+        <briefdescription>
+<para>Get whether the core is initialized or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the core is initialized or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="66" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1abaf56764bed21dd9a7e808a6098c2da6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::Core::isAboutToBeDestroyed</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAboutToBeDestroyed</name>
+        <reimplements refid="classmv_1_1CoreInterface_1acb7a118ee9a36ddf29000039fb3c81cd">isAboutToBeDestroyed</reimplements>
+        <briefdescription>
+<para>Get whether the core is about to be destroyed or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the core is about to be destroyed or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1aef781f89d01fc4c98600d14540a6a99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractManager" kindref="compound">AbstractManager</ref> *</type>
+        <definition>AbstractManager * mv::Core::getManager</definition>
+        <argsstring>(const ManagerType &amp;managerType) override</argsstring>
+        <name>getManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a9b6533a7b503a35d7ab8fcbb206b6163">getManager</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1CoreInterface_1a6fdd523b0a93697bed56d23ee1840db6" kindref="member">ManagerType</ref> &amp;</type>
+          <declname>managerType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="76" column="21" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a6a9d85a3d1a7a2033270791f21ccd39f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractErrorManager" kindref="compound">AbstractErrorManager</ref> &amp;</type>
+        <definition>AbstractErrorManager &amp; mv::Core::getErrorManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getErrorManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1aba41368162ed260d84b72b1ca7fa46d0">getErrorManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="78" column="26" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1adef476ad3180d9dae05257c4e4da071c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractActionsManager" kindref="compound">AbstractActionsManager</ref> &amp;</type>
+        <definition>AbstractActionsManager &amp; mv::Core::getActionsManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getActionsManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a05e6e851202fb294ce050bc32db33faa">getActionsManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="79" column="28" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a9cd489c479016f1a3eb2d892a2fe7572" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractThemeManager" kindref="compound">AbstractThemeManager</ref> &amp;</type>
+        <definition>AbstractThemeManager &amp; mv::Core::getThemeManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getThemeManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1ad3686aadbdf68ce91399b908e579ec9c">getThemeManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="80" column="26" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1aa7c6ea71d3eddf7f7f5d35ff2cfed8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractPluginManager" kindref="compound">AbstractPluginManager</ref> &amp;</type>
+        <definition>AbstractPluginManager &amp; mv::Core::getPluginManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getPluginManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1af9527035b09493d2fc434a36bb27c96f">getPluginManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="81" column="27" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1aa0749518f32ac32b7b0011e382d7727c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractEventManager" kindref="compound">AbstractEventManager</ref> &amp;</type>
+        <definition>AbstractEventManager &amp; mv::Core::getEventManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getEventManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1addd391851e782d5d9a782dcf677ce58b">getEventManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="82" column="26" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a1b12e04ad3547286dbdd65a828017c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractDataManager" kindref="compound">AbstractDataManager</ref> &amp;</type>
+        <definition>AbstractDataManager &amp; mv::Core::getDataManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getDataManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a9f409030ddae9809dbbd546cb0c37ebb">getDataManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="83" column="25" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a7a2c62c58fb3b379fb43cbcc229a1335" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractDataHierarchyManager" kindref="compound">AbstractDataHierarchyManager</ref> &amp;</type>
+        <definition>AbstractDataHierarchyManager &amp; mv::Core::getDataHierarchyManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getDataHierarchyManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a667acfbde4cca468bdd5b38556b7c720">getDataHierarchyManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="84" column="34" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a11ff683def453a13cb7071f2b6418917" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractTaskManager" kindref="compound">AbstractTaskManager</ref> &amp;</type>
+        <definition>AbstractTaskManager &amp; mv::Core::getTaskManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getTaskManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a6399ece7b3fbec43a836fbe0e143f2ce">getTaskManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="85" column="25" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a6d05594cd2fbb56f457ac45433a47d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractWorkspaceManager" kindref="compound">AbstractWorkspaceManager</ref> &amp;</type>
+        <definition>AbstractWorkspaceManager &amp; mv::Core::getWorkspaceManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getWorkspaceManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a11afecfed899551fe355a84ede42141e">getWorkspaceManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="86" column="30" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a6086e6866bcfb572fa1c46d107ed2f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractProjectManager" kindref="compound">AbstractProjectManager</ref> &amp;</type>
+        <definition>AbstractProjectManager &amp; mv::Core::getProjectManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getProjectManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a4c5be1a03ebb7a35762430f3f6e44c45">getProjectManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="87" column="28" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1a4783c3667d269b0c2a33a556325241db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractSettingsManager" kindref="compound">AbstractSettingsManager</ref> &amp;</type>
+        <definition>AbstractSettingsManager &amp; mv::Core::getSettingsManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getSettingsManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a5f41f4658e33fb9bab7f2b56b88bd6a0">getSettingsManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="88" column="29" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1aae2262007b95ee3539cea69581e03a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractHelpManager" kindref="compound">AbstractHelpManager</ref> &amp;</type>
+        <definition>AbstractHelpManager &amp; mv::Core::getHelpManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getHelpManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a5102c3ba86596232524ebc50dbe15867">getHelpManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="89" column="25" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1Core_1afbcfbd8d2eadb26bd1bdc881837a413c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1AbstractScriptingManager" kindref="compound">AbstractScriptingManager</ref> &amp;</type>
+        <definition>AbstractScriptingManager &amp; mv::Core::getScriptingManager</definition>
+        <argsstring>() override</argsstring>
+        <name>getScriptingManager</name>
+        <reimplements refid="classmv_1_1CoreInterface_1a3fad4e668b1b753f91986c162a49406a">getScriptingManager</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/Core.h" line="90" column="30" bodyfile="Docs/external/core/ManiVault/src/private/Core.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Core" kindref="compound">Core</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides the core implementation of the application It is responsible for creating and managing all managers It is also responsible for initializing and resetting the application It is a singleton class</para>
+<para><simplesect kind="author"><para>Julian Thijssen and Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Core</label>
+        <link refid="classmv_1_1Core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::CoreInterface</label>
+        <link refid="classmv_1_1CoreInterface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::Core</label>
+        <link refid="classmv_1_1Core"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::CoreInterface</label>
+        <link refid="classmv_1_1CoreInterface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/Core.h" line="33" column="1" bodyfile="Docs/external/core/ManiVault/src/private/Core.h" bodystart="34" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classmv_1_1Core_1aef9942e50eada5050ae85fd99e4fb5ae" prot="private" virt="non-virtual"><scope>mv::Core</scope><name>_aboutToBeDestroyed</name></member>
+      <member refid="classmv_1_1Core_1a6433d65a640bdda9186a49a0e3470e8e" prot="private" virt="non-virtual"><scope>mv::Core</scope><name>_initialized</name></member>
+      <member refid="classmv_1_1Core_1a9738e13d0ae49df33d65c720402f3ac1" prot="private" virt="non-virtual"><scope>mv::Core</scope><name>_managers</name></member>
+      <member refid="classmv_1_1CoreInterface_1ac355b650369176c67c24b0c291a4149a" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>aboutToBeDestroyed</name></member>
+      <member refid="classmv_1_1CoreInterface_1a3f2627a27e1527779c1f281bf10f1fb4" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>aboutToBeInitialized</name></member>
+      <member refid="classmv_1_1Core_1a42bd1e19b8db5f04e6cc46e85303ce67" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>Core</name></member>
+      <member refid="classmv_1_1CoreInterface_1abfbd59f9b03bbc012377e9da8ff5447c" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>CoreInterface</name></member>
+      <member refid="classmv_1_1Core_1af45c4c196ddad0a9991bbbc00f9e5401" prot="public" virt="virtual"><scope>mv::Core</scope><name>createManagers</name></member>
+      <member refid="classmv_1_1Core_1a70cbf15c0dcb04f15be46d7fe0059d0e" prot="private" virt="non-virtual"><scope>mv::Core</scope><name>DataHierarchyManager</name></member>
+      <member refid="classmv_1_1Core_1adef476ad3180d9dae05257c4e4da071c" prot="public" virt="virtual"><scope>mv::Core</scope><name>getActionsManager</name></member>
+      <member refid="classmv_1_1Core_1a7a2c62c58fb3b379fb43cbcc229a1335" prot="public" virt="virtual"><scope>mv::Core</scope><name>getDataHierarchyManager</name></member>
+      <member refid="classmv_1_1Core_1a1b12e04ad3547286dbdd65a828017c87" prot="public" virt="virtual"><scope>mv::Core</scope><name>getDataManager</name></member>
+      <member refid="classmv_1_1Core_1a6a9d85a3d1a7a2033270791f21ccd39f" prot="public" virt="virtual"><scope>mv::Core</scope><name>getErrorManager</name></member>
+      <member refid="classmv_1_1Core_1aa0749518f32ac32b7b0011e382d7727c" prot="public" virt="virtual"><scope>mv::Core</scope><name>getEventManager</name></member>
+      <member refid="classmv_1_1Core_1aae2262007b95ee3539cea69581e03a7a" prot="public" virt="virtual"><scope>mv::Core</scope><name>getHelpManager</name></member>
+      <member refid="classmv_1_1Core_1aef781f89d01fc4c98600d14540a6a99c" prot="public" virt="virtual"><scope>mv::Core</scope><name>getManager</name></member>
+      <member refid="classmv_1_1Core_1aa7c6ea71d3eddf7f7f5d35ff2cfed8a6" prot="public" virt="virtual"><scope>mv::Core</scope><name>getPluginManager</name></member>
+      <member refid="classmv_1_1Core_1a6086e6866bcfb572fa1c46d107ed2f7b" prot="public" virt="virtual"><scope>mv::Core</scope><name>getProjectManager</name></member>
+      <member refid="classmv_1_1Core_1afbcfbd8d2eadb26bd1bdc881837a413c" prot="public" virt="virtual"><scope>mv::Core</scope><name>getScriptingManager</name></member>
+      <member refid="classmv_1_1Core_1a4783c3667d269b0c2a33a556325241db" prot="public" virt="virtual"><scope>mv::Core</scope><name>getSettingsManager</name></member>
+      <member refid="classmv_1_1Core_1a11ff683def453a13cb7071f2b6418917" prot="public" virt="virtual"><scope>mv::Core</scope><name>getTaskManager</name></member>
+      <member refid="classmv_1_1Core_1a9cd489c479016f1a3eb2d892a2fe7572" prot="public" virt="virtual"><scope>mv::Core</scope><name>getThemeManager</name></member>
+      <member refid="classmv_1_1Core_1a6d05594cd2fbb56f457ac45433a47d3d" prot="public" virt="virtual"><scope>mv::Core</scope><name>getWorkspaceManager</name></member>
+      <member refid="classmv_1_1Core_1a71cc205834791d0d7757e938bc72d0b9" prot="public" virt="virtual"><scope>mv::Core</scope><name>initialize</name></member>
+      <member refid="classmv_1_1CoreInterface_1a1df93eecb629749059d4eb4da3f26ff2" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>initialized</name></member>
+      <member refid="classmv_1_1Core_1abaf56764bed21dd9a7e808a6098c2da6" prot="public" virt="virtual"><scope>mv::Core</scope><name>isAboutToBeDestroyed</name></member>
+      <member refid="classmv_1_1Core_1ad789d994c6d3ea33ce9d063abdafd9de" prot="public" virt="virtual"><scope>mv::Core</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1CoreInterface_1a4c74b35642595aaa7adf54ca0f8c43ed" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>managersCreated</name></member>
+      <member refid="classmv_1_1CoreInterface_1a6fdd523b0a93697bed56d23ee1840db6" prot="public" virt="non-virtual"><scope>mv::Core</scope><name>ManagerType</name></member>
+      <member refid="classmv_1_1Core_1a3a0e49b2163b51e31aa1b8400ef5b543" prot="public" virt="virtual"><scope>mv::Core</scope><name>reset</name></member>
+      <member refid="classmv_1_1Core_1a245d706c85f34e1b289106f4efdefb53" prot="public" virt="virtual"><scope>mv::Core</scope><name>setAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1Core_1abbfd7d0655cc98a972b64d476ad169cc" prot="public" virt="virtual"><scope>mv::Core</scope><name>setInitialized</name></member>
+      <member refid="classmv_1_1Core_1a162021824c8fa47e623ca720776f95e0" prot="public" virt="virtual"><scope>mv::Core</scope><name>setManagersCreated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

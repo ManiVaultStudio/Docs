@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DatasetsFilterModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::DatasetsFilterModel</compoundname>
+    <basecompoundref refid="classmv_1_1SortFilterProxyModel" prot="public" virt="non-virtual">mv::SortFilterProxyModel</basecompoundref>
+    <includes refid="DatasetsFilterModel_8h" local="no">DatasetsFilterModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1DatasetsFilterModel_1a512d2892a80c8485f5e7c596640cd417" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;)&gt;</type>
+        <definition>using mv::DatasetsFilterModel::FilterFunction =  std::function&lt;bool(Dataset&lt;DatasetImpl&gt;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FilterFunction</name>
+        <briefdescription>
+<para>Filter function signature, the input are all datasets in the core and it returns the filtered datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1DatasetsFilterModel_1a90e3993f60d3bb99d44b37777cf93a54" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DatasetsFilterModel_1a512d2892a80c8485f5e7c596640cd417" kindref="member">FilterFunction</ref></type>
+        <definition>FilterFunction mv::DatasetsFilterModel::_filterFunction</definition>
+        <argsstring></argsstring>
+        <name>_filterFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="60" column="25" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetsFilterModel_1aeb87d079808d43858dceec9b0700255c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::DatasetsFilterModel::_useFilterFunctionAction</definition>
+        <argsstring></argsstring>
+        <name>_useFilterFunctionAction</name>
+        <briefdescription>
+<para>Filter lambda. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="61" column="25" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DatasetsFilterModel_1ae19c9b78b895010ff39e47d223976035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DatasetsFilterModel::DatasetsFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>DatasetsFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with parent <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetsFilterModel_1acb3e2f165d3a85709fb5896eaa2530ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetsFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether <computeroutput>row</computeroutput> with <computeroutput>parent</computeroutput> is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the item is filtered in or out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.cpp" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetsFilterModel_1af65bea912c090f1aa819dec4953bffbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetsFilterModel::setFilterFunction</definition>
+        <argsstring>(const FilterFunction &amp;filterFunction)</argsstring>
+        <name>setFilterFunction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1DatasetsFilterModel_1a512d2892a80c8485f5e7c596640cd417" kindref="member">FilterFunction</ref> &amp;</type>
+          <declname>filterFunction</declname>
+        </param>
+        <briefdescription>
+<para>Set datasets filter function (mode is set to StorageMode::Automatic) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetsFilterFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter lambda (triggered when datasets are added and/or removed from the datasets model) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetsFilterModel_1a0e9bf0353cbbb7a75db87148b198109c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::DatasetsFilterModel::getUseFilterFunctionAction</definition>
+        <argsstring>()</argsstring>
+        <name>getUseFilterFunctionAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="57" column="23" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Datasets filter class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Proxy model for filtering datasets</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::DatasetsFilterModel</label>
+        <link refid="classmv_1_1DatasetsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::DatasetsFilterModel</label>
+        <link refid="classmv_1_1DatasetsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/models/DatasetsFilterModel.h" bodystart="28" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DatasetsFilterModel_1a90e3993f60d3bb99d44b37777cf93a54" prot="private" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>_filterFunction</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1aeb87d079808d43858dceec9b0700255c" prot="private" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>_useFilterFunctionAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1ae19c9b78b895010ff39e47d223976035" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>DatasetsFilterModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1acb3e2f165d3a85709fb5896eaa2530ca" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1a512d2892a80c8485f5e7c596640cd417" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>FilterFunction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::DatasetsFilterModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1ac2b7af794cf9878f36cdeb0e47b617db" prot="public" virt="virtual"><scope>mv::DatasetsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1af6d445bddd1d60fb09d5e458df57f563" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a1f9cae86492623ad294174f09f20fdd4" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a493597980f72851ea8ef8faa5624d9b1" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getTextFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aeae6c9d82aecef68c17a39d7756270dd" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getTextFilterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a4cf4d3a41d031052e1c360cbb61f54ac" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getTextFilterColumnAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8269affbf1163a933c4b328c6442a3bb" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getTextFilterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa161534d6a51038bd983b62a142cee49" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getTextFilterSettingsAction</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1a0e9bf0353cbbb7a75db87148b198109c" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>getUseFilterFunctionAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1acf704b78e71f631ec8f6c600941b906a" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>rowTypeNameChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5989aec41ce2a9591570fb53e96c662e" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setFilterColumn</name></member>
+      <member refid="classmv_1_1DatasetsFilterModel_1af65bea912c090f1aa819dec4953bffbb" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setFilterFunction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa12dcce3149a00f5ce619b8abc17ef52" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a430c0b51ec0e429c15b89d9ff770e9cb" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>setSourceModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8cf74da126f0487d456ea145c572676b" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>SortFilterProxyModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::DatasetsFilterModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5483cf2345234481ab0273bf5a4a1289" prot="public" virt="virtual"><scope>mv::DatasetsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::DatasetsFilterModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

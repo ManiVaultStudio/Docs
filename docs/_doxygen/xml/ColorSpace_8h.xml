@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ColorSpace_8h" kind="file" language="C++">
+    <compoundname>ColorSpace.h</compoundname>
+    <includes local="no">QMap</includes>
+    <includes local="no">QString</includes>
+    <includedby refid="ColorSpace_8cpp" local="yes">ColorSpace.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>QMap</label>
+      </node>
+      <node id="1">
+        <label>ColorSpace.h</label>
+        <link refid="ColorSpace_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QString</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>ColorSpace.h</label>
+        <link refid="ColorSpace_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ColorSpace.cpp</label>
+        <link refid="ColorSpace_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacemv">mv</innernamespace>
+    <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bc" kindref="member">ColorSpaceType</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca5d9b47bd3b65072e0d5daf55f01da086" kindref="member">Mono</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca9d6ea08e871ed0e7206290f6b82173aa" kindref="member">Duo</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca889574aebacda6bfd3e534e2b49b8028" kindref="member">RGB</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca855c12a901e2564e19adcd8706ab867e" kindref="member">HSL</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bcaa18771cf7e181cdf9dad769d494bafef" kindref="member">LAB</ref><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QMap&lt;ColorSpaceType, QString&gt;</ref><sp/>colorSpaces<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca5d9b47bd3b65072e0d5daf55f01da086" kindref="member">ColorSpaceType::Mono</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Mono&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca9d6ea08e871ed0e7206290f6b82173aa" kindref="member">ColorSpaceType::Duo</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Duo&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca889574aebacda6bfd3e534e2b49b8028" kindref="member">ColorSpaceType::RGB</ref>,<sp/></highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca855c12a901e2564e19adcd8706ab867e" kindref="member">ColorSpaceType::HSL</ref>,<sp/></highlight><highlight class="stringliteral">&quot;HSL&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bcaa18771cf7e181cdf9dad769d494bafef" kindref="member">ColorSpaceType::LAB</ref>,<sp/></highlight><highlight class="stringliteral">&quot;LAB&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Docs/external/core/ManiVault/src/util/ColorSpace.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1HierarchyWidgetTreeView" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::HierarchyWidgetTreeView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QTreeView</basecompoundref>
+    <includes refid="HierarchyWidget_8h" local="no">HierarchyWidget.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1HierarchyWidgetTreeView_1ae4e1eb3574fb7d46db59893618c133c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class HierarchyWidget</definition>
+        <argsstring></argsstring>
+        <name>HierarchyWidget</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1HierarchyWidget" kindref="compound">HierarchyWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="75" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidgetTreeView_1a0ae4f9aa483fb83a2eaa80b5846730c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidgetTreeView::setColumnHidden</definition>
+        <argsstring>(int column, bool hide)</argsstring>
+        <name>setColumnHidden</name>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hide</declname>
+        </param>
+        <briefdescription>
+<para>Set column hidden (overridden to emit custom signal) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column to hide/show </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hide or show column </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="52" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidgetTreeView_1a357028326729cfac15d9a6ba064c0789" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int mv::gui::HierarchyWidgetTreeView::rowHeight</definition>
+        <argsstring>(const QModelIndex &amp;index) const</argsstring>
+        <name>rowHeight</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get row height for <computeroutput>index</computeroutput> (override because the method is protected in QTreeView) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Row height </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="62" column="9" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1HierarchyWidgetTreeView_1aca4ba44cfbd3f95f0db9f67a1e91948f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidgetTreeView::columnHiddenChanged</definition>
+        <argsstring>(int column, bool hide)</argsstring>
+        <name>columnHiddenChanged</name>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hide</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the column hidden parameter changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the column of which the visibility changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the column has become hidden or visible </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="73" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Custom tree view class Tree view does not emit signals when column visibility changes (needed to update visible columns popup), this class solves this problem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::HierarchyWidgetTreeView</label>
+        <link refid="classmv_1_1gui_1_1HierarchyWidgetTreeView"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QTreeView</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::HierarchyWidgetTreeView</label>
+        <link refid="classmv_1_1gui_1_1HierarchyWidgetTreeView"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QTreeView</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="36" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="37" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1HierarchyWidgetTreeView_1aca4ba44cfbd3f95f0db9f67a1e91948f" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidgetTreeView</scope><name>columnHiddenChanged</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidgetTreeView_1ae4e1eb3574fb7d46db59893618c133c2" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidgetTreeView</scope><name>HierarchyWidget</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidgetTreeView_1a357028326729cfac15d9a6ba064c0789" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidgetTreeView</scope><name>rowHeight</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidgetTreeView_1a0ae4f9aa483fb83a2eaa80b5846730c5" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidgetTreeView</scope><name>setColumnHidden</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1StandardItemModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::StandardItemModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItemModel</basecompoundref>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <derivedcompoundref refid="classAbstractPageActionsModel" prot="public" virt="non-virtual">AbstractPageActionsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel" prot="public" virt="non-virtual">mv::AbstractActionsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractColorSchemesModel" prot="public" virt="non-virtual">mv::AbstractColorSchemesModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDataHierarchyModel" prot="public" virt="non-virtual">mv::AbstractDataHierarchyModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractDatasetsModel" prot="public" virt="non-virtual">mv::AbstractDatasetsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHardwareSpecModel" prot="public" virt="non-virtual">mv::AbstractHardwareSpecModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractHeadsUpDisplayModel" prot="public" virt="non-virtual">mv::AbstractHeadsUpDisplayModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginFactoriesModel" prot="public" virt="non-virtual">mv::AbstractPluginFactoriesModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginsModel" prot="public" virt="non-virtual">mv::AbstractPluginsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractProjectsModel" prot="public" virt="non-virtual">mv::AbstractProjectsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractRecentFilesModel" prot="public" virt="non-virtual">mv::AbstractRecentFilesModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractScriptsModel" prot="public" virt="non-virtual">mv::AbstractScriptsModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractTasksModel" prot="public" virt="non-virtual">mv::AbstractTasksModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1LoggingModel" prot="public" virt="non-virtual">mv::LoggingModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1RawDataModel" prot="public" virt="non-virtual">mv::RawDataModel</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1SelectionsModel" prot="public" virt="non-virtual">mv::SelectionsModel</derivedcompoundref>
+    <includes refid="StandardItemModel_8h" local="no">StandardItemModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>PopulationMode</name>
+        <enumvalue id="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529ca086247a9b57fde6eefee2a0c4752242d" prot="public">
+          <name>Automatic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529ca5d3d2fffb8c5d5b74c8c6f333176d160" prot="public">
+          <name>AutomaticSynchronous</name>
+          <briefdescription>
+<para>Automatically populate the model from the Data Source Names (DSNs) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529cae1ba155a9f2e8c3be94020eef32a0301" prot="public">
+          <name>Manual</name>
+          <briefdescription>
+<para>Automatically populate the model from the DSNs in a synchronous manner. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Manually populate the model from a JSON file or byte array </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model population modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1StandardItemModel_1ad10ef110cf90a5cf0e35fce3f4a03828" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref></type>
+        <definition>PopulationMode mv::StandardItemModel::_populationMode</definition>
+        <argsstring></argsstring>
+        <name>_populationMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="96" column="33" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1StandardItemModel_1a6e47ab22d89f3493ebbe97a6f3900acd" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1NumberOfRowsAction" kindref="compound">gui::NumberOfRowsAction</ref></type>
+        <definition>gui::NumberOfRowsAction mv::StandardItemModel::_numberOfRowsAction</definition>
+        <argsstring></argsstring>
+        <name>_numberOfRowsAction</name>
+        <briefdescription>
+<para>Population mode of the model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="97" column="33" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::StandardItemModel::StandardItemModel</definition>
+        <argsstring>(QObject *parent=nullptr, const QString &amp;title=&quot;StandardItemModel&quot;, const PopulationMode &amp;populationMode=PopulationMode::Automatic)</argsstring>
+        <name>StandardItemModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+          <defval>&quot;StandardItemModel&quot;</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref> &amp;</type>
+          <declname>populationMode</declname>
+          <defval><ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529ca086247a9b57fde6eefee2a0c4752242d" kindref="member">PopulationMode::Automatic</ref></defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>populationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Population mode of the model (automatic/manual) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="45" column="5" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.cpp" bodystart="17" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref></type>
+        <definition>StandardItemModel::PopulationMode mv::StandardItemModel::getPopulationMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getPopulationMode</name>
+        <briefdescription>
+<para>Get the population mode of the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Population mode (automatic/manual) of the model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="51" column="20" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::StandardItemModel::setPopulationMode</definition>
+        <argsstring>(const PopulationMode &amp;populationMode)</argsstring>
+        <name>setPopulationMode</name>
+        <param>
+          <type>const <ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref> &amp;</type>
+          <declname>populationMode</declname>
+        </param>
+        <briefdescription>
+<para>Set the population mode of the model to <computeroutput>populationMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>populationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Population mode (automatic/manual) of the model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.cpp" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>virtual QString mv::StandardItemModel::getSettingsPrefix</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettingsPrefix</name>
+        <briefdescription>
+<para>Get settings prefix (Models/&lt;serialization_name&gt;) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Settings prefix for the model, used for saving/loading settings </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="65" column="21" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::StandardItemModel::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="73" column="10" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::StandardItemModel::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="79" column="17" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1NumberOfRowsAction" kindref="compound">gui::NumberOfRowsAction</ref> &amp;</type>
+        <definition>gui::NumberOfRowsAction&amp; mv::StandardItemModel::getNumberOfRowsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getNumberOfRowsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="83" column="29" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1NumberOfRowsAction" kindref="compound">gui::NumberOfRowsAction</ref> &amp;</type>
+        <definition>const gui::NumberOfRowsAction&amp; mv::StandardItemModel::getNumberOfRowsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfRowsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="85" column="35" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::StandardItemModel::populationModeChanged</definition>
+        <argsstring>(const PopulationMode &amp;populationMode)</argsstring>
+        <name>populationModeChanged</name>
+        <param>
+          <type>const <ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref> &amp;</type>
+          <declname>populationMode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the population mode changed to <computeroutput>populationMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>populationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New population mode of the model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="93" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard item model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base MV standard item model class</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AbstractPageActionsModel</label>
+        <link refid="classAbstractPageActionsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mv::HeadsUpDisplayTreeModel</label>
+        <link refid="classmv_1_1HeadsUpDisplayTreeModel"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mv::DataHierarchyTreeModel</label>
+        <link refid="classmv_1_1DataHierarchyTreeModel"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::AbstractColorSchemesModel</label>
+        <link refid="classmv_1_1AbstractColorSchemesModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>mv::SelectionsModel</label>
+        <link refid="classmv_1_1SelectionsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>mv::ScriptsTreeModel</label>
+        <link refid="classmv_1_1ScriptsTreeModel"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::ColorSchemesListModel</label>
+        <link refid="classmv_1_1ColorSchemesListModel"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::ActionsHierarchyModel</label>
+        <link refid="classmv_1_1ActionsHierarchyModel"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="37">
+        <label>mv::TasksTreeModel</label>
+        <link refid="classmv_1_1TasksTreeModel"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mv::AbstractHeadsUpDisplayModel</label>
+        <link refid="classmv_1_1AbstractHeadsUpDisplayModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mv::AbstractDataHierarchyModel</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mv::PluginFactoriesListModel</label>
+        <link refid="classmv_1_1PluginFactoriesListModel"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::AbstractActionsModel</label>
+        <link refid="classmv_1_1AbstractActionsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::ActionsListModel</label>
+        <link refid="classmv_1_1ActionsListModel"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>mv::RawDataModel</label>
+        <link refid="classmv_1_1RawDataModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>mv::ProjectsListModel</label>
+        <link refid="classmv_1_1ProjectsListModel"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="26">
+        <label>mv::PluginsTreeModel</label>
+        <link refid="classmv_1_1PluginsTreeModel"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>mv::LoggingModel</label>
+        <link refid="classmv_1_1LoggingModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mv::PluginFactoriesTreeModel</label>
+        <link refid="classmv_1_1PluginFactoriesTreeModel"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mv::HardwareSpecTreeModel</label>
+        <link refid="classmv_1_1HardwareSpecTreeModel"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>mv::AbstractTasksModel</label>
+        <link refid="classmv_1_1AbstractTasksModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>mv::AbstractRecentFilesModel</label>
+        <link refid="classmv_1_1AbstractRecentFilesModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mv::AbstractPluginsModel</label>
+        <link refid="classmv_1_1AbstractPluginsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mv::DataHierarchyListModel</label>
+        <link refid="classmv_1_1DataHierarchyListModel"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mv::AbstractHardwareSpecModel</label>
+        <link refid="classmv_1_1AbstractHardwareSpecModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mv::AbstractPluginFactoriesModel</label>
+        <link refid="classmv_1_1AbstractPluginFactoriesModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mv::PluginsListModel</label>
+        <link refid="classmv_1_1PluginsListModel"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mv::AbstractProjectsModel</label>
+        <link refid="classmv_1_1AbstractProjectsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mv::AbstractDatasetsModel</label>
+        <link refid="classmv_1_1AbstractDatasetsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>mv::TasksListModel</label>
+        <link refid="classmv_1_1TasksListModel"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::PublicActionsModel</label>
+        <link refid="classmv_1_1PublicActionsModel"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>mv::AbstractScriptsModel</label>
+        <link refid="classmv_1_1AbstractScriptsModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mv::DatasetsListModel</label>
+        <link refid="classmv_1_1DatasetsListModel"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>mv::RecentFilesListModel</label>
+        <link refid="classmv_1_1RecentFilesListModel"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>mv::ProjectsTreeModel</label>
+        <link refid="classmv_1_1ProjectsTreeModel"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>mv::ScriptsListModel</label>
+        <link refid="classmv_1_1ScriptsListModel"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PageActionsTreeModel</label>
+        <link refid="classPageActionsTreeModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/StandardItemModel.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/models/StandardItemModel.h" bodystart="26" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classmv_1_1StandardItemModel_1a6e47ab22d89f3493ebbe97a6f3900acd" prot="private" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>_numberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ad10ef110cf90a5cf0e35fce3f4a03828" prot="private" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>_populationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::StandardItemModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::StandardItemModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::StandardItemModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::StandardItemModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::StandardItemModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::StandardItemModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::StandardItemModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::StandardItemModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::StandardItemModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

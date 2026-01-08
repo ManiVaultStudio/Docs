@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1CoreApplication_1_1TemporaryDirs" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::CoreApplication::TemporaryDirs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="CoreApplication_8h" local="no">CoreApplication.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1CoreApplication_1_1TemporaryDirs_1a4427a777743de57b1c73b3aee21d9ae7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref></type>
+        <definition>Task mv::CoreApplication::TemporaryDirs::_task</definition>
+        <argsstring></argsstring>
+        <name>_task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="82" column="15" bodyfile="Docs/external/core/ManiVault/src/CoreApplication.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1CoreApplication_1_1TemporaryDirs_1a5ee58b198fe5ae8905ef9c2654080667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::CoreApplication::TemporaryDirs::TemporaryDirs</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>TemporaryDirs</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to /p parent object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="57" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1CoreApplication_1_1TemporaryDirs_1a04818d6cb71a52f14affd3f5d9c3721d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::CoreApplication::TemporaryDirs::getStale</definition>
+        <argsstring>()</argsstring>
+        <name>getStale</name>
+        <briefdescription>
+<para>Get stale ManiVault temporary directories in the OS temporary directory Stale in this context means that the &lt;os_temp_dir&gt;/ManiVault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;app_session_id&gt;.&lt;temp_dir_id&gt;/app.lock is not locked or missing and the directory can be safely removed because it is not in use by another (ManiVault) application. <simplesect kind="return"><para>List of stale ManiVault application temporary directories </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="65" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1CoreApplication_1_1TemporaryDirs_1a09bc859f189f49b3734e37941d435d39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::CoreApplication::TemporaryDirs::removeStale</definition>
+        <argsstring>(const QStringList &amp;stale=QStringList())</argsstring>
+        <name>removeStale</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>stale</declname>
+          <defval>QStringList()</defval>
+        </param>
+        <briefdescription>
+<para>Removes stale directories in the OS temporary directory (ManiVault. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;app_session_id&gt;.&lt;temp_dir_id&gt;) and which are not locked by the OS @stale Stale directories to remove, removes all stale when empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1CoreApplication_1_1TemporaryDirs_1a67878e2e0fe7665f15551df75631c35d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> &amp;</type>
+        <definition>Task&amp; mv::CoreApplication::TemporaryDirs::getTask</definition>
+        <argsstring>()</argsstring>
+        <name>getTask</name>
+        <briefdescription>
+<para>Get progress task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to progress task </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="77" column="14" bodyfile="Docs/external/core/ManiVault/src/CoreApplication.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for managing ManiVault application temporary directories. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::CoreApplication::TemporaryDirs</label>
+        <link refid="classmv_1_1CoreApplication_1_1TemporaryDirs"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::CoreApplication::TemporaryDirs</label>
+        <link refid="classmv_1_1CoreApplication_1_1TemporaryDirs"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/CoreApplication.h" line="50" column="5" bodyfile="Docs/external/core/ManiVault/src/CoreApplication.h" bodystart="50" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmv_1_1CoreApplication_1_1TemporaryDirs_1a4427a777743de57b1c73b3aee21d9ae7" prot="private" virt="non-virtual"><scope>mv::CoreApplication::TemporaryDirs</scope><name>_task</name></member>
+      <member refid="classmv_1_1CoreApplication_1_1TemporaryDirs_1a04818d6cb71a52f14affd3f5d9c3721d" prot="public" virt="non-virtual"><scope>mv::CoreApplication::TemporaryDirs</scope><name>getStale</name></member>
+      <member refid="classmv_1_1CoreApplication_1_1TemporaryDirs_1a67878e2e0fe7665f15551df75631c35d" prot="public" virt="non-virtual"><scope>mv::CoreApplication::TemporaryDirs</scope><name>getTask</name></member>
+      <member refid="classmv_1_1CoreApplication_1_1TemporaryDirs_1a09bc859f189f49b3734e37941d435d39" prot="public" virt="non-virtual"><scope>mv::CoreApplication::TemporaryDirs</scope><name>removeStale</name></member>
+      <member refid="classmv_1_1CoreApplication_1_1TemporaryDirs_1a5ee58b198fe5ae8905ef9c2654080667" prot="public" virt="non-virtual"><scope>mv::CoreApplication::TemporaryDirs</scope><name>TemporaryDirs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

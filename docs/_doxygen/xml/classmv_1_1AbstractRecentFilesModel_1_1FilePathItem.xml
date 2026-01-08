@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem" kind="class" language="C++" prot="protected" final="yes">
+    <compoundname>mv::AbstractRecentFilesModel::FilePathItem</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractRecentFilesModel_1_1Item" prot="public" virt="non-virtual">mv::AbstractRecentFilesModel::Item</basecompoundref>
+    <includes refid="AbstractRecentFilesModel_8h" local="no">AbstractRecentFilesModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1ac39ecece92745d8557c15d3000275b30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::AbstractRecentFilesModel::FilePathItem::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" line="69" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.cpp" bodystart="21" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1a22819f5ee42bf0bea895cddd3594ee85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractRecentFilesModel::Item::Item</definition>
+        <argsstring>(const util::RecentFile &amp;recentFile)</argsstring>
+        <name>Item</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1RecentFile" kindref="compound">util::RecentFile</ref> &amp;</type>
+          <declname>recentFile</declname>
+        </param>
+        <briefdescription>
+<para>No need for custom constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" line="63" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1addc728224f79ef5cad66d4db04022b88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>static QVariant mv::AbstractRecentFilesModel::FilePathItem::headerData</definition>
+        <argsstring>(Qt::Orientation orientation, int role)</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>orientation</computeroutput> and <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal/vertical </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" line="77" column="25" bodyfile="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" bodystart="77" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard model item class for displaying the recent file path. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mv::AbstractRecentFilesModel::Item</label>
+        <link refid="classmv_1_1AbstractRecentFilesModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractRecentFilesModel::FilePathItem</label>
+        <link refid="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mv::AbstractRecentFilesModel::Item</label>
+        <link refid="classmv_1_1AbstractRecentFilesModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractRecentFilesModel::FilePathItem</label>
+        <link refid="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" line="59" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractRecentFilesModel.h" bodystart="59" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1ac39ecece92745d8557c15d3000275b30" prot="public" virt="non-virtual"><scope>mv::AbstractRecentFilesModel::FilePathItem</scope><name>data</name></member>
+      <member refid="classmv_1_1AbstractRecentFilesModel_1_1Item_1ab76eec2a2754c76acfdd2dc37e9a5225" prot="public" virt="non-virtual"><scope>mv::AbstractRecentFilesModel::FilePathItem</scope><name>getRecentFile</name></member>
+      <member refid="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1addc728224f79ef5cad66d4db04022b88" prot="public" virt="non-virtual"><scope>mv::AbstractRecentFilesModel::FilePathItem</scope><name>headerData</name></member>
+      <member refid="classmv_1_1AbstractRecentFilesModel_1_1FilePathItem_1a22819f5ee42bf0bea895cddd3594ee85" prot="public" virt="non-virtual"><scope>mv::AbstractRecentFilesModel::FilePathItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1AbstractRecentFilesModel_1_1Item_1a22819f5ee42bf0bea895cddd3594ee85" prot="public" virt="non-virtual" ambiguityscope="mv::AbstractRecentFilesModel::Item::"><scope>mv::AbstractRecentFilesModel::FilePathItem</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1ColorMap1DAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::ColorMap1DAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1ColorMapAction" prot="public" virt="non-virtual">mv::gui::ColorMapAction</basecompoundref>
+    <includes refid="ColorMap1DAction_8h" local="no">ColorMap1DAction.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMap1DAction_1a5c59eb21ff08abb8b870df87afb816fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_INVOKABLE</type>
+        <definition>mv::gui::ColorMap1DAction::ColorMap1DAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const QString &amp;colorMap=&quot;RdYlBu&quot;)</argsstring>
+        <name>ColorMap1DAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>colorMap</declname>
+          <defval>&quot;RdYlBu&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current color map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMap1DAction.h" line="30" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMap1DAction.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Color map 1D action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>One-dimensional color map action</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mv::gui::ColorMapAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::ColorMap1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMap1DAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>mv::gui::NumericalAction&lt; std::int32_t &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mv::gui::DecimalAction</label>
+        <link refid="classmv_1_1gui_1_1DecimalAction"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mv::gui::IntegralAction</label>
+        <link refid="classmv_1_1gui_1_1IntegralAction"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::ColorMapAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_colorMapFilterModel</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_customColorMapAction</edgelabel>
+          <edgelabel>_discretizeAction</edgelabel>
+          <edgelabel>_discretizeAlphaAction</edgelabel>
+          <edgelabel>_lockToSharedDataRangeAction</edgelabel>
+          <edgelabel>_mirrorAction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_dataRangeAction</edgelabel>
+          <edgelabel>_rangeAction</edgelabel>
+          <edgelabel>_sharedDataRangeAction</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_editor1DAction</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>_currentColorMapAction</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>_settingsAction</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>_numberOfDiscreteStepsAction</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>_settings2DAction</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_customColorMapGroupAction</edgelabel>
+          <edgelabel>_mirrorGroupAction</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_settings1DAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="16">
+        <label>QObject</label>
+      </node>
+      <node id="19">
+        <label>mv::gui::NumericalAction&lt; float &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mv::gui::ColorMapSettingsAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettingsAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::gui::NumericalRangeAction&lt; float, DecimalAction &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalRangeAction"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::gui::ToggleAction</label>
+        <link refid="classmv_1_1gui_1_1ToggleAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mv::gui::ColorMapEditor1DNode</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DNode"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mv::gui::ColorAction</label>
+        <link refid="classmv_1_1gui_1_1ColorAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="26">
+        <label>mv::gui::ColorMapSettings1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettings1DAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mv::gui::ColorMapSettings2DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettings2DAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mv::gui::OptionAction</label>
+        <link refid="classmv_1_1gui_1_1OptionAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::gui::DecimalRangeAction</label>
+        <link refid="classmv_1_1gui_1_1DecimalRangeAction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::ColorMap1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMap1DAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::util::ColorMapFilterModel</label>
+        <link refid="classmv_1_1util_1_1ColorMapFilterModel"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="13">
+        <label>mv::gui::ColorMapEditor1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_nodeAction</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mv::gui::ColorMapEditor1DNodeAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DNodeAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>_currentNode</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_colorMapEditor1DAction</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>_colorAction</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>_opacityAction</edgelabel>
+          <edgelabel>_valueAction</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/ColorMap1DAction.h" line="18" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMap1DAction.h" bodystart="19" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af0a5674a31db7f509a7613ac1f826ff2" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_colorMapFilterModel</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7e21c76a17d8a17dae1e8f9a4f97d003" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_currentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a456ce757a39bcaac6f512ee6c912a95d" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_customColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a0b3f93f33e199f9f3020648b0174c099" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_customColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7546602b2730e971f2480903be6d81cc" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_dataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af96136979c29ed14540b8cbcf722d1c3" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_discretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a3da64eee2c3104b0c66eb3e318014b1c" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_discretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa0435ab47944a5748d9d2f26de1d3185" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_editor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ace567d3ad440a166c93f10571debecdd" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_lockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa40996cdf73e8429d4323d9e99374559" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_mirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9f6b0c52641fe892442073fa62064439" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_mirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad89b7ed5ca3b3fb1c078b90070adddb5" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_numberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa05aa60f6381ea59ca5ffbf9d750c7b2" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_rangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a589c6cd010f67e52fbf4d265f99656cb" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_settings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ab338c8723e7d11be451c67d164438595" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_settings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a1342c948f5d4063fc135ff394b29fb1e" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_settingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a260b46dab19a0ce56a8545cfa64558e4" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>_sharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Axis</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMap1DAction_1a5c59eb21ff08abb8b870df87afb816fe" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ColorMap1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a42924725b5bb10a2b7f6d5b78c18f005" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af7f360a3516d009ab0d6835111960b68" prot="protected" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350ac792671652ac9f9a3ab5a0426172041e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a5ab6304ab7947f61df0252edcade3da4" prot="protected" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350a32e936091d5e93fb7d380cfcd0e65df9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>EditRange</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae862926fa1ba3e9f843ac9145f1b7d65" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMap1DAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMap1DAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a4d2b8fcf717b5ecb249d6b4b3cee4edd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2e8f1974bfef0d14e021984ecf894455" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getColorMapImage</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1afc177fd23a4bd42465cb3d8d620dde24" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getColorMapType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a41121c9764af413cd216b55b4ae1b65f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCurrentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a965766094981f7d0db5a524dd29547f0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCurrentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a03950c6cf11a17d890dbd6b55d7e1948" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCustomColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a885e2e72aedd1ea3e643a6e6a83685c7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCustomColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aac719c02aaf65dd43c7b7424ac57ce02" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCustomColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af8a7fe1fd07527463f78edb2f87509d6" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getCustomColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aad1aabb7ed61be9933b579a54afed61e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a45d2251e0195284f291698d16c5fb434" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae4552e60b8945adfe0b2f6ac289248d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDiscretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a91f8b8bbeefc2a25bd3af323f376f48a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDiscretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae6a042ff89235eb83235689ca3f56379" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDiscretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ac6ea85715be9110cd14d26f427a1bff3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDiscretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a1539f044ed8f3b39d8480e20db17bc31" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a76a830887baaf6e9bf0f663ca25c4078" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa2438e0ecd14f0f7413e6b0354dedb7e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getLockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa5b47d0b97983b3c6c85c982b02c8587" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getLockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a6023d6f3d0a6033f5d86f30dfde132a2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getMirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2810efcfcd743b3df467891563d4f967" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getMirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9e4a4ee8c7f86d843d743b01492e44e5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getMirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aecd7e412dc504e1d2298570101843951" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getMirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a11d51140effdb4a908c5a6371f37c312" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getNumberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2453dd262f216e8e5eabe1e66bee3f58" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getNumberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a58d82f96d1f05d0dec4c0d8ac41444b5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a831a35be1f785ff5b95a03ec9e33a563" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad29718880857649845a6dd3d57c9067c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a3a2df5d6943a426506f84918f7466a22" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9151be44d2de33f7bf74295642db5b10" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1adfd5a9b2daeb720d5315804751270ebd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a55863935ed32095cd5da5e25c1459799" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad81fffa390ebd9a28c8c08d28667e0c0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a8683493fbda4f4b9bef428b4912591c7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7f18de0999dd7d3523db2f87db058fc7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1addfa15f00554047787c4922ea39cab92" prot="protected" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a94b8988631e73c6c60c85811c0ca84ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>imageChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aebf429df1e92d68ba9b60a226cbb1328" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aab58265717e7a5f4e2c1866d93cc64f1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a79da7a2f43732c87d92f4bb4c8ad92ef" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setColorMapType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350af92a8cdcac15d1ddaaed3769f2dc8035" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>Settings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a56d469c28e19571224cbd951ba2e4ec9" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMap1DAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2877477d19e5af53cda7d63fbefcc421" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>typeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::ColorMap1DAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMap1DAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

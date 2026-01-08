@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractErrorManager" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::AbstractErrorManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1ErrorManager" prot="public" virt="non-virtual">mv::ErrorManager</derivedcompoundref>
+    <includes refid="AbstractErrorManager_8h" local="no">AbstractErrorManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractErrorManager_1aca6264927a1a7a0b843ec97c232d6566" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractErrorLogger" kindref="compound">AbstractErrorLogger</ref> *</type>
+        <definition>AbstractErrorLogger* mv::AbstractErrorManager::_errorLogger</definition>
+        <argsstring></argsstring>
+        <name>_errorLogger</name>
+        <briefdescription>
+<para>Get action for showing a crash report dialog when the application fails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="84" column="28" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1AbstractErrorManager_1afc3aa8bf040a9bd1289ab576570851fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AbstractErrorLogger</definition>
+        <argsstring></argsstring>
+        <name>AbstractErrorLogger</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractErrorLogger" kindref="compound">AbstractErrorLogger</ref></type>
+        </param>
+        <briefdescription>
+<para>Pointer to the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="86" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1AbstractErrorManager_1ac00ec686e32b3735ef660599666678d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class gui::ErrorLoggingSettingsAction</definition>
+        <argsstring></argsstring>
+        <name>gui::ErrorLoggingSettingsAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ErrorLoggingSettingsAction" kindref="compound">gui::ErrorLoggingSettingsAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="87" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1abf781f9880805834929053f17133205d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractErrorManager::AbstractErrorManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>AbstractErrorManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1ad97f2b11ed430dbc298b255900ec0446" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::AbstractErrorManager::showErrorLoggingConsentDialog</definition>
+        <argsstring>()=0</argsstring>
+        <name>showErrorLoggingConsentDialog</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1abeca0baac17bbf8eb3a3228655524277">showErrorLoggingConsentDialog</reimplementedby>
+        <briefdescription>
+<para>Show the error logging consent dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="45" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1ad8ed916f27ceb4079be6c62d80a117d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref> &amp;</type>
+        <definition>virtual const gui::TriggerAction&amp; mv::AbstractErrorManager::getLoggingAskConsentDialogAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggingAskConsentDialogAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="69" column="38" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a5205a9e74023b16f5f7d2d3df80a89a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual const gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingUserHasOptedAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggingUserHasOptedAction</name>
+        <briefdescription>
+<para>Get action for asking the user for consent to log errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="70" column="37" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a5bd22f3810bbc29c3541176290cad08b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual const gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingEnabledAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggingEnabledAction</name>
+        <briefdescription>
+<para>Get action for user has opted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="71" column="37" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a4f2b6650d4025ab269b69e110ae815ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>virtual const gui::StringAction&amp; mv::AbstractErrorManager::getLoggingDsnAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggingDsnAction</name>
+        <briefdescription>
+<para>Get action for logging enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="72" column="37" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a9e81999ec4db85a0a98fd5c50194d768" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual const gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingShowCrashReportDialogAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoggingShowCrashReportDialogAction</name>
+        <briefdescription>
+<para>Get action for logging data source name (DSN) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="73" column="37" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1aaf5b9cda56aef48121d0455395ec8b05" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1AbstractErrorLogger" kindref="compound">AbstractErrorLogger</ref> *</type>
+        <definition>AbstractErrorLogger* mv::AbstractErrorManager::getErrorLogger</definition>
+        <argsstring>() const</argsstring>
+        <name>getErrorLogger</name>
+        <briefdescription>
+<para>Get the error logger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the error logger (maybe nullptr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="53" column="25" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a111601b415b6d93a7912d64ab07593f2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractErrorManager::setErrorLogger</definition>
+        <argsstring>(AbstractErrorLogger *errorLogger)</argsstring>
+        <name>setErrorLogger</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractErrorLogger" kindref="compound">AbstractErrorLogger</ref> *</type>
+          <declname>errorLogger</declname>
+        </param>
+        <briefdescription>
+<para>Set the error logger to <computeroutput>errorLogger</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errorLogger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the error logger (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="62" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a663a548b2f69aa9b180cc36e2ebe877f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref> &amp;</type>
+        <definition>virtual gui::TriggerAction&amp; mv::AbstractErrorManager::getLoggingAskConsentDialogAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLoggingAskConsentDialogAction</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1a63e74868a40fd6a6b701f013b567f667">getLoggingAskConsentDialogAction</reimplementedby>
+        <briefdescription>
+<para>Get action for showing a crash report dialog when the application fails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="77" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1ab1d9b3bb9df5353268fe03502be5561d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingUserHasOptedAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLoggingUserHasOptedAction</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1af07c321b4dee760cd619d269ecc685a7">getLoggingUserHasOptedAction</reimplementedby>
+        <briefdescription>
+<para>Get action for asking the user for consent to log errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="78" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1ac1971942d692cb32190302b44721742f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingEnabledAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLoggingEnabledAction</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1a85bb19341c3c685abfec6d4bb82adb30">getLoggingEnabledAction</reimplementedby>
+        <briefdescription>
+<para>Get action for user has opted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="79" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a2662088d56ad803f79aa3e4350df7bf4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>virtual gui::StringAction&amp; mv::AbstractErrorManager::getLoggingDsnAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLoggingDsnAction</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1ae445495a881ce4f8a9a0b83737fa2428">getLoggingDsnAction</reimplementedby>
+        <briefdescription>
+<para>Get action for logging enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="80" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractErrorManager_1a4b7ffd50a546b3caf16c2bb3c6673624" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>virtual gui::ToggleAction&amp; mv::AbstractErrorManager::getLoggingShowCrashReportDialogAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLoggingShowCrashReportDialogAction</name>
+        <reimplementedby refid="classmv_1_1ErrorManager_1aa8f8239dd832c11930348dc009f9ae0b">getLoggingShowCrashReportDialogAction</reimplementedby>
+        <briefdescription>
+<para>Get action for logging data source name (DSN) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="81" column="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract error manager class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base abstract error manager class</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractErrorManager</label>
+        <link refid="classmv_1_1AbstractErrorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="5">
+        <label>mv::ErrorManager</label>
+        <link refid="classmv_1_1ErrorManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractErrorManager</label>
+        <link refid="classmv_1_1AbstractErrorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractErrorManager.h" line="28" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorManager.h" bodystart="29" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractErrorManager_1aca6264927a1a7a0b843ec97c232d6566" prot="private" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>_errorLogger</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1afc3aa8bf040a9bd1289ab576570851fa" prot="private" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>AbstractErrorLogger</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1abf781f9880805834929053f17133205d" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>AbstractErrorManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1aaf5b9cda56aef48121d0455395ec8b05" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getErrorLogger</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1ad8ed916f27ceb4079be6c62d80a117d9" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingAskConsentDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a663a548b2f69aa9b180cc36e2ebe877f" prot="protected" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingAskConsentDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a4f2b6650d4025ab269b69e110ae815ad" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingDsnAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a2662088d56ad803f79aa3e4350df7bf4" prot="protected" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingDsnAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a5bd22f3810bbc29c3541176290cad08b" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingEnabledAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1ac1971942d692cb32190302b44721742f" prot="protected" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingEnabledAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a9e81999ec4db85a0a98fd5c50194d768" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingShowCrashReportDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a4b7ffd50a546b3caf16c2bb3c6673624" prot="protected" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingShowCrashReportDialogAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a5205a9e74023b16f5f7d2d3df80a89a0" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingUserHasOptedAction</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1ab1d9b3bb9df5353268fe03502be5561d" prot="protected" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>getLoggingUserHasOptedAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1ac00ec686e32b3735ef660599666678d4" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>gui::ErrorLoggingSettingsAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1a111601b415b6d93a7912d64ab07593f2" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>setErrorLogger</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1AbstractErrorManager_1ad97f2b11ed430dbc298b255900ec0446" prot="public" virt="pure-virtual"><scope>mv::AbstractErrorManager</scope><name>showErrorLoggingConsentDialog</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractErrorManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractErrorManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

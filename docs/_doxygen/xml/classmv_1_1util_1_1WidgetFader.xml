@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1WidgetFader" kind="class" language="C++" prot="public">
+    <compoundname>mv::util::WidgetFader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="WidgetFader_8h" local="no">WidgetFader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a95db3d621e2842db34d6545e59e798d3" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* mv::util::WidgetFader::_targetWidget</definition>
+        <argsstring></argsstring>
+        <name>_targetWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="135" column="28" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a4e492f7011c430ede3eb925542aa065e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::util::WidgetFader::_minimumOpacity</definition>
+        <argsstring></argsstring>
+        <name>_minimumOpacity</name>
+        <briefdescription>
+<para>Pointer to target widget to fade. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="136" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a9140e881da262009abd2ee352b862080" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::util::WidgetFader::_maximumOpacity</definition>
+        <argsstring></argsstring>
+        <name>_maximumOpacity</name>
+        <briefdescription>
+<para>Target fade out opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="137" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a8cd75246394999863a725ccd337acd7a" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::util::WidgetFader::_fadeInDuration</definition>
+        <argsstring></argsstring>
+        <name>_fadeInDuration</name>
+        <briefdescription>
+<para>Target fade in opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="138" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a89fbdb25bfe79444452a5bf4f2741019" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::util::WidgetFader::_fadeOutDuration</definition>
+        <argsstring></argsstring>
+        <name>_fadeOutDuration</name>
+        <briefdescription>
+<para>Duration of the fade in animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="139" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1a849baa339f6bcb9f007a8fe6b2573c02" prot="private" static="no" mutable="no">
+        <type>QGraphicsOpacityEffect</type>
+        <definition>QGraphicsOpacityEffect mv::util::WidgetFader::_opacityEffect</definition>
+        <argsstring></argsstring>
+        <name>_opacityEffect</name>
+        <briefdescription>
+<para>Duration of the fade out animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="140" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1util_1_1WidgetFader_1adc338765cfa842e329b50c8d518b9e5e" prot="private" static="no" mutable="no">
+        <type>QPropertyAnimation</type>
+        <definition>QPropertyAnimation mv::util::WidgetFader::_opacityAnimation</definition>
+        <argsstring></argsstring>
+        <name>_opacityAnimation</name>
+        <briefdescription>
+<para>Effect for modulating opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="141" column="29" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a9a4dd80f8e3cc099fba3d1566aea9537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::util::WidgetFader::WidgetFader</definition>
+        <argsstring>(QObject *parent, QWidget *targetWidget, float opacity=0.0f, float minimumOpacity=0.0f, float maximumOpacity=1.0f, std::int32_t fadeInDuration=150, std::int32_t fadeOutDuration=150)</argsstring>
+        <name>WidgetFader</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>targetWidget</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minimumOpacity</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maximumOpacity</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>fadeInDuration</declname>
+          <defval>150</defval>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>fadeOutDuration</declname>
+          <defval>150</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to target widget to fade </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial opacity [0, 1] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minimumOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target fade in opacity [0, 1] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maximumOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target fade out opacity [0, 1] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fadeInDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of the fade in animation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fadeOutDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration of the fade out animation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="17" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1affaa71b4d14b466091aa3940a196353d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::fadeIn</definition>
+        <argsstring>(std::int32_t duration=-1)</argsstring>
+        <name>fadeIn</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>duration</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Fade in the target widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only used if duration &gt;= 0, otherwise uses _fadeInDuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="44" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1abb555e645526c64d6402d7ead57d5eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::fadeOut</definition>
+        <argsstring>(std::int32_t duration=-1, bool autoHideAfterFade=false)</argsstring>
+        <name>fadeOut</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>duration</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>autoHideAfterFade</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Fade out the target widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only used if duration &gt;= 0, otherwise uses _fadeOutDuration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>autoHideAfterFade</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The widget automatically hides itself once the fade-out process completes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="51" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="55" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a4b94d386ce9aeaad97f0127bcd676def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::setOpacity</definition>
+        <argsstring>(float opacity, std::uint32_t duration=0, std::uint32_t delay=0)</argsstring>
+        <name>setOpacity</name>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>duration</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>delay</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opacity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation duration in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Animation delay in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="59" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="70" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a4a9fd84a00e0a0c2d8e09ffed78d5c96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::WidgetFader::isFadedIn</definition>
+        <argsstring>() const</argsstring>
+        <name>isFadedIn</name>
+        <briefdescription>
+<para>Get whether the target widget is faded in. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the target widget is faded in </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="65" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a9be6cf537172c759c81370fffb8a7c02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::WidgetFader::isFadedOut</definition>
+        <argsstring>() const</argsstring>
+        <name>isFadedOut</name>
+        <briefdescription>
+<para>Get whether the target widget is faded out. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the target widget is faded out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="71" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1ae670660a56dbb22483e5221c3d02e7f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::util::WidgetFader::getMinimumOpacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimumOpacity</name>
+        <briefdescription>
+<para>Get minimum opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="74" column="11" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a6cacffceb2d005f026e82fa563fc306a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::util::WidgetFader::getMaximumOpacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaximumOpacity</name>
+        <briefdescription>
+<para>Get maximum opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="77" column="11" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a9e6a6a90fc23b1062895d9497f9edc3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::setMinimumOpacity</definition>
+        <argsstring>(float minimumOpacity)</argsstring>
+        <name>setMinimumOpacity</name>
+        <param>
+          <type>float</type>
+          <declname>minimumOpacity</declname>
+        </param>
+        <briefdescription>
+<para>Set minimum opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minimumOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum opacity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="83" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1af9c4278eb55209eaba692675787fad12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::setMaximumOpacity</definition>
+        <argsstring>(float maximumOpacity)</argsstring>
+        <name>setMaximumOpacity</name>
+        <param>
+          <type>float</type>
+          <declname>maximumOpacity</declname>
+        </param>
+        <briefdescription>
+<para>Set maximum opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maximumOpacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum opacity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="89" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1aa966e2c62a27e3174ad139409b86efb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::util::WidgetFader::getFadeInDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getFadeInDuration</name>
+        <briefdescription>
+<para>Get fade-in duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="92" column="18" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a18ba4730f2d2a7f54d6df40378649ab9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::util::WidgetFader::getFadeOutDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getFadeOutDuration</name>
+        <briefdescription>
+<para>Get fade-out duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="95" column="18" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1af2a3b2fe6a267caed4a75f2f1219d361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::setFadeInDuration</definition>
+        <argsstring>(std::int32_t fadeInDuration)</argsstring>
+        <name>setFadeInDuration</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>fadeInDuration</declname>
+        </param>
+        <briefdescription>
+<para>Set fade-in duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fadeInDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fade-in duration in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="101" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1ab4f2d91da99767ec5cf872b13bd17973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::setFadeOutDuration</definition>
+        <argsstring>(std::int32_t fadeOutDuration)</argsstring>
+        <name>setFadeOutDuration</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>fadeOutDuration</declname>
+        </param>
+        <briefdescription>
+<para>Set fade-out duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fadeOutDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fade-out duration in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="107" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="151" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a78b4f2e77490b913737427711adb5aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QGraphicsOpacityEffect &amp;</type>
+        <definition>QGraphicsOpacityEffect &amp; mv::util::WidgetFader::getOpacityEffect</definition>
+        <argsstring>()</argsstring>
+        <name>getOpacityEffect</name>
+        <briefdescription>
+<para>Get opacity effect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to opacity effect </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="113" column="28" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1WidgetFader_1a1bc7a7e07a24407cdaaa5856a6439e27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::startAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>startAnimation</name>
+        <briefdescription>
+<para>Start the opacity animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="118" column="10" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.cpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1util_1_1WidgetFader_1a829c1015153266b69bd4cd3b56f6d7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::fadedIn</definition>
+        <argsstring>()</argsstring>
+        <name>fadedIn</name>
+        <briefdescription>
+<para>Signals that the animation has faded in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1WidgetFader_1a35b888faed4d4e5199864c150057fe81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::fadedOut</definition>
+        <argsstring>()</argsstring>
+        <name>fadedOut</name>
+        <briefdescription>
+<para>Signals that the animation has faded out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1WidgetFader_1a925d2aecbd5dfc653be0be5f10b8befa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::WidgetFader::opacityChanged</definition>
+        <argsstring>(float opacity)</argsstring>
+        <name>opacityChanged</name>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the opacity changed to <computeroutput>opacity</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current opacity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="132" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Widget fader utility class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Helper class for fading in/out a target widget.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::util::WidgetFader</label>
+        <link refid="classmv_1_1util_1_1WidgetFader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::util::WidgetFader</label>
+        <link refid="classmv_1_1util_1_1WidgetFader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/WidgetFader.h" line="22" column="1" bodyfile="Docs/external/core/ManiVault/src/util/WidgetFader.h" bodystart="23" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a8cd75246394999863a725ccd337acd7a" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_fadeInDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a89fbdb25bfe79444452a5bf4f2741019" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_fadeOutDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a9140e881da262009abd2ee352b862080" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_maximumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a4e492f7011c430ede3eb925542aa065e" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_minimumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1adc338765cfa842e329b50c8d518b9e5e" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_opacityAnimation</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a849baa339f6bcb9f007a8fe6b2573c02" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_opacityEffect</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a95db3d621e2842db34d6545e59e798d3" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>_targetWidget</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a829c1015153266b69bd4cd3b56f6d7ed" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>fadedIn</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a35b888faed4d4e5199864c150057fe81" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>fadedOut</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1affaa71b4d14b466091aa3940a196353d" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>fadeIn</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1abb555e645526c64d6402d7ead57d5eca" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>fadeOut</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1aa966e2c62a27e3174ad139409b86efb5" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>getFadeInDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a18ba4730f2d2a7f54d6df40378649ab9" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>getFadeOutDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a6cacffceb2d005f026e82fa563fc306a" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>getMaximumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1ae670660a56dbb22483e5221c3d02e7f8" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>getMinimumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a78b4f2e77490b913737427711adb5aef" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>getOpacityEffect</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a4a9fd84a00e0a0c2d8e09ffed78d5c96" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>isFadedIn</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a9be6cf537172c759c81370fffb8a7c02" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>isFadedOut</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a925d2aecbd5dfc653be0be5f10b8befa" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>opacityChanged</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1af2a3b2fe6a267caed4a75f2f1219d361" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>setFadeInDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1ab4f2d91da99767ec5cf872b13bd17973" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>setFadeOutDuration</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1af9c4278eb55209eaba692675787fad12" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>setMaximumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a9e6a6a90fc23b1062895d9497f9edc3c" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>setMinimumOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a4b94d386ce9aeaad97f0127bcd676def" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>setOpacity</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a1bc7a7e07a24407cdaaa5856a6439e27" prot="private" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>startAnimation</name></member>
+      <member refid="classmv_1_1util_1_1WidgetFader_1a9a4dd80f8e3cc099fba3d1566aea9537" prot="public" virt="non-virtual"><scope>mv::util::WidgetFader</scope><name>WidgetFader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

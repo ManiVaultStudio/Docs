@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classDataHierarchyWidgetContextMenu" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>DataHierarchyWidgetContextMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMenu</basecompoundref>
+    <includes refid="DataHierarchyWidgetContextMenu_8h" local="no">DataHierarchyWidgetContextMenu.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDataHierarchyWidgetContextMenu_1ad019883076af8684e40d292cc852e8f6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>Datasets DataHierarchyWidgetContextMenu::_allDatasets</definition>
+        <argsstring></argsstring>
+        <name>_allDatasets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="95" column="17" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataHierarchyWidgetContextMenu_1ab90faae66cacb99c304f23ca0209e173" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>Datasets DataHierarchyWidgetContextMenu::_selectedDatasets</definition>
+        <argsstring></argsstring>
+        <name>_selectedDatasets</name>
+        <briefdescription>
+<para>All datasets in the data hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="96" column="17" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a7c9c518ff5ef800198fac4098fb5f064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataHierarchyWidgetContextMenu::DataHierarchyWidgetContextMenu</definition>
+        <argsstring>(QWidget *parent, Datasets selectedDatasets)</argsstring>
+        <name>DataHierarchyWidgetContextMenu</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <declname>selectedDatasets</declname>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> widget and <computeroutput>selectedDatasets</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selectedDatasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selected datasets in the data hierarchy widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="28" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a319230b37f409f2d3f95692215a670d5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataHierarchyWidgetContextMenu::addMenusForPluginType</definition>
+        <argsstring>(plugin::Type pluginType)</argsstring>
+        <name>addMenusForPluginType</name>
+        <param>
+          <type><ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref></type>
+          <declname>pluginType</declname>
+        </param>
+        <briefdescription>
+<para>Add menus for <computeroutput>pluginType</computeroutput> Goes over all loaded plugins of <computeroutput>pluginType</computeroutput> and builds a hierarchical menu structure (based on plugin title) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PluginType </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="114" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1ad341b169aba4c788db497a6ce9dcd889" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataHierarchyWidgetContextMenu::addMenusForScripts</definition>
+        <argsstring>()</argsstring>
+        <name>addMenusForScripts</name>
+        <briefdescription>
+<para>Add menus for scripts <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="50" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="164" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a5ed31ad36737c7ff03bde056daa6186e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction *</type>
+        <definition>QAction * DataHierarchyWidgetContextMenu::getGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getGroupAction</name>
+        <briefdescription>
+<para>Get action for item grouping. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to action for item grouping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="56" column="13" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="213" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1ad1fc223472aa363b0cd22a3bc5a1e93b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction *</type>
+        <definition>QAction * DataHierarchyWidgetContextMenu::getSelectionGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectionGroupAction</name>
+        <briefdescription>
+<para>Get action for selection grouping. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to action for selection grouping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="62" column="13" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="227" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a925a3977c25981d96b480281ba913188" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction *</type>
+        <definition>QAction * DataHierarchyWidgetContextMenu::getSelectionGroupPatternAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectionGroupPatternAction</name>
+        <briefdescription>
+<para>Get action for selection-pattern grouping. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to action for selection-pattern grouping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="68" column="13" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="256" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1afed8b0d57c3c311c4dfb84d820b7f2fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * DataHierarchyWidgetContextMenu::getLockMenu</definition>
+        <argsstring>()</argsstring>
+        <name>getLockMenu</name>
+        <briefdescription>
+<para>Get menu for item locking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to menu for item locking </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="74" column="11" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="345" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1aa6ae93948874deef8101614e1501ece4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * DataHierarchyWidgetContextMenu::getUnlockMenu</definition>
+        <argsstring>()</argsstring>
+        <name>getUnlockMenu</name>
+        <briefdescription>
+<para>Get menu for item unlocking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to menu for item unlocking </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="80" column="11" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="382" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a14aa096972dad48ccc841b5512de9962" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * DataHierarchyWidgetContextMenu::getHideMenu</definition>
+        <argsstring>()</argsstring>
+        <name>getHideMenu</name>
+        <briefdescription>
+<para>Get menu for item hiding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to menu for item hiding </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="86" column="11" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="418" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataHierarchyWidgetContextMenu_1a445b4b3ea8ef9610a67bd5bf5b3dcc36" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * DataHierarchyWidgetContextMenu::getUnhideMenu</definition>
+        <argsstring>()</argsstring>
+        <name>getUnhideMenu</name>
+        <briefdescription>
+<para>Get menu for item unhiding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to menu for item unhiding </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="92" column="11" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.cpp" bodystart="460" bodyend="520"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data hierarchy widget context menu. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Constructs a data hierarchy widget context menu based on the current dataset selection</para>
+<para><simplesect kind="author"><para>Thomas Kroes, Alexander Vieth </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMenu</label>
+      </node>
+      <node id="1">
+        <label>DataHierarchyWidgetContextMenu</label>
+        <link refid="classDataHierarchyWidgetContextMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMenu</label>
+      </node>
+      <node id="1">
+        <label>DataHierarchyWidgetContextMenu</label>
+        <link refid="classDataHierarchyWidgetContextMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" line="29" column="1" bodyfile="Docs/external/core/ManiVault/src/plugins/DataHierarchyPlugin/src/DataHierarchyWidgetContextMenu.h" bodystart="30" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classDataHierarchyWidgetContextMenu_1ad019883076af8684e40d292cc852e8f6" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>_allDatasets</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1ab90faae66cacb99c304f23ca0209e173" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>_selectedDatasets</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a319230b37f409f2d3f95692215a670d5" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>addMenusForPluginType</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1ad341b169aba4c788db497a6ce9dcd889" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>addMenusForScripts</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a7c9c518ff5ef800198fac4098fb5f064" prot="public" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>DataHierarchyWidgetContextMenu</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a5ed31ad36737c7ff03bde056daa6186e" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getGroupAction</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a14aa096972dad48ccc841b5512de9962" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getHideMenu</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1afed8b0d57c3c311c4dfb84d820b7f2fe" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getLockMenu</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1ad1fc223472aa363b0cd22a3bc5a1e93b" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getSelectionGroupAction</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a925a3977c25981d96b480281ba913188" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getSelectionGroupPatternAction</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1a445b4b3ea8ef9610a67bd5bf5b3dcc36" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getUnhideMenu</name></member>
+      <member refid="classDataHierarchyWidgetContextMenu_1aa6ae93948874deef8101614e1501ece4" prot="private" virt="non-virtual"><scope>DataHierarchyWidgetContextMenu</scope><name>getUnlockMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

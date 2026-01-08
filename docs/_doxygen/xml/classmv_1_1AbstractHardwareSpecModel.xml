@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractHardwareSpecModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractHardwareSpecModel</compoundname>
+    <basecompoundref refid="classmv_1_1StandardItemModel" prot="public" virt="non-virtual">mv::StandardItemModel</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1HardwareSpecTreeModel" prot="public" virt="non-virtual">mv::HardwareSpecTreeModel</derivedcompoundref>
+    <includes refid="AbstractHardwareSpecModel_8h" local="no">AbstractHardwareSpecModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21be" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21beab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21bea2e58667afc419e3da2a243ce5f304a61" prot="public">
+          <name>SystemValue</name>
+          <briefdescription>
+<para>Title of the hardware component (parameter) item. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21bea0bd6941de9225eb0a8ba0860550c630b" prot="public">
+          <name>RequiredValue</name>
+          <briefdescription>
+<para>System value of the hardware component (parameter) item. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21beae93f994f01c537c4e2f7d8528c3eb5e9" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para>Required value of the hardware component (parameter) item. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Number of columns in the model </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.h" line="27" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractHardwareSpecModel_1a8f46318f38d2a048afdb4ba08edd7413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractHardwareSpecModel::AbstractHardwareSpecModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>AbstractHardwareSpecModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.h" line="41" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract hardware spec model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base standard item model for hardware specification.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="5">
+        <label>mv::HardwareSpecTreeModel</label>
+        <link refid="classmv_1_1HardwareSpecTreeModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractHardwareSpecModel</label>
+        <link refid="classmv_1_1AbstractHardwareSpecModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::AbstractHardwareSpecModel</label>
+        <link refid="classmv_1_1AbstractHardwareSpecModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.h" line="20" column="1" bodyfile="Docs/external/core/ManiVault/src/models/AbstractHardwareSpecModel.h" bodystart="21" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractHardwareSpecModel_1a8f46318f38d2a048afdb4ba08edd7413" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>AbstractHardwareSpecModel</name></member>
+      <member refid="classmv_1_1AbstractHardwareSpecModel_1a9da407d67f85b8c9222df8789d8f21be" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractHardwareSpecModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractHardwareSpecModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractHardwareSpecModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractHardwareSpecModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

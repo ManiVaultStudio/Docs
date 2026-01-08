@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1IconLabel" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::IconLabel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QLabel</basecompoundref>
+    <includes refid="IconLabel_8h" local="no">IconLabel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1IconLabel_1a6b12f3e6ed32842523f3b901604d514d" prot="public" static="no">
+        <type>std::function&lt; QString()&gt;</type>
+        <definition>using mv::gui::IconLabel::TooltipCallback =  std::function&lt;QString()&gt;</definition>
+        <argsstring></argsstring>
+        <name>TooltipCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1IconLabel_1aa7a26bdb4bad842dd11e83e17dc323b2" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using mv::gui::IconLabel::ClickedCallback =  std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>ClickedCallback</name>
+        <briefdescription>
+<para>Callback function that is called when a tooltip is required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1IconLabel_1ad34e14bced3b6a958b7448056da55123" prot="private" static="no" mutable="no">
+        <type>QGraphicsOpacityEffect</type>
+        <definition>QGraphicsOpacityEffect mv::gui::IconLabel::_opacityEffect</definition>
+        <argsstring></argsstring>
+        <name>_opacityEffect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="98" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1IconLabel_1a05621d38aef966601778356b984d284c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1IconLabel_1a6b12f3e6ed32842523f3b901604d514d" kindref="member">TooltipCallback</ref></type>
+        <definition>TooltipCallback mv::gui::IconLabel::_tooltipCallback</definition>
+        <argsstring></argsstring>
+        <name>_tooltipCallback</name>
+        <briefdescription>
+<para>Effect for modulating label opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="99" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1IconLabel_1ab6b71f97f53bf71c4e4e77b6f42429a0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1IconLabel_1aa7a26bdb4bad842dd11e83e17dc323b2" kindref="member">ClickedCallback</ref></type>
+        <definition>ClickedCallback mv::gui::IconLabel::_clickedCallback</definition>
+        <argsstring></argsstring>
+        <name>_clickedCallback</name>
+        <briefdescription>
+<para>Callback function that is called when a tooltip is required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="100" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a57c78cdd5910b197eaa87e17211f8837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::IconLabel::IconLabel</definition>
+        <argsstring>(const QIcon &amp;icon, QWidget *parent=nullptr)</argsstring>
+        <name>IconLabel</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Callback function that is called when the icon label is clicked (used by non-QObject derived classes) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct from <computeroutput>icon</computeroutput> and <computeroutput>parent</computeroutput> widget <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="41" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1afa620ec2719c06e779db6d359cf0dfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::setIcon</definition>
+        <argsstring>(const QIcon &amp;icon)</argsstring>
+        <name>setIcon</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Set the icon to <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Icon to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a7b2664e2fc248ecc0efcb83078a7210d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1IconLabel_1a6b12f3e6ed32842523f3b901604d514d" kindref="member">TooltipCallback</ref></type>
+        <definition>IconLabel::TooltipCallback mv::gui::IconLabel::getTooltipCallback</definition>
+        <argsstring>() const</argsstring>
+        <name>getTooltipCallback</name>
+        <briefdescription>
+<para>Get the tooltip callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TooltipCallback that is called when the sub-action is hovered </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="53" column="21" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1ab77d8ff4984144559fe56560c68ace8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::setTooltipCallback</definition>
+        <argsstring>(const TooltipCallback &amp;tooltipCallback)</argsstring>
+        <name>setTooltipCallback</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1IconLabel_1a6b12f3e6ed32842523f3b901604d514d" kindref="member">TooltipCallback</ref> &amp;</type>
+          <declname>tooltipCallback</declname>
+        </param>
+        <briefdescription>
+<para>Set the tooltip callback to <computeroutput>tooltipCallback</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tooltipCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function that is called when a tooltip is required </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="59" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a2ac86659debc21f98504c61261bdbdaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1IconLabel_1aa7a26bdb4bad842dd11e83e17dc323b2" kindref="member">ClickedCallback</ref></type>
+        <definition>IconLabel::ClickedCallback mv::gui::IconLabel::getClickedCallback</definition>
+        <argsstring>() const</argsstring>
+        <name>getClickedCallback</name>
+        <briefdescription>
+<para>Get the clicked callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ClickedCallback that is called when the sub-action is clicked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="65" column="21" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1adddc91a1231483b3948500c95f9770c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::setClickedCallback</definition>
+        <argsstring>(const ClickedCallback &amp;clickedCallback)</argsstring>
+        <name>setClickedCallback</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1IconLabel_1aa7a26bdb4bad842dd11e83e17dc323b2" kindref="member">ClickedCallback</ref> &amp;</type>
+          <declname>clickedCallback</declname>
+        </param>
+        <briefdescription>
+<para>Set the clicked callback to <computeroutput>clickedCallback</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clickedCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function that is called when the icon label is clicked (used by non-QObject derived classes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="71" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1afb0b80fc54aafc53c360459075e92032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::enterEvent</definition>
+        <argsstring>(QEnterEvent *enterEvent) override</argsstring>
+        <name>enterEvent</name>
+        <param>
+          <type>QEnterEvent *</type>
+          <declname>enterEvent</declname>
+        </param>
+        <briefdescription>
+<para>Triggered on mouse hover. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enterEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to enter event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="77" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a16bebbbf8de379240192d881737ff731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::leaveEvent</definition>
+        <argsstring>(QEvent *event) override</argsstring>
+        <name>leaveEvent</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Triggered on mouse leave. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="83" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a573c24e72100dab555581821cd8f387c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::IconLabel::event</definition>
+        <argsstring>(QEvent *event) override</argsstring>
+        <name>event</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Handle events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the event was handled, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="90" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="69" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1IconLabel_1a42380a571ab672e572613ed40f5e947f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::IconLabel::updateOpacityEffect</definition>
+        <argsstring>()</argsstring>
+        <name>updateOpacityEffect</name>
+        <briefdescription>
+<para>Updates the label opacity depending on whether the mouse is hovering over the label. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="95" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Icon label class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Icon label with tooltip (obtained with tooltip callback function)</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::IconLabel</label>
+        <link refid="classmv_1_1gui_1_1IconLabel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLabel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::IconLabel</label>
+        <link refid="classmv_1_1gui_1_1IconLabel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLabel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/IconLabel.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/IconLabel.h" bodystart="28" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1IconLabel_1ab6b71f97f53bf71c4e4e77b6f42429a0" prot="private" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>_clickedCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1ad34e14bced3b6a958b7448056da55123" prot="private" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>_opacityEffect</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a05621d38aef966601778356b984d284c" prot="private" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>_tooltipCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1aa7a26bdb4bad842dd11e83e17dc323b2" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>ClickedCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1afb0b80fc54aafc53c360459075e92032" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>enterEvent</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a573c24e72100dab555581821cd8f387c" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>event</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a2ac86659debc21f98504c61261bdbdaf" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>getClickedCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a7b2664e2fc248ecc0efcb83078a7210d" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>getTooltipCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a57c78cdd5910b197eaa87e17211f8837" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>IconLabel</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a16bebbbf8de379240192d881737ff731" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>leaveEvent</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1adddc91a1231483b3948500c95f9770c3" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>setClickedCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1afa620ec2719c06e779db6d359cf0dfe0" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>setIcon</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1ab77d8ff4984144559fe56560c68ace8f" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>setTooltipCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a6b12f3e6ed32842523f3b901604d514d" prot="public" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>TooltipCallback</name></member>
+      <member refid="classmv_1_1gui_1_1IconLabel_1a42380a571ab672e572613ed40f5e947f" prot="private" virt="non-virtual"><scope>mv::gui::IconLabel</scope><name>updateOpacityEffect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

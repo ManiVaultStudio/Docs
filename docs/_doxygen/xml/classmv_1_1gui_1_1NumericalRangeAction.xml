@@ -1,0 +1,1139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1NumericalRangeAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::NumericalRangeAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1GroupAction" prot="public" virt="non-virtual">mv::gui::GroupAction</basecompoundref>
+    <includes refid="NumericalRangeAction_8h" local="no">NumericalRangeAction.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename NumericalType</type>
+      </param>
+      <param>
+        <type>typename NumericalActionType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WidgetFlag</name>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a1ba445f634fa7113075a20bcc583046b" prot="public">
+          <name>MinimumSpinBox</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a54470a9a66c0c93a38222d45e5fc20df" prot="public">
+          <name>MinimumLineEdit</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>Widget includes a spin box for the minimum range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ac5ef6a686b450bcf6796919e85c851d7" prot="public">
+          <name>Slider</name>
+          <initializer>= 0x00004</initializer>
+          <briefdescription>
+<para>Widget includes a label for the minimum range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a32d0a9fc84608bdf9b2c5f708188a4f8" prot="public">
+          <name>MaximumSpinBox</name>
+          <initializer>= 0x00008</initializer>
+          <briefdescription>
+<para>Widget includes a slider. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ad4ef436cce61bbeb4caef739066beb71" prot="public">
+          <name>MaximumLineEdit</name>
+          <initializer>= 0x00010</initializer>
+          <briefdescription>
+<para>Widget includes a spin box for the maximum range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ac5e9ea41009aad1b0d9f0cdfe421894e" prot="public">
+          <name>Default</name>
+          <initializer>= MinimumSpinBox | Slider | MaximumSpinBox</initializer>
+          <briefdescription>
+<para>Widget includes a label for the maximum range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Describes the widget settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1NumericalRangeAction_1a5c0dc9f2ae48683ea88a42c9b08473f2" prot="public" static="no">
+        <type>NumericalType</type>
+        <definition>using mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::ValueType =  NumericalType</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="28" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1NumericalRangeAction_1a8f382b53998b116f530db3f343b8ba1d" prot="private" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::LimitsChangedCB =  std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>LimitsChangedCB</name>
+        <briefdescription>
+<para>Templated classes with Q_OBJECT macro are not allowed, so use std functions instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="24" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1NumericalRangeAction_1a82a7feed467a2f4d92a38c5d558fed6b" prot="private" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::RangeChangedCB =  std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>RangeChangedCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="25" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1ae395cf2afb53267f242982d1fc8577df" prot="private" static="no" mutable="no">
+        <type>NumericalActionType</type>
+        <definition>NumericalActionType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_rangeMinAction</definition>
+        <argsstring></argsstring>
+        <name>_rangeMinAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="352" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1a4d5341d8767931b9de336fb056aba008" prot="private" static="no" mutable="no">
+        <type>NumericalActionType</type>
+        <definition>NumericalActionType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_rangeMaxAction</definition>
+        <argsstring></argsstring>
+        <name>_rangeMaxAction</name>
+        <briefdescription>
+<para>Minimum range numerical action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="353" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1a8ccc645268be0dcd6ae00a9d1892e5f2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_blockLimitsChangedCallBack</definition>
+        <argsstring></argsstring>
+        <name>_blockLimitsChangedCallBack</name>
+        <briefdescription>
+<para>Maximum range numerical action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="354" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1a716a49381884d5a3d2caf10f1a371edf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_blockRangeChangedCallBack</definition>
+        <argsstring></argsstring>
+        <name>_blockRangeChangedCallBack</name>
+        <briefdescription>
+<para>Whether RangeAction::_limitsChanged calls are blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="355" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1a8784fa20414b45f0122d9dcb58439b2b" prot="protected" static="no" mutable="no">
+        <type>LimitsChangedCB</type>
+        <definition>LimitsChangedCB mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_limitsChanged</definition>
+        <argsstring></argsstring>
+        <name>_limitsChanged</name>
+        <briefdescription>
+<para>Whether RangeAction::_rangeChanged calls are blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="358" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1NumericalRangeAction_1a39cb3b35b15739c75be6ef27bb80799e" prot="protected" static="no" mutable="no">
+        <type>RangeChangedCB</type>
+        <definition>RangeChangedCB mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::_rangeChanged</definition>
+        <argsstring></argsstring>
+        <name>_rangeChanged</name>
+        <briefdescription>
+<para>Callback which is called when the limits change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="359" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1aa59c539d6c9718b4104e2c698189824d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::NumericalRangeAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const util::NumericalRange&lt; NumericalType &gt; &amp;limits, const util::NumericalRange&lt; NumericalType &gt; &amp;range)</argsstring>
+        <name>NumericalRangeAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>limits</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limits </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="50" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="50" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a9d9e7f20ca946ba5b86159b192a0ffe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::initialize</definition>
+        <argsstring>(const util::NumericalRange&lt; NumericalType &gt; &amp;limits, const util::NumericalRange&lt; NumericalType &gt; &amp;range)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>limits</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the numerical range action with <computeroutput>limits</computeroutput> and <computeroutput>range</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limits </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="71" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a368a24420f186d36ec6e229abfa14d11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getMinimum</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimum</name>
+        <briefdescription>
+<para>Get range minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range minimum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="81" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a0047f0dd1ca8eb51430c79359ef96f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setMinimum</definition>
+        <argsstring>(NumericalType minimum)</argsstring>
+        <name>setMinimum</name>
+        <param>
+          <type>NumericalType</type>
+          <declname>minimum</declname>
+        </param>
+        <briefdescription>
+<para>Set range minimum to <computeroutput>minimum</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range minimum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="89" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="89" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a1a404be2b7e165236cadd13e5c06c99d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getMaximum</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaximum</name>
+        <briefdescription>
+<para>Get range maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range maximum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="106" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a22e08711ab2ee298a1d63532467e80fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setMaximum</definition>
+        <argsstring>(NumericalType maximum)</argsstring>
+        <name>setMaximum</name>
+        <param>
+          <type>NumericalType</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+<para>Set range maximum to <computeroutput>maximum</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range maximum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="114" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="114" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a06441fb6bf416c15aa23a30488177272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getLength</definition>
+        <argsstring>() const</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+<para>Get length of the range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range length </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="131" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a8a68b24b7ffe1ca586a599a72ed6c245" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>getCenter</name>
+        <briefdescription>
+<para>Get center of the range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Range center </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="139" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a055488418db8cc094d637252ad941652" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt;</type>
+        <definition>util::NumericalRange&lt;NumericalType&gt; mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getRange</definition>
+        <argsstring>() const</argsstring>
+        <name>getRange</name>
+        <briefdescription>
+<para>Get the range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="144" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a0417540265f0e01394c99d5b25fd2818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setRange</definition>
+        <argsstring>(const util::NumericalRange&lt; NumericalType &gt; &amp;range)</argsstring>
+        <name>setRange</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Sets the range to <computeroutput>range</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="152" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="152" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1ac329f95284e233526cde0b1a4c654be0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getLimitsMinimum</definition>
+        <argsstring>() const</argsstring>
+        <name>getLimitsMinimum</name>
+        <briefdescription>
+<para>Get limits minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Limits minimum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="170" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a1f06e09a6928b42782d6bce4d2435ce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setLimitsMinimum</definition>
+        <argsstring>(NumericalType limitsMinimum)</argsstring>
+        <name>setLimitsMinimum</name>
+        <param>
+          <type>NumericalType</type>
+          <declname>limitsMinimum</declname>
+        </param>
+        <briefdescription>
+<para>Set limits minimum to <computeroutput>limitsMinimum</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limitsMinimum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limits minimum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="178" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="178" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1ade71761c6217ac18a3c70ac5c488b203" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalType</type>
+        <definition>NumericalType mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getLimitsMaximum</definition>
+        <argsstring>() const</argsstring>
+        <name>getLimitsMaximum</name>
+        <briefdescription>
+<para>Get limits maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Limits maximum </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="196" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1ab8dc3487680aa55148a0f4f3e8cf7df3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setLimitsMaximum</definition>
+        <argsstring>(NumericalType limitsMaximum)</argsstring>
+        <name>setLimitsMaximum</name>
+        <param>
+          <type>NumericalType</type>
+          <declname>limitsMaximum</declname>
+        </param>
+        <briefdescription>
+<para>Set limits maximum to <computeroutput>limitsMaximum</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limitsMaximum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limits maximum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="204" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="204" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1aa96bea45f04ecc2741ad813967631384" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt;</type>
+        <definition>util::NumericalRange&lt;NumericalType&gt; mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getLimits</definition>
+        <argsstring>() const</argsstring>
+        <name>getLimits</name>
+        <briefdescription>
+<para>Get the limits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="219" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a11fb7ce6d513652e95bef0ab771fd52f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::setLimits</definition>
+        <argsstring>(const util::NumericalRange&lt; NumericalType &gt; &amp;limits)</argsstring>
+        <name>setLimits</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange</ref>&lt; NumericalType &gt; &amp;</type>
+          <declname>limits</declname>
+        </param>
+        <briefdescription>
+<para>Set limits to <computeroutput>limits</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Limits </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="227" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="227" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a626ff824761e11376138ee0401b5e940" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::shiftBy</definition>
+        <argsstring>(NumericalType amount)</argsstring>
+        <name>shiftBy</name>
+        <param>
+          <type>NumericalType</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Shift range by <computeroutput>amount</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of shift </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="247" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="247" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a6c6aa7a52013df4e3b2776e3d705e467" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::expandBy</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>expandBy</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Expand by <computeroutput>factor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expansion factor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="263" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="263" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a9e8f8dde64124a1af561807780041820" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1GroupAction_1ae5a855c83fe180d88f1f69408dc5f5d1">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load numerical range action from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map representation of the numerical range action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="322" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="322" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a5ec507a1302b4dfaef00bc42e23a689e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1GroupAction_1a2086c39774b8f1bf2e1f0c3e6dac036b">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save numerical range action to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map representation of the numerical range action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="336" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="336" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a24c3289880f44d241b09c3c1f47fac8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalActionType &amp;</type>
+        <definition>NumericalActionType&amp; mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getRangeMinAction</definition>
+        <argsstring>()</argsstring>
+        <name>getRangeMinAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="348" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="348" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1af9b237a21bd6c6f863e412273bd1177b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>NumericalActionType &amp;</type>
+        <definition>NumericalActionType&amp; mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::getRangeMaxAction</definition>
+        <argsstring>()</argsstring>
+        <name>getRangeMaxAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="349" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="349" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1aeb7f0c7a718dd51f6dec1dbcd257c187" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::blockLimitsChangedCallBack</definition>
+        <argsstring>()</argsstring>
+        <name>blockLimitsChangedCallBack</name>
+        <briefdescription>
+<para>Prevent RangeAction::_limitsChanged from being called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="279" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a63dd46ebd4e7b79668f2cca37761bb14" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::unblockLimitsChangedCallBack</definition>
+        <argsstring>()</argsstring>
+        <name>unblockLimitsChangedCallBack</name>
+        <briefdescription>
+<para>Allow RangeAction::_limitsChanged to be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="284" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="284" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1af2faae5a0496b8d8890296d75b09d1fa" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::blockRangeChangedCallBack</definition>
+        <argsstring>()</argsstring>
+        <name>blockRangeChangedCallBack</name>
+        <briefdescription>
+<para>Prevent RangeAction::_rangeChanged from being called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="289" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1a6682e9dbbb975604e13da620c1aba569" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::unblockRangeChangedCallBack</definition>
+        <argsstring>()</argsstring>
+        <name>unblockRangeChangedCallBack</name>
+        <briefdescription>
+<para>Allow RangeAction::_rangeChanged to be called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="294" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1aeecc6271ec90d4f3a5069574c1bca28e" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::isLimitsChangedCallBackBlocked</definition>
+        <argsstring>() const</argsstring>
+        <name>isLimitsChangedCallBackBlocked</name>
+        <briefdescription>
+<para>Get whether RangeAction::_limitsChanged callbacks are blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether RangeAction::_limitsChanged calls are blocked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="304" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1NumericalRangeAction_1aafbb7d4829063e8244bd61ecf40e069f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;::isRangeChangedCallBackBlocked</definition>
+        <argsstring>() const</argsstring>
+        <name>isRangeChangedCallBackBlocked</name>
+        <briefdescription>
+<para>Get whether RangeAction::_rangeChanged callbacks are blocked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether RangeAction::_rangeChanged calls are blocked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="312" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="312" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Numerical range action base class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a numerical range and creates widgets to interact with it</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalRangeAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::NumericalRangeAction&lt; NumericalType, NumericalActionType &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalRangeAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" line="21" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/NumericalRangeAction.h" bodystart="22" bodyend="360"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a8ccc645268be0dcd6ae00a9d1892e5f2" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_blockLimitsChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a716a49381884d5a3d2caf10f1a371edf" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_blockRangeChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a8784fa20414b45f0122d9dcb58439b2b" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_limitsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a39cb3b35b15739c75be6ef27bb80799e" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_rangeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a4d5341d8767931b9de336fb056aba008" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_rangeMaxAction</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1ae395cf2afb53267f242982d1fc8577df" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>_rangeMinAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1adca4d4573f3d3dfc8861333975f930d7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>actionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8152c992d51606e5603258126bcaa998" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>addAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a56c5eeeaa193c7252dcca5488a3fc1e9" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>addStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1aeb7f0c7a718dd51f6dec1dbcd257c187" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>blockLimitsChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af2faae5a0496b8d8890296d75b09d1fa" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>blockRangeChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afbd2f14ca88b30b4e6ad89aa94cf3831" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>clear</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a5d7a9c53f033d2841844a09b182bb2e2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>collapse</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8ecee1b901f55e8b11f58982327d2063" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>collapsed</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ac5e9ea41009aad1b0d9f0cdfe421894e" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a681d2da460f23d550ceb442d612dcefb" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>expand</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a6c6aa7a52013df4e3b2776e3d705e467" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>expandBy</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a11c4bc094ce992dc7ffd40266d5de37e" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>expanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a9e8f8dde64124a1af561807780041820" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::NumericalRangeAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::NumericalRangeAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ad1927fa59910e23bfda8486d3e0b7945" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getActions</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4011eff1bb2e221535b5cea596dedafd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getAlignment</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a8a68b24b7ffe1ca586a599a72ed6c245" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getCenter</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a15cc71f14a1c7cff0174e1a95b4eee2e" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getConstActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a7e23ed01f216b1bb9b2a05fab8844a3f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aaa65f7efc220e1d11ad67e8e13ce0acd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLabelWidthFixed</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a58dc6b27b2d269221ae25fb7c22e9e2a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLabelWidthPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a06441fb6bf416c15aa23a30488177272" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLength</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1aa96bea45f04ecc2741ad813967631384" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLimits</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1ade71761c6217ac18a3c70ac5c488b203" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLimitsMaximum</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1ac329f95284e233526cde0b1a4c654be0" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLimitsMinimum</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a1a404be2b7e165236cadd13e5c06c99d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getMaximum</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a368a24420f186d36ec6e229abfa14d11" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getMinimum</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a055488418db8cc094d637252ad941652" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getRange</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af9b237a21bd6c6f863e412273bd1177b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getRangeMaxAction</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a24c3289880f44d241b09c3c1f47fac8d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getRangeMinAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afab795ad5bcffb7d953580f4bf323b0d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getShowLabels</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a732bf1bbf3cdb189271588e0bcd33d37" prot="protected" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a19b16e0382635a2c030eff1ef45ed587" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getWidgetConfigurationFunctionsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a6a3bbe0c8a5e6adc6b6b97a52c372bd8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>getWidgetFlagsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a672b35db466cbb2d61a10721b4fcdf79" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>GroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cba7f85692959aaee2824018940022794b7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Horizontal</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a9d9e7f20ca946ba5b86159b192a0ffe3" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1af2249840058290b2a54c2f450d9fa28c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isCollapsed</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1acabca0373d74032308da74799bb22ab8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isExpanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1aeecc6271ec90d4f3a5069574c1bca28e" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isLimitsChangedCallBackBlocked</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1aafbb7d4829063e8244bd61ecf40e069f" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isRangeChangedCallBackBlocked</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a68feb8c19a6f56d3f39eedf208a7cd98" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isReadOnly</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4c4645c84c864b7039dd1e25e42088b8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>LabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ae6a3a9713625e7bce1d6ef0ee1681f9b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>labelSizingTypeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aae93ecccc92a2b302ed317a42b0096c7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>labelWidthFixedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a3ce137591a9e42515c49e10454483241" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>labelWidthPercentageChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a8f382b53998b116f530db3f343b8ba1d" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>LimitsChangedCB</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ad4ef436cce61bbeb4caef739066beb71" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>MaximumLineEdit</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a32d0a9fc84608bdf9b2c5f708188a4f8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>MaximumSpinBox</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a54470a9a66c0c93a38222d45e5fc20df" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>MinimumLineEdit</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7a1ba445f634fa7113075a20bcc583046b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>MinimumSpinBox</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cbabd993962781788665af8c4d5fd80f5f5" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>NoMargins</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1aa59c539d6c9718b4104e2c698189824d" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>NumericalRangeAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a82a7feed467a2f4d92a38c5d558fed6b" prot="private" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>RangeChangedCB</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a673dfbfb79090d8f3833cf4e064f9e5b" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>readOnlyChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a2cc0ef086d2fd1c464d84231009e5f3a" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>removeAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a75b3a33ae44e073c9b966d7b1f3c861d" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>removeAllActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4adef03f46a1dc0e9007e8364b362218" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setExpanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ab42d5d9caffa7355f7c084e748e0c059" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a833149c99087302e6f8e02407ab20c4c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLabelWidthFixed</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aaeefffca7b8aff39f7557086dec217dd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLabelWidthPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a11fb7ce6d513652e95bef0ab771fd52f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLimits</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1ab8dc3487680aa55148a0f4f3e8cf7df3" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLimitsMaximum</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a1f06e09a6928b42782d6bce4d2435ce6" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setLimitsMinimum</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a22e08711ab2ee298a1d63532467e80fd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setMaximum</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a0047f0dd1ca8eb51430c79359ef96f9c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setMinimum</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a0417540265f0e01394c99d5b25fd2818" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setRange</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a0dc61dc6214e86535f594fb67396df80" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setReadOnly</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afb119f6dc65715e944b7a3bc985fef50" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setShowLabels</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a626ff824761e11376138ee0401b5e940" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>shiftBy</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1acd11280c4e1f15dba9d2f27d6adb0145" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>showLabelsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7ac5ef6a686b450bcf6796919e85c851d7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Slider</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ae0c6a3b5d5fdacb1424dc7371f194610" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>toggle</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a5ec507a1302b4dfaef00bc42e23a689e" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::NumericalRangeAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a63dd46ebd4e7b79668f2cca37761bb14" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>unblockLimitsChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a6682e9dbbb975604e13da620c1aba569" prot="protected" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>unblockRangeChangedCallBack</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1a5c0dc9f2ae48683ea88a42c9b08473f2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>ValueType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cba36846f3fba341ee170aa42483632c350" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>Vertical</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8d8927a98b46c7467baa9eff37b12718" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WidgetConfigurationFunctionsMap</name></member>
+      <member refid="classmv_1_1gui_1_1NumericalRangeAction_1af982319c90a5f86aa85f0204eb7298e7" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1af716c9a0bbc039a3e081c67fdfc8d605" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WidgetFlagsList</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ac6ea8459b138c1d690ed065aeddfbdb1" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WidgetFlagsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cbabf7bf92ada25ae0b285b3b35fa09ea25" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>WithMargins</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::NumericalRangeAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::NumericalRangeAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

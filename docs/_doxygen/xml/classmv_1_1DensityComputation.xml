@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DensityComputation" kind="class" language="C++" prot="public">
+    <compoundname>mv::DensityComputation</compoundname>
+    <basecompoundref prot="protected" virt="non-virtual">QOpenGLFunctions_3_3_Core</basecompoundref>
+    <includes refid="DensityComputation_8h" local="no">DensityComputation.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1adb8ba5ca860686ee28872bb7847280a6" prot="private" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int mv::DensityComputation::RESOLUTION</definition>
+        <argsstring></argsstring>
+        <name>RESOLUTION</name>
+        <initializer>= 128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="54" column="24" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a403ef5b4c1bfcfadf1b982635417619a" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float mv::DensityComputation::DEFAULT_SIGMA</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_SIGMA</name>
+        <initializer>= 0.15f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="55" column="17" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1aeabf94af1eb033a33260a722fbda4920" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::DensityComputation::_sigma</definition>
+        <argsstring></argsstring>
+        <name>_sigma</name>
+        <initializer>= DEFAULT_SIGMA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="57" column="11" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1ae7f58b516bf1e25d14927abab6cea4fd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::DensityComputation::_maxKDE</definition>
+        <argsstring></argsstring>
+        <name>_maxKDE</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="58" column="11" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a937f7c79fbb39a8b16034b3bb58c0d19" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mv::DensityComputation::_numPoints</definition>
+        <argsstring></argsstring>
+        <name>_numPoints</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="59" column="18" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a09d0c9ac410623690aa00d6cc24ff6c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Bounds" kindref="compound">Bounds</ref></type>
+        <definition>Bounds mv::DensityComputation::_bounds</definition>
+        <argsstring></argsstring>
+        <name>_bounds</name>
+        <initializer>= <ref refid="classmv_1_1Bounds" kindref="compound">Bounds</ref>(-1, 1, 2, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="60" column="12" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a2d222599da7f6b59ca4c34defa5874f5" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::DensityComputation::_shaderDensityCompute</definition>
+        <argsstring></argsstring>
+        <name>_shaderDensityCompute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="62" column="19" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a812121d97be27a437ccadb3bcae66978" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Framebuffer" kindref="compound">Framebuffer</ref></type>
+        <definition>Framebuffer mv::DensityComputation::_densityBuffer</definition>
+        <argsstring></argsstring>
+        <name>_densityBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="63" column="17" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1ad8e73e579c66700f4ce441627ef1d57a" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D mv::DensityComputation::_densityTexture</definition>
+        <argsstring></argsstring>
+        <name>_densityTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="64" column="15" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1ab545bab7e6807a2dc12fdec2d3b3749c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1GaussianTexture" kindref="compound">GaussianTexture</ref></type>
+        <definition>GaussianTexture mv::DensityComputation::_gaussTexture</definition>
+        <argsstring></argsstring>
+        <name>_gaussTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="65" column="21" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1ac65cf55b3632f611e0061f082338430c" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint mv::DensityComputation::_vao</definition>
+        <argsstring></argsstring>
+        <name>_vao</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="67" column="12" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1aacdb4d0bd4e963e64e4fb9fc2df1dd21" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1BufferObject" kindref="compound">BufferObject</ref></type>
+        <definition>BufferObject mv::DensityComputation::_pointBuffer</definition>
+        <argsstring></argsstring>
+        <name>_pointBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="68" column="18" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1ab185f9d0a6d3060d87fb3487681a301f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1BufferObject" kindref="compound">BufferObject</ref></type>
+        <definition>BufferObject mv::DensityComputation::_weightsBuffer</definition>
+        <argsstring></argsstring>
+        <name>_weightsBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="69" column="18" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a6f07f9dd13705fcbcf100143a478d5a6" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; *</type>
+        <definition>const std::vector&lt;Vector2f&gt;* mv::DensityComputation::_points</definition>
+        <argsstring></argsstring>
+        <name>_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="70" column="23" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a0800e7fd6143fe7a232effb8710fe3a0" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; float &gt; *</type>
+        <definition>const std::vector&lt;float&gt;* mv::DensityComputation::_weights</definition>
+        <argsstring></argsstring>
+        <name>_weights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="71" column="23" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a3e61bf5dba50f975b1fccf3b58dc4f55" prot="private" static="no" mutable="no">
+        <type>QOpenGLContext *</type>
+        <definition>QOpenGLContext* mv::DensityComputation::_ctx</definition>
+        <argsstring></argsstring>
+        <name>_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="73" column="20" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a57b1710885f7652ee496a00ca2b67217" prot="private" static="no" mutable="no">
+        <type>QOffscreenSurface</type>
+        <definition>QOffscreenSurface mv::DensityComputation::_offscreenSurface</definition>
+        <argsstring></argsstring>
+        <name>_offscreenSurface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="74" column="23" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DensityComputation_1a30b92b754c7805d9352144f52ab0f389" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DensityComputation::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="76" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a636e059ab24bf01e82862cf8c6183f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DensityComputation::DensityComputation</definition>
+        <argsstring>()</argsstring>
+        <name>DensityComputation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="29" column="5" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a02532d02852744e1400ff532476c258e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DensityComputation::~DensityComputation</definition>
+        <argsstring>() override</argsstring>
+        <name>~DensityComputation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ad0b93040f9d4cfd6d3b429442e0981ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::init</definition>
+        <argsstring>(QOpenGLContext *ctx)</argsstring>
+        <name>init</name>
+        <param>
+          <type>QOpenGLContext *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="31" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="88" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a2b1445a83b3cfb6c1ab3bbb8e966d943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="32" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="166" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a8376a37e8aa9fc50887207ef79857391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::setData</definition>
+        <argsstring>(const std::vector&lt; Vector2f &gt; *data)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="35" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a1ae6f63dbb00aa09a53fdd01e2e8aa3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::setWeights</definition>
+        <argsstring>(const std::vector&lt; float &gt; *weights)</argsstring>
+        <name>setWeights</name>
+        <param>
+          <type>const std::vector&lt; float &gt; *</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="36" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ad340daf2436e21c7c9e3a1e043950521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::setBounds</definition>
+        <argsstring>(float left, float right, float bottom, float top)</argsstring>
+        <name>setBounds</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="37" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="197" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ab051a062b8a87ec4f97ac16756b70f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::setSigma</definition>
+        <argsstring>(float sigma)</argsstring>
+        <name>setSigma</name>
+        <param>
+          <type>float</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="38" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="205" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a8adeea5461f7832d865dc0080232874c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref> &amp;</type>
+        <definition>Texture2D&amp; mv::DensityComputation::getDensityTexture</definition>
+        <argsstring>()</argsstring>
+        <name>getDensityTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="40" column="15" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::DensityComputation::getMaxDensity</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxDensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="41" column="11" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a11f8b342214f371b3219b59c433efaa0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int mv::DensityComputation::getNumPoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="42" column="18" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ac16868aa872068432f7bb553904e278d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DensityComputation::compute</definition>
+        <argsstring>()</argsstring>
+        <name>compute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="44" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="212" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ae1fd9d182098bc61699dc6b50ed81f03" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QSize</type>
+        <definition>QSize mv::DensityComputation::getDensityTextureSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getDensityTextureSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="47" column="11" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1a39cfaa86b9bd1fc2bdfb74a34ff6ef41" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DensityComputation::hasData</definition>
+        <argsstring>() const</argsstring>
+        <name>hasData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="50" column="10" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DensityComputation_1ad4d19c92bff26119fe255c4a27b2fc32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::DensityComputation::calculateMaxKDE</definition>
+        <argsstring>()</argsstring>
+        <name>calculateMaxKDE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="51" column="11" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.cpp" bodystart="287" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::DensityComputation</label>
+        <link refid="classmv_1_1DensityComputation"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::DensityComputation</label>
+        <link refid="classmv_1_1DensityComputation"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/DensityComputation.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/util/DensityComputation.h" bodystart="27" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DensityComputation_1a09d0c9ac410623690aa00d6cc24ff6c6" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_bounds</name></member>
+      <member refid="classmv_1_1DensityComputation_1a3e61bf5dba50f975b1fccf3b58dc4f55" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_ctx</name></member>
+      <member refid="classmv_1_1DensityComputation_1a812121d97be27a437ccadb3bcae66978" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_densityBuffer</name></member>
+      <member refid="classmv_1_1DensityComputation_1ad8e73e579c66700f4ce441627ef1d57a" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_densityTexture</name></member>
+      <member refid="classmv_1_1DensityComputation_1ab545bab7e6807a2dc12fdec2d3b3749c" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_gaussTexture</name></member>
+      <member refid="classmv_1_1DensityComputation_1a30b92b754c7805d9352144f52ab0f389" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_initialized</name></member>
+      <member refid="classmv_1_1DensityComputation_1ae7f58b516bf1e25d14927abab6cea4fd" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_maxKDE</name></member>
+      <member refid="classmv_1_1DensityComputation_1a937f7c79fbb39a8b16034b3bb58c0d19" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_numPoints</name></member>
+      <member refid="classmv_1_1DensityComputation_1a57b1710885f7652ee496a00ca2b67217" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_offscreenSurface</name></member>
+      <member refid="classmv_1_1DensityComputation_1aacdb4d0bd4e963e64e4fb9fc2df1dd21" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_pointBuffer</name></member>
+      <member refid="classmv_1_1DensityComputation_1a6f07f9dd13705fcbcf100143a478d5a6" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_points</name></member>
+      <member refid="classmv_1_1DensityComputation_1a2d222599da7f6b59ca4c34defa5874f5" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_shaderDensityCompute</name></member>
+      <member refid="classmv_1_1DensityComputation_1aeabf94af1eb033a33260a722fbda4920" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_sigma</name></member>
+      <member refid="classmv_1_1DensityComputation_1ac65cf55b3632f611e0061f082338430c" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_vao</name></member>
+      <member refid="classmv_1_1DensityComputation_1a0800e7fd6143fe7a232effb8710fe3a0" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_weights</name></member>
+      <member refid="classmv_1_1DensityComputation_1ab185f9d0a6d3060d87fb3487681a301f" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>_weightsBuffer</name></member>
+      <member refid="classmv_1_1DensityComputation_1ad4d19c92bff26119fe255c4a27b2fc32" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>calculateMaxKDE</name></member>
+      <member refid="classmv_1_1DensityComputation_1a2b1445a83b3cfb6c1ab3bbb8e966d943" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>cleanup</name></member>
+      <member refid="classmv_1_1DensityComputation_1ac16868aa872068432f7bb553904e278d" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>compute</name></member>
+      <member refid="classmv_1_1DensityComputation_1a403ef5b4c1bfcfadf1b982635417619a" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>DEFAULT_SIGMA</name></member>
+      <member refid="classmv_1_1DensityComputation_1a636e059ab24bf01e82862cf8c6183f05" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>DensityComputation</name></member>
+      <member refid="classmv_1_1DensityComputation_1a8adeea5461f7832d865dc0080232874c" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>getDensityTexture</name></member>
+      <member refid="classmv_1_1DensityComputation_1ae1fd9d182098bc61699dc6b50ed81f03" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>getDensityTextureSize</name></member>
+      <member refid="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>getMaxDensity</name></member>
+      <member refid="classmv_1_1DensityComputation_1a11f8b342214f371b3219b59c433efaa0" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>getNumPoints</name></member>
+      <member refid="classmv_1_1DensityComputation_1a39cfaa86b9bd1fc2bdfb74a34ff6ef41" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>hasData</name></member>
+      <member refid="classmv_1_1DensityComputation_1ad0b93040f9d4cfd6d3b429442e0981ef" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>init</name></member>
+      <member refid="classmv_1_1DensityComputation_1adb8ba5ca860686ee28872bb7847280a6" prot="private" virt="non-virtual"><scope>mv::DensityComputation</scope><name>RESOLUTION</name></member>
+      <member refid="classmv_1_1DensityComputation_1ad340daf2436e21c7c9e3a1e043950521" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>setBounds</name></member>
+      <member refid="classmv_1_1DensityComputation_1a8376a37e8aa9fc50887207ef79857391" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>setData</name></member>
+      <member refid="classmv_1_1DensityComputation_1ab051a062b8a87ec4f97ac16756b70f5f" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>setSigma</name></member>
+      <member refid="classmv_1_1DensityComputation_1a1ae6f63dbb00aa09a53fdd01e2e8aa3f" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>setWeights</name></member>
+      <member refid="classmv_1_1DensityComputation_1a02532d02852744e1400ff532476c258e" prot="public" virt="non-virtual"><scope>mv::DensityComputation</scope><name>~DensityComputation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

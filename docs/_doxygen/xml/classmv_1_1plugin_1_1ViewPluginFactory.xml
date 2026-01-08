@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1plugin_1_1ViewPluginFactory" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::plugin::ViewPluginFactory</compoundname>
+    <basecompoundref refid="classmv_1_1plugin_1_1PluginFactory" prot="public" virt="non-virtual">mv::plugin::PluginFactory</basecompoundref>
+    <derivedcompoundref refid="classDataHierarchyPluginFactory" prot="public" virt="non-virtual">DataHierarchyPluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classDataPropertiesPluginFactory" prot="public" virt="non-virtual">DataPropertiesPluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classLoggingPluginFactory" prot="public" virt="non-virtual">LoggingPluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classSampleScopePluginFactory" prot="public" virt="non-virtual">SampleScopePluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classSharedParametersPluginFactory" prot="public" virt="non-virtual">SharedParametersPluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classTasksPluginFactory" prot="public" virt="non-virtual">TasksPluginFactory</derivedcompoundref>
+    <derivedcompoundref refid="classTutorialPluginFactory" prot="public" virt="non-virtual">TutorialPluginFactory</derivedcompoundref>
+    <includes refid="ViewPlugin_8h" local="no">ViewPlugin.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPluginFactory_1a7c822e4829eecaa176afa2f6be7e67df" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool mv::plugin::ViewPluginFactory::_producesSystemViewPlugins</definition>
+        <argsstring></argsstring>
+        <name>_producesSystemViewPlugins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="272" column="25" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPluginFactory_1ac1c5d625a6dca8c9ee2ba5330e1ee08e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref></type>
+        <definition>gui::DockAreaFlag mv::plugin::ViewPluginFactory::_preferredDockArea</definition>
+        <argsstring></argsstring>
+        <name>_preferredDockArea</name>
+        <briefdescription>
+<para>Whether this factory produces system view plugins or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="273" column="25" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPluginFactory_1ab8c5882ecfcead42a0dc33c6430f8809" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool mv::plugin::ViewPluginFactory::_startFloating</definition>
+        <argsstring></argsstring>
+        <name>_startFloating</name>
+        <briefdescription>
+<para>Preferred initial dock area when the view plugin is added to the workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="274" column="25" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1a5da72e0e3002e653340645ada87a591f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::plugin::ViewPluginFactory::ViewPluginFactory</definition>
+        <argsstring>(bool producesSystemViewPlugins=false, bool startFloating=false)</argsstring>
+        <name>ViewPluginFactory</name>
+        <param>
+          <type>bool</type>
+          <declname>producesSystemViewPlugins</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>startFloating</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>producesSystemViewPlugins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this factory generates system view plugins or not </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startFloating</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the view plugin is initially floating rather than docker to other view plugins </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="234" column="5" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="393" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1adc5ab8be824170d006ef3ba5dd7f8d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::plugin::ViewPluginFactory::~ViewPluginFactory</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~ViewPluginFactory</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="237" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1af243dddbbd76d5415777945920531689" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">ViewPlugin</ref> *</type>
+        <definition>ViewPlugin* mv::plugin::ViewPluginFactory::produce</definition>
+        <argsstring>() override=0</argsstring>
+        <name>produce</name>
+        <reimplements refid="classmv_1_1plugin_1_1PluginFactory_1a1c5c07dac7a0a8f8869ab56dc9bc5c63">produce</reimplements>
+        <reimplementedby refid="classDataHierarchyPluginFactory_1a5aaee0f2010db64075b4ee113afa3025">produce</reimplementedby>
+        <reimplementedby refid="classDataPropertiesPluginFactory_1a3ebab1c21ae2f8c41f16f9f0cf909afc">produce</reimplementedby>
+        <reimplementedby refid="classLoggingPluginFactory_1aa8e07d6cc9f6b3b34f1677a07c941ae8">produce</reimplementedby>
+        <reimplementedby refid="classSampleScopePluginFactory_1af33ba34debfaa8695c6c9a47594dad70">produce</reimplementedby>
+        <reimplementedby refid="classSharedParametersPluginFactory_1acf22b7809000b2b162f56c7365ae47f1">produce</reimplementedby>
+        <reimplementedby refid="classTasksPluginFactory_1a450f757955ae58a8adda5cd2d94807a5">produce</reimplementedby>
+        <reimplementedby refid="classTutorialPluginFactory_1a4c3b33f0a799044512b098235a1c186d">produce</reimplementedby>
+        <briefdescription>
+<para>Produces the plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the produced plugin </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="243" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1a092a1ae1ceed97a51a5f4115a7f6c41b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::plugin::ViewPluginFactory::producesSystemViewPlugins</definition>
+        <argsstring>() const</argsstring>
+        <name>producesSystemViewPlugins</name>
+        <briefdescription>
+<para>Get whether this factory produces system view plugins or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether this factory produces system view plugins or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="249" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1a220396376c55a4513d20b451b2bdda8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref></type>
+        <definition>DockAreaFlag mv::plugin::ViewPluginFactory::getPreferredDockArea</definition>
+        <argsstring>() const</argsstring>
+        <name>getPreferredDockArea</name>
+        <briefdescription>
+<para>Get preferred dock area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Preferred initial dock area when the view plugin is added to the workspace </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="255" column="23" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1ae9564270e8526224de894927041d10dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::plugin::ViewPluginFactory::getStartFloating</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartFloating</name>
+        <briefdescription>
+<para>Get whether the view plugin is initially floating (not docked to other view plugins) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the view plugin initially floats </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="261" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPluginFactory_1aaf4d90dbb4fba8db226ceb0a1edf1ffc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::plugin::ViewPluginFactory::setPreferredDockArea</definition>
+        <argsstring>(const gui::DockAreaFlag &amp;preferredDockArea)</argsstring>
+        <name>setPreferredDockArea</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref> &amp;</type>
+          <declname>preferredDockArea</declname>
+        </param>
+        <briefdescription>
+<para>Set preferred dock area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>preferredDockArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Preferred initial dock area when the view plugin is added to the workspace </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="269" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>TasksPluginFactory</label>
+        <link refid="classTasksPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TutorialPluginFactory</label>
+        <link refid="classTutorialPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="7">
+        <label>DataPropertiesPluginFactory</label>
+        <link refid="classDataPropertiesPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LoggingPluginFactory</label>
+        <link refid="classLoggingPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DataHierarchyPluginFactory</label>
+        <link refid="classDataHierarchyPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::plugin::ViewPluginFactory</label>
+        <link refid="classmv_1_1plugin_1_1ViewPluginFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::plugin::PluginFactory</label>
+        <link refid="classmv_1_1plugin_1_1PluginFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SharedParametersPluginFactory</label>
+        <link refid="classSharedParametersPluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SampleScopePluginFactory</label>
+        <link refid="classSampleScopePluginFactory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::plugin::ViewPluginFactory</label>
+        <link refid="classmv_1_1plugin_1_1ViewPluginFactory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::plugin::PluginFactory</label>
+        <link refid="classmv_1_1plugin_1_1PluginFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="223" column="1" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="224" bodyend="275"/>
+    <listofallmembers>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1ac1c5d625a6dca8c9ee2ba5330e1ee08e" prot="private" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>_preferredDockArea</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1a7c822e4829eecaa176afa2f6be7e67df" prot="private" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>_producesSystemViewPlugins</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1ab8c5882ecfcead42a0dc33c6430f8809" prot="private" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>_startFloating</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aab8453dfacd516bd610f5ae40b074572" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>aboutMarkdownChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aaafaf636759d9c50bc7dd5ec2ce8cb70" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>areAllDatasetsOfTheSameType</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aaa289828b9565bca04344ed0cad197e9" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>authorsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a99b880f68de7fb3d1f1db1a0a1762818" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>copyrightNoticeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ae97ccec02b6ddaed2c0688ab1544af17" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>descriptionChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::plugin::ViewPluginFactory</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::plugin::ViewPluginFactory</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a6833500fa6a8d72841d8cabbf5108003" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getAllowPluginCreationFromStandardGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ac2f4d560e59bbd1474d275a57286b2d1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getCategoryIcon</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a08e7883fce2767358b3c78eaa1e17ac2" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getDatasetTypesAsStringList</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a46223cb057bcbcde397d7c04752acb6e" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getDefaultBranch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a5de1673c224db72db5043b9e8f00e17b" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getGlobalSettingsGroupAction</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ab720b6ca633f989e41ad3a3b04cfe1d1" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getGlobalSettingsPrefix</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a680357746a6f0e0162485242a6ff5ef7" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getGuiName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getId</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a1d98b5c9eca22f0d4e13116ee332b78e" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getKind</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ab01db48ea06a9dff5c84f118d80a3aa2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getMaximumNumberOfInstances</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a2933cd4acc31c504f785dd63d9589189" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getNumberOfDatasetsForType</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1acc5caa3123b41905a1400c27f7f4ca82" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getNumberOfInstances</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aca5b094390994f4c2f746f2a2c029ac1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getNumberOfInstancesProduced</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getParent</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1adb012ae1a7200d68e6d136291d625256" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPluginMetadata</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ad9e2321231e9f1ad81fea95aef0ddb4c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPluginMetadata</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a81741ee17df9ad2b8fa85bf8f83ca665" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPluginTriggerAction</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a0c6cf2e52227aa692a76aa76cd69ae8e" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPluginTriggerActions</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a168ae22ee2c7d5fc8649409213d8a6a4" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPluginTriggerActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1a220396376c55a4513d20b451b2bdda8c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPreferredDockArea</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a34aaeedcf553ce82246578be6d6982a4" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getProjectsDsnsAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aac042ef531c10032b41f654b6f33e610" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getReadmeMarkdownUrl</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a0257ad9676c433ee1020db303e9aa704" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getRepositoryUrl</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getScope</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a1c9ef541a0d93fee77a06da5fccbafdf" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getScriptTriggerActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1ae9564270e8526224de894927041d10dc" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getStartFloating</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ad9f73764fe9fcb8d24bed56baaf3c433" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getStatusBarAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aa8b8f4325210588afc853d67601a9f00" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getTutorialsDsnsAction</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a36fcd0538d86ac4080dfa0d63f690162" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a4638700a220fa41561f19f53dc35d104" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getVersion</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1af01dc14aceddb3f0dcca10d5febc7b17" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getVersion</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33" prot="protected" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a93640f35643231ba540d53a111ec3301" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>hasHelp</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a2b3d97c2c503b19813533f8e6bab9be2" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>initialize</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1afe5741a9e1335078bd79e9b4c5a86aaf" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>initializePluginTriggerActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ae363f53ead67022c186b4ff2460d65b1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>mayProduce</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a9467228ea9fe88f31bcc3998b21fed73" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>numberOfInstancesChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1acfc68835fb8b5407730f68deca046670" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>numberOfInstancesProducedChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>operator==</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a05124578e31b894859f8c67acc39d829" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>PluginFactory</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a53ab35d0cd4c71a8037f6befdfe2c7a5" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>pluginGlobalSettingsGroupActionChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a829dcb3e213a006ba6878f215923e46c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>pluginTitleChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1af243dddbbd76d5415777945920531689" prot="public" virt="pure-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>produce</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1a092a1ae1ceed97a51a5f4115a7f6c41b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>producesSystemViewPlugins</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a2f94b70cb51d25eacca240ba2b5c748b" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setAllowPluginCreationFromStandardGui</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a41953c9eb2296dbfa39a97a691d4945e" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setCategoryIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ae9e7381b2dc8583c10d99f5fd01c739c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setGlobalSettingsGroupAction</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aff822ae6d7ed9491e64fac9c088b4974" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setGuiName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setId</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a6a32de972b41ed7d26e70930618b7c33" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setKind</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1aa72d3b782b96028b1bc81df1810f1236" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setMaximumNumberOfInstances</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ab16192e84e82c2838dbd3a43553a5bea" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setNumberOfInstances</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ad60a008e3290770ac7f19e3cb59c8cbe" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setNumberOfInstancesProduced</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1aaf4d90dbb4fba8db226ceb0a1edf1ffc" prot="protected" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setPreferredDockArea</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ae01f85cbce1d16e8a9abb15a9a847447" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setStatusBarAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setText</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a8c551d93e7fd984d964d31fd1f4be932" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setVersion</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>State</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a362af14482295eeccc10ce94a4135d3f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>statusBarActionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1ae3a1b5c7cc69c0de51ec7484b38cc16e" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>summaryChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a951e2db41d149b182f19f95e13916daa" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>supportedDataTypes</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::plugin::ViewPluginFactory</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1a5da72e0e3002e653340645ada87a591f" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>ViewPluginFactory</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1af0397df76dde35e95a42f44a81984668" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>viewShortcutMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1plugin_1_1PluginFactory_1a1f3a60610519a81e91b6ff715f84b9f2" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>~PluginFactory</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1plugin_1_1ViewPluginFactory_1adc5ab8be824170d006ef3ba5dd7f8d3c" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>~ViewPluginFactory</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::plugin::ViewPluginFactory</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

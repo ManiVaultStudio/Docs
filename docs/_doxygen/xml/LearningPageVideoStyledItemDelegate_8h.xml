@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="LearningPageVideoStyledItemDelegate_8h" kind="file" language="C++">
+    <compoundname>LearningPageVideoStyledItemDelegate.h</compoundname>
+    <includes local="no">QStyledItemDelegate</includes>
+    <includedby refid="LearningPageVideoStyledItemDelegate_8cpp" local="yes">LearningPageVideoStyledItemDelegate.cpp</includedby>
+    <includedby refid="LearningPageVideosWidget_8cpp" local="yes">LearningPageVideosWidget.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="1">
+        <label>LearningPageVideoStyledItemDelegate.h</label>
+        <link refid="LearningPageVideoStyledItemDelegate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>LearningPageVideoStyledItemDelegate.cpp</label>
+        <link refid="LearningPageVideoStyledItemDelegate_8cpp"/>
+      </node>
+      <node id="1">
+        <label>LearningPageVideoStyledItemDelegate.h</label>
+        <link refid="LearningPageVideoStyledItemDelegate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LearningPageVideosWidget.cpp</label>
+        <link refid="LearningPageVideosWidget_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLearningPageVideoStyledItemDelegate" prot="public">LearningPageVideoStyledItemDelegate</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStyledItemDelegate&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classLearningPageVideoStyledItemDelegate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLearningPageVideoStyledItemDelegate" kindref="compound">LearningPageVideoStyledItemDelegate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QStyledItemDelegate</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLearningPageVideoStyledItemDelegate_1ad55becfcd9d5e2cdabf90dc45d04d70f" kindref="member">LearningPageVideoStyledItemDelegate</ref>(QObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/><ref refid="classLearningPageVideoStyledItemDelegate_1a68f0d94c1a62e78eff963cc8c1269d10" kindref="member">sizeHint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionViewItem&amp;<sp/>option,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>index)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classLearningPageVideoStyledItemDelegate_1a4976619fbf19487f08bf326a060ddfc2" kindref="member">createEditor</ref>(QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionViewItem&amp;<sp/>option,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>index)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLearningPageVideoStyledItemDelegate_1a791d03be5014ecac25efd08b2c1704e3" kindref="member">updateEditorGeometry</ref>(QWidget*<sp/>editor,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStyleOptionViewItem&amp;<sp/>option,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>index)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Docs/external/core/ManiVault/src/private/LearningPageVideoStyledItemDelegate.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink" kind="class" language="C++" prot="protected" final="yes">
+    <compoundname>mv::util::FileDownloader::ByteArraySink</compoundname>
+    <basecompoundref refid="structmv_1_1util_1_1FileDownloader_1_1ISink" prot="public" virt="non-virtual">mv::util::FileDownloader::ISink&lt; QByteArray &gt;</basecompoundref>
+    <includes refid="FileDownloader_8h" local="no">FileDownloader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1ad5a7bf1fe454d5c7452d42d4feb5332a" prot="private" static="no" mutable="no">
+        <type>QByteArray</type>
+        <definition>QByteArray mv::util::FileDownloader::ByteArraySink::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="168" column="20" bodyfile="Docs/external/core/ManiVault/src/util/FileDownloader.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a3199913cb9d846af8aefc84377fd9c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::FileDownloader::ByteArraySink::open</definition>
+        <argsstring>(QNetworkReply *reply, const QUrl &amp;url, const QString &amp;targetDirectory, bool overwriteAllowed, QString *error) override</argsstring>
+        <name>open</name>
+        <reimplements refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1ab7c0232cf06d16be34635fb5486c2542">open</reimplements>
+        <param>
+          <type>QNetworkReply *</type>
+          <declname>reply</declname>
+        </param>
+        <param>
+          <type>const QUrl &amp;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>targetDirectory</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>overwriteAllowed</declname>
+        </param>
+        <param>
+          <type>QString *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Finalize successfully (e.g., commit QSaveFile) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reply</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to network reply (may not be nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Url to download </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetDirectory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target directory where to put the download </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>overwriteAllowed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether it is allowed to overwrite an existing download </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether successfully opened </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="141" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a565deb851da76be10cfd35f56280cd49" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::FileDownloader::ByteArraySink::write</definition>
+        <argsstring>(const QByteArray &amp;chunk, QString *error) override</argsstring>
+        <name>write</name>
+        <reimplements refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1a0120e9ce12c89fc4dc184b4436d97ece">write</reimplements>
+        <param>
+          <type>const QByteArray &amp;</type>
+          <declname>chunk</declname>
+        </param>
+        <param>
+          <type>QString *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Write <computeroutput>chunk</computeroutput> with <computeroutput>error</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chunk of data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether successfully written </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="149" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a04a077c4816d8815fc4e70af052244f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::FileDownloader::ByteArraySink::commit</definition>
+        <argsstring>(QString *error) override</argsstring>
+        <name>commit</name>
+        <reimplements refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1ad681979fd19240628fba6e1a3337f6ed">commit</reimplements>
+        <param>
+          <type>QString *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Finalize successfully (e.g., commit QSaveFile) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether commit was successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="156" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a75adaf2c088520b09301cb6b1d5ccc97" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::util::FileDownloader::ByteArraySink::cancel</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>cancel</name>
+        <reimplements refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1acd2fa8de8b1e33c63b56770b6fddd15c">cancel</reimplements>
+        <briefdescription>
+<para>Discards partial output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="159" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1afcf6ec993481c79b80d018f31b663c6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QByteArray</type>
+        <definition>QByteArray mv::util::FileDownloader::ByteArraySink::result</definition>
+        <argsstring>() const override</argsstring>
+        <name>result</name>
+        <reimplements refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1a7c68af3c89007ac684167e50e69a46e4">result</reimplements>
+        <briefdescription>
+<para>Get the resulting value to emit into the promise. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The promise result </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="165" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Saves the download to a byte array. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::util::FileDownloader::ByteArraySink</label>
+        <link refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::util::FileDownloader::ISink&lt; QByteArray &gt;</label>
+        <link refid="structmv_1_1util_1_1FileDownloader_1_1ISink"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::util::FileDownloader::ByteArraySink</label>
+        <link refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::util::FileDownloader::ISink&lt; QByteArray &gt;</label>
+        <link refid="structmv_1_1util_1_1FileDownloader_1_1ISink"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="129" column="5" bodyfile="Docs/external/core/ManiVault/src/util/FileDownloader.h" bodystart="129" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1ad5a7bf1fe454d5c7452d42d4feb5332a" prot="private" virt="non-virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>_data</name></member>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a75adaf2c088520b09301cb6b1d5ccc97" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>cancel</name></member>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a04a077c4816d8815fc4e70af052244f4" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>commit</name></member>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a3199913cb9d846af8aefc84377fd9c58" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>open</name></member>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1afcf6ec993481c79b80d018f31b663c6e" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>result</name></member>
+      <member refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1a5b8b97f544e4e24c87bec46dbc1cac04" prot="public" virt="non-virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>Result</name></member>
+      <member refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a565deb851da76be10cfd35f56280cd49" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>write</name></member>
+      <member refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1a3af185b3edec99b48c7a2d83b8cccf8e" prot="public" virt="virtual"><scope>mv::util::FileDownloader::ByteArraySink</scope><name>~ISink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

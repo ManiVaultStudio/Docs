@@ -1,0 +1,1159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1StringAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::StringAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetAction" prot="public" virt="non-virtual">mv::gui::WidgetAction</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1NumberOfRowsAction" prot="public" virt="non-virtual">mv::gui::NumberOfRowsAction</derivedcompoundref>
+    <includes refid="StringAction_8h" local="no">StringAction.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1StringAction_1_1InlineAction" prot="public">mv::gui::StringAction::InlineAction</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1StringAction_1_1LabelWidget" prot="public">mv::gui::StringAction::LabelWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1StringAction_1_1LineEditWidget" prot="public">mv::gui::StringAction::LineEditWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1StringAction_1_1TextEditWidget" prot="public">mv::gui::StringAction::TextEditWidget</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WidgetFlag</name>
+        <enumvalue id="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a5b12d72d37406ed4f1596464248a3fc4" prot="public">
+          <name>Label</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a5a33a239e8128e5776aff21fefd40333" prot="public">
+          <name>LineEdit</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>Widget includes a label. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a57abba13a3add987308e54aa49f78b64" prot="public">
+          <name>TextEdit</name>
+          <initializer>= 0x00004</initializer>
+          <briefdescription>
+<para>Widget includes a line edit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a091e3ad0a1bf942b376ddb98e0d66495" prot="public">
+          <name>Default</name>
+          <initializer>= LineEdit</initializer>
+          <briefdescription>
+<para>Widget includes a text edit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Describes the widget configurations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="37" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="37" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a4eb5fc16634f94ccab2c728ef3ce487f" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::StringAction::_string</definition>
+        <argsstring></argsstring>
+        <name>_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="351" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a6bd21d83921ff097e028ca01149d0040" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::StringAction::_placeholderString</definition>
+        <argsstring></argsstring>
+        <name>_placeholderString</name>
+        <briefdescription>
+<para>Current string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="352" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1aab02605c98a6b4abef7dfbd00d3f9b07" prot="protected" static="no" mutable="no">
+        <type>QAction</type>
+        <definition>QAction mv::gui::StringAction::_leadingAction</definition>
+        <argsstring></argsstring>
+        <name>_leadingAction</name>
+        <briefdescription>
+<para>Place holder string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="353" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a05a90b5a80817d397eeeb788db88f356" prot="protected" static="no" mutable="no">
+        <type>QAction</type>
+        <definition>QAction mv::gui::StringAction::_trailingAction</definition>
+        <argsstring></argsstring>
+        <name>_trailingAction</name>
+        <briefdescription>
+<para>Action at the leading position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="354" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1ace4524850ed261055f1b77d4f09815e1" prot="protected" static="no" mutable="no">
+        <type>QCompleter *</type>
+        <definition>QCompleter* mv::gui::StringAction::_completer</definition>
+        <argsstring></argsstring>
+        <name>_completer</name>
+        <briefdescription>
+<para>Action at the trailing position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="355" column="36" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1aecd0eec9f553f2e564404cee6ca1da91" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::StringAction::_searchMode</definition>
+        <argsstring></argsstring>
+        <name>_searchMode</name>
+        <briefdescription>
+<para>Pointer to completer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="356" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a2bacdf401a401e47a11aca539eb15659" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::StringAction::_clearable</definition>
+        <argsstring></argsstring>
+        <name>_clearable</name>
+        <briefdescription>
+<para>Whether the string action is in search mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="357" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a6b61c46ba034ef27940716f8cd7df54b" prot="protected" static="no" mutable="no">
+        <type>Qt::TextElideMode</type>
+        <definition>Qt::TextElideMode mv::gui::StringAction::_textElideMode</definition>
+        <argsstring></argsstring>
+        <name>_textElideMode</name>
+        <briefdescription>
+<para>Whether the string can be cleared by clicking the trailing action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="358" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1StringAction_1a37fd4c8821222f7fe4056c83ff15201d" prot="protected" static="no" mutable="no">
+        <type>QRegularExpressionValidator</type>
+        <definition>QRegularExpressionValidator mv::gui::StringAction::_validator</definition>
+        <argsstring></argsstring>
+        <name>_validator</name>
+        <briefdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="359" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1StringAction_1a831953c8c99f2ab1cc89f474f11d6b70" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AbstractActionsManager</definition>
+        <argsstring></argsstring>
+        <name>AbstractActionsManager</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractActionsManager" kindref="compound">AbstractActionsManager</ref></type>
+        </param>
+        <briefdescription>
+<para>Regular expression validator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="361" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a1f3b972167821229d908608675697007" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::gui::StringAction::getWidget</definition>
+        <argsstring>(QWidget *parent, const std::int32_t &amp;widgetFlags) override</argsstring>
+        <name>getWidget</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33">getWidget</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Get widget representation of the string action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget flags for the configuration of the widget (type) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="187" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="199" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1aa03734591b68ad2819dc912dfcef0031" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::connectToPublicAction</definition>
+        <argsstring>(WidgetAction *publicAction, bool recursive) override</argsstring>
+        <name>connectToPublicAction</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595">connectToPublicAction</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Connect this action to a public action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action to connect to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also connect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="296" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="144" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1aaa164eb47639ef231adf625dc6ae8bd1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::disconnectFromPublicAction</definition>
+        <argsstring>(bool recursive) override</argsstring>
+        <name>disconnectFromPublicAction</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28">disconnectFromPublicAction</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect this action from its public action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also disconnect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="302" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="161" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1ae92a87a892bfd73043490f13fce020d2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type>Q_INVOKABLE</type>
+        <definition>mv::gui::StringAction::StringAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const QString &amp;string=&quot;&quot;)</argsstring>
+        <name>StringAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>string</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="197" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="20" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a48a7f2d9214895094467208f08cf8074" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::StringAction::getString</definition>
+        <argsstring>() const</argsstring>
+        <name>getString</name>
+        <briefdescription>
+<para>Gets the current string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="200" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1adb46c4e6e176408b3ff077d8f8dd1cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setString</definition>
+        <argsstring>(const QString &amp;string)</argsstring>
+        <name>setString</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="206" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="48" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1adb2922b6ddf36382ef79c18f3241567b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::StringAction::getPlaceholderString</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlaceholderString</name>
+        <briefdescription>
+<para>Get placeholder text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="209" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1acd002fea52c8fe1004cd9ebecc4e6e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setPlaceHolderString</definition>
+        <argsstring>(const QString &amp;placeholderString)</argsstring>
+        <name>setPlaceHolderString</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>placeholderString</declname>
+        </param>
+        <briefdescription>
+<para>Set placeholder text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>placeholderString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="215" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a9ed716de9ddacce2933e657ff064efc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction &amp;</type>
+        <definition>QAction &amp; mv::gui::StringAction::getLeadingAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLeadingAction</name>
+        <briefdescription>
+<para>Get action at leading position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to action at leading position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="221" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a87cee257f7cddff445cbb77c94cdfca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QAction &amp;</type>
+        <definition>QAction &amp; mv::gui::StringAction::getTrailingAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTrailingAction</name>
+        <briefdescription>
+<para>Get action at trailing position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to action at trailing position </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="227" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1aa07e1064f3ea3a9dc0773e3f32044a06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QCompleter *</type>
+        <definition>QCompleter * mv::gui::StringAction::getCompleter</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompleter</name>
+        <briefdescription>
+<para>Get completer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to completer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="233" column="16" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1ac9fc932127a0c99d1e504a82bdc61b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setCompleter</definition>
+        <argsstring>(QCompleter *completer)</argsstring>
+        <name>setCompleter</name>
+        <param>
+          <type>QCompleter *</type>
+          <declname>completer</declname>
+        </param>
+        <briefdescription>
+<para>Set completer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>completer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to completer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="239" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a29124ceef4db114fb08f208a7b981cec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::StringAction::getSearchMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getSearchMode</name>
+        <briefdescription>
+<para>Get search mode (if on, there will be a leading action with a search icon and a trailing action to clear the string) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Search mode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="245" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1aef427d07d13f713f385fa38088fa32cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setSearchMode</definition>
+        <argsstring>(bool searchMode)</argsstring>
+        <name>setSearchMode</name>
+        <param>
+          <type>bool</type>
+          <declname>searchMode</declname>
+        </param>
+        <briefdescription>
+<para>Set search mode (if on, there will be a leading action with a search icon and a trailing action to clear the string) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>searchMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether search mode is on/off </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="251" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a66681264128c9677fe16e9fad867a059" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::StringAction::isClearable</definition>
+        <argsstring>() const</argsstring>
+        <name>isClearable</name>
+        <briefdescription>
+<para>Get whether the string can be cleared by clicking the trailing action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether the string can be cleared </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="257" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1ac5d47c47736b9b555f44fb25281cf5dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setClearable</definition>
+        <argsstring>(bool clearable)</argsstring>
+        <name>setClearable</name>
+        <param>
+          <type>bool</type>
+          <declname>clearable</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the string can be cleared by clicking the trailing action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clearable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean indicating whether the string can be cleared </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="263" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="116" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a82208a911f2694b260de9b27859c52b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::TextElideMode</type>
+        <definition>Qt::TextElideMode mv::gui::StringAction::getTextElideMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextElideMode</name>
+        <briefdescription>
+<para>Get text elide mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classText" kindref="compound">Text</ref> elide mode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="269" column="23" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a03024fb5d22297649db118c42e136632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::setTextElideMode</definition>
+        <argsstring>(const Qt::TextElideMode &amp;textElideMode)</argsstring>
+        <name>setTextElideMode</name>
+        <param>
+          <type>const Qt::TextElideMode &amp;</type>
+          <declname>textElideMode</declname>
+        </param>
+        <briefdescription>
+<para>Set text elide mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textElideMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="275" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="225" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a923801ac966aec8401d8804442b351f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QRegularExpressionValidator &amp;</type>
+        <definition>QRegularExpressionValidator &amp; mv::gui::StringAction::getValidator</definition>
+        <argsstring>()</argsstring>
+        <name>getValidator</name>
+        <briefdescription>
+<para>Get validator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to regular expression validator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="281" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a90a0d7a79ffe7d8d53b0392bb2deaed8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QValidator::State</type>
+        <definition>QValidator::State mv::gui::StringAction::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+<para>Get whether the string is QValidator::State::Acceptable, QValidator::State::Intermediate or QValidator::State::Invalid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Validator state </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="287" column="23" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="240" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1a9375f1515499f4cdaaac03beeb3eb5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load widget action from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant representation of the widget action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="310" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="179" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StringAction_1acef017e889c46d60506ea4301757158f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::StringAction::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save widget action to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="316" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.cpp" bodystart="188" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StringAction_1a96a8d182d6f8cfb56e37fd6e9a50e93d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::stringChanged</definition>
+        <argsstring>(const QString &amp;string)</argsstring>
+        <name>stringChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current string changed to <computeroutput>string</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current string that changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="324" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StringAction_1a6c3b201674aafc014a91d8dfbcf659d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::placeholderStringChanged</definition>
+        <argsstring>(const QString &amp;placeholderString)</argsstring>
+        <name>placeholderStringChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>placeholderString</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the placeholder string changed to <computeroutput>placeholderString</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>placeholderString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder string that changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="330" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StringAction_1a0401e1333e087c040a09c9fd9523cd23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::completerChanged</definition>
+        <argsstring>(QCompleter *completer)</argsstring>
+        <name>completerChanged</name>
+        <param>
+          <type>QCompleter *</type>
+          <declname>completer</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the completer changed to <computeroutput>completer</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>completer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to completer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="336" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StringAction_1af7cd26202ef3a6bbbb40579f245b710f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::textElideModeChanged</definition>
+        <argsstring>(const Qt::TextElideMode &amp;textElideMode)</argsstring>
+        <name>textElideModeChanged</name>
+        <param>
+          <type>const Qt::TextElideMode &amp;</type>
+          <declname>textElideMode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the text elide mode changed to <computeroutput>textElideMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textElideMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="342" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1StringAction_1a1aa9f5355b416254f42c535c160260c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StringAction::validatorChanged</definition>
+        <argsstring>(const Qt::TextElideMode &amp;textElideMode)</argsstring>
+        <name>validatorChanged</name>
+        <param>
+          <type>const Qt::TextElideMode &amp;</type>
+          <declname>textElideMode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the text elide mode changed to <computeroutput>textElideMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textElideMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="348" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>String widget action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores a string creates widgets to interact with it</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>mv::gui::NumberOfRowsAction</label>
+        <link refid="classmv_1_1gui_1_1NumberOfRowsAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::StringAction</label>
+        <link refid="classmv_1_1gui_1_1StringAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::StringAction</label>
+        <link refid="classmv_1_1gui_1_1StringAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/StringAction.h" line="30" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/StringAction.h" bodystart="31" bodyend="362"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1StringAction_1a2bacdf401a401e47a11aca539eb15659" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_clearable</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1ace4524850ed261055f1b77d4f09815e1" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_completer</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aab02605c98a6b4abef7dfbd00d3f9b07" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_leadingAction</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a6bd21d83921ff097e028ca01149d0040" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_placeholderString</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aecd0eec9f553f2e564404cee6ca1da91" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_searchMode</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a4eb5fc16634f94ccab2c728ef3ce487f" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_string</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a6b61c46ba034ef27940716f8cd7df54b" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_textElideMode</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a05a90b5a80817d397eeeb788db88f356" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_trailingAction</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a37fd4c8821222f7fe4056c83ff15201d" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>_validator</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a831953c8c99f2ab1cc89f474f11d6b70" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>AbstractActionsManager</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a0401e1333e087c040a09c9fd9523cd23" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>completerChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aa03734591b68ad2819dc912dfcef0031" prot="protected" virt="virtual"><scope>mv::gui::StringAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a091e3ad0a1bf942b376ddb98e0d66495" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aaa164eb47639ef231adf625dc6ae8bd1" prot="protected" virt="virtual"><scope>mv::gui::StringAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a9375f1515499f4cdaaac03beeb3eb5e6" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StringAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StringAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aa07e1064f3ea3a9dc0773e3f32044a06" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getCompleter</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a9ed716de9ddacce2933e657ff064efc5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getLeadingAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1adb2922b6ddf36382ef79c18f3241567b" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getPlaceholderString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a29124ceef4db114fb08f208a7b981cec" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSearchMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a48a7f2d9214895094467208f08cf8074" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getString</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a82208a911f2694b260de9b27859c52b6" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getTextElideMode</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a87cee257f7cddff445cbb77c94cdfca7" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getTrailingAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a923801ac966aec8401d8804442b351f7" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getValidator</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a1f3b972167821229d908608675697007" prot="protected" virt="virtual"><scope>mv::gui::StringAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a66681264128c9677fe16e9fad867a059" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isClearable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a90a0d7a79ffe7d8d53b0392bb2deaed8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isValid</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a5b12d72d37406ed4f1596464248a3fc4" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Label</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a5a33a239e8128e5776aff21fefd40333" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>LineEdit</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a6c3b201674aafc014a91d8dfbcf659d5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>placeholderStringChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1ac5d47c47736b9b555f44fb25281cf5dd" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setClearable</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1ac9fc932127a0c99d1e504a82bdc61b14" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setCompleter</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1acd002fea52c8fe1004cd9ebecc4e6e9e" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setPlaceHolderString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1aef427d07d13f713f385fa38088fa32cd" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setSearchMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1adb46c4e6e176408b3ff077d8f8dd1cb5" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a03024fb5d22297649db118c42e136632" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setTextElideMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1ae92a87a892bfd73043490f13fce020d2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>StringAction</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a96a8d182d6f8cfb56e37fd6e9a50e93d" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>stringChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86a57abba13a3add987308e54aa49f78b64" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>TextEdit</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1af7cd26202ef3a6bbbb40579f245b710f" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>textElideModeChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1acef017e889c46d60506ea4301757158f" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::StringAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a1aa9f5355b416254f42c535c160260c4" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>validatorChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1StringAction_1a42229d132d5218cedcc7844146be5b86" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::StringAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::StringAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

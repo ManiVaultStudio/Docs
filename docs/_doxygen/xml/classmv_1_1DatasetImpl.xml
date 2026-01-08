@@ -1,0 +1,2853 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DatasetImpl" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::DatasetImpl</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetAction" prot="public" virt="non-virtual">mv::gui::WidgetAction</basecompoundref>
+    <derivedcompoundref refid="classClusters" prot="public" virt="non-virtual">Clusters</derivedcompoundref>
+    <derivedcompoundref refid="classColors" prot="public" virt="non-virtual">Colors</derivedcompoundref>
+    <derivedcompoundref refid="classImages" prot="public" virt="non-virtual">Images</derivedcompoundref>
+    <derivedcompoundref refid="classPoints" prot="public" virt="non-virtual">Points</derivedcompoundref>
+    <derivedcompoundref refid="classText" prot="public" virt="non-virtual">Text</derivedcompoundref>
+    <includes refid="Set_8h" local="no">Set.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>StorageType</name>
+        <enumvalue id="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cbab6f4a2ec6356bbd56d49f2096bf9d3d3" prot="public">
+          <name>Owner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cbaf56ec2ab97d604832d90f6394e3f341f" prot="public">
+          <name>Proxy</name>
+          <briefdescription>
+<para>The set is the data owner (has raw data) </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The set does not have raw data, it relies on proxy datasets to obtain data </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of storage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="47" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LinkedDataFlag</name>
+        <enumvalue id="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7aa88ab6d3cbc499c6a6fc453223f5cc79" prot="public">
+          <name>Send</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7a788ef1d71547f85534c23e5acab88b6a" prot="public">
+          <name>Receive</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>The set may send linked propagate linked data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7a0b8294cf37a881a69fe6404626c4b615" prot="public">
+          <name>SendReceive</name>
+          <initializer>= Send | Receive</initializer>
+          <briefdescription>
+<para>The set may receive linked data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Linked data propagation flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="53" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="53" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a37d8ee9c7a8251f6418611ab9941b453" prot="private" static="no" mutable="yes">
+        <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+        <definition>plugin::RawData* mv::DatasetImpl::_rawData</definition>
+        <argsstring></argsstring>
+        <name>_rawData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="603" column="32" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a422e2f7f0c5d58bd736f8307bdbd823e" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::_rawDataName</definition>
+        <argsstring></argsstring>
+        <name>_rawDataName</name>
+        <briefdescription>
+<para>Pointer to the raw data referenced in this set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="604" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a911b4d8fae9cf42be3d8fb8a76314314" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cb" kindref="member">StorageType</ref></type>
+        <definition>StorageType mv::DatasetImpl::_storageType</definition>
+        <argsstring></argsstring>
+        <name>_storageType</name>
+        <briefdescription>
+<para>Name of the raw data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="605" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a53274c5e93352de00767d4ad0e6453c3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_all</definition>
+        <argsstring></argsstring>
+        <name>_all</name>
+        <briefdescription>
+<para>Type of storage (own raw data or act as proxy for other datasets) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="606" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a100a39944c65c99648cf577a4581bed9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_derived</definition>
+        <argsstring></argsstring>
+        <name>_derived</name>
+        <briefdescription>
+<para>Whether this is the full dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="607" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1ab486b158bb4792c667f738e8d36f8d66" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetImpl::_sourceDataset</definition>
+        <argsstring></argsstring>
+        <name>_sourceDataset</name>
+        <briefdescription>
+<para>Whether this dataset is derived from another dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="608" column="20" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a5fb479df501291f3d840bce8d73d79ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetImpl::_fullDataset</definition>
+        <argsstring></argsstring>
+        <name>_fullDataset</name>
+        <briefdescription>
+<para>Smart pointer to the source dataset (if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="609" column="20" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a25d36d00000f2e301da237b642f01222" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_mayUnderive</definition>
+        <argsstring></argsstring>
+        <name>_mayUnderive</name>
+        <briefdescription>
+<para>Smart pointer to the original full dataset (if this is a subset) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="610" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1ab9670bc1c9f8e7a2234db8d987088121" prot="private" static="no" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, QVariant &gt;</type>
+        <definition>QMap&lt;QString, QVariant&gt; mv::DatasetImpl::_properties</definition>
+        <argsstring></argsstring>
+        <name>_properties</name>
+        <briefdescription>
+<para>Whether a dataset may be un-derived, if not it should always co-exist with its source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="611" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1ae38284b754655fe70fe5a18c04727a11" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::DatasetImpl::_groupIndex</definition>
+        <argsstring></argsstring>
+        <name>_groupIndex</name>
+        <briefdescription>
+<para>Properties map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="612" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1ac6d9bbc70366c850c9394fcabff41959" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">plugin::AnalysisPlugin</ref> *</type>
+        <definition>plugin::AnalysisPlugin* mv::DatasetImpl::_analysis</definition>
+        <argsstring></argsstring>
+        <name>_analysis</name>
+        <briefdescription>
+<para>Group index (sets with identical indices can for instance share selection) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="613" column="32" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a77dd414e961fc22d29bc09491bf35d9d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>Datasets mv::DatasetImpl::_proxyMembers</definition>
+        <argsstring></argsstring>
+        <name>_proxyMembers</name>
+        <briefdescription>
+<para>Pointer to analysis plugin that created the set (if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="614" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1acf2a91d16857182d732d054e31a7223b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1LinkedData" kindref="compound">LinkedData</ref> &gt;</type>
+        <definition>std::vector&lt;LinkedData&gt; mv::DatasetImpl::_linkedData</definition>
+        <argsstring></argsstring>
+        <name>_linkedData</name>
+        <briefdescription>
+<para>Member datasets in case of a proxy dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="615" column="21" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a3419b917363a7a7aefa36aedebbef602" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::DatasetImpl::_linkedDataFlags</definition>
+        <argsstring></argsstring>
+        <name>_linkedDataFlags</name>
+        <briefdescription>
+<para>List of linked datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="616" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a480826a2a594adde0e3278433e52120f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_locked</definition>
+        <argsstring></argsstring>
+        <name>_locked</name>
+        <briefdescription>
+<para>Flags for linked data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="617" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a7b6766379d742fc3de36f19fd00d845b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_lockedCache</definition>
+        <argsstring></argsstring>
+        <name>_lockedCache</name>
+        <briefdescription>
+<para>Whether the dataset is locked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="618" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a1ef3fb76085cfc56312b3aaa6928c92d" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetImpl::_smartPointer</definition>
+        <argsstring></argsstring>
+        <name>_smartPointer</name>
+        <briefdescription>
+<para>Cached locked state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="619" column="20" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a620a157d604532dae54f8301c089f0c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DatasetTask" kindref="compound">DatasetTask</ref></type>
+        <definition>DatasetTask mv::DatasetImpl::_task</definition>
+        <argsstring></argsstring>
+        <name>_task</name>
+        <briefdescription>
+<para>Smart pointer to own dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="620" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a0c07c970b72fba6bd034a07587eb88f7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_aboutToBeRemoved</definition>
+        <argsstring></argsstring>
+        <name>_aboutToBeRemoved</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> for display in the data hierarchy and foreground. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="621" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DatasetImpl_1a2978e347c76b8ac7ec606bbf7fd0148c" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::_dirtySelection</definition>
+        <argsstring></argsstring>
+        <name>_dirtySelection</name>
+        <briefdescription>
+<para>Boolean determining whether the set is in the process of being removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="622" column="33" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="622" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1a1a3d6725008b25b6c7bc9db4f15786d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class CoreInterface</definition>
+        <argsstring></argsstring>
+        <name>CoreInterface</name>
+        <param>
+          <type><ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref></type>
+        </param>
+        <briefdescription>
+<para>Whether the dataset should be notified about a changed selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="624" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1a4107254ac74f90d4f91e810d755b98c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Core</definition>
+        <argsstring></argsstring>
+        <name>Core</name>
+        <param>
+          <type><ref refid="classmv_1_1Core" kindref="compound">Core</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="625" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1a90bc42cd80270d73dfa9aade4e76528f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DataManager</definition>
+        <argsstring></argsstring>
+        <name>DataManager</name>
+        <param>
+          <type><ref refid="classmv_1_1DataManager" kindref="compound">DataManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="626" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1a472874c5724681afe45342d8f7ccfe81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class EventListener</definition>
+        <argsstring></argsstring>
+        <name>EventListener</name>
+        <param>
+          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="627" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1aba45a46c615e2683daffdae82e2d3b8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class EventManager</definition>
+        <argsstring></argsstring>
+        <name>EventManager</name>
+        <param>
+          <type><ref refid="classmv_1_1EventManager" kindref="compound">EventManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="628" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1DatasetImpl_1affca5f2ada55a71f83eb0cb0aeb22dc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class KeyBasedSelectionGroup</definition>
+        <argsstring></argsstring>
+        <name>KeyBasedSelectionGroup</name>
+        <param>
+          <type><ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="629" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a72da76bd23c860a4e4a7b6b7c05cb621" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DatasetImpl::DatasetImpl</definition>
+        <argsstring>(const QString &amp;rawDataName, bool mayUnderive=true, const QString &amp;id=&quot;&quot;)</argsstring>
+        <name>DatasetImpl</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mayUnderive</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>rawDataName</computeroutput> and possibly initialize with <computeroutput>id</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mayUnderive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the dataset may be un-derived, if not it should always co-exist with its source </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique dataset identifier, if empty an new ID will be generated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="67" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="367" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a3e7b0ab0b6d0a248ccdc7b86dfd4cd71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DatasetImpl::~DatasetImpl</definition>
+        <argsstring>() override</argsstring>
+        <name>~DatasetImpl</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="70" column="5" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="391" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af2e8224afe674a29a4a20cc32a97edcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classClusters_1a3279b57cccd587914acba8b5f04f118b">init</reimplementedby>
+        <reimplementedby refid="classImages_1a369b61588d6985a1b52f2399d1519e9e">init</reimplementedby>
+        <reimplementedby refid="classPoints_1a45a7b8a5ee08c81992c5c896fac18282">init</reimplementedby>
+        <reimplementedby refid="classText_1a112d7f9289140c275d8bc2c03ef5ef37">init</reimplementedby>
+        <briefdescription>
+<para>Performs startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="73" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="395" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a944b0c1d35be52c365c4d56ba9688972" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>virtual Dataset&lt;DatasetImpl&gt; mv::DatasetImpl::copy</definition>
+        <argsstring>() const =0</argsstring>
+        <name>copy</name>
+        <reimplementedby refid="classClusters_1aee8e47c81be7569b51205e6ceea606d7">copy</reimplementedby>
+        <reimplementedby refid="classColors_1a1ed7d26e19f5c053a80cd0266bbafc97">copy</reimplementedby>
+        <reimplementedby refid="classImages_1aec4bbf97003aeee607bfcbf70c8a3667">copy</reimplementedby>
+        <reimplementedby refid="classPoints_1ab5b7544e0a7aadf8d26e19cb637df751">copy</reimplementedby>
+        <reimplementedby refid="classText_1aae7b0c8f51ae5482bb264b483caf92f8">copy</reimplementedby>
+        <briefdescription>
+<para>Get a copy of the dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Smart pointer to copy of dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="79" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2e4b838636f4e00bd58c96744ff3c0eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>virtual Dataset&lt;DatasetImpl&gt; mv::DatasetImpl::createSubsetFromSelection</definition>
+        <argsstring>(const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataSet=Dataset&lt; DatasetImpl &gt;(), const bool &amp;visible=true) const =0</argsstring>
+        <name>createSubsetFromSelection</name>
+        <reimplementedby refid="classClusters_1a39955697ff95afbfbf705120a63ad5aa">createSubsetFromSelection</reimplementedby>
+        <reimplementedby refid="classColors_1a62a1589e0d83b1f5c6ca3c44561be818">createSubsetFromSelection</reimplementedby>
+        <reimplementedby refid="classText_1a2210ee9208e1b7fa91e7d2016a4bd70e">createSubsetFromSelection</reimplementedby>
+        <reimplementedby refid="classImages_1af6a9642391927e0982fc5c4c7f348845">createSubsetFromSelection</reimplementedby>
+        <reimplementedby refid="classPoints_1a4b6b7921573e66826f5b4ed0618f5ab0">createSubsetFromSelection</reimplementedby>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>parentDataSet</declname>
+          <defval><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>visible</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Create subset from the current selection and specify where the subset will be placed in the data hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the subset in the GUI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataSet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to parent dataset in the data hierarchy (default is below the set) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the subset will be visible in the UI </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the created subset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="88" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a171c27a28620314112c6861ecc5b1356" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cb" kindref="member">StorageType</ref></type>
+        <definition>mv::DatasetImpl::StorageType mv::DatasetImpl::getStorageType</definition>
+        <argsstring>() const</argsstring>
+        <name>getStorageType</name>
+        <briefdescription>
+<para>Get the data storage type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data storage type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="94" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="399" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a7b70dacfafe8de5f7d408a673106859b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setStorageType</definition>
+        <argsstring>(const StorageType &amp;storageType)</argsstring>
+        <name>setStorageType</name>
+        <param>
+          <type>const <ref refid="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cb" kindref="member">StorageType</ref> &amp;</type>
+          <declname>storageType</declname>
+        </param>
+        <briefdescription>
+<para>Set the data storage type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data storage type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="100" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="404" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a0a0ba094818c251a63b42e12abb94dd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::getGuiName</definition>
+        <argsstring>() const</argsstring>
+        <name>getGuiName</name>
+        <briefdescription>
+<para>Get the GUI name of the dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="103" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="412" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af8bd705d662f72efb92b96c8d8ba1dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setGuiName</definition>
+        <argsstring>(const QString &amp;guiName)</argsstring>
+        <name>setGuiName</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <briefdescription>
+<para>Set gui name to <computeroutput>guiName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="109" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a4d39f96c2d9cf63b9e96cdbfb9bde9c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::isFull</definition>
+        <argsstring>() const</argsstring>
+        <name>isFull</name>
+        <briefdescription>
+<para>Returns true if this set represents the full data and false if it&apos;s a subset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="114" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a589d5b7232f356527f803d8ba2d15152" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::isDerivedData</definition>
+        <argsstring>() const</argsstring>
+        <name>isDerivedData</name>
+        <briefdescription>
+<para>Returns whether the dataset is derived. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="117" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="434" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a799e7725374292f0935beb82b92ca697" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::mayUnderive</definition>
+        <argsstring>() const</argsstring>
+        <name>mayUnderive</name>
+        <briefdescription>
+<para>Returns whether the dataset may be un-derived, if not it should always co-exist with its source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="120" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="439" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a3581a6d06c766cf3a3722bc606a0fcd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></type>
+        <definition>mv::DataType mv::DatasetImpl::getDataType</definition>
+        <argsstring>() const</argsstring>
+        <name>getDataType</name>
+        <briefdescription>
+<para>Returns the data type of the raw data associated with this dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="123" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="444" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a3b8049dbc0b33a85431a80d13280865c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::getSourceDataset</definition>
+        <argsstring>() const</argsstring>
+        <name>getSourceDataset</name>
+        <briefdescription>
+<para>Get source dataset if the given set is derived. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="127" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="127" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1ad15fc73abc6e65b2deb6427f5f1ee5aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::getNextSourceDataset</definition>
+        <argsstring>() const</argsstring>
+        <name>getNextSourceDataset</name>
+        <briefdescription>
+<para>Get source dataset if the given set is derived. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="139" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="139" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1adcdf04b307e23371b9eb3121176eae83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setSourceDataset</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
+        <name>setSourceDataset</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Marks this dataset as derived and sets the source dataset to <computeroutput>dataset</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the source dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="153" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="449" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1c7cc542ce005552017e980be4c9ec6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setSourceDataset</definition>
+        <argsstring>(const QString &amp;datasetId)</argsstring>
+        <name>setSourceDataset</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Marks this dataset as derived and sets the source dataset globally unique identifier to <computeroutput>datasetId</computeroutput> Note: use this when the source dataset itself is not physically available but can be lazily obtained later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique identifier of the source dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="160" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="455" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2cce105a73f4a1451315a6d8a2f1af71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::getFullDataset</definition>
+        <argsstring>() const</argsstring>
+        <name>getFullDataset</name>
+        <briefdescription>
+<para>Returns the original full dataset this subset was created from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="166" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="166" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2ea59b0bba3fb2e5223000a2afbb430f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>mv::Dataset&lt; mv::DatasetImpl &gt; mv::DatasetImpl::getSelection</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelection</name>
+        <briefdescription>
+<para>Gets the selection associated with this data set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data set is derived then the selection of the source data will be returned. Otherwise, the selection of the set&apos;s data will be returned.</para>
+<para><simplesect kind="return"><para>The selection associated with this data set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="181" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="461" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1aca21497034f6e38294ae9a733e8ac60c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::getSelection</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelection</name>
+        <briefdescription>
+<para>Gets the selection associated with this data set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the data set is derived then the selection of the source data will be returned. Otherwise, the selection of the set&apos;s data will be returned.</para>
+<para><simplesect kind="return"><para>The selection of dataset type associated with this data set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="191" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a860eba115d78d9e685ef39e42f91b323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+        <definition>mv::Dataset&lt; mv::DatasetImpl &gt; &amp; mv::DatasetImpl::getSmartPointer</definition>
+        <argsstring>()</argsstring>
+        <name>getSmartPointer</name>
+        <briefdescription>
+<para>Get reference to smart pointer which is owned by the set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to smart pointer which is owned by the set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="199" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1ae24e5b787a2cb9c5c82c759eca6f5a05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>mv::Dataset&lt; mv::DatasetImpl &gt; mv::DatasetImpl::toSmartPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>toSmartPointer</name>
+        <briefdescription>
+<para>Get smart pointer to set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Smart pointer to the set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="205" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="471" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8c032d982243f7a20141b0abeda1ebf9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::toSmartPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>toSmartPointer</name>
+        <briefdescription>
+<para>Get smart pointer to set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Smart pointer to the set </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="212" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a56200e3785fbc31834c57ddd00ae9241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::makeSubsetOf</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; fullDataset)</argsstring>
+        <name>makeSubsetOf</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>fullDataset</declname>
+        </param>
+        <briefdescription>
+<para>Makes this set a subset of a full dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fullDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to full dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="221" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="23" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a23f67b4eef648a8f644c4012e95c2667" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::getRawDataKind</definition>
+        <argsstring>() const</argsstring>
+        <name>getRawDataKind</name>
+        <briefdescription>
+<para>Get plugin kind of the raw data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> kind of the raw data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="227" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8eb56413db613c468d44b23b8097125b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::uint64_t</type>
+        <definition>std::uint64_t mv::DatasetImpl::getRawDataSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getRawDataSize</name>
+        <reimplementedby refid="classPoints_1ad29ec64399f2f00775e5b58af0a78de4">getRawDataSize</reimplementedby>
+        <briefdescription>
+<para>Get amount of data occupied by the raw data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the raw data in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="233" column="27" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a26fc4ada512eef0e5962d0682fbffa57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::getRawDataSizeHumanReadable</definition>
+        <argsstring>() const</argsstring>
+        <name>getRawDataSizeHumanReadable</name>
+        <briefdescription>
+<para>Get amount of data occupied by the raw data in human readable string format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of the raw data in bytes in human readable string format </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="239" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="509" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a11d84383fd30e851ed919670e5e29250" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::getLocation</definition>
+        <argsstring>(bool recompute=false) const override</argsstring>
+        <name>getLocation</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac">getLocation</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>recompute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Path relative to the top-level action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="247" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2d601e7800184078a3f45db54b693d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> &amp;</type>
+        <definition>DataHierarchyItem &amp; mv::DatasetImpl::getDataHierarchyItem</definition>
+        <argsstring>()</argsstring>
+        <name>getDataHierarchyItem</name>
+        <briefdescription>
+<para>Get reference to data hierarchy item. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="252" column="23" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8a5c3b621a59d88c37fdbb892e255b1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> &amp;</type>
+        <definition>const DataHierarchyItem &amp; mv::DatasetImpl::getDataHierarchyItem</definition>
+        <argsstring>() const</argsstring>
+        <name>getDataHierarchyItem</name>
+        <briefdescription>
+<para>Get reference to data hierarchy item. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="255" column="29" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a89f38fc602d0c5bf6f7d9a0f7343ee9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>mv::Dataset&lt; mv::DatasetImpl &gt; mv::DatasetImpl::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+<para>Get parent dataset (if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="258" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a6446bd2476db5d68d400dfbe6f8c2494" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DatasetType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; DatasetType &gt;</type>
+        <definition>Dataset&lt;DatasetType&gt; mv::DatasetImpl::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+<para>Get parent dataset (if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="262" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="262" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1ae1041aca3dbaa7df0ce040d00b3e8335" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVector&lt; <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &gt;</type>
+        <definition>QVector&lt; Dataset&lt; DatasetImpl &gt; &gt; mv::DatasetImpl::getChildren</definition>
+        <argsstring>(const QVector&lt; DataType &gt; &amp;dataTypes=QVector&lt; DataType &gt;(), bool recursively=true) const</argsstring>
+        <name>getChildren</name>
+        <param>
+          <type>const QVector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt; &amp;</type>
+          <declname>dataTypes</declname>
+          <defval>QVector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursively</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get child datasets (if any) of the specified type(s) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> type(s) to filter out (no filtering if <computeroutput>dataTypes</computeroutput> is empty) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursively</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to collect children recursively </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Child datasets of the dataset type(s) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="272" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="63" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a045258ed2fa3a64b6c7ebee7c392ddac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVector&lt; <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &gt;</type>
+        <definition>QVector&lt; mv::Dataset&lt; mv::DatasetImpl &gt; &gt; mv::DatasetImpl::getChildren</definition>
+        <argsstring>(const DataType &amp;filterDataType) const</argsstring>
+        <name>getChildren</name>
+        <param>
+          <type>const <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &amp;</type>
+          <declname>filterDataType</declname>
+        </param>
+        <briefdescription>
+<para>Get child datasets (if any) of the specified type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterDataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of data to filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Child datasets of the dataset type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="279" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af2120e1a59dc260e25b78ec35add6eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::uint32_t &gt; &amp;</type>
+        <definition>virtual std::vector&lt;std::uint32_t&gt;&amp; mv::DatasetImpl::getSelectionIndices</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSelectionIndices</name>
+        <reimplementedby refid="classClusters_1acc2df6489eb7b19e873f41c251ca5884">getSelectionIndices</reimplementedby>
+        <reimplementedby refid="classColors_1acd1ef5c3a8f64bd36bdd367cafd4062f">getSelectionIndices</reimplementedby>
+        <reimplementedby refid="classImages_1ae3999c3dcfb451a30bbafd0306f9729b">getSelectionIndices</reimplementedby>
+        <reimplementedby refid="classPoints_1af2fbe0249eab9fb8fe103f0439c59c1c">getSelectionIndices</reimplementedby>
+        <reimplementedby refid="classText_1a7d1fa03ed628a41151f9a2407c52143a">getSelectionIndices</reimplementedby>
+        <briefdescription>
+<para>Get selection indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> indices </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="287" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a04ccb7eeabcaa3080078778e51894477" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::needsSelectionUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>needsSelectionUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="289" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a5b1629b721fd08ef5113df0452593eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::DatasetImpl::setSelectionIndices</definition>
+        <argsstring>(const std::vector&lt; std::uint32_t &gt; &amp;indices)=0</argsstring>
+        <name>setSelectionIndices</name>
+        <reimplementedby refid="classClusters_1afb3adc1cabb804b119e6f0c6ca240641">setSelectionIndices</reimplementedby>
+        <reimplementedby refid="classColors_1a8b70cdb1cbe5366ca48d1e24cdb839a9">setSelectionIndices</reimplementedby>
+        <reimplementedby refid="classImages_1ac30a696e81f1e0c38a0909add4449923">setSelectionIndices</reimplementedby>
+        <reimplementedby refid="classPoints_1a955011d072ec9c9b29e337ec7171a430">setSelectionIndices</reimplementedby>
+        <reimplementedby refid="classText_1a8c3fbb367fa5b82607c227f8b3e57c1d">setSelectionIndices</reimplementedby>
+        <param>
+          <type>const std::vector&lt; std::uint32_t &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Select by indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> indices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="295" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a938d8bb00ece630bf4cebf3454cb14cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::DatasetImpl::getSelectionSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionSize</name>
+        <briefdescription>
+<para>Get size of the selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="298" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1ab2383180554102dc5eea3253993d52c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::DatasetImpl::canSelect</definition>
+        <argsstring>() const =0</argsstring>
+        <name>canSelect</name>
+        <reimplementedby refid="classClusters_1a2af35450adcc3ec62e79b57b46b80fbd">canSelect</reimplementedby>
+        <reimplementedby refid="classColors_1accdf082af76834e55960855074b800ef">canSelect</reimplementedby>
+        <reimplementedby refid="classImages_1a676cc27cbf1e73e4ee2be37dd2169913">canSelect</reimplementedby>
+        <reimplementedby refid="classPoints_1a303914b7dec4faae2f28e69e2aace717">canSelect</reimplementedby>
+        <reimplementedby refid="classText_1abe2144c1803a0d0be7762fab6c5a86da">canSelect</reimplementedby>
+        <briefdescription>
+<para>Determines whether items can be selected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="301" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a15a1b30459c8fe0e066978ca466dfbed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::DatasetImpl::canSelectAll</definition>
+        <argsstring>() const =0</argsstring>
+        <name>canSelectAll</name>
+        <reimplementedby refid="classClusters_1a01aef8aca3a5e97b4c416edad8b1447b">canSelectAll</reimplementedby>
+        <reimplementedby refid="classColors_1a7a2aa6cb22cb6b756ced5d2b9998163a">canSelectAll</reimplementedby>
+        <reimplementedby refid="classImages_1a42e04a4de3db57489d9f0b0c14e6638c">canSelectAll</reimplementedby>
+        <reimplementedby refid="classPoints_1ab9a1e490006ac08c17783f4d96f159c2">canSelectAll</reimplementedby>
+        <reimplementedby refid="classText_1af49c47dc5d570eb0276a168ef69a3c28">canSelectAll</reimplementedby>
+        <briefdescription>
+<para>Determines whether all items can be selected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="304" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a4ebc14a6587cc36180326000df43900e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::DatasetImpl::canSelectNone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>canSelectNone</name>
+        <reimplementedby refid="classClusters_1ac0fd24e225c7cfc2a841d1a209b8fe64">canSelectNone</reimplementedby>
+        <reimplementedby refid="classColors_1a9f39db14e128cf2cd4bfd5bb19682ee4">canSelectNone</reimplementedby>
+        <reimplementedby refid="classImages_1a98a453c809d2cf39d08a81d6fbec11cc">canSelectNone</reimplementedby>
+        <reimplementedby refid="classPoints_1a7135c808477c0772435677c27975e866">canSelectNone</reimplementedby>
+        <reimplementedby refid="classText_1a8b01a187d08f33a3b8da9ecead237ec0">canSelectNone</reimplementedby>
+        <briefdescription>
+<para>Determines whether there are any items which can be deselected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="307" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a151f191a2e0bfe1546906ae789588374" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::DatasetImpl::canSelectInvert</definition>
+        <argsstring>() const =0</argsstring>
+        <name>canSelectInvert</name>
+        <reimplementedby refid="classClusters_1a681c7a3cc59247f619d2356f2f722f8d">canSelectInvert</reimplementedby>
+        <reimplementedby refid="classColors_1ad4c2c673a566e51e41eabccfc29e3976">canSelectInvert</reimplementedby>
+        <reimplementedby refid="classImages_1aabfbceb8ade19db6612426451002bdca">canSelectInvert</reimplementedby>
+        <reimplementedby refid="classPoints_1a85f7b07f738d4b6fefc6f548dd724531">canSelectInvert</reimplementedby>
+        <reimplementedby refid="classText_1ad0d7fc57c27500a8cf3250d4224e127d">canSelectInvert</reimplementedby>
+        <briefdescription>
+<para>Determines whether the item selection can be inverted (more than one) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="310" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a86ba2dca7d6cb7c5df73f19c080331a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::DatasetImpl::selectAll</definition>
+        <argsstring>()=0</argsstring>
+        <name>selectAll</name>
+        <reimplementedby refid="classClusters_1a7422324412bd34e23f0f03a1352757ba">selectAll</reimplementedby>
+        <reimplementedby refid="classColors_1afb17aae2152150260e27b37f72785d95">selectAll</reimplementedby>
+        <reimplementedby refid="classImages_1ab3b0e5d85f70ca9839ed47cb901445de">selectAll</reimplementedby>
+        <reimplementedby refid="classPoints_1a27d43134987df205e9a039afa9b355f2">selectAll</reimplementedby>
+        <reimplementedby refid="classText_1a3a86c92cd9cb33828d2d816275245b88">selectAll</reimplementedby>
+        <briefdescription>
+<para>Select all items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="313" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a96986d485fc9753894688f40cb8d3d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::DatasetImpl::selectNone</definition>
+        <argsstring>()=0</argsstring>
+        <name>selectNone</name>
+        <reimplementedby refid="classClusters_1a97519d2fdfbb10c3783b4d06bc6388da">selectNone</reimplementedby>
+        <reimplementedby refid="classColors_1a1f003637fcb0ba6efd054c8e1ff2950f">selectNone</reimplementedby>
+        <reimplementedby refid="classImages_1a1be061b7b737e667750c77298fb92bde">selectNone</reimplementedby>
+        <reimplementedby refid="classPoints_1af01ded9049668f8f21e72dbd50d93c89">selectNone</reimplementedby>
+        <reimplementedby refid="classText_1a29e45ab2ceeb3c42f346894092bca1f1">selectNone</reimplementedby>
+        <briefdescription>
+<para>De-select all items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="316" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a39e32a4af96862d08376ee56d9fb1296" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mv::DatasetImpl::selectInvert</definition>
+        <argsstring>()=0</argsstring>
+        <name>selectInvert</name>
+        <reimplementedby refid="classClusters_1a6cd60334fa3076108f3fa5118f44474f">selectInvert</reimplementedby>
+        <reimplementedby refid="classColors_1a1564e8cc3766516d0fac7331ccfe5cce">selectInvert</reimplementedby>
+        <reimplementedby refid="classImages_1a84aefc77acb07e37382550a65e5f1b45">selectInvert</reimplementedby>
+        <reimplementedby refid="classPoints_1a458147caebd71e95db110e0e26a19d6f">selectInvert</reimplementedby>
+        <reimplementedby refid="classText_1adbba352af481a221988d7a7d3d08ace0">selectInvert</reimplementedby>
+        <briefdescription>
+<para>Invert item selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="319" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a0ff75b77139d09cd53eb674152801627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::lock</definition>
+        <argsstring>(bool cache=false)</argsstring>
+        <name>lock</name>
+        <param>
+          <type>bool</type>
+          <declname>cache</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Lock the dataset and possibly <computeroutput>cache</computeroutput> the current lock state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to cache the current lock state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="330" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="90" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8eb8de68494c55cb6e63bb9c019128cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::unlock</definition>
+        <argsstring>(bool cache=false)</argsstring>
+        <name>unlock</name>
+        <param>
+          <type>bool</type>
+          <declname>cache</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Unlock the dataset and possibly <computeroutput>cache</computeroutput> the current lock state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to cache the current lock state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="336" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="102" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2cb79c83a6073e59762d30076fa5992d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::isLocked</definition>
+        <argsstring>() const</argsstring>
+        <name>isLocked</name>
+        <briefdescription>
+<para>Get whether the dataset is locked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether the dataset is locked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="343" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1adbad34c545eb50669f27ceaf02f087d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setLocked</definition>
+        <argsstring>(bool locked, bool cache=false)</argsstring>
+        <name>setLocked</name>
+        <param>
+          <type>bool</type>
+          <declname>locked</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cache</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set whether the dataset is <computeroutput>locked</computeroutput> and possibly <computeroutput>cache</computeroutput> the current lock state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>locked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean indicating whether the dataset is locked </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to cache the current lock state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="350" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="119" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af8d9b74d54d666897569cb124d9e6e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::restoreLockedFromCache</definition>
+        <argsstring>()</argsstring>
+        <name>restoreLockedFromCache</name>
+        <briefdescription>
+<para>Restore the lock status to the cached value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="353" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1adcdbaf672eaacc889e1a0981f7f1e5ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::DatasetImpl::getProperty</definition>
+        <argsstring>(const QString &amp;name, const QVariant &amp;defaultValue=QVariant()) const</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>defaultValue</declname>
+          <defval>QVariant()</defval>
+        </param>
+        <briefdescription>
+<para>Get property in variant form. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Property in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="363" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="536" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1aeec4e5104a4150f58189f1e2e50bb2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setProperty</definition>
+        <argsstring>(const QString &amp;name, const QVariant &amp;value)</argsstring>
+        <name>setProperty</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Property value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="370" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="544" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af32171189ea6e314524994fbe40948cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::hasProperty</definition>
+        <argsstring>(const QString &amp;name) const</argsstring>
+        <name>hasProperty</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether a property with a give name exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the property </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If property with the given name exists </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="377" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="549" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2fe0d9c2f6d5b227e1c196720e958205" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::DatasetImpl::propertyNames</definition>
+        <argsstring>() const</argsstring>
+        <name>propertyNames</name>
+        <briefdescription>
+<para>Returns a list of available property names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="380" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="554" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1a9ca02b3d42efe9fd7b613d2e28e81b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setAnalysis</definition>
+        <argsstring>(plugin::AnalysisPlugin *analysis)</argsstring>
+        <name>setAnalysis</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">plugin::AnalysisPlugin</ref> *</type>
+          <declname>analysis</declname>
+        </param>
+        <briefdescription>
+<para>Set analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>analysis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to analysis plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="388" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a02a32a875b0b393b583c0407a2aba282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">plugin::AnalysisPlugin</ref> *</type>
+        <definition>mv::plugin::AnalysisPlugin * mv::DatasetImpl::getAnalysis</definition>
+        <argsstring>()</argsstring>
+        <name>getAnalysis</name>
+        <briefdescription>
+<para>Get analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to analysis plugin </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="394" column="28" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1db2ebe6566eb494ef97ada4b06ec9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5">fromVariantMap</reimplements>
+        <reimplementedby refid="classClusters_1aa3aac4f03960e6d438c2d54d4a923433">fromVariantMap</reimplementedby>
+        <reimplementedby refid="classImages_1a8ff3188b3256c2e037df64e064e6c788">fromVariantMap</reimplementedby>
+        <reimplementedby refid="classPoints_1a740aeeff8886b3deb3a4513f9d2cec6e">fromVariantMap</reimplementedby>
+        <reimplementedby refid="classText_1abcd0546dd203982eac3851fb257feb68">fromVariantMap</reimplementedby>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load widget action from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>representation of the widget action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="402" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="145" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1af708e45bf0a4b6d0caa16598042438b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::DatasetImpl::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887">toVariantMap</reimplements>
+        <reimplementedby refid="classClusters_1a2d9b77c25832e8f500c9c1f85e9c01c9">toVariantMap</reimplementedby>
+        <reimplementedby refid="classImages_1ad5aac2a2a4b360b8c4c310fadad137c1">toVariantMap</reimplementedby>
+        <reimplementedby refid="classPoints_1ada7c6af2dcc5b351bdf99c331df32116">toVariantMap</reimplementedby>
+        <reimplementedby refid="classText_1a982bba3b720e30015319a6a5586a8e36">toVariantMap</reimplementedby>
+        <briefdescription>
+<para>Save widget action to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="408" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="216" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a296490bca59b756f0d4aaeb256dfb47b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::DatasetImpl::getGroupIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getGroupIndex</name>
+        <briefdescription>
+<para>Get group index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="413" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1aabbca0c56b89945a105b508eb0fa87e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setGroupIndex</definition>
+        <argsstring>(const std::int32_t &amp;groupIndex)</argsstring>
+        <name>setGroupIndex</name>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>groupIndex</declname>
+        </param>
+        <briefdescription>
+<para>Set group index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>groupIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>group index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="419" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="256" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a7d9728ad5fb82f5da7a888ab31fb041a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>mv::Datasets mv::DatasetImpl::getProxyMembers</definition>
+        <argsstring>() const</argsstring>
+        <name>getProxyMembers</name>
+        <briefdescription>
+<para>Get member datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Proxy member datasets </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="425" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a77d1fc8da1c2c5fc236a21f7165cc6f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setProxyMembers</definition>
+        <argsstring>(const Datasets &amp;proxyMembers)</argsstring>
+        <name>setProxyMembers</name>
+        <reimplementedby refid="classPoints_1ac481d813a27d661bb58ee4da25c9483c">setProxyMembers</reimplementedby>
+        <param>
+          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <declname>proxyMembers</declname>
+        </param>
+        <briefdescription>
+<para>Set the proxy member datasets (automatically sets the dataset type to Type::Proxy) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxyMembers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Proxy member datasets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="431" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="268" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a4f92b0b7cb207f290d0524e6d1f788d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::mayProxy</definition>
+        <argsstring>(const Datasets &amp;proxyDatasets) const</argsstring>
+        <name>mayProxy</name>
+        <reimplementedby refid="classPoints_1ac9db77399ead245c295fea5328b53950">mayProxy</reimplementedby>
+        <param>
+          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <declname>proxyDatasets</declname>
+        </param>
+        <briefdescription>
+<para>Establish whether a proxy dataset may be created with candidate <computeroutput>proxyDatasets</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxyDatasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Candidate proxy datasets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether a proxy dataset may be created with candidate <computeroutput>proxyDatasets</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="438" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="297" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a02a4dfb967a3f2f5adad19ef53fb0669" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::isProxy</definition>
+        <argsstring>() const</argsstring>
+        <name>isProxy</name>
+        <briefdescription>
+<para>Establish whether the set is a proxy dataset (comprised of foreign datasets) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether the set is a proxy dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="444" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1ccbd0fd4053c39a01d64f623f73db96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::addAction</definition>
+        <argsstring>(mv::gui::WidgetAction &amp;widgetAction)</argsstring>
+        <name>addAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">mv::gui::WidgetAction</ref> &amp;</type>
+          <declname>widgetAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>widgetAction</computeroutput> to the corresponding data hierarchy item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widgetAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget action to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="452" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="311" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a245f992f177f680b22ad1e448f7ce93d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">mv::gui::WidgetActions</ref></type>
+        <definition>mv::gui::WidgetActions mv::DatasetImpl::getActions</definition>
+        <argsstring>() const</argsstring>
+        <name>getActions</name>
+        <briefdescription>
+<para>Get attached actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of widget actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="458" column="28" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a753f97de1be8ea46c6df0150a0af5214" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QMenu *</type>
+        <definition>QMenu * mv::DatasetImpl::getContextMenu</definition>
+        <argsstring>(QWidget *parent=nullptr) override</argsstring>
+        <name>getContextMenu</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606">getContextMenu</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Get the context menu. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Context menu </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="465" column="11" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a7ee16d4f853c2377c1b20859b8cbad0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::populateContextMenu</definition>
+        <argsstring>(QMenu *contextMenu)</argsstring>
+        <name>populateContextMenu</name>
+        <param>
+          <type>QMenu *</type>
+          <declname>contextMenu</declname>
+        </param>
+        <briefdescription>
+<para>Populates existing menu with actions menus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contextMenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context menu to populate </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="471" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="328" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8f833f5983e5ece3fc37daea2821b0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::addLinkedData</definition>
+        <argsstring>(const mv::Dataset&lt; DatasetImpl &gt; &amp;targetDataSet, mv::SelectionMap &amp;mapping)</argsstring>
+        <name>addLinkedData</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>targetDataSet</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap" kindref="compound">mv::SelectionMap</ref> &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="475" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="333" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a21421593a1e6a6383f89c1eb65d10793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::addLinkedData</definition>
+        <argsstring>(const mv::Dataset&lt; DatasetImpl &gt; &amp;targetDataSet, mv::SelectionMap &amp;&amp;mapping)</argsstring>
+        <name>addLinkedData</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>targetDataSet</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap" kindref="compound">mv::SelectionMap</ref> &amp;&amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="477" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="339" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a2c01619d511449ad2a8e47145cd98d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::removeAllLinkedData</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLinkedData</name>
+        <briefdescription>
+<para>Removes all mappings of global selection indices from this dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="482" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1aee85ca497be7b405d3c5575fe6578fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::removeLinkedDataset</definition>
+        <argsstring>(const mv::Dataset&lt; DatasetImpl &gt; &amp;targetDataSet)</argsstring>
+        <name>removeLinkedDataset</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>targetDataSet</declname>
+        </param>
+        <briefdescription>
+<para>Removes mappings of global selection indices from this dataset to a target dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetDataSet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="488" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="350" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a3010b0199a9cb3c2a729cb10213c337f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::removeLinkedDataMapping</definition>
+        <argsstring>(const QString &amp;mappingID)</argsstring>
+        <name>removeLinkedDataMapping</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>mappingID</declname>
+        </param>
+        <briefdescription>
+<para>Removes a mapping from this dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mappingID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique identifier (as obtained with <ref refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" kindref="member">getId()</ref>) of to-be-removed mapping </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="494" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="359" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1ad408af418253010b7c581d12eddf721e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classmv_1_1LinkedData" kindref="compound">mv::LinkedData</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; mv::LinkedData &gt; &amp; mv::DatasetImpl::getLinkedData</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinkedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="496" column="23" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="476" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1d4a99ef2dcb3f6dbdbe785697c5f311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmv_1_1LinkedData" kindref="compound">mv::LinkedData</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; mv::LinkedData &gt; &amp; mv::DatasetImpl::getLinkedData</definition>
+        <argsstring>()</argsstring>
+        <name>getLinkedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="498" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="481" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a967fa1cdfc45f040b10843cc796f3a09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::DatasetImpl::getLinkedDataFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinkedDataFlags</name>
+        <briefdescription>
+<para>Get flags for linked data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Flags for linked data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="504" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="486" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a90ea4d4081e84bdafe87492f23645475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setLinkedDataFlags</definition>
+        <argsstring>(std::int32_t linkedDataFlags)</argsstring>
+        <name>setLinkedDataFlags</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>linkedDataFlags</declname>
+        </param>
+        <briefdescription>
+<para>Set flags for linked data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linkedDataFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags for linked data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="510" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="491" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a1bee275cfd474dea5755f5ae9168e16c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setLinkedDataFlag</definition>
+        <argsstring>(std::int32_t linkedDataFlag, bool set=true)</argsstring>
+        <name>setLinkedDataFlag</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>linkedDataFlag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>set</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set linked data flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linkedDataFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linked data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="516" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="496" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a98870eba79c3dca2db4e5494ea04ee2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::hasLinkedDataFlag</definition>
+        <argsstring>(std::int32_t linkedDataFlag) const</argsstring>
+        <name>hasLinkedDataFlag</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>linkedDataFlag</declname>
+        </param>
+        <briefdescription>
+<para>Determine whether <computeroutput>linkedDataFlag</computeroutput> is set or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linkedDataFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linked data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining linkedDataFlag Linked data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="523" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="504" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a764972ebeb188b7c00de20985f1455dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mv::DatasetImpl::resolveLinkedData</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>resolveLinkedData</name>
+        <reimplementedby refid="classPoints_1ac045262675419f98f921a1212b6f715b">resolveLinkedData</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Resolves linked data for the dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Force update of all linked data (ignores linked data flags) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="529" column="18" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="529" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a746bfb5da0c9da417777097cb9c8395e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::DatasetImpl::getRawDataName</definition>
+        <argsstring>() const</argsstring>
+        <name>getRawDataName</name>
+        <briefdescription>
+<para>Get the name of the raw data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="534" column="13" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a8efa658d940fe62fba3620e62d88e08d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1DatasetTask" kindref="compound">DatasetTask</ref> &amp;</type>
+        <definition>DatasetTask &amp; mv::DatasetImpl::getTask</definition>
+        <argsstring>()</argsstring>
+        <name>getTask</name>
+        <briefdescription>
+<para>Get task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> for display in the data hierarchy and foreground </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="542" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="514" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a6f22b0032e404cb213c52bfc4bbdb25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setAboutToBeRemoved</definition>
+        <argsstring>(bool aboutToBeRemoved=true)</argsstring>
+        <name>setAboutToBeRemoved</name>
+        <param>
+          <type>bool</type>
+          <declname>aboutToBeRemoved</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set about to be removed to <computeroutput>aboutToBeRemoved</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aboutToBeRemoved</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the set is in the process of being removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="550" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="519" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a67b8f812c71f3bbfb4e16ad1f7c4ed73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::DatasetImpl::isAboutToBeRemoved</definition>
+        <argsstring>() const</argsstring>
+        <name>isAboutToBeRemoved</name>
+        <briefdescription>
+<para>Get whether the set is in the process of being removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the set is in the process of being removed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="556" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="526" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a020865055ea086059acc3c4c820da90d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &amp;</type>
+        <definition>DatasetImpl&amp; mv::DatasetImpl::operator=</definition>
+        <argsstring>(const DatasetImpl &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to assign from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="584" column="17" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="584" bodyend="600"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a999f1f95e33d3eaa7302cfd8494e9ed7" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::markSelectionDirty</definition>
+        <argsstring>(bool isDirty) const</argsstring>
+        <name>markSelectionDirty</name>
+        <param>
+          <type>bool</type>
+          <declname>isDirty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="322" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="322" bodyend="322"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1a31ffa46cd4145883292187a617bd6f0d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> *</type>
+        <definition>DataType* mv::DatasetImpl::getRawData</definition>
+        <argsstring>() const</argsstring>
+        <name>getRawData</name>
+        <briefdescription>
+<para>Get raw data for <computeroutput><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to raw data of <computeroutput><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="565" column="14" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="565" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetImpl_1aa2089fa8e6ef3eaa4ead623d77a20e63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetImpl::setAll</definition>
+        <argsstring>(bool all)</argsstring>
+        <name>setAll</name>
+        <param>
+          <type>bool</type>
+          <declname>all</declname>
+        </param>
+        <briefdescription>
+<para>Set whether this set represents all the data or only a subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>all</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this is a full dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Set.h" line="576" column="10" bodyfile="Docs/external/core/ManiVault/src/Set.cpp" bodystart="564" bodyend="567"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> implementation class Base dataset class from which concrete dataset classes derive. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Colors</label>
+        <link refid="classColors"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::DatasetImpl</label>
+        <link refid="classmv_1_1DatasetImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="8">
+        <label>Points</label>
+        <link refid="classPoints"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Clusters</label>
+        <link refid="classClusters"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Images</label>
+        <link refid="classImages"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Text</label>
+        <link refid="classText"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::DatasetImpl</label>
+        <link refid="classmv_1_1DatasetImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/Set.h" line="42" column="1" bodyfile="Docs/external/core/ManiVault/src/Set.h" bodystart="43" bodyend="630"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DatasetImpl_1a0c07c970b72fba6bd034a07587eb88f7" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_aboutToBeRemoved</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a53274c5e93352de00767d4ad0e6453c3" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_all</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ac6d9bbc70366c850c9394fcabff41959" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_analysis</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a100a39944c65c99648cf577a4581bed9" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_derived</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2978e347c76b8ac7ec606bbf7fd0148c" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_dirtySelection</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a5fb479df501291f3d840bce8d73d79ef" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_fullDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ae38284b754655fe70fe5a18c04727a11" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_groupIndex</name></member>
+      <member refid="classmv_1_1DatasetImpl_1acf2a91d16857182d732d054e31a7223b" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_linkedData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a3419b917363a7a7aefa36aedebbef602" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_linkedDataFlags</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a480826a2a594adde0e3278433e52120f" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_locked</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a7b6766379d742fc3de36f19fd00d845b" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_lockedCache</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a25d36d00000f2e301da237b642f01222" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_mayUnderive</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ab9670bc1c9f8e7a2234db8d987088121" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_properties</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a77dd414e961fc22d29bc09491bf35d9d" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_proxyMembers</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a37d8ee9c7a8251f6418611ab9941b453" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_rawData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a422e2f7f0c5d58bd736f8307bdbd823e" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_rawDataName</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1ef3fb76085cfc56312b3aaa6928c92d" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_smartPointer</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ab486b158bb4792c667f738e8d36f8d66" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_sourceDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a911b4d8fae9cf42be3d8fb8a76314314" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_storageType</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a620a157d604532dae54f8301c089f0c9" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>_task</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1ccbd0fd4053c39a01d64f623f73db96" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>addAction</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8f833f5983e5ece3fc37daea2821b0f1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>addLinkedData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a21421593a1e6a6383f89c1eb65d10793" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>addLinkedData</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ab2383180554102dc5eea3253993d52c5" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>canSelect</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a15a1b30459c8fe0e066978ca466dfbed" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>canSelectAll</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a151f191a2e0bfe1546906ae789588374" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>canSelectInvert</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a4ebc14a6587cc36180326000df43900e" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>canSelectNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::DatasetImpl</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a944b0c1d35be52c365c4d56ba9688972" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>copy</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a4107254ac74f90d4f91e810d755b98c2" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Core</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1a3d6725008b25b6c7bc9db4f15786d9" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>CoreInterface</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2e4b838636f4e00bd58c96744ff3c0eb" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>createSubsetFromSelection</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a90bc42cd80270d73dfa9aade4e76528f" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>DataManager</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a72da76bd23c860a4e4a7b6b7c05cb621" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>DatasetImpl</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::DatasetImpl</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a472874c5724681afe45342d8f7ccfe81" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>EventListener</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aba45a46c615e2683daffdae82e2d3b8f" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>EventManager</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1db2ebe6566eb494ef97ada4b06ec9b5" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetImpl</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetImpl</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a245f992f177f680b22ad1e448f7ce93d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getActions</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a02a32a875b0b393b583c0407a2aba282" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getAnalysis</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ae1041aca3dbaa7df0ce040d00b3e8335" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a045258ed2fa3a64b6c7ebee7c392ddac" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual" ambiguityscope="mv::gui::WidgetAction::"><scope>mv::DatasetImpl</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual" ambiguityscope="mv::gui::WidgetAction::"><scope>mv::DatasetImpl</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a753f97de1be8ea46c6df0150a0af5214" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2d601e7800184078a3f45db54b693d56" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDataHierarchyItem</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8a5c3b621a59d88c37fdbb892e255b1d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDataHierarchyItem</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a3581a6d06c766cf3a3722bc606a0fcd1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDataType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2cce105a73f4a1451315a6d8a2f1af71" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getFullDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a296490bca59b756f0d4aaeb256dfb47b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getGroupIndex</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a0a0ba094818c251a63b42e12abb94dd3" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getGuiName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getId</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad408af418253010b7c581d12eddf721e" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getLinkedData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1d4a99ef2dcb3f6dbdbe785697c5f311" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getLinkedData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a967fa1cdfc45f040b10843cc796f3a09" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getLinkedDataFlags</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a11d84383fd30e851ed919670e5e29250" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad15fc73abc6e65b2deb6427f5f1ee5aa" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getNextSourceDataset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a89f38fc602d0c5bf6f7d9a0f7343ee9e" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getParent</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a6446bd2476db5d68d400dfbe6f8c2494" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1DatasetImpl_1adcdbaf672eaacc889e1a0981f7f1e5ff" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getProperty</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a7d9728ad5fb82f5da7a888ab31fb041a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getProxyMembers</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a31ffa46cd4145883292187a617bd6f0d" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getRawData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a23f67b4eef648a8f644c4012e95c2667" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getRawDataKind</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a746bfb5da0c9da417777097cb9c8395e" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getRawDataName</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8eb56413db613c468d44b23b8097125b" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>getRawDataSize</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a26fc4ada512eef0e5962d0682fbffa57" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getRawDataSizeHumanReadable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getScope</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2ea59b0bba3fb2e5223000a2afbb430f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSelection</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aca21497034f6e38294ae9a733e8ac60c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSelection</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af2120e1a59dc260e25b78ec35add6eb0" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>getSelectionIndices</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a938d8bb00ece630bf4cebf3454cb14cf" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSelectionSize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a860eba115d78d9e685ef39e42f91b323" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSmartPointer</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a3b8049dbc0b33a85431a80d13280865c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getSourceDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a171c27a28620314112c6861ecc5b1356" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getStorageType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8efa658d940fe62fba3620e62d88e08d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getTask</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33" prot="protected" virt="virtual"><scope>mv::DatasetImpl</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a98870eba79c3dca2db4e5494ea04ee2f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasLinkedDataFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af32171189ea6e314524994fbe40948cf" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>hasProperty</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af2e8224afe674a29a4a20cc32a97edcb" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>init</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a67b8f812c71f3bbfb4e16ad1f7c4ed73" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a589d5b7232f356527f803d8ba2d15152" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isDerivedData</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a4d39f96c2d9cf63b9e96cdbfb9bde9c5" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isFull</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2cb79c83a6073e59762d30076fa5992d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isLocked</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a02a4dfb967a3f2f5adad19ef53fb0669" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isProxy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1DatasetImpl_1affca5f2ada55a71f83eb0cb0aeb22dc3" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>KeyBasedSelectionGroup</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>LinkedDataFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a0ff75b77139d09cd53eb674152801627" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>lock</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a56200e3785fbc31834c57ddd00ae9241" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>makeSubsetOf</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a999f1f95e33d3eaa7302cfd8494e9ed7" prot="private" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>markSelectionDirty</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a4f92b0b7cb207f290d0524e6d1f788d5" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>mayProxy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a799e7725374292f0935beb82b92ca697" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>mayUnderive</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a04ccb7eeabcaa3080078778e51894477" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>needsSelectionUpdate</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a020865055ea086059acc3c4c820da90d" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>operator=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>operator==</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a7ee16d4f853c2377c1b20859b8cbad0a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>populateContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2fe0d9c2f6d5b227e1c196720e958205" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>propertyNames</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>publish</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7a788ef1d71547f85534c23e5acab88b6a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Receive</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a2c01619d511449ad2a8e47145cd98d00" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>removeAllLinkedData</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a3010b0199a9cb3c2a729cb10213c337f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>removeLinkedDataMapping</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aee85ca497be7b405d3c5575fe6578fa8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>removeLinkedDataset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>reset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a764972ebeb188b7c00de20985f1455dd" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>resolveLinkedData</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af8d9b74d54d666897569cb124d9e6e17" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>restoreLockedFromCache</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a86ba2dca7d6cb7c5df73f19c080331a5" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>selectAll</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a39e32a4af96862d08376ee56d9fb1296" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>selectInvert</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a96986d485fc9753894688f40cb8d3d4b" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>selectNone</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7aa88ab6d3cbc499c6a6fc453223f5cc79" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Send</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ad532ba82487344ec9089b9f866a42bc7a0b8294cf37a881a69fe6404626c4b615" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>SendReceive</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a6f22b0032e404cb213c52bfc4bbdb25f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aa2089fa8e6ef3eaa4ead623d77a20e63" prot="protected" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setAll</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1a9ca02b3d42efe9fd7b613d2e28e81b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setAnalysis</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aabbca0c56b89945a105b508eb0fa87e8" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setGroupIndex</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af8bd705d662f72efb92b96c8d8ba1dd4" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setGuiName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setId</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1bee275cfd474dea5755f5ae9168e16c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setLinkedDataFlag</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a90ea4d4081e84bdafe87492f23645475" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setLinkedDataFlags</name></member>
+      <member refid="classmv_1_1DatasetImpl_1adbad34c545eb50669f27ceaf02f087d4" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setLocked</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1DatasetImpl_1aeec4e5104a4150f58189f1e2e50bb2ec" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setProperty</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a77d1fc8da1c2c5fc236a21f7165cc6f6" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>setProxyMembers</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a5b1629b721fd08ef5113df0452593eb2" prot="public" virt="pure-virtual"><scope>mv::DatasetImpl</scope><name>setSelectionIndices</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1DatasetImpl_1adcdf04b307e23371b9eb3121176eae83" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSourceDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a1c7cc542ce005552017e980be4c9ec6c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setSourceDataset</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a7b70dacfafe8de5f7d408a673106859b" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setStorageType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>State</name></member>
+      <member refid="classmv_1_1DatasetImpl_1acea62a7b0294208e7f12cf015abcb6cb" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>StorageType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1DatasetImpl_1ae24e5b787a2cb9c5c82c759eca6f5a05" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>toSmartPointer</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8c032d982243f7a20141b0abeda1ebf9" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>toSmartPointer</name></member>
+      <member refid="classmv_1_1DatasetImpl_1af708e45bf0a4b6d0caa16598042438b3" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::DatasetImpl</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a8eb8de68494c55cb6e63bb9c019128cc" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>unlock</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1DatasetImpl_1a3e7b0ab0b6d0a248ccdc7b86dfd4cd71" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>~DatasetImpl</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::DatasetImpl</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::DatasetImpl</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classViewPluginDockWidget_1_1ProgressOverlayWidget" kind="class" language="C++" prot="private">
+    <compoundname>ViewPluginDockWidget::ProgressOverlayWidget</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1OverlayWidget" prot="public" virt="non-virtual">mv::gui::OverlayWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a523459a1916c6c72d8ede642dcd9ee18" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">mv::gui::TaskAction</ref></type>
+        <definition>mv::gui::TaskAction ViewPluginDockWidget::ProgressOverlayWidget::_loadTaskAction</definition>
+        <argsstring></argsstring>
+        <name>_loadTaskAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="89" column="33" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a13c798c198adc86b9e2d1f693b3878da" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* ViewPluginDockWidget::ProgressOverlayWidget::_loadTaskWidget</definition>
+        <argsstring></argsstring>
+        <name>_loadTaskWidget</name>
+        <briefdescription>
+<para>Action for reporting loading progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="90" column="32" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1aefc3c38d92ab159370f235c8f3857e58" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref> *</type>
+        <definition>mv::Task* ViewPluginDockWidget::ProgressOverlayWidget::_task</definition>
+        <argsstring></argsstring>
+        <name>_task</name>
+        <briefdescription>
+<para>Pointer to task widget created by ProgressOverlayWidget::_loadTaskAction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="91" column="32" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ab8a1da4ce735b579ff4f999fcc1d271e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ViewPluginDockWidget::ProgressOverlayWidget::ProgressOverlayWidget</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>ProgressOverlayWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="65" column="9" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="524" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a71439ad37ce7a3265c2bc439189df88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginDockWidget::ProgressOverlayWidget::setTask</definition>
+        <argsstring>(mv::Task *task)</argsstring>
+        <name>setTask</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Set task to <computeroutput>task</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to task (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="71" column="14" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="556" bodyend="575"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a80263d462515fa6e9625c637d4bf4416" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ViewPluginDockWidget::ProgressOverlayWidget::event</definition>
+        <argsstring>(QEvent *event) override</argsstring>
+        <name>event</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Override QObject&apos;s event handling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean Whether the event was recognized and processed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="78" column="14" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="548" bodyend="554"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ad429d3745975ee4fd6a5e03d43fe4e95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginDockWidget::ProgressOverlayWidget::updateVisibility</definition>
+        <argsstring>()</argsstring>
+        <name>updateVisibility</name>
+        <briefdescription>
+<para>Update the overlay visibility based on whether there is a task and, if yes, whether it is running or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="83" column="14" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="577" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ab7af1220dc642e46b16070f6feecd0aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ViewPluginDockWidget::ProgressOverlayWidget::updateCustomStyle</definition>
+        <argsstring>()</argsstring>
+        <name>updateCustomStyle</name>
+        <briefdescription>
+<para>Respond to changes in application palette. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="86" column="14" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="585" bodyend="590"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Overlay widget which shows a very thin view progress bar. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ViewPluginDockWidget::ProgressOverlayWidget</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ViewPluginDockWidget::ProgressOverlayWidget</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="58" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="58" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a523459a1916c6c72d8ede642dcd9ee18" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>_loadTaskAction</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a13c798c198adc86b9e2d1f693b3878da" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>_loadTaskWidget</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1aefc3c38d92ab159370f235c8f3857e58" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>_task</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7626aeac1d58a168131f2444a1312d7b" prot="public" virt="virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>addMouseEventReceiverWidget</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a80263d462515fa6e9625c637d4bf4416" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>event</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1afc42679a88787233f09777dabecc0cf7" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>getWidgetOverlayer</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7d999e8b433e469ad8eb8097614c13b6" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>OverlayWidget</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ab8a1da4ce735b579ff4f999fcc1d271e" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>ProgressOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1adbc1e650ae0cfbaa32da685673a5f213" prot="public" virt="virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>removeMouseEventReceiverWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1ae5cbd8301966b80a7a729b48b8acc33e" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>resizeEvent</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1a71439ad37ce7a3265c2bc439189df88c" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>setTask</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ab7af1220dc642e46b16070f6feecd0aa" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>updateCustomStyle</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a61a04628c5eb98aa4c3715f38c60275b" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>updateMask</name></member>
+      <member refid="classViewPluginDockWidget_1_1ProgressOverlayWidget_1ad429d3745975ee4fd6a5e03d43fe4e95" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget::ProgressOverlayWidget</scope><name>updateVisibility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

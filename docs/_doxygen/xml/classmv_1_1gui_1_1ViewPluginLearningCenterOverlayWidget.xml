@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::ViewPluginLearningCenterOverlayWidget</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1OverlayWidget" prot="public" virt="non-virtual">mv::gui::OverlayWidget</basecompoundref>
+    <includes refid="ViewPluginLearningCenterOverlayWidget_8h" local="no">ViewPluginLearningCenterOverlayWidget.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AboutToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::AboutToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AbstractToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::AbstractToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AlignmentToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::AlignmentToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1HideToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::HideToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1LearningCenterToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::LearningCenterToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ShortcutsToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::ShortcutsToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ShowDocumentationToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::ShowDocumentationToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ToLearningCenterToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::ToLearningCenterToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ToolbarWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::ToolbarWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1TutorialsToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::TutorialsToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1VideosToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::VideosToolbarItemWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1VisitGithubRepoToolbarItemWidget" prot="protected">mv::gui::ViewPluginLearningCenterOverlayWidget::VisitGithubRepoToolbarItemWidget</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a8bb495d0a526f8557b1c2073cc289d59" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+        <definition>const plugin::ViewPlugin* mv::gui::ViewPluginLearningCenterOverlayWidget::_viewPlugin</definition>
+        <argsstring></argsstring>
+        <name>_viewPlugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="618" column="48" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a20bad2e8d0e8d538821f4587d42f4664" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout</type>
+        <definition>QVBoxLayout mv::gui::ViewPluginLearningCenterOverlayWidget::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+<para>Pointer to the view plugin for which to create the overlay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="619" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a91352f65a7f66c196a91713a4cb85490" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ToolbarWidget" kindref="compound">ToolbarWidget</ref></type>
+        <definition>ToolbarWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_toolbarWidget</definition>
+        <argsstring></argsstring>
+        <name>_toolbarWidget</name>
+        <briefdescription>
+<para>For alignment of the learning center toolbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="620" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa7e11ad889f110663c4a47821226fb85" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1LearningCenterToolbarItemWidget" kindref="compound">LearningCenterToolbarItemWidget</ref></type>
+        <definition>LearningCenterToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_learningCenterToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_learningCenterToolbarItemWidget</name>
+        <briefdescription>
+<para>Toolbar widget which contains the various learning center actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="621" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1acd3dc70c97a0a7dc29a811021ed6bc9a" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1VideosToolbarItemWidget" kindref="compound">VideosToolbarItemWidget</ref></type>
+        <definition>VideosToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_videosToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_videosToolbarItemWidget</name>
+        <briefdescription>
+<para>Primary learning center toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="622" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1cd6c947d9188da217c56d56f61b7769" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1TutorialsToolbarItemWidget" kindref="compound">TutorialsToolbarItemWidget</ref></type>
+        <definition>TutorialsToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_tutorialsToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_tutorialsToolbarItemWidget</name>
+        <briefdescription>
+<para>Videos toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="623" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a51c38611878ece65700d4a893eb32985" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AboutToolbarItemWidget" kindref="compound">AboutToolbarItemWidget</ref></type>
+        <definition>AboutToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_aboutToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_aboutToolbarItemWidget</name>
+        <briefdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> tutorials toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="624" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="624" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a5bffa52a3eae6f5cc41a0d2f8a928796" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ShortcutsToolbarItemWidget" kindref="compound">ShortcutsToolbarItemWidget</ref></type>
+        <definition>ShortcutsToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_shortcutsToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_shortcutsToolbarItemWidget</name>
+        <briefdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> about toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="625" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ab16861937e59af5b271e24c95f8ad2dc" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ShowDocumentationToolbarItemWidget" kindref="compound">ShowDocumentationToolbarItemWidget</ref></type>
+        <definition>ShowDocumentationToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_showDocumentationToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_showDocumentationToolbarItemWidget</name>
+        <briefdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> shortcuts toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="626" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a980e7de6c27d88c37591241fda4e0fe9" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1VisitGithubRepoToolbarItemWidget" kindref="compound">VisitGithubRepoToolbarItemWidget</ref></type>
+        <definition>VisitGithubRepoToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_visitGithubRepoToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_visitGithubRepoToolbarItemWidget</name>
+        <briefdescription>
+<para>Documentation toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="627" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1afdb699313e20f96e34f6708db7958ea0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ToLearningCenterToolbarItemWidget" kindref="compound">ToLearningCenterToolbarItemWidget</ref></type>
+        <definition>ToLearningCenterToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_toLearningCenterToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_toLearningCenterToolbarItemWidget</name>
+        <briefdescription>
+<para>Link to GitHub repository toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="628" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa600d86176e803530b1086fcb96978b3" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1HideToolbarItemWidget" kindref="compound">HideToolbarItemWidget</ref></type>
+        <definition>HideToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_hideToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_hideToolbarItemWidget</name>
+        <briefdescription>
+<para>Go the main learning center toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="629" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a9ce901c4c649e7d6b7cc1fdea0f5a112" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AlignmentToolbarItemWidget" kindref="compound">AlignmentToolbarItemWidget</ref></type>
+        <definition>AlignmentToolbarItemWidget mv::gui::ViewPluginLearningCenterOverlayWidget::_alignmentToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>_alignmentToolbarItemWidget</name>
+        <briefdescription>
+<para>Toolbar hide item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="630" column="49" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a21e335bd0ffbf336266af088760b9bb9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AbstractToolbarItemWidget" kindref="compound">AbstractToolbarItemWidget</ref> * &gt;</type>
+        <definition>std::vector&lt;AbstractToolbarItemWidget*&gt; mv::gui::ViewPluginLearningCenterOverlayWidget::_toolbarItemWidgets</definition>
+        <argsstring></argsstring>
+        <name>_toolbarItemWidgets</name>
+        <briefdescription>
+<para>Toolbar alignment item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="631" column="21" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a391397d3c9bd827baed6bd10fe107340" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto mv::gui::ViewPluginLearningCenterOverlayWidget::animationDuration</definition>
+        <argsstring></argsstring>
+        <name>animationDuration</name>
+        <initializer>= 300</initializer>
+        <briefdescription>
+<para>All toolbar item widgets except the learning center toolbar item widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="633" column="27" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1b9ea33565734046278386639a154481" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto mv::gui::ViewPluginLearningCenterOverlayWidget::intermediateOpacity</definition>
+        <argsstring></argsstring>
+        <name>intermediateOpacity</name>
+        <initializer>= .3f</initializer>
+        <briefdescription>
+<para>Overall animation duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="634" column="27" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ac2b688871de19d633722f584b736d5ff" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto mv::gui::ViewPluginLearningCenterOverlayWidget::widgetAsyncUpdateTimerInterval</definition>
+        <argsstring></argsstring>
+        <name>widgetAsyncUpdateTimerInterval</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>Intermediate opacity of items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="635" column="27" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a0023a76c9e24f89b79e7297e9d8951f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AbstractToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>AbstractToolbarItemWidget</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AbstractToolbarItemWidget" kindref="compound">AbstractToolbarItemWidget</ref></type>
+        </param>
+        <briefdescription>
+<para>Prevent QWidget a-synchronicity problems (like show()) by deferring some operations with a timer (of which this variable determines the interval in ms) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="637" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a256488b3d3c8231edb18d603163592c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AlignmentToolbarItemWidget</definition>
+        <argsstring></argsstring>
+        <name>AlignmentToolbarItemWidget</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1AlignmentToolbarItemWidget" kindref="compound">AlignmentToolbarItemWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="638" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1af43b4b519a810616b46cc43b163f7d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::ViewPluginLearningCenterOverlayWidget::ViewPluginLearningCenterOverlayWidget</definition>
+        <argsstring>(QWidget *target, const plugin::ViewPlugin *viewPlugin)</argsstring>
+        <name>ViewPluginLearningCenterOverlayWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <declname>viewPlugin</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>target</computeroutput> widget and pointer to <computeroutput>viewPlugin</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget (overlay widget will be layered on top of this widget) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the view plugin for which to create the overlay </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="545" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="36" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a4ae09a6210f8391f4501eedd63cb8f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::setTargetWidget</definition>
+        <argsstring>(QWidget *targetWidget)</argsstring>
+        <name>setTargetWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>targetWidget</declname>
+        </param>
+        <briefdescription>
+<para>Set target widget to <computeroutput>targetWidget</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to target widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="551" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="132" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1af3a2afbfe74e5ba27825f11dbf9a8ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1_1ToolbarWidget" kindref="compound">ToolbarWidget</ref> &amp;</type>
+        <definition>ViewPluginLearningCenterOverlayWidget::ToolbarWidget &amp; mv::gui::ViewPluginLearningCenterOverlayWidget::getToolbarWidget</definition>
+        <argsstring>()</argsstring>
+        <name>getToolbarWidget</name>
+        <briefdescription>
+<para>Get toolbar widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to toolbar widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="557" column="19" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a4061d6b18ec7877b10730c4a45c2723a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ViewPluginLearningCenterOverlayWidget::eventFilter</definition>
+        <argsstring>(QObject *target, QEvent *event) override</argsstring>
+        <name>eventFilter</name>
+        <param>
+          <type>QObject *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Respond to <computeroutput>target</computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of which an event occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that took place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="564" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="144" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a62acc162f3da3b7af88e4c4f059da7c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::collapse</definition>
+        <argsstring>()</argsstring>
+        <name>collapse</name>
+        <briefdescription>
+<para>Collapse all visible items in the toolbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="569" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="258" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a31851af77852641d939e4d5eb7cfdc91" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::expand</definition>
+        <argsstring>()</argsstring>
+        <name>expand</name>
+        <briefdescription>
+<para>Expand all visible items in the toolbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="572" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="242" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa470383d3fa2cf1243728e0bbd410178" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ViewPluginLearningCenterOverlayWidget::isExpanded</definition>
+        <argsstring>()</argsstring>
+        <name>isExpanded</name>
+        <briefdescription>
+<para>Get whether all displayable items in the toolbar are visible. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether all displayable items in the toolbar are visible </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="578" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="190" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a82ce2da74154668854e38791b05fd0d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ViewPluginLearningCenterOverlayWidget::isCollapsed</definition>
+        <argsstring>()</argsstring>
+        <name>isCollapsed</name>
+        <briefdescription>
+<para>Get whether all displayable items in the toolbar are hidden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether all displayable items in the toolbar are hidden </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="584" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="203" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ab01918f1f0efea0304d0abdf13f79eee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::toolbarItemWidgetShown</definition>
+        <argsstring>(QWidget *toolbarItemWidget)</argsstring>
+        <name>toolbarItemWidgetShown</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>toolbarItemWidget</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>toolbarItemWidget</computeroutput> is shown. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toolbarItemWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to toolbar item widget which is shown </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="590" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="216" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a55b0416aaae4bcb6a8d0c6619cb84d75" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::toolbarItemWidgetHidden</definition>
+        <argsstring>(QWidget *toolbarItemWidget)</argsstring>
+        <name>toolbarItemWidgetHidden</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>toolbarItemWidget</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>toolbarItemWidget</computeroutput> is hidden. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toolbarItemWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to toolbar item widget which is hidden </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="596" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="224" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1d243f23d7cd3ea0b90614be3307fdc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::alignmentChanged</definition>
+        <argsstring>()</argsstring>
+        <name>alignmentChanged</name>
+        <briefdescription>
+<para>Invoked when the plugin learning center alignment changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="601" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa798605d4f958055a172d1238130e61e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1PluginLearningCenterAction" kindref="compound">PluginLearningCenterAction</ref> &amp;</type>
+        <definition>PluginLearningCenterAction &amp; mv::gui::ViewPluginLearningCenterOverlayWidget::getLearningCenterAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLearningCenterAction</name>
+        <briefdescription>
+<para>Get the learning center action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to the view plugin learning center action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="607" column="32" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.cpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a5ae282e9f4e72fb30b6b00b17776dcd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::expanded</definition>
+        <argsstring>()</argsstring>
+        <name>expanded</name>
+        <briefdescription>
+<para>Signals that the toolbar got expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="612" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a648caf0fe2b640499f4e0293d1801aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ViewPluginLearningCenterOverlayWidget::collapsed</definition>
+        <argsstring>()</argsstring>
+        <name>collapsed</name>
+        <briefdescription>
+<para>Signals that the toolbar got collapsed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="615" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>View plugin learning center overlay widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Overlays the source widget with a view plugin learning center icon popup</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::ViewPluginLearningCenterOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::ViewPluginLearningCenterOverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::OverlayWidget</label>
+        <link refid="classmv_1_1gui_1_1OverlayWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" line="32" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/ViewPluginLearningCenterOverlayWidget.h" bodystart="33" bodyend="639"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a51c38611878ece65700d4a893eb32985" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_aboutToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a9ce901c4c649e7d6b7cc1fdea0f5a112" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_alignmentToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa600d86176e803530b1086fcb96978b3" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_hideToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a20bad2e8d0e8d538821f4587d42f4664" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_layout</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa7e11ad889f110663c4a47821226fb85" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_learningCenterToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a5bffa52a3eae6f5cc41a0d2f8a928796" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_shortcutsToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ab16861937e59af5b271e24c95f8ad2dc" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_showDocumentationToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1afdb699313e20f96e34f6708db7958ea0" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_toLearningCenterToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a21e335bd0ffbf336266af088760b9bb9" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_toolbarItemWidgets</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a91352f65a7f66c196a91713a4cb85490" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_toolbarWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1cd6c947d9188da217c56d56f61b7769" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_tutorialsToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1acd3dc70c97a0a7dc29a811021ed6bc9a" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_videosToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a8bb495d0a526f8557b1c2073cc289d59" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_viewPlugin</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a980e7de6c27d88c37591241fda4e0fe9" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>_visitGithubRepoToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a0023a76c9e24f89b79e7297e9d8951f0" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>AbstractToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7626aeac1d58a168131f2444a1312d7b" prot="public" virt="virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>addMouseEventReceiverWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1d243f23d7cd3ea0b90614be3307fdc0" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>alignmentChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a256488b3d3c8231edb18d603163592c8" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>AlignmentToolbarItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a391397d3c9bd827baed6bd10fe107340" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>animationDuration</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a62acc162f3da3b7af88e4c4f059da7c4" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>collapse</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a648caf0fe2b640499f4e0293d1801aec" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>collapsed</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a4061d6b18ec7877b10730c4a45c2723a" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>eventFilter</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a31851af77852641d939e4d5eb7cfdc91" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>expand</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a5ae282e9f4e72fb30b6b00b17776dcd1" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>expanded</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa798605d4f958055a172d1238130e61e" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>getLearningCenterAction</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1af3a2afbfe74e5ba27825f11dbf9a8ed5" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>getToolbarWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1afc42679a88787233f09777dabecc0cf7" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>getWidgetOverlayer</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a1b9ea33565734046278386639a154481" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>intermediateOpacity</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a82ce2da74154668854e38791b05fd0d0" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>isCollapsed</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1aa470383d3fa2cf1243728e0bbd410178" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>isExpanded</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a7d999e8b433e469ad8eb8097614c13b6" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>OverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1adbc1e650ae0cfbaa32da685673a5f213" prot="public" virt="virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>removeMouseEventReceiverWidget</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1ae5cbd8301966b80a7a729b48b8acc33e" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>resizeEvent</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a4ae09a6210f8391f4501eedd63cb8f92" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>setTargetWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1a55b0416aaae4bcb6a8d0c6619cb84d75" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>toolbarItemWidgetHidden</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ab01918f1f0efea0304d0abdf13f79eee" prot="protected" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>toolbarItemWidgetShown</name></member>
+      <member refid="classmv_1_1gui_1_1OverlayWidget_1a61a04628c5eb98aa4c3715f38c60275b" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>updateMask</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1af43b4b519a810616b46cc43b163f7d1d" prot="public" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>ViewPluginLearningCenterOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget_1ac2b688871de19d633722f584b736d5ff" prot="private" virt="non-virtual"><scope>mv::gui::ViewPluginLearningCenterOverlayWidget</scope><name>widgetAsyncUpdateTimerInterval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

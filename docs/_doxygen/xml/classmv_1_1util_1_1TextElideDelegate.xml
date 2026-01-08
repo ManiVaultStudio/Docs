@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1TextElideDelegate" kind="class" language="C++" prot="public">
+    <compoundname>mv::util::TextElideDelegate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStyledItemDelegate</basecompoundref>
+    <includes refid="View_8h" local="no">View.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1TextElideDelegate_1a719df44f891529e4f0c01edb50fc9a3a" prot="private" static="no" mutable="no">
+        <type>Qt::TextElideMode</type>
+        <definition>Qt::TextElideMode mv::util::TextElideDelegate::_textElideMode</definition>
+        <argsstring></argsstring>
+        <name>_textElideMode</name>
+        <initializer>= Qt::ElideRight</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/View.h" line="50" column="23" bodyfile="Docs/external/core/ManiVault/src/util/View.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1TextElideDelegate_1a17111ffb18f94620f1a7e22d71653f86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::TextElideDelegate::initStyleOption</definition>
+        <argsstring>(QStyleOptionViewItem *option, const QModelIndex &amp;index) const override</argsstring>
+        <name>initStyleOption</name>
+        <param>
+          <type>QStyleOptionViewItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Re-implement the initStyleOption method to set the text elide mode to Qt::ElideMiddle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Style option to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/View.h" line="35" column="10" bodyfile="Docs/external/core/ManiVault/src/util/View.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1TextElideDelegate_1a95231974125dd11d6f9bd345158446c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::TextElideMode</type>
+        <definition>Qt::TextElideMode mv::util::TextElideDelegate::getTextElideMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextElideMode</name>
+        <briefdescription>
+<para>Get the text elide mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classText" kindref="compound">Text</ref> elide mode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/View.h" line="41" column="23" bodyfile="Docs/external/core/ManiVault/src/util/View.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1TextElideDelegate_1a5886d824212cc3a0f5e6a8258cba9cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::TextElideDelegate::setTextElideMode</definition>
+        <argsstring>(const Qt::TextElideMode &amp;textElideMode)</argsstring>
+        <name>setTextElideMode</name>
+        <param>
+          <type>const Qt::TextElideMode &amp;</type>
+          <declname>textElideMode</declname>
+        </param>
+        <briefdescription>
+<para>Set the text elide mode to <computeroutput>textElideMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textElideMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide mode to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/View.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/util/View.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classText" kindref="compound">Text</ref> elide delegate class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To override the default right middle elision QTreeView, you need to apply it via the item delegate, because Qt&apos;s item views (like QTreeView) does not support other text elisions natively.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="1">
+        <label>mv::util::TextElideDelegate</label>
+        <link refid="classmv_1_1util_1_1TextElideDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="1">
+        <label>mv::util::TextElideDelegate</label>
+        <link refid="classmv_1_1util_1_1TextElideDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/View.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/util/View.h" bodystart="24" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1TextElideDelegate_1a719df44f891529e4f0c01edb50fc9a3a" prot="private" virt="non-virtual"><scope>mv::util::TextElideDelegate</scope><name>_textElideMode</name></member>
+      <member refid="classmv_1_1util_1_1TextElideDelegate_1a95231974125dd11d6f9bd345158446c3" prot="public" virt="non-virtual"><scope>mv::util::TextElideDelegate</scope><name>getTextElideMode</name></member>
+      <member refid="classmv_1_1util_1_1TextElideDelegate_1a17111ffb18f94620f1a7e22d71653f86" prot="public" virt="non-virtual"><scope>mv::util::TextElideDelegate</scope><name>initStyleOption</name></member>
+      <member refid="classmv_1_1util_1_1TextElideDelegate_1a5886d824212cc3a0f5e6a8258cba9cc9" prot="public" virt="non-virtual"><scope>mv::util::TextElideDelegate</scope><name>setTextElideMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

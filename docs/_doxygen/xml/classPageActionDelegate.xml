@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPageActionDelegate" kind="class" language="C++" prot="public">
+    <compoundname>PageActionDelegate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStyledItemDelegate</basecompoundref>
+    <includes refid="PageActionDelegate_8h" local="no">PageActionDelegate.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classPageActionDelegate_1ac09165d77bcb218d190f8f0a2cd972da" prot="private" static="yes" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t PageActionDelegate::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="60" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPageActionDelegate_1a5c868e82e9b2f13a42d2d096095876b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PageActionDelegate::PageActionDelegate</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>PageActionDelegate</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct delegate with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="25" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageActionDelegate_1a45a04a742bc73723a5586063d7a2afc6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QSize</type>
+        <definition>QSize PageActionDelegate::sizeHint</definition>
+        <argsstring>(const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</argsstring>
+        <name>sizeHint</name>
+        <param>
+          <type>const QStyleOptionViewItem &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Gives the size hint for <computeroutput>option</computeroutput> and model <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Style option </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index to compute the size hint for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size hint </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="33" column="11" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageActionDelegate_1a2c195ecfc10a2c5e16d6906767978a41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * PageActionDelegate::createEditor</definition>
+        <argsstring>(QWidget *parent, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</argsstring>
+        <name>createEditor</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionViewItem &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Create custom delegate widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Style view options </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="42" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.cpp" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageActionDelegate_1a8be9053acdd77754cb3166b4eceed633" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageActionDelegate::setEditorData</definition>
+        <argsstring>(QWidget *editor, const QModelIndex &amp;index) const override</argsstring>
+        <name>setEditorData</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>editor</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set <computeroutput>editor</computeroutput> data for model <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>editor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to editor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="49" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageActionDelegate_1a91d37f2ec87803237d0625bc030aa7d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageActionDelegate::updateEditorGeometry</definition>
+        <argsstring>(QWidget *editor, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</argsstring>
+        <name>updateEditorGeometry</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>editor</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionViewItem &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Override update editor geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>editor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to editor widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Style view options </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.cpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classPage" kindref="compound">Page</ref> delegate class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For custom page action display in a view.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="1">
+        <label>PageActionDelegate</label>
+        <link refid="classPageActionDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="1">
+        <label>PageActionDelegate</label>
+        <link refid="classPageActionDelegate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" line="16" column="1" bodyfile="Docs/external/core/ManiVault/src/private/PageActionDelegate.h" bodystart="17" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classPageActionDelegate_1a2c195ecfc10a2c5e16d6906767978a41" prot="public" virt="non-virtual"><scope>PageActionDelegate</scope><name>createEditor</name></member>
+      <member refid="classPageActionDelegate_1ac09165d77bcb218d190f8f0a2cd972da" prot="private" virt="non-virtual"><scope>PageActionDelegate</scope><name>height</name></member>
+      <member refid="classPageActionDelegate_1a5c868e82e9b2f13a42d2d096095876b4" prot="public" virt="non-virtual"><scope>PageActionDelegate</scope><name>PageActionDelegate</name></member>
+      <member refid="classPageActionDelegate_1a8be9053acdd77754cb3166b4eceed633" prot="public" virt="non-virtual"><scope>PageActionDelegate</scope><name>setEditorData</name></member>
+      <member refid="classPageActionDelegate_1a45a04a742bc73723a5586063d7a2afc6" prot="public" virt="non-virtual"><scope>PageActionDelegate</scope><name>sizeHint</name></member>
+      <member refid="classPageActionDelegate_1a91d37f2ec87803237d0625bc030aa7d1" prot="public" virt="non-virtual"><scope>PageActionDelegate</scope><name>updateEditorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

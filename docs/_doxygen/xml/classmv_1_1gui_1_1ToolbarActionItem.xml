@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1ToolbarActionItem" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::gui::ToolbarActionItem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="ToolbarActionItem_8h" local="no">ToolbarActionItem.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>State</name>
+        <enumvalue id="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5eaab27f5ee6b3e86fe7260fdd770a72010" prot="public">
+          <name>Collapsed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5ea63f6baf1d88963b8c8210751c8530e94" prot="public">
+          <name>Expanded</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>State of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1a7caae906208be0f7086d2cd0edd441f0" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>const WidgetAction* mv::gui::ToolbarActionItem::_action</definition>
+        <argsstring></argsstring>
+        <name>_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="155" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1a80399cf0bfa224dc21b86c3801032857" prot="protected" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::ToolbarActionItem::_widgetFlags</definition>
+        <argsstring></argsstring>
+        <name>_widgetFlags</name>
+        <briefdescription>
+<para>Pointer to horizontal toolbar action that creates the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="156" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1a647b4d36295da5635fdab1f01d995a6b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref></type>
+        <definition>State mv::gui::ToolbarActionItem::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+<para>Flags to use in widget creation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="157" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1a392efe6ca06de10a37da8a6ca9c8b833" prot="protected" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::ToolbarActionItem::_autoExpandPriority</definition>
+        <argsstring></argsstring>
+        <name>_autoExpandPriority</name>
+        <briefdescription>
+<para>Whether the item is expanded or collapsed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="158" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1af5aa3238a8332862e33659854579b34a" prot="protected" static="no" mutable="no">
+        <type>QSize</type>
+        <definition>QSize mv::gui::ToolbarActionItem::_widgetSizes[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_widgetSizes</name>
+        <briefdescription>
+<para>Priority with which action should be auto-expanded (higher priority w.r.t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>other actions means it will auto-expanded sooner) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="159" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ToolbarActionItem_1aa5d219aca8197ea2bc958939bd4c3629" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::ToolbarActionItem::_changingState</definition>
+        <argsstring></argsstring>
+        <name>_changingState</name>
+        <briefdescription>
+<para>Widget sizes in collapsed and expanded state respectively. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="160" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ToolbarActionItem_1ac8fa7ec19e9abbf6f2cc09a37e6dcf87" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ToolbarAction</definition>
+        <argsstring></argsstring>
+        <name>ToolbarAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ToolbarAction" kindref="compound">ToolbarAction</ref></type>
+        </param>
+        <briefdescription>
+<para>Boolean determining whether the item is currently changing state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="162" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ToolbarActionItem_1ad70bd7bf07c64a0723163b0894e194c2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class HorizontalToolbarAction</definition>
+        <argsstring></argsstring>
+        <name>HorizontalToolbarAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1HorizontalToolbarAction" kindref="compound">HorizontalToolbarAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="163" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ToolbarActionItem_1a127574490df0abd3d368ab15edec076d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class VerticalToolbarAction</definition>
+        <argsstring></argsstring>
+        <name>VerticalToolbarAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1VerticalToolbarAction" kindref="compound">VerticalToolbarAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="164" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ToolbarActionItem_1a1805e868924a8a3cca89b02fa4ef1440" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ToolbarActionItemWidget</definition>
+        <argsstring></argsstring>
+        <name>ToolbarActionItemWidget</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ToolbarActionItemWidget" kindref="compound">ToolbarActionItemWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="165" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a11f567a3af82255bb215f3ed01dbb799" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::ToolbarActionItem::ToolbarActionItem</definition>
+        <argsstring>(QObject *parent, const WidgetAction *action, std::int32_t widgetFlags, const State &amp;state=State::Collapsed, std::int32_t autoExpandPriority=-1)</argsstring>
+        <name>ToolbarActionItem</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+          <defval><ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5eaab27f5ee6b3e86fe7260fdd770a72010" kindref="member">State::Collapsed</ref></defval>
+        </param>
+        <param>
+          <type>std::int32_t</type>
+          <declname>autoExpandPriority</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that creates the widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flags to use in widget creation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>autoExpandPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority with which action should be auto-expanded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="45" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a46672b997eeed5b18a9cda2b17fc6616" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>const WidgetAction * mv::gui::ToolbarActionItem::getAction</definition>
+        <argsstring>()</argsstring>
+        <name>getAction</name>
+        <briefdescription>
+<para>Get action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="51" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a61d727b17389358b062d99ac322f20d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::ToolbarActionItem::getWidgetFlags</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetFlags</name>
+        <briefdescription>
+<para>Get widget flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Flags to use in widget creation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="57" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a309992f8de7804a71159abd04417f1ef" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref></type>
+        <definition>ToolbarActionItem::State mv::gui::ToolbarActionItem::getState</definition>
+        <argsstring>() const</argsstring>
+        <name>getState</name>
+        <briefdescription>
+<para>Get state of the action (expanded or collapsed) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>State of the action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="63" column="11" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a25e264d76ff153812ca92eb24ac300e2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::setState</definition>
+        <argsstring>(const State &amp;state)</argsstring>
+        <name>setState</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set state of the action to <computeroutput>state</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the action (expanded or collapsed) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="69" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a4b775ff9c81c8337a48c9a02086f5638" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::ToolbarActionItem::getAutoExpandPriority</definition>
+        <argsstring>() const</argsstring>
+        <name>getAutoExpandPriority</name>
+        <briefdescription>
+<para>Get priority with which action should be auto-expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Priority with which action should be auto-expanded </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="75" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a5013b647aafa58f6f6f3cb38ebbed9ee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::setAutoExpandPriority</definition>
+        <argsstring>(std::int32_t autoExpandPriority)</argsstring>
+        <name>setAutoExpandPriority</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>autoExpandPriority</declname>
+        </param>
+        <briefdescription>
+<para>Set priority with which action should be auto-expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autoExpandPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority with which action should be auto-expanded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="81" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a4897db9b49c228b384108e149b5972f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::gui::ToolbarActionItem::createWidget</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>createWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Create widget for item with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to created widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="88" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a55eb04d456fa2a537b19d58654481bc5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QSize</type>
+        <definition>QSize mv::gui::ToolbarActionItem::getWidgetSize</definition>
+        <argsstring>(const State &amp;state) const</argsstring>
+        <name>getWidgetSize</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Get widget size for <computeroutput>state</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State to get the widget size for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Widget size </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="95" column="11" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a34978a922e4af80a7ba5d51f61b24323" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::setWidgetSize</definition>
+        <argsstring>(const QSize &amp;size, const State &amp;state)</argsstring>
+        <name>setWidgetSize</name>
+        <param>
+          <type>const QSize &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set widget <computeroutput>size</computeroutput> for <computeroutput>state</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State to set the widget size for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="102" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a97e5504d406a1b37c069c7ac3d9a477c" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ToolbarActionItem::operator&lt;</definition>
+        <argsstring>(const ToolbarActionItem &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem" kindref="compound">ToolbarActionItem</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compare with <computeroutput>other</computeroutput> toolbar action item on the basis of their auto expand priority. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other toolbar action item to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the <computeroutput>other</computeroutput> toolbar action item is smaller </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="109" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a596523acab1514ae932b46c41097dd64" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::ToolbarActionItem::isChangingState</definition>
+        <argsstring>() const</argsstring>
+        <name>isChangingState</name>
+        <briefdescription>
+<para>Get whether the item is currently changing state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the item is currently changing state </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="117" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ToolbarActionItem_1a0908a9ebd99adcb448af416a2e2f6b6a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::setChangingState</definition>
+        <argsstring>(bool changingState)</argsstring>
+        <name>setChangingState</name>
+        <param>
+          <type>bool</type>
+          <declname>changingState</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the item is currently changing state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>changingState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the item is currently changing state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="125" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.cpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ToolbarActionItem_1a1d0a5f441dc993662718644f3927068d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::stateChanged</definition>
+        <argsstring>(const State &amp;state)</argsstring>
+        <name>stateChanged</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the state changed to <computeroutput>state</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Item state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ToolbarActionItem_1aff6ab8f71fd8e85421606d32857c2a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::changingStateChanged</definition>
+        <argsstring>(bool changingState)</argsstring>
+        <name>changingStateChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>changingState</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the changing state changed to <computeroutput>changingState</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>changingState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the item is currently changing state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="139" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ToolbarActionItem_1a511ddb57566be6bac0e5b7a67c21b870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::autoExpandPriorityChanged</definition>
+        <argsstring>(std::int32_t autoExpandPriority)</argsstring>
+        <name>autoExpandPriorityChanged</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>autoExpandPriority</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the auto expand priority changed to <computeroutput>autoExpandPriority</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autoExpandPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Auto expand priority </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ToolbarActionItem_1ae3e91bf1ac43ed4050ccdf92eaeb5dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ToolbarActionItem::widgetSizeChanged</definition>
+        <argsstring>(const QSize &amp;size, const State &amp;state)</argsstring>
+        <name>widgetSizeChanged</name>
+        <param>
+          <type>const QSize &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" kindref="member">State</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the size of widget with <computeroutput>state</computeroutput> changed to <computeroutput>size</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New size of the widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="152" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Toolbar action item class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::ToolbarActionItem</label>
+        <link refid="classmv_1_1gui_1_1ToolbarActionItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::ToolbarActionItem</label>
+        <link refid="classmv_1_1gui_1_1ToolbarActionItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_action</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/ToolbarActionItem.h" bodystart="24" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a7caae906208be0f7086d2cd0edd441f0" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_action</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a392efe6ca06de10a37da8a6ca9c8b833" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_autoExpandPriority</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1aa5d219aca8197ea2bc958939bd4c3629" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_changingState</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a647b4d36295da5635fdab1f01d995a6b" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_state</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a80399cf0bfa224dc21b86c3801032857" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_widgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1af5aa3238a8332862e33659854579b34a" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>_widgetSizes</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a511ddb57566be6bac0e5b7a67c21b870" prot="public" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>autoExpandPriorityChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1aff6ab8f71fd8e85421606d32857c2a22" prot="public" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>changingStateChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a4897db9b49c228b384108e149b5972f6" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a46672b997eeed5b18a9cda2b17fc6616" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>getAction</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a4b775ff9c81c8337a48c9a02086f5638" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>getAutoExpandPriority</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a309992f8de7804a71159abd04417f1ef" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>getState</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a61d727b17389358b062d99ac322f20d3" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>getWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a55eb04d456fa2a537b19d58654481bc5" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>getWidgetSize</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1ad70bd7bf07c64a0723163b0894e194c2" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>HorizontalToolbarAction</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a596523acab1514ae932b46c41097dd64" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>isChangingState</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a97e5504d406a1b37c069c7ac3d9a477c" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>operator&lt;</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a5013b647aafa58f6f6f3cb38ebbed9ee" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>setAutoExpandPriority</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a0908a9ebd99adcb448af416a2e2f6b6a" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>setChangingState</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a25e264d76ff153812ca92eb24ac300e2" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>setState</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a34978a922e4af80a7ba5d51f61b24323" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>setWidgetSize</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1adb9e722e3b2f12b78458fccb24473f5e" prot="public" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a1d0a5f441dc993662718644f3927068d" prot="public" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>stateChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1ac8fa7ec19e9abbf6f2cc09a37e6dcf87" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>ToolbarAction</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a11f567a3af82255bb215f3ed01dbb799" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>ToolbarActionItem</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a1805e868924a8a3cca89b02fa4ef1440" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>ToolbarActionItemWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1a127574490df0abd3d368ab15edec076d" prot="protected" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>VerticalToolbarAction</name></member>
+      <member refid="classmv_1_1gui_1_1ToolbarActionItem_1ae3e91bf1ac43ed4050ccdf92eaeb5dd1" prot="public" virt="non-virtual"><scope>mv::gui::ToolbarActionItem</scope><name>widgetSizeChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

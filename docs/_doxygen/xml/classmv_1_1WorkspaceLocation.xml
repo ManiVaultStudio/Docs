@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1WorkspaceLocation" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::WorkspaceLocation</compoundname>
+    <includes refid="AbstractWorkspaceManager_8h" local="no">AbstractWorkspaceManager.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da738649bda70d721cd42452ef1d3dc792" prot="public">
+          <name>BuiltIn</name>
+          <initializer>= 0x0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da3b8bf9b2ff2ef3f9f607fa76f80881ee" prot="public">
+          <name>Path</name>
+          <initializer>= 0x0002</initializer>
+          <briefdescription>
+<para>Built-in workspaces (located in /workspaces in the application dir) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da4a77f514751d10dc1a83ca67960f1a41" prot="public">
+          <name>Recent</name>
+          <initializer>= 0x0004</initializer>
+          <briefdescription>
+<para>Workspaces on the global workspaces path. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da7444d10b53cf9ae49db6d5db77bc9f99" prot="public">
+          <name>All</name>
+          <initializer>= BuiltIn | Path | Recent</initializer>
+          <briefdescription>
+<para>Recent workspaces. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum determining the type of workspace location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="26" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1WorkspaceLocation_1a01a6f01a9291443bfc1a91de67192ef3" prot="public" static="yes" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" kindref="member">Type</ref>, QString &gt;</type>
+        <definition>QMap&lt;Type, QString&gt; mv::WorkspaceLocation::typeNames</definition>
+        <argsstring></argsstring>
+        <name>typeNames</name>
+        <initializer>{
+        { <ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da738649bda70d721cd42452ef1d3dc792" kindref="member">BuiltIn</ref>, &quot;Built-in&quot; },
+        { Path, &quot;Path&quot; },
+        { Recent, &quot;Recent&quot; },
+        { All, &quot;All&quot; }
+    }</initializer>
+        <briefdescription>
+<para>Map enum type to name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="37" column="24" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1WorkspaceLocation_1a80b2a90a2328a6d9f034e1565682e227" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceLocation::_title</definition>
+        <argsstring></argsstring>
+        <name>_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="100" column="15" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceLocation_1a0a2670d10e7f2d89d9de5310a7c2ef1e" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceLocation::_filePath</definition>
+        <argsstring></argsstring>
+        <name>_filePath</name>
+        <briefdescription>
+<para>Title of the workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="101" column="15" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1WorkspaceLocation_1acdc95c221db95e96681904d2a4658341" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" kindref="member">Type</ref></type>
+        <definition>Type mv::WorkspaceLocation::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>File path of the workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="102" column="15" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1ab576fda23a29cf7e9e11482b1dbbe5b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>static QString mv::WorkspaceLocation::getTypeName</definition>
+        <argsstring>(const Type &amp;type)</argsstring>
+        <name>getTypeName</name>
+        <param>
+          <type>const <ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" kindref="member">Type</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get name of <computeroutput>type</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Type name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="48" column="20" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1a2a2ded5f9cf7b597777c27ab45bdb40e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::WorkspaceLocation::WorkspaceLocation</definition>
+        <argsstring>(const QString &amp;title, const QString &amp;filePath, const Type &amp;type)</argsstring>
+        <name>WorkspaceLocation</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" kindref="member">Type</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Construct workspace location with <computeroutput>filePath</computeroutput> and <computeroutput>type</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the workspace </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location of the workspace on disk </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location type of the workspace </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="60" column="14" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1a8d716152991d8212abf724639de81c57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceLocation::getTitle</definition>
+        <argsstring>() const</argsstring>
+        <name>getTitle</name>
+        <briefdescription>
+<para>Get file path of the workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File path of the workspace </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="71" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1abbd22493792a734694b9f6187c3a41b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceLocation::getFilePath</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilePath</name>
+        <briefdescription>
+<para>Get file path of the workspace. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File path of the workspace </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="79" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1a3c847f99a11d5e09012d0af53437473d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" kindref="member">Type</ref></type>
+        <definition>Type mv::WorkspaceLocation::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Get type of workspace location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="87" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1WorkspaceLocation_1a01139dc09ea305321c6821e7ed563ead" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::WorkspaceLocation::getTypeName</definition>
+        <argsstring>() const</argsstring>
+        <name>getTypeName</name>
+        <briefdescription>
+<para>Get type name of workspace location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Type name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="95" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="95" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Workspace" kindref="compound">Workspace</ref> location which consists of a workspace title, file path and location type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMap&lt; Type, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::WorkspaceLocation</label>
+        <link refid="classmv_1_1WorkspaceLocation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>typeNames</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" line="22" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractWorkspaceManager.h" bodystart="22" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classmv_1_1WorkspaceLocation_1a0a2670d10e7f2d89d9de5310a7c2ef1e" prot="private" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>_filePath</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a80b2a90a2328a6d9f034e1565682e227" prot="private" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>_title</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1acdc95c221db95e96681904d2a4658341" prot="private" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>_type</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da7444d10b53cf9ae49db6d5db77bc9f99" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>All</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da738649bda70d721cd42452ef1d3dc792" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>BuiltIn</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1abbd22493792a734694b9f6187c3a41b9" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>getFilePath</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a8d716152991d8212abf724639de81c57" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>getTitle</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a3c847f99a11d5e09012d0af53437473d" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>getType</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab576fda23a29cf7e9e11482b1dbbe5b9" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>getTypeName</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a01139dc09ea305321c6821e7ed563ead" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>getTypeName</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da3b8bf9b2ff2ef3f9f607fa76f80881ee" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>Path</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853da4a77f514751d10dc1a83ca67960f1a41" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>Recent</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1ab3ed9b90a450a1d00c3481e28ce8853d" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>Type</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a01a6f01a9291443bfc1a91de67192ef3" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>typeNames</name></member>
+      <member refid="classmv_1_1WorkspaceLocation_1a2a2ded5f9cf7b597777c27ab45bdb40e" prot="public" virt="non-virtual"><scope>mv::WorkspaceLocation</scope><name>WorkspaceLocation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

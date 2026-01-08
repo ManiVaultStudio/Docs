@@ -1,0 +1,1162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractActionsManager" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mv::AbstractActionsManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1ActionsManager" prot="public" virt="non-virtual">mv::ActionsManager</derivedcompoundref>
+    <includes refid="AbstractActionsManager_8h" local="no">AbstractActionsManager.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmv_1_1AbstractActionsManager_1ad73c24f0b0cdf0f62c5d0a453b83c496" prot="private" static="no">
+        <type>QPair&lt; std::int32_t, QString &gt;</type>
+        <definition>using mv::AbstractActionsManager::ActionType =  QPair&lt;std::int32_t, QString&gt;</definition>
+        <argsstring></argsstring>
+        <name>ActionType</name>
+        <briefdescription>
+<para>Number of instances for action type and human-friendly action type string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="37" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractActionsManager_1adefed30673085fac74ba7b89c281d393" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <definition>gui::WidgetActions mv::AbstractActionsManager::_actions</definition>
+        <argsstring></argsstring>
+        <name>_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="567" column="33" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractActionsManager_1a9b8abcf4635bb577159de34a6d86dc17" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <definition>gui::WidgetActions mv::AbstractActionsManager::_publicActions</definition>
+        <argsstring></argsstring>
+        <name>_publicActions</name>
+        <briefdescription>
+<para>List of actions that are instantiated in the plugin system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="568" column="33" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1AbstractActionsManager_1afb031f0511fd0329b6eb52c87400ace5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, ActionType &gt;</type>
+        <definition>QMap&lt;QString, ActionType&gt; mv::AbstractActionsManager::_actionTypes</definition>
+        <argsstring></argsstring>
+        <name>_actionTypes</name>
+        <briefdescription>
+<para>List of public actions that are instantiated in the plugin system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="569" column="12" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1AbstractActionsManager_1a9e24bd2f3f084520845f110cb839d2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class gui::WidgetAction</definition>
+        <argsstring></argsstring>
+        <name>gui::WidgetAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref></type>
+        </param>
+        <briefdescription>
+<para>Maps action type to counter and human-friendly action type string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="571" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a73646b1791dd6e43c03acfefe3058ffb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractActionsManager::AbstractActionsManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>AbstractActionsManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="45" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a7e229ce91f04902d779843d4b71dbdeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref> &amp;</type>
+        <definition>const gui::WidgetActions&amp; mv::AbstractActionsManager::getActions</definition>
+        <argsstring>() const</argsstring>
+        <name>getActions</name>
+        <briefdescription>
+<para>Get all actions in the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of all actions in the manager </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="54" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a7cd0144e14615529289538e015dfa54d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref> &amp;</type>
+        <definition>const gui::WidgetActions&amp; mv::AbstractActionsManager::getPublicActions</definition>
+        <argsstring>() const</argsstring>
+        <name>getPublicActions</name>
+        <briefdescription>
+<para>Get all public actions in the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of all public actions in the manager </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="62" column="30" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a994d77faf50e1e3e8e860f0d13190e9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+        <definition>gui::WidgetAction* mv::AbstractActionsManager::getAction</definition>
+        <argsstring>(const QString &amp;id)</argsstring>
+        <name>getAction</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get action with <computeroutput>id</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to widget action (may return nullptr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="70" column="23" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a83bacdb0a96a0b9b1a36030845d0f155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ActionType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::addAction</definition>
+        <argsstring>(ActionType *action)</argsstring>
+        <name>addAction</name>
+        <param>
+          <type>ActionType *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>action</computeroutput> of action type to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="83" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="83" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1ad54406659f0c80ff654ea9cc5ab150cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ActionType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::removeAction</definition>
+        <argsstring>(ActionType *action)</argsstring>
+        <name>removeAction</name>
+        <param>
+          <type>ActionType *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>action</computeroutput> of action type from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="127" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="127" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a8455c49a59bd30252a408d65592d7439" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mv::AbstractActionsManager::publishPrivateAction</definition>
+        <argsstring>(gui::WidgetAction *privateAction, const QString &amp;name=&quot;&quot;, bool recursive=true, bool allowDuplicateName=false)=0</argsstring>
+        <name>publishPrivateAction</name>
+        <reimplementedby refid="classmv_1_1ActionsManager_1ac7a54f8183fed62e81327aee96878ceb">publishPrivateAction</reimplementedby>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateAction</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowDuplicateName</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Publish <computeroutput>privateAction</computeroutput> so that other private actions can connect to it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private action to publish </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the published widget action (if empty, a name choosing dialog will popup) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also publish the child actions recursively </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allowDuplicateName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether publishing will take place when a public with the same name already exists in the public actions database </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the action is successfully published or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="235" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a78823f3400a2b8851e928856ff273917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::connectPrivateActionToPublicAction</definition>
+        <argsstring>(gui::WidgetAction *privateAction, gui::WidgetAction *publicAction, bool recursive)</argsstring>
+        <name>connectPrivateActionToPublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Connect <computeroutput>privateAction</computeroutput> to <computeroutput>publicAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also connect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="243" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="243" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1ab20537710f189fd83f0cf63a95c173f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::connectPrivateActions</definition>
+        <argsstring>(gui::WidgetAction *privateSourceAction, gui::WidgetAction *privateTargetAction, const QString &amp;publicActionName=&quot;&quot;)</argsstring>
+        <name>connectPrivateActions</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateSourceAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateTargetAction</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>publicActionName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Connect <computeroutput>privateSourceAction</computeroutput> to <computeroutput>privateTargetAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateSourceAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private source action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>privateTargetAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private target action (private source action will be connected to published private target action) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>publicActionName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the public action (ask for name if empty) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="283" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="283" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a5fbea7ff046f3da979c017b10d7ae96b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::disconnectPrivateActionFromPublicAction</definition>
+        <argsstring>(gui::WidgetAction *privateAction, bool recursive)</argsstring>
+        <name>disconnectPrivateActionFromPublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateAction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect <computeroutput>privateAction</computeroutput> from public action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also disconnect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="314" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="314" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1ae733e9ff3827cd2548540f56ef9ab234" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::AbstractActionsManager::getActionTypes</definition>
+        <argsstring>() const</argsstring>
+        <name>getActionTypes</name>
+        <briefdescription>
+<para>Get set of action types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of action types </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="464" column="17" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="464" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1aac7e2dac09ee6c4036d3c8725a8bd2cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::AbstractActionsManager::getActionTypesHumanFriendly</definition>
+        <argsstring>() const</argsstring>
+        <name>getActionTypesHumanFriendly</name>
+        <briefdescription>
+<para>Get set of human-friendly action types (without prefixes) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of human-friendly action types </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="476" column="17" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="476" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a32c7b2711f4790018d40964276e54afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmv_1_1ActionsListModel" kindref="compound">ActionsListModel</ref> &amp;</type>
+        <definition>virtual ActionsListModel&amp; mv::AbstractActionsManager::getActionsListModel</definition>
+        <argsstring>()=0</argsstring>
+        <name>getActionsListModel</name>
+        <reimplementedby refid="classmv_1_1ActionsManager_1adb3545407242f19aa2048754b2cd87c2">getActionsListModel</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="487" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a128362dc9dbf48382e201146ae064239" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::addPublicAction</definition>
+        <argsstring>(gui::WidgetAction *publicAction)</argsstring>
+        <name>addPublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>publicAction</computeroutput> to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="169" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="169" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a2319f72212986a64b6a0e11accf253bb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::removePublicAction</definition>
+        <argsstring>(gui::WidgetAction *publicAction)</argsstring>
+        <name>removePublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>publicAction</computeroutput> from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="195" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="195" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a2d6db18669d0623555c4e5301c0ea286" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::addPrivateActionToPublicAction</definition>
+        <argsstring>(gui::WidgetAction *privateAction, gui::WidgetAction *publicAction)</argsstring>
+        <name>addPrivateActionToPublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>privateAction</computeroutput> to the list of connected actions in the <computeroutput>publicAction</computeroutput> and notify listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="345" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="345" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1ab74fdc1e8c02339117e924f0c9413116" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::removePrivateActionFromPublicAction</definition>
+        <argsstring>(gui::WidgetAction *privateAction, gui::WidgetAction *publicAction)</argsstring>
+        <name>removePrivateActionFromPublicAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>privateAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>privateAction</computeroutput> from the list of connected actions in the <computeroutput>publicAction</computeroutput> and notify listeners. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>privateAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to private action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="381" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="381" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a99a0680910c685b93a222f585e3928a2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::addActionType</definition>
+        <argsstring>(const QString &amp;actionType)</argsstring>
+        <name>addActionType</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>actionType</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>actionType</computeroutput> string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action type string to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="414" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="414" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a87fb5eff88243764ccb4e0a74db86483" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::removeActionType</definition>
+        <argsstring>(const QString &amp;actionType)</argsstring>
+        <name>removeActionType</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>actionType</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>actionType</computeroutput> string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action type string to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="435" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="435" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsManager_1a324e19a5f71ba915966d080871d97f32" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::makeActionPublic</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>makeActionPublic</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Make widget <computeroutput>action</computeroutput> public. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="495" column="10" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="495" bodyend="502"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1af1937aa7ecfb33c1152941dbc459f78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionAdded</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>actionAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>action</computeroutput> is added to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that is added to the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="510" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1ac2c62182300ed5e3fc70ccc985c45d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionAboutToBeRemoved</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>actionAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>action</computeroutput> is about to be removed from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that is about to be removed from the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="516" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1a84e89e03cd33dc16edefba13253844ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionRemoved</definition>
+        <argsstring>(const QString &amp;actionId)</argsstring>
+        <name>actionRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>actionId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that action with <computeroutput>actionId</computeroutput> was removed from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique identifier of the action that was removed from the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="522" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1ae4bebf6951e79d46855b39df934a3893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::publicActionAdded</definition>
+        <argsstring>(gui::WidgetAction *publicAction)</argsstring>
+        <name>publicActionAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>publicAction</computeroutput> is added to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action that is added to the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="528" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1a8f6d85bb27c252c755ee74d3a6745cb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::publicActionAboutToBeRemoved</definition>
+        <argsstring>(gui::WidgetAction *publicAction)</argsstring>
+        <name>publicActionAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>publicAction</computeroutput> is about to be removed from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action that is about to be removed from the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="534" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1a751b42aa87473b9f8eed91b43ff3031c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::publicActionRemoved</definition>
+        <argsstring>(const QString &amp;publicActionId)</argsstring>
+        <name>publicActionRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>publicActionId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that public action with <computeroutput>publicActionId</computeroutput> was removed from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicActionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique identifier of the public action that was removed from the manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="540" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1af3bbcebd23cef6b98efbeac20e865da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionTypeAdded</definition>
+        <argsstring>(const QString &amp;actionType)</argsstring>
+        <name>actionTypeAdded</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>actionType</declname>
+        </param>
+        <briefdescription>
+<para>Signals that a new <computeroutput>actionType</computeroutput> has been added to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="546" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1a83e155adaccf728d4938e13c3b06b185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionTypeRemoved</definition>
+        <argsstring>(const QString &amp;actionType)</argsstring>
+        <name>actionTypeRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>actionType</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the last instance of <computeroutput>actionType</computeroutput> has been removed from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="552" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1a2dc6f621e1ee7509114a8e5f91ef1421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionTypesChanged</definition>
+        <argsstring>(const QStringList &amp;actionTypes)</argsstring>
+        <name>actionTypesChanged</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>actionTypes</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the <computeroutput>actionTypes</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="558" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1AbstractActionsManager_1aa576b9986e0fce483db1182d474ec137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsManager::actionTypesHumanFriendlyChanged</definition>
+        <argsstring>(const QStringList &amp;actionTypesHumanFriendly)</argsstring>
+        <name>actionTypesHumanFriendlyChanged</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>actionTypesHumanFriendly</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the human-friendly <computeroutput>actionTypes</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionTypesHumanFriendly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Human-friendly action types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="564" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract actions manager. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base abstract actions manager class for managing widget actions.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsManager</label>
+        <link refid="classmv_1_1AbstractActionsManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::ActionsManager</label>
+        <link refid="classmv_1_1ActionsManager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>QMap&lt; QString, ActionType &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsManager</label>
+        <link refid="classmv_1_1AbstractActionsManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_actionTypes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="30" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="31" bodyend="572"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractActionsManager_1adefed30673085fac74ba7b89c281d393" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>_actions</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1afb031f0511fd0329b6eb52c87400ace5" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>_actionTypes</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a9b8abcf4635bb577159de34a6d86dc17" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>_publicActions</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a73646b1791dd6e43c03acfefe3058ffb" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>AbstractActionsManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ac2c62182300ed5e3fc70ccc985c45d44" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1af1937aa7ecfb33c1152941dbc459f78e" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionAdded</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a84e89e03cd33dc16edefba13253844ee" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionRemoved</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ad73c24f0b0cdf0f62c5d0a453b83c496" prot="private" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>ActionType</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1af3bbcebd23cef6b98efbeac20e865da8" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionTypeAdded</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a83e155adaccf728d4938e13c3b06b185" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionTypeRemoved</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a2dc6f621e1ee7509114a8e5f91ef1421" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionTypesChanged</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1aa576b9986e0fce483db1182d474ec137" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>actionTypesHumanFriendlyChanged</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a83bacdb0a96a0b9b1a36030845d0f155" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>addAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a99a0680910c685b93a222f585e3928a2" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>addActionType</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a2d6db18669d0623555c4e5301c0ea286" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>addPrivateActionToPublicAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a128362dc9dbf48382e201146ae064239" prot="private" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>addPublicAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ab20537710f189fd83f0cf63a95c173f9" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>connectPrivateActions</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a78823f3400a2b8851e928856ff273917" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>connectPrivateActionToPublicAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a5fbea7ff046f3da979c017b10d7ae96b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>disconnectPrivateActionFromPublicAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a994d77faf50e1e3e8e860f0d13190e9e" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a7e229ce91f04902d779843d4b71dbdeb" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getActions</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a32c7b2711f4790018d40964276e54afd" prot="public" virt="pure-virtual"><scope>mv::AbstractActionsManager</scope><name>getActionsListModel</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ae733e9ff3827cd2548540f56ef9ab234" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getActionTypes</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1aac7e2dac09ee6c4036d3c8725a8bd2cb" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getActionTypesHumanFriendly</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a7cd0144e14615529289538e015dfa54d" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getPublicActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a9e24bd2f3f084520845f110cb839d2da" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>gui::WidgetAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a324e19a5f71ba915966d080871d97f32" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>makeActionPublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a8f6d85bb27c252c755ee74d3a6745cb2" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>publicActionAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ae4bebf6951e79d46855b39df934a3893" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>publicActionAdded</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a751b42aa87473b9f8eed91b43ff3031c" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>publicActionRemoved</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a8455c49a59bd30252a408d65592d7439" prot="public" virt="pure-virtual"><scope>mv::AbstractActionsManager</scope><name>publishPrivateAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ad54406659f0c80ff654ea9cc5ab150cf" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>removeAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a87fb5eff88243764ccb4e0a74db86483" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>removeActionType</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1ab74fdc1e8c02339117e924f0c9413116" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>removePrivateActionFromPublicAction</name></member>
+      <member refid="classmv_1_1AbstractActionsManager_1a2319f72212986a64b6a0e11accf253bb" prot="private" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>removePublicAction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

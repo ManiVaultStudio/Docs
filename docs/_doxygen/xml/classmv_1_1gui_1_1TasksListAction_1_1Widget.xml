@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1TasksListAction_1_1Widget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::TasksListAction::Widget</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetActionWidget" prot="public" virt="non-virtual">mv::gui::WidgetActionWidget</basecompoundref>
+    <includes refid="TasksListAction_8h" local="no">TasksListAction.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1ab6252ebbf2ef8bc4a7cae465d47dcfe3" prot="private" static="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1Task" kindref="compound">Task</ref> *, QVector&lt; QWidget * &gt; &gt;</type>
+        <definition>using mv::gui::TasksListAction::Widget::WidgetsMap =  QMap&lt;Task*, QVector&lt;QWidget*&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>WidgetsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="34" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a3930453ebfce1c7959e6e4b3cdb73c51" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TasksListAction" kindref="compound">TasksListAction</ref> *</type>
+        <definition>TasksListAction* mv::gui::TasksListAction::Widget::_tasksListAction</definition>
+        <argsstring></argsstring>
+        <name>_tasksListAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="55" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1aa48a9c52d4d3ea21d4196954164a044e" prot="protected" static="no" mutable="no">
+        <type>QGridLayout</type>
+        <definition>QGridLayout mv::gui::TasksListAction::Widget::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+<para>Pointer to owning tasks list action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="56" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a1a287c08702c2ffa8efd03fa061229c5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">WidgetsMap</ref></type>
+        <definition>WidgetsMap mv::gui::TasksListAction::Widget::_widgetsMap</definition>
+        <argsstring></argsstring>
+        <name>_widgetsMap</name>
+        <briefdescription>
+<para>Tasks layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="57" column="29" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a25c212aaf2ca7967c4b63bb126a1a691" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class TasksListAction</definition>
+        <argsstring></argsstring>
+        <name>TasksListAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1TasksListAction" kindref="compound">TasksListAction</ref></type>
+        </param>
+        <briefdescription>
+<para>Maps task to allocated widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="59" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1ad592153e8d02374ae539847e8e998ccf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::TasksListAction::Widget::Widget</definition>
+        <argsstring>(QWidget *parent, TasksListAction *tasksListAction, const std::int32_t &amp;widgetFlags)</argsstring>
+        <name>Widget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1TasksListAction" kindref="compound">TasksListAction</ref> *</type>
+          <declname>tasksListAction</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> widget, owning <computeroutput>tasksListAction</computeroutput> and <computeroutput>widgetFlags</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tasksListAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to owning tasks list action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1gui_1_1TasksListAction_1_1Widget" kindref="compound">Widget</ref> flags for the configuration of the widget (type) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="44" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.cpp" bodystart="70" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a769872d78ec33cfbc0589719d65ef05a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::TasksListAction::Widget::updateLayout</definition>
+        <argsstring>()</argsstring>
+        <name>updateLayout</name>
+        <briefdescription>
+<para>Invoked when the number of tasks changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="49" column="14" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.cpp" bodystart="88" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a2285cfe8512aecb6725576c419cfd50e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::TasksListAction::Widget::cleanLayout</definition>
+        <argsstring>()</argsstring>
+        <name>cleanLayout</name>
+        <briefdescription>
+<para>Cleans the tasks layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="52" column="14" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.cpp" bodystart="148" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1gui_1_1TasksListAction_1_1Widget" kindref="compound">Widget</ref> action for listing the tasks vertically. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::TasksListAction::Widget</label>
+        <link refid="classmv_1_1gui_1_1TasksListAction_1_1Widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetActionViewWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionViewWidget"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetActionWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="5">
+        <label>QMap&lt; Task *, QVector&lt; QWidget * &gt; &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::TasksListAction::Widget</label>
+        <link refid="classmv_1_1gui_1_1TasksListAction_1_1Widget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_widgetsMap</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_tasksListAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetActionViewWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionViewWidget"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="6">
+        <label>mv::gui::TasksListAction</label>
+        <link refid="classmv_1_1gui_1_1TasksListAction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetActionWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/TasksListAction.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/TasksListAction.h" bodystart="32" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1aa48a9c52d4d3ea21d4196954164a044e" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>_layout</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a3930453ebfce1c7959e6e4b3cdb73c51" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>_tasksListAction</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a1a287c08702c2ffa8efd03fa061229c5" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>_widgetsMap</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a2285cfe8512aecb6725576c419cfd50e" prot="private" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>cleanLayout</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1acfe89b27bf95be19cdc02de6b4b968e4" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>dragEnterEvent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1aee2f501c02e9e3e528b127e01da54298" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>dragLeaveEvent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a0ce5d3a80df3041a0c423709c3ad9ca0" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>dropEvent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a5b1c6025fb9e327c67e40e56d49b79e3" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>getAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a35d313acaf9497148ac99bb999dfba56" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>getWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a435ffb2d0f2839046d3b3691820af7b1" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>isPopup</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a50bca72ddf92215f1db71f39cb1b0fd2" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>mousePressEvent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a2245bb5fc601e1e6b0b5178b1ddfce62aec08bffc81a612b745b19965fbf4a152" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>PopupLayout</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a4c21d52ccd913bf603f8b774a3abe3b0" prot="public" virt="virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>setAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionWidget_1a0d62cd0c177fb923e504e3c21d357186" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>setLayout</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionWidget_1a80746a00439d0d2bbc7aee1c2805ba3a" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>sizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a25c212aaf2ca7967c4b63bb126a1a691" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>TasksListAction</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1a769872d78ec33cfbc0589719d65ef05a" prot="private" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>updateLayout</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1ad592153e8d02374ae539847e8e998ccf" prot="protected" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>Widget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a58368e4b285107a3aaf61a457f2babea" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>WidgetActionViewWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionWidget_1aafcb18634a27116f89aca27a22296067" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>WidgetActionWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionViewWidget_1a2245bb5fc601e1e6b0b5178b1ddfce62" prot="public" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1TasksListAction_1_1Widget_1ab6252ebbf2ef8bc4a7cae465d47dcfe3" prot="private" virt="non-virtual"><scope>mv::gui::TasksListAction::Widget</scope><name>WidgetsMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

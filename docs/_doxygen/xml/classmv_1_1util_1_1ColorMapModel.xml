@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1ColorMapModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::util::ColorMapModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QAbstractListModel</basecompoundref>
+    <includes refid="ColorMapModel_8h" local="no">ColorMapModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4a31fde7b05ac8952dacf4af8a704074ec" prot="public">
+          <name>Preview</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4a49ee3087348e8d44e1feda1917443987" prot="public">
+          <name>Name</name>
+          <briefdescription>
+<para>Preview. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4abe53a0541a6d36f6ecb879fa2c584b08" prot="public">
+          <name>Image</name>
+          <briefdescription>
+<para>Name column. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4ac910471108e9374b2d0aa66cdbc56217" prot="public">
+          <name>NoDimensions</name>
+          <briefdescription>
+<para><ref refid="classImage" kindref="compound">Image</ref> column. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4a9c01e79fda0789b86ac38f4d98fec62a" prot="public">
+          <name>ResourcePath</name>
+          <briefdescription>
+<para>Dimensionality. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4aa6122a65eaa676f700ae68d393054a37" prot="public">
+          <name>Start</name>
+          <initializer>= Preview</initializer>
+          <briefdescription>
+<para>Resource path. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4a87557f11575c0ad78e4e28abedc13b6e" prot="public">
+          <name>End</name>
+          <initializer>= ResourcePath</initializer>
+          <briefdescription>
+<para>Column start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Color map model columns Defines the color map model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.h" bodystart="30" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1ColorMapModel_1a2286fe284ecb68b68affcf92ee1b94d5" prot="private" static="no" mutable="no">
+        <type>QVector&lt; <ref refid="classmv_1_1util_1_1ColorMap" kindref="compound">ColorMap</ref> &gt;</type>
+        <definition>QVector&lt;ColorMap&gt; mv::util::ColorMapModel::_colorMaps</definition>
+        <argsstring></argsstring>
+        <name>_colorMaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="83" column="15" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1ColorMapModel_1a16b2bb86d953e0ffe5a4e1d6edfa9a47" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classmv_1_1util_1_1ColorMapModel" kindref="compound">util::ColorMapModel</ref> *</type>
+        <definition>mv::util::ColorMapModel * mv::util::ColorMapModel::globalInstance</definition>
+        <argsstring></argsstring>
+        <name>globalInstance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Color maps data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Globally available color map model instance </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="88" column="33" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1aa14f1ba19db921ae90588a5378c719d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::util::ColorMapModel::ColorMapModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ColorMapModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="46" column="5" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1a4091b1c6498b516c941153f6fe846c98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mv::util::ColorMapModel::columnCount</definition>
+        <argsstring>(const QModelIndex &amp;parent) const override</argsstring>
+        <name>columnCount</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns the the number of model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="54" column="9" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1a2ac112be2c0403307864996d8a1b0185" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mv::util::ColorMapModel::rowCount</definition>
+        <argsstring>(const QModelIndex &amp;parent) const override</argsstring>
+        <name>rowCount</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of color maps in the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="60" column="9" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1aac7c6daba43b140d4de4c8520945b87d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::util::ColorMapModel::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Returns model data for the given index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="67" column="14" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="33" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1a54989c064f364071011d3ad42fd17bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::ColorMapModel::setupModelData</definition>
+        <argsstring>()</argsstring>
+        <name>setupModelData</name>
+        <briefdescription>
+<para>Setups the model data (e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>loads color maps from resources) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="138" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1ad723a5c4342d5ff8c92e6fd5e8f7b3b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1util_1_1ColorMap" kindref="compound">ColorMap</ref> *</type>
+        <definition>const ColorMap * mv::util::ColorMapModel::getColorMap</definition>
+        <argsstring>(const int &amp;row) const</argsstring>
+        <name>getColorMap</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>row</declname>
+        </param>
+        <briefdescription>
+<para>Returns a color map given a row index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="78" column="20" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="175" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1ColorMapModel_1a9a003b2b63cfe150eae7813ba19cbf86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1ColorMapModel" kindref="compound">util::ColorMapModel</ref> *</type>
+        <definition>mv::util::ColorMapModel * mv::util::ColorMapModel::getGlobalInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getGlobalInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="80" column="32" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.cpp" bodystart="185" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Color map model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::util::ColorMapModel</label>
+        <link refid="classmv_1_1util_1_1ColorMapModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QAbstractListModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::util::ColorMapModel</label>
+        <link refid="classmv_1_1util_1_1ColorMapModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>globalInstance</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QAbstractListModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/ColorMapModel.h" line="22" column="1" bodyfile="Docs/external/core/ManiVault/src/util/ColorMapModel.h" bodystart="23" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a2286fe284ecb68b68affcf92ee1b94d5" prot="private" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>_colorMaps</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1aa14f1ba19db921ae90588a5378c719d5" prot="protected" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>ColorMapModel</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a04bb4ab495937f0dbd8e57b6a1e619a4" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a4091b1c6498b516c941153f6fe846c98" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>columnCount</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1aac7c6daba43b140d4de4c8520945b87d" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>data</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1ad723a5c4342d5ff8c92e6fd5e8f7b3b9" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>getColorMap</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a9a003b2b63cfe150eae7813ba19cbf86" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>getGlobalInstance</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a16b2bb86d953e0ffe5a4e1d6edfa9a47" prot="protected" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>globalInstance</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a2ac112be2c0403307864996d8a1b0185" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>rowCount</name></member>
+      <member refid="classmv_1_1util_1_1ColorMapModel_1a54989c064f364071011d3ad42fd17bc4" prot="public" virt="non-virtual"><scope>mv::util::ColorMapModel</scope><name>setupModelData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

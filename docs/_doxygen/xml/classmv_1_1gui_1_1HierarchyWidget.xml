@@ -1,0 +1,1283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1HierarchyWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::HierarchyWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <includes refid="HierarchyWidget_8h" local="no">HierarchyWidget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1ad669fe6027f0d974981f3283c07d350a" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::HierarchyWidget::_itemTypeName</definition>
+        <argsstring></argsstring>
+        <name>_itemTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="372" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a22493fa773fb87e3e224cc22029438cc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::_headerHidden</definition>
+        <argsstring></argsstring>
+        <name>_headerHidden</name>
+        <briefdescription>
+<para>Name of the item type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="373" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a338be0d6205902d34af5c284af53992e" prot="private" static="no" mutable="no">
+        <type>const QAbstractItemModel &amp;</type>
+        <definition>const QAbstractItemModel&amp; mv::gui::HierarchyWidget::_model</definition>
+        <argsstring></argsstring>
+        <name>_model</name>
+        <briefdescription>
+<para>Whether the header view is visible or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="374" column="40" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a92e85ee6b5f42823ba080d12f57d3182" prot="private" static="no" mutable="no">
+        <type>QSortFilterProxyModel *</type>
+        <definition>QSortFilterProxyModel* mv::gui::HierarchyWidget::_filterModel</definition>
+        <argsstring></argsstring>
+        <name>_filterModel</name>
+        <briefdescription>
+<para>Model containing data to be displayed in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="375" column="40" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a05a64aa29d64de30ed3ca219f77e9468" prot="private" static="no" mutable="no">
+        <type>QItemSelectionModel</type>
+        <definition>QItemSelectionModel mv::gui::HierarchyWidget::_selectionModel</definition>
+        <argsstring></argsstring>
+        <name>_selectionModel</name>
+        <briefdescription>
+<para>Pointer to filter model (maybe nullptr) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="376" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a82836c0555c173d31aeee05516cbd78b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1HierarchyWidgetTreeView" kindref="compound">HierarchyWidgetTreeView</ref></type>
+        <definition>HierarchyWidgetTreeView mv::gui::HierarchyWidget::_treeView</definition>
+        <argsstring></argsstring>
+        <name>_treeView</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="377" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1ac7bc73af4ca02fa048b2bc3234b3e76a" prot="private" static="no" mutable="no">
+        <type>QScopedPointer&lt; <ref refid="classmv_1_1gui_1_1InfoOverlayWidget" kindref="compound">InfoOverlayWidget</ref> &gt;</type>
+        <definition>QScopedPointer&lt;InfoOverlayWidget&gt; mv::gui::HierarchyWidget::_infoOverlayWidget</definition>
+        <argsstring></argsstring>
+        <name>_infoOverlayWidget</name>
+        <briefdescription>
+<para>Tree view that contains the data hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="378" column="22" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a9657b49ed7a18d2dc72114dcd8f0522a" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::HierarchyWidget::_noItemsDescription</definition>
+        <argsstring></argsstring>
+        <name>_noItemsDescription</name>
+        <briefdescription>
+<para>Overlay widget that show information when there are no items in the model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="379" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a8fa38d54b451dd0c5a55922a25d051ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref></type>
+        <definition>StringAction mv::gui::HierarchyWidget::_filterNameAction</definition>
+        <argsstring></argsstring>
+        <name>_filterNameAction</name>
+        <briefdescription>
+<para>Overlay widget description when no items are loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="380" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a6e827e8d040de81db31cd807853f17b4" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref></type>
+        <definition>OptionAction mv::gui::HierarchyWidget::_filterColumnAction</definition>
+        <argsstring></argsstring>
+        <name>_filterColumnAction</name>
+        <briefdescription>
+<para>String action for filtering by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="381" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a9146fbea69a143524ee52151aa002cbd" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref></type>
+        <definition>GroupAction mv::gui::HierarchyWidget::_filterGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_filterGroupAction</name>
+        <briefdescription>
+<para>Option action for choosing the filtering column. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="382" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a7616e86c4422387f53371011630f7ffe" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::HierarchyWidget::_filterCaseSensitiveAction</definition>
+        <argsstring></argsstring>
+        <name>_filterCaseSensitiveAction</name>
+        <briefdescription>
+<para>Filter group action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="383" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a454254791804e6c642d785293e652865" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::HierarchyWidget::_filterRegularExpressionAction</definition>
+        <argsstring></argsstring>
+        <name>_filterRegularExpressionAction</name>
+        <briefdescription>
+<para>Filter case-sensitive action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="384" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a158690f24aba039d92912d5ab5807aa3" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::HierarchyWidget::_expandAllAction</definition>
+        <argsstring></argsstring>
+        <name>_expandAllAction</name>
+        <briefdescription>
+<para>Enable filter with regular expression action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="385" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a5a84e5a1fac3dfadebbe47a3934e4c88" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::HierarchyWidget::_collapseAllAction</definition>
+        <argsstring></argsstring>
+        <name>_collapseAllAction</name>
+        <briefdescription>
+<para>Expand all items action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="386" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1ad741baaa97a7daa78cd77c4a79599b2f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::HierarchyWidget::_selectAllAction</definition>
+        <argsstring></argsstring>
+        <name>_selectAllAction</name>
+        <briefdescription>
+<para>Collapse all items action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="387" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1adbafd38bf2714e3c0cd601088cc73174" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::HierarchyWidget::_selectNoneAction</definition>
+        <argsstring></argsstring>
+        <name>_selectNoneAction</name>
+        <briefdescription>
+<para>Select all action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="388" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1abf6c202ce17794658dba8b5bc30d2eda" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref></type>
+        <definition>GroupAction mv::gui::HierarchyWidget::_selectionGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_selectionGroupAction</name>
+        <briefdescription>
+<para>Select none action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="389" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1a7db6b5379f5ca67d2e4011fb31886060" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref></type>
+        <definition>GroupAction mv::gui::HierarchyWidget::_columnsGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_columnsGroupAction</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> group action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="390" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1ade5555d5e73f20b1a5a7eed9a75c93bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref></type>
+        <definition>GroupAction mv::gui::HierarchyWidget::_settingsGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_settingsGroupAction</name>
+        <briefdescription>
+<para>Column visibility action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="391" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1HierarchyWidget_1af127d48446f68efac9829f4cbc0ad679" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref></type>
+        <definition>HorizontalGroupAction mv::gui::HierarchyWidget::_toolbarAction</definition>
+        <argsstring></argsstring>
+        <name>_toolbarAction</name>
+        <briefdescription>
+<para>Settings group action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="392" column="41" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a0a3c9c417242d52629479492ad46dbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::HierarchyWidget::HierarchyWidget</definition>
+        <argsstring>(QWidget *parent, const QString &amp;itemTypeName, const QAbstractItemModel &amp;model, QSortFilterProxyModel *filterModel=nullptr, bool showToolbar=true, bool showOverlay=true)</argsstring>
+        <name>HierarchyWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>itemTypeName</declname>
+        </param>
+        <param>
+          <type>const QAbstractItemModel &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>QSortFilterProxyModel *</type>
+          <declname>filterModel</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showToolbar</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showOverlay</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemTypeName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type name of the item (e.g. dataset or action) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to input model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filterModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to input filter model (if present) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>showToolbar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to add a default toolbar for filtering and expand/collapse </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>showOverlay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to show an overlay when the (filter) model is empty </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="111" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="24" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1ac297aaa0262eaa78a25f3a416d6fb8cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::HierarchyWidget::getItemTypeName</definition>
+        <argsstring>() const</argsstring>
+        <name>getItemTypeName</name>
+        <briefdescription>
+<para>Get item type name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Item type name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="117" column="13" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a5d79e3828c307a799a5bd258c55c5fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::setItemTypeName</definition>
+        <argsstring>(const QString &amp;itemTypeName)</argsstring>
+        <name>setItemTypeName</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>itemTypeName</declname>
+        </param>
+        <briefdescription>
+<para>Set item type name to <computeroutput>itemTypeName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Item type name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="123" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="334" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a7e6265f2d863602484f577cd414c8872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::setWindowIcon</definition>
+        <argsstring>(const QIcon &amp;icon)</argsstring>
+        <name>setWindowIcon</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Override set window icon to update the overlay icons as well. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Window icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="129" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="344" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a185457a863ba1e947bde1d21faf680c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::setNoItemsDescription</definition>
+        <argsstring>(const QString &amp;noItemsDescription)</argsstring>
+        <name>setNoItemsDescription</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>noItemsDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set overlay widget description when no items are loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>noItemsDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Overlay widget description when no items are loaded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="135" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="351" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aec84f70aaf5799794fb5e7718895c738" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::getHeaderHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeaderHidden</name>
+        <briefdescription>
+<para>Get whether the header view is visible or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the header view is visible or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="141" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="545" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a3e91c236ea7402f54366a19a28e7cec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::setHeaderHidden</definition>
+        <argsstring>(bool headerHidden)</argsstring>
+        <name>setHeaderHidden</name>
+        <param>
+          <type>bool</type>
+          <declname>headerHidden</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the header view is visible or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>headerHidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the header view is visible or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="147" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="550" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a77cf11260b608c205f521b7a6899e6a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const QAbstractItemModel &amp;</type>
+        <definition>const QAbstractItemModel&amp; mv::gui::HierarchyWidget::getModel</definition>
+        <argsstring>()</argsstring>
+        <name>getModel</name>
+        <briefdescription>
+<para>Get input model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Input model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="153" column="30" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a189b487347db887c49393b29c53753a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QSortFilterProxyModel *</type>
+        <definition>QSortFilterProxyModel* mv::gui::HierarchyWidget::getFilterModel</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterModel</name>
+        <briefdescription>
+<para>Set input model to <computeroutput>model</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input model Get input filter model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to input filter model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="168" column="27" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a2fff773df4f0b76db42fa90cf9526ee2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QItemSelectionModel &amp;</type>
+        <definition>QItemSelectionModel&amp; mv::gui::HierarchyWidget::getSelectionModel</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectionModel</name>
+        <briefdescription>
+<para>Get selection model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to selection model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="176" column="25" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1affa78868b16302eee2660774c48591d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1HierarchyWidgetTreeView" kindref="compound">HierarchyWidgetTreeView</ref> &amp;</type>
+        <definition>HierarchyWidgetTreeView&amp; mv::gui::HierarchyWidget::getTreeView</definition>
+        <argsstring>()</argsstring>
+        <name>getTreeView</name>
+        <briefdescription>
+<para>Get tree view widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to tree view widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="184" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a7bfccb7560cf90893970b613e6747a08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1InfoOverlayWidget" kindref="compound">InfoOverlayWidget</ref> *</type>
+        <definition>InfoOverlayWidget* mv::gui::HierarchyWidget::getInfoOverlayWidget</definition>
+        <argsstring>()</argsstring>
+        <name>getInfoOverlayWidget</name>
+        <briefdescription>
+<para>Get overlay widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to overlay widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="192" column="23" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aa6f76838d63f0cc8e8b8bb8383d7420f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref> &amp;</type>
+        <definition>StringAction&amp; mv::gui::HierarchyWidget::getFilterNameAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterNameAction</name>
+        <briefdescription>
+<para>Get filter name action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to filter name action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="200" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a32281b1238978d45f9bfb980029b4a57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref> &amp;</type>
+        <definition>OptionAction&amp; mv::gui::HierarchyWidget::getFilterColumnAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterColumnAction</name>
+        <briefdescription>
+<para>Get filter column action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to filter column action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="208" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aa499fc4086b430ea1054333c46a398f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref> &amp;</type>
+        <definition>GroupAction&amp; mv::gui::HierarchyWidget::getFilterGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterGroupAction</name>
+        <briefdescription>
+<para>Get filter group action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to filter group action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="216" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a8a2dd8c9dd4e1a205aca697835ad63e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::HierarchyWidget::getFilterRegularExpressionAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterRegularExpressionAction</name>
+        <briefdescription>
+<para>Get filter regular expression action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to filter regular expression action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="224" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="224" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1ad8a3e000cfbe8ed22ce31272110b10c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::HierarchyWidget::getFilterCaseSensitiveAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterCaseSensitiveAction</name>
+        <briefdescription>
+<para>Get filter case sensitive action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to filter case sensitive action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="232" column="18" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aef8a92a9d011c9ffe0015cc1c1c09b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::HierarchyWidget::getExpandAllAction</definition>
+        <argsstring>()</argsstring>
+        <name>getExpandAllAction</name>
+        <briefdescription>
+<para>Get expand all action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to expand all action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="240" column="19" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1adc0a49121e146baa62ec9565ff659790" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::HierarchyWidget::getCollapseAllAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCollapseAllAction</name>
+        <briefdescription>
+<para>Get collapse all action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to collapse all action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="248" column="19" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a4d9a011873f4c225d85e83e5d929c2c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref> &amp;</type>
+        <definition>GroupAction&amp; mv::gui::HierarchyWidget::getSelectionGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectionGroupAction</name>
+        <briefdescription>
+<para>Get selection group action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to selection group action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="256" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="256" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a757f5dde5235d344d1a53fc957f828bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref> &amp;</type>
+        <definition>GroupAction&amp; mv::gui::HierarchyWidget::getColumnsGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getColumnsGroupAction</name>
+        <briefdescription>
+<para>Get columns group action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to columns group action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="264" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a852f417a641ffe2d9ee360db22e26091" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref> &amp;</type>
+        <definition>GroupAction&amp; mv::gui::HierarchyWidget::getSettingsGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSettingsGroupAction</name>
+        <briefdescription>
+<para>Get selection group action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to selection group </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="272" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="272" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aed1d62b5a1632eb17ca091934d053570" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QModelIndex</type>
+        <definition>QModelIndex mv::gui::HierarchyWidget::toSourceModelIndex</definition>
+        <argsstring>(const QModelIndex &amp;modelIndex) const</argsstring>
+        <name>toSourceModelIndex</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>modelIndex</declname>
+        </param>
+        <briefdescription>
+<para>Maps a model index to source model index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modelIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index to map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mapped model index if a filter model is present, other wise the input model index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="281" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a59a7445faddb147d842678664d96cea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::showEvent</definition>
+        <argsstring>(QShowEvent *event) override</argsstring>
+        <name>showEvent</name>
+        <param>
+          <type>QShowEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="283" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="369" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1afa04b41310d0a2c475a215d50cc88691" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QModelIndexList</type>
+        <definition>QModelIndexList mv::gui::HierarchyWidget::getSelectedRows</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectedRows</name>
+        <briefdescription>
+<para>Get selected rows. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Model indices of the selected rows </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="290" column="21" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="376" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1afaf88cd56f4a412eea8b06c92e76660e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QModelIndexList</type>
+        <definition>QModelIndexList mv::gui::HierarchyWidget::fetchFilterModelIndices</definition>
+        <argsstring>(QModelIndex filterModelIndex=QModelIndex()) const</argsstring>
+        <name>fetchFilterModelIndices</name>
+        <param>
+          <type>QModelIndex</type>
+          <declname>filterModelIndex</declname>
+          <defval>QModelIndex()</defval>
+        </param>
+        <briefdescription>
+<para>Fetches filter model indices of <computeroutput>filterModelIndex</computeroutput> and its children recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterModelIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Fetched filter model indices </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="297" column="21" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="386" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a0a918c7e90d1aa1a10f9e7a6d389305f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="359" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="607" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1abfdb80ba78971a6ab4a7afe262ac2a8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::HierarchyWidget::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="365" column="17" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="618" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1af2465b8f8c1816eaec7c1a4ed65a40bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>HorizontalGroupAction&amp; mv::gui::HierarchyWidget::getToolbarAction</definition>
+        <argsstring>()</argsstring>
+        <name>getToolbarAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="369" column="27" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="369" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a43867b1cbd6d023c77a7f8358aa14ef6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::mayExpandAll</definition>
+        <argsstring>() const</argsstring>
+        <name>mayExpandAll</name>
+        <briefdescription>
+<para>Get whether one or more items may be expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether one or more items may be expanded </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="305" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="408" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a0b8fe2e1c70efa764a45d6c2fe2c9c50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::expandAll</definition>
+        <argsstring>()</argsstring>
+        <name>expandAll</name>
+        <briefdescription>
+<para>Expand all items in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="308" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="422" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aae6575fa08f1ef35a3b04783a8c5d88c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::mayCollapseAll</definition>
+        <argsstring>() const</argsstring>
+        <name>mayCollapseAll</name>
+        <briefdescription>
+<para>Get whether one or more items may be collapse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indicating whether one or more items may be collapse </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="314" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="431" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a2208b0187193df7b0a771067c4cdf249" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::collapseAll</definition>
+        <argsstring>()</argsstring>
+        <name>collapseAll</name>
+        <briefdescription>
+<para>Collapse all items in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="317" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="445" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1abc0f3472fe1a3de8745b679faf1992a4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::maySelectAll</definition>
+        <argsstring>() const</argsstring>
+        <name>maySelectAll</name>
+        <briefdescription>
+<para>Get whether all items may be selected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether all items may be selected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="325" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="454" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a2433efda8e9b21a87ac673768b2847ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::selectAll</definition>
+        <argsstring>()</argsstring>
+        <name>selectAll</name>
+        <briefdescription>
+<para>Select all items in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="328" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="462" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a926047e7980de438ef1bf229ba41af87" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::HierarchyWidget::maySelectNone</definition>
+        <argsstring>() const</argsstring>
+        <name>maySelectNone</name>
+        <briefdescription>
+<para>Get whether one (or more) items can be de-selected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether one (or more) items can be de-selected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="334" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="474" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1af135235211cfedf37dc4022f09b2a7fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::selectNone</definition>
+        <argsstring>()</argsstring>
+        <name>selectNone</name>
+        <briefdescription>
+<para>Deselect all selected items in the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="337" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="485" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a46a8b4454f567abf030c2a9e79c769ad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::updateHeaderVisibility</definition>
+        <argsstring>()</argsstring>
+        <name>updateHeaderVisibility</name>
+        <briefdescription>
+<para>Updates the visibility of the header. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="340" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="631" bodyend="636"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1ae21adcc3a3e0cc7ce8a8b184c58b6b25" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::updateOverlayWidget</definition>
+        <argsstring>()</argsstring>
+        <name>updateOverlayWidget</name>
+        <briefdescription>
+<para>Updates the overlay widget icon, title and description based on the state of the hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="345" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="495" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1a0add0ac95a313e7bf1a0b7c910e3536d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::updateExpandCollapseActionsReadOnly</definition>
+        <argsstring>()</argsstring>
+        <name>updateExpandCollapseActionsReadOnly</name>
+        <briefdescription>
+<para>Update the read-only state of the expand/collapse action in response to change in the model and the tree view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="348" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="530" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1HierarchyWidget_1aa456cfc538c89e748b840063947eaaac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::HierarchyWidget::updateFilterModel</definition>
+        <argsstring>()</argsstring>
+        <name>updateFilterModel</name>
+        <briefdescription>
+<para>Update the filter model and related actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="351" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.cpp" bodystart="560" bodyend="605"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base widget for displaying a hierarchical model in a tree view. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It sets up the tree view and links up the filter and selection models.</para>
+<para>Features a toolbar for interaction with the model built with actions:<itemizedlist>
+<listitem><para>Filter by name (possibly with regular expression)</para>
+</listitem><listitem><para>Expanding all items</para>
+</listitem><listitem><para>Collapsing all items</para>
+</listitem><listitem><para>Selecting all items</para>
+</listitem><listitem><para>De-selecting all items</para>
+</listitem><listitem><para>Edit settings</para>
+</listitem></itemizedlist>
+</para>
+<para>In addition, it shows an overlay widget (with icon, title and description) when no items are loaded or filtering did not yield any items.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::HierarchyWidget</label>
+        <link refid="classmv_1_1gui_1_1HierarchyWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::HierarchyWidget</label>
+        <link refid="classmv_1_1gui_1_1HierarchyWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" line="96" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/HierarchyWidget.h" bodystart="97" bodyend="393"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a5a84e5a1fac3dfadebbe47a3934e4c88" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_collapseAllAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a7db6b5379f5ca67d2e4011fb31886060" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_columnsGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a158690f24aba039d92912d5ab5807aa3" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_expandAllAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a7616e86c4422387f53371011630f7ffe" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a6e827e8d040de81db31cd807853f17b4" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterColumnAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a9146fbea69a143524ee52151aa002cbd" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a92e85ee6b5f42823ba080d12f57d3182" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterModel</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a8fa38d54b451dd0c5a55922a25d051ef" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterNameAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a454254791804e6c642d785293e652865" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_filterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a22493fa773fb87e3e224cc22029438cc" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_headerHidden</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ac7bc73af4ca02fa048b2bc3234b3e76a" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_infoOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ad669fe6027f0d974981f3283c07d350a" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_itemTypeName</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a338be0d6205902d34af5c284af53992e" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_model</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a9657b49ed7a18d2dc72114dcd8f0522a" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_noItemsDescription</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ad741baaa97a7daa78cd77c4a79599b2f" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_selectAllAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1abf6c202ce17794658dba8b5bc30d2eda" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_selectionGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a05a64aa29d64de30ed3ca219f77e9468" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_selectionModel</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1adbafd38bf2714e3c0cd601088cc73174" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_selectNoneAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ade5555d5e73f20b1a5a7eed9a75c93bc" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_settingsGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1af127d48446f68efac9829f4cbc0ad679" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_toolbarAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a82836c0555c173d31aeee05516cbd78b" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>_treeView</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a2208b0187193df7b0a771067c4cdf249" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>collapseAll</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a0b8fe2e1c70efa764a45d6c2fe2c9c50" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>expandAll</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1afaf88cd56f4a412eea8b06c92e76660e" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>fetchFilterModelIndices</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::HierarchyWidget</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a0a918c7e90d1aa1a10f9e7a6d389305f" prot="public" virt="virtual"><scope>mv::gui::HierarchyWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::HierarchyWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::HierarchyWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1adc0a49121e146baa62ec9565ff659790" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getCollapseAllAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a757f5dde5235d344d1a53fc957f828bd" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getColumnsGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aef8a92a9d011c9ffe0015cc1c1c09b6c" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getExpandAllAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ad8a3e000cfbe8ed22ce31272110b10c4" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a32281b1238978d45f9bfb980029b4a57" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterColumnAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aa499fc4086b430ea1054333c46a398f8" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a189b487347db887c49393b29c53753a0" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterModel</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aa6f76838d63f0cc8e8b8bb8383d7420f" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterNameAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a8a2dd8c9dd4e1a205aca697835ad63e1" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getFilterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aec84f70aaf5799794fb5e7718895c738" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getHeaderHidden</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a7bfccb7560cf90893970b613e6747a08" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getInfoOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ac297aaa0262eaa78a25f3a416d6fb8cb" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getItemTypeName</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a77cf11260b608c205f521b7a6899e6a1" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getModel</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1afa04b41310d0a2c475a215d50cc88691" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSelectedRows</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a4d9a011873f4c225d85e83e5d929c2c0" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSelectionGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a2fff773df4f0b76db42fa90cf9526ee2" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSelectionModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a852f417a641ffe2d9ee360db22e26091" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getSettingsGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1af2465b8f8c1816eaec7c1a4ed65a40bf" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getToolbarAction</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1affa78868b16302eee2660774c48591d0" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>getTreeView</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a0a3c9c417242d52629479492ad46dbfb" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>HierarchyWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aae6575fa08f1ef35a3b04783a8c5d88c" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>mayCollapseAll</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a43867b1cbd6d023c77a7f8358aa14ef6" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>mayExpandAll</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1abc0f3472fe1a3de8745b679faf1992a4" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>maySelectAll</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a926047e7980de438ef1bf229ba41af87" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>maySelectNone</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a2433efda8e9b21a87ac673768b2847ef" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>selectAll</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1af135235211cfedf37dc4022f09b2a7fc" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>selectNone</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a3e91c236ea7402f54366a19a28e7cec0" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setHeaderHidden</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a5d79e3828c307a799a5bd258c55c5fb4" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setItemTypeName</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a185457a863ba1e947bde1d21faf680c2" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setNoItemsDescription</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a7e6265f2d863602484f577cd414c8872" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>setWindowIcon</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a59a7445faddb147d842678664d96cea5" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>showEvent</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aed1d62b5a1632eb17ca091934d053570" prot="public" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>toSourceModelIndex</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1abfdb80ba78971a6ab4a7afe262ac2a8b" prot="public" virt="virtual"><scope>mv::gui::HierarchyWidget</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::HierarchyWidget</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a0add0ac95a313e7bf1a0b7c910e3536d" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>updateExpandCollapseActionsReadOnly</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1aa456cfc538c89e748b840063947eaaac" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>updateFilterModel</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1a46a8b4454f567abf030c2a9e79c769ad" prot="protected" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>updateHeaderVisibility</name></member>
+      <member refid="classmv_1_1gui_1_1HierarchyWidget_1ae21adcc3a3e0cc7ce8a8b184c58b6b25" prot="private" virt="non-virtual"><scope>mv::gui::HierarchyWidget</scope><name>updateOverlayWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::HierarchyWidget</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

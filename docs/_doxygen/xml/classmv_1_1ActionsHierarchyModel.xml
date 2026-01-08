@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1ActionsHierarchyModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::ActionsHierarchyModel</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractActionsModel" prot="public" virt="non-virtual">mv::AbstractActionsModel</basecompoundref>
+    <includes refid="ActionsHierarchyModel_8h" local="no">ActionsHierarchyModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1ActionsHierarchyModel_1ae0d9512acd3bcb89084251b0e5ee01c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+        <definition>gui::WidgetAction* mv::ActionsHierarchyModel::_rootAction</definition>
+        <argsstring></argsstring>
+        <name>_rootAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="76" column="24" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1af260386ff252fa981442ece5a1848586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::ActionsHierarchyModel::ActionsHierarchyModel</definition>
+        <argsstring>(QObject *parent, gui::WidgetAction *rootAction=nullptr)</argsstring>
+        <name>ActionsHierarchyModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>rootAction</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object and <computeroutput>rootAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rootAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When set, only list the root action and its descendants </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="16" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1a2f7a523e48352b668d86c0edb5d70d58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1adc13b4ff7a7abc5e748ceeeeaa53ae9e">initialize</reimplements>
+        <briefdescription>
+<para>Initializes the model from the current state of the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="33" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1adc9d959e4a3f57010e58b1dc81eb2ab2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::actionAddedToManager</definition>
+        <argsstring>(gui::WidgetAction *action) override</argsstring>
+        <name>actionAddedToManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1ad1bbc0bc255794cd48a8b73d6151e490">actionAddedToManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>action</computeroutput> is added to the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="41" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1a3b1dfbea6f91a7de356977410ccacee2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::actionAboutToBeRemovedFromManager</definition>
+        <argsstring>(gui::WidgetAction *action) override</argsstring>
+        <name>actionAboutToBeRemovedFromManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1a408c2ee431409c8aa1700fe1f7a9fa32">actionAboutToBeRemovedFromManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>action</computeroutput> is about to be removed from the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that was removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1a286b222e35e1e7eb27b258cb9382254f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::publicActionAddedToManager</definition>
+        <argsstring>(gui::WidgetAction *publicAction) override</argsstring>
+        <name>publicActionAddedToManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1ab5dcddc980f1034a7cb4f67e89d2fc9f">publicActionAddedToManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>publicAction</computeroutput> is added to the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1ad8e281abf4608af19f98344bf82c16d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::publicActionAboutToBeRemovedFromManager</definition>
+        <argsstring>(gui::WidgetAction *publicAction) override</argsstring>
+        <name>publicActionAboutToBeRemovedFromManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1a7304b198c7db168ce0cbf1c408d3f4ba">publicActionAboutToBeRemovedFromManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <briefdescription>
+<para>Invoked when <computeroutput>publicAction</computeroutput> is about to be removed from the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="59" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1a01b46dce6223b68c1764e5b981d6e96c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::addAction</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>addAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>action</computeroutput> to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="52" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsHierarchyModel_1ae147dab8863449b29e47a76d3beafaa9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ActionsHierarchyModel::removeAction</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>removeAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>action</computeroutput> from the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="73" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.cpp" bodystart="78" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Actions hierarchy model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Hierarchical actions model class</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::ActionsHierarchyModel</label>
+        <link refid="classmv_1_1ActionsHierarchyModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel</label>
+        <link refid="classmv_1_1AbstractActionsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::ActionsHierarchyModel</label>
+        <link refid="classmv_1_1ActionsHierarchyModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel</label>
+        <link refid="classmv_1_1AbstractActionsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>columnInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMap&lt; Column, mv::AbstractActionsModel::ColumHeaderInfo &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" line="19" column="1" bodyfile="Docs/external/core/ManiVault/src/models/ActionsHierarchyModel.h" bodystart="20" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classmv_1_1ActionsHierarchyModel_1ae0d9512acd3bcb89084251b0e5ee01c1" prot="private" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>_rootAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1acff6089763379154cb4b5d77f978719f" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>AbstractActionsModel</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1a3b1dfbea6f91a7de356977410ccacee2" prot="protected" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>actionAboutToBeRemovedFromManager</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1adc9d959e4a3f57010e58b1dc81eb2ab2" prot="protected" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>actionAddedToManager</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1af260386ff252fa981442ece5a1848586" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>ActionsHierarchyModel</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1a01b46dce6223b68c1764e5b981d6e96c" prot="private" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>addAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a3233de00b59d5e4e1660768f871a801c" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>canDropMimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a58c1f506aa8c6fc7237c37a7f58aa272" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a38cd45ae804cd0eb53f96654b9b24379" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>dropMimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a14f8d6f9ab398462052b180868830a4b" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>flags</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsHierarchyModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsHierarchyModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a10020e86111d666eb494d3f058fa96a5" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1aaed4772836f26a7372d5127007b108b2" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ad888439ec59c97a84767bf4b8484e621" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a83ce945d29fc9f542567f238cf46ea80" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>getActionIndex</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a8666f60127eb439317bce6ab16494311" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>getActionItem</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1a2f7a523e48352b668d86c0edb5d70d58" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ab4b639ec7753b36e0ccdd02064aeaf1d" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>mimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ab74a4e55e4adea676967485a6dd94320" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>mimeTypes</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1ad8e281abf4608af19f98344bf82c16d7" prot="protected" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>publicActionAboutToBeRemovedFromManager</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1a286b222e35e1e7eb27b258cb9382254f" prot="protected" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>publicActionAddedToManager</name></member>
+      <member refid="classmv_1_1ActionsHierarchyModel_1ae147dab8863449b29e47a76d3beafaa9" prot="private" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>removeAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>State</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ae5b51079ca330df6fe0bdc9364d002eb" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>supportedDragActions</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1afa4ca9de01114b229941f60d08dc9f1e" prot="protected" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>supportedDropActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::ActionsHierarchyModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsHierarchyModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::ActionsHierarchyModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

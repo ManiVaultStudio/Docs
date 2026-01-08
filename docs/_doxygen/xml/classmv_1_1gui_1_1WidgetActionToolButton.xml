@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1WidgetActionToolButton" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::WidgetActionToolButton</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QToolButton</basecompoundref>
+    <includes refid="WidgetActionToolButton_8h" local="no">WidgetActionToolButton.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1a35a8ef04a740d1f475a2183b6c1b1187" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>WidgetAction* mv::gui::WidgetActionToolButton::_action</definition>
+        <argsstring></argsstring>
+        <name>_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="131" column="36" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1a83192b530722774621d82c8543f71d41" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref></type>
+        <definition>WidgetConfigurationFunction mv::gui::WidgetActionToolButton::_widgetConfigurationFunction</definition>
+        <argsstring></argsstring>
+        <name>_widgetConfigurationFunction</name>
+        <briefdescription>
+<para>Pointer to action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="132" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1a61bc26c17e5b571c95ccd9cbfe297328" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::WidgetActionToolButton::_showIndicator</definition>
+        <argsstring></argsstring>
+        <name>_showIndicator</name>
+        <briefdescription>
+<para>Function that is called right after a widget action widget is created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="133" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1a140b40bd44596be560d0ce8a26dcdf13" prot="private" static="no" mutable="no">
+        <type>Qt::Alignment</type>
+        <definition>Qt::Alignment mv::gui::WidgetActionToolButton::_indicatorAlignment</definition>
+        <argsstring></argsstring>
+        <name>_indicatorAlignment</name>
+        <briefdescription>
+<para>Whether to show the indicator or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="134" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1aa97fc68ea6175d883e5d2bb8968707cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1WidgetActionToolButtonMenu" kindref="compound">WidgetActionToolButtonMenu</ref></type>
+        <definition>WidgetActionToolButtonMenu mv::gui::WidgetActionToolButton::_menu</definition>
+        <argsstring></argsstring>
+        <name>_menu</name>
+        <briefdescription>
+<para>Alignment of the indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="135" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1WidgetActionToolButton_1a7dc6842b6d18ef53d0a580dc462c2594" prot="private" static="yes" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton * mv::gui::WidgetActionToolButton::sizeHintPushButton</definition>
+        <argsstring></argsstring>
+        <name>sizeHintPushButton</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Menu with custom action content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Work around improper QToolButton sizing issue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="138" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1aaaac0ee91eb2058ab1e48623dd9e5262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::WidgetActionToolButton::WidgetActionToolButton</definition>
+        <argsstring>(QWidget *parent, WidgetAction *action)</argsstring>
+        <name>WidgetActionToolButton</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Create with pointer to <computeroutput>parent</computeroutput> widget and owning <computeroutput>action</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to owning action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="18" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a009991f2fb79d7528651f8b1496f5ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::WidgetActionToolButton::WidgetActionToolButton</definition>
+        <argsstring>(QWidget *parent, WidgetAction *action, WidgetConfigurationFunction widgetConfigurationFunction)</argsstring>
+        <name>WidgetActionToolButton</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref></type>
+          <declname>widgetConfigurationFunction</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to \parent widget, pointer to owning <computeroutput>action</computeroutput> and <computeroutput>widgetConfigurationFunction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to owning action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetConfigurationFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This function is called right after the popup action widget is created </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="47" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a3c0190bfff6d53d9f6c4786e527f8dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::paintEvent</definition>
+        <argsstring>(QPaintEvent *paintEvent) override</argsstring>
+        <name>paintEvent</name>
+        <param>
+          <type>QPaintEvent *</type>
+          <declname>paintEvent</declname>
+        </param>
+        <briefdescription>
+<para>Override paint event for custom painting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paintEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to paint event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="45" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1ac941d60d5edb3956e6576c03dc52ea1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+        <definition>WidgetAction * mv::gui::WidgetActionToolButton::getAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getAction</name>
+        <briefdescription>
+<para>Get action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to action (maybe nullptr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="59" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a9c94dd63d0b9fb72a4e7f3cde4d62c17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::setAction</definition>
+        <argsstring>(WidgetAction *action)</argsstring>
+        <name>setAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the action to <computeroutput>action</computeroutput> (ownership is not transferred) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="65" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="101" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1ae22d0dd8bf39ed9a2910046c75faba4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref></type>
+        <definition>WidgetConfigurationFunction mv::gui::WidgetActionToolButton::getWidgetConfigurationFunction</definition>
+        <argsstring>()</argsstring>
+        <name>getWidgetConfigurationFunction</name>
+        <briefdescription>
+<para>Get widget configuration function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Function that is called right after a widget action widget is created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="71" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a2e1072b40eb8311fce0cce2beae9b48f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::WidgetActionToolButton::getShowIndicator</definition>
+        <argsstring>() const</argsstring>
+        <name>getShowIndicator</name>
+        <briefdescription>
+<para>Get show indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether to show the indicator or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="77" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1aba451df4953d910ec2a218ed97a0c269" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::setShowIndicator</definition>
+        <argsstring>(bool showIndicator)</argsstring>
+        <name>setShowIndicator</name>
+        <param>
+          <type>bool</type>
+          <declname>showIndicator</declname>
+        </param>
+        <briefdescription>
+<para>Set show indicator to <computeroutput>showIndicator</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>showIndicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether to show the indicator or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="85" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a98e9b42fcc0b0038c8147df7ac25c6e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::Alignment</type>
+        <definition>Qt::Alignment mv::gui::WidgetActionToolButton::getIndicatorAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndicatorAlignment</name>
+        <briefdescription>
+<para>Get alignment of the indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Alignment of the indicator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="95" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1ad3d4ef62e28e39151835f97f573039b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::setIndicatorAlignment</definition>
+        <argsstring>(Qt::Alignment indicatorAlignment)</argsstring>
+        <name>setIndicatorAlignment</name>
+        <param>
+          <type>Qt::Alignment</type>
+          <declname>indicatorAlignment</declname>
+        </param>
+        <briefdescription>
+<para>Set alignment of the indicator to <computeroutput>indicatorAlignment</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indicatorAlignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alignment of the indicator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="103" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a63ebc1b3c73c0bddb75400414518120e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1WidgetActionToolButtonMenu" kindref="compound">WidgetActionToolButtonMenu</ref> &amp;</type>
+        <definition>WidgetActionToolButtonMenu&amp; mv::gui::WidgetActionToolButton::getMenu</definition>
+        <argsstring>()</argsstring>
+        <name>getMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="109" column="32" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="109" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1WidgetActionToolButton_1a87d98fecf2a0be88eb2209e4e1a49ab4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::initialize</definition>
+        <argsstring>(WidgetAction *action)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>IsStartup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action to display as a popup widget of a tool button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="119" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.cpp" bodystart="150" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1WidgetActionToolButton_1a9cb5f3b0f5386a0961d65b2bf1d7ef77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::WidgetActionToolButton::actionChanged</definition>
+        <argsstring>(WidgetAction *previousAction, WidgetAction *currentAction)</argsstring>
+        <name>actionChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>previousAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>currentAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current action changed from <computeroutput>previousAction</computeroutput> to <computeroutput>currentAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to previous action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="128" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Widget action tool button. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Specialized tool button which show an action widget as a popup</para>
+<para>Note: This action is developed for internal use only</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QToolButton</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::WidgetActionToolButton</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionToolButton"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QToolButton</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::WidgetActionToolButton</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionToolButton"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" line="28" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/WidgetActionToolButton.h" bodystart="29" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a35a8ef04a740d1f475a2183b6c1b1187" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>_action</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a140b40bd44596be560d0ce8a26dcdf13" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>_indicatorAlignment</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1aa97fc68ea6175d883e5d2bb8968707cf" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>_menu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a61bc26c17e5b571c95ccd9cbfe297328" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>_showIndicator</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a83192b530722774621d82c8543f71d41" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>_widgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a9cb5f3b0f5386a0961d65b2bf1d7ef77" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>actionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1ac941d60d5edb3956e6576c03dc52ea1e" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>getAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a98e9b42fcc0b0038c8147df7ac25c6e9" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>getIndicatorAlignment</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a63ebc1b3c73c0bddb75400414518120e" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>getMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a2e1072b40eb8311fce0cce2beae9b48f" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>getShowIndicator</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1ae22d0dd8bf39ed9a2910046c75faba4d" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a87d98fecf2a0be88eb2209e4e1a49ab4" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>initialize</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a3c0190bfff6d53d9f6c4786e527f8dff" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>paintEvent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a9c94dd63d0b9fb72a4e7f3cde4d62c17" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>setAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1ad3d4ef62e28e39151835f97f573039b6" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>setIndicatorAlignment</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1aba451df4953d910ec2a218ed97a0c269" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>setShowIndicator</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a7dc6842b6d18ef53d0a580dc462c2594" prot="private" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>sizeHintPushButton</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1aaaac0ee91eb2058ab1e48623dd9e5262" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>WidgetActionToolButton</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetActionToolButton_1a009991f2fb79d7528651f8b1496f5ebb" prot="public" virt="non-virtual"><scope>mv::gui::WidgetActionToolButton</scope><name>WidgetActionToolButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1PluginsListModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::PluginsListModel</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractPluginsModel" prot="public" virt="non-virtual">mv::AbstractPluginsModel</basecompoundref>
+    <includes refid="PluginsListModel_8h" local="no">PluginsListModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a03721ff04e55b7fcf958b65de76e2c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::PluginsListModel::PluginsListModel</definition>
+        <argsstring>(PopulationMode populationMode=PopulationMode::Automatic, QObject *parent=nullptr)</argsstring>
+        <name>PluginsListModel</name>
+        <param>
+          <type><ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" kindref="member">PopulationMode</ref></type>
+          <declname>populationMode</declname>
+          <defval><ref refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529ca086247a9b57fde6eefee2a0c4752242d" kindref="member">PopulationMode::Automatic</ref></defval>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>populationMode</computeroutput> and pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>populationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Population mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="27" column="5" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1ac15594c3855ea349d0e6e859eaff834a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" kindref="member">plugin::Plugins</ref></type>
+        <definition>plugin::Plugins mv::PluginsListModel::getPlugins</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPlugins</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1a98231ac668e2032b6389bf8f672527e1">getPlugins</reimplements>
+        <briefdescription>
+<para>Get plugins. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of plugins </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="33" column="21" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1ad6c496a7739e16828ac6a78d3452be78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+        <definition>plugin::Plugin * mv::PluginsListModel::getPlugin</definition>
+        <argsstring>(const QModelIndex &amp;modelIndex) const override</argsstring>
+        <name>getPlugin</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1a14fc949db9e15831eebeded44c5ab217">getPlugin</reimplements>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>modelIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get plugin for <computeroutput>modelIndex</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modelIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index to retrieve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to plugin (maybe nullptr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="40" column="20" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a934b206f9f45ae2f782d7a69f024720e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::PluginsListModel::setPlugins</definition>
+        <argsstring>(const plugin::Plugins &amp;plugins) override</argsstring>
+        <name>setPlugins</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1a7bdbb47cabf764f492a42228a2b75744">setPlugins</reimplements>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" kindref="member">plugin::Plugins</ref> &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+<para>Set the <computeroutput>plugins</computeroutput> from which can be picked (mode is set to StorageMode::Manual) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of plugins </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="46" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a566f09a49966cdb0773512364bc7aa64" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::PluginsListModel::populateFromPluginManager</definition>
+        <argsstring>() override</argsstring>
+        <name>populateFromPluginManager</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1aa70d3e0a7188d82048666457c766f551">populateFromPluginManager</reimplements>
+        <briefdescription>
+<para>Synchronize the plugins with the core. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="49" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a4c6eaa1bb5f48b7cda2b9982cd804149" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::PluginsListModel::addPlugin</definition>
+        <argsstring>(plugin::Plugin *plugin) override</argsstring>
+        <name>addPlugin</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1abf494ab4b273b546fb225dcde639987f">addPlugin</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>plugin</computeroutput> to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="55" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a44d07841c0928337832b709e2bda0515" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::PluginsListModel::removePlugin</definition>
+        <argsstring>(plugin::Plugin *plugin) override</argsstring>
+        <name>removePlugin</name>
+        <reimplements refid="classmv_1_1AbstractPluginsModel_1a3c931e65b0dcf12edc0a77581f30bffd">removePlugin</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>plugin</computeroutput> from the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="61" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="70" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1aef7b0235f794b218f825d749a9861bd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QModelIndex</type>
+        <definition>QModelIndex mv::PluginsListModel::getIndexFromPlugin</definition>
+        <argsstring>(const plugin::Plugin *plugin) const</argsstring>
+        <name>getIndexFromPlugin</name>
+        <param>
+          <type>const <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Get index from pointer to <computeroutput>plugin</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Const pointer to plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Model index (invalid if not found) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="68" column="17" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="85" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a25e4c824f5f78c6e43b7e6970476b475" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QModelIndex</type>
+        <definition>QModelIndex mv::PluginsListModel::getIndexFromPlugin</definition>
+        <argsstring>(const QString &amp;pluginId) const</argsstring>
+        <name>getIndexFromPlugin</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>pluginId</declname>
+        </param>
+        <briefdescription>
+<para>Get index from <computeroutput>pluginId</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pluginId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> globally unique identifier to retrieve the row index for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Model index (invalid if not found) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="75" column="17" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="107" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsListModel_1a1b45ec1d858bedde3b615ecb19df9ab2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QStandardItem *</type>
+        <definition>QStandardItem * mv::PluginsListModel::getItemFromPlugin</definition>
+        <argsstring>(const plugin::Plugin *plugin) const</argsstring>
+        <name>getItemFromPlugin</name>
+        <param>
+          <type>const <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Get item from pointer to <computeroutput>plugin</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Const pointer to plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to found item, nullptr otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="84" column="19" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.cpp" bodystart="129" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Plugins list model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>List model for loaded plugins</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractPluginsModel</label>
+        <link refid="classmv_1_1AbstractPluginsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::PluginsListModel</label>
+        <link refid="classmv_1_1PluginsListModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractPluginsModel</label>
+        <link refid="classmv_1_1AbstractPluginsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::PluginsListModel</label>
+        <link refid="classmv_1_1PluginsListModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/PluginsListModel.h" line="18" column="1" bodyfile="Docs/external/core/ManiVault/src/models/PluginsListModel.h" bodystart="19" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractPluginsModel_1a6e5c62ccf236609feba1ec262f91850c" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>AbstractPluginsModel</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a4c6eaa1bb5f48b7cda2b9982cd804149" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>addPlugin</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1a27d1daeab022eed0a769a87a149659c5" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1PluginsListModel_1aef7b0235f794b218f825d749a9861bd8" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getIndexFromPlugin</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a25e4c824f5f78c6e43b7e6970476b475" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getIndexFromPlugin</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a1b45ec1d858bedde3b615ecb19df9ab2" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getItemFromPlugin</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1PluginsListModel_1ad6c496a7739e16828ac6a78d3452be78" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>getPlugin</name></member>
+      <member refid="classmv_1_1PluginsListModel_1ac15594c3855ea349d0e6e859eaff834a" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>getPlugins</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1af2b8f877d2866e71259fbb1e55e46569" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1a6b3ba1bf41f0749d3a6d885bc8451bb1" prot="protected" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>headerData</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a03721ff04e55b7fcf958b65de76e2c54" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>PluginsListModel</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a566f09a49966cdb0773512364bc7aa64" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>populateFromPluginManager</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1adfda7a84e25069b474f1efb922e2cb95" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a44d07841c0928337832b709e2bda0515" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>removePlugin</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1PluginsListModel_1a934b206f9f45ae2f782d7a69f024720e" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>setPlugins</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1a58afe0962cb5e83217381eda0d52d695" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual" ambiguityscope="mv::StandardItemModel::"><scope>mv::PluginsListModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::PluginsListModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsListModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::PluginsListModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

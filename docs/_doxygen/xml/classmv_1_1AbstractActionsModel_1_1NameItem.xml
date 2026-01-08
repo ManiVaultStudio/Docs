@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractActionsModel_1_1NameItem" kind="class" language="C++" prot="protected" final="yes">
+    <compoundname>mv::AbstractActionsModel::NameItem</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractActionsModel_1_1Item" prot="public" virt="non-virtual">mv::AbstractActionsModel::Item</basecompoundref>
+    <includes refid="AbstractActionsModel_8h" local="no">AbstractActionsModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1_1NameItem_1a53c28b35dc6158ea0f34ff254b807e0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractActionsModel::NameItem::NameItem</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>NameItem</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>action</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action to display item for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="121" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1_1NameItem_1a190c1228b5f536a7d68b94cad0c33622" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::AbstractActionsModel::NameItem::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="127" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="70" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1_1NameItem_1a3463857490746326ebc5f1a1b98d9ae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractActionsModel::NameItem::setData</definition>
+        <argsstring>(const QVariant &amp;value, int role) override</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Set model data to <computeroutput>value</computeroutput> for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="130" column="14" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="93" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard model item class for displaying the action name. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel::Item</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsModel::NameItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1NameItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel::Item</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsModel::NameItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1NameItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="114" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" bodystart="114" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractActionsModel_1_1NameItem_1a190c1228b5f536a7d68b94cad0c33622" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::NameItem</scope><name>data</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1Item_1ac426dd62cf221fb99f9f92d857a81eaf" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::NameItem</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1Item_1abe7af517c8a47c076438d726f1e5d0e7" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::NameItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1NameItem_1a53c28b35dc6158ea0f34ff254b807e0c" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::NameItem</scope><name>NameItem</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1NameItem_1a3463857490746326ebc5f1a1b98d9ae9" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::NameItem</scope><name>setData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

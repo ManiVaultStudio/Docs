@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1MeanShift" kind="class" language="C++" prot="public">
+    <compoundname>mv::MeanShift</compoundname>
+    <basecompoundref prot="protected" virt="non-virtual">QOpenGLFunctions_3_3_Core</basecompoundref>
+    <includes refid="MeanShift_8h" local="no">MeanShift.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a360329cbc8e7c03de9392046c6f79a76" prot="private" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int mv::MeanShift::RESOLUTION</definition>
+        <argsstring></argsstring>
+        <name>RESOLUTION</name>
+        <initializer>= 256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="41" column="24" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a72582ed0eed2019130bb3cbd8f1a8153" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DensityComputation" kindref="compound">DensityComputation</ref></type>
+        <definition>DensityComputation mv::MeanShift::densityComputation</definition>
+        <argsstring></argsstring>
+        <name>densityComputation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="43" column="24" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a10689dae6444db9fcfeb0d5be55db29e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::MeanShift::_shaderGradientCompute</definition>
+        <argsstring></argsstring>
+        <name>_shaderGradientCompute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="48" column="19" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a57df93cbabbe883c656dd317b324610d" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::MeanShift::_shaderMeanshiftCompute</definition>
+        <argsstring></argsstring>
+        <name>_shaderMeanshiftCompute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="49" column="19" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a89c238ba4a2a2b11613a87a9ea02d3b0" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Framebuffer" kindref="compound">Framebuffer</ref></type>
+        <definition>Framebuffer mv::MeanShift::_meanshiftFramebuffer</definition>
+        <argsstring></argsstring>
+        <name>_meanshiftFramebuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="51" column="17" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a8a30f0e952485d8b061abf9aed2f8f84" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D mv::MeanShift::_gradientTexture</definition>
+        <argsstring></argsstring>
+        <name>_gradientTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="52" column="15" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a0ed5955d248a5a3224ad704730b4dd08" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D mv::MeanShift::_meanshiftTexture</definition>
+        <argsstring></argsstring>
+        <name>_meanshiftTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="53" column="15" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a4eecc70d359f02f45fed35f35f000749" prot="private" static="no" mutable="no">
+        <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; *</type>
+        <definition>const std::vector&lt;Vector2f&gt;* mv::MeanShift::_points</definition>
+        <argsstring></argsstring>
+        <name>_points</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="55" column="23" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a7e19e43627b9cf96893ba79245a404f3" prot="private" static="no" mutable="no">
+        <type>QRectF</type>
+        <definition>QRectF mv::MeanShift::_bounds</definition>
+        <argsstring></argsstring>
+        <name>_bounds</name>
+        <initializer>= QRectF(-1, 1, 2, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="56" column="12" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a89eaa162e997a451099f59d48ca49635" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint mv::MeanShift::_quad</definition>
+        <argsstring></argsstring>
+        <name>_quad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="57" column="12" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a87a1069c14fcba288ee805c582bf5e49" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::MeanShift::_needsDensityMapUpdate</definition>
+        <argsstring></argsstring>
+        <name>_needsDensityMapUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="59" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a37a680f1f07a5d84433e5f0f62fe0a99" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::MeanShift::_sigma</definition>
+        <argsstring></argsstring>
+        <name>_sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="60" column="11" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a814f43d7e35e00682cd6b86bff1ec6da" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; mv::MeanShift::_meanshiftPixels</definition>
+        <argsstring></argsstring>
+        <name>_meanshiftPixels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="62" column="17" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a3323e276b65a75e47e374f8cd7edd146" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2f&gt; mv::MeanShift::_clusterPositions</definition>
+        <argsstring></argsstring>
+        <name>_clusterPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="63" column="17" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1a21ff15ea2af4e5a79ac29ff2e6531821" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mv::MeanShift::_clusterIds</definition>
+        <argsstring></argsstring>
+        <name>_clusterIds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="64" column="17" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1MeanShift_1afff4c4230d71323262706e1a0dfde1dd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mv::MeanShift::_clusterIdsOriginal</definition>
+        <argsstring></argsstring>
+        <name>_clusterIdsOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="65" column="17" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1MeanShift_1add5af9fa41499cd6f63bc7152d82ad5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::MeanShift::MeanShift</definition>
+        <argsstring>()</argsstring>
+        <name>MeanShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="23" column="5" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a41ccda5c2add76fe82c65306c1f3fbca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="24" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="30" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a8448a846e93e3ec9b622264d4805b17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="25" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a779406e058abe96efee921c43af7cd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::setData</definition>
+        <argsstring>(const std::vector&lt; Vector2f &gt; *points)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; *</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="27" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a1328421b1f6ecbfe2395110ea2d0bdbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::setSigma</definition>
+        <argsstring>(float sigma)</argsstring>
+        <name>setSigma</name>
+        <param>
+          <type>float</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="28" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a4d8001225cf00e98d3180b1c3cb61208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::drawFullscreenQuad</definition>
+        <argsstring>()</argsstring>
+        <name>drawFullscreenQuad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="30" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a41cbcfdf89598013a31820ff2460d22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::cluster</definition>
+        <argsstring>(const std::vector&lt; Vector2f &gt; &amp;points, std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;clusters)</argsstring>
+        <name>cluster</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; &amp;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; unsigned int &gt;&gt; &amp;</type>
+          <declname>clusters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="32" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="258" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a4cb940ad04b09957c45ad71de1cb47cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::MeanShift::equal</definition>
+        <argsstring>(const Vector2f &amp;p1, const Vector2f &amp;p2, float epsilon)</argsstring>
+        <name>equal</name>
+        <param>
+          <type>const <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="33" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a764e476cda63bef4f45db0e581d161a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref> &amp;</type>
+        <definition>Texture2D &amp; mv::MeanShift::getGradientTexture</definition>
+        <argsstring>()</argsstring>
+        <name>getGradientTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="35" column="15" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="424" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a2e43abdba1dbbfefbd13669029f4c1b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref> &amp;</type>
+        <definition>Texture2D &amp; mv::MeanShift::getMeanShiftTexture</definition>
+        <argsstring>()</argsstring>
+        <name>getMeanShiftTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="36" column="15" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="429" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a63e4306c1f371d7f2ae00ceab59b5eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t mv::MeanShift::getResolution</definition>
+        <argsstring>() const</argsstring>
+        <name>getResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="38" column="19" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="434" bodyend="437"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a0271cbbfc6eba0c127493e1ace55e1b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::computeGradient</definition>
+        <argsstring>()</argsstring>
+        <name>computeGradient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="45" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="128" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1MeanShift_1a9bef0869408b76683544aeb2a57f362f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::MeanShift::computeMeanShift</definition>
+        <argsstring>()</argsstring>
+        <name>computeMeanShift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="46" column="10" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.cpp" bodystart="204" bodyend="256"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::MeanShift</label>
+        <link refid="classmv_1_1MeanShift"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::MeanShift</label>
+        <link refid="classmv_1_1MeanShift"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/MeanShift.h" line="20" column="1" bodyfile="Docs/external/core/ManiVault/src/util/MeanShift.h" bodystart="21" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classmv_1_1MeanShift_1a7e19e43627b9cf96893ba79245a404f3" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_bounds</name></member>
+      <member refid="classmv_1_1MeanShift_1a21ff15ea2af4e5a79ac29ff2e6531821" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_clusterIds</name></member>
+      <member refid="classmv_1_1MeanShift_1afff4c4230d71323262706e1a0dfde1dd" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_clusterIdsOriginal</name></member>
+      <member refid="classmv_1_1MeanShift_1a3323e276b65a75e47e374f8cd7edd146" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_clusterPositions</name></member>
+      <member refid="classmv_1_1MeanShift_1a8a30f0e952485d8b061abf9aed2f8f84" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_gradientTexture</name></member>
+      <member refid="classmv_1_1MeanShift_1a89c238ba4a2a2b11613a87a9ea02d3b0" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_meanshiftFramebuffer</name></member>
+      <member refid="classmv_1_1MeanShift_1a814f43d7e35e00682cd6b86bff1ec6da" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_meanshiftPixels</name></member>
+      <member refid="classmv_1_1MeanShift_1a0ed5955d248a5a3224ad704730b4dd08" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_meanshiftTexture</name></member>
+      <member refid="classmv_1_1MeanShift_1a87a1069c14fcba288ee805c582bf5e49" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_needsDensityMapUpdate</name></member>
+      <member refid="classmv_1_1MeanShift_1a4eecc70d359f02f45fed35f35f000749" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_points</name></member>
+      <member refid="classmv_1_1MeanShift_1a89eaa162e997a451099f59d48ca49635" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_quad</name></member>
+      <member refid="classmv_1_1MeanShift_1a10689dae6444db9fcfeb0d5be55db29e" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_shaderGradientCompute</name></member>
+      <member refid="classmv_1_1MeanShift_1a57df93cbabbe883c656dd317b324610d" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_shaderMeanshiftCompute</name></member>
+      <member refid="classmv_1_1MeanShift_1a37a680f1f07a5d84433e5f0f62fe0a99" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>_sigma</name></member>
+      <member refid="classmv_1_1MeanShift_1a8448a846e93e3ec9b622264d4805b17c" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>cleanup</name></member>
+      <member refid="classmv_1_1MeanShift_1a41cbcfdf89598013a31820ff2460d22d" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>cluster</name></member>
+      <member refid="classmv_1_1MeanShift_1a0271cbbfc6eba0c127493e1ace55e1b8" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>computeGradient</name></member>
+      <member refid="classmv_1_1MeanShift_1a9bef0869408b76683544aeb2a57f362f" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>computeMeanShift</name></member>
+      <member refid="classmv_1_1MeanShift_1a72582ed0eed2019130bb3cbd8f1a8153" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>densityComputation</name></member>
+      <member refid="classmv_1_1MeanShift_1a4d8001225cf00e98d3180b1c3cb61208" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>drawFullscreenQuad</name></member>
+      <member refid="classmv_1_1MeanShift_1a4cb940ad04b09957c45ad71de1cb47cc" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>equal</name></member>
+      <member refid="classmv_1_1MeanShift_1a764e476cda63bef4f45db0e581d161a9" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>getGradientTexture</name></member>
+      <member refid="classmv_1_1MeanShift_1a2e43abdba1dbbfefbd13669029f4c1b9" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>getMeanShiftTexture</name></member>
+      <member refid="classmv_1_1MeanShift_1a63e4306c1f371d7f2ae00ceab59b5eea" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>getResolution</name></member>
+      <member refid="classmv_1_1MeanShift_1a41ccda5c2add76fe82c65306c1f3fbca" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>init</name></member>
+      <member refid="classmv_1_1MeanShift_1add5af9fa41499cd6f63bc7152d82ad5d" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>MeanShift</name></member>
+      <member refid="classmv_1_1MeanShift_1a360329cbc8e7c03de9392046c6f79a76" prot="private" virt="non-virtual"><scope>mv::MeanShift</scope><name>RESOLUTION</name></member>
+      <member refid="classmv_1_1MeanShift_1a779406e058abe96efee921c43af7cd7b" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>setData</name></member>
+      <member refid="classmv_1_1MeanShift_1a1328421b1f6ecbfe2395110ea2d0bdbc" prot="public" virt="non-virtual"><scope>mv::MeanShift</scope><name>setSigma</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

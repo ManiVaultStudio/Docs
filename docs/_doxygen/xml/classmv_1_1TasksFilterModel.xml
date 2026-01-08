@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1TasksFilterModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::TasksFilterModel</compoundname>
+    <basecompoundref refid="classmv_1_1SortFilterProxyModel" prot="public" virt="non-virtual">mv::SortFilterProxyModel</basecompoundref>
+    <includes refid="TasksFilterModel_8h" local="no">TasksFilterModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a610ecfb59f1184a57613e455283d0077" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref></type>
+        <definition>gui::OptionsAction mv::TasksFilterModel::_taskTypeFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_taskTypeFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="92" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1ad96a33ffd9c9a41c1fc280337aa17803" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref></type>
+        <definition>gui::OptionsAction mv::TasksFilterModel::_taskGuiScopeFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_taskGuiScopeFilterAction</name>
+        <briefdescription>
+<para>Action for filtering based on task type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="93" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a18a414e50e7bc5dcdfee02598233ab3f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref></type>
+        <definition>gui::OptionsAction mv::TasksFilterModel::_taskStatusFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_taskStatusFilterAction</name>
+        <briefdescription>
+<para>Action for filtering based on task scope. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="94" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1acd5c075cc8575a577092891dda1bfe0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::TasksFilterModel::_hideDisabledTasksFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_hideDisabledTasksFilterAction</name>
+        <briefdescription>
+<para>Action for filtering based on task status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="95" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a8363fc3bf981573475aece7b2f55f52b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::TasksFilterModel::_topLevelTasksOnlyAction</definition>
+        <argsstring></argsstring>
+        <name>_topLevelTasksOnlyAction</name>
+        <briefdescription>
+<para>Action for hiding disabled tasks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="96" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a129388587c9d0a8c28ac65e7ed05a5bd" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::TasksFilterModel::_hideHiddenTasksFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_hideHiddenTasksFilterAction</name>
+        <briefdescription>
+<para>Action for toggling top-level tasks only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="97" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a70b13cf547ec583d6f9ee1294d99a362" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref></type>
+        <definition>gui::StringAction mv::TasksFilterModel::_parentTaskFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_parentTaskFilterAction</name>
+        <briefdescription>
+<para>Action for hiding hidden tasks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="98" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1ac87e14d3c97c7b59daf18618a7269d98" prot="private" static="no" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, std::uint32_t &gt;</type>
+        <definition>QMap&lt;QString, std::uint32_t&gt; mv::TasksFilterModel::_statusTypeCounts</definition>
+        <argsstring></argsstring>
+        <name>_statusTypeCounts</name>
+        <briefdescription>
+<para>Action for filtering on parent task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="99" column="13" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1TasksFilterModel_1a52a2127e6318f0e5836f2256c97dfc64" prot="private" static="no" mutable="no">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t mv::TasksFilterModel::_rowCount</definition>
+        <argsstring></argsstring>
+        <name>_rowCount</name>
+        <briefdescription>
+<para>Counts the number of task per status type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="100" column="37" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1abe1e3b7d45939cefb6e2d724d61c415d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::TasksFilterModel::TasksFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>TasksFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with parent <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="18" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1a29d2cf7a508696f20397d2c1332ad892" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::TasksFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether <computeroutput>row</computeroutput> with <computeroutput>parent</computeroutput> is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the item is filtered in or out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="60" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1afcfcbc5cfe2b2acc13bec1cc49d29029" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::TasksFilterModel::lessThan</definition>
+        <argsstring>(const QModelIndex &amp;lhs, const QModelIndex &amp;rhs) const override</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two cluster items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left cluster </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right cluster </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="54" column="10" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1a60439715940134ea0d4ce6e3d535042d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::TasksFilterModel::hasKillableTasks</definition>
+        <argsstring>() const</argsstring>
+        <name>hasKillableTasks</name>
+        <briefdescription>
+<para>Determines whether one (or more) tasks are killable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether there are any killable tasks </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="60" column="10" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1ae4953853073be78b2eadd4bffe76082c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref> &amp;</type>
+        <definition>gui::OptionsAction&amp; mv::TasksFilterModel::getTaskTypeFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTaskTypeFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="83" column="24" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1ae03511d6633ed427653d19b83b18e11c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref> &amp;</type>
+        <definition>gui::OptionsAction&amp; mv::TasksFilterModel::getTaskScopeFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTaskScopeFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="84" column="24" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1ae93d390a8a0bad0cc3afc03e2353d6da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref> &amp;</type>
+        <definition>gui::OptionsAction&amp; mv::TasksFilterModel::getTaskStatusFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTaskStatusFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="85" column="24" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1a7748cad9b75000689c5a5c61e4f7292d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::TasksFilterModel::getTopLevelTasksOnlyAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTopLevelTasksOnlyAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="86" column="23" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1a0a87e4e8b114de65a08c275875333e63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::TasksFilterModel::getHideDisabledTasksFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getHideDisabledTasksFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="87" column="23" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1ac59deb294b279d17fa844539b6e70967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::TasksFilterModel::getHideHiddenTasksFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getHideHiddenTasksFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="88" column="23" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1af71a73ec047d15d74638b464610c1221" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>gui::StringAction&amp; mv::TasksFilterModel::getParentTaskFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getParentTaskFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="89" column="23" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1aaa243273b9ad8b649d826aec62174ae4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::TasksFilterModel::getSourceData</definition>
+        <argsstring>(const QModelIndex &amp;index, const AbstractTasksModel::Column &amp;column, int role) const</argsstring>
+        <name>getSourceData</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1AbstractTasksModel_1a8812c01f3d51258a9dc51310c0309fab" kindref="member">AbstractTasksModel::Column</ref> &amp;</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get source variant data for <computeroutput>index</computeroutput>, <computeroutput>column</computeroutput> and data <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source model index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source model column </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Data in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="71" column="14" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1TasksFilterModel_1ae792ff8d44df850bedfc56311e4509dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::TasksFilterModel::addTaskTypesForRows</definition>
+        <argsstring>(const QModelIndex &amp;parent, int first, int last)</argsstring>
+        <name>addTaskTypesForRows</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Extract task types from row range and add them to the task types action when they do not exist yet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the first row </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the last row </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="79" column="10" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.cpp" bodystart="130" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tasks filter class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Proxy model for filtering tasks</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::TasksFilterModel</label>
+        <link refid="classmv_1_1TasksFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::TasksFilterModel</label>
+        <link refid="classmv_1_1TasksFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" line="30" column="1" bodyfile="Docs/external/core/ManiVault/src/models/TasksFilterModel.h" bodystart="31" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classmv_1_1TasksFilterModel_1acd5c075cc8575a577092891dda1bfe0e" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_hideDisabledTasksFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a129388587c9d0a8c28ac65e7ed05a5bd" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_hideHiddenTasksFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a70b13cf547ec583d6f9ee1294d99a362" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_parentTaskFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a52a2127e6318f0e5836f2256c97dfc64" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_rowCount</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ac87e14d3c97c7b59daf18618a7269d98" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_statusTypeCounts</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ad96a33ffd9c9a41c1fc280337aa17803" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_taskGuiScopeFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a18a414e50e7bc5dcdfee02598233ab3f" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_taskStatusFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a610ecfb59f1184a57613e455283d0077" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_taskTypeFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a8363fc3bf981573475aece7b2f55f52b" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>_topLevelTasksOnlyAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ae792ff8d44df850bedfc56311e4509dd" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>addTaskTypesForRows</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a29d2cf7a508696f20397d2c1332ad892" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::TasksFilterModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1ac2b7af794cf9878f36cdeb0e47b617db" prot="public" virt="virtual"><scope>mv::TasksFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::TasksFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::TasksFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a0a87e4e8b114de65a08c275875333e63" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getHideDisabledTasksFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ac59deb294b279d17fa844539b6e70967" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getHideHiddenTasksFilterAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1af6d445bddd1d60fb09d5e458df57f563" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1af71a73ec047d15d74638b464610c1221" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getParentTaskFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a1f9cae86492623ad294174f09f20fdd4" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1aaa243273b9ad8b649d826aec62174ae4" prot="private" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getSourceData</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ae03511d6633ed427653d19b83b18e11c" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTaskScopeFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ae93d390a8a0bad0cc3afc03e2353d6da" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTaskStatusFilterAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1ae4953853073be78b2eadd4bffe76082c" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTaskTypeFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a493597980f72851ea8ef8faa5624d9b1" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTextFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aeae6c9d82aecef68c17a39d7756270dd" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTextFilterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a4cf4d3a41d031052e1c360cbb61f54ac" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTextFilterColumnAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8269affbf1163a933c4b328c6442a3bb" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTextFilterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa161534d6a51038bd983b62a142cee49" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTextFilterSettingsAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a7748cad9b75000689c5a5c61e4f7292d" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>getTopLevelTasksOnlyAction</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1a60439715940134ea0d4ce6e3d535042d" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>hasKillableTasks</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1afcfcbc5cfe2b2acc13bec1cc49d29029" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>lessThan</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1acf704b78e71f631ec8f6c600941b906a" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>rowTypeNameChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5989aec41ce2a9591570fb53e96c662e" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>setFilterColumn</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa12dcce3149a00f5ce619b8abc17ef52" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>setRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a430c0b51ec0e429c15b89d9ff770e9cb" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>setSourceModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8cf74da126f0487d456ea145c572676b" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>SortFilterProxyModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>State</name></member>
+      <member refid="classmv_1_1TasksFilterModel_1abe1e3b7d45939cefb6e2d724d61c415d" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>TasksFilterModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::TasksFilterModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5483cf2345234481ab0273bf5a4a1289" prot="public" virt="virtual"><scope>mv::TasksFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::TasksFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::TasksFilterModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

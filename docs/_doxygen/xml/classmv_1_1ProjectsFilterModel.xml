@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1ProjectsFilterModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::ProjectsFilterModel</compoundname>
+    <basecompoundref refid="classmv_1_1SortFilterProxyModel" prot="public" virt="non-virtual">mv::SortFilterProxyModel</basecompoundref>
+    <includes refid="ProjectsFilterModel_8h" local="no">ProjectsFilterModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1aa3d806ff4dfedcbc25dd18b29071ff0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1AbstractProjectsModel" kindref="compound">AbstractProjectsModel</ref> *</type>
+        <definition>AbstractProjectsModel* mv::ProjectsFilterModel::_projectDatabaseModel</definition>
+        <argsstring></argsstring>
+        <name>_projectDatabaseModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="89" column="32" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1abba6e74215203f2205226b42d0d5a5c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref></type>
+        <definition>gui::OptionsAction mv::ProjectsFilterModel::_tagsFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_tagsFilterAction</name>
+        <briefdescription>
+<para>Pointer to source model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="90" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1ae415b661f45cf2cb1bb2b5a1a21af062" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref></type>
+        <definition>gui::OptionsAction mv::ProjectsFilterModel::_excludeTagsFilterAction</definition>
+        <argsstring></argsstring>
+        <name>_excludeTagsFilterAction</name>
+        <briefdescription>
+<para>Filter based on tag(s) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="91" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1a8b987a970bc12ad8e5ee967d22fe9868" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1VersionAction" kindref="compound">gui::VersionAction</ref></type>
+        <definition>gui::VersionAction mv::ProjectsFilterModel::_targetAppVersionAction</definition>
+        <argsstring></argsstring>
+        <name>_targetAppVersionAction</name>
+        <briefdescription>
+<para>Filter out based on tag(s) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="92" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1afbab621f19fc1732f7ef16827181c015" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::ProjectsFilterModel::_filterLoadableOnlyAction</definition>
+        <argsstring></argsstring>
+        <name>_filterLoadableOnlyAction</name>
+        <briefdescription>
+<para>Target app minimum version filter action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="93" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1a9ea0a51666b9c0c29b7387ba521c7ebb" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::ProjectsFilterModel::_filterStartupOnlyAction</definition>
+        <argsstring></argsstring>
+        <name>_filterStartupOnlyAction</name>
+        <briefdescription>
+<para>Filter out projects that are not loadable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="94" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1ProjectsFilterModel_1a685c053d9465ed9b78d24523bf42d955" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1VerticalGroupAction" kindref="compound">gui::VerticalGroupAction</ref></type>
+        <definition>gui::VerticalGroupAction mv::ProjectsFilterModel::_filterGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_filterGroupAction</name>
+        <briefdescription>
+<para>Filter out projects that are not startup projects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="95" column="33" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1ab5366a4af13f002b106bb1868f4a36e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::ProjectsFilterModel::ProjectsFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>ProjectsFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="23" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1af95a994ecf04550842bb47cce1c9f657" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::ProjectsFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether <computeroutput>row</computeroutput> with <computeroutput>parent</computeroutput> is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the item is filtered in or out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="41" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="63" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a0b62484dabe4de47ff6cfb3af6c3583c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ProjectsFilterModel::setSourceModel</definition>
+        <argsstring>(QAbstractItemModel *sourceModel) override</argsstring>
+        <name>setSourceModel</name>
+        <param>
+          <type>QAbstractItemModel *</type>
+          <declname>sourceModel</declname>
+        </param>
+        <briefdescription>
+<para>Set source model to <computeroutput>sourceModel</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to source model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="122" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a64cba385cc96f905404d5427f5a3f8d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::ProjectsFilterModel::lessThan</definition>
+        <argsstring>(const QModelIndex &amp;lhs, const QModelIndex &amp;rhs) const override</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two model indices plugin <computeroutput>lhs</computeroutput> with <computeroutput>rhs</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left-hand model index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="54" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1afcdfb363bd17921fb46a736eea19623b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ProjectsFilterModel::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1SortFilterProxyModel_1ac2b7af794cf9878f36cdeb0e47b617db">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="71" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="166" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1acc161d662ab5015744ab4da92fd53db9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::ProjectsFilterModel::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1SortFilterProxyModel_1a5483cf2345234481ab0273bf5a4a1289">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="77" column="17" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="176" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a950f0782381a69f26e01d232bbd69603" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref> &amp;</type>
+        <definition>gui::OptionsAction&amp; mv::ProjectsFilterModel::getTagsFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTagsFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="81" column="24" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a279e728e4a01ed7e9793df77d7048ab8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref> &amp;</type>
+        <definition>gui::OptionsAction&amp; mv::ProjectsFilterModel::getExcludeTagsFilterAction</definition>
+        <argsstring>()</argsstring>
+        <name>getExcludeTagsFilterAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="82" column="24" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1ac12727ec7130ed77affab0f4986c1643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1VersionAction" kindref="compound">gui::VersionAction</ref> &amp;</type>
+        <definition>gui::VersionAction&amp; mv::ProjectsFilterModel::getTargetAppVersionAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTargetAppVersionAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="83" column="24" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a810e418fe199713b7c51b45fc83ae922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::ProjectsFilterModel::getFilterLoadableOnlyAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterLoadableOnlyAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="84" column="23" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1aea97f7659a16121355bc858d5fd4561a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::ProjectsFilterModel::getFilterStartupOnlyAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterStartupOnlyAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="85" column="23" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1a8d639fe1ca54436aa4bfc6608fa8af4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1VerticalGroupAction" kindref="compound">gui::VerticalGroupAction</ref> &amp;</type>
+        <definition>gui::VerticalGroupAction&amp; mv::ProjectsFilterModel::getFilterGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="86" column="30" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1ProjectsFilterModel_1ac0d64d0b75de4dad5524416900de2c23" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::ProjectsFilterModel::hasAcceptedChildren</definition>
+        <argsstring>(const QModelIndex &amp;parent) const</argsstring>
+        <name>hasAcceptedChildren</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the parent has accepted children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the parent has accepted children </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="63" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.cpp" bodystart="151" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Project" kindref="compound">Project</ref> database filter model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sorting and filtering model for the project database model</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::ProjectsFilterModel</label>
+        <link refid="classmv_1_1ProjectsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::ProjectsFilterModel</label>
+        <link refid="classmv_1_1ProjectsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/models/ProjectsFilterModel.h" bodystart="26" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classmv_1_1ProjectsFilterModel_1ae415b661f45cf2cb1bb2b5a1a21af062" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_excludeTagsFilterAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a685c053d9465ed9b78d24523bf42d955" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_filterGroupAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1afbab621f19fc1732f7ef16827181c015" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_filterLoadableOnlyAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a9ea0a51666b9c0c29b7387ba521c7ebb" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_filterStartupOnlyAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1aa3d806ff4dfedcbc25dd18b29071ff0e" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_projectDatabaseModel</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1abba6e74215203f2205226b42d0d5a5c4" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_tagsFilterAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a8b987a970bc12ad8e5ee967d22fe9868" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>_targetAppVersionAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1af95a994ecf04550842bb47cce1c9f657" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::ProjectsFilterModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1afcdfb363bd17921fb46a736eea19623b" prot="public" virt="virtual"><scope>mv::ProjectsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ProjectsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ProjectsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a279e728e4a01ed7e9793df77d7048ab8" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getExcludeTagsFilterAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a8d639fe1ca54436aa4bfc6608fa8af4d" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getFilterGroupAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a810e418fe199713b7c51b45fc83ae922" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getFilterLoadableOnlyAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1aea97f7659a16121355bc858d5fd4561a" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getFilterStartupOnlyAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1af6d445bddd1d60fb09d5e458df57f563" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a1f9cae86492623ad294174f09f20fdd4" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a950f0782381a69f26e01d232bbd69603" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTagsFilterAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1ac12727ec7130ed77affab0f4986c1643" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTargetAppVersionAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a493597980f72851ea8ef8faa5624d9b1" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTextFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aeae6c9d82aecef68c17a39d7756270dd" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTextFilterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a4cf4d3a41d031052e1c360cbb61f54ac" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTextFilterColumnAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8269affbf1163a933c4b328c6442a3bb" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTextFilterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa161534d6a51038bd983b62a142cee49" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>getTextFilterSettingsAction</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1ac0d64d0b75de4dad5524416900de2c23" prot="private" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>hasAcceptedChildren</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a64cba385cc96f905404d5427f5a3f8d9" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>lessThan</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1ab5366a4af13f002b106bb1868f4a36e4" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>ProjectsFilterModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1acf704b78e71f631ec8f6c600941b906a" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>rowTypeNameChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5989aec41ce2a9591570fb53e96c662e" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>setFilterColumn</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa12dcce3149a00f5ce619b8abc17ef52" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>setRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1a0b62484dabe4de47ff6cfb3af6c3583c" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>setSourceModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8cf74da126f0487d456ea145c572676b" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>SortFilterProxyModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::ProjectsFilterModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1ProjectsFilterModel_1acc161d662ab5015744ab4da92fd53db9" prot="public" virt="virtual"><scope>mv::ProjectsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ProjectsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::ProjectsFilterModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

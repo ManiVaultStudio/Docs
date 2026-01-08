@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classWorkspaceInventoryFilterModel" kind="class" language="C++" prot="public">
+    <compoundname>WorkspaceInventoryFilterModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSortFilterProxyModel</basecompoundref>
+    <includes refid="WorkspaceInventoryFilterModel_8h" local="no">WorkspaceInventoryFilterModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWorkspaceInventoryFilterModel_1a9619d9799c1a76eb840d2ba6bf1ba46a" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">mv::gui::OptionsAction</ref></type>
+        <definition>mv::gui::OptionsAction WorkspaceInventoryFilterModel::_filterTypesAction</definition>
+        <argsstring></argsstring>
+        <name>_filterTypesAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="47" column="31" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWorkspaceInventoryFilterModel_1af16d37bc10f1109b98bbe1bfb6b54290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WorkspaceInventoryFilterModel::WorkspaceInventoryFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>WorkspaceInventoryFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct the filter model with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="26" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.cpp" bodystart="15" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorkspaceInventoryFilterModel_1a6efeeda3ecab10947f86d794835df0fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WorkspaceInventoryFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether <computeroutput>row</computeroutput> with <computeroutput>parent</computeroutput> is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the item is filtered in or out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.cpp" bodystart="27" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorkspaceInventoryFilterModel_1adf3a811047e2a67a93b0650a1ddb0147" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WorkspaceInventoryFilterModel::lessThan</definition>
+        <argsstring>(const QModelIndex &amp;lhs, const QModelIndex &amp;rhs) const override</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two model indices plugin <computeroutput>lhs</computeroutput> with <computeroutput>rhs</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left-hand model index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="41" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorkspaceInventoryFilterModel_1ae30eaa8386618b5f369ddcaac8534e8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">mv::gui::OptionsAction</ref> &amp;</type>
+        <definition>mv::gui::OptionsAction&amp; WorkspaceInventoryFilterModel::getFilterTypesAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterTypesAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="44" column="28" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Workspace inventory filter model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sorting and filtering model for the workspace inventory model</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WorkspaceInventoryFilterModel</label>
+        <link refid="classWorkspaceInventoryFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSortFilterProxyModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>WorkspaceInventoryFilterModel</label>
+        <link refid="classWorkspaceInventoryFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QSortFilterProxyModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" line="18" column="1" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryFilterModel.h" bodystart="19" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classWorkspaceInventoryFilterModel_1a9619d9799c1a76eb840d2ba6bf1ba46a" prot="private" virt="non-virtual"><scope>WorkspaceInventoryFilterModel</scope><name>_filterTypesAction</name></member>
+      <member refid="classWorkspaceInventoryFilterModel_1a6efeeda3ecab10947f86d794835df0fe" prot="public" virt="non-virtual"><scope>WorkspaceInventoryFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classWorkspaceInventoryFilterModel_1ae30eaa8386618b5f369ddcaac8534e8d" prot="public" virt="non-virtual"><scope>WorkspaceInventoryFilterModel</scope><name>getFilterTypesAction</name></member>
+      <member refid="classWorkspaceInventoryFilterModel_1adf3a811047e2a67a93b0650a1ddb0147" prot="public" virt="non-virtual"><scope>WorkspaceInventoryFilterModel</scope><name>lessThan</name></member>
+      <member refid="classWorkspaceInventoryFilterModel_1af16d37bc10f1109b98bbe1bfb6b54290" prot="public" virt="non-virtual"><scope>WorkspaceInventoryFilterModel</scope><name>WorkspaceInventoryFilterModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

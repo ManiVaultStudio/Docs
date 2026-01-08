@@ -1,0 +1,1277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DataManager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::DataManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractDataManager" prot="public" virt="non-virtual">mv::AbstractDataManager</basecompoundref>
+    <includes refid="DataManager_8h" local="no">DataManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1DataManager_1a9600e3d170b576d6966e76e19eb83caf" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; QString, <ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;QString, plugin::RawData*&gt; mv::DataManager::_rawDataMap</definition>
+        <argsstring></argsstring>
+        <name>_rawDataMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="274" column="26" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DataManager_1adb09746038e14e9b9cbe262a55907654" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;DatasetImpl&gt; &gt; mv::DataManager::_datasets</definition>
+        <argsstring></argsstring>
+        <name>_datasets</name>
+        <briefdescription>
+<para>Maps raw data name to raw data plugin shared pointer (the plugins are owned by the plugin manager) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="275" column="23" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DataManager_1ac7742541f81bdffbcf833377c4a20f07" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::unique_ptr&lt;DatasetImpl&gt; &gt; mv::DataManager::_selections</definition>
+        <argsstring></argsstring>
+        <name>_selections</name>
+        <briefdescription>
+<para>Vector of pointers to datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="276" column="23" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1DataManager_1a748edea1c969324c5743d99916e5454f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DatasetsListModel" kindref="compound">DatasetsListModel</ref> *</type>
+        <definition>DatasetsListModel* mv::DataManager::_datasetsListModel</definition>
+        <argsstring></argsstring>
+        <name>_datasetsListModel</name>
+        <briefdescription>
+<para>Vector of pointers to selection datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="277" column="52" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DataManager_1a78f52cc8fac4094e0b7c2827d62be76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DataManager::DataManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>DataManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="47" column="5" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a216583c8af9267884008f6b21c7841a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DataManager::~DataManager</definition>
+        <argsstring>() override</argsstring>
+        <name>~DataManager</name>
+        <briefdescription>
+<para>Reset when destructed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="50" column="5" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a4679fb93d5a9d28a0cfc6f61db6310ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48">initialize</reimplements>
+        <briefdescription>
+<para>Perform manager startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="44" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1ab3dfde3a91dbb5ae8690953214c6b573" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6">reset</reimplements>
+        <briefdescription>
+<para>Resets the contents of the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="56" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="61" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1af35d76749bcee6f6bb6bb63f308991d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+        <definition>plugin::RawData * mv::DataManager::getRawData</definition>
+        <argsstring>(const QString &amp;rawDataName) override</argsstring>
+        <name>getRawData</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1">getRawData</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Get raw data by <computeroutput>rawDataName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to raw data if found, nullptr otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="79" column="21" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="143" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a630af5ac35a2857546c4606ec3ec3b15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::DataManager::getRawDataNames</definition>
+        <argsstring>() const override</argsstring>
+        <name>getRawDataNames</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a7c38ef761ff5c9cc7403513847c6b467">getRawDataNames</reimplements>
+        <briefdescription>
+<para>Get raw data names @retun Raw data names list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="85" column="17" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="166" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a86bd492e5c8c83923c0261473bada316" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::uint64_t</type>
+        <definition>std::uint64_t mv::DataManager::getRawDataSize</definition>
+        <argsstring>(const QString &amp;rawDataName) const override</argsstring>
+        <name>getRawDataSize</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a48d9e3d1b23dea9a6152922b19fdfa05">getRawDataSize</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Get raw data size by <computeroutput>rawDataName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size of the raw data in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="92" column="19" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="176" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a0e2c95476e2b16d89c55b5ee070bc5ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString mv::DataManager::getRawDataType</definition>
+        <argsstring>(const QString &amp;rawDataName) const override</argsstring>
+        <name>getRawDataType</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a059ca7bc1ba6ef4f76cc048346409e97">getRawDataType</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Get raw data type string by <computeroutput>rawDataName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Raw data type string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="99" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="199" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1ad134a14721c8b57bfc2437b6c3e38039" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset mv::DataManager::createDataset</definition>
+        <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true) override</argsstring>
+        <name>createDataset</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1af36609e7194ed332665751f97baaa8fb">createDataset</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>parentDataset</declname>
+          <defval><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Creates dataset of <computeroutput>kind</computeroutput> with <computeroutput>guiName</computeroutput> to the manager and returns the created dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kind of data plugin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the added dataset in the GUI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the parent dataset in the data hierarchy (will add to the root of the data hierarchy if not valid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique dataset identifier (use only for deserialization) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to notify the core that a dataset is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the create dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="112" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="222" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1aea3438e8b41c39b4417932cd502d3bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset mv::DataManager::createDatasetWithoutSelection</definition>
+        <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true) override</argsstring>
+        <name>createDatasetWithoutSelection</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1affea010b01662861a875278bcc591b78">createDatasetWithoutSelection</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>parentDataset</declname>
+          <defval><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Creates dataset without selection of <computeroutput>kind</computeroutput> with <computeroutput>guiName</computeroutput> to the manager and returns the created dataset (this is only used fore serialization purposes) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Kind of data plugin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the added dataset in the GUI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the parent dataset in the data hierarchy (will add to the root of the data hierarchy if not valid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique dataset identifier (use only for deserialization) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to notify the core that a dataset is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the create dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="123" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="254" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a9df0bfd70dc71a20b40236367d6a1e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::removeDataset</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset) override</argsstring>
+        <name>removeDataset</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1aa48557e5a28c16a3e0fedb7efb22b9b6">removeDataset</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>dataset</computeroutput> from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to dataset to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="141" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="309" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a474569a27162e84c6a9543d440e19539" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::removeDatasets</definition>
+        <argsstring>(Datasets datasets) override</argsstring>
+        <name>removeDatasets</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1abdae4d976d66a2f566290f75c0ae545c">removeDatasets</reimplements>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <declname>datasets</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>datasets</computeroutput> from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to datasets to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="147" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="398" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a69ad982e94a4064c787d76a438c42969" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::removeDatasets</definition>
+        <argsstring>(const QString &amp;rawDataName) override</argsstring>
+        <name>removeDatasets</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1af65c08460cc753a4005dc42cb2a3e6b7">removeDatasets</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Remove datasets that reference <computeroutput>rawDataName</computeroutput> from the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="153" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="481" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a69ff8e204969a313e2e54287b85f3357" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt; DatasetImpl &gt; mv::DataManager::createDerivedDataset</definition>
+        <argsstring>(const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), bool notify=true) override</argsstring>
+        <name>createDerivedDataset</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a708fae2f9bdc099354c17075d9085c08">createDerivedDataset</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>sourceDataset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>parentDataset</declname>
+          <defval><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Creates derived dataset from <computeroutput>sourceDataset</computeroutput> with <computeroutput>guiName</computeroutput> and returns the created derived dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI name for the new dataset from the core </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the source dataset from which this dataset will be derived </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the parent dataset in the data hierarchy (will attach to source dataset in hierarchy if not valid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to notify the core that a dataset is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the created derived dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="165" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="490" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a8e39751f3bcd823ef0b406096803cb3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt; DatasetImpl &gt; mv::DataManager::createSubsetFromSelection</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;selection, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset, const bool &amp;visible=true, bool notify=true) override</argsstring>
+        <name>createSubsetFromSelection</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a90223622ff9123d3113ab7996818fb43">createSubsetFromSelection</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>selection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>sourceDataset</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>parentDataset</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>visible</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Creates a copy of <computeroutput>selection</computeroutput> with the <computeroutput>sourceDataset</computeroutput>, adds it to the manager and returns the created subset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the selection set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the source dataset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI name of the subset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the parent dataset in the data hierarchy (will attach to source dataset in hierarchy if not valid) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the new dataset is visible in the data hierarchy </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to notify the core that a dataset is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the created subset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="179" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="521" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a8ac8d813c5a1b57adff66cbc698833bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset mv::DataManager::getDataset</definition>
+        <argsstring>(const QString &amp;datasetId) override</argsstring>
+        <name>getDataset</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1af483f02549e17659c4e2a5b5f6c34690">getDataset</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Get dataset by <computeroutput>datasetId</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique identifier of the dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="188" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="559" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a1669e7b3fd1288ffa14c10f1fc149d84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>Datasets mv::DataManager::getAllDatasets</definition>
+        <argsstring>(const std::vector&lt; DataType &gt; &amp;dataTypes=std::vector&lt; DataType &gt;()) const override</argsstring>
+        <name>getAllDatasets</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a15fc490ed76c6b8dc2a1c81e8ecc2828">getAllDatasets</reimplements>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt; &amp;</type>
+          <declname>dataTypes</declname>
+          <defval>std::vector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Get all datasets for <computeroutput>dataTypes</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data types filter (if empty returns all types) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointers to datasets </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="195" column="14" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="586" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a19349ebb272af34658445e23706fcc39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt; DatasetImpl &gt; mv::DataManager::getSelection</definition>
+        <argsstring>(const QString &amp;rawDataName) override</argsstring>
+        <name>getSelection</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a609717411afafbb2d7808fef7676af0e">getSelection</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Get selection by <computeroutput>rawDataName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to the selection dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="213" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="614" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a385fa13b9d924cd5c40eb841fe1ef898" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+        <definition>Datasets mv::DataManager::getAllSelections</definition>
+        <argsstring>() override</argsstring>
+        <name>getAllSelections</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a6df89940e5d46a191b7782b91fdf7e74">getAllSelections</reimplements>
+        <briefdescription>
+<para>Get all selection datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Smart pointers to selection datasets </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="219" column="14" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="641" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1acb2a8e395b7fa65811d5c3be844c4e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>mv::Dataset&lt; mv::DatasetImpl &gt; mv::DataManager::groupDatasets</definition>
+        <argsstring>(const Datasets &amp;datasets, const QString &amp;guiName=&quot;&quot;) override</argsstring>
+        <name>groupDatasets</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1ab2707c53ede3598cd317ce91f3168135">groupDatasets</reimplements>
+        <param>
+          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <declname>datasets</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>guiName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Groups <computeroutput>datasets</computeroutput> into one dataset and returns the group dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Two or more datasets to group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guiName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the created dataset in the GUI (if empty, the user will be prompted for a name) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Smart pointer to created group dataset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="237" column="13" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="688" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a011e09e8e64dfc5ba835596afec421e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> *</type>
+        <definition>ToggleAction * mv::DataManager::getSelectionGroupingAction</definition>
+        <argsstring>() override</argsstring>
+        <name>getSelectionGroupingAction</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1ab75c2abdc7acb4a5e7e7b27bfc38741d">getSelectionGroupingAction</reimplements>
+        <briefdescription>
+<para>Get selection grouping toggle action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to selection grouping toggle action (only valid if there is a current project) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="243" column="23" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="738" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1ad93406171b6e9fc6ecae84fe48e8e529" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classmv_1_1DatasetsListModel" kindref="compound">DatasetsListModel</ref> &amp;</type>
+        <definition>const DatasetsListModel &amp; mv::DataManager::getDatasetsListModel</definition>
+        <argsstring>() const override</argsstring>
+        <name>getDatasetsListModel</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1acfbc25b4864a2c7f7448098aedf78440">getDatasetsListModel</reimplements>
+        <briefdescription>
+<para>Get datasets list model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to datasets list model </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="251" column="29" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="746" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a805fd68f3e0415bc8dedbb7956b35081" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::linkFilterModelToDatasetsListModel</definition>
+        <argsstring>(QSortFilterProxyModel *filterModel) override</argsstring>
+        <name>linkFilterModelToDatasetsListModel</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a13f9934fcd7e95465bf38994f6a9655e">linkFilterModelToDatasetsListModel</reimplements>
+        <param>
+          <type>QSortFilterProxyModel *</type>
+          <declname>filterModel</declname>
+        </param>
+        <briefdescription>
+<para>Link <computeroutput>filterModel</computeroutput> to the datasets list model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to filter model </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="257" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="751" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1acae83e387cfc97cd98ce3074a1287b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load widget action from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>representation of the widget action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="265" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="761" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a6f9efaad13a3d5b08b70cc115e66aaf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::DataManager::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save widget action to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="271" column="17" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="766" bodyend="774"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1DataManager_1a9968f3fdc431de36368699981a5859ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::addRawData</definition>
+        <argsstring>(plugin::RawData *rawData) override</argsstring>
+        <name>addRawData</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1ac564746f4e85bdd898515c3a0dc4d3c3">addRawData</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <declname>rawData</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>rawData</computeroutput> to the manager (plugin manager remains the owner) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the raw data to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="64" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="86" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a522a2705b592d282b03a8dadfb9e3783" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::removeRawData</definition>
+        <argsstring>(const QString &amp;rawDataName) override</argsstring>
+        <name>removeRawData</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1aba583f0082307aa560a6fa0fa3927489">removeRawData</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Remove raw data with <computeroutput>rawDataName</computeroutput> from the manager if there are no more (selection) datasets referencing it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data to remove </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="70" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="108" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1aec8e9460c94f508a4938d74d318ab112" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::addDataset</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, Dataset&lt; DatasetImpl &gt; parentDataset, bool notify=true) override</argsstring>
+        <name>addDataset</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1abb0875748f0b4265c4d175c9505dd968">addDataset</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>parentDataset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>notify</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>dataset</computeroutput> to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> to added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent dataset (if any) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>notify</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to notify the core that a dataset is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="133" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="279" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a0bda8f0d2673dc60b0837a974e92128a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::addSelection</definition>
+        <argsstring>(const QString &amp;rawDataName, Dataset&lt; DatasetImpl &gt; selection) override</argsstring>
+        <name>addSelection</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1ad33af5e449ea0f238208ec72f85644f9">addSelection</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>selection</computeroutput> on <computeroutput>rawDataName</computeroutput> to the manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to selection dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="204" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="603" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DataManager_1a6aec720e0380cb574cd6400a9f4f3ea8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::DataManager::removeSelection</definition>
+        <argsstring>(const QString &amp;rawDataName) override</argsstring>
+        <name>removeSelection</name>
+        <reimplements refid="classmv_1_1AbstractDataManager_1a93933c16ebe8d0db03e29883552dc6bc">removeSelection</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataName</declname>
+        </param>
+        <briefdescription>
+<para>Removes selection of which the raw data name matches <computeroutput>rawDataName</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawDataName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the raw data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="227" column="10" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.cpp" bodystart="651" bodyend="686"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data manager. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Concrete implementation of the <ref refid="classmv_1_1AbstractDataManager" kindref="compound">AbstractDataManager</ref></para>
+<para>Provides storage place for:<itemizedlist>
+<listitem><para>Datasets</para>
+</listitem><listitem><para>Raw data</para>
+</listitem><listitem><para>Selections</para>
+</listitem></itemizedlist>
+</para>
+<para>Main purpose is to add, remove and retrieve datasets</para>
+<para><simplesect kind="author"><para>Thomas Kroes and Julian Thijssen </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataManager</label>
+        <link refid="classmv_1_1AbstractDataManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::DataManager</label>
+        <link refid="classmv_1_1DataManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataManager</label>
+        <link refid="classmv_1_1AbstractDataManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::DataManager</label>
+        <link refid="classmv_1_1DataManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/DataManager.h" line="37" column="1" bodyfile="Docs/external/core/ManiVault/src/private/DataManager.h" bodystart="38" bodyend="278"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DataManager_1adb09746038e14e9b9cbe262a55907654" prot="private" virt="non-virtual"><scope>mv::DataManager</scope><name>_datasets</name></member>
+      <member refid="classmv_1_1DataManager_1a748edea1c969324c5743d99916e5454f" prot="private" virt="non-virtual"><scope>mv::DataManager</scope><name>_datasetsListModel</name></member>
+      <member refid="classmv_1_1DataManager_1a9600e3d170b576d6966e76e19eb83caf" prot="private" virt="non-virtual"><scope>mv::DataManager</scope><name>_rawDataMap</name></member>
+      <member refid="classmv_1_1DataManager_1ac7742541f81bdffbcf833377c4a20f07" prot="private" virt="non-virtual"><scope>mv::DataManager</scope><name>_selections</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a3e412d7c35240bcb106cb4bf2c94472c" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>AbstractDataManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1DataManager_1aec8e9460c94f508a4938d74d318ab112" prot="protected" virt="virtual"><scope>mv::DataManager</scope><name>addDataset</name></member>
+      <member refid="classmv_1_1DataManager_1a9968f3fdc431de36368699981a5859ac" prot="protected" virt="virtual"><scope>mv::DataManager</scope><name>addRawData</name></member>
+      <member refid="classmv_1_1DataManager_1a0bda8f0d2673dc60b0837a974e92128a" prot="protected" virt="virtual"><scope>mv::DataManager</scope><name>addSelection</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1DataManager_1ad134a14721c8b57bfc2437b6c3e38039" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>createDataset</name></member>
+      <member refid="classmv_1_1DataManager_1aea3438e8b41c39b4417932cd502d3bc7" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>createDatasetWithoutSelection</name></member>
+      <member refid="classmv_1_1DataManager_1a69ff8e204969a313e2e54287b85f3357" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>createDerivedDataset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1DataManager_1a8e39751f3bcd823ef0b406096803cb3d" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>createSubsetFromSelection</name></member>
+      <member refid="classmv_1_1DataManager_1a78f52cc8fac4094e0b7c2827d62be76c" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>DataManager</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a757ec5d41671a0880c2e4c3027f13ba9" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>datasetAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a33f0899627aa817672e81e289aefc9d2" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>datasetAdded</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1ada7ddc11155258a93d5e5d98ea9a60f1" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>datasetRemoved</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1DataManager_1acae83e387cfc97cd98ce3074a1287b51" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractDataManager::"><scope>mv::DataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractDataManager::"><scope>mv::DataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1DataManager_1a1669e7b3fd1288ffa14c10f1fc149d84" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getAllDatasets</name></member>
+      <member refid="classmv_1_1DataManager_1a385fa13b9d924cd5c40eb841fe1ef898" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getAllSelections</name></member>
+      <member refid="classmv_1_1DataManager_1a8ac8d813c5a1b57adff66cbc698833bb" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1DataManager_1ad93406171b6e9fc6ecae84fe48e8e529" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getDatasetsListModel</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a828f6b0c34b3d219793b7f285dc5d860" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getOverallRawDataSize</name></member>
+      <member refid="classmv_1_1DataManager_1af35d76749bcee6f6bb6bb63f308991d9" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getRawData</name></member>
+      <member refid="classmv_1_1DataManager_1a630af5ac35a2857546c4606ec3ec3b15" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getRawDataNames</name></member>
+      <member refid="classmv_1_1DataManager_1a86bd492e5c8c83923c0261473bada316" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getRawDataSize</name></member>
+      <member refid="classmv_1_1DataManager_1a0e2c95476e2b16d89c55b5ee070bc5ce" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getRawDataType</name></member>
+      <member refid="classmv_1_1DataManager_1a19349ebb272af34658445e23706fcc39" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getSelection</name></member>
+      <member refid="classmv_1_1DataManager_1a011e09e8e64dfc5ba835596afec421e4" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>getSelectionGroupingAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1DataManager_1acb2a8e395b7fa65811d5c3be844c4e4b" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>groupDatasets</name></member>
+      <member refid="classmv_1_1DataManager_1a4679fb93d5a9d28a0cfc6f61db6310ff" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::DataManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::DataManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1DataManager_1a805fd68f3e0415bc8dedbb7956b35081" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>linkFilterModelToDatasetsListModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a11f2cbec53734b438f9ad6617ff107ab" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>rawDataAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a61ece8a64df45be1882e40df3e9b4969" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>rawDataAdded</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a2911cfe3ec258ba97e40ff34ba0d5b83" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>rawDataRemoved</name></member>
+      <member refid="classmv_1_1DataManager_1a9df0bfd70dc71a20b40236367d6a1e0e" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>removeDataset</name></member>
+      <member refid="classmv_1_1DataManager_1a474569a27162e84c6a9543d440e19539" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>removeDatasets</name></member>
+      <member refid="classmv_1_1DataManager_1a69ad982e94a4064c787d76a438c42969" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>removeDatasets</name></member>
+      <member refid="classmv_1_1DataManager_1a522a2705b592d282b03a8dadfb9e3783" prot="protected" virt="virtual"><scope>mv::DataManager</scope><name>removeRawData</name></member>
+      <member refid="classmv_1_1DataManager_1a6aec720e0380cb574cd6400a9f4f3ea8" prot="protected" virt="virtual"><scope>mv::DataManager</scope><name>removeSelection</name></member>
+      <member refid="classmv_1_1DataManager_1ab3dfde3a91dbb5ae8690953214c6b573" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a9b8d1870ff45a6c95020e8b8b6ccef8b" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>selectionAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1aa95a869814f143b7b5b67ad469ff978e" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>selectionAdded</name></member>
+      <member refid="classmv_1_1AbstractDataManager_1a348db827452788e5bf47c50ed2615bc9" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>selectionRemoved</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::DataManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1DataManager_1a6f9efaad13a3d5b08b70cc115e66aaf3" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractDataManager::"><scope>mv::DataManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1DataManager_1a216583c8af9267884008f6b21c7841a3" prot="public" virt="non-virtual"><scope>mv::DataManager</scope><name>~DataManager</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::DataManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

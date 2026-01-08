@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractPluginsModel_1_1Item" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractPluginsModel::Item</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItem</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginsModel_1_1CategoryItem" prot="public" virt="non-virtual">mv::AbstractPluginsModel::CategoryItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginsModel_1_1IdItem" prot="public" virt="non-virtual">mv::AbstractPluginsModel::IdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractPluginsModel_1_1NameItem" prot="public" virt="non-virtual">mv::AbstractPluginsModel::NameItem</derivedcompoundref>
+    <includes refid="AbstractPluginsModel_8h" local="no">AbstractPluginsModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractPluginsModel_1_1Item_1a766351a3deadea37328b440f0b262af2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+        <definition>plugin::Plugin* mv::AbstractPluginsModel::Item::_plugin</definition>
+        <argsstring></argsstring>
+        <name>_plugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" line="68" column="26" bodyfile="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractPluginsModel_1_1Item_1a728713537a76f599a61ed2a8c850b72a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractPluginsModel::Item::Item</definition>
+        <argsstring>(plugin::Plugin *plugin, const QString &amp;title)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to the <computeroutput>plugin</computeroutput> and <computeroutput>title</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to plugin (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1AbstractPluginsModel_1_1Item" kindref="compound">Item</ref> title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" line="53" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginsModel_1_1Item_1ad7effca0f03dc6a0c5c9cecb4d6c34e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::AbstractPluginsModel::Item::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" line="59" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.cpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginsModel_1_1Item_1a37c2c39aacc6c91b91f35896f56dd1c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+        <definition>plugin::Plugin * mv::AbstractPluginsModel::Item::getPlugin</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlugin</name>
+        <briefdescription>
+<para>Get plugin return Pointer to plugin (maybe nullptr) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" line="65" column="24" bodyfile="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base standard model item class for a dataset. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>mv::AbstractPluginsModel::NameItem</label>
+        <link refid="classmv_1_1AbstractPluginsModel_1_1NameItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::AbstractPluginsModel::IdItem</label>
+        <link refid="classmv_1_1AbstractPluginsModel_1_1IdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="3">
+        <label>mv::AbstractPluginsModel::CategoryItem</label>
+        <link refid="classmv_1_1AbstractPluginsModel_1_1CategoryItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractPluginsModel::Item</label>
+        <link refid="classmv_1_1AbstractPluginsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractPluginsModel::Item</label>
+        <link refid="classmv_1_1AbstractPluginsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" line="45" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractPluginsModel.h" bodystart="45" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractPluginsModel_1_1Item_1a766351a3deadea37328b440f0b262af2" prot="private" virt="non-virtual"><scope>mv::AbstractPluginsModel::Item</scope><name>_plugin</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1_1Item_1ad7effca0f03dc6a0c5c9cecb4d6c34e6" prot="public" virt="non-virtual"><scope>mv::AbstractPluginsModel::Item</scope><name>data</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1_1Item_1a37c2c39aacc6c91b91f35896f56dd1c2" prot="public" virt="non-virtual"><scope>mv::AbstractPluginsModel::Item</scope><name>getPlugin</name></member>
+      <member refid="classmv_1_1AbstractPluginsModel_1_1Item_1a728713537a76f599a61ed2a8c850b72a" prot="public" virt="non-virtual"><scope>mv::AbstractPluginsModel::Item</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

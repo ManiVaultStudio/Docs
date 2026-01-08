@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1Page" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::Page</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWebEnginePage</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1Page_1a97fcd9978571b4334ed88c2c750a8717" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::Page::Page</definition>
+        <argsstring>(QWebEngineProfile *profile, QObject *parent=nullptr)</argsstring>
+        <name>Page</name>
+        <param>
+          <type>QWebEngineProfile *</type>
+          <declname>profile</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with profile and optional parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>profile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Profile object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" line="42" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1Page_1a74097ea2cf5b4a86721a1663b41ec291" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::Page::javaScriptConsoleMessage</definition>
+        <argsstring>(JavaScriptConsoleMessageLevel level, const QString &amp;message, int line, const QString &amp;source) override</argsstring>
+        <name>javaScriptConsoleMessage</name>
+        <param>
+          <type>JavaScriptConsoleMessageLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Handle JavaScript console messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of the message </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message content </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" line="56" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1Page_1a9f7fd60567896ec94c1ac6a1212d88f9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::Page::acceptNavigationRequest</definition>
+        <argsstring>(const QUrl &amp;url, NavigationType type, bool isMainFrame) override</argsstring>
+        <name>acceptNavigationRequest</name>
+        <param>
+          <type>const QUrl &amp;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>NavigationType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isMainFrame</declname>
+        </param>
+        <briefdescription>
+<para>Handle navigation requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to navigate to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of navigation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isMainFrame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the navigation is for the main frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" line="67" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Custom QWebEnginePage to handle JavaScript console messages and navigation requests. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::Page</label>
+        <link refid="classmv_1_1gui_1_1Page"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWebEnginePage</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::Page</label>
+        <link refid="classmv_1_1gui_1_1Page"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWebEnginePage</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" line="33" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/SplashScreenWidget.cpp" bodystart="34" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1Page_1a9f7fd60567896ec94c1ac6a1212d88f9" prot="protected" virt="non-virtual"><scope>mv::gui::Page</scope><name>acceptNavigationRequest</name></member>
+      <member refid="classmv_1_1gui_1_1Page_1a74097ea2cf5b4a86721a1663b41ec291" prot="protected" virt="non-virtual"><scope>mv::gui::Page</scope><name>javaScriptConsoleMessage</name></member>
+      <member refid="classmv_1_1gui_1_1Page_1a97fcd9978571b4334ed88c2c750a8717" prot="public" virt="non-virtual"><scope>mv::gui::Page</scope><name>Page</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classStartPageWidget" kind="class" language="C++" prot="public">
+    <compoundname>StartPageWidget</compoundname>
+    <basecompoundref refid="classPageWidget" prot="public" virt="non-virtual">PageWidget</basecompoundref>
+    <includes refid="StartPageWidget_8h" local="no">StartPageWidget.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classStartPageWidget_1ab77b80879d15992bffa0d8277bdfba45" prot="protected" static="no" mutable="no">
+        <type><ref refid="classStartPageContentWidget" kindref="compound">StartPageContentWidget</ref></type>
+        <definition>StartPageContentWidget StartPageWidget::_startPageContentWidget</definition>
+        <argsstring></argsstring>
+        <name>_startPageContentWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/StartPageWidget.h" line="37" column="29" bodyfile="Docs/external/core/ManiVault/src/private/StartPageWidget.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStartPageWidget_1af2998d2dc00bc3c01562fa8161fdcbf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StartPageWidget::StartPageWidget</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>StartPageWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/StartPageWidget.h" line="28" column="5" bodyfile="Docs/external/core/ManiVault/src/private/StartPageWidget.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classStartPageWidget_1a0d7331b4be7543866489974b152f9ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StartPageWidget::showEvent</definition>
+        <argsstring>(QShowEvent *showEvent) override</argsstring>
+        <name>showEvent</name>
+        <param>
+          <type>QShowEvent *</type>
+          <declname>showEvent</declname>
+        </param>
+        <briefdescription>
+<para>Override show event to update start page actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>showEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to show event which occurred </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/StartPageWidget.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/private/StartPageWidget.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Start page widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Shows various project-related operations.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageWidget</label>
+        <link refid="classPageWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StartPageWidget</label>
+        <link refid="classStartPageWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>StartPageContentWidget</label>
+        <link refid="classStartPageContentWidget"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PageWidget</label>
+        <link refid="classPageWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>StartPageWidget</label>
+        <link refid="classStartPageWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_startPageContentWidget</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+      <node id="6">
+        <label>PageContentWidget</label>
+        <link refid="classPageContentWidget"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/StartPageWidget.h" line="20" column="1" bodyfile="Docs/external/core/ManiVault/src/private/StartPageWidget.h" bodystart="21" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classStartPageWidget_1ab77b80879d15992bffa0d8277bdfba45" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>_startPageContentWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>StartPageWidget</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>StartPageWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classPageWidget_1adfd2fbb644806a902fcfed4528ca96d4" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>getContentLayout</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getId</name></member>
+      <member refid="classPageWidget_1accdfc7a1fe4011f2aa236a556682b6c8" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getPageHeaderWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>operator==</name></member>
+      <member refid="classPageWidget_1af519f88a4d4638bcbd890504a3e6367d" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>PageWidget</name></member>
+      <member refid="classPageWidget_1ade8a7d1f43c4545def4484ca3b7fe2bd" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>paintEvent</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>setSerializationName</name></member>
+      <member refid="classStartPageWidget_1a0d7331b4be7543866489974b152f9ec3" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>showEvent</name></member>
+      <member refid="classStartPageWidget_1af2998d2dc00bc3c01562fa8161fdcbf8" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>StartPageWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>StartPageWidget</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>StartPageWidget</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>StartPageWidget</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>StartPageWidget</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

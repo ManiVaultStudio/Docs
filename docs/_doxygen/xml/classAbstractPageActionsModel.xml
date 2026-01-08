@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAbstractPageActionsModel" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AbstractPageActionsModel</compoundname>
+    <basecompoundref refid="classmv_1_1StandardItemModel" prot="public" virt="non-virtual">mv::StandardItemModel</basecompoundref>
+    <derivedcompoundref refid="classPageActionsTreeModel" prot="public" virt="non-virtual">PageActionsTreeModel</derivedcompoundref>
+    <includes refid="AbstractPageActionsModel_8h" local="no">AbstractPageActionsModel.h</includes>
+    <innerclass refid="classAbstractPageActionsModel_1_1Item" prot="public">AbstractPageActionsModel::Item</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classAbstractPageActionsModel_1ac7c54b5f7bf68d245945e6f73da1adb7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classAbstractPageActionsModel_1ac7c54b5f7bf68d245945e6f73da1adb7ab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classAbstractPageActionsModel_1ac7c54b5f7bf68d245945e6f73da1adb7ae93f994f01c537c4e2f7d8528c3eb5e9" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para>Title. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="26" column="5" bodyfile="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAbstractPageActionsModel_1a683bcd4426233d6e183e828dd031a487" prot="private" static="no" mutable="no">
+        <type><ref refid="PageAction_8h_1ae60f1fbbbd8ee919b843a2ae01d86ccd" kindref="member">PageActionSharedPtrs</ref></type>
+        <definition>PageActionSharedPtrs AbstractPageActionsModel::_pageActions</definition>
+        <argsstring></argsstring>
+        <name>_pageActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="79" column="27" bodyfile="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractPageActionsModel_1a5513f2df9f3198704a8059c982032ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPageActionsModel::AbstractPageActionsModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>AbstractPageActionsModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="61" column="5" bodyfile="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPageActionsModel_1ae43cadd6a893f0e28a5647bd01079431" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AbstractPageActionsModel::add</definition>
+        <argsstring>(const PageActionSharedPtr &amp;pageAction)=0</argsstring>
+        <name>add</name>
+        <reimplementedby refid="classPageActionsTreeModel_1ab8e1540987b775ff332da2d30c05770f">add</reimplementedby>
+        <param>
+          <type>const <ref refid="PageAction_8h_1a3777339ff2452cccfc9d03812771eea7" kindref="member">PageActionSharedPtr</ref> &amp;</type>
+          <declname>pageAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>pageAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pageAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to page action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="67" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPageActionsModel_1a5f472b739c6a6fc04edc9914f51dd67b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AbstractPageActionsModel::remove</definition>
+        <argsstring>(const PageActionSharedPtr &amp;pageAction)=0</argsstring>
+        <name>remove</name>
+        <reimplementedby refid="classPageActionsTreeModel_1aae2911bd71e1805abf154193f05478b0">remove</reimplementedby>
+        <param>
+          <type>const <ref refid="PageAction_8h_1a3777339ff2452cccfc9d03812771eea7" kindref="member">PageActionSharedPtr</ref> &amp;</type>
+          <declname>pageAction</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>pageAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pageAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to page action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractPageActionsModel_1a143d52044b6713e75beb53cc4f3f595b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractPageActionsModel::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Resets the rows and notifies others. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="76" column="10" bodyfile="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract page actions model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract base class for page actions.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AbstractPageActionsModel</label>
+        <link refid="classAbstractPageActionsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PageActionsTreeModel</label>
+        <link refid="classPageActionsTreeModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>AbstractPageActionsModel</label>
+        <link refid="classAbstractPageActionsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" line="21" column="1" bodyfile="Docs/external/core/ManiVault/src/private/AbstractPageActionsModel.h" bodystart="22" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classAbstractPageActionsModel_1a683bcd4426233d6e183e828dd031a487" prot="private" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>_pageActions</name></member>
+      <member refid="classAbstractPageActionsModel_1a5513f2df9f3198704a8059c982032ca3" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>AbstractPageActionsModel</name></member>
+      <member refid="classAbstractPageActionsModel_1ae43cadd6a893f0e28a5647bd01079431" prot="public" virt="pure-virtual"><scope>AbstractPageActionsModel</scope><name>add</name></member>
+      <member refid="classAbstractPageActionsModel_1ac7c54b5f7bf68d245945e6f73da1adb7" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>AbstractPageActionsModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>AbstractPageActionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>AbstractPageActionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>AbstractPageActionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>AbstractPageActionsModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>populationModeChanged</name></member>
+      <member refid="classAbstractPageActionsModel_1a5f472b739c6a6fc04edc9914f51dd67b" prot="public" virt="pure-virtual"><scope>AbstractPageActionsModel</scope><name>remove</name></member>
+      <member refid="classAbstractPageActionsModel_1a143d52044b6713e75beb53cc4f3f595b" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>reset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>AbstractPageActionsModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>AbstractPageActionsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>AbstractPageActionsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>AbstractPageActionsModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

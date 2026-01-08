@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1LearningCenterVideosModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::LearningCenterVideosModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItemModel</basecompoundref>
+    <includes refid="LearningCenterVideosModel_8h" local="no">LearningCenterVideosModel.h</includes>
+    <innerclass refid="structmv_1_1LearningCenterVideosModel_1_1ColumHeaderInfo" prot="public">mv::LearningCenterVideosModel::ColumHeaderInfo</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1DateItem" prot="protected">mv::LearningCenterVideosModel::DateItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1DelegateItem" prot="protected">mv::LearningCenterVideosModel::DelegateItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1Item" prot="public">mv::LearningCenterVideosModel::Item</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1ResourceItem" prot="protected">mv::LearningCenterVideosModel::ResourceItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1Row" prot="protected">mv::LearningCenterVideosModel::Row</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1SummaryItem" prot="protected">mv::LearningCenterVideosModel::SummaryItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1TagsItem" prot="protected">mv::LearningCenterVideosModel::TagsItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1ThumbnailItem" prot="protected">mv::LearningCenterVideosModel::ThumbnailItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1TitleItem" prot="protected">mv::LearningCenterVideosModel::TitleItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterVideosModel_1_1TypeItem" prot="protected">mv::LearningCenterVideosModel::TypeItem</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404aa1fa27779242b4902f7ae3bdd5c6d508" prot="public">
+          <name>Type</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404ab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404a189f63f277cd73395561651753563065" prot="public">
+          <name>Tags</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404a44749712dbec183e983dcd78a7736c41" prot="public">
+          <name>Date</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404a290612199861c31d1036b185b4e69b75" prot="public">
+          <name>Summary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404abe8545ae7ab0276e15898aae7acfbd7a" prot="public">
+          <name>Resource</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404ab7c161bb87bb0308fb25e6f68d0a5632" prot="public">
+          <name>Thumbnail</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404a26545d7107c7489959a37bd671181fca" prot="public">
+          <name>Delegate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404ae93f994f01c537c4e2f7d8528c3eb5e9" prot="public">
+          <name>Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" bodystart="30" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1LearningCenterVideosModel_1a8d9db11cd16e9c3f81289d294191a28a" prot="public" static="yes" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404" kindref="member">Column</ref>, <ref refid="structmv_1_1LearningCenterVideosModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
+        <definition>QMap&lt; LearningCenterVideosModel::Column, LearningCenterVideosModel::ColumHeaderInfo &gt; mv::LearningCenterVideosModel::columnInfo</definition>
+        <argsstring></argsstring>
+        <name>columnInfo</name>
+        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404" kindref="member">Column</ref>, <ref refid="structmv_1_1LearningCenterVideosModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref>&gt;({
+    { <ref refid="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404ab78a3223503896721cca1303f776159b" kindref="member">Column::Title</ref>, { &quot;Title&quot; , &quot;Title&quot;, &quot;Video title&quot; } },
+    { Column::Tags, { &quot;Tags&quot; , &quot;Tags&quot;, &quot;Video tags&quot; } },
+    { Column::Date, { &quot;Date&quot; , &quot;Date&quot;, &quot;Video date&quot; } },
+    { Column::Type, { &quot;Type&quot; , &quot;<ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref>&quot;, &quot;Video type&quot; } },
+    { Column::Summary, { &quot;Summary&quot; , &quot;Summary&quot;, &quot;Video description&quot; } },
+    { Column::Resource, { &quot;Resource&quot; , &quot;Resource&quot;, &quot;Video resource&quot; } },
+    { Column::Thumbnail, { &quot;Thumbnail&quot; , &quot;Thumbnail&quot;, &quot;Thumbnail&quot; } },
+    { Column::Delegate, { &quot;Delegate&quot; , &quot;Delegate&quot;, &quot;Delegate&quot; } }
+})</initializer>
+        <briefdescription>
+<para>Column name and tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="51" column="17" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1LearningCenterVideosModel_1a2ab1a531654c93868ec851bab678407e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1util_1a1be81995e9a802912a798f877b0efef4" kindref="member">util::LearningCenterVideos</ref></type>
+        <definition>util::LearningCenterVideos mv::LearningCenterVideosModel::_videos</definition>
+        <argsstring></argsstring>
+        <name>_videos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="421" column="37" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1LearningCenterVideosModel_1a4a02034a430ac637b887a07c5241326d" prot="private" static="no" mutable="no">
+        <type>QSet&lt; QString &gt;</type>
+        <definition>QSet&lt;QString&gt; mv::LearningCenterVideosModel::_tags</definition>
+        <argsstring></argsstring>
+        <name>_tags</name>
+        <briefdescription>
+<para>Model videos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="422" column="28" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1LearningCenterVideosModel_1a2e46981f2b90a5e0017c0346410cfa7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::LearningCenterVideosModel::LearningCenterVideosModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>LearningCenterVideosModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="386" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterVideosModel_1afe121f6a970bd0d8f395b38d01867130" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::LearningCenterVideosModel::headerData</definition>
+        <argsstring>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>section</computeroutput>, <computeroutput>orientation</computeroutput> and display <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Section </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="395" column="14" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.cpp" bodystart="32" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterVideosModel_1a555870fe5fbcfa1c32ff12513afc2526" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QSet&lt; QString &gt;</type>
+        <definition>QSet&lt; QString &gt; mv::LearningCenterVideosModel::getTagsSet</definition>
+        <argsstring>() const</argsstring>
+        <name>getTagsSet</name>
+        <briefdescription>
+<para>Get tags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All tags </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="401" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterVideosModel_1a35db28a26e4e407d8e4282173c3e79c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterVideosModel::addVideo</definition>
+        <argsstring>(const util::LearningCenterVideo *video)</argsstring>
+        <name>addVideo</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1LearningCenterVideo" kindref="compound">util::LearningCenterVideo</ref> *</type>
+          <declname>video</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>video</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>video</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to video to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="407" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.cpp" bodystart="73" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterVideosModel_1a2dfb6d27e922d02fcb6e47e2e593b31a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterVideosModel::updateTags</definition>
+        <argsstring>()</argsstring>
+        <name>updateTags</name>
+        <briefdescription>
+<para>Builds a set of all video tags and emits LearningCenterVideosModel::tagsChanged(...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="410" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.cpp" bodystart="88" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1LearningCenterVideosModel_1a05157a21ee799b45bad0b61e3d994eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterVideosModel::tagsChanged</definition>
+        <argsstring>(const QSet&lt; QString &gt; &amp;tags)</argsstring>
+        <name>tagsChanged</name>
+        <param>
+          <type>const QSet&lt; QString &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the tags changed to <computeroutput>tags</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New tags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="418" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Learning center videos model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains video content for the learning center</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="1">
+        <label>mv::LearningCenterVideosModel</label>
+        <link refid="classmv_1_1LearningCenterVideosModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="1">
+        <label>mv::LearningCenterVideosModel</label>
+        <link refid="classmv_1_1LearningCenterVideosModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>columnInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QMap&lt; Column, mv::LearningCenterVideosModel::ColumHeaderInfo &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterVideosModel.h" bodystart="24" bodyend="423"/>
+    <listofallmembers>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a4a02034a430ac637b887a07c5241326d" prot="private" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>_tags</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a2ab1a531654c93868ec851bab678407e" prot="private" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>_videos</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a35db28a26e4e407d8e4282173c3e79c2" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>addVideo</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a7ba624d51ad56589f90afcc1211a2404" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a8d9db11cd16e9c3f81289d294191a28a" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a555870fe5fbcfa1c32ff12513afc2526" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>getTagsSet</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1afe121f6a970bd0d8f395b38d01867130" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>headerData</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a2e46981f2b90a5e0017c0346410cfa7b" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>LearningCenterVideosModel</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a05157a21ee799b45bad0b61e3d994eee" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>tagsChanged</name></member>
+      <member refid="classmv_1_1LearningCenterVideosModel_1a2dfb6d27e922d02fcb6e47e2e593b31a" prot="public" virt="non-virtual"><scope>mv::LearningCenterVideosModel</scope><name>updateTags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

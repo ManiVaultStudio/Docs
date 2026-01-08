@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classAbstractItemModelTester" kind="class" language="C++" prot="public">
+    <compoundname>AbstractItemModelTester</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="AbstractItemModelTester_8h" local="no">AbstractItemModelTester.h</includes>
+    <innerclass refid="structAbstractItemModelTester_1_1Changing" prot="private">AbstractItemModelTester::Changing</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAbstractItemModelTester_1acbea4dcd08038104b87856ce9a159af2" prot="private" static="no" mutable="no">
+        <type>QAbstractItemModel *</type>
+        <definition>QAbstractItemModel* AbstractItemModelTester::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="41" column="24" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractItemModelTester_1a030ccbc55c32c231210190782f3f9e92" prot="private" static="no" mutable="no">
+        <type>QStack&lt; Changing &gt;</type>
+        <definition>QStack&lt;Changing&gt; AbstractItemModelTester::insert</definition>
+        <argsstring></argsstring>
+        <name>insert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="50" column="12" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractItemModelTester_1acb186acc33d919e90688f39c94881931" prot="private" static="no" mutable="no">
+        <type>QStack&lt; Changing &gt;</type>
+        <definition>QStack&lt;Changing&gt; AbstractItemModelTester::remove</definition>
+        <argsstring></argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="51" column="12" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractItemModelTester_1a6515257fc4a789150a7a6d243dd1575c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AbstractItemModelTester::fetchingMore</definition>
+        <argsstring></argsstring>
+        <name>fetchingMore</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAbstractItemModelTester_1a1ffd06ea73e719dc40c38d52151555f4" prot="private" static="no" mutable="no">
+        <type>QList&lt; QPersistentModelIndex &gt;</type>
+        <definition>QList&lt;QPersistentModelIndex&gt; AbstractItemModelTester::changing</definition>
+        <argsstring></argsstring>
+        <name>changing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="55" column="11" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractItemModelTester_1a262676e74919ba854f8e0fb9d44a1557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractItemModelTester::AbstractItemModelTester</definition>
+        <argsstring>(QAbstractItemModel *model, QObject *parent=nullptr)</argsstring>
+        <name>AbstractItemModelTester</name>
+        <param>
+          <type>QAbstractItemModel *</type>
+          <declname>model</declname>
+          <defname>_model</defname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Connect to all of the models signals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whenever anything happens recheck everything. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="18" column="5" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="16" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classAbstractItemModelTester_1afcbfb47b464b270ac9cc2c9163a9bd47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::nonDestructiveBasicTest</definition>
+        <argsstring>()</argsstring>
+        <name>nonDestructiveBasicTest</name>
+        <briefdescription>
+<para>nonDestructiveBasicTest tries to call a number of the basic functions (not all) to make sure the model doesn&apos;t outright segfault, testing the functions that makes sense. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="21" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="79" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a28b3f054fefbac6a904cdee53b271a81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::rowCount</definition>
+        <argsstring>()</argsstring>
+        <name>rowCount</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of QAbstractItemModel::rowCount() and hasChildren() </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Models that are dynamically populated are not as fully tested here. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="22" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="118" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1af852d76b206fb428eeac078d3754a19e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::columnCount</definition>
+        <argsstring>()</argsstring>
+        <name>columnCount</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of QAbstractItemModel::columnCount() and hasChildren() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="23" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="143" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a00ffac42ff3ddc3ccdbac98ba4fd907a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::hasIndex</definition>
+        <argsstring>()</argsstring>
+        <name>hasIndex</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of QAbstractItemModel::hasIndex() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="24" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="161" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a0fe8c8c9b2d86960dfcf42ae10d59ebf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::index</definition>
+        <argsstring>()</argsstring>
+        <name>index</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of QAbstractItemModel::index() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="25" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="185" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1ace6f2dbb0e424f60374cb16160cb1855" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::parent</definition>
+        <argsstring>()</argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of QAbstractItemModel::parent() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="26" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="217" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1ad8b94f9133a12055d1a649e328a6879a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::data</definition>
+        <argsstring>()</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Tests model&apos;s implementation of <ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">QAbstractItemModel::data()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="27" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="373" bodyend="432"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a6728a48cd4b246fd7e1d478bda8b7a14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::runAllTests</definition>
+        <argsstring>()</argsstring>
+        <name>runAllTests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="30" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a8c1f25c11b893d42220c5ac31c81f5ed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::layoutAboutToBeChanged</definition>
+        <argsstring>()</argsstring>
+        <name>layoutAboutToBeChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="31" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="472" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a1326482fa39dba499743210d2527d36d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::layoutChanged</definition>
+        <argsstring>()</argsstring>
+        <name>layoutChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="32" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="478" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a5b2c5082ba0568ec74e6d0f0c0145c1b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::rowsAboutToBeInserted</definition>
+        <argsstring>(const QModelIndex &amp;parent, int start, int end)</argsstring>
+        <name>rowsAboutToBeInserted</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Store what is about to be inserted to make sure it actually happens. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractItemModelTester_1aa8f5a55428e8ecb6624249b51b800bba" kindref="member">rowsInserted()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="33" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="439" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1aa8f5a55428e8ecb6624249b51b800bba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::rowsInserted</definition>
+        <argsstring>(const QModelIndex &amp;parent, int start, int end)</argsstring>
+        <name>rowsInserted</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Confirm that what was said was going to happen actually did. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractItemModelTester_1a5b2c5082ba0568ec74e6d0f0c0145c1b" kindref="member">rowsAboutToBeInserted()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="455" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1a713432fe15f9d4b02bfb11a39955efb9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::rowsAboutToBeRemoved</definition>
+        <argsstring>(const QModelIndex &amp;parent, int start, int end)</argsstring>
+        <name>rowsAboutToBeRemoved</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Store what is about to be inserted to make sure it actually happens. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractItemModelTester_1ad82bad59daac32da3373d6e125699ece" kindref="member">rowsRemoved()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="35" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="492" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="slot" id="classAbstractItemModelTester_1ad82bad59daac32da3373d6e125699ece" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::rowsRemoved</definition>
+        <argsstring>(const QModelIndex &amp;parent, int start, int end)</argsstring>
+        <name>rowsRemoved</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Confirm that what was said was going to happen actually did. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classAbstractItemModelTester_1a713432fe15f9d4b02bfb11a39955efb9" kindref="member">rowsAboutToBeRemoved()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="36" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="507" bodyend="514"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAbstractItemModelTester_1a78c06477e28d43ad5ce3d2ddbe3e0248" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AbstractItemModelTester::checkChildren</definition>
+        <argsstring>(const QModelIndex &amp;parent, int currentDepth=0)</argsstring>
+        <name>checkChildren</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>currentDepth</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Called from the parent() test. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A model that returns an index of parent X should also return X when asking for the parent of the index.</para>
+<para>This recursive function does pretty extensive testing on the whole model in an effort to catch edge cases.</para>
+<para>This function assumes that rowCount(), columnCount() and index() already work. If they have a bug it will point it out, but the above tests should have already found the basic bugs because it is easier to figure out the problem in those tests then this one. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="39" column="10" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.cpp" bodystart="276" bodyend="368"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>AbstractItemModelTester</label>
+        <link refid="classAbstractItemModelTester"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>AbstractItemModelTester</label>
+        <link refid="classAbstractItemModelTester"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" line="13" column="1" bodyfile="Docs/external/core/ManiVault/src/util/AbstractItemModelTester.h" bodystart="14" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classAbstractItemModelTester_1a262676e74919ba854f8e0fb9d44a1557" prot="public" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>AbstractItemModelTester</name></member>
+      <member refid="classAbstractItemModelTester_1a1ffd06ea73e719dc40c38d52151555f4" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>changing</name></member>
+      <member refid="classAbstractItemModelTester_1a78c06477e28d43ad5ce3d2ddbe3e0248" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>checkChildren</name></member>
+      <member refid="classAbstractItemModelTester_1af852d76b206fb428eeac078d3754a19e" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>columnCount</name></member>
+      <member refid="classAbstractItemModelTester_1ad8b94f9133a12055d1a649e328a6879a" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>data</name></member>
+      <member refid="classAbstractItemModelTester_1a6515257fc4a789150a7a6d243dd1575c" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>fetchingMore</name></member>
+      <member refid="classAbstractItemModelTester_1a00ffac42ff3ddc3ccdbac98ba4fd907a" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>hasIndex</name></member>
+      <member refid="classAbstractItemModelTester_1a0fe8c8c9b2d86960dfcf42ae10d59ebf" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>index</name></member>
+      <member refid="classAbstractItemModelTester_1a030ccbc55c32c231210190782f3f9e92" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>insert</name></member>
+      <member refid="classAbstractItemModelTester_1a8c1f25c11b893d42220c5ac31c81f5ed" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>layoutAboutToBeChanged</name></member>
+      <member refid="classAbstractItemModelTester_1a1326482fa39dba499743210d2527d36d" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>layoutChanged</name></member>
+      <member refid="classAbstractItemModelTester_1acbea4dcd08038104b87856ce9a159af2" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>model</name></member>
+      <member refid="classAbstractItemModelTester_1afcbfb47b464b270ac9cc2c9163a9bd47" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>nonDestructiveBasicTest</name></member>
+      <member refid="classAbstractItemModelTester_1ace6f2dbb0e424f60374cb16160cb1855" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>parent</name></member>
+      <member refid="classAbstractItemModelTester_1acb186acc33d919e90688f39c94881931" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>remove</name></member>
+      <member refid="classAbstractItemModelTester_1a28b3f054fefbac6a904cdee53b271a81" prot="private" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>rowCount</name></member>
+      <member refid="classAbstractItemModelTester_1a5b2c5082ba0568ec74e6d0f0c0145c1b" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>rowsAboutToBeInserted</name></member>
+      <member refid="classAbstractItemModelTester_1a713432fe15f9d4b02bfb11a39955efb9" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>rowsAboutToBeRemoved</name></member>
+      <member refid="classAbstractItemModelTester_1aa8f5a55428e8ecb6624249b51b800bba" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>rowsInserted</name></member>
+      <member refid="classAbstractItemModelTester_1ad82bad59daac32da3373d6e125699ece" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>rowsRemoved</name></member>
+      <member refid="classAbstractItemModelTester_1a6728a48cd4b246fd7e1d478bda8b7a14" prot="protected" virt="non-virtual"><scope>AbstractItemModelTester</scope><name>runAllTests</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

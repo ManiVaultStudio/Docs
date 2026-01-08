@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1SelectionMap" kind="class" language="C++" prot="public">
+    <compoundname>mv::SelectionMap</compoundname>
+    <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
+    <includes refid="LinkedData_8h" local="no">LinkedData.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034acccd5fd8c8f59fe9373c56b1b951780c" prot="public">
+          <name>Indexed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034aee4b7fa387bb06357bc43cf81d66b08e" prot="public">
+          <name>ImagePyramid</name>
+          <briefdescription>
+<para>Using mapped indices. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Using image pyramids </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of selection mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="24" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" prot="public" static="no">
+        <type>std::vector&lt; std::uint32_t &gt;</type>
+        <definition>using mv::SelectionMap::Indices =  std::vector&lt;std::uint32_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>Indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" prot="public" static="no">
+        <type>std::map&lt; std::uint32_t, <ref refid="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" kindref="member">Indices</ref> &gt;</type>
+        <definition>using mv::SelectionMap::Map =  std::map&lt;std::uint32_t, Indices&gt;</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1SelectionMap_1a0080c75b5cfc80fa47eae329705e1ec3" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" kindref="member">Type</ref></type>
+        <definition>Type mv::SelectionMap::_type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="87" column="13" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1SelectionMap_1a2298e8cc27b043ab96b38ad9f9e1515b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref></type>
+        <definition>Map mv::SelectionMap::_map</definition>
+        <argsstring></argsstring>
+        <name>_map</name>
+        <briefdescription>
+<para>The type of selection map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="88" column="13" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1SelectionMap_1afe75d0639b5c632a4dd3e6c772b64887" prot="private" static="no" mutable="no">
+        <type>QSize</type>
+        <definition>QSize mv::SelectionMap::_sourceImageSize</definition>
+        <argsstring></argsstring>
+        <name>_sourceImageSize</name>
+        <briefdescription>
+<para>Map contents (when mapping type is indexed) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="89" column="13" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1SelectionMap_1ae497759ec307926be1162b73b1c6b83f" prot="private" static="no" mutable="no">
+        <type>QSize</type>
+        <definition>QSize mv::SelectionMap::_targetImageSize</definition>
+        <argsstring></argsstring>
+        <name>_targetImageSize</name>
+        <briefdescription>
+<para>Source image size (when mapping type is image pyramid) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="90" column="13" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a1b49711bbc83c0e7c98ee6f0b939f6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::SelectionMap::SelectionMap</definition>
+        <argsstring>(Type type=Type::Indexed)</argsstring>
+        <name>SelectionMap</name>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" kindref="member">Type</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034acccd5fd8c8f59fe9373c56b1b951780c" kindref="member">Type::Indexed</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructs a selection mapping of <computeroutput>type</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of selection mapping </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1ad5dbcb2a55fc6dc6e6b45730a3685ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::SelectionMap::SelectionMap</definition>
+        <argsstring>(const QSize &amp;sourceImageSize, const QSize &amp;targetImageSize)</argsstring>
+        <name>SelectionMap</name>
+        <param>
+          <type>const QSize &amp;</type>
+          <declname>sourceImageSize</declname>
+        </param>
+        <param>
+          <type>const QSize &amp;</type>
+          <declname>targetImageSize</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an image pyramid selection mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceImageSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resolution of the source image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetImageSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resolution of the target image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="46" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a3cc1fa71f535eb52310c809c37e9c32b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::SelectionMap::populateMappingIndices</definition>
+        <argsstring>(std::uint32_t pointIndex, Indices &amp;indices) const</argsstring>
+        <name>populateMappingIndices</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>pointIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" kindref="member">Indices</ref> &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Populate mapping <computeroutput>indices</computeroutput> for <computeroutput>pointIndex</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point index for which to populate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mapping indices </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="27" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a28861b5e4b6ebbf116e4a64adf91124f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref> &amp;</type>
+        <definition>Map&amp; mv::SelectionMap::getMap</definition>
+        <argsstring>()</argsstring>
+        <name>getMap</name>
+        <briefdescription>
+<para>Get map for indexed pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Index map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="59" column="9" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a43d0b1ed4f2706ba10b0282e8d0e6eab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref> &amp;</type>
+        <definition>const Map&amp; mv::SelectionMap::getMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getMap</name>
+        <briefdescription>
+<para>Get map for indexed pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Index map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="65" column="15" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a70dbf8ad519e1c7aa79d6d9452010250" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::SelectionMap::hasMappingForPointIndex</definition>
+        <argsstring>(std::uint32_t pointIndex) const</argsstring>
+        <name>hasMappingForPointIndex</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>pointIndex</declname>
+        </param>
+        <briefdescription>
+<para>Establishes whether a mapping exists for <computeroutput>pointIndex</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pointIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point index to check for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether a mapping exists for <computeroutput>pointIndex</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a9f1662d990794dd1ca08f0c6c47683e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::SelectionMap::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="93" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionMap_1a3a4f03ca8e4679f95294f3a13684016a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::SelectionMap::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="84" column="17" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="129" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::SelectionMap</label>
+        <link refid="classmv_1_1SelectionMap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::SelectionMap</label>
+        <link refid="classmv_1_1SelectionMap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="19" column="1" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="20" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classmv_1_1SelectionMap_1a2298e8cc27b043ab96b38ad9f9e1515b" prot="private" virt="non-virtual"><scope>mv::SelectionMap</scope><name>_map</name></member>
+      <member refid="classmv_1_1SelectionMap_1afe75d0639b5c632a4dd3e6c772b64887" prot="private" virt="non-virtual"><scope>mv::SelectionMap</scope><name>_sourceImageSize</name></member>
+      <member refid="classmv_1_1SelectionMap_1ae497759ec307926be1162b73b1c6b83f" prot="private" virt="non-virtual"><scope>mv::SelectionMap</scope><name>_targetImageSize</name></member>
+      <member refid="classmv_1_1SelectionMap_1a0080c75b5cfc80fa47eae329705e1ec3" prot="private" virt="non-virtual"><scope>mv::SelectionMap</scope><name>_type</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::SelectionMap</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1SelectionMap_1a9f1662d990794dd1ca08f0c6c47683e2" prot="public" virt="virtual"><scope>mv::SelectionMap</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionMap</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionMap</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getId</name></member>
+      <member refid="classmv_1_1SelectionMap_1a28861b5e4b6ebbf116e4a64adf91124f" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getMap</name></member>
+      <member refid="classmv_1_1SelectionMap_1a43d0b1ed4f2706ba10b0282e8d0e6eab" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1SelectionMap_1a70dbf8ad519e1c7aa79d6d9452010250" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>hasMappingForPointIndex</name></member>
+      <member refid="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>Indices</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::SelectionMap</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::SelectionMap</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>Map</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>operator==</name></member>
+      <member refid="classmv_1_1SelectionMap_1a3cc1fa71f535eb52310c809c37e9c32b" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>populateMappingIndices</name></member>
+      <member refid="classmv_1_1SelectionMap_1a1b49711bbc83c0e7c98ee6f0b939f6d1" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>SelectionMap</name></member>
+      <member refid="classmv_1_1SelectionMap_1ad5dbcb2a55fc6dc6e6b45730a3685ecb" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>SelectionMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1SelectionMap_1a3a4f03ca8e4679f95294f3a13684016a" prot="public" virt="virtual"><scope>mv::SelectionMap</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionMap</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" prot="public" virt="non-virtual"><scope>mv::SelectionMap</scope><name>Type</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::SelectionMap</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

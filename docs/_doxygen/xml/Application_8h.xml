@@ -1,0 +1,3454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Application_8h" kind="file" language="C++">
+    <compoundname>Application.h</compoundname>
+    <includes refid="ManiVaultGlobals_8h" local="yes">ManiVaultGlobals.h</includes>
+    <includes refid="Logger_8h" local="yes">util/Logger.h</includes>
+    <includes refid="Version_8h" local="yes">util/Version.h</includes>
+    <includes refid="Serializable_8h" local="yes">util/Serializable.h</includes>
+    <includes refid="TriggerAction_8h" local="yes">actions/TriggerAction.h</includes>
+    <includes refid="OptionsAction_8h" local="yes">actions/OptionsAction.h</includes>
+    <includes refid="ApplicationConfigurationAction_8h" local="yes">actions/ApplicationConfigurationAction.h</includes>
+    <includes refid="ApplicationStartupTask_8h" local="yes">ApplicationStartupTask.h</includes>
+    <includes local="no">QApplication</includes>
+    <includes local="no">QSettings</includes>
+    <includes local="no">QTemporaryDir</includes>
+    <includes local="no">QLockFile</includes>
+    <includes local="no">QMap</includes>
+    <includedby refid="ApplicationConfigurationAction_8cpp" local="yes">ApplicationConfigurationAction.cpp</includedby>
+    <includedby refid="CoreInterface_8h" local="yes">CoreInterface.h</includedby>
+    <includedby refid="ApplicationIconAction_8cpp" local="yes">ApplicationIconAction.cpp</includedby>
+    <includedby refid="BrandingConfigurationAction_8cpp" local="yes">BrandingConfigurationAction.cpp</includedby>
+    <includedby refid="AbstractProjectManager_8h" local="yes">AbstractProjectManager.h</includedby>
+    <includedby refid="ColorAction_8cpp" local="yes">ColorAction.cpp</includedby>
+    <includedby refid="ColorMapAction_8cpp" local="yes">ColorMapAction.cpp</includedby>
+    <includedby refid="ColorMapAxisAction_8cpp" local="no">ColorMapAxisAction.cpp</includedby>
+    <includedby refid="ColorMapEditor1DAction_8cpp" local="yes">ColorMapEditor1DAction.cpp</includedby>
+    <includedby refid="ColorMapSettings2DAction_8cpp" local="yes">ColorMapSettings2DAction.cpp</includedby>
+    <includedby refid="ColorMapSettingsAction_8cpp" local="yes">ColorMapSettingsAction.cpp</includedby>
+    <includedby refid="ColorMapViewAction_8cpp" local="yes">ColorMapViewAction.cpp</includedby>
+    <includedby refid="ColorPickerAction_8cpp" local="yes">ColorPickerAction.cpp</includedby>
+    <includedby refid="DecimalRangeAction_8cpp" local="yes">DecimalRangeAction.cpp</includedby>
+    <includedby refid="DirectoryPickerAction_8cpp" local="yes">DirectoryPickerAction.cpp</includedby>
+    <includedby refid="FilePickerAction_8cpp" local="yes">FilePickerAction.cpp</includedby>
+    <includedby refid="IntegralRangeAction_8cpp" local="yes">IntegralRangeAction.cpp</includedby>
+    <includedby refid="LockingAction_8cpp" local="yes">LockingAction.cpp</includedby>
+    <includedby refid="OptionAction_8cpp" local="yes">OptionAction.cpp</includedby>
+    <includedby refid="PixelSelectionAction_8cpp" local="yes">PixelSelectionAction.cpp</includedby>
+    <includedby refid="PluginTriggerPickerAction_8cpp" local="no">PluginTriggerPickerAction.cpp</includedby>
+    <includedby refid="PresetsAction_8cpp" local="yes">PresetsAction.cpp</includedby>
+    <includedby refid="ProjectsConfigurationAction_8cpp" local="yes">ProjectsConfigurationAction.cpp</includedby>
+    <includedby refid="RecentFilesAction_8cpp" local="yes">RecentFilesAction.cpp</includedby>
+    <includedby refid="SplashScreenAction_8cpp" local="yes">SplashScreenAction.cpp</includedby>
+    <includedby refid="StartPageConfigurationAction_8cpp" local="yes">StartPageConfigurationAction.cpp</includedby>
+    <includedby refid="StringsAction_8cpp" local="yes">StringsAction.cpp</includedby>
+    <includedby refid="TaskAction_8cpp" local="yes">TaskAction.cpp</includedby>
+    <includedby refid="WidgetAction_8cpp" local="yes">WidgetAction.cpp</includedby>
+    <includedby refid="WidgetActionContextMenu_8cpp" local="yes">WidgetActionContextMenu.cpp</includedby>
+    <includedby refid="WidgetActionLabel_8cpp" local="yes">WidgetActionLabel.cpp</includedby>
+    <includedby refid="WindowLevelAction_8cpp" local="yes">WindowLevelAction.cpp</includedby>
+    <includedby refid="AppearanceSettingsAction_8cpp" local="yes">AppearanceSettingsAction.cpp</includedby>
+    <includedby refid="Application_8cpp" local="yes">Application.cpp</includedby>
+    <includedby refid="ApplicationStartupTask_8cpp" local="yes">ApplicationStartupTask.cpp</includedby>
+    <includedby refid="DataHierarchyItem_8cpp" local="yes">DataHierarchyItem.cpp</includedby>
+    <includedby refid="RawData_8h" local="yes">RawData.h</includedby>
+    <includedby refid="DatasetPrivate_8cpp" local="yes">DatasetPrivate.cpp</includedby>
+    <includedby refid="ForegroundTask_8cpp" local="yes">ForegroundTask.cpp</includedby>
+    <includedby refid="Main_8cpp" local="no">Main.cpp</includedby>
+    <includedby refid="ModalTask_8cpp" local="yes">ModalTask.cpp</includedby>
+    <includedby refid="ModalTaskHandler_8cpp" local="yes">ModalTaskHandler.cpp</includedby>
+    <includedby refid="AbstractDatasetsModel_8cpp" local="yes">AbstractDatasetsModel.cpp</includedby>
+    <includedby refid="AbstractTasksModel_8cpp" local="yes">AbstractTasksModel.cpp</includedby>
+    <includedby refid="DatasetsListModel_8cpp" local="yes">DatasetsListModel.cpp</includedby>
+    <includedby refid="HardwareSpecFilterModel_8cpp" local="yes">HardwareSpecFilterModel.cpp</includedby>
+    <includedby refid="LearningCenterTutorialsFilterModel_8cpp" local="yes">LearningCenterTutorialsFilterModel.cpp</includedby>
+    <includedby refid="LoggingModel_8cpp" local="yes">LoggingModel.cpp</includedby>
+    <includedby refid="ProjectsFilterModel_8cpp" local="yes">ProjectsFilterModel.cpp</includedby>
+    <includedby refid="RecentFilesListModel_8cpp" local="yes">RecentFilesListModel.cpp</includedby>
+    <includedby refid="TasksListModel_8cpp" local="yes">TasksListModel.cpp</includedby>
+    <includedby refid="TasksTreeModel_8cpp" local="yes">TasksTreeModel.cpp</includedby>
+    <includedby refid="ParametersSettingsAction_8cpp" local="yes">ParametersSettingsAction.cpp</includedby>
+    <includedby refid="PluginMetadata_8cpp" local="yes">PluginMetadata.cpp</includedby>
+    <includedby refid="ClusterData_8cpp" local="yes">ClusterData.cpp</includedby>
+    <includedby refid="ClusterData_8h" local="no">ClusterData.h</includedby>
+    <includedby refid="FilterClustersAction_8cpp" local="no">FilterClustersAction.cpp</includedby>
+    <includedby refid="OverwriteClustersConfirmationDialog_8cpp" local="no">OverwriteClustersConfirmationDialog.cpp</includedby>
+    <includedby refid="PrefixClustersAction_8cpp" local="no">PrefixClustersAction.cpp</includedby>
+    <includedby refid="RefreshClustersAction_8cpp" local="no">RefreshClustersAction.cpp</includedby>
+    <includedby refid="ColorData_8cpp" local="yes">ColorData.cpp</includedby>
+    <includedby refid="DataHierarchyWidget_8cpp" local="no">DataHierarchyWidget.cpp</includedby>
+    <includedby refid="DataHierarchyWidgetContextMenu_8cpp" local="no">DataHierarchyWidgetContextMenu.cpp</includedby>
+    <includedby refid="StatisticsAction_8cpp" local="no">StatisticsAction.cpp</includedby>
+    <includedby refid="UnhideAction_8cpp" local="no">UnhideAction.cpp</includedby>
+    <includedby refid="DataPropertiesPlugin_8cpp" local="no">DataPropertiesPlugin.cpp</includedby>
+    <includedby refid="ImageData_8cpp" local="yes">ImageData.cpp</includedby>
+    <includedby refid="ImageData_2src_2InfoAction_8cpp" local="yes">InfoAction.cpp</includedby>
+    <includedby refid="LoggingPlugin_8cpp" local="no">LoggingPlugin.cpp</includedby>
+    <includedby refid="LoggingWidget_8cpp" local="no">LoggingWidget.cpp</includedby>
+    <includedby refid="CreateSetFromSelectionAction_8cpp" local="no">CreateSetFromSelectionAction.cpp</includedby>
+    <includedby refid="DimensionPickerAction_8cpp" local="yes">DimensionPickerAction.cpp</includedby>
+    <includedby refid="DimensionsPickerAction_8cpp" local="yes">DimensionsPickerAction.cpp</includedby>
+    <includedby refid="DimensionsPickerFilterAction_8cpp" local="no">DimensionsPickerFilterAction.cpp</includedby>
+    <includedby refid="DimensionsPickerMiscellaneousAction_8cpp" local="no">DimensionsPickerMiscellaneousAction.cpp</includedby>
+    <includedby refid="DimensionsPickerSelectAction_8cpp" local="no">DimensionsPickerSelectAction.cpp</includedby>
+    <includedby refid="EditProxyDatasetsAction_8cpp" local="no">EditProxyDatasetsAction.cpp</includedby>
+    <includedby refid="PointData_8cpp" local="no">PointData.cpp</includedby>
+    <includedby refid="SampleScopePlugin_8cpp" local="no">SampleScopePlugin.cpp</includedby>
+    <includedby refid="SampleScopeWidget_8cpp" local="no">SampleScopeWidget.cpp</includedby>
+    <includedby refid="SharedParametersPlugin_8cpp" local="no">SharedParametersPlugin.cpp</includedby>
+    <includedby refid="TasksPlugin_8cpp" local="no">TasksPlugin.cpp</includedby>
+    <includedby refid="TextData_8cpp" local="no">TextData.cpp</includedby>
+    <includedby refid="TutorialPlugin_8cpp" local="no">TutorialPlugin.cpp</includedby>
+    <includedby refid="PluginType_8cpp" local="yes">PluginType.cpp</includedby>
+    <includedby refid="ActionsManager_8cpp" local="no">ActionsManager.cpp</includedby>
+    <includedby refid="Core_8cpp" local="yes">Core.cpp</includedby>
+    <includedby refid="CrashReportDialog_8cpp" local="no">CrashReportDialog.cpp</includedby>
+    <includedby refid="ErrorLoggingConsentDialog_8cpp" local="no">ErrorLoggingConsentDialog.cpp</includedby>
+    <includedby refid="FileMenu_8cpp" local="no">FileMenu.cpp</includedby>
+    <includedby refid="GroupDataDialog_8cpp" local="no">GroupDataDialog.cpp</includedby>
+    <includedby refid="LearningPagePluginResourcesWidget_8cpp" local="no">LearningPagePluginResourcesWidget.cpp</includedby>
+    <includedby refid="LearningPageVideosWidget_8cpp" local="no">LearningPageVideosWidget.cpp</includedby>
+    <includedby refid="LearningPageVideoWidget_8cpp" local="no">LearningPageVideoWidget.cpp</includedby>
+    <includedby refid="LoadedViewsMenu_8cpp" local="no">LoadedViewsMenu.cpp</includedby>
+    <includedby refid="LoadSystemViewMenu_8cpp" local="no">LoadSystemViewMenu.cpp</includedby>
+    <includedby refid="MainWindow_8cpp" local="no">MainWindow.cpp</includedby>
+    <includedby refid="ManiVaultVersionStatusBarAction_8cpp" local="no">ManiVaultVersionStatusBarAction.cpp</includedby>
+    <includedby refid="PageActionDelegateEditorWidget_8cpp" local="no">PageActionDelegateEditorWidget.cpp</includedby>
+    <includedby refid="PageActionsWidget_8cpp" local="no">PageActionsWidget.cpp</includedby>
+    <includedby refid="PageWidget_8cpp" local="no">PageWidget.cpp</includedby>
+    <includedby refid="PluginManagerDialog_8cpp" local="no">PluginManagerDialog.cpp</includedby>
+    <includedby refid="PluginsStatusBarAction_8cpp" local="no">PluginsStatusBarAction.cpp</includedby>
+    <includedby refid="ProjectWidget_8cpp" local="no">ProjectWidget.cpp</includedby>
+    <includedby refid="SettingsManager_8cpp" local="no">SettingsManager.cpp</includedby>
+    <includedby refid="StartPageGetStartedWidget_8cpp" local="no">StartPageGetStartedWidget.cpp</includedby>
+    <includedby refid="StartPageOpenProjectWidget_8cpp" local="no">StartPageOpenProjectWidget.cpp</includedby>
+    <includedby refid="ViewMenu_8cpp" local="no">ViewMenu.cpp</includedby>
+    <includedby refid="ViewPluginDockWidget_8cpp" local="no">ViewPluginDockWidget.cpp</includedby>
+    <includedby refid="WorkspaceInventoryModel_8cpp" local="no">WorkspaceInventoryModel.cpp</includedby>
+    <includedby refid="WorkspaceManager_8cpp" local="yes">WorkspaceManager.cpp</includedby>
+    <includedby refid="WorkspaceSettingsDialog_8cpp" local="no">WorkspaceSettingsDialog.cpp</includedby>
+    <includedby refid="ProjectMetaAction_8cpp" local="yes">ProjectMetaAction.cpp</includedby>
+    <includedby refid="ProjectSerializationTask_8cpp" local="yes">ProjectSerializationTask.cpp</includedby>
+    <includedby refid="TasksSettingsAction_8cpp" local="yes">TasksSettingsAction.cpp</includedby>
+    <includedby refid="TemporaryDirectoriesSettingsAction_8cpp" local="yes">TemporaryDirectoriesSettingsAction.cpp</includedby>
+    <includedby refid="FileDownloader_8cpp" local="yes">FileDownloader.cpp</includedby>
+    <includedby refid="Logger_8cpp" local="yes">Logger.cpp</includedby>
+    <includedby refid="Notification_8cpp" local="yes">Notification.cpp</includedby>
+    <includedby refid="Notifications_8cpp" local="yes">Notifications.cpp</includedby>
+    <includedby refid="Serializable_8cpp" local="yes">Serializable.cpp</includedby>
+    <includedby refid="Serialization_8cpp" local="yes">Serialization.cpp</includedby>
+    <includedby refid="StandardPaths_8cpp" local="yes">StandardPaths.cpp</includedby>
+    <includedby refid="ViewPlugin_8cpp" local="yes">ViewPlugin.cpp</includedby>
+    <includedby refid="ActionsWidget_8cpp" local="no">ActionsWidget.cpp</includedby>
+    <includedby refid="DropWidget_8cpp" local="yes">DropWidget.cpp</includedby>
+    <includedby refid="HierarchyWidget_8cpp" local="yes">HierarchyWidget.cpp</includedby>
+    <includedby refid="MarkdownDialog_8cpp" local="no">MarkdownDialog.cpp</includedby>
+    <includedby refid="PluginAboutDialog_8cpp" local="yes">PluginAboutDialog.cpp</includedby>
+    <includedby refid="SplashScreenWidget_8cpp" local="yes">SplashScreenWidget.cpp</includedby>
+    <includedby refid="ViewPluginLearningCenterOverlayWidget_8cpp" local="yes">ViewPluginLearningCenterOverlayWidget.cpp</includedby>
+    <includedby refid="Workspace_8cpp" local="yes">Workspace.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>QMap</label>
+      </node>
+      <node id="98">
+        <label>GroupsAction.h</label>
+        <link refid="GroupsAction_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>TableAction.h</label>
+        <link refid="TableAction_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>util/NumericalRange.h</label>
+        <link refid="NumericalRange_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>NumericalAction.h</label>
+        <link refid="NumericalAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>actions/TriggerAction.h</label>
+        <link refid="TriggerAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>QSettings</label>
+      </node>
+      <node id="56">
+        <label>QTextEdit</label>
+      </node>
+      <node id="47">
+        <label>StringAction.h</label>
+        <link refid="StringAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>QStyledItemDelegate</label>
+      </node>
+      <node id="72">
+        <label>widgets/InfoOverlayWidget.h</label>
+        <link refid="InfoOverlayWidget_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>actions/IconPickerAction.h</label>
+        <link refid="IconPickerAction_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>QLayout</label>
+      </node>
+      <node id="69">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="53">
+        <label>QIconEngine</label>
+      </node>
+      <node id="82">
+        <label>QSlider</label>
+      </node>
+      <node id="29">
+        <label>QObject</label>
+      </node>
+      <node id="96">
+        <label>widgets/MultiSelectComboBox.h</label>
+        <link refid="MultiSelectComboBox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>QVariantMap</label>
+      </node>
+      <node id="127">
+        <label>ModalTask.h</label>
+        <link refid="ModalTask_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>widgets/HierarchyWidget.h</label>
+        <link refid="HierarchyWidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>StyledIconEngine.h</label>
+        <link refid="StyledIconEngine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>models/CheckableStringListModel.h</label>
+        <link refid="CheckableStringListModel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>QCompleter</label>
+      </node>
+      <node id="88">
+        <label>QGraphicsOpacityEffect</label>
+      </node>
+      <node id="115">
+        <label>QProgressBar</label>
+      </node>
+      <node id="131">
+        <label>QLockFile</label>
+      </node>
+      <node id="79">
+        <label>QPair</label>
+      </node>
+      <node id="74">
+        <label>actions/ColorAction.h</label>
+        <link refid="ColorAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>ColorPickerAction.h</label>
+        <link refid="ColorPickerAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>GroupAction.h</label>
+        <link refid="GroupAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>util/StyledIcon.h</label>
+        <link refid="StyledIcon_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>WidgetActionWidget.h</label>
+        <link refid="WidgetActionWidget_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>QFileSystemModel</label>
+      </node>
+      <node id="124">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="49">
+        <label>StyledIconCommon.h</label>
+        <link refid="StyledIconCommon_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>string</label>
+      </node>
+      <node id="130">
+        <label>QTemporaryDir</label>
+      </node>
+      <node id="59">
+        <label>ToggleAction.h</label>
+        <link refid="ToggleAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>models/TextOnlyProxyModel.h</label>
+        <link refid="TextOnlyProxyModel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>QImage</label>
+      </node>
+      <node id="60">
+        <label>QCheckBox</label>
+      </node>
+      <node id="114">
+        <label>ProgressAction.h</label>
+        <link refid="ProgressAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>exception</label>
+      </node>
+      <node id="51">
+        <label>QIcon</label>
+      </node>
+      <node id="109">
+        <label>ApplicationIconAction.h</label>
+        <link refid="ApplicationIconAction_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>SplashScreenAction.h</label>
+        <link refid="SplashScreenAction_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>QBitArray</label>
+      </node>
+      <node id="104">
+        <label>BrandingConfigurationAction.h</label>
+        <link refid="BrandingConfigurationAction_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>QStyle</label>
+      </node>
+      <node id="121">
+        <label>QTreeView</label>
+      </node>
+      <node id="62">
+        <label>OptionAction.h</label>
+        <link refid="OptionAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>FilePickerAction.h</label>
+        <link refid="FilePickerAction_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>widgets/FlowLayout.h</label>
+        <link refid="FlowLayout_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>QTreeWidget</label>
+      </node>
+      <node id="116">
+        <label>StartPageConfigurationAction.h</label>
+        <link refid="StartPageConfigurationAction_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Serialization.h</label>
+        <link refid="Serialization_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>QColorDialog</label>
+      </node>
+      <node id="86">
+        <label>QHBoxLayout</label>
+      </node>
+      <node id="73">
+        <label>InfoWidget.h</label>
+        <link refid="InfoWidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>QApplication</label>
+      </node>
+      <node id="2">
+        <label>ManiVaultGlobals.h</label>
+        <link refid="ManiVaultGlobals_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>QToolButton</label>
+      </node>
+      <node id="50">
+        <label>QPalette</label>
+      </node>
+      <node id="71">
+        <label>HorizontalHeaderAction.h</label>
+        <link refid="HorizontalHeaderAction_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>QPointer</label>
+      </node>
+      <node id="57">
+        <label>QValidator</label>
+      </node>
+      <node id="113">
+        <label>actions/TaskAction.h</label>
+        <link refid="TaskAction_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>QVBoxLayout</label>
+      </node>
+      <node id="102">
+        <label>QSet</label>
+      </node>
+      <node id="101">
+        <label>QTimer</label>
+      </node>
+      <node id="11">
+        <label>util/Version.h</label>
+        <link refid="Version_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>actions/IconAction.h</label>
+        <link refid="IconAction_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>QWidget</label>
+      </node>
+      <node id="55">
+        <label>QLineEdit</label>
+      </node>
+      <node id="87">
+        <label>util/WidgetFader.h</label>
+        <link refid="WidgetFader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>VerticalGroupAction.h</label>
+        <link refid="VerticalGroupAction_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QString</label>
+      </node>
+      <node id="23">
+        <label>WidgetAction.h</label>
+        <link refid="WidgetAction_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>QSize</label>
+      </node>
+      <node id="15">
+        <label>QFile</label>
+      </node>
+      <node id="36">
+        <label>QColor</label>
+      </node>
+      <node id="76">
+        <label>actions/IntegralAction.h</label>
+        <link refid="IntegralAction_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>widgets/OverlayWidget.h</label>
+        <link refid="OverlayWidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>QPushButton</label>
+      </node>
+      <node id="99">
+        <label>Task.h</label>
+        <link refid="Task_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>QLabel</label>
+      </node>
+      <node id="118">
+        <label>StringsAction.h</label>
+        <link refid="StringsAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>QJsonDocument</label>
+      </node>
+      <node id="120">
+        <label>QAbstractItemModel</label>
+      </node>
+      <node id="105">
+        <label>ImageAction.h</label>
+        <link refid="ImageAction_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>QWidgetItem</label>
+      </node>
+      <node id="68">
+        <label>QItemSelection</label>
+      </node>
+      <node id="65">
+        <label>QComboBox</label>
+      </node>
+      <node id="12">
+        <label>Serializable.h</label>
+        <link refid="Serializable_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>QGridLayout</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="3">
+        <label>QtCore/QtGlobal</label>
+      </node>
+      <node id="8">
+        <label>deque</label>
+      </node>
+      <node id="122">
+        <label>util/View.h</label>
+        <link refid="View_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>ModelFilterAction.h</label>
+        <link refid="ModelFilterAction_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>WidgetActionDrag.h</label>
+        <link refid="WidgetActionDrag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>QIntValidator</label>
+      </node>
+      <node id="44">
+        <label>StretchAction.h</label>
+        <link refid="StretchAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mutex</label>
+      </node>
+      <node id="46">
+        <label>HorizontalGroupAction.h</label>
+        <link refid="HorizontalGroupAction_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>QPixmap</label>
+      </node>
+      <node id="35">
+        <label>util/Badge.h</label>
+        <link refid="Badge_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>QIdentityProxyModel</label>
+      </node>
+      <node id="16">
+        <label>QDir</label>
+      </node>
+      <node id="117">
+        <label>ProjectsConfigurationAction.h</label>
+        <link refid="ProjectsConfigurationAction_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>QTableView</label>
+      </node>
+      <node id="70">
+        <label>ModelSelectionAction.h</label>
+        <link refid="ModelSelectionAction_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>util/Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="26">
+        <label>WidgetActionBadgeOverlayWidget.h</label>
+        <link refid="WidgetActionBadgeOverlayWidget_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>QSpinBox</label>
+      </node>
+      <node id="80">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>QStringList</label>
+      </node>
+      <node id="14">
+        <label>QFileInfo</label>
+      </node>
+      <node id="125">
+        <label>ApplicationStartupTask.h</label>
+        <link refid="ApplicationStartupTask_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>util/WidgetOverlayer.h</label>
+        <link refid="WidgetOverlayer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>QPropertyAnimation</label>
+      </node>
+      <node id="97">
+        <label>actions/ApplicationConfigurationAction.h</label>
+        <link refid="ApplicationConfigurationAction_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>actions/OptionsAction.h</label>
+        <link refid="OptionsAction_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>ProjectSerializationTask.h</label>
+        <link refid="ProjectSerializationTask_8h"/>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QVector</label>
+      </node>
+      <node id="25">
+        <label>WidgetActionViewWidget.h</label>
+        <link refid="WidgetActionViewWidget_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Application.h</label>
+        <link refid="Application_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>QStringListModel</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="256">
+        <label>ColorMapSettingsAction.cpp</label>
+        <link refid="ColorMapSettingsAction_8cpp"/>
+      </node>
+      <node id="90">
+        <label>CreateSetFromSelectionAction.cpp</label>
+        <link refid="CreateSetFromSelectionAction_8cpp"/>
+      </node>
+      <node id="15">
+        <label>PluginLearningCenterAction.cpp</label>
+        <link refid="PluginLearningCenterAction_8cpp"/>
+      </node>
+      <node id="98">
+        <label>DimensionsPickerFilterAction.cpp</label>
+        <link refid="DimensionsPickerFilterAction_8cpp"/>
+      </node>
+      <node id="10">
+        <label>DecimalRectangleAction.cpp</label>
+        <link refid="DecimalRectangleAction_8cpp"/>
+      </node>
+      <node id="213">
+        <label>PageTutorialsWidget.cpp</label>
+        <link refid="PageTutorialsWidget_8cpp"/>
+      </node>
+      <node id="36">
+        <label>AbstractDataHierarchyModel.h</label>
+        <link refid="AbstractDataHierarchyModel_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>FilterClustersAction.cpp</label>
+        <link refid="FilterClustersAction_8cpp"/>
+      </node>
+      <node id="26">
+        <label>AnalysisPlugin.cpp</label>
+        <link refid="AnalysisPlugin_8cpp"/>
+      </node>
+      <node id="187">
+        <label>DockAreaTitleBar.cpp</label>
+        <link refid="DockAreaTitleBar_8cpp"/>
+      </node>
+      <node id="6">
+        <label>ColorMapEditor1DScene.cpp</label>
+        <link refid="ColorMapEditor1DScene_8cpp"/>
+      </node>
+      <node id="85">
+        <label>InfoAction.cpp</label>
+        <link refid="ImageData_2src_2InfoAction_8cpp"/>
+      </node>
+      <node id="212">
+        <label>PageSubAction.cpp</label>
+        <link refid="PageSubAction_8cpp"/>
+      </node>
+      <node id="48">
+        <label>DataHierarchyListModel.cpp</label>
+        <link refid="DataHierarchyListModel_8cpp"/>
+      </node>
+      <node id="199">
+        <label>HelpMenu.cpp</label>
+        <link refid="HelpMenu_8cpp"/>
+      </node>
+      <node id="23">
+        <label>PresetsAction.cpp</label>
+        <link refid="PresetsAction_8cpp"/>
+      </node>
+      <node id="207">
+        <label>MainWindow.cpp</label>
+        <link refid="MainWindow_8cpp"/>
+      </node>
+      <node id="190">
+        <label>AbstractErrorLogger.h</label>
+        <link refid="AbstractErrorLogger_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>OverwriteClustersConfirmationDialog.cpp</label>
+        <link refid="OverwriteClustersConfirmationDialog_8cpp"/>
+      </node>
+      <node id="248">
+        <label>Workspace.cpp</label>
+        <link refid="Workspace_8cpp"/>
+      </node>
+      <node id="267">
+        <label>RawData.h</label>
+        <link refid="RawData_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>ViewPluginEditorDialog.h</label>
+        <link refid="ViewPluginEditorDialog_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>ColorMapSettings2DAction.cpp</label>
+        <link refid="ColorMapSettings2DAction_8cpp"/>
+      </node>
+      <node id="89">
+        <label>CreateSetFromSelectionAction.h</label>
+        <link refid="CreateSetFromSelectionAction_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>PublicActionsModel.cpp</label>
+        <link refid="PublicActionsModel_8cpp"/>
+      </node>
+      <node id="117">
+        <label>RemoveDatasetsDialog.h</label>
+        <link refid="RemoveDatasetsDialog_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>ClusterData.cpp</label>
+        <link refid="ClusterData_8cpp"/>
+      </node>
+      <node id="31">
+        <label>DatasetPrivate.cpp</label>
+        <link refid="DatasetPrivate_8cpp"/>
+      </node>
+      <node id="292">
+        <label>DropWidget.cpp</label>
+        <link refid="DropWidget_8cpp"/>
+      </node>
+      <node id="83">
+        <label>Images.cpp</label>
+        <link refid="Images_8cpp"/>
+      </node>
+      <node id="113">
+        <label>DataManager.h</label>
+        <link refid="DataManager_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>GroupDataDialog.cpp</label>
+        <link refid="GroupDataDialog_8cpp"/>
+      </node>
+      <node id="32">
+        <label>DatasetTask.cpp</label>
+        <link refid="DatasetTask_8cpp"/>
+      </node>
+      <node id="46">
+        <label>UnhideAction.cpp</label>
+        <link refid="UnhideAction_8cpp"/>
+      </node>
+      <node id="291">
+        <label>StandardPaths.cpp</label>
+        <link refid="StandardPaths_8cpp"/>
+      </node>
+      <node id="92">
+        <label>InfoAction.cpp</label>
+        <link refid="PointData_2src_2InfoAction_8cpp"/>
+      </node>
+      <node id="103">
+        <label>ProxyDatasetsAction.h</label>
+        <link refid="ProxyDatasetsAction_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>PluginFactory.cpp</label>
+        <link refid="PluginFactory_8cpp"/>
+      </node>
+      <node id="224">
+        <label>StartPageContentWidget.cpp</label>
+        <link refid="StartPageContentWidget_8cpp"/>
+      </node>
+      <node id="182">
+        <label>TasksListModel.cpp</label>
+        <link refid="TasksListModel_8cpp"/>
+      </node>
+      <node id="12">
+        <label>IntegralRectangleAction.cpp</label>
+        <link refid="IntegralRectangleAction_8cpp"/>
+      </node>
+      <node id="9">
+        <label>DecimalRangeAction.cpp</label>
+        <link refid="DecimalRangeAction_8cpp"/>
+      </node>
+      <node id="178">
+        <label>PluginFactoriesTreeModel.cpp</label>
+        <link refid="PluginFactoriesTreeModel_8cpp"/>
+      </node>
+      <node id="153">
+        <label>SharedParametersPlugin.cpp</label>
+        <link refid="SharedParametersPlugin_8cpp"/>
+      </node>
+      <node id="101">
+        <label>EditProxyDatasetsAction.h</label>
+        <link refid="EditProxyDatasetsAction_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>Core.cpp</label>
+        <link refid="Core_8cpp"/>
+      </node>
+      <node id="231">
+        <label>WorkspaceInventoryModel.cpp</label>
+        <link refid="WorkspaceInventoryModel_8cpp"/>
+      </node>
+      <node id="70">
+        <label>RefreshClustersAction.cpp</label>
+        <link refid="RefreshClustersAction_8cpp"/>
+      </node>
+      <node id="16">
+        <label>PluginPickerAction.cpp</label>
+        <link refid="PluginPickerAction_8cpp"/>
+      </node>
+      <node id="127">
+        <label>ProjectsConfigurationAction.cpp</label>
+        <link refid="ProjectsConfigurationAction_8cpp"/>
+      </node>
+      <node id="240">
+        <label>SecureNetworkAccessManager.cpp</label>
+        <link refid="SecureNetworkAccessManager_8cpp"/>
+      </node>
+      <node id="119">
+        <label>DatasetsToRemoveFilterModel.cpp</label>
+        <link refid="DatasetsToRemoveFilterModel_8cpp"/>
+      </node>
+      <node id="93">
+        <label>PointData.cpp</label>
+        <link refid="PointData_8cpp"/>
+      </node>
+      <node id="208">
+        <label>NewProjectDialog.cpp</label>
+        <link refid="NewProjectDialog_8cpp"/>
+      </node>
+      <node id="44">
+        <label>DataHierarchyWidget.cpp</label>
+        <link refid="DataHierarchyWidget_8cpp"/>
+      </node>
+      <node id="73">
+        <label>SubsetAction.cpp</label>
+        <link refid="SubsetAction_8cpp"/>
+      </node>
+      <node id="29">
+        <label>Set.cpp</label>
+        <link refid="Set_8cpp"/>
+      </node>
+      <node id="198">
+        <label>HelpManager.cpp</label>
+        <link refid="HelpManager_8cpp"/>
+      </node>
+      <node id="183">
+        <label>TasksTreeModel.cpp</label>
+        <link refid="TasksTreeModel_8cpp"/>
+      </node>
+      <node id="253">
+        <label>ColorMapAxisAction.cpp</label>
+        <link refid="ColorMapAxisAction_8cpp"/>
+      </node>
+      <node id="52">
+        <label>RawDataModel.h</label>
+        <link refid="RawDataModel_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>InfoAction.cpp</label>
+        <link refid="ClusterData_2src_2InfoAction_8cpp"/>
+      </node>
+      <node id="30">
+        <label>DataHierarchyItem.cpp</label>
+        <link refid="DataHierarchyItem_8cpp"/>
+      </node>
+      <node id="243">
+        <label>StyledIconCommon.cpp</label>
+        <link refid="StyledIconCommon_8cpp"/>
+      </node>
+      <node id="43">
+        <label>DataHierarchyPlugin.cpp</label>
+        <link refid="DataHierarchyPlugin_8cpp"/>
+      </node>
+      <node id="286">
+        <label>TasksSettingsAction.cpp</label>
+        <link refid="TasksSettingsAction_8cpp"/>
+      </node>
+      <node id="69">
+        <label>PrefixClustersAction.cpp</label>
+        <link refid="PrefixClustersAction_8cpp"/>
+      </node>
+      <node id="105">
+        <label>NumberOfSelectedPointsAction.h</label>
+        <link refid="NumberOfSelectedPointsAction_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>ManiVaultVersionStatusBarAction.cpp</label>
+        <link refid="ManiVaultVersionStatusBarAction_8cpp"/>
+      </node>
+      <node id="201">
+        <label>LearningPagePluginResourcesWidget.cpp</label>
+        <link refid="LearningPagePluginResourcesWidget_8cpp"/>
+      </node>
+      <node id="293">
+        <label>HierarchyWidget.cpp</label>
+        <link refid="HierarchyWidget_8cpp"/>
+      </node>
+      <node id="229">
+        <label>ViewPluginDockWidget.cpp</label>
+        <link refid="ViewPluginDockWidget_8cpp"/>
+      </node>
+      <node id="57">
+        <label>SelectionsFilterModel.cpp</label>
+        <link refid="SelectionsFilterModel_8cpp"/>
+      </node>
+      <node id="11">
+        <label>IntegralRangeAction.cpp</label>
+        <link refid="IntegralRangeAction_8cpp"/>
+      </node>
+      <node id="184">
+        <label>Plugin.cpp</label>
+        <link refid="Plugin_8cpp"/>
+      </node>
+      <node id="147">
+        <label>ActionsManager.cpp</label>
+        <link refid="ActionsManager_8cpp"/>
+      </node>
+      <node id="271">
+        <label>LoggingModel.cpp</label>
+        <link refid="LoggingModel_8cpp"/>
+      </node>
+      <node id="245">
+        <label>MarkdownDialog.cpp</label>
+        <link refid="MarkdownDialog_8cpp"/>
+      </node>
+      <node id="131">
+        <label>TasksListAction.cpp</label>
+        <link refid="TasksListAction_8cpp"/>
+      </node>
+      <node id="45">
+        <label>UnhideAction.h</label>
+        <link refid="UnhideAction_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>InfoAction.cpp</label>
+        <link refid="TextData_2src_2InfoAction_8cpp"/>
+      </node>
+      <node id="149">
+        <label>ActionsFilterModel.h</label>
+        <link refid="ActionsFilterModel_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>SplashScreenWidget.cpp</label>
+        <link refid="SplashScreenWidget_8cpp"/>
+      </node>
+      <node id="172">
+        <label>AbstractProjectsModel.cpp</label>
+        <link refid="AbstractProjectsModel_8cpp"/>
+      </node>
+      <node id="175">
+        <label>HardwareSpecTreeModel.cpp</label>
+        <link refid="HardwareSpecTreeModel_8cpp"/>
+      </node>
+      <node id="63">
+        <label>ClustersAction.cpp</label>
+        <link refid="ClustersAction_8cpp"/>
+      </node>
+      <node id="220">
+        <label>ScriptingManager.cpp</label>
+        <link refid="ScriptingManager_8cpp"/>
+      </node>
+      <node id="97">
+        <label>DimensionsPickerAction.cpp</label>
+        <link refid="DimensionsPickerAction_8cpp"/>
+      </node>
+      <node id="7">
+        <label>ColorMapEditor1DWidget.cpp</label>
+        <link refid="ColorMapEditor1DWidget_8cpp"/>
+      </node>
+      <node id="66">
+        <label>ColorizeClustersAction.cpp</label>
+        <link refid="ColorizeClustersAction_8cpp"/>
+      </node>
+      <node id="257">
+        <label>ColorMapViewAction.cpp</label>
+        <link refid="ColorMapViewAction_8cpp"/>
+      </node>
+      <node id="289">
+        <label>Notification.cpp</label>
+        <link refid="Notification_8cpp"/>
+      </node>
+      <node id="288">
+        <label>Logger.cpp</label>
+        <link refid="Logger_8cpp"/>
+      </node>
+      <node id="86">
+        <label>PointData.h</label>
+        <link refid="PointData_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>WindowLevelAction.cpp</label>
+        <link refid="WindowLevelAction_8cpp"/>
+      </node>
+      <node id="38">
+        <label>DataHierarchyTreeModel.h</label>
+        <link refid="DataHierarchyTreeModel_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>SharedParametersPlugin.h</label>
+        <link refid="SharedParametersPlugin_8h"/>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>HardwareSpecFilterModel.cpp</label>
+        <link refid="HardwareSpecFilterModel_8cpp"/>
+      </node>
+      <node id="281">
+        <label>TasksPlugin.cpp</label>
+        <link refid="TasksPlugin_8cpp"/>
+      </node>
+      <node id="134">
+        <label>WidgetActionContextMenu.cpp</label>
+        <link refid="WidgetActionContextMenu_8cpp"/>
+      </node>
+      <node id="261">
+        <label>LockingAction.cpp</label>
+        <link refid="LockingAction_8cpp"/>
+      </node>
+      <node id="239">
+        <label>LearningCenterTutorial.cpp</label>
+        <link refid="LearningCenterTutorial_8cpp"/>
+      </node>
+      <node id="121">
+        <label>EventManager.cpp</label>
+        <link refid="EventManager_8cpp"/>
+      </node>
+      <node id="115">
+        <label>DataHierarchyManager.cpp</label>
+        <link refid="DataHierarchyManager_8cpp"/>
+      </node>
+      <node id="21">
+        <label>DatasetPickerAction.h</label>
+        <link refid="DatasetPickerAction_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>DatasetPickerAction.cpp</label>
+        <link refid="DatasetPickerAction_8cpp"/>
+      </node>
+      <node id="211">
+        <label>PageContentWidget.cpp</label>
+        <link refid="PageContentWidget_8cpp"/>
+      </node>
+      <node id="193">
+        <label>ErrorManager.cpp</label>
+        <link refid="ErrorManager_8cpp"/>
+      </node>
+      <node id="250">
+        <label>AbstractProjectManager.h</label>
+        <link refid="AbstractProjectManager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>FileDownloader.cpp</label>
+        <link refid="FileDownloader_8cpp"/>
+      </node>
+      <node id="82">
+        <label>Images.h</label>
+        <link refid="Images_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>FileMenu.cpp</label>
+        <link refid="FileMenu_8cpp"/>
+      </node>
+      <node id="151">
+        <label>ActionsWidget.h</label>
+        <link refid="ActionsWidget_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>PluginManagerDialog.cpp</label>
+        <link refid="PluginManagerDialog_8cpp"/>
+      </node>
+      <node id="68">
+        <label>MergeClustersAction.cpp</label>
+        <link refid="MergeClustersAction_8cpp"/>
+      </node>
+      <node id="35">
+        <label>LinkedData.cpp</label>
+        <link refid="LinkedData_8cpp"/>
+      </node>
+      <node id="210">
+        <label>PageActionsWidget.cpp</label>
+        <link refid="PageActionsWidget_8cpp"/>
+      </node>
+      <node id="14">
+        <label>PixelSelectionAction.cpp</label>
+        <link refid="PixelSelectionAction_8cpp"/>
+      </node>
+      <node id="170">
+        <label>ModalTask.cpp</label>
+        <link refid="ModalTask_8cpp"/>
+      </node>
+      <node id="260">
+        <label>FilePickerAction.cpp</label>
+        <link refid="FilePickerAction_8cpp"/>
+      </node>
+      <node id="251">
+        <label>ProjectManager.h</label>
+        <link refid="ProjectManager_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>EventListener.cpp</label>
+        <link refid="EventListener_8cpp"/>
+      </node>
+      <node id="275">
+        <label>PluginMetadata.cpp</label>
+        <link refid="PluginMetadata_8cpp"/>
+      </node>
+      <node id="126">
+        <label>SelectionGroup.cpp</label>
+        <link refid="SelectionGroup_8cpp"/>
+      </node>
+      <node id="169">
+        <label>Main.cpp</label>
+        <link refid="Main_8cpp"/>
+      </node>
+      <node id="71">
+        <label>RemoveClustersAction.cpp</label>
+        <link refid="RemoveClustersAction_8cpp"/>
+      </node>
+      <node id="217">
+        <label>ProjectSettingsDialog.cpp</label>
+        <link refid="ProjectSettingsDialog_8cpp"/>
+      </node>
+      <node id="194">
+        <label>SentryErrorLogger.h</label>
+        <link refid="SentryErrorLogger_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>SettingsManagerDialog.cpp</label>
+        <link refid="SettingsManagerDialog_8cpp"/>
+      </node>
+      <node id="84">
+        <label>InfoAction.h</label>
+        <link refid="ImageData_2src_2InfoAction_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>ApplicationIconAction.cpp</label>
+        <link refid="ApplicationIconAction_8cpp"/>
+      </node>
+      <node id="215">
+        <label>PluginsStatusBarAction.cpp</label>
+        <link refid="PluginsStatusBarAction_8cpp"/>
+      </node>
+      <node id="110">
+        <label>InfoAction.h</label>
+        <link refid="TextData_2src_2InfoAction_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ApplicationConfigurationAction.cpp</label>
+        <link refid="ApplicationConfigurationAction_8cpp"/>
+      </node>
+      <node id="180">
+        <label>PluginsTreeModel.cpp</label>
+        <link refid="PluginsTreeModel_8cpp"/>
+      </node>
+      <node id="258">
+        <label>ColorPickerAction.cpp</label>
+        <link refid="ColorPickerAction_8cpp"/>
+      </node>
+      <node id="132">
+        <label>TasksTreeAction.cpp</label>
+        <link refid="TasksTreeAction_8cpp"/>
+      </node>
+      <node id="279">
+        <label>SampleScopePlugin.cpp</label>
+        <link refid="SampleScopePlugin_8cpp"/>
+      </node>
+      <node id="204">
+        <label>LoadedViewsMenu.cpp</label>
+        <link refid="LoadedViewsMenu_8cpp"/>
+      </node>
+      <node id="133">
+        <label>ViewPluginSamplerAction.cpp</label>
+        <link refid="ViewPluginSamplerAction_8cpp"/>
+      </node>
+      <node id="47">
+        <label>DataHierarchyListModel.h</label>
+        <link refid="DataHierarchyListModel_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>DataPropertiesWidget.cpp</label>
+        <link refid="DataPropertiesWidget_8cpp"/>
+      </node>
+      <node id="142">
+        <label>AbstractActionsModel.cpp</label>
+        <link refid="AbstractActionsModel_8cpp"/>
+      </node>
+      <node id="107">
+        <label>SelectedIndicesAction.h</label>
+        <link refid="SelectedIndicesAction_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>SettingsStatusBarAction.cpp</label>
+        <link refid="SettingsStatusBarAction_8cpp"/>
+      </node>
+      <node id="41">
+        <label>DataHierarchyWidget.h</label>
+        <link refid="DataHierarchyWidget_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ColorMapAction.cpp</label>
+        <link refid="ColorMapAction_8cpp"/>
+      </node>
+      <node id="129">
+        <label>SplashScreenAction.cpp</label>
+        <link refid="SplashScreenAction_8cpp"/>
+      </node>
+      <node id="118">
+        <label>RemoveDatasetsDialog.cpp</label>
+        <link refid="RemoveDatasetsDialog_8cpp"/>
+      </node>
+      <node id="146">
+        <label>ViewPluginEditorDialog.cpp</label>
+        <link refid="ViewPluginEditorDialog_8cpp"/>
+      </node>
+      <node id="72">
+        <label>SelectClustersAction.cpp</label>
+        <link refid="SelectClustersAction_8cpp"/>
+      </node>
+      <node id="287">
+        <label>TemporaryDirectoriesSettingsAction.cpp</label>
+        <link refid="TemporaryDirectoriesSettingsAction_8cpp"/>
+      </node>
+      <node id="148">
+        <label>ActionsManager.h</label>
+        <link refid="ActionsManager_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>Core.h</label>
+        <link refid="Core_8h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>ColorData.cpp</label>
+        <link refid="ColorData_8cpp"/>
+      </node>
+      <node id="272">
+        <label>ProjectsFilterModel.cpp</label>
+        <link refid="ProjectsFilterModel_8cpp"/>
+      </node>
+      <node id="156">
+        <label>ActionsHierarchyModel.cpp</label>
+        <link refid="ActionsHierarchyModel_8cpp"/>
+      </node>
+      <node id="42">
+        <label>DataHierarchyPlugin.h</label>
+        <link refid="DataHierarchyPlugin_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>DimensionPickerAction.cpp</label>
+        <link refid="DimensionPickerAction_8cpp"/>
+      </node>
+      <node id="53">
+        <label>RawDataFilterModel.cpp</label>
+        <link refid="RawDataFilterModel_8cpp"/>
+      </node>
+      <node id="120">
+        <label>DatasetsToRemoveModel.cpp</label>
+        <link refid="DatasetsToRemoveModel_8cpp"/>
+      </node>
+      <node id="294">
+        <label>PluginAboutDialog.cpp</label>
+        <link refid="PluginAboutDialog_8cpp"/>
+      </node>
+      <node id="124">
+        <label>TransformationPlugin.cpp</label>
+        <link refid="TransformationPlugin_8cpp"/>
+      </node>
+      <node id="39">
+        <label>DataHierarchyFilterModel.cpp</label>
+        <link refid="DataHierarchyFilterModel_8cpp"/>
+      </node>
+      <node id="99">
+        <label>DimensionsPickerMiscellaneousAction.cpp</label>
+        <link refid="DimensionsPickerMiscellaneousAction_8cpp"/>
+      </node>
+      <node id="18">
+        <label>PluginTriggerAction.cpp</label>
+        <link refid="PluginTriggerAction_8cpp"/>
+      </node>
+      <node id="65">
+        <label>ClustersActionWidget.cpp</label>
+        <link refid="ClustersActionWidget_8cpp"/>
+      </node>
+      <node id="164">
+        <label>CoreInterface.cpp</label>
+        <link refid="CoreInterface_8cpp"/>
+      </node>
+      <node id="268">
+        <label>ModalTaskHandler.cpp</label>
+        <link refid="ModalTaskHandler_8cpp"/>
+      </node>
+      <node id="64">
+        <label>ClustersAction.h</label>
+        <link refid="ClustersAction_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>ActionsListModel.cpp</label>
+        <link refid="ActionsListModel_8cpp"/>
+      </node>
+      <node id="116">
+        <label>DatasetsToRemoveModel.h</label>
+        <link refid="DatasetsToRemoveModel_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>WidgetActionMimeData.h</label>
+        <link refid="WidgetActionMimeData_8h"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>WidgetActionLabel.cpp</label>
+        <link refid="WidgetActionLabel_8cpp"/>
+      </node>
+      <node id="96">
+        <label>DimensionsPickerAction.h</label>
+        <link refid="DimensionsPickerAction_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>DataManager.cpp</label>
+        <link refid="DataManager_8cpp"/>
+      </node>
+      <node id="177">
+        <label>PluginFactoriesListModel.cpp</label>
+        <link refid="PluginFactoriesListModel_8cpp"/>
+      </node>
+      <node id="109">
+        <label>TextData.h</label>
+        <link refid="TextData_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>WidgetActionMimeData.cpp</label>
+        <link refid="WidgetActionMimeData_8cpp"/>
+      </node>
+      <node id="102">
+        <label>EditProxyDatasetsAction.cpp</label>
+        <link refid="EditProxyDatasetsAction_8cpp"/>
+      </node>
+      <node id="247">
+        <label>ViewPluginLearningCenterOverlayWidget.cpp</label>
+        <link refid="ViewPluginLearningCenterOverlayWidget_8cpp"/>
+      </node>
+      <node id="274">
+        <label>ParametersSettingsAction.cpp</label>
+        <link refid="ParametersSettingsAction_8cpp"/>
+      </node>
+      <node id="138">
+        <label>WidgetAction.cpp</label>
+        <link refid="WidgetAction_8cpp"/>
+      </node>
+      <node id="125">
+        <label>Project.cpp</label>
+        <link refid="Project_8cpp"/>
+      </node>
+      <node id="51">
+        <label>AbstractDatasetsModel.cpp</label>
+        <link refid="AbstractDatasetsModel_8cpp"/>
+      </node>
+      <node id="61">
+        <label>InfoAction.h</label>
+        <link refid="ClusterData_2src_2InfoAction_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>RecentFilesListModel.cpp</label>
+        <link refid="RecentFilesListModel_8cpp"/>
+      </node>
+      <node id="186">
+        <label>CrashReportDialog.cpp</label>
+        <link refid="CrashReportDialog_8cpp"/>
+      </node>
+      <node id="75">
+        <label>ColorData.h</label>
+        <link refid="ColorData_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>Notifications.cpp</label>
+        <link refid="Notifications_8cpp"/>
+      </node>
+      <node id="136">
+        <label>ActionsListModel.h</label>
+        <link refid="ActionsListModel_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>TutorialPlugin.cpp</label>
+        <link refid="TutorialPlugin_8cpp"/>
+      </node>
+      <node id="278">
+        <label>LoggingWidget.cpp</label>
+        <link refid="LoggingWidget_8cpp"/>
+      </node>
+      <node id="130">
+        <label>StatusBarAction.cpp</label>
+        <link refid="StatusBarAction_8cpp"/>
+      </node>
+      <node id="230">
+        <label>ViewPluginsDockWidget.cpp</label>
+        <link refid="ViewPluginsDockWidget_8cpp"/>
+      </node>
+      <node id="233">
+        <label>WorkspaceSettingsDialog.cpp</label>
+        <link refid="WorkspaceSettingsDialog_8cpp"/>
+      </node>
+      <node id="270">
+        <label>LearningCenterTutorialsFilterModel.cpp</label>
+        <link refid="LearningCenterTutorialsFilterModel_8cpp"/>
+      </node>
+      <node id="181">
+        <label>ProjectsModelProject.cpp</label>
+        <link refid="ProjectsModelProject_8cpp"/>
+      </node>
+      <node id="244">
+        <label>InfoWidget.cpp</label>
+        <link refid="InfoWidget_8cpp"/>
+      </node>
+      <node id="54">
+        <label>StatisticsAction.h</label>
+        <link refid="StatisticsAction_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>ErrorLoggingConsentDialog.cpp</label>
+        <link refid="ErrorLoggingConsentDialog_8cpp"/>
+      </node>
+      <node id="59">
+        <label>ClusterData.h</label>
+        <link refid="ClusterData_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>SelectionsModel.h</label>
+        <link refid="SelectionsModel_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>AbstractActionsModel.h</label>
+        <link refid="AbstractActionsModel_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>LearningPageContentWidget.cpp</label>
+        <link refid="LearningPageContentWidget_8cpp"/>
+      </node>
+      <node id="20">
+        <label>Set.h</label>
+        <link refid="Set_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>ProjectWidget.cpp</label>
+        <link refid="ProjectWidget_8cpp"/>
+      </node>
+      <node id="265">
+        <label>TaskAction.cpp</label>
+        <link refid="TaskAction_8cpp"/>
+      </node>
+      <node id="157">
+        <label>PublicActionsModel.h</label>
+        <link refid="PublicActionsModel_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>ClustersModel.cpp</label>
+        <link refid="ClustersModel_8cpp"/>
+      </node>
+      <node id="205">
+        <label>LoadSystemViewMenu.cpp</label>
+        <link refid="LoadSystemViewMenu_8cpp"/>
+      </node>
+      <node id="280">
+        <label>SampleScopeWidget.cpp</label>
+        <link refid="SampleScopeWidget_8cpp"/>
+      </node>
+      <node id="25">
+        <label>AnalysisPlugin.h</label>
+        <link refid="AnalysisPlugin_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>PointDataGTest.cpp</label>
+        <link refid="PointDataGTest_8cpp"/>
+      </node>
+      <node id="206">
+        <label>LoggingStatusBarAction.cpp</label>
+        <link refid="LoggingStatusBarAction_8cpp"/>
+      </node>
+      <node id="77">
+        <label>DataHierarchyWidgetContextMenu.cpp</label>
+        <link refid="DataHierarchyWidgetContextMenu_8cpp"/>
+      </node>
+      <node id="188">
+        <label>DockManager.cpp</label>
+        <link refid="DockManager_8cpp"/>
+      </node>
+      <node id="128">
+        <label>RecentFilesAction.cpp</label>
+        <link refid="RecentFilesAction_8cpp"/>
+      </node>
+      <node id="263">
+        <label>StartPageConfigurationAction.cpp</label>
+        <link refid="StartPageConfigurationAction_8cpp"/>
+      </node>
+      <node id="104">
+        <label>ProxyDatasetsAction.cpp</label>
+        <link refid="ProxyDatasetsAction_8cpp"/>
+      </node>
+      <node id="241">
+        <label>Serializable.cpp</label>
+        <link refid="Serializable_8cpp"/>
+      </node>
+      <node id="218">
+        <label>ProjectsMenu.cpp</label>
+        <link refid="ProjectsMenu_8cpp"/>
+      </node>
+      <node id="19">
+        <label>PluginTriggerPickerAction.cpp</label>
+        <link refid="PluginTriggerPickerAction_8cpp"/>
+      </node>
+      <node id="17">
+        <label>PluginStatusBarAction.cpp</label>
+        <link refid="PluginStatusBarAction_8cpp"/>
+      </node>
+      <node id="108">
+        <label>SelectedIndicesAction.cpp</label>
+        <link refid="SelectedIndicesAction_8cpp"/>
+      </node>
+      <node id="8">
+        <label>ColorSchemeAction.cpp</label>
+        <link refid="ColorSchemeAction_8cpp"/>
+      </node>
+      <node id="237">
+        <label>Task.cpp</label>
+        <link refid="Task_8cpp"/>
+      </node>
+      <node id="37">
+        <label>AbstractDataHierarchyModel.cpp</label>
+        <link refid="AbstractDataHierarchyModel_8cpp"/>
+      </node>
+      <node id="139">
+        <label>WidgetActionDrag.cpp</label>
+        <link refid="WidgetActionDrag_8cpp"/>
+      </node>
+      <node id="166">
+        <label>ForegroundTask.cpp</label>
+        <link refid="ForegroundTask_8cpp"/>
+      </node>
+      <node id="40">
+        <label>DataHierarchyTreeModel.cpp</label>
+        <link refid="DataHierarchyTreeModel_8cpp"/>
+      </node>
+      <node id="88">
+        <label>PointsGTest.cpp</label>
+        <link refid="PointsGTest_8cpp"/>
+      </node>
+      <node id="189">
+        <label>DockWidget.cpp</label>
+        <link refid="DockWidget_8cpp"/>
+      </node>
+      <node id="277">
+        <label>LoggingPlugin.cpp</label>
+        <link refid="LoggingPlugin_8cpp"/>
+      </node>
+      <node id="236">
+        <label>Navigator2D.cpp</label>
+        <link refid="Navigator2D_8cpp"/>
+      </node>
+      <node id="192">
+        <label>ErrorLoggingConsentDialog.h</label>
+        <link refid="ErrorLoggingConsentDialog_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>StatisticsAction.cpp</label>
+        <link refid="StatisticsAction_8cpp"/>
+      </node>
+      <node id="106">
+        <label>NumberOfSelectedPointsAction.cpp</label>
+        <link refid="NumberOfSelectedPointsAction_8cpp"/>
+      </node>
+      <node id="91">
+        <label>InfoAction.h</label>
+        <link refid="PointData_2src_2InfoAction_8h"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>OptionAction.cpp</label>
+        <link refid="OptionAction_8cpp"/>
+      </node>
+      <node id="173">
+        <label>AbstractTasksModel.cpp</label>
+        <link refid="AbstractTasksModel_8cpp"/>
+      </node>
+      <node id="264">
+        <label>StringsAction.cpp</label>
+        <link refid="StringsAction_8cpp"/>
+      </node>
+      <node id="160">
+        <label>AppearanceSettingsAction.cpp</label>
+        <link refid="AppearanceSettingsAction_8cpp"/>
+      </node>
+      <node id="94">
+        <label>DimensionPickerAction.h</label>
+        <link refid="DimensionPickerAction_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>ProjectMetaAction.cpp</label>
+        <link refid="ProjectMetaAction_8cpp"/>
+      </node>
+      <node id="176">
+        <label>LearningCenterTutorialsModel.cpp</label>
+        <link refid="LearningCenterTutorialsModel_8cpp"/>
+      </node>
+      <node id="209">
+        <label>PageActionDelegateEditorWidget.cpp</label>
+        <link refid="PageActionDelegateEditorWidget_8cpp"/>
+      </node>
+      <node id="3">
+        <label>CoreInterface.h</label>
+        <link refid="CoreInterface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>ApplicationStartupTask.cpp</label>
+        <link refid="ApplicationStartupTask_8cpp"/>
+      </node>
+      <node id="78">
+        <label>DataPropertiesPlugin.cpp</label>
+        <link refid="DataPropertiesPlugin_8cpp"/>
+      </node>
+      <node id="167">
+        <label>ForegroundTaskTester.cpp</label>
+        <link refid="ForegroundTaskTester_8cpp"/>
+      </node>
+      <node id="259">
+        <label>DirectoryPickerAction.cpp</label>
+        <link refid="DirectoryPickerAction_8cpp"/>
+      </node>
+      <node id="4">
+        <label>BrandingConfigurationAction.cpp</label>
+        <link refid="BrandingConfigurationAction_8cpp"/>
+      </node>
+      <node id="123">
+        <label>TransformationPlugin.h</label>
+        <link refid="TransformationPlugin_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>ColorMapEditor1DAction.cpp</label>
+        <link refid="ColorMapEditor1DAction_8cpp"/>
+      </node>
+      <node id="228">
+        <label>ViewMenu.cpp</label>
+        <link refid="ViewMenu_8cpp"/>
+      </node>
+      <node id="13">
+        <label>PaletteAction.cpp</label>
+        <link refid="PaletteAction_8cpp"/>
+      </node>
+      <node id="33">
+        <label>DatasetTaskHandler.cpp</label>
+        <link refid="DatasetTaskHandler_8cpp"/>
+      </node>
+      <node id="24">
+        <label>Actions.h</label>
+        <link refid="Actions_8h"/>
+      </node>
+      <node id="179">
+        <label>PluginsListModel.cpp</label>
+        <link refid="PluginsListModel_8cpp"/>
+      </node>
+      <node id="242">
+        <label>Serialization.cpp</label>
+        <link refid="Serialization_8cpp"/>
+      </node>
+      <node id="174">
+        <label>DatasetsListModel.cpp</label>
+        <link refid="DatasetsListModel_8cpp"/>
+      </node>
+      <node id="81">
+        <label>ImageData.cpp</label>
+        <link refid="ImageData_8cpp"/>
+      </node>
+      <node id="171">
+        <label>AbstractPluginsModel.cpp</label>
+        <link refid="AbstractPluginsModel_8cpp"/>
+      </node>
+      <node id="145">
+        <label>ViewPlugin.cpp</label>
+        <link refid="ViewPlugin_8cpp"/>
+      </node>
+      <node id="252">
+        <label>ColorAction.cpp</label>
+        <link refid="ColorAction_8cpp"/>
+      </node>
+      <node id="221">
+        <label>SettingsManager.cpp</label>
+        <link refid="SettingsManager_8cpp"/>
+      </node>
+      <node id="197">
+        <label>FrontPagesStatusBarAction.cpp</label>
+        <link refid="FrontPagesStatusBarAction_8cpp"/>
+      </node>
+      <node id="155">
+        <label>ActionsHierarchyModel.h</label>
+        <link refid="ActionsHierarchyModel_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>ProjectManager.cpp</label>
+        <link refid="ProjectManager_8cpp"/>
+      </node>
+      <node id="227">
+        <label>ThemeManager.cpp</label>
+        <link refid="ThemeManager_8cpp"/>
+      </node>
+      <node id="100">
+        <label>DimensionsPickerSelectAction.cpp</label>
+        <link refid="DimensionsPickerSelectAction_8cpp"/>
+      </node>
+      <node id="284">
+        <label>PageWidget.cpp</label>
+        <link refid="PageWidget_8cpp"/>
+      </node>
+      <node id="202">
+        <label>LearningPageVideosWidget.cpp</label>
+        <link refid="LearningPageVideosWidget_8cpp"/>
+      </node>
+      <node id="154">
+        <label>ActionsWidget.cpp</label>
+        <link refid="ActionsWidget_8cpp"/>
+      </node>
+      <node id="282">
+        <label>PluginType.cpp</label>
+        <link refid="PluginType_8cpp"/>
+      </node>
+      <node id="49">
+        <label>RawDataModel.cpp</label>
+        <link refid="RawDataModel_8cpp"/>
+      </node>
+      <node id="163">
+        <label>BackgroundTaskTester.cpp</label>
+        <link refid="BackgroundTaskTester_8cpp"/>
+      </node>
+      <node id="112">
+        <label>TextData.cpp</label>
+        <link refid="TextData_8cpp"/>
+      </node>
+      <node id="80">
+        <label>ImageData.h</label>
+        <link refid="ImageData_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>StartPageGetStartedWidget.cpp</label>
+        <link refid="StartPageGetStartedWidget_8cpp"/>
+      </node>
+      <node id="141">
+        <label>WidgetActionViewWidget.cpp</label>
+        <link refid="WidgetActionViewWidget_8cpp"/>
+      </node>
+      <node id="203">
+        <label>LearningPageVideoWidget.cpp</label>
+        <link refid="LearningPageVideoWidget_8cpp"/>
+      </node>
+      <node id="28">
+        <label>PluginManager.cpp</label>
+        <link refid="PluginManager_8cpp"/>
+      </node>
+      <node id="232">
+        <label>WorkspaceManager.cpp</label>
+        <link refid="WorkspaceManager_8cpp"/>
+      </node>
+      <node id="226">
+        <label>StartPageOpenProjectWidget.cpp</label>
+        <link refid="StartPageOpenProjectWidget_8cpp"/>
+      </node>
+      <node id="165">
+        <label>ErrorLoggingSettingsAction.cpp</label>
+        <link refid="ErrorLoggingSettingsAction_8cpp"/>
+      </node>
+      <node id="285">
+        <label>ProjectSerializationTask.cpp</label>
+        <link refid="ProjectSerializationTask_8cpp"/>
+      </node>
+      <node id="161">
+        <label>Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="195">
+        <label>SentryErrorLogger.cpp</label>
+        <link refid="SentryErrorLogger_8cpp"/>
+      </node>
+      <node id="150">
+        <label>ActionsFilterModel.cpp</label>
+        <link refid="ActionsFilterModel_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Application.h</label>
+        <link refid="Application_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>WorkspaceStatusBarAction.cpp</label>
+        <link refid="WorkspaceStatusBarAction_8cpp"/>
+      </node>
+      <node id="50">
+        <label>SelectionsModel.cpp</label>
+        <link refid="SelectionsModel_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmv_1_1Application" prot="public">mv::Application</innerclass>
+    <innerclass refid="structmv_1_1Application_1_1CursorShapeCount" prot="public">mv::Application::CursorShapeCount</innerclass>
+    <innerclass refid="classmv_1_1Application_1_1TemporaryDirs" prot="public">mv::Application::TemporaryDirs</innerclass>
+    <innernamespace refid="namespacemv">mv</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Application_8h_1a6996f2582fbc5390916639776191dafb" prot="public" static="no">
+        <name>MV_LOG_EXCEPTION</name>
+        <param><defname>stdException</defname></param>
+        <initializer>qCritical().noquote() &lt;&lt; ::<ref refid="classmv_1_1util_1_1Logger_1a5389c6176180affc6e865f5bc2ab710e" kindref="member">mv::Logger::ExceptionToText</ref>(stdException)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Application.h" line="9" column="9" bodyfile="Docs/external/core/ManiVault/src/util/Logger.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Logger_8h" kindref="compound">util/Logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Version_8h" kindref="compound">util/Version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Serializable_8h" kindref="compound">util/Serializable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="TriggerAction_8h" kindref="compound">actions/TriggerAction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="OptionsAction_8h" kindref="compound">actions/OptionsAction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ApplicationConfigurationAction_8h" kindref="compound">actions/ApplicationConfigurationAction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ApplicationStartupTask_8h" kindref="compound">ApplicationStartupTask.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSettings&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTemporaryDir&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLockFile&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QMainWindow;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreInterface;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ProjectMetaAction;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classmv_1_1Application" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1Application" kindref="compound">Application</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QApplication,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1Serializable" kindref="compound">util::Serializable</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structmv_1_1Application_1_1CursorShapeCount" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmv_1_1Application_1_1CursorShapeCount" kindref="compound">CursorShapeCount</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="structmv_1_1Application_1_1CursorShapeCount_1ab78a47e4224641bb31be092b821716dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Qt::CursorShape<sp/><sp/><sp/><sp/><sp/><ref refid="structmv_1_1Application_1_1CursorShapeCount_1ab78a47e4224641bb31be092b821716dc" kindref="member">shape</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structmv_1_1Application_1_1CursorShapeCount_1aed7b61b9fdcf022a780f1a482effcddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::int32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmv_1_1Application_1_1CursorShapeCount_1aed7b61b9fdcf022a780f1a482effcddb" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classmv_1_1Application_1_1TemporaryDirs" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1Application_1_1TemporaryDirs" kindref="compound">TemporaryDirs</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1_1TemporaryDirs" kindref="compound">TemporaryDirs</ref>(QObject*<sp/>parent);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>getStale();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeStale(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>stale<sp/>=<sp/>QStringList());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classmv_1_1Application_1_1TemporaryDirs_1a6c8b4b5e79b43e4df9270ffcc8d26bf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Task" kindref="compound">Task</ref>&amp;<sp/><ref refid="classmv_1_1Application_1_1TemporaryDirs_1a6c8b4b5e79b43e4df9270ffcc8d26bf7" kindref="member">getTask</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_task;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Task" kindref="compound">Task</ref><sp/><sp/>_task;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Construction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application" kindref="compound">Application</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmv_1_1Application" kindref="compound">Application</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Miscellaneous</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Application" kindref="compound">Application</ref>*<sp/>current();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/>getCore()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCore(<ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1Version" kindref="compound">util::Version</ref><sp/>getVersion()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QString<sp/>getBaseName();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QString<sp/>getFullName();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QString<sp/>getAbout();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getStartupProjectUrl()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStartupProjectUrl(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QUrl&amp;<sp/>startupProjectUrl);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref>*<sp/>getStartupProjectMetaAction()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setStartupProjectMetaAction(<ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref>*<sp/>projectMetaAction);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ApplicationStartupTask" kindref="compound">ApplicationStartupTask</ref>&amp;<sp/>getStartupTask();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shouldOpenProjectAtStartup()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Settings<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasSetting(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariant<sp/>getSetting(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariant&amp;<sp/>defaultValue<sp/>=<sp/>QVariant())<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSetting(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariant&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Logging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1Logger" kindref="compound">util::Logger</ref>&amp;<sp/>getLogger();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSerializationAborted();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSerializationAborted(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>serializationAborted);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QTemporaryDir&amp;<sp/>getTemporaryDir()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>TemporaryDirs&amp;<sp/>getTemporaryDirs();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Cursor<sp/>overrides</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::int32_t<sp/>requestOverrideCursor(Qt::CursorShape<sp/>cursorShape);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::int32_t<sp/>requestRemoveOverrideCursor(Qt::CursorShape<sp/>cursorShape,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>all<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Customization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QString<sp/>getConfigurationFileName();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QString<sp/>getConfigurationFilePath();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasConfigurationFile();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Statics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QMainWindow*<sp/>getMainWindow();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initializeAttributes();</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="classmv_1_1Application_1ad51baa496284dce58e39647a6c775cdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ApplicationConfigurationAction" kindref="compound">gui::ApplicationConfigurationAction</ref>&amp;<sp/><ref refid="classmv_1_1Application_1ad51baa496284dce58e39647a6c775cdc" kindref="member">getConfigurationAction</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_configurationAction;<sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="classmv_1_1Application_1abfafed85f3cac774c29f7722eb347470" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Application_1abfafed85f3cac774c29f7722eb347470" kindref="member">coreAboutToBeInitialized</ref>(<ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="classmv_1_1Application_1a5467805dbdfca1f384cfc144776354f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Application_1a5467805dbdfca1f384cfc144776354f2" kindref="member">coreInitialized</ref>(<ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classmv_1_1Application_1a2e6717c61b65fe1d3f902f749048b3bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Application_1a2e6717c61b65fe1d3f902f749048b3bd" kindref="member">coreManagersCreated</ref>(<ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="326" refid="classmv_1_1Application_1a8555727f2652b954d300244c5856b1e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a8555727f2652b954d300244c5856b1e0" kindref="member">_core</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="327" refid="classmv_1_1Application_1a51afea30dd4a12702179b9f02f3a3c32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1Version" kindref="compound">util::Version</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a51afea30dd4a12702179b9f02f3a3c32" kindref="member">_version</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="328" refid="classmv_1_1Application_1a82028c37cfc54feaec39d8df9e731902" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSettings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a82028c37cfc54feaec39d8df9e731902" kindref="member">_settings</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="329" refid="classmv_1_1Application_1a61daf04076d1e31d0535cb32a61d0adb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a61daf04076d1e31d0535cb32a61d0adb" kindref="member">_serializationTemporaryDirectory</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="330" refid="classmv_1_1Application_1a90805823c80b57552b99f5fb43ebde74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a90805823c80b57552b99f5fb43ebde74" kindref="member">_serializationAborted</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="331" refid="classmv_1_1Application_1a865e29147edb5797ed5b8ee5175f5dd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1Logger" kindref="compound">util::Logger</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a865e29147edb5797ed5b8ee5175f5dd7" kindref="member">_logger</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="332" refid="classmv_1_1Application_1a387901ff22088a809902fa63fe5746b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a387901ff22088a809902fa63fe5746b6" kindref="member">_exitAction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="333" refid="classmv_1_1Application_1a1fe2aa7d8178f99f022dacef815633a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a1fe2aa7d8178f99f022dacef815633a3" kindref="member">_startupProjectUrl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="334" refid="classmv_1_1Application_1aa3120cdbda1e83892f11a99de504e760" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1aa3120cdbda1e83892f11a99de504e760" kindref="member">_startupProjectMetaAction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="335" refid="classmv_1_1Application_1a13f4e877bccbe06877432b97444c839b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ApplicationStartupTask" kindref="compound">ApplicationStartupTask</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a13f4e877bccbe06877432b97444c839b" kindref="member">_startupTask</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="336" refid="classmv_1_1Application_1a79736589372213a17e3e7b8743b82bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTemporaryDir<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a79736589372213a17e3e7b8743b82bcf" kindref="member">_temporaryDir</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="337" refid="classmv_1_1Application_1a28c238ca6ce0301bfe89eba0b3ca1fa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1_1TemporaryDirs" kindref="compound">TemporaryDirs</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a28c238ca6ce0301bfe89eba0b3ca1fa8" kindref="member">_temporaryDirs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="338" refid="classmv_1_1Application_1a53d5204bdcc8673aeb54827e833da852" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLockFile<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a53d5204bdcc8673aeb54827e833da852" kindref="member">_lockFile</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="339" refid="classmv_1_1Application_1a8e31cdf23c8df7aad254d462de586667" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ApplicationConfigurationAction" kindref="compound">gui::ApplicationConfigurationAction</ref><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Application_1a8e31cdf23c8df7aad254d462de586667" kindref="member">_configurationAction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="342" refid="classmv_1_1Application_1ae26d0a893200040eb158817758171ae0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QList&lt;CursorShapeCount&gt;<sp/><ref refid="classmv_1_1Application_1ae26d0a893200040eb158817758171ae0" kindref="member">cursorOverridesCount</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Docs/external/core/ManiVault/src/Application.h"/>
+  </compounddef>
+</doxygen>

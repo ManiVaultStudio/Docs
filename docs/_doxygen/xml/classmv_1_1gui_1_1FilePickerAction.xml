@@ -1,0 +1,1038 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1FilePickerAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::FilePickerAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetAction" prot="public" virt="non-virtual">mv::gui::WidgetAction</basecompoundref>
+    <includes refid="FilePickerAction_8h" local="no">FilePickerAction.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WidgetFlag</name>
+        <enumvalue id="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a392d0bc5a14b098090b581f5e2fb9f40" prot="public">
+          <name>LineEdit</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a311bd27e0ede2cd6070de6f7fcc020c6" prot="public">
+          <name>PushButton</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>Widget includes a line edit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a2a802b447a9224d296cdb13338a44c22" prot="public">
+          <name>Default</name>
+          <initializer>= LineEdit | PushButton</initializer>
+          <briefdescription>
+<para>There is a button to pick a directory. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Describes the widget configurations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="35" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="35" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1af55a9fef6b1b1179c87036479b908fc5" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; QFileSystemModel &gt;</type>
+        <definition>QPointer&lt;QFileSystemModel&gt; mv::gui::FilePickerAction::_dirModel</definition>
+        <argsstring></argsstring>
+        <name>_dirModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="199" column="15" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1ac76f8c431bd0f435229e7264f5a9025b" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; QCompleter &gt;</type>
+        <definition>QPointer&lt;QCompleter&gt; mv::gui::FilePickerAction::_completer</definition>
+        <argsstring></argsstring>
+        <name>_completer</name>
+        <briefdescription>
+<para>Directory model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="200" column="21" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1a31c19d986f7cd00eda7225131db2d738" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref></type>
+        <definition>StringAction mv::gui::FilePickerAction::_filePathAction</definition>
+        <argsstring></argsstring>
+        <name>_filePathAction</name>
+        <briefdescription>
+<para>Completer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="201" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1ac39e9f1b308f855772be4656b709baa2" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::FilePickerAction::_pickAction</definition>
+        <argsstring></argsstring>
+        <name>_pickAction</name>
+        <briefdescription>
+<para>File path action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="202" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1a74f2b7b305384e03606a5211437ef68b" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList mv::gui::FilePickerAction::_nameFilters</definition>
+        <argsstring></argsstring>
+        <name>_nameFilters</name>
+        <briefdescription>
+<para>Pick file action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="203" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1adbf3eda477838fdc4277c478c7b264c6" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::_defaultSuffix</definition>
+        <argsstring></argsstring>
+        <name>_defaultSuffix</name>
+        <briefdescription>
+<para>File type filters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="204" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1acac3dcf82cd705fe21cd7f858c767c44" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::_fileType</definition>
+        <argsstring></argsstring>
+        <name>_fileType</name>
+        <briefdescription>
+<para>Default suffix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="205" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1a78a829688127f005fa0c0aff4beb1781" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::FilePickerAction::_useNativeDialog</definition>
+        <argsstring></argsstring>
+        <name>_useNativeDialog</name>
+        <briefdescription>
+<para>File type (e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>image and project) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="206" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1FilePickerAction_1afe81b264f0191641f5a3d3ebb6840e6f" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::_applicationRelativeFilePath</definition>
+        <argsstring></argsstring>
+        <name>_applicationRelativeFilePath</name>
+        <briefdescription>
+<para>Whether to use native or Qt file dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="207" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a3458abfc4d11c4e90fd9c370136ebd26" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::gui::FilePickerAction::getWidget</definition>
+        <argsstring>(QWidget *parent, const std::int32_t &amp;widgetFlags) override</argsstring>
+        <name>getWidget</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33">getWidget</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Get widget representation of the file picker action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget flags for the configuration of the widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="49" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="207" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a91f8574a4015df43924605d818d39573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_INVOKABLE</type>
+        <definition>mv::gui::FilePickerAction::FilePickerAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const QString &amp;filePath=QString(), bool populateCompleter=true)</argsstring>
+        <name>FilePickerAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+          <defval>QString()</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>populateCompleter</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>populateCompleter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to create a QCompleter for _filePathAction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="60" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="20" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1aebbce1deef4ad8c24265cabe179532b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getFilePath</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilePath</name>
+        <briefdescription>
+<para>Get the current file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current file path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="66" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1ae79dc20a212dfe4298e116d7389e1e8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getApplicationRelativeFilePath</definition>
+        <argsstring>() const</argsstring>
+        <name>getApplicationRelativeFilePath</name>
+        <briefdescription>
+<para>Get the application-relative file path (if it exists) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File path relative to the application directory when the file was picked, if the picked file path was a sub-path of the application directory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="72" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a3a473f73adca7a18db8b8a0b114d1572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setFilePath</definition>
+        <argsstring>(const QString &amp;filePath)</argsstring>
+        <name>setFilePath</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Set the file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current file path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="124" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a48066f552c1345095e094452a73bbec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList mv::gui::FilePickerAction::getNameFilters</definition>
+        <argsstring>() const</argsstring>
+        <name>getNameFilters</name>
+        <briefdescription>
+<para>Get the name filters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Name filters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="84" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a8fd860bca4964bcfac913164036a509d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setNameFilters</definition>
+        <argsstring>(const QStringList &amp;nameFilters)</argsstring>
+        <name>setNameFilters</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>nameFilters</declname>
+        </param>
+        <briefdescription>
+<para>Set the name filters to <computeroutput>nameFilters</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nameFilters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name filters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="90" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1afb50198ac62e3b7ceaa7933949be480d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getDefaultSuffix</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultSuffix</name>
+        <briefdescription>
+<para>Get the default suffix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Default suffix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="96" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1abe4f0dfeb0b2f118130cf4e894107616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setDefaultSuffix</definition>
+        <argsstring>(const QString &amp;defaultSuffix)</argsstring>
+        <name>setDefaultSuffix</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>defaultSuffix</declname>
+        </param>
+        <briefdescription>
+<para>Set the default suffix to <computeroutput>defaultSuffix</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>defaultSuffix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default suffix </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="102" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1addf570b1ccb920370da0220db90f7e81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getFileType</definition>
+        <argsstring>() const</argsstring>
+        <name>getFileType</name>
+        <briefdescription>
+<para>Get the file type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="108" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a91db2f2d5949e50cc92906b2d1f8ba05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setFileType</definition>
+        <argsstring>(const QString &amp;fileType)</argsstring>
+        <name>setFileType</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileType</declname>
+        </param>
+        <briefdescription>
+<para>Set file type to <computeroutput>fileType</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="114" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a880e8e18d696101c0a586c492fbdeabe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getPlaceholderString</definition>
+        <argsstring>() const</argsstring>
+        <name>getPlaceholderString</name>
+        <briefdescription>
+<para>Get placeholder text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Placeholder string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="120" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a0535e18b2f93669d5ad3727d9812d400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setPlaceHolderString</definition>
+        <argsstring>(const QString &amp;placeholderString)</argsstring>
+        <name>setPlaceHolderString</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>placeholderString</declname>
+        </param>
+        <briefdescription>
+<para>Set placeholder text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>placeholderString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder text </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="126" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="174" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1afc2d5e363a0be5d5dec93e790fc28e13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getDirectoryName</definition>
+        <argsstring>() const</argsstring>
+        <name>getDirectoryName</name>
+        <briefdescription>
+<para>Get directory name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Directory name </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="132" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1ac16eb484108d0db35934ffd069817b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::setUseNativeFileDialog</definition>
+        <argsstring>(bool useNativeDialog)</argsstring>
+        <name>setUseNativeFileDialog</name>
+        <param>
+          <type>bool</type>
+          <declname>useNativeDialog</declname>
+        </param>
+        <briefdescription>
+<para>Set whether to use native or Qt file dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>useNativeDialog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use native or Qt file dialog </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="138" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a12512d8d04c18e8ce2e5524bba5055d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::FilePickerAction::getUseNativeFileDialog</definition>
+        <argsstring>() const</argsstring>
+        <name>getUseNativeFileDialog</name>
+        <briefdescription>
+<para>Get whether to use native or Qt file dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Bool whether to use native or Qt file dialog </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="144" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a9991efd380cb8b4e58d34e34e7d460a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::FilePickerAction::isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <briefdescription>
+<para>Get whether the directory is valid or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean indication whether the directory is valid or not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="150" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a8dd9b9563982e3e574e843529d890d0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::FilePickerAction::getApplicationDirectory</definition>
+        <argsstring>() const</argsstring>
+        <name>getApplicationDirectory</name>
+        <briefdescription>
+<para>Get the application directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1Application" kindref="compound">Application</ref> directory </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="156" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1af4290de1729d0d907440990cbbc9ceff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load file picker action from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant representation of the file picker action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="165" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="228" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a6575261790bda8fb6c6ba0d0c89b67b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::FilePickerAction::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save file picker action to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the file picker action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="171" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.cpp" bodystart="241" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a903b6eeefb12241603c8b7ab2528888a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref> &amp;</type>
+        <definition>StringAction&amp; mv::gui::FilePickerAction::getFilePathAction</definition>
+        <argsstring>()</argsstring>
+        <name>getFilePathAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="175" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1FilePickerAction_1a273756a341cb606bbaa85de857a1ab06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::FilePickerAction::getPickAction</definition>
+        <argsstring>()</argsstring>
+        <name>getPickAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="176" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1FilePickerAction_1a4a524a166d920683ed054e9a5dcf7879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::filePathChanged</definition>
+        <argsstring>(const QString &amp;filePath)</argsstring>
+        <name>filePathChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the file path changed to <computeroutput>filePath</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New file path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="184" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1FilePickerAction_1ab10526bef32dfd1481ce6bcb1a51c1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::placeholderStringChanged</definition>
+        <argsstring>(const QString &amp;placeholderString)</argsstring>
+        <name>placeholderStringChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>placeholderString</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the placeholder string changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>placeholderString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Placeholder string that changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1FilePickerAction_1a901c03c6a7b15df8d510be141cd2ba99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::FilePickerAction::fileTypeChanged</definition>
+        <argsstring>(const QString &amp;fileType)</argsstring>
+        <name>fileTypeChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>fileType</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the file type has changed to <computeroutput>fileType</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="196" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File picker action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Action class for picking a file</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::FilePickerAction</label>
+        <link refid="classmv_1_1gui_1_1FilePickerAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::FilePickerAction</label>
+        <link refid="classmv_1_1gui_1_1FilePickerAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" line="28" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/FilePickerAction.h" bodystart="29" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1afe81b264f0191641f5a3d3ebb6840e6f" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_applicationRelativeFilePath</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1ac76f8c431bd0f435229e7264f5a9025b" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_completer</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1adbf3eda477838fdc4277c478c7b264c6" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_defaultSuffix</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1af55a9fef6b1b1179c87036479b908fc5" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_dirModel</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a31c19d986f7cd00eda7225131db2d738" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_filePathAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1acac3dcf82cd705fe21cd7f858c767c44" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_fileType</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a74f2b7b305384e03606a5211437ef68b" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_nameFilters</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1ac39e9f1b308f855772be4656b709baa2" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_pickAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a78a829688127f005fa0c0aff4beb1781" prot="private" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>_useNativeDialog</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a2a802b447a9224d296cdb13338a44c22" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a4a524a166d920683ed054e9a5dcf7879" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>filePathChanged</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a91f8574a4015df43924605d818d39573" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>FilePickerAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a901c03c6a7b15df8d510be141cd2ba99" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>fileTypeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1af4290de1729d0d907440990cbbc9ceff" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::FilePickerAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::FilePickerAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a8dd9b9563982e3e574e843529d890d0a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getApplicationDirectory</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1ae79dc20a212dfe4298e116d7389e1e8f" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getApplicationRelativeFilePath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1afb50198ac62e3b7ceaa7933949be480d" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getDefaultSuffix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1afc2d5e363a0be5d5dec93e790fc28e13" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getDirectoryName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1aebbce1deef4ad8c24265cabe179532b9" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getFilePath</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a903b6eeefb12241603c8b7ab2528888a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getFilePathAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1addf570b1ccb920370da0220db90f7e81" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getFileType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a48066f552c1345095e094452a73bbec5" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getNameFilters</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a273756a341cb606bbaa85de857a1ab06" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getPickAction</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a880e8e18d696101c0a586c492fbdeabe" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getPlaceholderString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a12512d8d04c18e8ce2e5524bba5055d2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getUseNativeFileDialog</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a3458abfc4d11c4e90fd9c370136ebd26" prot="protected" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a9991efd380cb8b4e58d34e34e7d460a3" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isValid</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a392d0bc5a14b098090b581f5e2fb9f40" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>LineEdit</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1ab10526bef32dfd1481ce6bcb1a51c1d8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>placeholderStringChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3a311bd27e0ede2cd6070de6f7fcc020c6" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>PushButton</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1abe4f0dfeb0b2f118130cf4e894107616" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setDefaultSuffix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a3a473f73adca7a18db8b8a0b114d1572" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setFilePath</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a91db2f2d5949e50cc92906b2d1f8ba05" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setFileType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a8fd860bca4964bcfac913164036a509d" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setNameFilters</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a0535e18b2f93669d5ad3727d9812d400" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setPlaceHolderString</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1ac16eb484108d0db35934ffd069817b03" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setUseNativeFileDialog</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a6575261790bda8fb6c6ba0d0c89b67b0" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::FilePickerAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1FilePickerAction_1a94e0e133282e17a80f1aed6a22a794b3" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::FilePickerAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::FilePickerAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

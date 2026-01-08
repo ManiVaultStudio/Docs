@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1ActionsListModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::ActionsListModel</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractActionsModel" prot="public" virt="non-virtual">mv::AbstractActionsModel</basecompoundref>
+    <includes refid="ActionsListModel_8h" local="no">ActionsListModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1ActionsListModel_1acd171e5d2189007c3c44096bbbb9d992" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+        <definition>gui::WidgetAction* mv::ActionsListModel::_rootAction</definition>
+        <argsstring></argsstring>
+        <name>_rootAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="81" column="28" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1ab1cb26e3c24ffb70044222c8956ff8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::ActionsListModel::ActionsListModel</definition>
+        <argsstring>(QObject *parent=nullptr, gui::WidgetAction *rootAction=nullptr)</argsstring>
+        <name>ActionsListModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>rootAction</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object and <computeroutput>rootAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rootAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When set, only list the root action and its descendants </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1a4243dd1b2577caa9cd5c57411ffbe4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1adc13b4ff7a7abc5e748ceeeeaa53ae9e">initialize</reimplements>
+        <briefdescription>
+<para>Initializes the model from the current state of the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="36" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1ae4094b066ed8c0d10619253ddfaed30b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+        <definition>WidgetAction * mv::ActionsListModel::getRootAction</definition>
+        <argsstring>()</argsstring>
+        <name>getRootAction</name>
+        <briefdescription>
+<para>Get root action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to root action (if any) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="42" column="23" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1a95fd009c518d6d31ed5477196456c0eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::setRootAction</definition>
+        <argsstring>(gui::WidgetAction *rootAction)</argsstring>
+        <name>setRootAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>rootAction</declname>
+        </param>
+        <briefdescription>
+<para>Set root action to <computeroutput>rootAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rootAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>When set, only list the root action and its descendants </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="48" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="40" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1aa0765dc68a8eee973661372ff3424c6a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::actionAddedToManager</definition>
+        <argsstring>(gui::WidgetAction *action) override</argsstring>
+        <name>actionAddedToManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1ad1bbc0bc255794cd48a8b73d6151e490">actionAddedToManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Helper method which is invoked when <computeroutput>action</computeroutput> is added to the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="56" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1a3e83aef1d74f8052c00d071df69e1763" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::actionAboutToBeRemovedFromManager</definition>
+        <argsstring>(gui::WidgetAction *action) override</argsstring>
+        <name>actionAboutToBeRemovedFromManager</name>
+        <reimplements refid="classmv_1_1AbstractActionsModel_1a408c2ee431409c8aa1700fe1f7a9fa32">actionAboutToBeRemovedFromManager</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Helper method which is invoked when <computeroutput>action</computeroutput> is about to be removed from the actions manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action that was removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="62" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="57" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1ActionsListModel_1aef02a68485d6f4dbc054f3afb801314b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::addAction</definition>
+        <argsstring>(gui::WidgetAction *action)</argsstring>
+        <name>addAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>action</computeroutput> to the model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="70" column="10" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.cpp" bodystart="73" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1ActionsListModel_1a2b5c263132f3c9933666ac3561445fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::ActionsListModel::rootActionChanged</definition>
+        <argsstring>(gui::WidgetAction *rootAction)</argsstring>
+        <name>rootActionChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>rootAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the root action changed to <computeroutput>rootAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rootAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to root action (if any) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="78" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Actions list model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>List model for actions derived from abstract actions model class</para>
+<para>When initialized with a root action, it lists the root action and its descendants, otherwise it just lists all the actions from the actions manager.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel</label>
+        <link refid="classmv_1_1AbstractActionsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::ActionsListModel</label>
+        <link refid="classmv_1_1ActionsListModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractActionsModel</label>
+        <link refid="classmv_1_1AbstractActionsModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>columnInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::ActionsListModel</label>
+        <link refid="classmv_1_1ActionsListModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="3">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMap&lt; Column, mv::AbstractActionsModel::ColumHeaderInfo &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/ActionsListModel.h" line="22" column="1" bodyfile="Docs/external/core/ManiVault/src/models/ActionsListModel.h" bodystart="23" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classmv_1_1ActionsListModel_1acd171e5d2189007c3c44096bbbb9d992" prot="private" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>_rootAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1acff6089763379154cb4b5d77f978719f" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>AbstractActionsModel</name></member>
+      <member refid="classmv_1_1ActionsListModel_1a3e83aef1d74f8052c00d071df69e1763" prot="protected" virt="virtual"><scope>mv::ActionsListModel</scope><name>actionAboutToBeRemovedFromManager</name></member>
+      <member refid="classmv_1_1ActionsListModel_1aa0765dc68a8eee973661372ff3424c6a" prot="protected" virt="virtual"><scope>mv::ActionsListModel</scope><name>actionAddedToManager</name></member>
+      <member refid="classmv_1_1ActionsListModel_1ab1cb26e3c24ffb70044222c8956ff8df" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>ActionsListModel</name></member>
+      <member refid="classmv_1_1ActionsListModel_1aef02a68485d6f4dbc054f3afb801314b" prot="private" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>addAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a3233de00b59d5e4e1660768f871a801c" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>canDropMimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a58c1f506aa8c6fc7237c37a7f58aa272" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a38cd45ae804cd0eb53f96654b9b24379" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>dropMimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a14f8d6f9ab398462052b180868830a4b" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>flags</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsListModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a10020e86111d666eb494d3f058fa96a5" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1aaed4772836f26a7372d5127007b108b2" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ad888439ec59c97a84767bf4b8484e621" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a83ce945d29fc9f542567f238cf46ea80" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>getActionIndex</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a8666f60127eb439317bce6ab16494311" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>getActionItem</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1ActionsListModel_1ae4094b066ed8c0d10619253ddfaed30b" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getRootAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1ActionsListModel_1a4243dd1b2577caa9cd5c57411ffbe4ad" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ab4b639ec7753b36e0ccdd02064aeaf1d" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>mimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ab74a4e55e4adea676967485a6dd94320" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>mimeTypes</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a7304b198c7db168ce0cbf1c408d3f4ba" prot="protected" virt="virtual"><scope>mv::ActionsListModel</scope><name>publicActionAboutToBeRemovedFromManager</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ab5dcddc980f1034a7cb4f67e89d2fc9f" prot="protected" virt="virtual"><scope>mv::ActionsListModel</scope><name>publicActionAddedToManager</name></member>
+      <member refid="classmv_1_1ActionsListModel_1a2b5c263132f3c9933666ac3561445fdf" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>rootActionChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1ActionsListModel_1a95fd009c518d6d31ed5477196456c0eb" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>setRootAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>State</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1ae5b51079ca330df6fe0bdc9364d002eb" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>supportedDragActions</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1afa4ca9de01114b229941f60d08dc9f1e" prot="protected" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>supportedDropActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::ActionsListModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::ActionsListModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::ActionsListModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

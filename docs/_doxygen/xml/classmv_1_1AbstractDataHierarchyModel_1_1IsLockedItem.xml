@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::AbstractDataHierarchyModel::IsLockedItem</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractDataHierarchyModel_1_1Item" prot="public" virt="non-virtual">mv::AbstractDataHierarchyModel::Item</basecompoundref>
+    <includes refid="AbstractDataHierarchyModel_8h" local="no">AbstractDataHierarchyModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1aaf804493da307f5b3e2b4df1569d363e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::AbstractDataHierarchyModel::IsLockedItem::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="599" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.cpp" bodystart="542" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1a2e13934add21d92a740060b1470c968b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractDataHierarchyModel::Item::Item</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, bool editable=false)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>editable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Use base item constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="593" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.cpp" bodystart="25" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1a3b95489f34340a095a27f75cb64f5e63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>static QVariant mv::AbstractDataHierarchyModel::IsLockedItem::headerData</definition>
+        <argsstring>(Qt::Orientation orientation, int role)</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>orientation</computeroutput> and <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal/vertical </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="607" column="25" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="607" bodyend="620"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard model item class for displaying whether the dataset is locked. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataHierarchyModel::Item</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyModel::IsLockedItem</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataHierarchyModel::Item</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyModel::IsLockedItem</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="589" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="589" bodyend="621"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1aaf804493da307f5b3e2b4df1569d363e" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>data</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1accf75357b321447f86d514b1824b633c" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1ad8a663c365fefc1894285d9b3fae2a25" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1a3b95489f34340a095a27f75cb64f5e63" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>headerData</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1IsLockedItem_1a2e13934add21d92a740060b1470c968b" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1a2e13934add21d92a740060b1470c968b" prot="public" virt="non-virtual" ambiguityscope="mv::AbstractDataHierarchyModel::Item::"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1a8e481a9813ed02c5f0d8c24ec2460ff7" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::IsLockedItem</scope><name>refreshData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

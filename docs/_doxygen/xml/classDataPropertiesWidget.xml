@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classDataPropertiesWidget" kind="class" language="C++" prot="public">
+    <compoundname>DataPropertiesWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="DataPropertiesWidget_8h" local="no">DataPropertiesWidget.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDataPropertiesWidget_1a8f724deb430d3a342c98f00df835463c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classDataPropertiesPlugin" kindref="compound">DataPropertiesPlugin</ref> *</type>
+        <definition>DataPropertiesPlugin* DataPropertiesWidget::_dataPropertiesPlugin</definition>
+        <argsstring></argsstring>
+        <name>_dataPropertiesPlugin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="49" column="28" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1a45b4cfedac6f7f539b27676a20a8992b" prot="protected" static="no" mutable="no">
+        <type>QVBoxLayout</type>
+        <definition>QVBoxLayout DataPropertiesWidget::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+<para>Pointer to owning data properties plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="50" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1a9f2449e33c05f6814ef17afe0e9145a1" prot="protected" static="no" mutable="no">
+        <type>QTimer</type>
+        <definition>QTimer DataPropertiesWidget::_populateTimer</definition>
+        <argsstring></argsstring>
+        <name>_populateTimer</name>
+        <briefdescription>
+<para>Main layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="51" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1a1198c86729b731bf83a449947d6d74c9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>DataHierarchyItems DataPropertiesWidget::_scheduledItems</definition>
+        <argsstring></argsstring>
+        <name>_scheduledItems</name>
+        <briefdescription>
+<para><ref refid="classTimer" kindref="compound">Timer</ref> for selectively populating the UI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="52" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1a67e3a851b7d1f4dc7fbe556b05b9c2cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+        <definition>DataHierarchyItems DataPropertiesWidget::_currentItems</definition>
+        <argsstring></argsstring>
+        <name>_currentItems</name>
+        <briefdescription>
+<para>Items scheduled to be shown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="53" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1adc6bd996b1d103be73cca5fe34c7039c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DataPropertiesWidget::_abortPopulate</definition>
+        <argsstring></argsstring>
+        <name>_abortPopulate</name>
+        <briefdescription>
+<para>Items currently shown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="54" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1ae47760b9f282f70a3b29001b2dcd4831" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DataPropertiesWidget::_isPopulating</definition>
+        <argsstring></argsstring>
+        <name>_isPopulating</name>
+        <briefdescription>
+<para>Boolean determining whether the UI build process should be terminated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="55" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1af8a21071d6211b2cecdf9b23910af1a4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupsAction" kindref="compound">GroupsAction</ref></type>
+        <definition>GroupsAction DataPropertiesWidget::_groupsAction</definition>
+        <argsstring></argsstring>
+        <name>_groupsAction</name>
+        <briefdescription>
+<para>Boolean determining whether the UI build process should be terminated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="56" column="29" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataPropertiesWidget_1ab414de53436f993092a3b233d73deff4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupsAction_1_1Widget" kindref="compound">GroupsAction::Widget</ref> *</type>
+        <definition>GroupsAction::Widget* DataPropertiesWidget::_groupsActionWidget</definition>
+        <argsstring></argsstring>
+        <name>_groupsActionWidget</name>
+        <briefdescription>
+<para>Groups action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="57" column="28" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataPropertiesWidget_1a7184707539dbeef109a9b0b646ae7bb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataPropertiesWidget::DataPropertiesWidget</definition>
+        <argsstring>(DataPropertiesPlugin *dataPropertiesPlugin, QWidget *parent=nullptr)</argsstring>
+        <name>DataPropertiesWidget</name>
+        <param>
+          <type><ref refid="classDataPropertiesPlugin" kindref="compound">DataPropertiesPlugin</ref> *</type>
+          <declname>dataPropertiesPlugin</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to owning <computeroutput>dataPropertiesPlugin</computeroutput> and <computeroutput>parent</computeroutput> widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataPropertiesPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to owning data properties plugin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="35" column="5" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.cpp" bodystart="18" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDataPropertiesWidget_1aceeba6b4a2dc20578c56c581b15b7bb4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataPropertiesWidget::dataHierarchySelectionChanged</definition>
+        <argsstring>()</argsstring>
+        <name>dataHierarchySelectionChanged</name>
+        <briefdescription>
+<para>Callback when is called when the selected items in the data hierarchy changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="40" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.cpp" bodystart="56" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDataPropertiesWidget_1a7c24b81a626a02c9c365832b01dccf47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataPropertiesWidget::beginPopulate</definition>
+        <argsstring>()</argsstring>
+        <name>beginPopulate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="44" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataPropertiesWidget_1adf430e21192cf99bf92ef5021c7175f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataPropertiesWidget::populate</definition>
+        <argsstring>()</argsstring>
+        <name>populate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="45" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.cpp" bodystart="74" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataPropertiesWidget_1a6793393353bbbc4e513553899b278108" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataPropertiesWidget::endPopulate</definition>
+        <argsstring>()</argsstring>
+        <name>endPopulate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="46" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data properties widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Widget class for viewing/editing dataset property pages</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>DataPropertiesWidget</label>
+        <link refid="classDataPropertiesWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>QMap&lt; mv::gui::GroupAction *, mv::gui::GroupSectionTreeItem * &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="33">
+        <label>QMap&lt; QString, QVariant &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="12">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="28">
+        <label>mv::plugin::Plugin</label>
+        <link refid="classmv_1_1plugin_1_1Plugin"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_destroyAction</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>_core</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>_shortcuts</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>_factory</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>_eventListener</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>_properties</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>_learningCenterAction</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_guiNameAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QObject</label>
+      </node>
+      <node id="35">
+        <label>std::vector&lt; Qt::Alignment &gt;</label>
+      </node>
+      <node id="1">
+        <label>DataPropertiesWidget</label>
+        <link refid="classDataPropertiesWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_currentItems</edgelabel>
+          <edgelabel>_scheduledItems</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_groupsActionWidget</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_dataPropertiesPlugin</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>_groupsAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::DataHierarchyItems</label>
+        <link refid="classmv_1_1DataHierarchyItems"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mv::plugin::ViewPlugin</label>
+        <link refid="classmv_1_1plugin_1_1ViewPlugin"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QMap&lt; mv::gui::GroupAction *, bool &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="30">
+        <label>mv::PluginShortcuts</label>
+        <link refid="classmv_1_1PluginShortcuts"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_viewAction</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>_plugin</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>DataPropertiesPlugin</label>
+        <link refid="classDataPropertiesPlugin"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QTreeWidget</label>
+      </node>
+      <node id="29">
+        <label>mv::CoreInterface</label>
+        <link refid="classmv_1_1CoreInterface"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mv::gui::GroupsAction</label>
+        <link refid="classmv_1_1gui_1_1GroupsAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>_visibility</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>_updateTask</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="14">
+        <label>mv::gui::GroupsAction::TreeWidget</label>
+        <link refid="classmv_1_1gui_1_1GroupsAction_1_1TreeWidget"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QList&lt; DataHierarchyItem * &gt;</label>
+      </node>
+      <node id="17">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::gui::GroupsAction::Widget</label>
+        <link refid="classmv_1_1gui_1_1GroupsAction_1_1Widget"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_collapseAllAction</edgelabel>
+          <edgelabel>_expandAllAction</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_filteredActionsAction</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_treeWidget</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>_groupSectionTreeItems</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>_toolbarAction</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>_groupsAction</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_filterAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::gui::WidgetActionViewWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionViewWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="23">
+        <label>QMap&lt; Status, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="32">
+        <label>mv::EventListener</label>
+        <link refid="classmv_1_1EventListener"/>
+      </node>
+      <node id="22">
+        <label>QMap&lt; GuiScope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="13">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>mv::plugin::PluginFactory</label>
+        <link refid="classmv_1_1plugin_1_1PluginFactory"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mv::gui::StringAction</label>
+        <link refid="classmv_1_1gui_1_1StringAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mv::Task</label>
+        <link refid="classmv_1_1Task"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>guiScopeNames</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>statusNames</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>progressModeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="24">
+        <label>QMap&lt; ProgressMode, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="6">
+        <label>mv::gui::WidgetActionWidget</label>
+        <link refid="classmv_1_1gui_1_1WidgetActionWidget"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::gui::TriggerAction</label>
+        <link refid="classmv_1_1gui_1_1TriggerAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>mv::gui::PluginLearningCenterAction</label>
+        <link refid="classmv_1_1gui_1_1PluginLearningCenterAction"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>alignmentFlags</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesWidget.h" bodystart="27" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classDataPropertiesWidget_1adc6bd996b1d103be73cca5fe34c7039c" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_abortPopulate</name></member>
+      <member refid="classDataPropertiesWidget_1a67e3a851b7d1f4dc7fbe556b05b9c2cc" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_currentItems</name></member>
+      <member refid="classDataPropertiesWidget_1a8f724deb430d3a342c98f00df835463c" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_dataPropertiesPlugin</name></member>
+      <member refid="classDataPropertiesWidget_1af8a21071d6211b2cecdf9b23910af1a4" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_groupsAction</name></member>
+      <member refid="classDataPropertiesWidget_1ab414de53436f993092a3b233d73deff4" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_groupsActionWidget</name></member>
+      <member refid="classDataPropertiesWidget_1ae47760b9f282f70a3b29001b2dcd4831" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_isPopulating</name></member>
+      <member refid="classDataPropertiesWidget_1a45b4cfedac6f7f539b27676a20a8992b" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_layout</name></member>
+      <member refid="classDataPropertiesWidget_1a9f2449e33c05f6814ef17afe0e9145a1" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_populateTimer</name></member>
+      <member refid="classDataPropertiesWidget_1a1198c86729b731bf83a449947d6d74c9" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>_scheduledItems</name></member>
+      <member refid="classDataPropertiesWidget_1a7c24b81a626a02c9c365832b01dccf47" prot="private" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>beginPopulate</name></member>
+      <member refid="classDataPropertiesWidget_1aceeba6b4a2dc20578c56c581b15b7bb4" prot="protected" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>dataHierarchySelectionChanged</name></member>
+      <member refid="classDataPropertiesWidget_1a7184707539dbeef109a9b0b646ae7bb6" prot="public" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>DataPropertiesWidget</name></member>
+      <member refid="classDataPropertiesWidget_1a6793393353bbbc4e513553899b278108" prot="private" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>endPopulate</name></member>
+      <member refid="classDataPropertiesWidget_1adf430e21192cf99bf92ef5021c7175f0" prot="private" virt="non-virtual"><scope>DataPropertiesWidget</scope><name>populate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

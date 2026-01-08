@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1PointDataIterator" kind="class" language="C++" prot="public">
+    <compoundname>mv::PointDataIterator</compoundname>
+    <includes refid="PointDataIterator_8h" local="no">PointDataIterator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueIteratorType</type>
+      </param>
+      <param>
+        <type>typename IndexIteratorType</type>
+      </param>
+      <param>
+        <type>typename IndexFunctionType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a4fa114a18d89b32e6ddbb603bbbb9548" prot="private" static="no">
+        <type><ref refid="classmv_1_1PointView" kindref="compound">PointView</ref>&lt; ValueIteratorType &gt;</type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::PointViewType =  PointView&lt;ValueIteratorType&gt;</definition>
+        <argsstring></argsstring>
+        <name>PointViewType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="22" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="25" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a72484836f59cc9e844a223def483baec" prot="public" static="no">
+        <type><ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref></type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::value_type =  PointViewType</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="26" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1afb6ee2eccdfa25e93e5ec40d26aaccc3" prot="public" static="no">
+        <type><ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref></type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::reference =  PointViewType</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="27" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a4a8e49809b5b7b2abf6d2e0f283f00cb" prot="public" static="no">
+        <type>const <ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref> *</type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::pointer =  const PointViewType*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="28" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1aa5303d47596c26274106b7c2a797c3b8" prot="public" static="no">
+        <type>std::random_access_iterator_tag</type>
+        <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::iterator_category =  std::random_access_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="29" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1PointDataIterator_1a837530088cf52a5126f712bac03098b3" prot="private" static="no" mutable="no">
+        <type>ValueIteratorType</type>
+        <definition>ValueIteratorType mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::_valueIterator</definition>
+        <argsstring></argsstring>
+        <name>_valueIterator</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="17" column="27" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PointDataIterator_1ae01879a60f76a843c4534cdebb5642d1" prot="private" static="no" mutable="no">
+        <type>IndexIteratorType</type>
+        <definition>IndexIteratorType mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::_indexIterator</definition>
+        <argsstring></argsstring>
+        <name>_indexIterator</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="18" column="27" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PointDataIterator_1a04cbe04442f7e7e447e082bbe2de11b1" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::_numberOfDimensions</definition>
+        <argsstring></argsstring>
+        <name>_numberOfDimensions</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="19" column="18" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PointDataIterator_1aba4df7b216b889d092cc264bf659a7f2" prot="private" static="no" mutable="no">
+        <type>IndexFunctionType</type>
+        <definition>IndexFunctionType mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::_indexFunction</definition>
+        <argsstring></argsstring>
+        <name>_indexFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="20" column="27" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a701f468c7fa8c5be89e6710877950087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::PointDataIterator</definition>
+        <argsstring>()=default</argsstring>
+        <name>PointDataIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="34" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a737c4f23f143d610e0c4c0120adc93e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::PointDataIterator</definition>
+        <argsstring>(const ValueIteratorType valueIterator, const IndexIteratorType indexIterator, const unsigned numberOfDimensions, const IndexFunctionType indexFunction)</argsstring>
+        <name>PointDataIterator</name>
+        <param>
+          <type>const ValueIteratorType</type>
+          <declname>valueIterator</declname>
+        </param>
+        <param>
+          <type>const IndexIteratorType</type>
+          <declname>indexIterator</declname>
+        </param>
+        <param>
+          <type>const unsigned</type>
+          <declname>numberOfDimensions</declname>
+        </param>
+        <param>
+          <type>const IndexFunctionType</type>
+          <declname>indexFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="37" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="37" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a2c4471627283730c2e2595aff123ebd8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Returns a <ref refid="classmv_1_1PointView" kindref="compound">PointView</ref> object to the current point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="53" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1ac5c8fe73a72482af805315d90d8683a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto&amp; mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Prefix increment (&apos;++it&apos;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="64" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a511494b7c9ff53a3cc7c2ffd03095e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Postfix increment (&apos;it++&apos;). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Usually prefix increment (&apos;++it&apos;) is preferable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="74" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a5b571582f512f791da980761be849321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto&amp; mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+<para>Prefix decrement (&apos;<ndash/>it&apos;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="84" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1ac0a86035c9465d4451bc14f00b2b79c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Postfix increment (&apos;it<ndash/>&apos;). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Usually prefix increment (&apos;<ndash/>it&apos;) is preferable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="94" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PointDataIterator_1a766ef0147aeec3773ddb264fa9f0e154" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::operator[]</definition>
+        <argsstring>(const difference_type n) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Returns it[n] for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="146" column="14" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1ab24a373762bad43486bf8c8e8648ec51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto&amp; operator+=</definition>
+        <argsstring>(PointDataIterator &amp;it, const difference_type n)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Does (it += n) for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="105" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a3d5bba030e4f9ab324130539e27f7c2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+        <definition>difference_type operator-</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 - it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="114" column="32" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a5f245980c501915297c6b3d54a8e7189" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator+</definition>
+        <argsstring>(PointDataIterator it, const difference_type n)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it + n) for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="122" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a542dffd04bedb655aa8d72c8abb4f61c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator+</definition>
+        <argsstring>(const difference_type n, PointDataIterator it)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Returns (n + it) for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="130" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a01d54f3f349e8fae7c8c735d355cbce1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator-</definition>
+        <argsstring>(PointDataIterator it, const difference_type n)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it - n) for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="138" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a1dde55f9e4eed56f9938330a11ea70c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 == it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="154" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a85be5a261fd756354eeca997a03d864b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 != it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="162" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1affbe9121c63894f3b5d4db97c3d6bd96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 &lt; it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="170" column="16" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a1c9b86fd240783411b94eefe187edecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 &gt; it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="178" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a7d3f78d28c6d36faf98e6b5034d688b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;=</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 &lt;= it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="187" column="16" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="187" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a89c103bb760a9d69c4c849971e3196ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;=</definition>
+        <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+<para>Returns (it1 &gt;= it2) for iterators it1 and it2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="196" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="196" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a991cef4db3a02e2fcb98cb8e2cffc372" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto&amp; operator-=</definition>
+        <argsstring>(PointDataIterator &amp;it, const difference_type n)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Does (it -= n) for iterator &apos;it&apos; and integer value &apos;n&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="205" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1PointDataIterator_1a6ed892510deb9a72ca93f353667a8595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto index</definition>
+        <argsstring>(const PointDataIterator &amp;arg)</argsstring>
+        <name>index</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Returns the index of the current point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="214" column="21" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="214" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="14" column="5" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="15" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classmv_1_1PointDataIterator_1aba4df7b216b889d092cc264bf659a7f2" prot="private" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>_indexFunction</name></member>
+      <member refid="classmv_1_1PointDataIterator_1ae01879a60f76a843c4534cdebb5642d1" prot="private" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>_indexIterator</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a04cbe04442f7e7e447e082bbe2de11b1" prot="private" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>_numberOfDimensions</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a837530088cf52a5126f712bac03098b3" prot="private" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>_valueIterator</name></member>
+      <member refid="classmv_1_1PointDataIterator_1ac2e07106a70ad0d15d2384e3622ab854" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>difference_type</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a6ed892510deb9a72ca93f353667a8595" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>index</name></member>
+      <member refid="classmv_1_1PointDataIterator_1aa5303d47596c26274106b7c2a797c3b8" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>iterator_category</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a85be5a261fd756354eeca997a03d864b" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a2c4471627283730c2e2595aff123ebd8" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator*</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a5f245980c501915297c6b3d54a8e7189" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator+</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a542dffd04bedb655aa8d72c8abb4f61c" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator+</name></member>
+      <member refid="classmv_1_1PointDataIterator_1ac5c8fe73a72482af805315d90d8683a7" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator++</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a511494b7c9ff53a3cc7c2ffd03095e3f" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator++</name></member>
+      <member refid="classmv_1_1PointDataIterator_1ab24a373762bad43486bf8c8e8648ec51" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator+=</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a3d5bba030e4f9ab324130539e27f7c2e" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator-</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a01d54f3f349e8fae7c8c735d355cbce1" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator-</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a5b571582f512f791da980761be849321" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator--</name></member>
+      <member refid="classmv_1_1PointDataIterator_1ac0a86035c9465d4451bc14f00b2b79c7" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator--</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a991cef4db3a02e2fcb98cb8e2cffc372" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator-=</name></member>
+      <member refid="classmv_1_1PointDataIterator_1affbe9121c63894f3b5d4db97c3d6bd96" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator&lt;</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a7d3f78d28c6d36faf98e6b5034d688b1" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator&lt;=</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a1dde55f9e4eed56f9938330a11ea70c7" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator==</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a1c9b86fd240783411b94eefe187edecd" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator&gt;</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a89c103bb760a9d69c4c849971e3196ab" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator&gt;=</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a766ef0147aeec3773ddb264fa9f0e154" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>operator[]</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a701f468c7fa8c5be89e6710877950087" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>PointDataIterator</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a737c4f23f143d610e0c4c0120adc93e5" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>PointDataIterator</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a4a8e49809b5b7b2abf6d2e0f283f00cb" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>pointer</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a4fa114a18d89b32e6ddbb603bbbb9548" prot="private" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>PointViewType</name></member>
+      <member refid="classmv_1_1PointDataIterator_1afb6ee2eccdfa25e93e5ec40d26aaccc3" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>reference</name></member>
+      <member refid="classmv_1_1PointDataIterator_1a72484836f59cc9e844a223def483baec" prot="public" virt="non-virtual"><scope>mv::PointDataIterator</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

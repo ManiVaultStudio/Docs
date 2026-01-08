@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1LearningCenterTutorialsModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::LearningCenterTutorialsModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItemModel</basecompoundref>
+    <includes refid="LearningCenterTutorialsModel_8h" local="no">LearningCenterTutorialsModel.h</includes>
+    <innerclass refid="structmv_1_1LearningCenterTutorialsModel_1_1ColumHeaderInfo" prot="public">mv::LearningCenterTutorialsModel::ColumHeaderInfo</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1ContentItem" prot="protected">mv::LearningCenterTutorialsModel::ContentItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1DateItem" prot="protected">mv::LearningCenterTutorialsModel::DateItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1IconNameItem" prot="protected">mv::LearningCenterTutorialsModel::IconNameItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1Item" prot="public">mv::LearningCenterTutorialsModel::Item</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1MinimumCoreVersionItem" prot="protected">mv::LearningCenterTutorialsModel::MinimumCoreVersionItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1MissingPluginsItem" prot="protected">mv::LearningCenterTutorialsModel::MissingPluginsItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1ProjectUrlItem" prot="protected">mv::LearningCenterTutorialsModel::ProjectUrlItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1RequiredPluginsItem" prot="protected">mv::LearningCenterTutorialsModel::RequiredPluginsItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1Row" prot="protected">mv::LearningCenterTutorialsModel::Row</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1SummaryItem" prot="protected">mv::LearningCenterTutorialsModel::SummaryItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1TagsItem" prot="protected">mv::LearningCenterTutorialsModel::TagsItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1TitleItem" prot="protected">mv::LearningCenterTutorialsModel::TitleItem</innerclass>
+    <innerclass refid="classmv_1_1LearningCenterTutorialsModel_1_1UrlItem" prot="protected">mv::LearningCenterTutorialsModel::UrlItem</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2ab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a189f63f277cd73395561651753563065" prot="public">
+          <name>Tags</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a44749712dbec183e983dcd78a7736c41" prot="public">
+          <name>Date</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a799d32a5ce401c9b753f4293bb6fa6c4" prot="public">
+          <name>IconName</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a290612199861c31d1036b185b4e69b75" prot="public">
+          <name>Summary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2af15c1cae7882448b3fb0404682e17e61" prot="public">
+          <name>Content</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a02a3a357710cc2a5dfdfb74ed012fb59" prot="public">
+          <name>Url</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2ac6a6736e21244e493cd39043051a26ed" prot="public">
+          <name>ProjectUrl</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a9e6416c10a6f4f6a6adba85dc557b116" prot="public">
+          <name>MinimumCoreVersion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2afde5cf3d6d00ec9380afd079c1760932" prot="public">
+          <name>RequiredPlugins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2a874f44c001a68054209b19904f1cc4f9" prot="public">
+          <name>MissingPlugins</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2ae93f994f01c537c4e2f7d8528c3eb5e9" prot="public">
+          <name>Count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Model columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="32" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmv_1_1LearningCenterTutorialsModel_1a39dba235f237b41c6b7beb32f3bdca37" prot="public" static="yes" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2" kindref="member">Column</ref>, <ref refid="structmv_1_1LearningCenterTutorialsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
+        <definition>QMap&lt; LearningCenterTutorialsModel::Column, LearningCenterTutorialsModel::ColumHeaderInfo &gt; mv::LearningCenterTutorialsModel::columnInfo</definition>
+        <argsstring></argsstring>
+        <name>columnInfo</name>
+        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2" kindref="member">Column</ref>, <ref refid="structmv_1_1LearningCenterTutorialsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref>&gt;({
+    { <ref refid="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2ab78a3223503896721cca1303f776159b" kindref="member">Column::Title</ref>, { &quot;Title&quot; , &quot;Title&quot;, &quot;Title&quot; } },
+    { Column::Tags, { &quot;Tags&quot; , &quot;Tags&quot;, &quot;Tags&quot; } },
+    { Column::Date, { &quot;Date&quot; , &quot;Date&quot;, &quot;Issue date&quot; } },
+    { Column::IconName, { &quot;Icon Name&quot; , &quot;Icon Name&quot;, &quot;Font Awesome icon name&quot; } },
+    { Column::Summary, { &quot;Summary&quot; , &quot;Summary&quot;, &quot;Summary (brief description)&quot; } },
+    { Column::Content, { &quot;Content&quot; , &quot;Content&quot;, &quot;Full tutorial content in HTML format&quot; } },
+    { Column::Url, { &quot;URL&quot; , &quot;URL&quot;, &quot;ManiVault website tutorial URL&quot; } },
+    { Column::MinimumCoreVersion, { &quot;Min. app <ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref> version&quot; , &quot;Min. app <ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref> version&quot;, &quot;Minimum ManiVault Studio application <ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref> version&quot; } },
+    { Column::RequiredPlugins, { &quot;Required <ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>&quot; , &quot;Required <ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>&quot;, &quot;<ref refid="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" kindref="member">Plugins</ref> required to open the project&quot; } },
+    { Column::MissingPlugins, { &quot;Missing <ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>&quot; , &quot;Missing <ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>&quot;, &quot;List of <ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref> which are missing&quot; } },
+})</initializer>
+        <briefdescription>
+<para>Column name and tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="56" column="17" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1LearningCenterTutorialsModel_1aa121238b858b59b2a925c9c9c2c5a106" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1util_1a1e29d0bba5ee7a16869191328ea77f5a" kindref="member">util::LearningCenterTutorials</ref></type>
+        <definition>util::LearningCenterTutorials mv::LearningCenterTutorialsModel::_tutorials</definition>
+        <argsstring></argsstring>
+        <name>_tutorials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="553" column="37" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1LearningCenterTutorialsModel_1aea23b3666aa4706256193fae29699dd3" prot="private" static="no" mutable="no">
+        <type>QSet&lt; QString &gt;</type>
+        <definition>QSet&lt;QString&gt; mv::LearningCenterTutorialsModel::_tags</definition>
+        <argsstring></argsstring>
+        <name>_tags</name>
+        <briefdescription>
+<para>Model tutorials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="554" column="28" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1LearningCenterTutorialsModel_1ac87ec0108dd1991aa1753e6066ebfbed" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref></type>
+        <definition>gui::StringsAction mv::LearningCenterTutorialsModel::_dsnsAction</definition>
+        <argsstring></argsstring>
+        <name>_dsnsAction</name>
+        <briefdescription>
+<para>All tags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="555" column="37" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1ac2a78c9312f1062d47009fdb9c3d2e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::LearningCenterTutorialsModel::LearningCenterTutorialsModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>LearningCenterTutorialsModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="509" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="41" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1af0f5377c9d685fd52372fcdf817c29aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::LearningCenterTutorialsModel::headerData</definition>
+        <argsstring>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>section</computeroutput>, <computeroutput>orientation</computeroutput> and display <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Section </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="518" column="14" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="112" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1a3fad7a06f34b1089a4287881bf86c8c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QSet&lt; QString &gt;</type>
+        <definition>QSet&lt; QString &gt; mv::LearningCenterTutorialsModel::getTagsSet</definition>
+        <argsstring>() const</argsstring>
+        <name>getTagsSet</name>
+        <briefdescription>
+<para>Get tags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>All tags </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="524" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1a2bb99a0eae686dc9d29a2817d9056457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterTutorialsModel::addTutorial</definition>
+        <argsstring>(const util::LearningCenterTutorial *tutorial)</argsstring>
+        <name>addTutorial</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1LearningCenterTutorial" kindref="compound">util::LearningCenterTutorial</ref> *</type>
+          <declname>tutorial</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>tutorial</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tutorial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to tutorial to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="530" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="161" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1aeaee7d16fed5a335fa7b073d6d81266f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterTutorialsModel::updateTags</definition>
+        <argsstring>()</argsstring>
+        <name>updateTags</name>
+        <briefdescription>
+<para>Builds a set of all video tags and emits LearningCenterTutorialsModel::tagsChanged(...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="533" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="185" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1a78a98b3c69ef3c964839294edfdaa0bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterTutorialsModel::synchronizeWithDsns</definition>
+        <argsstring>()</argsstring>
+        <name>synchronizeWithDsns</name>
+        <briefdescription>
+<para>Synchronize the model with the data source names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="536" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.cpp" bodystart="194" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1a40f1024ce9e7190c5ea8d1ca65d13c07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref> &amp;</type>
+        <definition>gui::StringsAction&amp; mv::LearningCenterTutorialsModel::getDsnsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getDsnsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="540" column="24" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="540" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1LearningCenterTutorialsModel_1a86fc772c6f446086ad14080f186d45da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringsAction" kindref="compound">gui::StringsAction</ref> &amp;</type>
+        <definition>const gui::StringsAction&amp; mv::LearningCenterTutorialsModel::getDsnsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDsnsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="542" column="30" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="542" bodyend="542"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1LearningCenterTutorialsModel_1ab5fa1709955a349a5d80e92f313af088" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::LearningCenterTutorialsModel::tagsChanged</definition>
+        <argsstring>(const QSet&lt; QString &gt; &amp;tags)</argsstring>
+        <name>tagsChanged</name>
+        <param>
+          <type>const QSet&lt; QString &gt; &amp;</type>
+          <declname>tags</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the tags changed to <computeroutput>tags</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New tags </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="550" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Learning center tutorial model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains tutorial content for the learning center</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::LearningCenterTutorialsModel</label>
+        <link refid="classmv_1_1LearningCenterTutorialsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::LearningCenterTutorialsModel</label>
+        <link refid="classmv_1_1LearningCenterTutorialsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>columnInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="3">
+        <label>QMap&lt; Column, mv::LearningCenterTutorialsModel::ColumHeaderInfo &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/models/LearningCenterTutorialsModel.h" bodystart="26" bodyend="556"/>
+    <listofallmembers>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1ac87ec0108dd1991aa1753e6066ebfbed" prot="private" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>_dsnsAction</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1aea23b3666aa4706256193fae29699dd3" prot="private" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>_tags</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1aa121238b858b59b2a925c9c9c2c5a106" prot="private" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>_tutorials</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a2bb99a0eae686dc9d29a2817d9056457" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>addTutorial</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a6b54a3ff0dec40781d3ced2e62de95c2" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a39dba235f237b41c6b7beb32f3bdca37" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a40f1024ce9e7190c5ea8d1ca65d13c07" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>getDsnsAction</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a86fc772c6f446086ad14080f186d45da" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>getDsnsAction</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a3fad7a06f34b1089a4287881bf86c8c9" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>getTagsSet</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1af0f5377c9d685fd52372fcdf817c29aa" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>headerData</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1ac2a78c9312f1062d47009fdb9c3d2e90" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>LearningCenterTutorialsModel</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1a78a98b3c69ef3c964839294edfdaa0bc" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>synchronizeWithDsns</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1ab5fa1709955a349a5d80e92f313af088" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>tagsChanged</name></member>
+      <member refid="classmv_1_1LearningCenterTutorialsModel_1aeaee7d16fed5a335fa7b073d6d81266f" prot="public" virt="non-virtual"><scope>mv::LearningCenterTutorialsModel</scope><name>updateTags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

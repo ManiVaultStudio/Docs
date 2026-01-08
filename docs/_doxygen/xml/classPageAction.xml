@@ -1,0 +1,1254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPageAction" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>PageAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="PageAction_8h" local="no">PageAction.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using PageAction::ClickedCallback =  std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>ClickedCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="29" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classPageAction_1af66ac1cbf057e3167e7c9b9ce5db71c3" prot="public" static="no">
+        <type>std::function&lt; QString()&gt;</type>
+        <definition>using PageAction::TooltipCallback =  std::function&lt;QString()&gt;</definition>
+        <argsstring></argsstring>
+        <name>TooltipCallback</name>
+        <briefdescription>
+<para>Callback function that is called when the action row is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPageAction_1a3f985e31b37a17f3218c77a2e692ef1c" prot="private" static="no" mutable="no">
+        <type>QIcon</type>
+        <definition>QIcon PageAction::_icon</definition>
+        <argsstring></argsstring>
+        <name>_icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="266" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1afee9253f78eaa11670badcc846420eaf" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PageAction::_title</definition>
+        <argsstring></argsstring>
+        <name>_title</name>
+        <briefdescription>
+<para>Action icon (shown on the left) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="267" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1aaaa414c427d4c65c8b68c375c988eb26" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PageAction::_subtitle</definition>
+        <argsstring></argsstring>
+        <name>_subtitle</name>
+        <briefdescription>
+<para>Title is shown next to the icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="268" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a2bd5614b4c12b7cae3b5950aa1babdc3" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PageAction::_tooltip</definition>
+        <argsstring></argsstring>
+        <name>_tooltip</name>
+        <briefdescription>
+<para>Subtitle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="269" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a3a3f28510dd4d95850014229af02c463" prot="private" static="no" mutable="no">
+        <type><ref refid="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" kindref="member">ClickedCallback</ref></type>
+        <definition>ClickedCallback PageAction::_clickedCallback</definition>
+        <argsstring></argsstring>
+        <name>_clickedCallback</name>
+        <briefdescription>
+<para>Tooltip (might be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="270" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a94437050e096e7148674753e07bf1c37" prot="private" static="no" mutable="no">
+        <type><ref refid="classPageAction_1af66ac1cbf057e3167e7c9b9ce5db71c3" kindref="member">TooltipCallback</ref></type>
+        <definition>TooltipCallback PageAction::_tooltipCallback</definition>
+        <argsstring></argsstring>
+        <name>_tooltipCallback</name>
+        <briefdescription>
+<para>Callback function that is called when the action row is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="271" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a29f481cbfa28a60dec0ea6fe898434ea" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList PageAction::_tags</definition>
+        <argsstring></argsstring>
+        <name>_tags</name>
+        <briefdescription>
+<para>Callback function that is called when a tooltip is required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="272" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1afef024b0352458fbe67aa24549a86884" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PageAction::_metaData</definition>
+        <argsstring></argsstring>
+        <name>_metaData</name>
+        <briefdescription>
+<para>Tags (might be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="273" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a4cb00d48aafa87f98322a7b8db66ffaf" prot="private" static="no" mutable="no">
+        <type>QImage</type>
+        <definition>QImage PageAction::_previewImage</definition>
+        <argsstring></argsstring>
+        <name>_previewImage</name>
+        <briefdescription>
+<para>Metadata (might be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="274" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a770ac247be4304eb2492aaa7bb40eadb" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList PageAction::_contributors</definition>
+        <argsstring></argsstring>
+        <name>_contributors</name>
+        <briefdescription>
+<para>Preview image (might be empty) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="275" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1aa1007d886e0dde5488a59ce79c4eb0d9" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList PageAction::_downloadUrls</definition>
+        <argsstring></argsstring>
+        <name>_downloadUrls</name>
+        <briefdescription>
+<para>List of contributors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="276" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1aed71d77db538b6c25710e43aac55f157" prot="private" static="no" mutable="no">
+        <type><ref refid="PageSubAction_8h_1af058badcefad392e6218922898d9283a" kindref="member">PageSubActionPtrs</ref></type>
+        <definition>PageSubActionPtrs PageAction::_subActions</definition>
+        <argsstring></argsstring>
+        <name>_subActions</name>
+        <briefdescription>
+<para>Action download URLs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="277" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPageAction_1a04d2a2ef1a481f23f4e4d3cf2e62dda4" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PageAction::_parentTitle</definition>
+        <argsstring></argsstring>
+        <name>_parentTitle</name>
+        <briefdescription>
+<para>Sub-actions that are shown when hovering the action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="278" column="25" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classPageAction_1a71a0f78a127de95bc6f02d2d17be7c61" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool PageAction::compactView</definition>
+        <argsstring></argsstring>
+        <name>compactView</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Parent action title (if any) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="280" column="17" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPageAction_1a4b36d5bf5f4f2a73f08261e37a0bb62e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class PageActionDelegateEditorWidget</definition>
+        <argsstring></argsstring>
+        <name>PageActionDelegateEditorWidget</name>
+        <param>
+          <type><ref refid="classPageActionDelegateEditorWidget" kindref="compound">PageActionDelegateEditorWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="282" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPageAction_1a5738dbf6e678dc9837d9dc30ee7974ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PageAction::PageAction</definition>
+        <argsstring>(const QIcon &amp;icon, const QString &amp;title, const QString &amp;subtitle, const QString &amp;tooltip, const ClickedCallback &amp;clickedCallback)</argsstring>
+        <name>PageAction</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>subtitle</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>tooltip</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" kindref="member">ClickedCallback</ref> &amp;</type>
+          <declname>clickedCallback</declname>
+        </param>
+        <briefdescription>
+<para>Callback function that is called when a tooltip is required. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct with <computeroutput>icon</computeroutput>, <computeroutput>title</computeroutput>, <computeroutput>description</computeroutput> and <computeroutput>clickedCallback</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action icon </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action title </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subtitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action subtitle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tooltip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action tooltip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clickedCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function that is called when the action row is clicked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="40" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="11" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a421eac4192795ad9b418c5268f2460ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PageAction::PageAction</definition>
+        <argsstring>(const QModelIndex &amp;index)</argsstring>
+        <name>PageAction</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Construct from model <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index to set editor data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="46" column="5" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ae2a2cbdccf95f1f4be295d47a1cdc690" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QIcon</type>
+        <definition>QIcon PageAction::getIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getIcon</name>
+        <briefdescription>
+<para>Get action icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action icon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="54" column="11" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a2ea8b0aa83a4a21fafeae79198f19036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setIcon</definition>
+        <argsstring>(const QIcon &amp;icon)</argsstring>
+        <name>setIcon</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Set action icon to <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="60" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a2fd2bafcef967b4b734ba5d9dff47ce6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PageAction::getTitle</definition>
+        <argsstring>() const</argsstring>
+        <name>getTitle</name>
+        <briefdescription>
+<para>Get action title. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action title </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="66" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a8d66003d566b11120bd89173e4dcbe59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setTitle</definition>
+        <argsstring>(const QString &amp;title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Set action title to <computeroutput>title</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a3740155d51b06b45665642f3209a6e8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PageAction::getSubtitle</definition>
+        <argsstring>() const</argsstring>
+        <name>getSubtitle</name>
+        <briefdescription>
+<para>Get subtitle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action subtitle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="78" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a93389382cceb22f3b2a9761aa8d0bf41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setSubtitle</definition>
+        <argsstring>(const QString &amp;subtitle)</argsstring>
+        <name>setSubtitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>subtitle</declname>
+        </param>
+        <briefdescription>
+<para>Set action subtitle to <computeroutput>subtitle</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subtitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action subtitle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="84" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a6f0535c22981198b135133f0075cc826" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PageAction::getTooltip</definition>
+        <argsstring>() const</argsstring>
+        <name>getTooltip</name>
+        <briefdescription>
+<para>Get action tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action tooltip </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="90" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1abf8f74d2ac6d76441c492ce0403b3596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setTooltip</definition>
+        <argsstring>(const QString &amp;tooltip)</argsstring>
+        <name>setTooltip</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>tooltip</declname>
+        </param>
+        <briefdescription>
+<para>Set action tooltip to <computeroutput>tooltip</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tooltip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action tooltip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="96" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a9f979c7732deb19275031b13e33e1dba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" kindref="member">ClickedCallback</ref></type>
+        <definition>PageAction::ClickedCallback PageAction::getClickedCallback</definition>
+        <argsstring>() const</argsstring>
+        <name>getClickedCallback</name>
+        <briefdescription>
+<para>Get action clicked callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action clicked callback </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="102" column="21" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a677e5001bc3f742241611d6fe6b8cba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setClickedCallback</definition>
+        <argsstring>(const ClickedCallback &amp;clickedCallback)</argsstring>
+        <name>setClickedCallback</name>
+        <param>
+          <type>const <ref refid="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" kindref="member">ClickedCallback</ref> &amp;</type>
+          <declname>clickedCallback</declname>
+        </param>
+        <briefdescription>
+<para>Set action clicked callback to <computeroutput>clickedCallback</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clickedCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action clicked callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="108" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a0c2ac8240cf2705faa6d59860ba7b5b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPageAction_1af66ac1cbf057e3167e7c9b9ce5db71c3" kindref="member">TooltipCallback</ref></type>
+        <definition>PageAction::TooltipCallback PageAction::getTooltipCallback</definition>
+        <argsstring>() const</argsstring>
+        <name>getTooltipCallback</name>
+        <briefdescription>
+<para>Get action tooltip callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action tooltip callback </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="114" column="21" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a0e8d0f35880965f28b232664e30feafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setTooltipCallback</definition>
+        <argsstring>(const TooltipCallback &amp;tooltipCallback)</argsstring>
+        <name>setTooltipCallback</name>
+        <param>
+          <type>const <ref refid="classPageAction_1af66ac1cbf057e3167e7c9b9ce5db71c3" kindref="member">TooltipCallback</ref> &amp;</type>
+          <declname>tooltipCallback</declname>
+        </param>
+        <briefdescription>
+<para>Set the tooltip callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tooltipCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback function that is called when a tooltip is required </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="120" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a3c29546c5caaeee89d6a25a3a454a454" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PageAction::getMetaData</definition>
+        <argsstring>() const</argsstring>
+        <name>getMetaData</name>
+        <briefdescription>
+<para>Get action metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Action metadata </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="126" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ad1121e5a1d0d3f65eb13b65c77e4854b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setMetaData</definition>
+        <argsstring>(const QString &amp;metaData)</argsstring>
+        <name>setMetaData</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>metaData</declname>
+        </param>
+        <briefdescription>
+<para>Set action metadata to <computeroutput>metaData</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metaData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Action metadata </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="132" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ad68fa8ab5c225c29efb76a8760738047" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PageAction::getParentTitle</definition>
+        <argsstring>() const</argsstring>
+        <name>getParentTitle</name>
+        <briefdescription>
+<para>Get parent action title. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Parent action title </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="138" column="13" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1af7ffc9df5731aa4895914119f85cb342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setParentTitle</definition>
+        <argsstring>(const QString &amp;parentTitle)</argsstring>
+        <name>setParentTitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>parentTitle</declname>
+        </param>
+        <briefdescription>
+<para>Set parent action title to <computeroutput>parentTitle</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parentTitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent action title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="144" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="121" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a366349d0114a52a5b0c0296f1b5c65b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setExpanded</definition>
+        <argsstring>(bool expanded)</argsstring>
+        <name>setExpanded</name>
+        <param>
+          <type>bool</type>
+          <declname>expanded</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the action row is expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expanded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the action row is expanded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="150" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ad7813069c1e7dd2b0e5a8cdcaf00fcae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SubActionType</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; SubActionType &gt;</type>
+        <definition>std::shared_ptr&lt;SubActionType&gt; PageAction::createSubAction</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>createSubAction</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Create subAction of <computeroutput>SubActionType</computeroutput> with arguments <computeroutput>args</computeroutput> and add it to the sub-actions list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments to pass to the sub-action constructor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="159" column="21" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ad6d4317a6fe493df53b50a6abc83d7b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::removeSubAction</definition>
+        <argsstring>(const PageSubActionPtr &amp;subAction)</argsstring>
+        <name>removeSubAction</name>
+        <param>
+          <type>const <ref refid="PageSubAction_8h_1af7708599f516da39fff6d7c0f1b5c14b" kindref="member">PageSubActionPtr</ref> &amp;</type>
+          <declname>subAction</declname>
+        </param>
+        <briefdescription>
+<para>Remove <computeroutput>subAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Shared pointer to sub-action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="174" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1a46d4216470e3224fa8545a6dc695c964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::clearSubActions</definition>
+        <argsstring>()</argsstring>
+        <name>clearSubActions</name>
+        <briefdescription>
+<para>Remove all sub-actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="177" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="137" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPageAction_1a858eaa38d679147fc77be11d018a73b9" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="PageSubAction_8h_1af058badcefad392e6218922898d9283a" kindref="member">PageSubActionPtrs</ref> &amp;</type>
+        <definition>const PageSubActionPtrs&amp; PageAction::getSubActions</definition>
+        <argsstring>() const</argsstring>
+        <name>getSubActions</name>
+        <briefdescription>
+<para>Get sub-actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of sub-actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="185" column="29" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1aa601580ebc0674a106e792f13ade0d6d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="PageSubAction_8h_1af058badcefad392e6218922898d9283a" kindref="member">PageSubActionPtrs</ref> &amp;</type>
+        <definition>PageSubActionPtrs&amp; PageAction::getSubActions</definition>
+        <argsstring>()</argsstring>
+        <name>getSubActions</name>
+        <briefdescription>
+<para>Get sub-actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of sub-actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="191" column="23" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="191" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPageAction_1a52d18494813194a0b5586581826a24c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setEditorData</definition>
+        <argsstring>(const QModelIndex &amp;index)</argsstring>
+        <name>setEditorData</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set editor data from model <computeroutput>index</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model index to set editor data from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="199" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classPageAction_1a73fa577d646faff3b44870479f1d3cc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PageAction::isCompactView</definition>
+        <argsstring>()</argsstring>
+        <name>isCompactView</name>
+        <briefdescription>
+<para>Get whether compact view is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether to show actions in compact view mode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="207" column="17" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classPageAction_1ad98f701f64b3deea45433bd33edb72de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::setCompactView</definition>
+        <argsstring>(bool compactView)</argsstring>
+        <name>setCompactView</name>
+        <param>
+          <type>bool</type>
+          <declname>compactView</declname>
+        </param>
+        <briefdescription>
+<para>Toggles compact view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compactView</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether to show actions in compact view mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="213" column="17" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.cpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classPageAction_1a30604d841315ca7cb647d7e449fecaf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::iconChanged</definition>
+        <argsstring>(const QIcon &amp;icon)</argsstring>
+        <name>iconChanged</name>
+        <param>
+          <type>const QIcon &amp;</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the icon changed to <computeroutput>icon</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action icon </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="221" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1ac24314ea17e13acb918c222c72e19563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::titleChanged</definition>
+        <argsstring>(const QString &amp;title)</argsstring>
+        <name>titleChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the title changed to <computeroutput>title</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="227" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1a0c4b64ca381d5362242ab6f04f35a288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::subtitleChanged</definition>
+        <argsstring>(const QString &amp;subtitle)</argsstring>
+        <name>subtitleChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>subtitle</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the subtitle changed to <computeroutput>subtitle</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subtitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action subtitle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="233" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1ad5cef588c63bb79f7cf13375da604dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::tooltipChanged</definition>
+        <argsstring>(const QString &amp;tooltip)</argsstring>
+        <name>tooltipChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>tooltip</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the tooltip changed to <computeroutput>tooltip</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tooltip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action tooltip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1afce701650c40696ba77d7d83dcbca5d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::metadataChanged</definition>
+        <argsstring>(const QString &amp;metadata)</argsstring>
+        <name>metadataChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the metadata changed to <computeroutput>metadata</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action metadata </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1a2b9806535ec0247c12a278149bb62041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::parentTitleChanged</definition>
+        <argsstring>(const QString &amp;parentTitle)</argsstring>
+        <name>parentTitleChanged</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>parentTitle</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the parentTitle changed to <computeroutput>parentTitle</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parentTitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New action parentTitle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="251" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1a532cc162b5e3dd6451b4e0b83aac8549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::subActionsChanged</definition>
+        <argsstring>(const PageSubActionPtrs &amp;subActions)</argsstring>
+        <name>subActionsChanged</name>
+        <param>
+          <type>const <ref refid="PageSubAction_8h_1af058badcefad392e6218922898d9283a" kindref="member">PageSubActionPtrs</ref> &amp;</type>
+          <declname>subActions</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the sub-actions list changed to <computeroutput>subActions</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subActions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New list of sub-actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="257" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classPageAction_1a504a79964dad46724280ba89c2c4d741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PageAction::expandedChanged</definition>
+        <argsstring>(bool expanded)</argsstring>
+        <name>expandedChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>expanded</declname>
+        </param>
+        <briefdescription>
+<para>Signal that is emitted when the action row is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expanded</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the action row is expanded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="263" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classPage" kindref="compound">Page</ref> action. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Container class for page action.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PageAction</label>
+        <link refid="classPageAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PageAction</label>
+        <link refid="classPageAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/PageAction.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/private/PageAction.h" bodystart="24" bodyend="283"/>
+    <listofallmembers>
+      <member refid="classPageAction_1a3a3f28510dd4d95850014229af02c463" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_clickedCallback</name></member>
+      <member refid="classPageAction_1a770ac247be4304eb2492aaa7bb40eadb" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_contributors</name></member>
+      <member refid="classPageAction_1aa1007d886e0dde5488a59ce79c4eb0d9" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_downloadUrls</name></member>
+      <member refid="classPageAction_1a3f985e31b37a17f3218c77a2e692ef1c" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_icon</name></member>
+      <member refid="classPageAction_1afef024b0352458fbe67aa24549a86884" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_metaData</name></member>
+      <member refid="classPageAction_1a04d2a2ef1a481f23f4e4d3cf2e62dda4" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_parentTitle</name></member>
+      <member refid="classPageAction_1a4cb00d48aafa87f98322a7b8db66ffaf" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_previewImage</name></member>
+      <member refid="classPageAction_1aed71d77db538b6c25710e43aac55f157" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_subActions</name></member>
+      <member refid="classPageAction_1aaaa414c427d4c65c8b68c375c988eb26" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_subtitle</name></member>
+      <member refid="classPageAction_1a29f481cbfa28a60dec0ea6fe898434ea" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_tags</name></member>
+      <member refid="classPageAction_1afee9253f78eaa11670badcc846420eaf" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_title</name></member>
+      <member refid="classPageAction_1a2bd5614b4c12b7cae3b5950aa1babdc3" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_tooltip</name></member>
+      <member refid="classPageAction_1a94437050e096e7148674753e07bf1c37" prot="private" virt="non-virtual"><scope>PageAction</scope><name>_tooltipCallback</name></member>
+      <member refid="classPageAction_1a46d4216470e3224fa8545a6dc695c964" prot="public" virt="non-virtual"><scope>PageAction</scope><name>clearSubActions</name></member>
+      <member refid="classPageAction_1afd2f4cd87293b2e9f8ba3156c792728d" prot="public" virt="non-virtual"><scope>PageAction</scope><name>ClickedCallback</name></member>
+      <member refid="classPageAction_1a71a0f78a127de95bc6f02d2d17be7c61" prot="private" virt="non-virtual"><scope>PageAction</scope><name>compactView</name></member>
+      <member refid="classPageAction_1ad7813069c1e7dd2b0e5a8cdcaf00fcae" prot="public" virt="non-virtual"><scope>PageAction</scope><name>createSubAction</name></member>
+      <member refid="classPageAction_1a504a79964dad46724280ba89c2c4d741" prot="public" virt="non-virtual"><scope>PageAction</scope><name>expandedChanged</name></member>
+      <member refid="classPageAction_1a9f979c7732deb19275031b13e33e1dba" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getClickedCallback</name></member>
+      <member refid="classPageAction_1ae2a2cbdccf95f1f4be295d47a1cdc690" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getIcon</name></member>
+      <member refid="classPageAction_1a3c29546c5caaeee89d6a25a3a454a454" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getMetaData</name></member>
+      <member refid="classPageAction_1ad68fa8ab5c225c29efb76a8760738047" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getParentTitle</name></member>
+      <member refid="classPageAction_1a858eaa38d679147fc77be11d018a73b9" prot="protected" virt="non-virtual"><scope>PageAction</scope><name>getSubActions</name></member>
+      <member refid="classPageAction_1aa601580ebc0674a106e792f13ade0d6d" prot="protected" virt="non-virtual"><scope>PageAction</scope><name>getSubActions</name></member>
+      <member refid="classPageAction_1a3740155d51b06b45665642f3209a6e8c" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getSubtitle</name></member>
+      <member refid="classPageAction_1a2fd2bafcef967b4b734ba5d9dff47ce6" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getTitle</name></member>
+      <member refid="classPageAction_1a6f0535c22981198b135133f0075cc826" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getTooltip</name></member>
+      <member refid="classPageAction_1a0c2ac8240cf2705faa6d59860ba7b5b4" prot="public" virt="non-virtual"><scope>PageAction</scope><name>getTooltipCallback</name></member>
+      <member refid="classPageAction_1a30604d841315ca7cb647d7e449fecaf7" prot="public" virt="non-virtual"><scope>PageAction</scope><name>iconChanged</name></member>
+      <member refid="classPageAction_1a73fa577d646faff3b44870479f1d3cc6" prot="public" virt="non-virtual"><scope>PageAction</scope><name>isCompactView</name></member>
+      <member refid="classPageAction_1afce701650c40696ba77d7d83dcbca5d0" prot="public" virt="non-virtual"><scope>PageAction</scope><name>metadataChanged</name></member>
+      <member refid="classPageAction_1a5738dbf6e678dc9837d9dc30ee7974ce" prot="public" virt="non-virtual"><scope>PageAction</scope><name>PageAction</name></member>
+      <member refid="classPageAction_1a421eac4192795ad9b418c5268f2460ef" prot="public" virt="non-virtual"><scope>PageAction</scope><name>PageAction</name></member>
+      <member refid="classPageAction_1a4b36d5bf5f4f2a73f08261e37a0bb62e" prot="private" virt="non-virtual"><scope>PageAction</scope><name>PageActionDelegateEditorWidget</name></member>
+      <member refid="classPageAction_1a2b9806535ec0247c12a278149bb62041" prot="public" virt="non-virtual"><scope>PageAction</scope><name>parentTitleChanged</name></member>
+      <member refid="classPageAction_1ad6d4317a6fe493df53b50a6abc83d7b1" prot="public" virt="non-virtual"><scope>PageAction</scope><name>removeSubAction</name></member>
+      <member refid="classPageAction_1a677e5001bc3f742241611d6fe6b8cba1" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setClickedCallback</name></member>
+      <member refid="classPageAction_1ad98f701f64b3deea45433bd33edb72de" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setCompactView</name></member>
+      <member refid="classPageAction_1a52d18494813194a0b5586581826a24c3" prot="private" virt="non-virtual"><scope>PageAction</scope><name>setEditorData</name></member>
+      <member refid="classPageAction_1a366349d0114a52a5b0c0296f1b5c65b0" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setExpanded</name></member>
+      <member refid="classPageAction_1a2ea8b0aa83a4a21fafeae79198f19036" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setIcon</name></member>
+      <member refid="classPageAction_1ad1121e5a1d0d3f65eb13b65c77e4854b" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setMetaData</name></member>
+      <member refid="classPageAction_1af7ffc9df5731aa4895914119f85cb342" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setParentTitle</name></member>
+      <member refid="classPageAction_1a93389382cceb22f3b2a9761aa8d0bf41" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setSubtitle</name></member>
+      <member refid="classPageAction_1a8d66003d566b11120bd89173e4dcbe59" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setTitle</name></member>
+      <member refid="classPageAction_1abf8f74d2ac6d76441c492ce0403b3596" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setTooltip</name></member>
+      <member refid="classPageAction_1a0e8d0f35880965f28b232664e30feafd" prot="public" virt="non-virtual"><scope>PageAction</scope><name>setTooltipCallback</name></member>
+      <member refid="classPageAction_1a532cc162b5e3dd6451b4e0b83aac8549" prot="public" virt="non-virtual"><scope>PageAction</scope><name>subActionsChanged</name></member>
+      <member refid="classPageAction_1a0c4b64ca381d5362242ab6f04f35a288" prot="public" virt="non-virtual"><scope>PageAction</scope><name>subtitleChanged</name></member>
+      <member refid="classPageAction_1ac24314ea17e13acb918c222c72e19563" prot="public" virt="non-virtual"><scope>PageAction</scope><name>titleChanged</name></member>
+      <member refid="classPageAction_1af66ac1cbf057e3167e7c9b9ce5db71c3" prot="public" virt="non-virtual"><scope>PageAction</scope><name>TooltipCallback</name></member>
+      <member refid="classPageAction_1ad5cef588c63bb79f7cf13375da604dab" prot="public" virt="non-virtual"><scope>PageAction</scope><name>tooltipChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLoadSystemViewMenu" kind="class" language="C++" prot="public">
+    <compoundname>LoadSystemViewMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMenu</basecompoundref>
+    <includes refid="LoadSystemViewMenu_8h" local="no">LoadSystemViewMenu.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classLoadSystemViewMenu_1ae3f40e51f4f1a7f839e5298416cedd3e" prot="private" static="no">
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">mv::gui::DockAreaFlag</ref>, QSharedPointer&lt; QMenu &gt; &gt;</type>
+        <definition>using LoadSystemViewMenu::MenuMap =  QMap&lt;mv::gui::DockAreaFlag, QSharedPointer&lt;QMenu&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>MenuMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="56" column="5" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLoadSystemViewMenu_1a9ad1468b4ae2bc8f64a70139952edd74" prot="private" static="no" mutable="no">
+        <type>ads::CDockAreaWidget *</type>
+        <definition>ads::CDockAreaWidget* LoadSystemViewMenu::_dockAreaWidget</definition>
+        <argsstring></argsstring>
+        <name>_dockAreaWidget</name>
+        <briefdescription>
+<para>Short hand for map to shared pointers of menus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="59" column="28" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLoadSystemViewMenu_1a12ac2ab0b1eb0bb56765df5c90aafa35" prot="private" static="no" mutable="no">
+        <type><ref refid="classQMap" kindref="compound">MenuMap</ref></type>
+        <definition>MenuMap LoadSystemViewMenu::_loadViewsDockedMenus</definition>
+        <argsstring></argsstring>
+        <name>_loadViewsDockedMenus</name>
+        <briefdescription>
+<para>Pointer to dock area widget to which new view plugins are docked (new view plugins will be docked top-level if nullptr) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="60" column="29" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLoadSystemViewMenu_1ad20b137c765cd496c0a30e76398434b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LoadSystemViewMenu::LoadSystemViewMenu</definition>
+        <argsstring>(QWidget *parent=nullptr, ads::CDockAreaWidget *dockAreaWidget=nullptr)</argsstring>
+        <name>LoadSystemViewMenu</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>ads::CDockAreaWidget *</type>
+          <declname>dockAreaWidget</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dockAreaWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to dock area widget to which new view plugins are docked (new view plugins will be docked top-level if nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.cpp" bodystart="22" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoadSystemViewMenu_1a63d548f8a6d1a7ec8ae186fc5455427c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LoadSystemViewMenu::mayProducePlugins</definition>
+        <argsstring>() const</argsstring>
+        <name>mayProducePlugins</name>
+        <briefdescription>
+<para>Get whether the menu has any enabled menu items that produce a plugin return Boolean determining whether the menu has any enabled menu items that produce a plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="39" column="10" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.cpp" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoadSystemViewMenu_1a4186cbaf95158e1bf8c1a84742047934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoadSystemViewMenu::populate</definition>
+        <argsstring>()</argsstring>
+        <name>populate</name>
+        <briefdescription>
+<para>Populate the menu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="44" column="10" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.cpp" bodystart="40" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLoadSystemViewMenu_1a3573cbce9350fbed1333657244454dcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVector&lt; QPointer&lt; <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">mv::gui::TriggerAction</ref> &gt; &gt;</type>
+        <definition>QVector&lt; QPointer&lt; TriggerAction &gt; &gt; LoadSystemViewMenu::getLoadSystemViewsActions</definition>
+        <argsstring>(mv::gui::DockAreaFlag dockArea=mv::gui::DockAreaFlag::None)</argsstring>
+        <name>getLoadSystemViewsActions</name>
+        <param>
+          <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">mv::gui::DockAreaFlag</ref></type>
+          <declname>dockArea</declname>
+          <defval><ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">mv::gui::DockAreaFlag::None</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get actions for loading system views. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dockArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dock area to dock to (if set to none, the view plugin preferred dock area is used) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of actions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="53" column="13" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.cpp" bodystart="82" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Load system menu class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Menu class for loading system view plugins</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMenu</label>
+      </node>
+      <node id="1">
+        <label>LoadSystemViewMenu</label>
+        <link refid="classLoadSystemViewMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMenu</label>
+      </node>
+      <node id="1">
+        <label>LoadSystemViewMenu</label>
+        <link refid="classLoadSystemViewMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" line="24" column="1" bodyfile="Docs/external/core/ManiVault/src/private/LoadSystemViewMenu.h" bodystart="25" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classLoadSystemViewMenu_1a9ad1468b4ae2bc8f64a70139952edd74" prot="private" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>_dockAreaWidget</name></member>
+      <member refid="classLoadSystemViewMenu_1a12ac2ab0b1eb0bb56765df5c90aafa35" prot="private" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>_loadViewsDockedMenus</name></member>
+      <member refid="classLoadSystemViewMenu_1a3573cbce9350fbed1333657244454dcf" prot="private" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>getLoadSystemViewsActions</name></member>
+      <member refid="classLoadSystemViewMenu_1ad20b137c765cd496c0a30e76398434b0" prot="public" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>LoadSystemViewMenu</name></member>
+      <member refid="classLoadSystemViewMenu_1a63d548f8a6d1a7ec8ae186fc5455427c" prot="public" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>mayProducePlugins</name></member>
+      <member refid="classLoadSystemViewMenu_1ae3f40e51f4f1a7f839e5298416cedd3e" prot="private" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>MenuMap</name></member>
+      <member refid="classLoadSystemViewMenu_1a4186cbaf95158e1bf8c1a84742047934" prot="public" virt="non-virtual"><scope>LoadSystemViewMenu</scope><name>populate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1DatasetTask" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::DatasetTask</compoundname>
+    <basecompoundref refid="classmv_1_1Task" prot="public" virt="non-virtual">mv::Task</basecompoundref>
+    <includes refid="DatasetTask_8h" local="no">DatasetTask.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1DatasetTask_1a9b1ee45011eaa17975748c1eff6a034b" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::DatasetTask::_dataset</definition>
+        <argsstring></argsstring>
+        <name>_dataset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/DatasetTask.h" line="44" column="16" bodyfile="Docs/external/core/ManiVault/src/DatasetTask.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1DatasetTask_1a5a134daa39818d202c9283cf6b22cca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::DatasetTask::DatasetTask</definition>
+        <argsstring>(QObject *parent, const QString &amp;name, const Status &amp;status=Status::Undefined, bool mayKill=false)</argsstring>
+        <name>DatasetTask</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref> &amp;</type>
+          <declname>status</declname>
+          <defval><ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">Status::Undefined</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mayKill</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct task with <computeroutput>parent</computeroutput> object, <computeroutput>name</computeroutput> and initial <computeroutput>status</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the task </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial status of the task </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mayKill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean determining whether the task may be killed or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/DatasetTask.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/DatasetTask.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetTask_1a7b1747cc97290136f03cbf900c5642db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+        <definition>Dataset&lt; DatasetImpl &gt; mv::DatasetTask::getDataset</definition>
+        <argsstring>()</argsstring>
+        <name>getDataset</name>
+        <briefdescription>
+<para>Get the dataset that the task refers to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/DatasetTask.h" line="35" column="13" bodyfile="Docs/external/core/ManiVault/src/DatasetTask.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1DatasetTask_1a90a76a1efe194936bf7d7ba48784ebba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::DatasetTask::setDataset</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
+        <name>setDataset</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Set dataset to <computeroutput>dataset</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dataset that the task refers to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/DatasetTask.h" line="41" column="10" bodyfile="Docs/external/core/ManiVault/src/DatasetTask.cpp" bodystart="25" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> task class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> for reporting progress related to datasets (for instance in the data hierarchy plugin).</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::DatasetTask</label>
+        <link refid="classmv_1_1DatasetTask"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::Task</label>
+        <link refid="classmv_1_1Task"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::DatasetTask</label>
+        <link refid="classmv_1_1DatasetTask"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="6">
+        <label>QMap&lt; Status, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="5">
+        <label>QMap&lt; GuiScope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="2">
+        <label>mv::Task</label>
+        <link refid="classmv_1_1Task"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>guiScopeNames</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>statusNames</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>progressModeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QMap&lt; ProgressMode, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/DatasetTask.h" line="19" column="1" bodyfile="Docs/external/core/ManiVault/src/DatasetTask.h" bodystart="20" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classmv_1_1DatasetTask_1a9b1ee45011eaa17975748c1eff6a034b" prot="private" virt="non-virtual"><scope>mv::DatasetTask</scope><name>_dataset</name></member>
+      <member refid="classmv_1_1Task_1a672c3bdcae179493da5cd74d643217c1" prot="protected" virt="virtual"><scope>mv::DatasetTask</scope><name>addChildTask</name></member>
+      <member refid="classmv_1_1Task_1ad0ba32f92716465e23ec57924a33d41b" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>addGuiScope</name></member>
+      <member refid="classmv_1_1Task_1a229eaf495be48a47d56e7fb7797639da" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>addToTaskManager</name></member>
+      <member refid="classmv_1_1Task_1a461ceaace1a6befff0a0290b0dc5a552" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>childTaskAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1Task_1a5a0b10aa2470cee92de9f52b4fc142b2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>childTaskAdded</name></member>
+      <member refid="classmv_1_1Task_1a3a05ae6edf76661f5eb2203fc56faff9" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>childTaskRemoved</name></member>
+      <member refid="classmv_1_1Task_1a3b4e6d1deae348c15019090c4b655ce2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1Task_1a5b7b73f3504f0422d950c18c11553757" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1Task_1a881059bcb1ebb8242424cb0b9dd7114a" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>createId</name></member>
+      <member refid="classmv_1_1DatasetTask_1a5a134daa39818d202c9283cf6b22cca5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>DatasetTask</name></member>
+      <member refid="classmv_1_1Task_1a98b9423952a1db850b6781a2b4bdf693" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>descriptionChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>Direction</name></member>
+      <member refid="classmv_1_1Task_1a8b3a5132b6ecfeefb01f19b15f2eb167" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>doGuiScopesOverlap</name></member>
+      <member refid="classmv_1_1Task_1aadbc11eba918cd619f0213269887abaf" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>enabledChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::DatasetTask</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::DatasetTask</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1Task_1a08bfcb1e28c503d844ed1fc791fd5d3f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getAlwaysProcessEvents</name></member>
+      <member refid="classmv_1_1Task_1a8733ebe10ef1c968d0fca18edb90a327" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getChildTasks</name></member>
+      <member refid="classmv_1_1Task_1abf3dd345e6862d0cedcb5f3c04b68cb1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getChildTasksForGuiScopes</name></member>
+      <member refid="classmv_1_1Task_1a3c0de7e23810cf50bfb2e38d31b124f2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getChildTasksForGuiScopesAndStatuses</name></member>
+      <member refid="classmv_1_1Task_1a06e4df362ae044526a74bb2eb80724a2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getChildTasksForStatuses</name></member>
+      <member refid="classmv_1_1Task_1afe8fac5691994ad581a8c312620d0792" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1DatasetTask_1a7b1747cc97290136f03cbf900c5642db" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1Task_1a3accdb38d6fd4e77ab9d279f29b72bc9" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getDescription</name></member>
+      <member refid="classmv_1_1Task_1ad4bbf24ab9beef4c63b5722afe09a548" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getEnabled</name></member>
+      <member refid="classmv_1_1Task_1a3069b9c26e05ad0c369878284aa5a9fb" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getGuiScopes</name></member>
+      <member refid="classmv_1_1Task_1a0c7ec04effe88d61d4def767133d2b67" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getHandler</name></member>
+      <member refid="classmv_1_1Task_1a8856106f01d1538002962c97f6abed6d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getId</name></member>
+      <member refid="classmv_1_1Task_1a1340e129e8bb4118494027f131a0008f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getMayKill</name></member>
+      <member refid="classmv_1_1Task_1a2ec22184c2fe3dcd5ca40e4195816d13" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getName</name></member>
+      <member refid="classmv_1_1Task_1a9ca5e3f6e30dafb36573da553eac3f24" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getParentTask</name></member>
+      <member refid="classmv_1_1Task_1ad33726c17208c7700eabe4ea57174a14" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getProgress</name></member>
+      <member refid="classmv_1_1Task_1aab2ddc0f2cdfed90a3b099106683f46f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getProgressDescription</name></member>
+      <member refid="classmv_1_1Task_1a56d0deac76cee419dd652421cadfa411" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getProgressMode</name></member>
+      <member refid="classmv_1_1Task_1acceba3ac4a3e5df14a9fae40d4ddef9a" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getProgressText</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1Task_1ac5810ae82c1ead540d65fab2eaf98eb5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getStatus</name></member>
+      <member refid="classmv_1_1Task_1a5ed6dcaaa1f9e95261a9c8689b831308" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSubtaskIndex</name></member>
+      <member refid="classmv_1_1Task_1a7462cc2ccf583ed4773d5038cb8a88ff" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSubtaskNamePrefix</name></member>
+      <member refid="classmv_1_1Task_1a6478df6c9ae40149178622ef35cda649" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSubtasksName</name></member>
+      <member refid="classmv_1_1Task_1ae6b7e0d4eb6f7cddace1c8a99721db06" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getSubtasksNames</name></member>
+      <member refid="classmv_1_1Task_1a5e33668b4d261981a7d7dac2c1fd6aa3" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getTimer</name></member>
+      <member refid="classmv_1_1Task_1a13a444bac45f16103bc9a1eed2df89f1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getTypeName</name></member>
+      <member refid="classmv_1_1Task_1ac593329347bb9927944f83b77231f8a5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>getVisible</name></member>
+      <member refid="classmv_1_1Task_1a1f2d7a30f78f9ca23367ad01f32c596a" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>getWeight</name></member>
+      <member refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>GuiScope</name></member>
+      <member refid="classmv_1_1Task_1ae0fa9d896126915bcb008d6747c0ff14" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>guiScopeNames</name></member>
+      <member refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>GuiScopes</name></member>
+      <member refid="classmv_1_1Task_1ac8b69728cffb89f87125c1e628380c55" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>guiScopesChanged</name></member>
+      <member refid="classmv_1_1Task_1a318efc8fdf1f22f87290510053a13c08" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>guiScopesToStringlist</name></member>
+      <member refid="classmv_1_1Task_1aae49cd47fccd96013ec182f03fc6f2d0" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>handlerChanged</name></member>
+      <member refid="classmv_1_1Task_1a2d17cc4abdabe9634cf3dcad133b3d75" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>hasParentTask</name></member>
+      <member refid="classmv_1_1Task_1a3b171aaa5d9f3620228160e34fe5036c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>iconChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::DatasetTask</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::DatasetTask</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1Task_1aae9365db07f27b5e7347c6aed1926ac8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isAborted</name></member>
+      <member refid="classmv_1_1Task_1a3f3b9fdbb5ea67f1fabb694b574593e6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isAborting</name></member>
+      <member refid="classmv_1_1Task_1a930dfcce7cf590d472715868b18b6d6d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isAboutToBeAborted</name></member>
+      <member refid="classmv_1_1Task_1a32f191ce17a180ee6d973fa9c44d8978" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1Task_1a78fdac61569daff41d248c4dd2c93208" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isFinished</name></member>
+      <member refid="classmv_1_1Task_1a7aafff80c084ed09943ef190eef6c415" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isIdle</name></member>
+      <member refid="classmv_1_1Task_1a6b531ae2a9631fc6b127cfd317aee4cd" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isKillable</name></member>
+      <member refid="classmv_1_1Task_1a412e89152eaa412aa834b506196dde23" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isKillableChanged</name></member>
+      <member refid="classmv_1_1Task_1af90144b6ce7d82b60a778f59460a1cb8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isRunning</name></member>
+      <member refid="classmv_1_1Task_1aacea9f1364b7a93424adc3ff5449b6e5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>isRunningIndeterminate</name></member>
+      <member refid="classmv_1_1Task_1ad4dd3333104a6fa247989f5407e0b6f5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>kill</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1Task_1a44521ba1911f664b8279ea95dd90afe6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>mayKillChanged</name></member>
+      <member refid="classmv_1_1Task_1af6a04c75b33a6b76d51a0847d47d2b01" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>nameChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>operator==</name></member>
+      <member refid="classmv_1_1Task_1aa18731c89df2f30ad75774b9a02dd8c8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>parentTaskChanged</name></member>
+      <member refid="classmv_1_1Task_1a322860315f513f58d891b7ddac53511c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateAddChildTaskSignal</name></member>
+      <member refid="classmv_1_1Task_1aaa97666760f1272f1e1b69c08c40d837" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateAddGuiScopeSignal</name></member>
+      <member refid="classmv_1_1Task_1ac888fe7ca9893ab24beca707edf3081f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateKillSignal</name></member>
+      <member refid="classmv_1_1Task_1a6999e9ab5101378c6f951740b0d4a18d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateRemoveChildTaskSignal</name></member>
+      <member refid="classmv_1_1Task_1ade2eca3ba0f8600844e93c386109550b" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateRemoveGuiScopeSignal</name></member>
+      <member refid="classmv_1_1Task_1ae3023ce564af594bf0cd24da4be2f8c6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateResetProgressSignal</name></member>
+      <member refid="classmv_1_1Task_1a6f833467239552d4126b2fc8bb434630" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateResetSignal</name></member>
+      <member refid="classmv_1_1Task_1a5d24ace84c268f77a74452fe113438d8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetAbortedSignal</name></member>
+      <member refid="classmv_1_1Task_1ad457025e5871d45e09970f790115aa69" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetAbortingSignal</name></member>
+      <member refid="classmv_1_1Task_1a571ff1444c09e1b2426bfe4ae7494418" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetAboutToBeAbortedSignal</name></member>
+      <member refid="classmv_1_1Task_1a6be4033e2583c1b5ba7f82aa290444f2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetDescriptionSignal</name></member>
+      <member refid="classmv_1_1Task_1a5d86acb0e4bb69c079260f2234f8b9f6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetEnabledSignal</name></member>
+      <member refid="classmv_1_1Task_1a0a168f29951d1c06b90943fa59b871a5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetFinishedSignal</name></member>
+      <member refid="classmv_1_1Task_1ae8b0ebce7324113e14a68dfdc364161e" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetGuiScopesSignal</name></member>
+      <member refid="classmv_1_1Task_1acb5a23eeb3636c696fc93fd026fde1ff" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetIconSignal</name></member>
+      <member refid="classmv_1_1Task_1a1ff3b0faac404256b9abe9c8dcce7376" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetIdleSignal</name></member>
+      <member refid="classmv_1_1Task_1a6e2835c43790f8da7f61762f207ea6e7" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetMayKillSignal</name></member>
+      <member refid="classmv_1_1Task_1a090e19c67a8f44bb2c96b8c7dfd22874" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetNameSignal</name></member>
+      <member refid="classmv_1_1Task_1a27d6001cb682dbadd312e64b0b15da51" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetParentTaskSignal</name></member>
+      <member refid="classmv_1_1Task_1abd773609436f54777c788888176245b9" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetProgressDescriptionSignal</name></member>
+      <member refid="classmv_1_1Task_1a89ced6d92accefa9f0f4aa47321cd19e" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetProgressModeSignal</name></member>
+      <member refid="classmv_1_1Task_1ab5fafaeb6db69dc3f7146e7a4f14c4e0" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetProgressSignal</name></member>
+      <member refid="classmv_1_1Task_1a8175384cdb7d5433fbce672083acda09" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetProgressTextFormatterSignal</name></member>
+      <member refid="classmv_1_1Task_1a85dec7ec16aecb764a4b48b6ff05cc0b" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetRunningIndeterminateSignal</name></member>
+      <member refid="classmv_1_1Task_1a3e726a99fab7dfd5e6c4d23afb5ef0ac" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetRunningSignal</name></member>
+      <member refid="classmv_1_1Task_1ad0cd031c5c8a792a5499030d4dca9b8e" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetStatusDeferredSignal</name></member>
+      <member refid="classmv_1_1Task_1a3cf4c10e892e9ae0e2cbfff8a7cb9515" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetStatusSignal</name></member>
+      <member refid="classmv_1_1Task_1a102d29982188058190bcd04fe2fac4d8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtaskFinishedSignal</name></member>
+      <member refid="classmv_1_1Task_1a0f22ba0479b12e24cfd53afa96484fae" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtaskFinishedSignal</name></member>
+      <member refid="classmv_1_1Task_1aec892cc132e2c1332571a22896ff511d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtaskNameSignal</name></member>
+      <member refid="classmv_1_1Task_1a7cdbb54cea68bc6c58c619c0b40d4e90" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtasksSignal</name></member>
+      <member refid="classmv_1_1Task_1a01c43e128dabcb536fc6fd2122df6053" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtasksSignal</name></member>
+      <member refid="classmv_1_1Task_1ab0a40b759339c537e28a1d308223f19c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtaskStartedSignal</name></member>
+      <member refid="classmv_1_1Task_1a019af64afa1b7647fb3078ea6f1de414" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetSubtaskStartedSignal</name></member>
+      <member refid="classmv_1_1Task_1a882a8a43f687625a73c33308fa9482ad" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetUndefinedSignal</name></member>
+      <member refid="classmv_1_1Task_1ae1be3c2b9e4da64baaa98957f4ffae6e" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>privateSetVisibleSignal</name></member>
+      <member refid="classmv_1_1Task_1ad9c17e5729a982c400d23fd3afdf0b22" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>progressChanged</name></member>
+      <member refid="classmv_1_1Task_1a95c4125b84e2f68475e875fbc927f3ff" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>progressDescriptionChanged</name></member>
+      <member refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>ProgressMode</name></member>
+      <member refid="classmv_1_1Task_1add9814bd402eb8ee8683545e370bbb18" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>progressModeChanged</name></member>
+      <member refid="classmv_1_1Task_1ab427ba0d57b586079dc3c5bdac0a0658" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>progressModeNames</name></member>
+      <member refid="classmv_1_1Task_1a56fe5949863b84e169111827999071c2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>progressTextChanged</name></member>
+      <member refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>ProgressTextFormatter</name></member>
+      <member refid="classmv_1_1Task_1ac486c92998d48eb813d285a28ca36a83" prot="protected" virt="virtual"><scope>mv::DatasetTask</scope><name>removeChildTask</name></member>
+      <member refid="classmv_1_1Task_1abbd37cbfd02b52ae2e88f0b494530e64" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>removeGuiScope</name></member>
+      <member refid="classmv_1_1Task_1a233f014be89ae47fe080327655380da8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>requestAbort</name></member>
+      <member refid="classmv_1_1Task_1a9fd512313b3d0626f69ef0b7848248b3" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>reset</name></member>
+      <member refid="classmv_1_1Task_1ad582692b5555dc7fbf5c8c17a98cb0be" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>resetProgress</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1Task_1af8b23f71f83f3c8633cf04d8bdf92ec3" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setAborted</name></member>
+      <member refid="classmv_1_1Task_1a88ac4e6afc4611943f1751508a878589" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setAborting</name></member>
+      <member refid="classmv_1_1Task_1a30bb7aa82846596938a3e774cd6e60eb" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setAboutToBeAborted</name></member>
+      <member refid="classmv_1_1Task_1a1c6522c34a627bf0fb03b213453edfc6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setAlwaysProcessEvents</name></member>
+      <member refid="classmv_1_1Task_1ae75909266697f5d77a3ba44f0262e249" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1Task_1acf6f39faa6ed6d86fc60d0f307b5f24f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1DatasetTask_1a90a76a1efe194936bf7d7ba48784ebba" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setDataset</name></member>
+      <member refid="classmv_1_1Task_1a4107804d4161e68e9ffd0a3cbab07a7f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setDescription</name></member>
+      <member refid="classmv_1_1Task_1ac751f424de479eda7e7e57ac9b7acb51" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setEnabled</name></member>
+      <member refid="classmv_1_1Task_1a614dc64d948910ea5009f894fefe8574" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setFinished</name></member>
+      <member refid="classmv_1_1Task_1a2dee7b8bdf63a6ec99d235051b1bd680" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setGuiScopes</name></member>
+      <member refid="classmv_1_1Task_1a1c6e5980b07463f539f6cdc46af05ae1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setHandler</name></member>
+      <member refid="classmv_1_1Task_1a6ae5a676cf585fabc7357de1aa30364b" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setId</name></member>
+      <member refid="classmv_1_1Task_1a2d73d8d621e71e87127245f05e021f59" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setIdle</name></member>
+      <member refid="classmv_1_1Task_1aaf409917d764517c65b10953c9ebfffe" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setMayKill</name></member>
+      <member refid="classmv_1_1Task_1a5b2ea327d5eaf2a6f37de2bb14481d23" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setName</name></member>
+      <member refid="classmv_1_1Task_1afcedf165c947f1e93761a7c9914c5436" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setParentTask</name></member>
+      <member refid="classmv_1_1Task_1a27810160a93c94d005cfb449b063e9c2" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>setProgress</name></member>
+      <member refid="classmv_1_1Task_1ab54a2b23e4e4414803aea0cca6fed42f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setProgressDescription</name></member>
+      <member refid="classmv_1_1Task_1ab8351a413af1cda8f352379838e8e0a1" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setProgressMode</name></member>
+      <member refid="classmv_1_1Task_1af95b8be99d12a465c4f7d43796e0aae2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setProgressTextFormatter</name></member>
+      <member refid="classmv_1_1Task_1aa78176d452141592ea81684cf33946f8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setRunning</name></member>
+      <member refid="classmv_1_1Task_1a288fd7a1b8a31ec12eb670cd6201e5b8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setRunningIndeterminate</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1Task_1a02c2614aef17e93a2f8dd88d0aaf0ea8" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setStatus</name></member>
+      <member refid="classmv_1_1Task_1a963f63a98b89a5b6a930a5d102869ecb" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setStatusDeferred</name></member>
+      <member refid="classmv_1_1Task_1ac1ae2037281bfe874df8d872259249c5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskFinished</name></member>
+      <member refid="classmv_1_1Task_1af2bbcc906a340213d40f8e66dfccc325" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskFinished</name></member>
+      <member refid="classmv_1_1Task_1ae6f44ab625cd1e5af437d4db7dae1e4d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskName</name></member>
+      <member refid="classmv_1_1Task_1a5f3a7456e60f546ebda473d73edf7e8d" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskNamePrefix</name></member>
+      <member refid="classmv_1_1Task_1adde0b238ccc96c6a33485d9533c3559f" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtasks</name></member>
+      <member refid="classmv_1_1Task_1a2bb3a36fb4b9441ce8db95223bfaea60" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtasks</name></member>
+      <member refid="classmv_1_1Task_1a080cf0a128238948f46c79c0fcc78d7c" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskStarted</name></member>
+      <member refid="classmv_1_1Task_1a637358cade9c38b7a15e3811773d1bd7" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setSubtaskStarted</name></member>
+      <member refid="classmv_1_1Task_1a1dd02b1bf8e5a3edaeb5a573023580f2" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setTimerInterval</name></member>
+      <member refid="classmv_1_1Task_1a368fc02aa13f168df77142ba2277ef49" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setUndefined</name></member>
+      <member refid="classmv_1_1Task_1ae082034e207a3680b2445114fe3b52d7" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>setVisible</name></member>
+      <member refid="classmv_1_1Task_1a1d0a408eddacce3dcde7938979ab5d8a" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>setWeight</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>State</name></member>
+      <member refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>Status</name></member>
+      <member refid="classmv_1_1Task_1a35048b1786520c1a3b238f813df13495" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChanged</name></member>
+      <member refid="classmv_1_1Task_1a928ba70dfe0aa330f50c4efd9552ed00" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToAborted</name></member>
+      <member refid="classmv_1_1Task_1a5f1b6d5a750646d45686f05734042e15" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToAborting</name></member>
+      <member refid="classmv_1_1Task_1ac32ac6a2bebedce5df134a753c645d0a" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToAboutToBeAborted</name></member>
+      <member refid="classmv_1_1Task_1a45342a1a310dd17e84f6673a3bade688" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToFinished</name></member>
+      <member refid="classmv_1_1Task_1abb45fa65d123238ab6fa4e4fc4b51e49" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToIdle</name></member>
+      <member refid="classmv_1_1Task_1a46359ab2f2d49c059c4a25f1b1a90958" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToRunning</name></member>
+      <member refid="classmv_1_1Task_1a3371fc8af79c819690efed8936c9ef68" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToRunningIndeterminate</name></member>
+      <member refid="classmv_1_1Task_1ade9b58d3d2e829deedcff721cb7558ed" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusChangedToUndefined</name></member>
+      <member refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>Statuses</name></member>
+      <member refid="classmv_1_1Task_1a2efebf721c46b20e08a052fe6446eafa" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>statusNames</name></member>
+      <member refid="classmv_1_1Task_1a87655f3640490588739fb9ab5c5378fa" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>subtaskFinished</name></member>
+      <member refid="classmv_1_1Task_1ab3b9a4c588f6a01b0bbe946732dbe4ce" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>subtaskNamePrefixChanged</name></member>
+      <member refid="classmv_1_1Task_1adc3b58e76387d223a46141e6e16fd061" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>subtasksAdded</name></member>
+      <member refid="classmv_1_1Task_1a5671784ec3b2d1fa76d666b7490091ff" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>subtasksChanged</name></member>
+      <member refid="classmv_1_1Task_1a7557e98e1f379c63c7d4b5798c853ce5" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>subtaskStarted</name></member>
+      <member refid="classmv_1_1Task_1a89d8618e835f0d0948868a72465c7630" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>Task</name></member>
+      <member refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>TasksPtrs</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::DatasetTask</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1Task_1ae842f76fe1cb52f280e1141c58303a88" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>visibileChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::DatasetTask</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1Task_1acd3965781c83009dfd9c262f5323ac71" prot="public" virt="non-virtual"><scope>mv::DatasetTask</scope><name>~Task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

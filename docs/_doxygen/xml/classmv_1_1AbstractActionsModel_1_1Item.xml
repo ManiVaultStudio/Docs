@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractActionsModel_1_1Item" kind="class" language="C++" prot="public">
+    <compoundname>mv::AbstractActionsModel::Item</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QStandardItem</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1ConnectionPermissionItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::ConnectionPermissionItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1ForceDisabledItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::ForceDisabledItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1ForceHiddenItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::ForceHiddenItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1IdItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::IdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1IsConnectedItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::IsConnectedItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1IsLeafItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::IsLeafItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1IsRootItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::IsRootItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1LocationItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::LocationItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1NameItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::NameItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1NumberOfConnectedActionsItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::NumberOfConnectedActionsItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1ParentActionIdItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::ParentActionIdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1PublicActionIdItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::PublicActionIdItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1ScopeItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::ScopeItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1SortIndexItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::SortIndexItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1StretchItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::StretchItem</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1AbstractActionsModel_1_1TypeItem" prot="public" virt="non-virtual">mv::AbstractActionsModel::TypeItem</derivedcompoundref>
+    <includes refid="AbstractActionsModel_8h" local="no">AbstractActionsModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractActionsModel_1_1Item_1ad5e6051d84a92a13fe2a35b22129fd9d" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> &gt;</type>
+        <definition>QPointer&lt;gui::WidgetAction&gt; mv::AbstractActionsModel::Item::_action</definition>
+        <argsstring></argsstring>
+        <name>_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="108" column="23" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1_1Item_1abe7af517c8a47c076438d726f1e5d0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractActionsModel::Item::Item</definition>
+        <argsstring>(gui::WidgetAction *action, bool editable=false)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>editable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>action</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to action to display item for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>editable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the model item is editable or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="99" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1_1Item_1ac426dd62cf221fb99f9f92d857a81eaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointer&lt; <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> &gt;</type>
+        <definition>QPointer&lt; mv::gui::WidgetAction &gt; mv::AbstractActionsModel::Item::getAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getAction</name>
+        <briefdescription>
+<para>Get action return Pointer to action to display item for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="105" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base standard model item class for widget action. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>mv::AbstractActionsModel::LocationItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1LocationItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mv::AbstractActionsModel::NumberOfConnectedActionsItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1NumberOfConnectedActionsItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="8">
+        <label>mv::AbstractActionsModel::IsConnectedItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1IsConnectedItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::AbstractActionsModel::ForceHiddenItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1ForceHiddenItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mv::AbstractActionsModel::ParentActionIdItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1ParentActionIdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::AbstractActionsModel::ConnectionPermissionItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1ConnectionPermissionItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="10">
+        <label>mv::AbstractActionsModel::IsRootItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1IsRootItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mv::AbstractActionsModel::PublicActionIdItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1PublicActionIdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mv::AbstractActionsModel::TypeItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1TypeItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mv::AbstractActionsModel::SortIndexItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1SortIndexItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mv::AbstractActionsModel::ScopeItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1ScopeItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::AbstractActionsModel::IsLeafItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1IsLeafItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsModel::Item</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mv::AbstractActionsModel::NameItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1NameItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mv::AbstractActionsModel::StretchItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1StretchItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::AbstractActionsModel::IdItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1IdItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::AbstractActionsModel::ForceDisabledItem</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1ForceDisabledItem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractActionsModel::Item</label>
+        <link refid="classmv_1_1AbstractActionsModel_1_1Item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="91" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" bodystart="91" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractActionsModel_1_1Item_1ad5e6051d84a92a13fe2a35b22129fd9d" prot="private" virt="non-virtual"><scope>mv::AbstractActionsModel::Item</scope><name>_action</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1Item_1ac426dd62cf221fb99f9f92d857a81eaf" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::Item</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1_1Item_1abe7af517c8a47c076438d726f1e5d0e7" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel::Item</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

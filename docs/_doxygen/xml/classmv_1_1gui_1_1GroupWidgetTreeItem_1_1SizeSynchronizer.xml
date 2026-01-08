@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer" kind="class" language="C++" prot="private">
+    <compoundname>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1ad0fb7e7af7a8eaaea5c3834f280a5566" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1GroupWidgetTreeItem" kindref="compound">GroupWidgetTreeItem</ref> *</type>
+        <definition>GroupWidgetTreeItem* mv::gui::GroupWidgetTreeItem::SizeSynchronizer::_groupTreeItem</definition>
+        <argsstring></argsstring>
+        <name>_groupTreeItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" line="56" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1a38c84dbab448c2a9dae450df27204a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::GroupWidgetTreeItem::SizeSynchronizer::SizeSynchronizer</definition>
+        <argsstring>(GroupWidgetTreeItem *groupTreeItem)</argsstring>
+        <name>SizeSynchronizer</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1GroupWidgetTreeItem" kindref="compound">GroupWidgetTreeItem</ref> *</type>
+          <declname>groupTreeItem</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>groupTreeItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to group tree item </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" line="46" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.cpp" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1a16cde7522b6d945b23ffa6fa4ffb73ac" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::GroupWidgetTreeItem::SizeSynchronizer::eventFilter</definition>
+        <argsstring>(QObject *target, QEvent *event) override final</argsstring>
+        <name>eventFilter</name>
+        <param>
+          <type>QObject *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Respond to target events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of which an event occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that took place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" line="53" column="14" bodyfile="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.cpp" bodystart="83" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Size synchronizer class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A buq in QT exists where a tree view row height is not updated when the widget contents of that row changes. This class detects changes in the row widget and sets the tree item size hint accordingly.</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="10">
+        <label>mv::gui::GroupSectionTreeItem</label>
+        <link refid="classmv_1_1gui_1_1GroupSectionTreeItem"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_pushButton</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_groupAction</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_groupWidgetTreeItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_groupTreeItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="4">
+        <label>QTreeWidgetItem</label>
+      </node>
+      <node id="5">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::gui::GroupSectionTreeItem::PushButton</label>
+        <link refid="classmv_1_1gui_1_1GroupSectionTreeItem_1_1PushButton"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_widgetActionGroup</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QPushButton</label>
+      </node>
+      <node id="7">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="3">
+        <label>mv::gui::GroupWidgetTreeItem</label>
+        <link refid="classmv_1_1gui_1_1GroupWidgetTreeItem"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_sizeSynchronizer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_groupAction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_groupSectionTreeItem</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" line="38" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/GroupWidgetTreeItem.h" bodystart="39" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1ad0fb7e7af7a8eaaea5c3834f280a5566" prot="protected" virt="non-virtual"><scope>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</scope><name>_groupTreeItem</name></member>
+      <member refid="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1a16cde7522b6d945b23ffa6fa4ffb73ac" prot="public" virt="non-virtual"><scope>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</scope><name>eventFilter</name></member>
+      <member refid="classmv_1_1gui_1_1GroupWidgetTreeItem_1_1SizeSynchronizer_1a38c84dbab448c2a9dae450df27204a73" prot="public" virt="non-virtual"><scope>mv::gui::GroupWidgetTreeItem::SizeSynchronizer</scope><name>SizeSynchronizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Vector2f_8cpp" kind="file" language="C++">
+    <compoundname>Vector2f.cpp</compoundname>
+    <includes refid="Vector2f_8h" local="yes">Vector2f.h</includes>
+    <includes local="no">cmath</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>Vector2f.cpp</label>
+        <link refid="Vector2f_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ManiVaultGlobals.h</label>
+        <link refid="ManiVaultGlobals_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Vector2f.h</label>
+        <link refid="Vector2f_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>QtCore/QtGlobal</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacemv">mv</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SPDX-License-Identifier:<sp/>LGPL-3.0-or-later<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vector2f_8h" kindref="compound">Vector2f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Vector2f_1a0cb44ce2684600286d77833f3879f258" kindref="member">Vector2f::set</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>=<sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>=<sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Vector2f_1a39c68ebc5a3adfc800ba9bc9c5b91f56" kindref="member">Vector2f::add</ref>(Vector2f<sp/>v)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>+=<sp/>v.x;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>+=<sp/>v.y;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Vector2f_1a4e56e19c98120d74fe0a3a8139514b55" kindref="member">Vector2f::sub</ref>(Vector2f<sp/>v)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>-=<sp/>v.x;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>-=<sp/>v.y;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Vector2f_1ad6b24c535812871610bb86f1d2f914a2" kindref="member">Vector2f::length</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="classmv_1_1Vector2f_1a7be10428a5c08a8def86f6cdd5d4d6df" kindref="member">sqrMagnitude</ref>());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classmv_1_1Vector2f_1a1add2756b11dc7c9a236cfe4b79cecdb" kindref="member">Vector2f::str</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="35"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(</highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operator<sp/>overloads<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f&amp;<sp/><ref refid="classmv_1_1Vector2f_1acb1308b571758303d0195702b19346ed" kindref="member">Vector2f::operator+=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>+=<sp/>v.x;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>+=<sp/>v.y;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f&amp;<sp/><ref refid="classmv_1_1Vector2f_1aa678abae4302f4ce3ee54e9711f5d6f2" kindref="member">Vector2f::operator-=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>-=<sp/>v.x;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>-=<sp/>v.y;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f&amp;<sp/><ref refid="classmv_1_1Vector2f_1aeab9cab0ae28e6a50cb6d39b198e7e62" kindref="member">Vector2f::operator*=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>*=<sp/>v.x;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>*=<sp/>v.y;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f&amp;<sp/><ref refid="classmv_1_1Vector2f_1aeab9cab0ae28e6a50cb6d39b198e7e62" kindref="member">Vector2f::operator*=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>*=<sp/>scale;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>*=<sp/>scale;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f&amp;<sp/><ref refid="classmv_1_1Vector2f_1a915fafe5d994c13a1a35be61ec87728d" kindref="member">Vector2f::operator/=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1a8529801d769ad74436ea0316ad3f4f76" kindref="member">x</ref><sp/>/=<sp/>v.x;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f_1afdd5c7fcae0c5585cf50c2849ead41bd" kindref="member">y</ref><sp/>/=<sp/>v.y;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1afc2eb8bd1b8039f2caf4657c8c80a486" kindref="member">dot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v2)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v1.x<sp/>*<sp/>v2.x<sp/>+<sp/>v1.y<sp/>*<sp/>v2.y;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2f<sp/><ref refid="namespacemv_1a4ff211bea551d3057e24a8aee43926e6" kindref="member">normalize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>v.<ref refid="classmv_1_1Vector2f_1ad6b24c535812871610bb86f1d2f914a2" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Vector2f(v.x<sp/>/<sp/>l,<sp/>v.y<sp/>/<sp/>l);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="namespacemv_1ac7c6d954a569b76888825f5b3d93ba57" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>v)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;(&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>v.y<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;)&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f{}.x<sp/>==<sp/>0.0f,<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f{}.y<sp/>==<sp/>0.0f,<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f{}<sp/>==<sp/>Vector2f{},<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(!<sp/>(Vector2f{}<sp/>!=<sp/>Vector2f{}),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.0f,<sp/>0.0f)<sp/>==<sp/>Vector2f{},<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.5f,<sp/>0.5f)<sp/>!=<sp/>Vector2f{},<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(!<sp/>(Vector2f(0.5f,<sp/>0.5f)<sp/>==<sp/>Vector2f{}),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.5f,<sp/>0.0f).x<sp/>==<sp/>0.5f,<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.0f,<sp/>0.5f).y<sp/>==<sp/>0.5f,<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.5f,<sp/>1.0f).sqrMagnitude()<sp/>==<sp/>1.25f,<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(0.5f,<sp/>1.5f)<sp/>+<sp/>Vector2f(1.0f,<sp/>2.0f)<sp/>==<sp/>Vector2f(1.5f,<sp/>3.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(1.0f,<sp/>2.0f)<sp/>+<sp/>0.5f<sp/>==<sp/>Vector2f(1.5f,<sp/>2.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(3.0f,<sp/>4.0f)<sp/>-<sp/>Vector2f(1.5f,<sp/>0.5f)<sp/>==<sp/>Vector2f(1.5f,<sp/>3.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(2.0f,<sp/>3.0f)<sp/>-<sp/>0.5f<sp/>==<sp/>Vector2f(1.5f,<sp/>2.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(-Vector2f(0.5f,<sp/>-1.5f)<sp/>==<sp/>Vector2f(-0.5f,<sp/>1.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(2.0f,<sp/>3.0f)<sp/>*<sp/>Vector2f(1.5f,<sp/>0.5f)<sp/>==<sp/>Vector2f(3.0f,<sp/>1.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(2.0f,<sp/>3.0f)<sp/>*<sp/>1.5f<sp/>==<sp/>Vector2f(3.0f,<sp/>4.5f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(Vector2f(1.0f,<sp/>2.0f)<sp/>/<sp/>2.0f<sp/>==<sp/>Vector2f(0.5f,<sp/>1.0f),<sp/></highlight><highlight class="stringliteral">&quot;Compile-time<sp/>unit<sp/>test&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Docs/external/core/ManiVault/src/graphics/Vector2f.cpp"/>
+  </compounddef>
+</doxygen>

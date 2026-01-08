@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1CpuComponentSpec" kind="class" language="C++" prot="public">
+    <compoundname>mv::util::CpuComponentSpec</compoundname>
+    <basecompoundref refid="classmv_1_1util_1_1HardwareComponentSpec" prot="public" virt="non-virtual">mv::util::HardwareComponentSpec</basecompoundref>
+    <includes refid="CpuComponentSpec_8h" local="no">CpuComponentSpec.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1a10ef9d848168438a76aa8f2fb69fe168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::util::CpuComponentSpec::CpuComponentSpec</definition>
+        <argsstring>()</argsstring>
+        <name>CpuComponentSpec</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="26" column="5" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1a48931415d46797fd6d743b6fa8ee2b07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString mv::util::CpuComponentSpec::getFailureString</definition>
+        <argsstring>(const HardwareComponentSpec &amp;required) const override</argsstring>
+        <name>getFailureString</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a5ec80fbe94718aa502c0004ff96825fb">getFailureString</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref> &amp;</type>
+          <declname>required</declname>
+        </param>
+        <briefdescription>
+<para>Get the reason why the CPU component spec does not meet the <computeroutput>required</computeroutput> CPU component spec. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>required</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component spec that is required </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String containing the reason why the CPU component spec does not meet the required CPU component spec </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="33" column="13" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="20" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1ae20e249054fda685772c97f5743c8afd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::operator==</definition>
+        <argsstring>(const CpuComponentSpec &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1CpuComponentSpec" kindref="compound">CpuComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU component specification is equal to the <computeroutput>other</computeroutput> CPU component specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component specification to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the CPU component specification is equal to the <computeroutput>other</computeroutput> CPU component specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="40" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1aa905bbe1fde47ff545b53db7dda1cfbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::operator!=</definition>
+        <argsstring>(const CpuComponentSpec &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1CpuComponentSpec" kindref="compound">CpuComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU component specification is not equal to the <computeroutput>other</computeroutput> CPU component specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component specification to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the CPU component specification is not equal to the <computeroutput>other</computeroutput> CPU component specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="51" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1a20be3148ee9595079f734e11afffd3a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::operator&lt;</definition>
+        <argsstring>(const CpuComponentSpec &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1CpuComponentSpec" kindref="compound">CpuComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU specification is smaller than the <computeroutput>other</computeroutput> CPU specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the CPU specification is smaller than the <computeroutput>other</computeroutput> CPU specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="61" column="5" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1aa396b3624d25183ab4989997d20638e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::operator&gt;</definition>
+        <argsstring>(const CpuComponentSpec &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1CpuComponentSpec" kindref="compound">CpuComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU specification is larger than the <computeroutput>other</computeroutput> CPU specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean determining whether the CPU specification is larger than the <computeroutput>other</computeroutput> CPU specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="69" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1a995046b7c6626d3b6469be0f476e41e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::lessThan</definition>
+        <argsstring>(const HardwareComponentSpec &amp;other) const override</argsstring>
+        <name>lessThan</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a1a4bf30d66ff6d0d733553504d0eb166">lessThan</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU component specification is smaller than the <computeroutput>other</computeroutput> CPU component specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component specification to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the CPU component specification is smaller than the <computeroutput>other</computeroutput> CPU component specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1abb6f7576615a80d35bf0b247a4042860" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::equals</definition>
+        <argsstring>(const HardwareComponentSpec &amp;other) const override</argsstring>
+        <name>equals</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1acee14126443e794540693df1fc749293">equals</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU component specification is equal to the <computeroutput>other</computeroutput> CPU component specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component specification to compare with </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the CPU component specification is equal to the <computeroutput>other</computeroutput> CPU component specification </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="90" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1ad19ef33b1b894b72fa5cc473949c5365" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mv::util::CpuComponentSpec::meets</definition>
+        <argsstring>(const HardwareComponentSpec &amp;required) const override</argsstring>
+        <name>meets</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a64d679dcd2bbe3fadc0f6479094487bc">meets</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref> &amp;</type>
+          <declname>required</declname>
+        </param>
+        <briefdescription>
+<para>Get whether the CPU component specification meets the <computeroutput>required</computeroutput> CPU component specification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>required</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPU component spec that is required </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean determining whether the CPU component spec meets the required CPU component spec </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="102" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1aab40647c2bbcc03c2fb1637289af2800" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QStandardItem *</type>
+        <definition>QStandardItem * mv::util::CpuComponentSpec::getStandardItem</definition>
+        <argsstring>() const override</argsstring>
+        <name>getStandardItem</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a73e2a00ce74808dbeb54bfa35f84a9a4">getStandardItem</reimplements>
+        <briefdescription>
+<para>Get standard item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to standard item representing the hardware component spec </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="108" column="19" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1a31fc2e0259451f48ec60e94bb85215a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::util::CpuComponentSpec::fromSystem</definition>
+        <argsstring>() override</argsstring>
+        <name>fromSystem</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a1001807f3430e1292e42fb2db5a1b3a6">fromSystem</reimplements>
+        <briefdescription>
+<para>Load the hardware spec from current system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="113" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1CpuComponentSpec_1abac8dafc00c10b2c591d16bb4259221d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::util::CpuComponentSpec::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1HardwareComponentSpec_1a45e57acfda68ac8b23e4e5f024e85a0d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load the hardware spec from <computeroutput>variantMap</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant map containing the hardware spec properties </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="119" column="10" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>CPU component spec class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For encapsulating a CPU hardware specification</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mv::util::HardwareComponentSpec</label>
+        <link refid="classmv_1_1util_1_1HardwareComponentSpec"/>
+      </node>
+      <node id="1">
+        <label>mv::util::CpuComponentSpec</label>
+        <link refid="classmv_1_1util_1_1CpuComponentSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>mv::util::HardwareComponentSpec</label>
+        <link refid="classmv_1_1util_1_1HardwareComponentSpec"/>
+      </node>
+      <node id="1">
+        <label>mv::util::CpuComponentSpec</label>
+        <link refid="classmv_1_1util_1_1CpuComponentSpec"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" line="21" column="1" bodyfile="Docs/external/core/ManiVault/src/util/CpuComponentSpec.h" bodystart="22" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1a10ef9d848168438a76aa8f2fb69fe168" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>CpuComponentSpec</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1abb6f7576615a80d35bf0b247a4042860" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>equals</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1a31fc2e0259451f48ec60e94bb85215a2" prot="protected" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>fromSystem</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1abac8dafc00c10b2c591d16bb4259221d" prot="protected" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1a48931415d46797fd6d743b6fa8ee2b07" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>getFailureString</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a2adfe02402606c0a3f65709d4daf9bfb" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>getParameterRow</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1aab40647c2bbcc03c2fb1637289af2800" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>getStandardItem</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a66612ea3db2f6d2697580c92336544a2" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>getTitle</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a124e5e1455f1dbe1e39addbd8db65a65" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>HardwareComponentSpec</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a05607b00c5945279f6996f5af738f21c" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1a995046b7c6626d3b6469be0f476e41e2" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>lessThan</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1ad19ef33b1b894b72fa5cc473949c5365" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>meets</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1aa905bbe1fde47ff545b53db7dda1cfbe" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1a20be3148ee9595079f734e11afffd3a0" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>operator&lt;</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1ae20e249054fda685772c97f5743c8afd" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>operator==</name></member>
+      <member refid="classmv_1_1util_1_1CpuComponentSpec_1aa396b3624d25183ab4989997d20638e8" prot="public" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>operator&gt;</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a0543ebc4dddf5ed7a9062677f9bc93bf" prot="protected" virt="non-virtual"><scope>mv::util::CpuComponentSpec</scope><name>setInitialized</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1af7b4fe479d20471a741ac254f06b4c46" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a50b4f51ec16f044ef323421b09fc371e" prot="public" virt="virtual"><scope>mv::util::CpuComponentSpec</scope><name>~HardwareComponentSpec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

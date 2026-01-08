@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1util_1_1Badge" kind="class" language="C++" prot="public">
+    <compoundname>mv::util::Badge</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="Badge_8h" local="no">Badge.h</includes>
+    <innerclass refid="structmv_1_1util_1_1Badge_1_1Parameters" prot="public">mv::util::Badge::Parameters</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1util_1_1Badge_1a1ac351905d92bdede555bc7a26717bfa" prot="private" static="no" mutable="no">
+        <type><ref refid="structmv_1_1util_1_1Badge_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Parameters mv::util::Badge::_parameters</definition>
+        <argsstring></argsstring>
+        <name>_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="220" column="16" bodyfile="Docs/external/core/ManiVault/src/util/Badge.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a799b4c999f735730f0c7b80f1e25a06b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::util::Badge::Badge</definition>
+        <argsstring>(QObject *parent=nullptr, std::uint32_t number=0, const QColor &amp;backgroundColor=Qt::red, const QColor &amp;foregroundColor=Qt::white, Qt::Alignment alignment=Qt::AlignTop|Qt::AlignRight, float scale=0.5f)</argsstring>
+        <name>Badge</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>number</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>backgroundColor</declname>
+          <defval>Qt::red</defval>
+        </param>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>foregroundColor</declname>
+          <defval>Qt::white</defval>
+        </param>
+        <param>
+          <type>Qt::Alignment</type>
+          <declname>alignment</declname>
+          <defval>Qt::AlignTop|Qt::AlignRight</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>0.5f</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object, badge <computeroutput>number</computeroutput>, <computeroutput>backgroundColor</computeroutput>, <computeroutput>foregroundColor</computeroutput>, <computeroutput>alignment</computeroutput> and <computeroutput>badge</computeroutput> scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number displayed in the badge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color the badge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>foregroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Foreground color the badge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alignment of the badge </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale of the badge w.r.t. of its container </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="72" column="5" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a52e0729ed1ab68ac9202a78759df4165" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap mv::util::Badge::getPixmap</definition>
+        <argsstring>() const</argsstring>
+        <name>getPixmap</name>
+        <briefdescription>
+<para>Get pixmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pixmap representation of the badge (100 x 100) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="78" column="13" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a876c84e549ef899bf6cc31eb81b56329" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmv_1_1util_1_1Badge_1_1Parameters" kindref="compound">Parameters</ref></type>
+        <definition>Badge::Parameters mv::util::Badge::getParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getParameters</name>
+        <briefdescription>
+<para>Get parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> parameters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="84" column="16" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a0a776c8deb115d3ab6fd3252a2f56f47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::util::Badge::getEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnabled</name>
+        <briefdescription>
+<para>Get badge enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> enabled </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="92" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a1d698511d2eeea6dd6d288e7b3a6ff09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setEnabled</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Set badge enabled to <computeroutput>enabled</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> enabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="98" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a5de8ec1b093c0ab9ed194c83dce709a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::uint32_t</type>
+        <definition>std::uint32_t mv::util::Badge::getNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumber</name>
+        <briefdescription>
+<para>Get badge number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="104" column="19" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a96ebed596cafab6816b07bf32b2744b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setNumber</definition>
+        <argsstring>(std::uint32_t number)</argsstring>
+        <name>setNumber</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Set badge number to <computeroutput>number</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="110" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a8d7c952165ffd2cf919e817eefb287e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor mv::util::Badge::getBackgroundColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundColor</name>
+        <briefdescription>
+<para>Get background color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Background color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="116" column="12" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1ae89292463ae760457a7fb5c14237ea9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setBackgroundColor</definition>
+        <argsstring>(const QColor &amp;backgroundColor)</argsstring>
+        <name>setBackgroundColor</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <briefdescription>
+<para>Set background color to <computeroutput>backgroundColor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backgroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="122" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="69" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1ac49475d9233e836ba94f92b907b184d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor mv::util::Badge::getForegroundColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getForegroundColor</name>
+        <briefdescription>
+<para>Get foreground color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Foreground color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="128" column="12" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1aa7289778b5423cdb0d55a441e70a7cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setForegroundColor</definition>
+        <argsstring>(const QColor &amp;foregroundColor)</argsstring>
+        <name>setForegroundColor</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>foregroundColor</declname>
+        </param>
+        <briefdescription>
+<para>Set foreground color to <computeroutput>foregroundColor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>foregroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Foreground color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="134" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1ab07fb7569f492a31c0b2a18a7613e92a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::Alignment</type>
+        <definition>Qt::Alignment mv::util::Badge::getAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlignment</name>
+        <briefdescription>
+<para>Get badge alignment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> alignment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="140" column="19" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1aff8c6b094ece57b284d66c9c21515448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setAlignment</definition>
+        <argsstring>(Qt::Alignment alignment)</argsstring>
+        <name>setAlignment</name>
+        <param>
+          <type>Qt::Alignment</type>
+          <declname>alignment</declname>
+        </param>
+        <briefdescription>
+<para>Set badge alignment to <computeroutput>alignment</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="146" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="101" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a56cd5c1409d021cbc01f0e9d3eef839e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::util::Badge::getScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getScale</name>
+        <briefdescription>
+<para>Get badge scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> scale </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="152" column="11" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a02f78f4a11e5f7fd79f8eb68967620b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setScale</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Set badge scale to <computeroutput>scale</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> scale </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="158" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="117" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1aa9688ea6c235d34143f6dded58ca2775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap mv::util::Badge::getCustomPixmap</definition>
+        <argsstring>() const</argsstring>
+        <name>getCustomPixmap</name>
+        <briefdescription>
+<para>Get custom pixmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Custom pixmap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="164" column="13" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1util_1_1Badge_1a07e68b89a13a118021ba020cf555aa81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::setCustomPixmap</definition>
+        <argsstring>(const QPixmap &amp;customPixmap)</argsstring>
+        <name>setCustomPixmap</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>customPixmap</declname>
+        </param>
+        <briefdescription>
+<para>Set custom pixmap to <computeroutput>customPixmap</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>customPixmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom pixmap </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="170" column="10" bodyfile="Docs/external/core/ManiVault/src/util/Badge.cpp" bodystart="133" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a98f85466504bfe55a8d3079e3d53ab0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::enabledChanged</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>enabledChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Signals that enabled changed to <computeroutput>enabled</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enabled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a8ab39be85f20d0d1007525fa9c0096c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::numberChanged</definition>
+        <argsstring>(std::uint32_t number)</argsstring>
+        <name>numberChanged</name>
+        <param>
+          <type>std::uint32_t</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the badge number changed to <computeroutput>number</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="184" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a10584f52aaff5e24481e690428e5e023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::backgroundColorChanged</definition>
+        <argsstring>(const QColor &amp;backgroundColor)</argsstring>
+        <name>backgroundColorChanged</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>backgroundColor</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the background color changed to <computeroutput>backgroundColor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backgroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Background color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a3b207bb49462e2c8bc7eb8736bc7284f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::foregroundColorChanged</definition>
+        <argsstring>(const QColor &amp;foregroundColor)</argsstring>
+        <name>foregroundColorChanged</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>foregroundColor</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the foreground color changed to <computeroutput>foregroundColor</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>foregroundColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Foreground color </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="196" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a64db9424964905e43b74ad41ae845766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::alignmentChanged</definition>
+        <argsstring>(Qt::Alignment alignmen)</argsstring>
+        <name>alignmentChanged</name>
+        <param>
+          <type>Qt::Alignment</type>
+          <declname>alignmen</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the badge alignment changed to <computeroutput>alignment</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> alignment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="202" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1aa950b9edefa3bf73242916f0088d89dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::scaleChanged</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>scaleChanged</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the badge scale changed to <computeroutput>scale</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> scale </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="208" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a9a2734c28c68de9fef3634536ae46040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::customPixmapChanged</definition>
+        <argsstring>(const QPixmap &amp;customPixmap)</argsstring>
+        <name>customPixmapChanged</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>customPixmap</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the custom pixmap changed to <computeroutput>customPixmap</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>customPixmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom pixmap </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="214" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1util_1_1Badge_1a2755eb4ac74f04a0a754e2dbd0ed5d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::util::Badge::changed</definition>
+        <argsstring>()</argsstring>
+        <name>changed</name>
+        <briefdescription>
+<para>Signals that the badge configuration changed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="217" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classmv_1_1util_1_1Badge" kindref="compound">Badge</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Draws a circle with a number with any Qt::Alignment flag and foreground (text) and background color. Currently used by the collapsed widget only.</para>
+<para>Note: By default the badge is disabled, use Badge::setEnabled(...) to enable it</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::util::Badge</label>
+        <link refid="classmv_1_1util_1_1Badge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::util::Badge</label>
+        <link refid="classmv_1_1util_1_1Badge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/util/Badge.h" line="25" column="1" bodyfile="Docs/external/core/ManiVault/src/util/Badge.h" bodystart="26" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classmv_1_1util_1_1Badge_1a1ac351905d92bdede555bc7a26717bfa" prot="private" virt="non-virtual"><scope>mv::util::Badge</scope><name>_parameters</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a64db9424964905e43b74ad41ae845766" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>alignmentChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a10584f52aaff5e24481e690428e5e023" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>backgroundColorChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a799b4c999f735730f0c7b80f1e25a06b" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>Badge</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a2755eb4ac74f04a0a754e2dbd0ed5d06" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>changed</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a9a2734c28c68de9fef3634536ae46040" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>customPixmapChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a98f85466504bfe55a8d3079e3d53ab0d" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>enabledChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a3b207bb49462e2c8bc7eb8736bc7284f" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>foregroundColorChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1ab07fb7569f492a31c0b2a18a7613e92a" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getAlignment</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a8d7c952165ffd2cf919e817eefb287e9" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getBackgroundColor</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1aa9688ea6c235d34143f6dded58ca2775" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getCustomPixmap</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a0a776c8deb115d3ab6fd3252a2f56f47" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getEnabled</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1ac49475d9233e836ba94f92b907b184d3" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getForegroundColor</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a5de8ec1b093c0ab9ed194c83dce709a5" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getNumber</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a876c84e549ef899bf6cc31eb81b56329" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getParameters</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a52e0729ed1ab68ac9202a78759df4165" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getPixmap</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a56cd5c1409d021cbc01f0e9d3eef839e" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>getScale</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a8ab39be85f20d0d1007525fa9c0096c0" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>numberChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1aa950b9edefa3bf73242916f0088d89dc" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>scaleChanged</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1aff8c6b094ece57b284d66c9c21515448" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setAlignment</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1ae89292463ae760457a7fb5c14237ea9f" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setBackgroundColor</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a07e68b89a13a118021ba020cf555aa81" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setCustomPixmap</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a1d698511d2eeea6dd6d288e7b3a6ff09" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setEnabled</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1aa7289778b5423cdb0d55a441e70a7cdf" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setForegroundColor</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a96ebed596cafab6816b07bf32b2744b6" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setNumber</name></member>
+      <member refid="classmv_1_1util_1_1Badge_1a02f78f4a11e5f7fd79f8eb68967620b6" prot="public" virt="non-virtual"><scope>mv::util::Badge</scope><name>setScale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

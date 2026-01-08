@@ -1,0 +1,1205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1SplashScreenAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::SplashScreenAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1HorizontalGroupAction" prot="public" virt="non-virtual">mv::gui::HorizontalGroupAction</basecompoundref>
+    <includes refid="SplashScreenAction_8h" local="no">SplashScreenAction.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1SplashScreenAction_1_1Alert" prot="public">mv::gui::SplashScreenAction::Alert</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1SplashScreenAction_1aacf79a8a3256032f581bac81d41d2467" prot="public" static="no">
+        <type>QVector&lt; <ref refid="classmv_1_1gui_1_1SplashScreenAction_1_1Alert" kindref="compound">Alert</ref> &gt;</type>
+        <definition>using mv::gui::SplashScreenAction::Alerts =  QVector&lt;Alert&gt;</definition>
+        <argsstring></argsstring>
+        <name>Alerts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="104" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a41d9c377d5e60167ae02b8e2dbbdd1f9" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1SplashScreenAction_1aacf79a8a3256032f581bac81d41d2467" kindref="member">Alerts</ref></type>
+        <definition>Alerts mv::gui::SplashScreenAction::_alerts</definition>
+        <argsstring></argsstring>
+        <name>_alerts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="233" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1af2b4f6fb0c3f5341d8da0c7e3d27755e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::SplashScreenAction::_mayCloseSplashScreenWidget</definition>
+        <argsstring></argsstring>
+        <name>_mayCloseSplashScreenWidget</name>
+        <briefdescription>
+<para>Alerts that will be displayed on the splash screen widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="234" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1ac72aec0850649c30828f56f6a442f970" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref> *</type>
+        <definition>ProjectMetaAction* mv::gui::SplashScreenAction::_projectMetaAction</definition>
+        <argsstring></argsstring>
+        <name>_projectMetaAction</name>
+        <briefdescription>
+<para>Whether the user can close the splash screen widget with a close tool button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="235" column="40" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1aaa56ae933b86202f1c3bfc6745c00bf8" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::SplashScreenAction::_enabledAction</definition>
+        <argsstring></argsstring>
+        <name>_enabledAction</name>
+        <briefdescription>
+<para>Shared pointer to project meta action (used by the splash screen widget to display project information) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="236" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1af19f2ff2c0da60036fc9c9004920c5f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::SplashScreenAction::_overrideAction</definition>
+        <argsstring></argsstring>
+        <name>_overrideAction</name>
+        <briefdescription>
+<para>Action to setEnabled the splash screen on/off. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="237" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a35ee464df1384be67115305e9a088e86" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::SplashScreenAction::_toClipboardAction</definition>
+        <argsstring></argsstring>
+        <name>_toClipboardAction</name>
+        <briefdescription>
+<para>Toggle action to override the default ManiVault splash screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="238" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1ae17016fd15b148df9060874d8f463487" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref></type>
+        <definition>StringAction mv::gui::SplashScreenAction::_htmlAction</definition>
+        <argsstring></argsstring>
+        <name>_htmlAction</name>
+        <briefdescription>
+<para>Trigger action to copy the splash screen HTML to clipboard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="239" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a8bfbc24c735ebe49f2d7ec2938266536" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1VerticalGroupAction" kindref="compound">VerticalGroupAction</ref></type>
+        <definition>VerticalGroupAction mv::gui::SplashScreenAction::_editAction</definition>
+        <argsstring></argsstring>
+        <name>_editAction</name>
+        <briefdescription>
+<para>String action for custom html content. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="240" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a7f88052ec5e20921f60adba42e6630c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::SplashScreenAction::_openAction</definition>
+        <argsstring></argsstring>
+        <name>_openAction</name>
+        <briefdescription>
+<para>Vertical group action for editing the splash screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="241" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a04f51d6c99460658013a731be85c70e7" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::SplashScreenAction::_testAction</definition>
+        <argsstring></argsstring>
+        <name>_testAction</name>
+        <briefdescription>
+<para>Trigger action to show the splash screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="242" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1ab045ba1196ffb6121bac40da2ad69c8c" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref></type>
+        <definition>TriggerAction mv::gui::SplashScreenAction::_closeAction</definition>
+        <argsstring></argsstring>
+        <name>_closeAction</name>
+        <briefdescription>
+<para>Trigger action to briefly show the splash screen for testing purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="243" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a1230478ae5c1d3159373e916c87cd390" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">TaskAction</ref></type>
+        <definition>TaskAction mv::gui::SplashScreenAction::_taskAction</definition>
+        <argsstring></argsstring>
+        <name>_taskAction</name>
+        <briefdescription>
+<para>Trigger action to manually close the splash screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="244" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a5cfc061c88d34a6904f43f30dd8038c1" prot="private" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="classmv_1_1gui_1_1SplashScreenWidget" kindref="compound">SplashScreenWidget</ref> &gt;</type>
+        <definition>QPointer&lt;SplashScreenWidget&gt; mv::gui::SplashScreenAction::_splashScreenWidget</definition>
+        <argsstring></argsstring>
+        <name>_splashScreenWidget</name>
+        <briefdescription>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> action for showing load progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="245" column="21" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a308a36804b66ac99f0c432941262bbdd" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref></type>
+        <definition>Task mv::gui::SplashScreenAction::_simulateStartupTask</definition>
+        <argsstring></argsstring>
+        <name>_simulateStartupTask</name>
+        <briefdescription>
+<para>Splash screen dialog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="246" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1SplashScreenAction_1a74c0315ad4f60fb023b4fad18888af0d" prot="private" static="no" mutable="no">
+        <type>QTimer</type>
+        <definition>QTimer mv::gui::SplashScreenAction::_simulateTimer</definition>
+        <argsstring></argsstring>
+        <name>_simulateTimer</name>
+        <briefdescription>
+<para>Test task to simulate load progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="247" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1SplashScreenAction_1aae80cc2d8f3eba305bb96db46698fa91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class mv::Application</definition>
+        <argsstring></argsstring>
+        <name>mv::Application</name>
+        <param>
+          <type><ref refid="classmv_1_1Application" kindref="compound">mv::Application</ref></type>
+        </param>
+        <briefdescription>
+<para><ref refid="classTimer" kindref="compound">Timer</ref> to simulate load progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="249" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a051d851ae7bad893bdd4d46e1776a842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::SplashScreenAction::SplashScreenAction</definition>
+        <argsstring>(QObject *parent, bool mayCloseSplashScreenWidget=false)</argsstring>
+        <name>SplashScreenAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mayCloseSplashScreenWidget</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object and optional parameter to control whether the user can close the splash screen widget with a close tool button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mayCloseSplashScreenWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the user can close the splash screen widget with a close tool button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="113" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="77" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a8754a2e176423c4403eac04b65a8a9e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::SplashScreenAction::~SplashScreenAction</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~SplashScreenAction</name>
+        <briefdescription>
+<para>Destructor A destructor is mandatory here because of the SplashScreenAction::_splashScreenDialog QScopePointer <ulink url="https://doc.qt.io/qt-6/qscopedpointer.html#forward-declared-pointers">https://doc.qt.io/qt-6/qscopedpointer.html#forward-declared-pointers</ulink>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="120" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a2bb03f2fdc02cc0a38a0282df4419372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::addAlert</definition>
+        <argsstring>(const Alert &amp;alert)</argsstring>
+        <name>addAlert</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1SplashScreenAction_1_1Alert" kindref="compound">Alert</ref> &amp;</type>
+          <declname>alert</declname>
+        </param>
+        <briefdescription>
+<para>Add <computeroutput>alert</computeroutput> to the splash screen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1gui_1_1SplashScreenAction_1_1Alert" kindref="compound">Alert</ref> to add </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="126" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ac994becd98cae4c50ac51ba31676cf93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1SplashScreenAction_1aacf79a8a3256032f581bac81d41d2467" kindref="member">Alerts</ref></type>
+        <definition>SplashScreenAction::Alerts mv::gui::SplashScreenAction::getAlerts</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlerts</name>
+        <briefdescription>
+<para>Get alerts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector of alerts </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="132" column="12" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a3400b06c218b693c2917703199b529a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::SplashScreenAction::getMayCloseSplashScreenWidget</definition>
+        <argsstring>() const</argsstring>
+        <name>getMayCloseSplashScreenWidget</name>
+        <briefdescription>
+<para>Get may close splash screen widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Whether the user can close the splash screen widget with a close tool button </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="138" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ab1621beab48ec44112ab8c39217c8d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::setMayCloseSplashScreenWidget</definition>
+        <argsstring>(bool mayCloseSplashScreenWidget)</argsstring>
+        <name>setMayCloseSplashScreenWidget</name>
+        <param>
+          <type>bool</type>
+          <declname>mayCloseSplashScreenWidget</declname>
+        </param>
+        <briefdescription>
+<para>Set may close splash screen widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mayCloseSplashScreenWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the user can close the splash screen widget with a close tool button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="144" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1aee2a2c2aee8d767382849f1c13345c22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::SplashScreenAction::getHtml</definition>
+        <argsstring>() const</argsstring>
+        <name>getHtml</name>
+        <briefdescription>
+<para>Get HTML content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>HTML content, empty string if not available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="150" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="223" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ab3bcc1dc5493a5148263dc3d798ada55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref> *</type>
+        <definition>ProjectMetaAction * mv::gui::SplashScreenAction::getProjectMetaAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getProjectMetaAction</name>
+        <briefdescription>
+<para>Get project meta action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to project meta action, nullptr if not available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="165" column="23" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a74bf79956a380629ed5efe29173af469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::setProjectMetaAction</definition>
+        <argsstring>(ProjectMetaAction *projectMetaAction)</argsstring>
+        <name>setProjectMetaAction</name>
+        <param>
+          <type><ref refid="classmv_1_1ProjectMetaAction" kindref="compound">ProjectMetaAction</ref> *</type>
+          <declname>projectMetaAction</declname>
+        </param>
+        <briefdescription>
+<para>Get project meta action to <computeroutput>projectMetaAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectMetaAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to project meta action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="171" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1adc4da89f96d3bdf750b12944b0a63e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load splash screen action from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variantMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant representation of the project </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="202" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="356" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1aaf00efcfa6ddee2d5daa386d9afe40ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::SplashScreenAction::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save splash screen action to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the project </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="208" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="364" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a2af3e1cc7479a84c6573a3a768d1619b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::SplashScreenAction::getEnabledAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnabledAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="212" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1adcec29e88db373220d4c3bf082eb2244" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::SplashScreenAction::getOverrideAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getOverrideAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="213" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a339cb06c6f7efdd80a7fca08ce2d8fbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref> &amp;</type>
+        <definition>const StringAction&amp; mv::gui::SplashScreenAction::getHtmlAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getHtmlAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="214" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="214" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a2f8c3fa39677acfb1ddb9912106f6f25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>const TriggerAction&amp; mv::gui::SplashScreenAction::getToClipboardAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getToClipboardAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="215" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1af187cda1754c0d2af21c436a365634ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1VerticalGroupAction" kindref="compound">VerticalGroupAction</ref> &amp;</type>
+        <definition>const VerticalGroupAction&amp; mv::gui::SplashScreenAction::getEditAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getEditAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="216" column="31" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="216" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a5a942aa2b26d8f8d0bcd36627ea27223" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>const TriggerAction&amp; mv::gui::SplashScreenAction::getOpenAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getOpenAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="217" column="21" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="217" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a9002f2ab78ca1762f3ca92025c5c722b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>const TriggerAction&amp; mv::gui::SplashScreenAction::getTestAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getTestAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="218" column="21" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="218" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ab15b9cd51978794fd82563a946d0b743" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>const TriggerAction&amp; mv::gui::SplashScreenAction::getCloseAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getCloseAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="219" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1aaec73299c9b44fc414b88dacd790a0a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">TaskAction</ref> &amp;</type>
+        <definition>const TaskAction&amp; mv::gui::SplashScreenAction::getTaskAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getTaskAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="220" column="22" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="220" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a033e2db76609b6dc50d42db5eeaa6251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::SplashScreenAction::getEnabledAction</definition>
+        <argsstring>()</argsstring>
+        <name>getEnabledAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="222" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a568ba952b724e544850e8ceb3408c07a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::SplashScreenAction::getOverrideAction</definition>
+        <argsstring>()</argsstring>
+        <name>getOverrideAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="223" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a4a9c08c7415298b8fb02751b31e75bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">StringAction</ref> &amp;</type>
+        <definition>StringAction&amp; mv::gui::SplashScreenAction::getHtmlAction</definition>
+        <argsstring>()</argsstring>
+        <name>getHtmlAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="224" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="224" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ab672b145cf89f2ca332147722c81b4eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::SplashScreenAction::getToClipboardAction</definition>
+        <argsstring>()</argsstring>
+        <name>getToClipboardAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="225" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a60a8fd25f54a862742301661fb3441df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1VerticalGroupAction" kindref="compound">VerticalGroupAction</ref> &amp;</type>
+        <definition>VerticalGroupAction&amp; mv::gui::SplashScreenAction::getEditAction</definition>
+        <argsstring>()</argsstring>
+        <name>getEditAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="226" column="25" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a25c04f0ab990b2192024bd9552f2f259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::SplashScreenAction::getOpenAction</definition>
+        <argsstring>()</argsstring>
+        <name>getOpenAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="227" column="15" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a41738d3e31390598823f6f4beb6221df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::SplashScreenAction::getTestAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTestAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="228" column="15" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1ac5637dc0092926be280b0ac4ead97ce6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
+        <definition>TriggerAction&amp; mv::gui::SplashScreenAction::getCloseAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCloseAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="229" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1aa6ee3b4efe69497b7fdd0d4c6b91ed6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">TaskAction</ref> &amp;</type>
+        <definition>TaskAction&amp; mv::gui::SplashScreenAction::getTaskAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTaskAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="230" column="16" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a3bf6851ea71e07045eae441e0c2ae2c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::SplashScreenAction::pixmapToBase64</definition>
+        <argsstring>(const QPixmap &amp;pixmap)</argsstring>
+        <name>pixmapToBase64</name>
+        <param>
+          <type>const QPixmap &amp;</type>
+          <declname>pixmap</declname>
+        </param>
+        <briefdescription>
+<para>Convert <computeroutput>pixmap</computeroutput> to base64 string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pixmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pixmap to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Base64 representation of the pixmap, empty string if not available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="157" column="20" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="232" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a777ae650ef275efc7326647be82fad14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::showSplashScreenWidget</definition>
+        <argsstring>()</argsstring>
+        <name>showSplashScreenWidget</name>
+        <briefdescription>
+<para>Shows the splash screen widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="176" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="254" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a45bfffb84a44e7c5b4703c204d0b8a61" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::closeSplashScreenWidget</definition>
+        <argsstring>()</argsstring>
+        <name>closeSplashScreenWidget</name>
+        <briefdescription>
+<para>Animates the splash screen widget&apos;s opacity and position and afterwards closes it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="179" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="270" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1adf4804cc6c9d05aaa6a4a675591401a2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::SplashScreenAction::shouldDisplayProjectInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>shouldDisplayProjectInfo</name>
+        <briefdescription>
+<para>Establishes whether project information should be shown or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="182" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a53e0aaa72112d53883820d4dcc08ac50" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::SplashScreenAction::getHtmlFromTemplate</definition>
+        <argsstring>() const</argsstring>
+        <name>getHtmlFromTemplate</name>
+        <briefdescription>
+<para>Get HTML from template (located in resources) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>HTML content from template, empty string if not available </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="188" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="289" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1SplashScreenAction_1a4c0610e0d2afa29e367a3629b3c79aad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::SplashScreenAction::setStartupTask</definition>
+        <argsstring>(Task *startupTask)</argsstring>
+        <name>setStartupTask</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>startupTask</declname>
+        </param>
+        <briefdescription>
+<para>Set startup task to <computeroutput>startupTask</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startupTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to startup task </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="194" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.cpp" bodystart="205" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Splash screen action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For configuring and displaying a splash screen.</para>
+<para>Note: This action is developed for internal use only</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::SplashScreenAction</label>
+        <link refid="classmv_1_1gui_1_1SplashScreenAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::SplashScreenAction</label>
+        <link refid="classmv_1_1gui_1_1SplashScreenAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QWidgetAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" line="35" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/SplashScreenAction.h" bodystart="36" bodyend="250"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a41d9c377d5e60167ae02b8e2dbbdd1f9" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_alerts</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ab045ba1196ffb6121bac40da2ad69c8c" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_closeAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a8bfbc24c735ebe49f2d7ec2938266536" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_editAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aaa56ae933b86202f1c3bfc6745c00bf8" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_enabledAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ae17016fd15b148df9060874d8f463487" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_htmlAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1af2b4f6fb0c3f5341d8da0c7e3d27755e" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_mayCloseSplashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a7f88052ec5e20921f60adba42e6630c6" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_openAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1af19f2ff2c0da60036fc9c9004920c5f3" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_overrideAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ac72aec0850649c30828f56f6a442f970" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_projectMetaAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a308a36804b66ac99f0c432941262bbdd" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_simulateStartupTask</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a74c0315ad4f60fb023b4fad18888af0d" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_simulateTimer</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a5cfc061c88d34a6904f43f30dd8038c1" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_splashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a1230478ae5c1d3159373e916c87cd390" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_taskAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a04f51d6c99460658013a731be85c70e7" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_testAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a35ee464df1384be67115305e9a088e86" prot="private" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>_toClipboardAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1adca4d4573f3d3dfc8861333975f930d7" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>actionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8152c992d51606e5603258126bcaa998" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>addAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a2bb03f2fdc02cc0a38a0282df4419372" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>addAlert</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a56c5eeeaa193c7252dcca5488a3fc1e9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>addStretch</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aacf79a8a3256032f581bac81d41d2467" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Alerts</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afbd2f14ca88b30b4e6ad89aa94cf3831" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>clear</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a45bfffb84a44e7c5b4703c204d0b8a61" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>closeSplashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a5d7a9c53f033d2841844a09b182bb2e2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>collapse</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8ecee1b901f55e8b11f58982327d2063" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>collapsed</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cbaf7691fdfa95d900858d0853b278b84f6" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a681d2da460f23d550ceb442d612dcefb" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>expand</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a11c4bc094ce992dc7ffd40266d5de37e" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>expanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1adc4da89f96d3bdf750b12944b0a63e00" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::SplashScreenAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::SplashScreenAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ad1927fa59910e23bfda8486d3e0b7945" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getActions</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ac994becd98cae4c50ac51ba31676cf93" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getAlerts</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4011eff1bb2e221535b5cea596dedafd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getAlignment</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ab15b9cd51978794fd82563a946d0b743" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getCloseAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ac5637dc0092926be280b0ac4ead97ce6" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getCloseAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a15cc71f14a1c7cff0174e1a95b4eee2e" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getConstActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1af187cda1754c0d2af21c436a365634ac" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getEditAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a60a8fd25f54a862742301661fb3441df" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getEditAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a2af3e1cc7479a84c6573a3a768d1619b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getEnabledAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a033e2db76609b6dc50d42db5eeaa6251" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getEnabledAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aee2a2c2aee8d767382849f1c13345c22" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getHtml</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a339cb06c6f7efdd80a7fca08ce2d8fbe" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getHtmlAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a4a9c08c7415298b8fb02751b31e75bb0" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getHtmlAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a53e0aaa72112d53883820d4dcc08ac50" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getHtmlFromTemplate</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a7e23ed01f216b1bb9b2a05fab8844a3f" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getLabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aaa65f7efc220e1d11ad67e8e13ce0acd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getLabelWidthFixed</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a58dc6b27b2d269221ae25fb7c22e9e2a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getLabelWidthPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a3400b06c218b693c2917703199b529a9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getMayCloseSplashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a5a942aa2b26d8f8d0bcd36627ea27223" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getOpenAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a25c04f0ab990b2192024bd9552f2f259" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getOpenAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1adcec29e88db373220d4c3bf082eb2244" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getOverrideAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a568ba952b724e544850e8ceb3408c07a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getOverrideAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ab3bcc1dc5493a5148263dc3d798ada55" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getProjectMetaAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afab795ad5bcffb7d953580f4bf323b0d" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getShowLabels</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aaec73299c9b44fc414b88dacd790a0a6" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getTaskAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aa6ee3b4efe69497b7fdd0d4c6b91ed6c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getTaskAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a9002f2ab78ca1762f3ca92025c5c722b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getTestAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a41738d3e31390598823f6f4beb6221df" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getTestAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a2f8c3fa39677acfb1ddb9912106f6f25" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getToClipboardAction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ab672b145cf89f2ca332147722c81b4eb" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getToClipboardAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a732bf1bbf3cdb189271588e0bcd33d37" prot="protected" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a19b16e0382635a2c030eff1ef45ed587" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getWidgetConfigurationFunctionsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a6a3bbe0c8a5e6adc6b6b97a52c372bd8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>getWidgetFlagsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a672b35db466cbb2d61a10721b4fcdf79" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>GroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cba7f85692959aaee2824018940022794b7" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Horizontal</name></member>
+      <member refid="classmv_1_1gui_1_1HorizontalGroupAction_1ad24f5eac4e6517c465d9ab2b1e1e4f38" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>HorizontalGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1af2249840058290b2a54c2f450d9fa28c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isCollapsed</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1acabca0373d74032308da74799bb22ab8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isExpanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a68feb8c19a6f56d3f39eedf208a7cd98" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isReadOnly</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4c4645c84c864b7039dd1e25e42088b8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>LabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ae6a3a9713625e7bce1d6ef0ee1681f9b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>labelSizingTypeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aae93ecccc92a2b302ed317a42b0096c7" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>labelWidthFixedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a3ce137591a9e42515c49e10454483241" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>labelWidthPercentageChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aae80cc2d8f3eba305bb96db46698fa91" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>mv::Application</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cbabd993962781788665af8c4d5fd80f5f5" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>NoMargins</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a3bf6851ea71e07045eae441e0c2ae2c9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>pixmapToBase64</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a673dfbfb79090d8f3833cf4e064f9e5b" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>readOnlyChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a2cc0ef086d2fd1c464d84231009e5f3a" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>removeAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a75b3a33ae44e073c9b966d7b1f3c861d" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>removeAllActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a4adef03f46a1dc0e9007e8364b362218" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setExpanded</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ab42d5d9caffa7355f7c084e748e0c059" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setLabelSizingType</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a833149c99087302e6f8e02407ab20c4c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setLabelWidthFixed</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1aaeefffca7b8aff39f7557086dec217dd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setLabelWidthPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1ab1621beab48ec44112ab8c39217c8d5c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setMayCloseSplashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a74bf79956a380629ed5efe29173af469" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setProjectMetaAction</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a0dc61dc6214e86535f594fb67396df80" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setReadOnly</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1afb119f6dc65715e944b7a3bc985fef50" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setShowLabels</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a4c0610e0d2afa29e367a3629b3c79aad" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setStartupTask</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1adf4804cc6c9d05aaa6a4a675591401a2" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>shouldDisplayProjectInfo</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1acd11280c4e1f15dba9d2f27d6adb0145" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>showLabelsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a777ae650ef275efc7326647be82fad14" prot="protected" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>showSplashScreenWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a051d851ae7bad893bdd4d46e1776a842" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>SplashScreenAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ae0c6a3b5d5fdacb1424dc7371f194610" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>toggle</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1aaf00efcfa6ddee2d5daa386d9afe40ec" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::SplashScreenAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cba36846f3fba341ee170aa42483632c350" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>Vertical</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a8d8927a98b46c7467baa9eff37b12718" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WidgetConfigurationFunctionsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cb" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1af716c9a0bbc039a3e081c67fdfc8d605" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WidgetFlagsList</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1ac6ea8459b138c1d690ed065aeddfbdb1" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WidgetFlagsMap</name></member>
+      <member refid="classmv_1_1gui_1_1GroupAction_1a1cc91999ace17f51b808b637c0e0e7cbabf7bf92ada25ae0b285b3b35fa09ea25" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>WithMargins</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::SplashScreenAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1SplashScreenAction_1a8754a2e176423c4403eac04b65a8a9e0" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>~SplashScreenAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::SplashScreenAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

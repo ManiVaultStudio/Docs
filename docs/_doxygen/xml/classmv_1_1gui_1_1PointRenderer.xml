@@ -1,0 +1,1035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1PointRenderer" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::PointRenderer</compoundname>
+    <basecompoundref refid="classmv_1_1Renderer2D" prot="public" virt="non-virtual">mv::Renderer2D</basecompoundref>
+    <includes refid="PointRenderer_8h" local="no">PointRenderer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a9640c6f13b96067b2027fd42ec2b0aa7" prot="private" static="no" mutable="no">
+        <type><ref refid="structmv_1_1gui_1_1PointSettings" kindref="compound">PointSettings</ref></type>
+        <definition>PointSettings mv::gui::PointRenderer::_pointSettings</definition>
+        <argsstring></argsstring>
+        <name>_pointSettings</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="205" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ad79c945c1cc1bd1f808551a17b373cc8" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+        <definition>PointEffect mv::gui::PointRenderer::_pointEffect</definition>
+        <argsstring></argsstring>
+        <name>_pointEffect</name>
+        <initializer>= PointEffect::Size</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="206" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a58ea22c7b85da48a68e9082512b3e280" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+        <definition>PointSelectionDisplayMode mv::gui::PointRenderer::_selectionDisplayMode</definition>
+        <argsstring></argsstring>
+        <name>_selectionDisplayMode</name>
+        <initializer>= <ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17a606b51cc1c9d0b4af394419a22f2ff1f" kindref="member">PointSelectionDisplayMode::Outline</ref></initializer>
+        <briefdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> visualization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="209" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a6480c939e9920e519bc7e6f03637182f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+        <definition>Vector3f mv::gui::PointRenderer::_selectionOutlineColor</definition>
+        <argsstring></argsstring>
+        <name>_selectionOutlineColor</name>
+        <initializer>= <ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref>(0, 0, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="210" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ac27c64b779fde0a39cc968841f72a9ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::_selectionOutlineOverrideColor</definition>
+        <argsstring></argsstring>
+        <name>_selectionOutlineOverrideColor</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="211" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1af5048bb2d789706c51667bf853b4b1d7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::gui::PointRenderer::_selectionOutlineScale</definition>
+        <argsstring></argsstring>
+        <name>_selectionOutlineScale</name>
+        <initializer>= 1.75f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="212" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ab38afa16cc66f1461567cadb712a922c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mv::gui::PointRenderer::_selectionOutlineOpacity</definition>
+        <argsstring></argsstring>
+        <name>_selectionOutlineOpacity</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="213" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1aaeb91bc30fd775d5629080ac71d421f0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::_selectionHaloEnabled</definition>
+        <argsstring></argsstring>
+        <name>_selectionHaloEnabled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="214" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a064529176a35d7277d8da6502c8fc553" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::_randomizedDepthEnabled</definition>
+        <argsstring></argsstring>
+        <name>_randomizedDepthEnabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="217" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1adeeb57165ed3173741ba761f5cee78a6" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref></type>
+        <definition>ShaderProgram mv::gui::PointRenderer::_shader</definition>
+        <argsstring></argsstring>
+        <name>_shader</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="220" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a2ad4105af0f7dca7c9ad4b1f96f9b61b" prot="private" static="no" mutable="no">
+        <type><ref refid="structmv_1_1gui_1_1PointArrayObject" kindref="compound">PointArrayObject</ref></type>
+        <definition>PointArrayObject mv::gui::PointRenderer::_gpuPoints</definition>
+        <argsstring></argsstring>
+        <name>_gpuPoints</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="221" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ac93ae0a3f65e6662716182058916696e" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D mv::gui::PointRenderer::_colormap</definition>
+        <argsstring></argsstring>
+        <name>_colormap</name>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="222" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1adce8a69670c5b7b420379afba35cd61e" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::PointRenderer::_numSelectedPoints</definition>
+        <argsstring></argsstring>
+        <name>_numSelectedPoints</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>2D colormap, sets point color based on point position </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="223" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ae937b312ccebcecc112ccfb0f324aee7" prot="private" static="no" mutable="no">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::PointRenderer::_numberOfFocusHighlights</definition>
+        <argsstring></argsstring>
+        <name>_numberOfFocusHighlights</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of selected (highlighted points) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="224" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a99a2387dcb3c962382afb8a8cfaa0af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::PointRenderer::PointRenderer</definition>
+        <argsstring>()=default</argsstring>
+        <name>PointRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="138" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a9ea79ba421e9c29fb379d3886fc2ee48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::PointRenderer::PointRenderer</definition>
+        <argsstring>(QWidget *sourceWidget, QObject *parent=nullptr)</argsstring>
+        <name>PointRenderer</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>sourceWidget</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="139" column="13" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="259" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1abbe2fa1c932b1f67711714dbb729bcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setDataBounds</definition>
+        <argsstring>(const QRectF &amp;dataBounds) override</argsstring>
+        <name>setDataBounds</name>
+        <reimplements refid="classmv_1_1Renderer2D_1a9e9c8dee85eb911726aabd67ddc2bd65">setDataBounds</reimplements>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>dataBounds</declname>
+        </param>
+        <briefdescription>
+<para>Set data bounds to <computeroutput>dataBounds</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data bounds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="145" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a11ecba37eb1a8cfc55ceba230b98515f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QRectF</type>
+        <definition>QRectF mv::gui::PointRenderer::computeWorldBounds</definition>
+        <argsstring>() const override</argsstring>
+        <name>computeWorldBounds</name>
+        <reimplements refid="classmv_1_1Renderer2D_1a8457f92662890392415652efedb4e695">computeWorldBounds</reimplements>
+        <briefdescription>
+<para>Update the world bounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="148" column="20" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="271" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ae8696bea8b5ee9eb9bc16d7f52b0bb6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setData</definition>
+        <argsstring>(const std::vector&lt; Vector2f &gt; &amp;points)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref> &gt; &amp;</type>
+          <declname>points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="150" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a2133eec0d9239352509212db204edc9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setHighlights</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;highlights, const std::int32_t &amp;numSelectedPoints)</argsstring>
+        <name>setHighlights</name>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>highlights</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>numSelectedPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="151" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="309" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ac272946f3919b4b5e18a3b41de850831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setFocusHighlights</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;focusHighlights, const std::int32_t &amp;numberOfFocusHighlights)</argsstring>
+        <name>setFocusHighlights</name>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>focusHighlights</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>numberOfFocusHighlights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="152" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="316" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a1e1390c232afdbad2a67579d48b29a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setColorChannelScalars</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;scalars, bool adjustColorMapRange=true)</argsstring>
+        <name>setColorChannelScalars</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>scalars</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>adjustColorMapRange</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="153" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aaa94f60bbb71bbc268c61a05021b1865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSizeChannelScalars</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;scalars)</argsstring>
+        <name>setSizeChannelScalars</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>scalars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="154" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="328" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a6997f5574db3908b5f7ac26a3f256b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setOpacityChannelScalars</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;scalars)</argsstring>
+        <name>setOpacityChannelScalars</name>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>scalars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="155" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a92db2477c17402c563822027976e96b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setColors</definition>
+        <argsstring>(const std::vector&lt; Vector3f &gt; &amp;colors)</argsstring>
+        <name>setColors</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref> &gt; &amp;</type>
+          <declname>colors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="156" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a7317c473443689d2456ad71776545706" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+        <definition>PointEffect mv::gui::PointRenderer::getScalarEffect</definition>
+        <argsstring>() const</argsstring>
+        <name>getScalarEffect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="158" column="25" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a5fa6a07ef37896c2e003637169f6ef34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setScalarEffect</definition>
+        <argsstring>(const PointEffect effect)</argsstring>
+        <name>setScalarEffect</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+          <declname>effect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="159" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a7fa5373435f8486aa02ff3ccacf844ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setColormap</definition>
+        <argsstring>(const QImage &amp;image)</argsstring>
+        <name>setColormap</name>
+        <param>
+          <type>const QImage &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="161" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a5c0b608b5ee858808caff376db4ab814" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structmv_1_1gui_1_1PointArrayObject" kindref="compound">PointArrayObject</ref> &amp;</type>
+        <definition>const PointArrayObject &amp; mv::gui::PointRenderer::getGpuPoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getGpuPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="163" column="36" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aacbee1777ea0e328cb9676ebf7a0984e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::int32_t</type>
+        <definition>std::int32_t mv::gui::PointRenderer::getNumSelectedPoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumSelectedPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="164" column="26" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a6d4b048f2af84a05fc2434ae529196db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structmv_1_1gui_1_1PointSettings" kindref="compound">PointSettings</ref> &amp;</type>
+        <definition>const PointSettings &amp; mv::gui::PointRenderer::getPointSettings</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="166" column="33" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ad24a6a4696a0793371000ac55503229f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setPointSize</definition>
+        <argsstring>(const float size)</argsstring>
+        <name>setPointSize</name>
+        <param>
+          <type>const float</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="167" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ab21d6ef811eaec5b25d216ebd8a813b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setAlpha</definition>
+        <argsstring>(const float alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>const float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="168" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="373" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a35be689928c2c22db6a527b69ec6971f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setPointScaling</definition>
+        <argsstring>(PointScaling scalingMode)</argsstring>
+        <name>setPointScaling</name>
+        <param>
+          <type><ref refid="namespacemv_1_1gui_1af2288903abcbc6c0645e28942ab06382" kindref="member">PointScaling</ref></type>
+          <declname>scalingMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="169" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a08f8e8404ca0efaaecd2d67fce38752f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::initView</definition>
+        <argsstring>()</argsstring>
+        <name>initView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="171" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="460" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a47396f39f25432b6fb12c32c1530650b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+        <definition>mv::gui::PointSelectionDisplayMode mv::gui::PointRenderer::getSelectionDisplayMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionDisplayMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="175" column="39" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="390" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aa0609cdb25d03ef69b00aa075edca118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionDisplayMode</definition>
+        <argsstring>(PointSelectionDisplayMode selectionDisplayMode)</argsstring>
+        <name>setSelectionDisplayMode</name>
+        <param>
+          <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+          <declname>selectionDisplayMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="176" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aa5942c5652b4edb8e1e15562e4c8db38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+        <definition>mv::Vector3f mv::gui::PointRenderer::getSelectionOutlineColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionOutlineColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="178" column="22" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ad42a86a66a935faae3ef5ffe821ce2e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionOutlineColor</definition>
+        <argsstring>(Vector3f color)</argsstring>
+        <name>setSelectionOutlineColor</name>
+        <param>
+          <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="179" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a9bdfe6d117e30cdf89390befedfbc5c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::getSelectionOutlineOverrideColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionOutlineOverrideColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="181" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="410" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aa3931255a6f94f96816f15a000badcd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionOutlineOverrideColor</definition>
+        <argsstring>(float selectionOutlineOverrideColor)</argsstring>
+        <name>setSelectionOutlineOverrideColor</name>
+        <param>
+          <type>float</type>
+          <declname>selectionOutlineOverrideColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="182" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="415" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a5234aaec0cbcb621ff18a8e31f347042" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::gui::PointRenderer::getSelectionOutlineScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionOutlineScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="184" column="19" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aca1d9e70e47aca2fd66ca4bc74bb2ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionOutlineScale</definition>
+        <argsstring>(float selectionOutlineScale)</argsstring>
+        <name>setSelectionOutlineScale</name>
+        <param>
+          <type>float</type>
+          <declname>selectionOutlineScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="185" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a6f9935e2ee66fcc368f191a09e99228b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float mv::gui::PointRenderer::getSelectionOutlineOpacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionOutlineOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="187" column="19" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="430" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a424d7d9afdfa8a5c16c391e1fc95b7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionOutlineOpacity</definition>
+        <argsstring>(float selectionOutlineOpacity)</argsstring>
+        <name>setSelectionOutlineOpacity</name>
+        <param>
+          <type>float</type>
+          <declname>selectionOutlineOpacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="188" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1af0b1887e8ba662f2e657d023043b0045" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::getSelectionHaloEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelectionHaloEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="190" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="440" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a7011f4f6bb28592dbffcdb566454b9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setSelectionHaloEnabled</definition>
+        <argsstring>(bool selectionHaloEnabled)</argsstring>
+        <name>setSelectionHaloEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>selectionHaloEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="191" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="445" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ad6abc29d3f8b9acfe46c2dc2cc4c4216" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::PointRenderer::getRandomizedDepthEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getRandomizedDepthEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="193" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="450" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1af080ca269f4ee651a768040d1d910ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setRandomizedDepthEnabled</definition>
+        <argsstring>(bool randomizedDepth)</argsstring>
+        <name>setRandomizedDepthEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>randomizedDepth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="194" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="455" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1afe25d859501c57cc372ff29f1ddd0be1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <reimplements refid="classmv_1_1Renderer_1ac4814134811de7e8102d64a31f7fa17a">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="196" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="465" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ae865ce248761cd63015d0eb2964093f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::render</definition>
+        <argsstring>() override</argsstring>
+        <name>render</name>
+        <reimplements refid="classmv_1_1Renderer_1a33a05c65321ecac20b88ffe7fa45187c">render</reimplements>
+        <briefdescription>
+<para>Render. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="197" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="479" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1aa676532e5fad18b293043a63ed7ea174" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::destroy</definition>
+        <argsstring>() override</argsstring>
+        <name>destroy</name>
+        <reimplements refid="classmv_1_1Renderer_1a4029130c85d5d9a0002ff06c6cd00906">destroy</reimplements>
+        <briefdescription>
+<para>Destroy the renderer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="198" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="523" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a7d22edff0b3e02df8182f1f0e244ca7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1Vector3f" kindref="compound">Vector3f</ref></type>
+        <definition>mv::Vector3f mv::gui::PointRenderer::getColorMapRange</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorMapRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="200" column="22" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="528" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ab718411f745cd37234ce1f5931acc7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PointRenderer::setColorMapRange</definition>
+        <argsstring>(const float &amp;min, const float &amp;max)</argsstring>
+        <name>setColorMapRange</name>
+        <param>
+          <type>const float &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="201" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="533" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1ab22682e9e5385200f47e3a9bda3d8d93" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::Renderer2D::Renderer2D</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>Renderer2D</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="136" column="13" bodyfile="Docs/external/core/ManiVault/src/renderers/Renderer2D.cpp" bodystart="16" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::PointRenderer</label>
+        <link refid="classmv_1_1gui_1_1PointRenderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+      <node id="2">
+        <label>mv::Renderer2D</label>
+        <link refid="classmv_1_1Renderer2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>mv::Renderer</label>
+        <link refid="classmv_1_1Renderer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::gui::PointRenderer</label>
+        <link refid="classmv_1_1gui_1_1PointRenderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QOpenGLFunctions_3_3_Core</label>
+      </node>
+      <node id="2">
+        <label>mv::Renderer2D</label>
+        <link refid="classmv_1_1Renderer2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="133" column="9" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="134" bodyend="225"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ac93ae0a3f65e6662716182058916696e" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_colormap</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a2ad4105af0f7dca7c9ad4b1f96f9b61b" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_gpuPoints</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ae937b312ccebcecc112ccfb0f324aee7" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_numberOfFocusHighlights</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1adce8a69670c5b7b420379afba35cd61e" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_numSelectedPoints</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ad79c945c1cc1bd1f808551a17b373cc8" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_pointEffect</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a9640c6f13b96067b2027fd42ec2b0aa7" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_pointSettings</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a064529176a35d7277d8da6502c8fc553" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_randomizedDepthEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a58ea22c7b85da48a68e9082512b3e280" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionDisplayMode</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aaeb91bc30fd775d5629080ac71d421f0" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionHaloEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a6480c939e9920e519bc7e6f03637182f" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionOutlineColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ab38afa16cc66f1461567cadb712a922c" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionOutlineOpacity</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ac27c64b779fde0a39cc968841f72a9ab" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionOutlineOverrideColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1af5048bb2d789706c51667bf853b4b1d7" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_selectionOutlineScale</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1adeeb57165ed3173741ba761f5cee78a6" prot="private" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>_shader</name></member>
+      <member refid="classmv_1_1Renderer2D_1a4eee721c718b0c713dca02ac3d9b748e" prot="protected" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>beginRender</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a11ecba37eb1a8cfc55ceba230b98515f" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>computeWorldBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3629f2c23306eb987c67287cda704b26" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>dataBoundsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aa676532e5fad18b293043a63ed7ea174" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>destroy</name></member>
+      <member refid="classmv_1_1Renderer2D_1aaed5c149a993367f0b46a08fe474b9fb" prot="protected" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>endRender</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a7d22edff0b3e02df8182f1f0e244ca7d" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getColorMapRange</name></member>
+      <member refid="classmv_1_1Renderer2D_1a80877c6e989db1a0821b7af73def06a2" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getCustomNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab6c5206be56e64fad9e0af8e7e0864fe" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getDataBounds</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a5c0b608b5ee858808caff376db4ab814" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getGpuPoints</name></member>
+      <member refid="classmv_1_1Renderer2D_1ac680d51eb9c88039d39f9bc37a83806e" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getModelMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1a6513b079eeaf943a3a10cbb06c3183fd" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getModelViewProjectionMatrix</name></member>
+      <member refid="classmv_1_1Renderer2D_1af939d04e53092ac584688a8feb5f54d4" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1a26d4f117d129178b3c2ed618f3468c34" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getNavigator</name></member>
+      <member refid="classmv_1_1Renderer2D_1a0d2484365496bfe8025c4755d25ab9f9" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getNormalizedScreenToScreenMatrix</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aacbee1777ea0e328cb9676ebf7a0984e" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getNumSelectedPoints</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a6d4b048f2af84a05fc2434ae529196db" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getPointSettings</name></member>
+      <member refid="classmv_1_1Renderer2D_1a62eb48a605a18b766132a60f113491e0" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getProjectionMatrix</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ad6abc29d3f8b9acfe46c2dc2cc4c4216" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getRandomizedDepthEnabled</name></member>
+      <member refid="classmv_1_1Renderer2D_1ad21eab82ab008e642a395d6025a2ca4b" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>getRenderSize</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a7317c473443689d2456ad71776545706" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getScalarEffect</name></member>
+      <member refid="classmv_1_1Renderer2D_1ac4514d6b2e9fd0ab8178ea32863e615d" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getScreenPointToNormalizedScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3862e9e6a17fd6ef510b0b3110bc7fd6" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getScreenPointToWorldPosition</name></member>
+      <member refid="classmv_1_1Renderer2D_1aa70c3dbc18c965dc3d17c76c93e26701" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getScreenRectangleFromWorldRectangle</name></member>
+      <member refid="classmv_1_1Renderer2D_1aebb38ddb3d1ff57a7f24966166b93a2a" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getScreenToNormalizedScreenMatrix</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a47396f39f25432b6fb12c32c1530650b" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionDisplayMode</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1af0b1887e8ba662f2e657d023043b0045" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionHaloEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aa5942c5652b4edb8e1e15562e4c8db38" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionOutlineColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a6f9935e2ee66fcc368f191a09e99228b" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionOutlineOpacity</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a9bdfe6d117e30cdf89390befedfbc5c9" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionOutlineOverrideColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a5234aaec0cbcb621ff18a8e31f347042" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getSelectionOutlineScale</name></member>
+      <member refid="classmv_1_1Renderer2D_1a3c78421c28592d1cb559342083bb5b04" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getWorldBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1a13938c9ee40ee85ff4d33a9a9b88aeb6" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getWorldPositionToNormalizedScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a7e83b1e94b12d088ed83a29ce7c10e5a" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getWorldPositionToScreenPoint</name></member>
+      <member refid="classmv_1_1Renderer2D_1a139fbbfe1a7ac730f010160ee43bfb90" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>getZoomPercentage</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1afe25d859501c57cc372ff29f1ddd0be1" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>init</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a08f8e8404ca0efaaecd2d67fce38752f" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>initView</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a99a2387dcb3c962382afb8a8cfaa0af3" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>PointRenderer</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a9ea79ba421e9c29fb379d3886fc2ee48" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>PointRenderer</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ae865ce248761cd63015d0eb2964093f3" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>render</name></member>
+      <member refid="classmv_1_1Renderer_1a1c20f40dd9d84a4cb0c706890fc11ede" prot="protected" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>Renderer</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ab22682e9e5385200f47e3a9bda3d8d93" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>Renderer2D</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab22682e9e5385200f47e3a9bda3d8d93" prot="public" virt="non-virtual" ambiguityscope="mv::Renderer2D::"><scope>mv::gui::PointRenderer</scope><name>Renderer2D</name></member>
+      <member refid="classmv_1_1Renderer2D_1a75c874c3a771a6534d89427e82cf6fd9" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>resize</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ab21d6ef811eaec5b25d216ebd8a813b2" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setAlpha</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a1e1390c232afdbad2a67579d48b29a78" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setColorChannelScalars</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a7fa5373435f8486aa02ff3ccacf844ef" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setColormap</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ab718411f745cd37234ce1f5931acc7e3" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setColorMapRange</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a92db2477c17402c563822027976e96b5" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setColors</name></member>
+      <member refid="classmv_1_1Renderer2D_1a2b2f510a0ad1fb7966939132fb038cc9" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setCustomNavigator</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ae8696bea8b5ee9eb9bc16d7f52b0bb6b" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setData</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1abbe2fa1c932b1f67711714dbb729bcdb" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>setDataBounds</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ac272946f3919b4b5e18a3b41de850831" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setFocusHighlights</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a2133eec0d9239352509212db204edc9e" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setHighlights</name></member>
+      <member refid="classmv_1_1Renderer2D_1ab4c861e5f33958e4bb52a33caded042d" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setModelMatrix</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a6997f5574db3908b5f7ac26a3f256b4f" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setOpacityChannelScalars</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a35be689928c2c22db6a527b69ec6971f" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setPointScaling</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ad24a6a4696a0793371000ac55503229f" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setPointSize</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1af080ca269f4ee651a768040d1d910ece" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setRandomizedDepthEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a5fa6a07ef37896c2e003637169f6ef34" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setScalarEffect</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aa0609cdb25d03ef69b00aa075edca118" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionDisplayMode</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a7011f4f6bb28592dbffcdb566454b9b4" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionHaloEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1ad42a86a66a935faae3ef5ffe821ce2e0" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionOutlineColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1a424d7d9afdfa8a5c16c391e1fc95b7fb" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionOutlineOpacity</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aa3931255a6f94f96816f15a000badcd7" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionOutlineOverrideColor</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aca1d9e70e47aca2fd66ca4bc74bb2ca1" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSelectionOutlineScale</name></member>
+      <member refid="classmv_1_1gui_1_1PointRenderer_1aaa94f60bbb71bbc268c61a05021b1865" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSizeChannelScalars</name></member>
+      <member refid="classmv_1_1Renderer2D_1a24d24c57fd5df9468179d93aaa745abc" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>setSourceWidget</name></member>
+      <member refid="classmv_1_1Renderer2D_1a68e45010d76b9950fa488b998c1bd84e" prot="public" virt="virtual"><scope>mv::gui::PointRenderer</scope><name>setWorldBounds</name></member>
+      <member refid="classmv_1_1Renderer2D_1a2758bb2d8d0eec919a3bf1874a84a298" prot="public" virt="non-virtual"><scope>mv::gui::PointRenderer</scope><name>worldBoundsChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

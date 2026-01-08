@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1SelectionsModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::SelectionsModel</compoundname>
+    <basecompoundref refid="classmv_1_1StandardItemModel" prot="public" virt="non-virtual">mv::StandardItemModel</basecompoundref>
+    <includes refid="SelectionsModel_8h" local="no">SelectionsModel.h</includes>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1IdItem" prot="private">mv::SelectionsModel::IdItem</innerclass>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1Item" prot="private">mv::SelectionsModel::Item</innerclass>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1NameItem" prot="private">mv::SelectionsModel::NameItem</innerclass>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1RawDataNameItem" prot="private">mv::SelectionsModel::RawDataNameItem</innerclass>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1RawDataTypeItem" prot="private">mv::SelectionsModel::RawDataTypeItem</innerclass>
+    <innerclass refid="classmv_1_1SelectionsModel_1_1Row" prot="protected">mv::SelectionsModel::Row</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceaec309d028f691c883fb8765d7fe41edc" prot="public">
+          <name>Name</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787cea0377b073b7dac4db98f9eaa7819f4f09" prot="public">
+          <name>ID</name>
+          <briefdescription>
+<para>Name of the selection dataset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceae8d6712126db6d250d1c2d0ea7600901" prot="public">
+          <name>RawDataName</name>
+          <briefdescription>
+<para>Globally unique identifier of the selection dataset. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787cea25f6d4fc274ca1de60db9cc09a070fa2" prot="public">
+          <name>RawDataType</name>
+          <briefdescription>
+<para>Name of the raw dataset on which the selection set is based. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceab88e94438793c891b8a891d517bc6927" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para>Type of the raw dataset on which the selection set is based. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.h" bodystart="32" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1SelectionsModel_1a512d667931c30822645a10b4926f6331" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::SelectionsModel::SelectionsModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>SelectionsModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="201" column="14" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.cpp" bodystart="101" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionsModel_1af950bba75d00626c12946a272e498c42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::SelectionsModel::headerData</definition>
+        <argsstring>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>section</computeroutput>, <computeroutput>orientation</computeroutput> and display <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Section </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="210" column="14" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.cpp" bodystart="112" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionsModel_1ac177614127eddba7a95f8fa6d058ef98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::SelectionsModel::populateFromDataManager</definition>
+        <argsstring>()</argsstring>
+        <name>populateFromDataManager</name>
+        <briefdescription>
+<para>Populate the model with selections from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="248" column="10" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.cpp" bodystart="135" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1SelectionsModel_1add4482d4472663560ba565d29c8cef11" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::DropActions</type>
+        <definition>Qt::DropActions mv::SelectionsModel::supportedDragActions</definition>
+        <argsstring>() const override</argsstring>
+        <name>supportedDragActions</name>
+        <briefdescription>
+<para>Get supported drag actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="236" column="21" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.h" bodystart="236" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1SelectionsModel_1aed3478e4417a5273caabba0a8c527f2d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::DropActions</type>
+        <definition>Qt::DropActions mv::SelectionsModel::supportedDropActions</definition>
+        <argsstring>() const override</argsstring>
+        <name>supportedDropActions</name>
+        <briefdescription>
+<para>Get the supported drop actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="241" column="21" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.h" bodystart="241" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Selections model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Standard item model for listing selections</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::SelectionsModel</label>
+        <link refid="classmv_1_1SelectionsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::SelectionsModel</label>
+        <link refid="classmv_1_1SelectionsModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/SelectionsModel.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/models/SelectionsModel.h" bodystart="28" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ce" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceab88e94438793c891b8a891d517bc6927" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>Count</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::SelectionsModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::SelectionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::SelectionsModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1SelectionsModel_1af950bba75d00626c12946a272e498c42" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>headerData</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787cea0377b073b7dac4db98f9eaa7819f4f09" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>ID</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceaec309d028f691c883fb8765d7fe41edc" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>Name</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1SelectionsModel_1ac177614127eddba7a95f8fa6d058ef98" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>populateFromDataManager</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787ceae8d6712126db6d250d1c2d0ea7600901" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>RawDataName</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a376d775ffeee590b37bc0a1db5f787cea25f6d4fc274ca1de60db9cc09a070fa2" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>RawDataType</name></member>
+      <member refid="classmv_1_1SelectionsModel_1a512d667931c30822645a10b4926f6331" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>SelectionsModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>State</name></member>
+      <member refid="classmv_1_1SelectionsModel_1add4482d4472663560ba565d29c8cef11" prot="protected" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>supportedDragActions</name></member>
+      <member refid="classmv_1_1SelectionsModel_1aed3478e4417a5273caabba0a8c527f2d" prot="protected" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>supportedDropActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::SelectionsModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::SelectionsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::SelectionsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::SelectionsModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

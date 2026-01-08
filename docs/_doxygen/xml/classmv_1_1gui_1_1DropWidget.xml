@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1DropWidget" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::DropWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="DropWidget_8h" local="no">DropWidget.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1DropWidget_1_1DropIndicatorWidget" prot="public">mv::gui::DropWidget::DropIndicatorWidget</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1DropWidget_1_1DropRegion" prot="public">mv::gui::DropWidget::DropRegion</innerclass>
+    <innerclass refid="classmv_1_1gui_1_1DropWidget_1_1DropRegionContainerWidget" prot="public">mv::gui::DropWidget::DropRegionContainerWidget</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1DropWidget_1a40ccd517b09b280bf9516151cd9ac607" prot="public" static="no">
+        <type>QList&lt; <ref refid="classmv_1_1gui_1_1DropWidget_1_1DropRegion" kindref="compound">DropRegion</ref> * &gt;</type>
+        <definition>using mv::gui::DropWidget::DropRegions =  QList&lt;DropRegion*&gt;</definition>
+        <argsstring></argsstring>
+        <name>DropRegions</name>
+        <briefdescription>
+<para>Alias for dropping regions list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="126" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmv_1_1gui_1_1DropWidget_1a53469486742e97b1eb2447236da24b37" prot="public" static="no">
+        <type>std::function&lt; <ref refid="classmv_1_1gui_1_1DropWidget_1a40ccd517b09b280bf9516151cd9ac607" kindref="member">DropRegions</ref>(const QMimeData *)&gt;</type>
+        <definition>using mv::gui::DropWidget::GetDropRegionsFunction =  std::function&lt;DropRegions(const QMimeData*)&gt;</definition>
+        <argsstring></argsstring>
+        <name>GetDropRegionsFunction</name>
+        <briefdescription>
+<para>Function for obtaining a list of available drop regions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="129" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DropWidget_1a7b2770ac0ca5257be7ebfdad012ef349" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1DropWidget_1a53469486742e97b1eb2447236da24b37" kindref="member">GetDropRegionsFunction</ref></type>
+        <definition>GetDropRegionsFunction mv::gui::DropWidget::_getDropRegionsFunction</definition>
+        <argsstring></argsstring>
+        <name>_getDropRegionsFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="202" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DropWidget_1a248061f8e39c2283e518fdf1955e4222" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mv::gui::DropWidget::_showDropIndicator</definition>
+        <argsstring></argsstring>
+        <name>_showDropIndicator</name>
+        <briefdescription>
+<para>Function that (based on mime data) returns a list of drop regions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="203" column="29" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1DropWidget_1af11ccbc90788c5dae04338b8321e2351" prot="protected" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* mv::gui::DropWidget::_dropIndicatorWidget</definition>
+        <argsstring></argsstring>
+        <name>_dropIndicatorWidget</name>
+        <briefdescription>
+<para>Whether to show a drop indicator widget overlay. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="204" column="28" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1a00933c17c291f81e858f66aaab157c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::gui::DropWidget::DropWidget</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>DropWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="171" column="5" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="21" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1a035c3790e8f006c8c3a484c51281b203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::DropWidget::eventFilter</definition>
+        <argsstring>(QObject *target, QEvent *event) override</argsstring>
+        <name>eventFilter</name>
+        <param>
+          <type>QObject *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Respond to <computeroutput>target</computeroutput> events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of which an event occurred </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event that took place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="178" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="40" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1add18c79820f314272e08a8ef2e1841b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DropWidget::initialize</definition>
+        <argsstring>(const GetDropRegionsFunction &amp;getDropRegions)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1DropWidget_1a53469486742e97b1eb2447236da24b37" kindref="member">GetDropRegionsFunction</ref> &amp;</type>
+          <declname>getDropRegions</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the drop widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>getDropRegions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function that (based on mime data) returns a list of drop regions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="184" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1a5b0211c45fef797eae7f2291ff774d58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::gui::DropWidget::getShowDropIndicator</definition>
+        <argsstring>() const</argsstring>
+        <name>getShowDropIndicator</name>
+        <briefdescription>
+<para>Get/set whether to show the drop indicator widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="187" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1a69fcfd3c932512147994f622036af518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DropWidget::setShowDropIndicator</definition>
+        <argsstring>(const bool &amp;showDropIndicator)</argsstring>
+        <name>setShowDropIndicator</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>showDropIndicator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="188" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="157" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1a7b1e2b638989f528900b0459a498d63f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DropWidget::setDropIndicatorWidget</definition>
+        <argsstring>(QWidget *dropIndicatorWidget)</argsstring>
+        <name>setDropIndicatorWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>dropIndicatorWidget</declname>
+        </param>
+        <briefdescription>
+<para>Sets the drop indicator widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dropIndicatorWidget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Drop indicator widget </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="194" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="168" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1DropWidget_1afb9fd138c58252c51f5a251c4b43322b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DropWidget::resetLayout</definition>
+        <argsstring>()</argsstring>
+        <name>resetLayout</name>
+        <briefdescription>
+<para>Removes all (temporary) drop regions from the layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="199" column="10" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.cpp" bodystart="177" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Advanced drop widget class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class adds advanced drag and drop support to arbitrary (parent) widget without having to change it Depending on the data being dragged, an overlay is presented with one or more drop regions Each region has its own visual representation and drop behaviour (with custom lambda function)</para>
+<para>Note: Add the following line to the parent widget to enabled drag and drop: setAcceptDrops(true);</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::DropWidget</label>
+        <link refid="classmv_1_1gui_1_1DropWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mv::gui::DropWidget</label>
+        <link refid="classmv_1_1gui_1_1DropWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/widgets/DropWidget.h" line="31" column="1" bodyfile="Docs/external/core/ManiVault/src/widgets/DropWidget.h" bodystart="32" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1DropWidget_1af11ccbc90788c5dae04338b8321e2351" prot="protected" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>_dropIndicatorWidget</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a7b2770ac0ca5257be7ebfdad012ef349" prot="protected" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>_getDropRegionsFunction</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a248061f8e39c2283e518fdf1955e4222" prot="protected" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>_showDropIndicator</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a40ccd517b09b280bf9516151cd9ac607" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>DropRegions</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a00933c17c291f81e858f66aaab157c88" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>DropWidget</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a035c3790e8f006c8c3a484c51281b203" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>eventFilter</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a53469486742e97b1eb2447236da24b37" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>GetDropRegionsFunction</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a5b0211c45fef797eae7f2291ff774d58" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>getShowDropIndicator</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1add18c79820f314272e08a8ef2e1841b4" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>initialize</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1afb9fd138c58252c51f5a251c4b43322b" prot="private" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>resetLayout</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a7b1e2b638989f528900b0459a498d63f" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>setDropIndicatorWidget</name></member>
+      <member refid="classmv_1_1gui_1_1DropWidget_1a69fcfd3c932512147994f622036af518" prot="public" virt="non-virtual"><scope>mv::gui::DropWidget</scope><name>setShowDropIndicator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

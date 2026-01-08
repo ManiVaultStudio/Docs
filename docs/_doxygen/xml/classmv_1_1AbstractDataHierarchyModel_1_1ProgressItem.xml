@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::AbstractDataHierarchyModel::ProgressItem</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractDataHierarchyModel_1_1Item" prot="public" virt="non-virtual">mv::AbstractDataHierarchyModel::Item</basecompoundref>
+    <includes refid="AbstractDataHierarchyModel_8h" local="no">AbstractDataHierarchyModel.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a656d8ebd4624add68f96d429979f00ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">gui::TaskAction</ref></type>
+        <definition>gui::TaskAction mv::AbstractDataHierarchyModel::ProgressItem::_taskAction</definition>
+        <argsstring></argsstring>
+        <name>_taskAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="368" column="29" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a7f1915f5f6b93d5da9537b0338a0bfb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::AbstractDataHierarchyModel::ProgressItem::ProgressItem</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
+        <name>ProgressItem</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>dataset</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to dataset to display item for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="315" column="9" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.cpp" bodystart="245" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a422cbfe9902ce27ac3d472fba4252b62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::AbstractDataHierarchyModel::ProgressItem::data</definition>
+        <argsstring>(int role=Qt::UserRole+1) const override</argsstring>
+        <name>data</name>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::UserRole+1</defval>
+        </param>
+        <briefdescription>
+<para>Get model data for <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Data for <computeroutput>role</computeroutput> in variant form </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="321" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.cpp" bodystart="264" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a03b0d10848abafa09aa0050bbc0941bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> &amp;</type>
+        <definition>Task&amp; mv::AbstractDataHierarchyModel::ProgressItem::getDatasetTask</definition>
+        <argsstring>()</argsstring>
+        <name>getDatasetTask</name>
+        <briefdescription>
+<para>Get dataset task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Reference to dataset task </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="348" column="14" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="348" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a6239062ea81ad4173c1dd83e00e7cd7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1TaskAction" kindref="compound">gui::TaskAction</ref> &amp;</type>
+        <definition>gui::TaskAction&amp; mv::AbstractDataHierarchyModel::ProgressItem::getTaskAction</definition>
+        <argsstring>()</argsstring>
+        <name>getTaskAction</name>
+        <briefdescription>
+<para>Get task action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> action for use in item delegate (its built-in progress action) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="356" column="25" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="356" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a657bf0eefcf30a8b8e866c1491529b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::AbstractDataHierarchyModel::ProgressItem::createDelegateEditorWidget</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>createDelegateEditorWidget</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Create delegate editor widget as child of <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to delegate parent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to created delegate editor widget </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="365" column="17" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.cpp" bodystart="283" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1ac09158be9f6d5b07ff46e78c7907322d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>static QVariant mv::AbstractDataHierarchyModel::ProgressItem::headerData</definition>
+        <argsstring>(Qt::Orientation orientation, int role)</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>orientation</computeroutput> and <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal/vertical </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="329" column="25" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="329" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Standard model item class for displaying the dataset task progress. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataHierarchyModel::Item</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyModel::ProgressItem</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>mv::AbstractDataHierarchyModel::Item</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1Item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QStandardItem</label>
+      </node>
+      <node id="1">
+        <label>mv::AbstractDataHierarchyModel::ProgressItem</label>
+        <link refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" line="308" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDataHierarchyModel.h" bodystart="308" bodyend="369"/>
+    <listofallmembers>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a656d8ebd4624add68f96d429979f00ee" prot="private" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>_taskAction</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a657bf0eefcf30a8b8e866c1491529b6a" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>createDelegateEditorWidget</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a422cbfe9902ce27ac3d472fba4252b62" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>data</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1accf75357b321447f86d514b1824b633c" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1ad8a663c365fefc1894285d9b3fae2a25" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a03b0d10848abafa09aa0050bbc0941bb" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>getDatasetTask</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a6239062ea81ad4173c1dd83e00e7cd7a" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>getTaskAction</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1ac09158be9f6d5b07ff46e78c7907322d" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>headerData</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1a2e13934add21d92a740060b1470c968b" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>Item</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1ProgressItem_1a7f1915f5f6b93d5da9537b0338a0bfb2" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>ProgressItem</name></member>
+      <member refid="classmv_1_1AbstractDataHierarchyModel_1_1Item_1a8e481a9813ed02c5f0d8c24ec2460ff7" prot="public" virt="non-virtual"><scope>mv::AbstractDataHierarchyModel::ProgressItem</scope><name>refreshData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

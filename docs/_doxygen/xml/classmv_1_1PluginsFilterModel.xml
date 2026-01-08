@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1PluginsFilterModel" kind="class" language="C++" prot="public">
+    <compoundname>mv::PluginsFilterModel</compoundname>
+    <basecompoundref refid="classmv_1_1SortFilterProxyModel" prot="public" virt="non-virtual">mv::SortFilterProxyModel</basecompoundref>
+    <includes refid="PluginsFilterModel_8h" local="no">PluginsFilterModel.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmv_1_1PluginsFilterModel_1aa6513c049b36bcec3f715839c5fa9fdb" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *)&gt;</type>
+        <definition>using mv::PluginsFilterModel::FilterFunction =  std::function&lt;bool(plugin::Plugin*)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FilterFunction</name>
+        <briefdescription>
+<para>Filter function signature, the input are all datasets in the core and it returns the filtered datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="28" column="5" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1PluginsFilterModel_1a6b96de59936c6848e802cf41312c4331" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1PluginsFilterModel_1aa6513c049b36bcec3f715839c5fa9fdb" kindref="member">FilterFunction</ref></type>
+        <definition>FilterFunction mv::PluginsFilterModel::_filterFunction</definition>
+        <argsstring></argsstring>
+        <name>_filterFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="80" column="25" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PluginsFilterModel_1a48b7fdc94496a40bec39008ce261df13" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref></type>
+        <definition>plugin::Types mv::PluginsFilterModel::_filterPluginTypes</definition>
+        <argsstring></argsstring>
+        <name>_filterPluginTypes</name>
+        <briefdescription>
+<para>Filter lambda. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="81" column="25" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PluginsFilterModel_1a58a85553d18c91b2d8ee11af4b5cbf89" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::PluginsFilterModel::_useFilterFunctionAction</definition>
+        <argsstring></argsstring>
+        <name>_useFilterFunctionAction</name>
+        <briefdescription>
+<para>Filter on plugin types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="82" column="25" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1PluginsFilterModel_1a8df88a8ba01865c0551210b4659f9eac" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref></type>
+        <definition>gui::ToggleAction mv::PluginsFilterModel::_instantiatedPluginsOnlyAction</definition>
+        <argsstring></argsstring>
+        <name>_instantiatedPluginsOnlyAction</name>
+        <briefdescription>
+<para>Toggle the use of a filter function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="83" column="25" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a90222ad2a3acfcca87e9ff1cc049c4fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::PluginsFilterModel::PluginsFilterModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>PluginsFilterModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct the filter model with <computeroutput>parent</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="36" column="5" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="18" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1aa6da07696207b53c29a911f1b362133c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::PluginsFilterModel::filterAcceptsRow</definition>
+        <argsstring>(int row, const QModelIndex &amp;parent) const override</argsstring>
+        <name>filterAcceptsRow</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether <computeroutput>row</computeroutput> with <computeroutput>parent</computeroutput> is filtered out (false) or in (true) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean indicating whether the item is filtered in or out </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="44" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="32" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a5db40f840b36a21c25ba1f7e2e20be9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::PluginsFilterModel::lessThan</definition>
+        <argsstring>(const QModelIndex &amp;lhs, const QModelIndex &amp;rhs) const override</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compares two model indices plugin <computeroutput>lhs</computeroutput> with <computeroutput>rhs</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left-hand model index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right-hand model index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="51" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1ab3bd751df672ebc3c81b76d380d63637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::PluginsFilterModel::setFilterFunction</definition>
+        <argsstring>(const FilterFunction &amp;filterFunction)</argsstring>
+        <name>setFilterFunction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1PluginsFilterModel_1aa6513c049b36bcec3f715839c5fa9fdb" kindref="member">FilterFunction</ref> &amp;</type>
+          <declname>filterFunction</declname>
+        </param>
+        <briefdescription>
+<para>Set plugins filter function to <computeroutput>filterFunction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter lambda (triggered when plugins are added and/or removed) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a7c519309abf1c7cd2f43dcd05aaa4d5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref></type>
+        <definition>plugin::Types mv::PluginsFilterModel::getFilterPluginTypes</definition>
+        <argsstring>() const</argsstring>
+        <name>getFilterPluginTypes</name>
+        <briefdescription>
+<para>Get plugin types to filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> types </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="63" column="19" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a06d78b099067657b765e98489ae7ebd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::PluginsFilterModel::setFilterPluginTypes</definition>
+        <argsstring>(const plugin::Types &amp;filterPluginTypes)</argsstring>
+        <name>setFilterPluginTypes</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <declname>filterPluginTypes</declname>
+        </param>
+        <briefdescription>
+<para>Set plugin filter types to <computeroutput>filterPluginTypes</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterPluginTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> filter types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="69" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a84c51cc70c81e058d667e1c8a07b7eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::PluginsFilterModel::getUseFilterFunctionAction</definition>
+        <argsstring>()</argsstring>
+        <name>getUseFilterFunctionAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="73" column="23" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1aae44527816258ff2b1fb66e621aff713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
+        <definition>gui::ToggleAction&amp; mv::PluginsFilterModel::getInstantiatedPluginsOnlyAction</definition>
+        <argsstring>()</argsstring>
+        <name>getInstantiatedPluginsOnlyAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="74" column="23" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmv_1_1PluginsFilterModel_1a3b099e338dc5848ae66925ee7aeb2405" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mv::PluginsFilterModel::hasPluginInstances</definition>
+        <argsstring>(const QModelIndex &amp;index, int level=0) const</argsstring>
+        <name>hasPluginInstances</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="77" column="10" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.cpp" bodystart="95" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> filter model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sorting and filtering model for plugins models</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::PluginsFilterModel</label>
+        <link refid="classmv_1_1PluginsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="2">
+        <label>mv::SortFilterProxyModel</label>
+        <link refid="classmv_1_1SortFilterProxyModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="1">
+        <label>mv::PluginsFilterModel</label>
+        <link refid="classmv_1_1PluginsFilterModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" line="23" column="1" bodyfile="Docs/external/core/ManiVault/src/models/PluginsFilterModel.h" bodystart="24" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classmv_1_1PluginsFilterModel_1a6b96de59936c6848e802cf41312c4331" prot="private" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>_filterFunction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a48b7fdc94496a40bec39008ce261df13" prot="private" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>_filterPluginTypes</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a8df88a8ba01865c0551210b4659f9eac" prot="private" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>_instantiatedPluginsOnlyAction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a58a85553d18c91b2d8ee11af4b5cbf89" prot="private" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>_useFilterFunctionAction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1aa6da07696207b53c29a911f1b362133c" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>filterAcceptsRow</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1aa6513c049b36bcec3f715839c5fa9fdb" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>FilterFunction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::PluginsFilterModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1ac2b7af794cf9878f36cdeb0e47b617db" prot="public" virt="virtual"><scope>mv::PluginsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsFilterModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a7c519309abf1c7cd2f43dcd05aaa4d5c" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getFilterPluginTypes</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1aae44527816258ff2b1fb66e621aff713" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getInstantiatedPluginsOnlyAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1af6d445bddd1d60fb09d5e458df57f563" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a1f9cae86492623ad294174f09f20fdd4" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a493597980f72851ea8ef8faa5624d9b1" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getTextFilterAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aeae6c9d82aecef68c17a39d7756270dd" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getTextFilterCaseSensitiveAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a4cf4d3a41d031052e1c360cbb61f54ac" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getTextFilterColumnAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8269affbf1163a933c4b328c6442a3bb" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getTextFilterRegularExpressionAction</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa161534d6a51038bd983b62a142cee49" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getTextFilterSettingsAction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a84c51cc70c81e058d667e1c8a07b7eec" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>getUseFilterFunctionAction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a3b099e338dc5848ae66925ee7aeb2405" prot="private" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>hasPluginInstances</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a5db40f840b36a21c25ba1f7e2e20be9b" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>lessThan</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a90222ad2a3acfcca87e9ff1cc049c4fc" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>PluginsFilterModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1acf704b78e71f631ec8f6c600941b906a" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>rowTypeNameChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5989aec41ce2a9591570fb53e96c662e" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setFilterColumn</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1ab3bd751df672ebc3c81b76d380d63637" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setFilterFunction</name></member>
+      <member refid="classmv_1_1PluginsFilterModel_1a06d78b099067657b765e98489ae7ebd9" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setFilterPluginTypes</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1aa12dcce3149a00f5ce619b8abc17ef52" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setRowTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a430c0b51ec0e429c15b89d9ff770e9cb" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>setSourceModel</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a8cf74da126f0487d456ea145c572676b" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>SortFilterProxyModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::PluginsFilterModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1SortFilterProxyModel_1a5483cf2345234481ab0273bf5a4a1289" prot="public" virt="virtual"><scope>mv::PluginsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::PluginsFilterModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::PluginsFilterModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

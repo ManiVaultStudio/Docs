@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1EventManager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::EventManager</compoundname>
+    <basecompoundref refid="classmv_1_1AbstractEventManager" prot="public" virt="non-virtual">mv::AbstractEventManager</basecompoundref>
+    <includes refid="EventManager_8h" local="no">EventManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1EventManager_1ada52af934bde74d98e86dc6d3cec7a69" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> * &gt;</type>
+        <definition>std::vector&lt;EventListener*&gt; mv::EventManager::_eventListeners</definition>
+        <argsstring></argsstring>
+        <name>_eventListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="120" column="25" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1EventManager_1ae100d7db5b9ce1eb21979e3bad4f707f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref> &gt;</type>
+        <definition>std::vector&lt;KeyBasedSelectionGroup&gt; mv::EventManager::_selectionGroups</definition>
+        <argsstring></argsstring>
+        <name>_selectionGroups</name>
+        <briefdescription>
+<para>List of classes listening for core events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="122" column="17" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1EventManager_1a6473ac02c5389a836230ecce3f765244" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* mv::EventManager::_selectionPollingTimer</definition>
+        <argsstring></argsstring>
+        <name>_selectionPollingTimer</name>
+        <briefdescription>
+<para>List of key-based selection groups used to synchronize selections between datasets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="124" column="12" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1EventManager_1afba3bf5c114e643e2e6aa35dea7bcfeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::EventManager::EventManager</definition>
+        <argsstring>(QObject *parent)</argsstring>
+        <name>EventManager</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Construct manager with pointer to <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="28" column="5" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1adb67a6a7767bc2862f1604bb616e3c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::EventManager::~EventManager</definition>
+        <argsstring>() override</argsstring>
+        <name>~EventManager</name>
+        <briefdescription>
+<para>Reset when destructed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1ab3d65576ded614e594ffcfa97edbf935" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::initialize</definition>
+        <argsstring>() override</argsstring>
+        <name>initialize</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48">initialize</reimplements>
+        <briefdescription>
+<para>Perform event manager startup initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="36" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a63439f834b5f25b83574ccc4a6280048" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classmv_1_1AbstractManager_1a327354e46ac80afacee1a80023c609d6">reset</reimplements>
+        <briefdescription>
+<para>Resets the contents of the event manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="37" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="102" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1adf1e9f83186fbfa1fd2ba4642e2e67dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; <ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref> &gt; &amp;</type>
+        <definition>std::vector&lt;KeyBasedSelectionGroup&gt;&amp; mv::EventManager::getSelectionGroups</definition>
+        <argsstring>() override</argsstring>
+        <name>getSelectionGroups</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a60750f5c82083a743b063d5c5c9fed8b">getSelectionGroups</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="39" column="17" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1abe3698d1b1645a8678747d543dbdbaf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::addSelectionGroup</definition>
+        <argsstring>(KeyBasedSelectionGroup &amp;selectionGroup) override</argsstring>
+        <name>addSelectionGroup</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1abdda409374a2a05b77f5fb4dcd3079b8">addSelectionGroup</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref> &amp;</type>
+          <declname>selectionGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="41" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a9aa458583a39e702e4cf541b28814944" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetAdded</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetAdded</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a2648ced9b5565681fb50b54665fe4102">notifyDatasetAdded</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify listeners that a new dataset has been added to the core. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="47" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="125" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a95cb34f2bbcc202684d85f14709f251a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetAboutToBeRemoved</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetAboutToBeRemoved</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a8f845e0ed934f6389437d8b0728833f5">notifyDatasetAboutToBeRemoved</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify listeners that a dataset is about to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset which is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="148" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a2610e231de44222a482903a295f7bf5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetRemoved</definition>
+        <argsstring>(const QString &amp;datasetGuid, const DataType &amp;dataType) override</argsstring>
+        <name>notifyDatasetRemoved</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a2ed6484183ce471bb3c25d681ffafa9f">notifyDatasetRemoved</reimplements>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetGuid</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &amp;</type>
+          <declname>dataType</declname>
+        </param>
+        <briefdescription>
+<para>Notify listeners that a dataset is removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetGuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the dataset that was removed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="60" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="171" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1ad8fa90fd41dab4d676ae68986766f9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetDataChanged</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetDataChanged</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a601c5cbcd27caf737547387bc58c3add">notifyDatasetDataChanged</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify listeners that a dataset has changed data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset of which the data changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="66" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="194" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1abcd07e4f4a7569e10902f41ae7b31d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetDataDimensionsChanged</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetDataDimensionsChanged</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1af00cbd37e0987725a7a7904c955b8d73">notifyDatasetDataDimensionsChanged</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify listeners that a dataset has changed data dimensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset of which the data dimensions changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="72" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="217" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1acaea44f6c660b20e082396398078267c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetDataSelectionChanged</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset, Datasets *ignoreDatasets=nullptr) override</argsstring>
+        <name>notifyDatasetDataSelectionChanged</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46">notifyDatasetDataSelectionChanged</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> *</type>
+          <declname>ignoreDatasets</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Notify listeners that dataset data selection has changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset of which the data selection changed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ignoreDatasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to datasets that should be ignored during notification </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="79" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="240" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1aa01c71db84ef518a8044a8edd01fa0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetLocked</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetLocked</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1aac433737fed92f7d8eb24671bf472eff">notifyDatasetLocked</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify all listeners that a dataset is locked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="85" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="289" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a2666dfc4d6bdcb54b73bd7f713e5109b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::notifyDatasetUnlocked</definition>
+        <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset) override</argsstring>
+        <name>notifyDatasetUnlocked</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1adc820de1eefc197a1b4457d32a878229">notifyDatasetUnlocked</reimplements>
+        <param>
+          <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Notify all listeners that a dataset is unlocked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to the dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="91" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="315" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1aae0ea47377e3213c5773a33b33f6fea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::registerEventListener</definition>
+        <argsstring>(EventListener *eventListener) override</argsstring>
+        <name>registerEventListener</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1acb1081142002330dd234992350e51255">registerEventListener</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> *</type>
+          <declname>eventListener</declname>
+        </param>
+        <briefdescription>
+<para>Register an event listener. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to event listener to register </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="97" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a6bb2b4fdb7e662ce63e4d1787e3ee1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::unregisterEventListener</definition>
+        <argsstring>(EventListener *eventListener) override</argsstring>
+        <name>unregisterEventListener</name>
+        <reimplements refid="classmv_1_1AbstractEventManager_1a4eb5c2513af3abd5e1b75fe5e7f6b833">unregisterEventListener</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> *</type>
+          <declname>eventListener</declname>
+        </param>
+        <briefdescription>
+<para>Unregister an event listener. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eventListener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to event listener to unregister </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="103" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1ab27e7ae883b16510e9806c87e22fb367" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::EventManager::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load event manager from variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>representation of the event manager </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="111" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="341" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1EventManager_1a489788353e838033a7b41c8153e19db1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::EventManager::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save event manager to variant. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant representation of the event manager </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="117" column="17" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="354" bodyend="368"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::EventManager</label>
+        <link refid="classmv_1_1EventManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractEventManager</label>
+        <link refid="classmv_1_1AbstractEventManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>mv::EventManager</label>
+        <link refid="classmv_1_1EventManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::AbstractEventManager</label>
+        <link refid="classmv_1_1AbstractEventManager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::AbstractManager</label>
+        <link refid="classmv_1_1AbstractManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="18" column="1" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.h" bodystart="19" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classmv_1_1EventManager_1ada52af934bde74d98e86dc6d3cec7a69" prot="private" virt="non-virtual"><scope>mv::EventManager</scope><name>_eventListeners</name></member>
+      <member refid="classmv_1_1EventManager_1ae100d7db5b9ce1eb21979e3bad4f707f" prot="private" virt="non-virtual"><scope>mv::EventManager</scope><name>_selectionGroups</name></member>
+      <member refid="classmv_1_1EventManager_1a6473ac02c5389a836230ecce3f765244" prot="private" virt="non-virtual"><scope>mv::EventManager</scope><name>_selectionPollingTimer</name></member>
+      <member refid="classmv_1_1AbstractEventManager_1a6a08640a48d1d770a72e3972ca26335a" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>AbstractEventManager</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9ff1b43ea079e4ca862ffb124ddbf5d5" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>AbstractManager</name></member>
+      <member refid="classmv_1_1EventManager_1abe3698d1b1645a8678747d543dbdbaf7" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>addSelectionGroup</name></member>
+      <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>beginInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>beginReset</name></member>
+      <member refid="classmv_1_1AbstractEventManager_1ae6b5c5af966002df7ec868bf12467f41" prot="protected" virt="non-virtual"><scope>mv::EventManager</scope><name>callListenerDataEvent</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>Direction</name></member>
+      <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>endInitialization</name></member>
+      <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>endReset</name></member>
+      <member refid="classmv_1_1EventManager_1afba3bf5c114e643e2e6aa35dea7bcfeb" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>EventManager</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1EventManager_1ab27e7ae883b16510e9806c87e22fb367" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractEventManager::"><scope>mv::EventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractEventManager::"><scope>mv::EventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>getIcon</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getId</name></member>
+      <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getLockingAction</name></member>
+      <member refid="classmv_1_1EventManager_1adf1e9f83186fbfa1fd2ba4642e2e67dc" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>getSelectionGroups</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1EventManager_1ab3d65576ded614e594ffcfa97edbf935" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::EventManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::EventManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>isCoreDestroyed</name></member>
+      <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>isInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>isInitializing</name></member>
+      <member refid="classmv_1_1AbstractManager_1a8ceef9eecda0af3a09e266d099a0aac7" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>isResetting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1AbstractManager_1a2e35b473750b750a9ad20ccfb8ba2497" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>managerAboutToBeInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1aa0e3f1b30153b5dd3bc538e0f06e4c73" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>managerAboutToBeReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad72d0fa7044d387bcd8110376017b262" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>managerInitialized</name></member>
+      <member refid="classmv_1_1AbstractManager_1abc361e19a36a79bae093195d2f6745dd" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>managerReset</name></member>
+      <member refid="classmv_1_1AbstractManager_1ac28ac905e6e605390ba7a0e94c78d76c" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>mayLock</name></member>
+      <member refid="classmv_1_1AbstractManager_1a9f9dfeba6d6bdb02d4ece561549fb5c3" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>mayUnlock</name></member>
+      <member refid="classmv_1_1EventManager_1a95cb34f2bbcc202684d85f14709f251a" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetAboutToBeRemoved</name></member>
+      <member refid="classmv_1_1EventManager_1a9aa458583a39e702e4cf541b28814944" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetAdded</name></member>
+      <member refid="classmv_1_1EventManager_1ad8fa90fd41dab4d676ae68986766f9ec" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetDataChanged</name></member>
+      <member refid="classmv_1_1EventManager_1abcd07e4f4a7569e10902f41ae7b31d57" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetDataDimensionsChanged</name></member>
+      <member refid="classmv_1_1EventManager_1acaea44f6c660b20e082396398078267c" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetDataSelectionChanged</name></member>
+      <member refid="classmv_1_1EventManager_1aa01c71db84ef518a8044a8edd01fa0e5" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetLocked</name></member>
+      <member refid="classmv_1_1EventManager_1a2610e231de44222a482903a295f7bf5c" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetRemoved</name></member>
+      <member refid="classmv_1_1EventManager_1a2666dfc4d6bdcb54b73bd7f713e5109b" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>notifyDatasetUnlocked</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>operator==</name></member>
+      <member refid="classmv_1_1EventManager_1aae0ea47377e3213c5773a33b33f6fea9" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>registerEventListener</name></member>
+      <member refid="classmv_1_1EventManager_1a63439f834b5f25b83574ccc4a6280048" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>reset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1AbstractManager_1ad2b8c9e6cb82d7e69163ef1d80cbed6d" prot="protected" virt="non-virtual"><scope>mv::EventManager</scope><name>setCoreIsDestroyed</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>setId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>State</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1EventManager_1a489788353e838033a7b41c8153e19db1" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::AbstractEventManager::"><scope>mv::EventManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1EventManager_1a6bb2b4fdb7e662ce63e4d1787e3ee1eb" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>unregisterEventListener</name></member>
+      <member refid="classmv_1_1AbstractEventManager_1ab3489da88921f87e719090eb123eb295" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>~AbstractEventManager</name></member>
+      <member refid="classmv_1_1EventManager_1adb67a6a7767bc2862f1604bb616e3c86" prot="public" virt="non-virtual"><scope>mv::EventManager</scope><name>~EventManager</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::EventManager</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

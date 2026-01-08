@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1RawDataModel" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mv::RawDataModel</compoundname>
+    <basecompoundref refid="classmv_1_1StandardItemModel" prot="public" virt="non-virtual">mv::StandardItemModel</basecompoundref>
+    <includes refid="RawDataModel_8h" local="no">RawDataModel.h</includes>
+    <innerclass refid="classmv_1_1RawDataModel_1_1Item" prot="private">mv::RawDataModel::Item</innerclass>
+    <innerclass refid="classmv_1_1RawDataModel_1_1RawDataNameItem" prot="private">mv::RawDataModel::RawDataNameItem</innerclass>
+    <innerclass refid="classmv_1_1RawDataModel_1_1RawDataSizeItem" prot="private">mv::RawDataModel::RawDataSizeItem</innerclass>
+    <innerclass refid="classmv_1_1RawDataModel_1_1RawDataTypeItem" prot="private">mv::RawDataModel::RawDataTypeItem</innerclass>
+    <innerclass refid="classmv_1_1RawDataModel_1_1Row" prot="protected">mv::RawDataModel::Row</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Column</name>
+        <enumvalue id="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a86850d2f0deea7374fbd670bed1f74a8" prot="public">
+          <name>Name</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a22d67f206aa714ddfe86957057f286fd" prot="public">
+          <name>Type</name>
+          <briefdescription>
+<para>Name of the raw data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a97018c2a0c634e37c01f755ef46af3d9" prot="public">
+          <name>Size</name>
+          <briefdescription>
+<para>Data type of the raw data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11aa49ce9b10815e37b4176b2750e4fa38b" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para>Size of the raw data. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Raw data columns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="32" column="5" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="32" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmv_1_1RawDataModel_1a6345b4d38b3ab38740ffad89b52639a5" prot="private" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref></type>
+        <definition>gui::StringAction mv::RawDataModel::_overallSizeAction</definition>
+        <argsstring></argsstring>
+        <name>_overallSizeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="220" column="25" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1a282d1895dcef45d7be3aba6837e2c3d8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mv::RawDataModel::RawDataModel</definition>
+        <argsstring>(QObject *parent=nullptr)</argsstring>
+        <name>RawDataModel</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with <computeroutput>parent</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="167" column="14" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.cpp" bodystart="86" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1a53d29aa80cd0067ef97b02e027ada2ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant mv::RawDataModel::headerData</definition>
+        <argsstring>(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</argsstring>
+        <name>headerData</name>
+        <param>
+          <type>int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+<para>Get header data for <computeroutput>section</computeroutput>, <computeroutput>orientation</computeroutput> and display <computeroutput>role</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>section</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Section </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data role </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Header </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="176" column="14" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.cpp" bodystart="98" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1a1a10f6cbb85966fa747accab0946de0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::RawDataModel::populateFromDataManager</definition>
+        <argsstring>()</argsstring>
+        <name>populateFromDataManager</name>
+        <briefdescription>
+<para>Populate the model with raw data from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="213" column="10" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.cpp" bodystart="118" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1a3705e3149808fe8dab1b64dce426425e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref> &amp;</type>
+        <definition>gui::StringAction&amp; mv::RawDataModel::getOverallSizeAction</definition>
+        <argsstring>()</argsstring>
+        <name>getOverallSizeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="217" column="23" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="217" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1a266994ce5d03bb79e9582e59461a717a" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::DropActions</type>
+        <definition>Qt::DropActions mv::RawDataModel::supportedDragActions</definition>
+        <argsstring>() const override</argsstring>
+        <name>supportedDragActions</name>
+        <briefdescription>
+<para>Get supported drag actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="201" column="21" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1RawDataModel_1ae5c832a5be2ccadf50face12b0882353" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Qt::DropActions</type>
+        <definition>Qt::DropActions mv::RawDataModel::supportedDropActions</definition>
+        <argsstring>() const override</argsstring>
+        <name>supportedDropActions</name>
+        <briefdescription>
+<para>Get the supported drop actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="206" column="21" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="206" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Raw data model class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Standard item model for listing raw data</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="1">
+        <label>mv::RawDataModel</label>
+        <link refid="classmv_1_1RawDataModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="1">
+        <label>mv::RawDataModel</label>
+        <link refid="classmv_1_1RawDataModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="2">
+        <label>mv::StandardItemModel</label>
+        <link refid="classmv_1_1StandardItemModel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/models/RawDataModel.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/models/RawDataModel.h" bodystart="28" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classmv_1_1RawDataModel_1a6345b4d38b3ab38740ffad89b52639a5" prot="private" virt="non-virtual"><scope>mv::RawDataModel</scope><name>_overallSizeAction</name></member>
+      <member refid="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Column</name></member>
+      <member refid="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11aa49ce9b10815e37b4176b2750e4fa38b" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Count</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Direction</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::RawDataModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::RawDataModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::RawDataModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::RawDataModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getNumberOfRowsAction</name></member>
+      <member refid="classmv_1_1RawDataModel_1a3705e3149808fe8dab1b64dce426425e" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getOverallSizeAction</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::RawDataModel</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1RawDataModel_1a53d29aa80cd0067ef97b02e027ada2ff" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>headerData</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::RawDataModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::RawDataModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a86850d2f0deea7374fbd670bed1f74a8" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Name</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>operator==</name></member>
+      <member refid="classmv_1_1RawDataModel_1a1a10f6cbb85966fa747accab0946de0e" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>populateFromDataManager</name></member>
+      <member refid="classmv_1_1StandardItemModel_1abcfae2511dad78bf440dcbbf7267529c" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>PopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>populationModeChanged</name></member>
+      <member refid="classmv_1_1RawDataModel_1a282d1895dcef45d7be3aba6837e2c3d8" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>RawDataModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>setId</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a2259a2ac1f0e28710ce90defd5ce6cfc" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>setPopulationMode</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a97018c2a0c634e37c01f755ef46af3d9" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Size</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ab8b54af26a0203b53080024b7f2c7e65" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>StandardItemModel</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>State</name></member>
+      <member refid="classmv_1_1RawDataModel_1a266994ce5d03bb79e9582e59461a717a" prot="protected" virt="non-virtual"><scope>mv::RawDataModel</scope><name>supportedDragActions</name></member>
+      <member refid="classmv_1_1RawDataModel_1ae5c832a5be2ccadf50face12b0882353" prot="protected" virt="non-virtual"><scope>mv::RawDataModel</scope><name>supportedDropActions</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::RawDataModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::RawDataModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1RawDataModel_1a0014a5dbb8f2fb3272b564509fffbd11a22d67f206aa714ddfe86957057f286fd" prot="public" virt="non-virtual"><scope>mv::RawDataModel</scope><name>Type</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::RawDataModel</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

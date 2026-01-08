@@ -1,0 +1,1705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmv_1_1gui_1_1ColorMapAction" kind="class" language="C++" prot="public">
+    <compoundname>mv::gui::ColorMapAction</compoundname>
+    <basecompoundref refid="classmv_1_1gui_1_1WidgetAction" prot="public" virt="non-virtual">mv::gui::WidgetAction</basecompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1ColorMap1DAction" prot="public" virt="non-virtual">mv::gui::ColorMap1DAction</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1gui_1_1ColorMap2DAction" prot="public" virt="non-virtual">mv::gui::ColorMap2DAction</derivedcompoundref>
+    <includes refid="ColorMapAction_8h" local="no">ColorMapAction.h</includes>
+    <innerclass refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget" prot="public">mv::gui::ColorMapAction::ComboBoxWidget</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WidgetFlag</name>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350af92a8cdcac15d1ddaaed3769f2dc8035" prot="public">
+          <name>Settings</name>
+          <initializer>= 0x00001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350a32e936091d5e93fb7d380cfcd0e65df9" prot="public">
+          <name>EditRange</name>
+          <initializer>= 0x00002</initializer>
+          <briefdescription>
+<para>Widgets have a settings popup to adjust range and other settings. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350ac792671652ac9f9a3ab5a0426172041e" prot="public">
+          <name>Default</name>
+          <initializer>= Settings | EditRange</initializer>
+          <briefdescription>
+<para>Users are allowed to change the color map range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Describes the widget configurations (a color map combobox always exists) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Axis</name>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642aa02129bb861061d1a052c592e2dc6b383" prot="public">
+          <name>X</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642aa57cec4137b614c87cb4e24a3d003a3e0" prot="public">
+          <name>Y</name>
+          <briefdescription>
+<para>Along x-axis. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642aae93f994f01c537c4e2f7d8528c3eb5e9" prot="public">
+          <name>Count</name>
+          <briefdescription>
+<para>Along y-axis. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Axis enum for distinguishing between x- and y axis part of the color map (range) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="47" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1af0a5674a31db7f509a7613ac1f826ff2" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1util_1_1ColorMapFilterModel" kindref="compound">util::ColorMapFilterModel</ref></type>
+        <definition>util::ColorMapFilterModel mv::gui::ColorMapAction::_colorMapFilterModel</definition>
+        <argsstring></argsstring>
+        <name>_colorMapFilterModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="210" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a7e21c76a17d8a17dae1e8f9a4f97d003" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref></type>
+        <definition>OptionAction mv::gui::ColorMapAction::_currentColorMapAction</definition>
+        <argsstring></argsstring>
+        <name>_currentColorMapAction</name>
+        <briefdescription>
+<para>The filtered color map model (contains either 1D or 2D color maps) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="211" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1aa05aa60f6381ea59ca5ffbf9d750c7b2" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref></type>
+        <definition>DecimalRangeAction mv::gui::ColorMapAction::_rangeAction[static_cast&lt; int &gt;(Axis::Count)]</definition>
+        <argsstring>[static_cast&lt; int &gt;(Axis::Count)]</argsstring>
+        <name>_rangeAction</name>
+        <briefdescription>
+<para>Current color map selection action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="212" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a7546602b2730e971f2480903be6d81cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref></type>
+        <definition>DecimalRangeAction mv::gui::ColorMapAction::_dataRangeAction[static_cast&lt; int &gt;(Axis::Count)]</definition>
+        <argsstring>[static_cast&lt; int &gt;(Axis::Count)]</argsstring>
+        <name>_dataRangeAction</name>
+        <briefdescription>
+<para>Color map range action (1D/2D color map) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="213" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a260b46dab19a0ce56a8545cfa64558e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref></type>
+        <definition>DecimalRangeAction mv::gui::ColorMapAction::_sharedDataRangeAction[static_cast&lt; int &gt;(Axis::Count)]</definition>
+        <argsstring>[static_cast&lt; int &gt;(Axis::Count)]</argsstring>
+        <name>_sharedDataRangeAction</name>
+        <briefdescription>
+<para>Range of the associated dataset (1D/2D color map) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="214" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1ace567d3ad440a166c93f10571debecdd" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::ColorMapAction::_lockToSharedDataRangeAction</definition>
+        <argsstring></argsstring>
+        <name>_lockToSharedDataRangeAction</name>
+        <briefdescription>
+<para>Shared range (1D/2D color map) of all connected color maps (if the color map is connected to a public color map) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="215" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1aa40996cdf73e8429d4323d9e99374559" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::ColorMapAction::_mirrorAction[static_cast&lt; int &gt;(Axis::Count)]</definition>
+        <argsstring>[static_cast&lt; int &gt;(Axis::Count)]</argsstring>
+        <name>_mirrorAction</name>
+        <briefdescription>
+<para>Lock to shared data range action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="216" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a9f6b0c52641fe892442073fa62064439" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref></type>
+        <definition>HorizontalGroupAction mv::gui::ColorMapAction::_mirrorGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_mirrorGroupAction</name>
+        <briefdescription>
+<para>Mirror along the horizontal/vertical axis action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="217" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1af96136979c29ed14540b8cbcf722d1c3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::ColorMapAction::_discretizeAction</definition>
+        <argsstring></argsstring>
+        <name>_discretizeAction</name>
+        <briefdescription>
+<para>Group action for mirroring along horizontal/vertical axis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="218" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1ad89b7ed5ca3b3fb1c078b90070adddb5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1IntegralAction" kindref="compound">IntegralAction</ref></type>
+        <definition>IntegralAction mv::gui::ColorMapAction::_numberOfDiscreteStepsAction</definition>
+        <argsstring></argsstring>
+        <name>_numberOfDiscreteStepsAction</name>
+        <briefdescription>
+<para>Discretize setEnabled action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="219" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a3da64eee2c3104b0c66eb3e318014b1c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::ColorMapAction::_discretizeAlphaAction</definition>
+        <argsstring></argsstring>
+        <name>_discretizeAlphaAction</name>
+        <briefdescription>
+<para>Number of discrete steps action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="220" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a589c6cd010f67e52fbf4d265f99656cb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettings1DAction" kindref="compound">ColorMapSettings1DAction</ref></type>
+        <definition>ColorMapSettings1DAction mv::gui::ColorMapAction::_settings1DAction</definition>
+        <argsstring></argsstring>
+        <name>_settings1DAction</name>
+        <briefdescription>
+<para>Whether to also discretize the alpha channel of the color map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="221" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1ab338c8723e7d11be451c67d164438595" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettings2DAction" kindref="compound">ColorMapSettings2DAction</ref></type>
+        <definition>ColorMapSettings2DAction mv::gui::ColorMapAction::_settings2DAction</definition>
+        <argsstring></argsstring>
+        <name>_settings2DAction</name>
+        <briefdescription>
+<para>One-dimensional settings action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="222" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a456ce757a39bcaac6f512ee6c912a95d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref></type>
+        <definition>ToggleAction mv::gui::ColorMapAction::_customColorMapAction</definition>
+        <argsstring></argsstring>
+        <name>_customColorMapAction</name>
+        <briefdescription>
+<para>Two-dimensional settings action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="223" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1aa0435ab47944a5748d9d2f26de1d3185" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref></type>
+        <definition>ColorMapEditor1DAction mv::gui::ColorMapAction::_editor1DAction</definition>
+        <argsstring></argsstring>
+        <name>_editor1DAction</name>
+        <briefdescription>
+<para>Toggle custom color map action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="224" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a0b3f93f33e199f9f3020648b0174c099" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref></type>
+        <definition>HorizontalGroupAction mv::gui::ColorMapAction::_customColorMapGroupAction</definition>
+        <argsstring></argsstring>
+        <name>_customColorMapGroupAction</name>
+        <briefdescription>
+<para>One-dimensional editor action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="225" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmv_1_1gui_1_1ColorMapAction_1a1342c948f5d4063fc135ff394b29fb1e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref></type>
+        <definition>ColorMapSettingsAction mv::gui::ColorMapAction::_settingsAction</definition>
+        <argsstring></argsstring>
+        <name>_settingsAction</name>
+        <briefdescription>
+<para>Groups the custom color map and editor action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="226" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ColorMapAction_1a831953c8c99f2ab1cc89f474f11d6b70" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AbstractActionsManager</definition>
+        <argsstring></argsstring>
+        <name>AbstractActionsManager</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractActionsManager" kindref="compound">AbstractActionsManager</ref></type>
+        </param>
+        <briefdescription>
+<para>Color map settings action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="228" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ColorMapAction_1ab283b467fbd08649ff92177203f7e312" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ColorMap1DAction</definition>
+        <argsstring></argsstring>
+        <name>ColorMap1DAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMap1DAction" kindref="compound">ColorMap1DAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="229" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmv_1_1gui_1_1ColorMapAction_1a8f837e717eba22eaa3833274cc283f52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class ColorMap2DAction</definition>
+        <argsstring></argsstring>
+        <name>ColorMap2DAction</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1ColorMap2DAction" kindref="compound">ColorMap2DAction</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="230" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1addfa15f00554047787c4922ea39cab92" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * mv::gui::ColorMapAction::getWidget</definition>
+        <argsstring>(QWidget *parent, const std::int32_t &amp;widgetFlags) override</argsstring>
+        <name>getWidget</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33">getWidget</reimplements>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const std::int32_t &amp;</type>
+          <declname>widgetFlags</declname>
+        </param>
+        <briefdescription>
+<para>Get widget representation of the color map action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent widget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetFlags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget flags for the configuration of the widget (type) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="87" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="552" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a42924725b5bb10a2b7f6d5b78c18f005" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_INVOKABLE</type>
+        <definition>mv::gui::ColorMapAction::ColorMapAction</definition>
+        <argsstring>(QObject *parent, const QString &amp;title, const util::ColorMap::Type &amp;colorMapType=util::ColorMap::Type::OneDimensional, const QString &amp;colorMap=&quot;RdYlBu&quot;)</argsstring>
+        <name>ColorMapAction</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref> &amp;</type>
+          <declname>colorMapType</declname>
+          <defval><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0aacae5ae31d4901e6c4464a154fc1c21de" kindref="member">util::ColorMap::Type::OneDimensional</ref></defval>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>colorMap</declname>
+          <defval>&quot;RdYlBu&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to parent object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Title of the action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorMapType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of color map (1D/2D) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current color map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="98" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="23" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a79da7a2f43732c87d92f4bb4c8ad92ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::setColorMapType</definition>
+        <argsstring>(const util::ColorMap::Type &amp;colorMapType)</argsstring>
+        <name>setColorMapType</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref> &amp;</type>
+          <declname>colorMapType</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current color map type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="114" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="207" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1af7f360a3516d009ab0d6835111960b68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::connectToPublicAction</definition>
+        <argsstring>(WidgetAction *publicAction, bool recursive) override</argsstring>
+        <name>connectToPublicAction</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595">connectToPublicAction</reimplements>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>publicAction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Connect this action to a public action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>publicAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to public action to connect to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also connect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="137" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="348" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a5ab6304ab7947f61df0252edcade3da4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::disconnectFromPublicAction</definition>
+        <argsstring>(bool recursive) override</argsstring>
+        <name>disconnectFromPublicAction</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28">disconnectFromPublicAction</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect this action from its public action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recursive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to also disconnect descendant child actions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="143" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="380" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aebf429df1e92d68ba9b60a226cbb1328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::initialize</definition>
+        <argsstring>(const QString &amp;colorMap)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>colorMap</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the color map action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current color map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="106" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="167" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1afc177fd23a4bd42465cb3d8d620dde24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref></type>
+        <definition>mv::util::ColorMap::Type mv::gui::ColorMapAction::getColorMapType</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorMapType</name>
+        <briefdescription>
+<para>Gets the current color map type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="109" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a4d2b8fcf717b5ecb249d6b4b3cee4edd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString mv::gui::ColorMapAction::getColorMap</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorMap</name>
+        <briefdescription>
+<para>Gets the current color map name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="119" column="13" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a2e8f1974bfef0d14e021984ecf894455" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QImage</type>
+        <definition>QImage mv::gui::ColorMapAction::getColorMapImage</definition>
+        <argsstring>() const</argsstring>
+        <name>getColorMapImage</name>
+        <briefdescription>
+<para>Gets the current color map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="122" column="12" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="220" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aab58265717e7a5f4e2c1866d93cc64f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::setColorMap</definition>
+        <argsstring>(const QString &amp;colorMap)</argsstring>
+        <name>setColorMap</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>colorMap</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current color map name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the current color map </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="128" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="341" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ae862926fa1ba3e9f843ac9145f1b7d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::fromVariantMap</definition>
+        <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
+        <name>fromVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5">fromVariantMap</reimplements>
+        <param>
+          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <declname>variantMap</declname>
+        </param>
+        <briefdescription>
+<para>Load widget action from variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>map representation of the widget action </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="151" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="408" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a56d469c28e19571224cbd951ba2e4ec9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <definition>QVariantMap mv::gui::ColorMapAction::toVariantMap</definition>
+        <argsstring>() const override</argsstring>
+        <name>toVariantMap</name>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887">toVariantMap</reimplements>
+        <briefdescription>
+<para>Save widget action to variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Variant map representation of the widget action </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="157" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.cpp" bodystart="430" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a41121c9764af413cd216b55b4ae1b65f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref> &amp;</type>
+        <definition>const OptionAction&amp; mv::gui::ColorMapAction::getCurrentColorMapAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentColorMapAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="175" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a58d82f96d1f05d0dec4c0d8ac41444b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>const DecimalRangeAction&amp; mv::gui::ColorMapAction::getRangeAction</definition>
+        <argsstring>(const Axis &amp;axis) const</argsstring>
+        <name>getRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="176" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aad1aabb7ed61be9933b579a54afed61e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>const DecimalRangeAction&amp; mv::gui::ColorMapAction::getDataRangeAction</definition>
+        <argsstring>(const Axis &amp;axis) const</argsstring>
+        <name>getDataRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="177" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a8683493fbda4f4b9bef428b4912591c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>const DecimalRangeAction&amp; mv::gui::ColorMapAction::getSharedDataRangeAction</definition>
+        <argsstring>(const Axis &amp;axis) const</argsstring>
+        <name>getSharedDataRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="178" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aa2438e0ecd14f0f7413e6b0354dedb7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::ColorMapAction::getLockToSharedDataRangeAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getLockToSharedDataRangeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="179" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="179" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a6023d6f3d0a6033f5d86f30dfde132a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::ColorMapAction::getMirrorAction</definition>
+        <argsstring>(const Axis &amp;axis) const</argsstring>
+        <name>getMirrorAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="180" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a9e4a4ee8c7f86d843d743b01492e44e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>const HorizontalGroupAction&amp; mv::gui::ColorMapAction::getMirrorGroupAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getMirrorGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="181" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ae4552e60b8945adfe0b2f6ac289248d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::ColorMapAction::getDiscretizeAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDiscretizeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="182" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a11d51140effdb4a908c5a6371f37c312" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1IntegralAction" kindref="compound">IntegralAction</ref> &amp;</type>
+        <definition>const IntegralAction&amp; mv::gui::ColorMapAction::getNumberOfDiscreteStepsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfDiscreteStepsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="183" column="26" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ae6a042ff89235eb83235689ca3f56379" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::ColorMapAction::getDiscretizeAlphaAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getDiscretizeAlphaAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="184" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ad29718880857649845a6dd3d57c9067c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ColorMapSettings1DAction" kindref="compound">ColorMapSettings1DAction</ref> &amp;</type>
+        <definition>const ColorMapSettings1DAction&amp; mv::gui::ColorMapAction::getSettings1DAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettings1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="185" column="36" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a9151be44d2de33f7bf74295642db5b10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ColorMapSettings2DAction" kindref="compound">ColorMapSettings2DAction</ref> &amp;</type>
+        <definition>const ColorMapSettings2DAction&amp; mv::gui::ColorMapAction::getSettings2DAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettings2DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="186" column="36" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a03950c6cf11a17d890dbd6b55d7e1948" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>const ToggleAction&amp; mv::gui::ColorMapAction::getCustomColorMapAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getCustomColorMapAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="187" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a1539f044ed8f3b39d8480e20db17bc31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref> &amp;</type>
+        <definition>const ColorMapEditor1DAction&amp; mv::gui::ColorMapAction::getEditor1DAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getEditor1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="188" column="34" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aac719c02aaf65dd43c7b7424ac57ce02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>const HorizontalGroupAction&amp; mv::gui::ColorMapAction::getCustomColorMapGroupAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getCustomColorMapGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="189" column="33" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a55863935ed32095cd5da5e25c1459799" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref> &amp;</type>
+        <definition>const ColorMapSettingsAction&amp; mv::gui::ColorMapAction::getSettingsAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getSettingsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="190" column="34" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a965766094981f7d0db5a524dd29547f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref> &amp;</type>
+        <definition>OptionAction&amp; mv::gui::ColorMapAction::getCurrentColorMapAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentColorMapAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="192" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a831a35be1f785ff5b95a03ec9e33a563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>DecimalRangeAction&amp; mv::gui::ColorMapAction::getRangeAction</definition>
+        <argsstring>(const Axis &amp;axis)</argsstring>
+        <name>getRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="193" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a45d2251e0195284f291698d16c5fb434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>DecimalRangeAction&amp; mv::gui::ColorMapAction::getDataRangeAction</definition>
+        <argsstring>(const Axis &amp;axis)</argsstring>
+        <name>getDataRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="194" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="194" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a7f18de0999dd7d3523db2f87db058fc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref> &amp;</type>
+        <definition>DecimalRangeAction&amp; mv::gui::ColorMapAction::getSharedDataRangeAction</definition>
+        <argsstring>(const Axis &amp;axis)</argsstring>
+        <name>getSharedDataRangeAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="195" column="24" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aa5b47d0b97983b3c6c85c982b02c8587" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::ColorMapAction::getLockToSharedDataRangeAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLockToSharedDataRangeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="196" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a2810efcfcd743b3df467891563d4f967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::ColorMapAction::getMirrorAction</definition>
+        <argsstring>(const Axis &amp;axis)</argsstring>
+        <name>getMirrorAction</name>
+        <param>
+          <type>const <ref refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" kindref="member">Axis</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="197" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1aecd7e412dc504e1d2298570101843951" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>HorizontalGroupAction&amp; mv::gui::ColorMapAction::getMirrorGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getMirrorGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="198" column="27" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a91f8b8bbeefc2a25bd3af323f376f48a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::ColorMapAction::getDiscretizeAction</definition>
+        <argsstring>()</argsstring>
+        <name>getDiscretizeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="199" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a2453dd262f216e8e5eabe1e66bee3f58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1IntegralAction" kindref="compound">IntegralAction</ref> &amp;</type>
+        <definition>IntegralAction&amp; mv::gui::ColorMapAction::getNumberOfDiscreteStepsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getNumberOfDiscreteStepsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="200" column="20" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ac6ea85715be9110cd14d26f427a1bff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::ColorMapAction::getDiscretizeAlphaAction</definition>
+        <argsstring>()</argsstring>
+        <name>getDiscretizeAlphaAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="201" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a3a2df5d6943a426506f84918f7466a22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettings1DAction" kindref="compound">ColorMapSettings1DAction</ref> &amp;</type>
+        <definition>ColorMapSettings1DAction&amp; mv::gui::ColorMapAction::getSettings1DAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSettings1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="202" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1adfd5a9b2daeb720d5315804751270ebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettings2DAction" kindref="compound">ColorMapSettings2DAction</ref> &amp;</type>
+        <definition>ColorMapSettings2DAction&amp; mv::gui::ColorMapAction::getSettings2DAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSettings2DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="203" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a885e2e72aedd1ea3e643a6e6a83685c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">ToggleAction</ref> &amp;</type>
+        <definition>ToggleAction&amp; mv::gui::ColorMapAction::getCustomColorMapAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCustomColorMapAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="204" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1a76a830887baaf6e9bf0f663ca25c4078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref> &amp;</type>
+        <definition>ColorMapEditor1DAction&amp; mv::gui::ColorMapAction::getEditor1DAction</definition>
+        <argsstring>()</argsstring>
+        <name>getEditor1DAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="205" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1af8a7fe1fd07527463f78edb2f87509d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1HorizontalGroupAction" kindref="compound">HorizontalGroupAction</ref> &amp;</type>
+        <definition>HorizontalGroupAction&amp; mv::gui::ColorMapAction::getCustomColorMapGroupAction</definition>
+        <argsstring>()</argsstring>
+        <name>getCustomColorMapGroupAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="206" column="27" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1ColorMapAction_1ad81fffa390ebd9a28c8c08d28667e0c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref> &amp;</type>
+        <definition>ColorMapSettingsAction&amp; mv::gui::ColorMapAction::getSettingsAction</definition>
+        <argsstring>()</argsstring>
+        <name>getSettingsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="207" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ColorMapAction_1a2877477d19e5af53cda7d63fbefcc421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::typeChanged</definition>
+        <argsstring>(const util::ColorMap::Type &amp;colorMapType)</argsstring>
+        <name>typeChanged</name>
+        <param>
+          <type>const <ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref> &amp;</type>
+          <declname>colorMapType</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current color map type changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorMapType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current color map type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="signal" id="classmv_1_1gui_1_1ColorMapAction_1a94b8988631e73c6c60c85811c0ca84ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::ColorMapAction::imageChanged</definition>
+        <argsstring>(const QImage &amp;image)</argsstring>
+        <name>imageChanged</name>
+        <param>
+          <type>const QImage &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the current color map image changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current color map image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="171" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Color map action class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Color map selection and settings action</para>
+<para><simplesect kind="author"><para>Thomas Kroes </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mv::gui::ColorMapAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="6">
+        <label>mv::gui::ColorMap2DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMap2DAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mv::gui::ColorMap1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMap1DAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>mv::gui::NumericalAction&lt; std::int32_t &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mv::gui::DecimalAction</label>
+        <link refid="classmv_1_1gui_1_1DecimalAction"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mv::gui::IntegralAction</label>
+        <link refid="classmv_1_1gui_1_1IntegralAction"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QMap&lt; Scope, QString &gt;</label>
+        <link refid="classQMap"/>
+      </node>
+      <node id="1">
+        <label>mv::gui::ColorMapAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_colorMapFilterModel</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_customColorMapAction</edgelabel>
+          <edgelabel>_discretizeAction</edgelabel>
+          <edgelabel>_discretizeAlphaAction</edgelabel>
+          <edgelabel>_lockToSharedDataRangeAction</edgelabel>
+          <edgelabel>_mirrorAction</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_dataRangeAction</edgelabel>
+          <edgelabel>_rangeAction</edgelabel>
+          <edgelabel>_sharedDataRangeAction</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_editor1DAction</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>_currentColorMapAction</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>_settingsAction</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>_numberOfDiscreteStepsAction</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>_settings2DAction</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>_customColorMapGroupAction</edgelabel>
+          <edgelabel>_mirrorGroupAction</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_settings1DAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QSortFilterProxyModel</label>
+      </node>
+      <node id="15">
+        <label>QObject</label>
+      </node>
+      <node id="18">
+        <label>mv::gui::NumericalAction&lt; float &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mv::gui::ColorMapSettingsAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettingsAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::gui::NumericalRangeAction&lt; float, DecimalAction &gt;</label>
+        <link refid="classmv_1_1gui_1_1NumericalRangeAction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::gui::ToggleAction</label>
+        <link refid="classmv_1_1gui_1_1ToggleAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mv::gui::ColorMapEditor1DNode</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DNode"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mv::gui::ColorAction</label>
+        <link refid="classmv_1_1gui_1_1ColorAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>scopeNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="25">
+        <label>mv::gui::ColorMapSettings1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettings1DAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mv::gui::ColorMapSettings2DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapSettings2DAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mv::gui::OptionAction</label>
+        <link refid="classmv_1_1gui_1_1OptionAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::gui::DecimalRangeAction</label>
+        <link refid="classmv_1_1gui_1_1DecimalRangeAction"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mv::util::ColorMapFilterModel</label>
+        <link refid="classmv_1_1util_1_1ColorMapFilterModel"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidgetAction</label>
+      </node>
+      <node id="12">
+        <label>mv::gui::ColorMapEditor1DAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_nodeAction</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_colorMapAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mv::gui::ColorMapEditor1DNodeAction</label>
+        <link refid="classmv_1_1gui_1_1ColorMapEditor1DNodeAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_currentNode</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_colorMapEditor1DAction</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>_colorAction</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>_opacityAction</edgelabel>
+          <edgelabel>_valueAction</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" line="32" column="1" bodyfile="Docs/external/core/ManiVault/src/actions/ColorMapAction.h" bodystart="33" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af0a5674a31db7f509a7613ac1f826ff2" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_colorMapFilterModel</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7e21c76a17d8a17dae1e8f9a4f97d003" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_currentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a456ce757a39bcaac6f512ee6c912a95d" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_customColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a0b3f93f33e199f9f3020648b0174c099" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_customColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7546602b2730e971f2480903be6d81cc" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_dataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af96136979c29ed14540b8cbcf722d1c3" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_discretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a3da64eee2c3104b0c66eb3e318014b1c" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_discretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa0435ab47944a5748d9d2f26de1d3185" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_editor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ace567d3ad440a166c93f10571debecdd" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_lockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa40996cdf73e8429d4323d9e99374559" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_mirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9f6b0c52641fe892442073fa62064439" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_mirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad89b7ed5ca3b3fb1c078b90070adddb5" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_numberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa05aa60f6381ea59ca5ffbf9d750c7b2" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_rangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a589c6cd010f67e52fbf4d265f99656cb" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_settings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ab338c8723e7d11be451c67d164438595" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_settings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a1342c948f5d4063fc135ff394b29fb1e" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_settingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a260b46dab19a0ce56a8545cfa64558e4" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>_sharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a831953c8c99f2ab1cc89f474f11d6b70" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>AbstractActionsManager</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa559452042bd6c86e3ad8e667bc12414" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>actionConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a805c208df24b529097ac8a07244b1da0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>actionDisconnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Api</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ApiAndGui</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a102ae29f13a34ccc73ab46b28e4a642a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Axis</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aada5f433583c5ecbf7c7ca003aa1a649" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>cacheConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa46b9d23ab2fc0d94886ac8b31903f00" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>cacheState</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ab283b467fbd08649ff92177203f7e312" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ColorMap1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a8f837e717eba22eaa3833274cc283f52" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ColorMap2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a42924725b5bb10a2b7f6d5b78c18f005" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a30320679380f9f893c48505dcf51548d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>configurationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe211fd2bc9d2a593ddffbea3568dac3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aea839c7585c9982b45e25f1b3b4c4c3c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>configurationFlagToggled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ConnectionContextFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>ConnectionPermissionFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>connectionPermissionsChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af7f360a3516d009ab0d6835111960b68" prot="protected" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>connectToPublicActionByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350ac792671652ac9f9a3ab5a0426172041e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Default</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Direction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a5ab6304ab7947f61df0252edcade3da4" prot="protected" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350a32e936091d5e93fb7d380cfcd0e65df9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>EditRange</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>findChildByPath</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>forceDisabledChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>forceHiddenChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>fromJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>fromJsonFile</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae862926fa1ba3e9f843ac9145f1b7d65" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMapAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMapAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getAncestors</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getChildren</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a4d2b8fcf717b5ecb249d6b4b3cee4edd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2e8f1974bfef0d14e021984ecf894455" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getColorMapImage</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1afc177fd23a4bd42465cb3d8d620dde24" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getColorMapType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a41121c9764af413cd216b55b4ae1b65f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCurrentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a965766094981f7d0db5a524dd29547f0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCurrentColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a03950c6cf11a17d890dbd6b55d7e1948" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCustomColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a885e2e72aedd1ea3e643a6e6a83685c7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCustomColorMapAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aac719c02aaf65dd43c7b7424ac57ce02" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCustomColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af8a7fe1fd07527463f78edb2f87509d6" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getCustomColorMapGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aad1aabb7ed61be9933b579a54afed61e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a45d2251e0195284f291698d16c5fb434" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDepth</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae4552e60b8945adfe0b2f6ac289248d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDiscretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a91f8b8bbeefc2a25bd3af323f376f48a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDiscretizeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ae6a042ff89235eb83235689ca3f56379" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDiscretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ac6ea85715be9110cd14d26f427a1bff3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDiscretizeAlphaAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a1539f044ed8f3b39d8480e20db17bc31" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a76a830887baaf6e9bf0f663ca25c4078" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getEditor1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa2438e0ecd14f0f7413e6b0354dedb7e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getLockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aa5b47d0b97983b3c6c85c982b02c8587" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getLockToSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a6023d6f3d0a6033f5d86f30dfde132a2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getMirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2810efcfcd743b3df467891563d4f967" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getMirrorAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9e4a4ee8c7f86d843d743b01492e44e5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getMirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aecd7e412dc504e1d2298570101843951" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getMirrorGroupAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getNumberOfChildren</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a11d51140effdb4a908c5a6371f37c312" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getNumberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2453dd262f216e8e5eabe1e66bee3f58" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getNumberOfDiscreteStepsAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getPopupSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a58d82f96d1f05d0dec4c0d8ac41444b5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a831a35be1f785ff5b95a03ec9e33a563" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSerializationCount</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSerializationCountFrom</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSerializationCountTo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad29718880857649845a6dd3d57c9067c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a3a2df5d6943a426506f84918f7466a22" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettings1DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a9151be44d2de33f7bf74295642db5b10" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1adfd5a9b2daeb720d5315804751270ebd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettings2DAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a55863935ed32095cd5da5e25c1459799" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1ad81fffa390ebd9a28c8c08d28667e0c0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettingsAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a8683493fbda4f4b9bef428b4912591c7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a7f18de0999dd7d3523db2f87db058fc7" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSharedDataRangeAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getTypeString</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1addfa15f00554047787c4922ea39cab92" prot="protected" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>getWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Gui</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>hasCacheState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6c7b9b6dc10c284152c46fa1ab0c63a4" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>hasChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4f96f59072092ac12d485539d68ee686" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a532c990bdb036b38eb406ce60961be1c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>hasParent</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a59c48dac0c7d32e14a7ff9d5854b2888" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>highlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a703de9ad5c1df2e79b5e6673d095e37e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>highlightingChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a603dd41a86e2d87fb6431bab4368bab0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>HighlightOption</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>idChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a94b8988631e73c6c60c85811c0ca84ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>imageChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aebf429df1e92d68ba9b60a226cbb1328" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>initialize</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isChildOf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isConfigurationFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9cb9c5a7d2c8ebd827e1d36959f72550" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isConnected</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a19ed03f897b74bf5b996563ddc58e9b0" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isConnectedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ad3a66c73ca04c0e250907816e46d76b2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isConnectionPermissionFlagSet</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a63d766dbc7c9ce5020f1f068aa68b598" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isEnabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae730c0281443227fa0ab214342e8a4a2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae301a87d7bd8d959ef9d931434cc37d2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isLeaf</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af20ebcb4057d5cd2a9978685e8eb7117" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isPrivate</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1ada87cfbd3cffa04761277ef05478cd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isPublic</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af8234fc12adbe90ddea635adce1962a5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isPublished</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a049968ee8fe00b2aaa1e347965c74406" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isPublishedChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21f556360e4bb09b2ccdd603dd10737c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isResettable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a570a2e400a5f96a0623e254bb2b6054b" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isRoot</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90966ad7f034f98faefc55a37cd65e96" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>isVisible</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a45eb60bd969b843316701a8171f941d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>loadFromSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a44ccc9f81a96b062520bf83200f16a49" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>locationChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a86835e3b3a9089a5646e6d8be4a66a19" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>makePublic</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>makeUnique</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa75c18cb904f10ac8bd44d6f854d076f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>mayConnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a619354978584941f6118f98f06420a85" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>mayConnectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34297979494f1fba70f0594e7adaeabc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>mayDisconnect</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a21a75b39d1485f632dd4508213dd878a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>mayPublish</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>operator!=</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>operator==</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>printChildren</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>publish</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>reset</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3b2270611b48983c22d1f4b20eddf522" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>restoreConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6bc683c6a68a75c6fb776b643318c620" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>restoreState</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>saveToSettings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Scope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>scopeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1aab58265717e7a5f4e2c1866d93cc64f1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setColorMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a79da7a2f43732c87d92f4bb4c8ad92ef" prot="protected" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setColorMapType</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConfiguration</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa1f80f3b3baacf6cf8a8dbb89f0c62ee" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConfigurationFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4879145044ca24a29fb486da37757fb3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConnectionPermissions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac60b692cfd2e1a4f6416fde1c2315993" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConnectionPermissionsFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aca4170ffdd038702d3e13a17aa39ee62" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConnectionPermissionsToAll</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a54cf2df6d4ae8627859acea60076af24" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConnectionPermissionsToForceNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a04c1e9c76509690837cc20978e3163f6" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setConnectionPermissionsToNone</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ac295e467551ef0c0c312bc0ff7084d54" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setDefaultWidgetFlag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab3e08d8cfae1098a86fd8b4e0f49de28" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setDefaultWidgetFlags</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adcd49ded9a7aa5df9f3fce61de21d83e" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setForceDisabled</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setForceHidden</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setHighlighted</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setOverrideSizeHint</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setPopupSizeHint</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setSerializationName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa765bec6cf7d53e071a9d4dc0fad9df5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a507a8816a6531ae277c8d0c7ea2c270f" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2c8cb1f49c3720cd3efc957d06714ec" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setSortIndex</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a61c1e2e3adbcbcff29ae9e277efbdff5" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setStretch</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a6f53e5e345d2ba1542e8fced4420e734" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setStudioMode</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a09ad65e1dbbe576fad26ae0eb78e8d80" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setText</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350af92a8cdcac15d1ddaaed3769f2dc8035" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>Settings</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1adedb624c61d36ddb8d1f192c0ad8f7fb" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>setWidgetConfigurationFunction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a3df62c42c5dcc8c1560d64a19766282c" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>sortIndexChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>State</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5f27b8fd7da17065bb2e133e8f19d321" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>stretchChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a906ce255e73b25536d16f3f211ace6dc" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>textChanged</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>toJsonDocument</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>toJsonFile</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a56d469c28e19571224cbd951ba2e4ec9" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::ColorMapAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1a2877477d19e5af53cda7d63fbefcc421" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>typeChanged</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>unHighlight</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>WidgetAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>widgetConfigurationFunctionChanged</name></member>
+      <member refid="classmv_1_1gui_1_1ColorMapAction_1af9d3d758756fd0a12d8f4f9cf47ef350" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>WidgetFlag</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::gui::ColorMapAction</scope><name>~Serializable</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a68bd0045eb6e53a0794173c8e71f816a" prot="public" virt="non-virtual"><scope>mv::gui::ColorMapAction</scope><name>~WidgetAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
