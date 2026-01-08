@@ -1,77 +1,71 @@
-Learning center
-==================
+Learning Center
+===============
 
-The **Learning Center** is ManiVault’s central mechanism for providing **contextual, plugin-specific guidance** to users while they work with the application.
+The **Learning Center** provides **contextual, plugin-specific guidance** while users work with ManiVault.
 
-Rather than acting as a static help system, the Learning Center surfaces **just-in-time information** that is directly relevant to the plugins, views, and interactions available in the current context.
+Instead of a static help system, it surfaces **just-in-time information** that is relevant to the currently available plugins, views, and interactions.
 
-![Learning center](../../assets/learning_center.png)
+![Learning center](../../assets/learning_center.gif)
 
-*The learning Center provides plugin specific onboarding content.*
-
+*The Learning Center provides plugin-specific onboarding content.*
 
 ---
 
-## Purpose and scope
+## Purpose
 
 The Learning Center is designed to:
 
-- Support **onboarding** by helping new users understand plugins and interactions.
-- Improve **discoverability** of features, shortcuts, and interaction patterns.
-- Provide **consistent guidance** across all plugins.
+- Support **onboarding** for new users
+- Improve **discoverability** of features and shortcuts
+- Provide **consistent guidance** across plugins
 
-It complements full documentation and tutorials by focusing on **practical usage** and **immediate interaction**, rather than exhaustive explanations.
+It complements full documentation by focusing on **practical usage** rather than exhaustive explanations.
 
 ---
 
 ## Plugin-driven content
 
-Learning Center content is **defined and owned by plugins** through their plugin factories.
+Learning Center content is **defined by plugins** through their plugin factories.
 
-Each plugin can contribute:
-- Meta data such as contributors and their affilitations
-- A summary of relevant **keyboard and mouse shortcuts**
-- Optional references to additional documentation or tutorials
+Plugins can contribute:
+- Metadata (contributors, affiliations)
+- Summaries of **keyboard and mouse shortcuts**
+- Links to additional documentation or tutorials
 
-This approach ensures that:
-- Only relevant content is shown to the user
-- Guidance reflects the actual capabilities of installed plugins
-- Documentation remains close to the code that defines behavior
+This ensures that guidance is relevant, accurate, and closely aligned with plugin behavior.
 
 ---
 
-## Contextual and non-intrusive design
+## Design principles
 
-The Learning Center is intentionally designed to be:
+The Learning Center is:
 
 - **Contextual** — scoped to a specific plugin or interaction
-- **Non-intrusive** — it does not interrupt ongoing workflows
-- **Optional** — users consult it when needed
+- **Non-intrusive** — it does not interrupt workflows
+- **Optional** — consulted when needed
 
-This makes it equally useful for first-time users and experienced users who need a quick reminder.
+It is intended for both first-time users and experienced users who need a quick reference.
 
 ---
 
-## Responsibilities and lifecycle
+## Responsibilities
 
-- **Plugins** define the content shown in the Learning Center.
-- **Plugin factories** register Learning Center actions during initialization.
-- The **core** handles presentation, layout, and integration into the application UI.
+- **Plugins** define Learning Center content
+- **Plugin factories** register Learning Center actions
+- The **core** handles presentation and integration
 
-Learning Center content is lightweight and static. It does not affect plugin behavior and can be extended safely as plugins evolve.
+Content is lightweight and does not affect plugin behavior.
 
 ---
 
 ## Summary
 
-- The Learning Center provides contextual, plugin-specific guidance.
-- Content is supplied by plugins and registered via their factories.
-- Shortcut summaries are a first-class feature.
-- Presentation and lifecycle are handled by the core.
-- The Learning Center improves usability without adding UI complexity.
+- The Learning Center provides contextual, plugin-specific guidance
+- Content is supplied by plugins and registered via their factories
+- Shortcut summaries are a core feature
+- UI integration and lifecycle are handled by the core
 
-By keeping guidance close to the plugins that define behavior, the Learning Center helps users learn *what matters, when it matters*.
-
+The Learning Center helps users learn *what matters, when it matters*.
 
 ```{toctree}
 :maxdepth: 1
