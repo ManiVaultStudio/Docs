@@ -51,17 +51,24 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-HERE = os.path.dirname(__file__)                 # .../docs/source
+HERE = os.path.dirname(__file__)                      # .../docs/source
 DOCS_DIR = os.path.abspath(os.path.join(HERE, ".."))  # .../docs
-DOXYGEN_XML_DIR = os.path.join(DOCS_DIR, "_doxygen", "xml")
+REPO_DIR = os.path.abspath(os.path.join(HERE, "..", ".."))  # repo root
 
-breathe_projects = {"ManiVault": DOXYGEN_XML_DIR}
-breathe_default_project = "ManiVault"
+DOXYGEN_XML_DIR = os.path.join(DOCS_DIR, "_doxygen", "xml")
 
 exhale_args = {
     "containmentFolder": "./api",
     "rootFileName": "library_root.rst",
     "rootFileTitle": "API Reference",
+
+    # REQUIRED by Exhale:
+    "doxygenStripFromPath": REPO_DIR,
+
+    # Point Exhale to the pre-generated XML:
     "doxygenXmlDirectory": DOXYGEN_XML_DIR,
     "exhaleExecutesDoxygen": False,
+
+    # Optional but nice:
+    "createTreeView": True,
 }
