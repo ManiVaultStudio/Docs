@@ -7,7 +7,7 @@ Building plugins
 types
 structure
 plugin_triggers
-support_drag_and_drop
+drag_and_drop
 icons
 limit_creation
 global_settings
