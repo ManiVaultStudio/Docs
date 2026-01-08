@@ -56,7 +56,7 @@ DOCS_DIR = os.path.abspath(os.path.join(HERE, ".."))  # .../docs
 REPO_DIR = os.path.abspath(os.path.join(HERE, "..", ".."))  # repo root
 DOXYGEN_XML_DIR = os.path.join(DOCS_DIR, "_doxygen", "xml")
 
-breathe_projects = {"ManiVault": DOXYGEN_XML_DIR}
+breathe_projects = { "ManiVault": DOXYGEN_XML_DIR }
 breathe_default_project = "ManiVault"
 
 exhale_args = {
@@ -68,7 +68,6 @@ exhale_args = {
     "doxygenStripFromPath": REPO_DIR,
 
     # Point Exhale to the pre-generated XML:
-    "doxygenXmlDirectory": DOXYGEN_XML_DIR,
     "exhaleExecutesDoxygen": False,
 
     # Optional but nice:
