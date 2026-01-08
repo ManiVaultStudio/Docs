@@ -51,11 +51,13 @@ html_theme = 'sphinx_rtd_theme'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-HERE = os.path.dirname(__file__)                      # .../docs/source
+HERE = os.path.dirname(__file__)                 # .../docs/source
 DOCS_DIR = os.path.abspath(os.path.join(HERE, ".."))  # .../docs
 REPO_DIR = os.path.abspath(os.path.join(HERE, "..", ".."))  # repo root
-
 DOXYGEN_XML_DIR = os.path.join(DOCS_DIR, "_doxygen", "xml")
+
+breathe_projects = {"ManiVault": DOXYGEN_XML_DIR}
+breathe_default_project = "ManiVault"
 
 exhale_args = {
     "containmentFolder": "./api",
