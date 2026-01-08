@@ -68,3 +68,17 @@ CALL_GRAPH             = NO
 CALLER_GRAPH           = NO
 INCLUDE_GRAPH          = NO
 INCLUDED_BY_GRAPH      = NO
+
+# Do not hide undocumented things (critical for Exhale to “see” mv)
+HIDE_UNDOC_CLASSES     = NO
+HIDE_UNDOC_MEMBERS     = NO
+
+# Ensure namespaces are included
+EXTRACT_LOCAL_CLASSES  = YES
+
+HIDE_UNDOC_NAMESPACES  = NO   # if present in your Doxyfile
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+PREDEFINED             = Q_OBJECT= Q_GADGET= signals=public slots=public
