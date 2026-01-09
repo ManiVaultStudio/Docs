@@ -963,6 +963,104 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="261" column="36"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a4897eb7dbfbb888e307ae098aacd3d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractPluginManager::pluginAdded</definition>
+        <argsstring>(plugin::Plugin *plugin)</argsstring>
+        <name>pluginAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>plugin</computeroutput> instance is added to the plugin manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the plugin that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1ac127d3649e1975e9a2da8f09f2a1a387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractPluginManager::pluginAboutToBeDestroyed</definition>
+        <argsstring>(plugin::Plugin *plugin)</argsstring>
+        <name>pluginAboutToBeDestroyed</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>plugin</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>plugin</computeroutput> is about to be destroyed by the plugin manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the plugin that is about to be destroyed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="284" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1af1e5a5e20849c02a2a65b2d59598319f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractPluginManager::pluginDestroyed</definition>
+        <argsstring>(const QString &amp;id)</argsstring>
+        <name>pluginDestroyed</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Signals that plugin with <computeroutput>id</computeroutput> is destroyed by the plugin manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique ID of the destroyed plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="290" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a9ebc23c952524d3fd64c2dc44e69a6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractPluginManager::pluginFactoriesLoaded</definition>
+        <argsstring>()</argsstring>
+        <name>pluginFactoriesLoaded</name>
+        <briefdescription>
+<para>Signals that all plugin factories have been loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="293" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a70686230a4518abe90e4c82acb423490" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -1026,106 +1124,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="270" column="25"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1AbstractPluginManager_1a4897eb7dbfbb888e307ae098aacd3d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractPluginManager::pluginAdded</definition>
-        <argsstring>(plugin::Plugin *plugin)</argsstring>
-        <name>pluginAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
-          <declname>plugin</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>plugin</computeroutput> instance is added to the plugin manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>plugin</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the plugin that was added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="278" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractPluginManager_1ac127d3649e1975e9a2da8f09f2a1a387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractPluginManager::pluginAboutToBeDestroyed</definition>
-        <argsstring>(plugin::Plugin *plugin)</argsstring>
-        <name>pluginAboutToBeDestroyed</name>
-        <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
-          <declname>plugin</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>plugin</computeroutput> is about to be destroyed by the plugin manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>plugin</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the plugin that is about to be destroyed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="284" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractPluginManager_1af1e5a5e20849c02a2a65b2d59598319f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractPluginManager::pluginDestroyed</definition>
-        <argsstring>(const QString &amp;id)</argsstring>
-        <name>pluginDestroyed</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-<para>Signals that plugin with <computeroutput>id</computeroutput> is destroyed by the plugin manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>id</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Globally unique ID of the destroyed plugin </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="290" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractPluginManager_1a9ebc23c952524d3fd64c2dc44e69a6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractPluginManager::pluginFactoriesLoaded</definition>
-        <argsstring>()</argsstring>
-        <name>pluginFactoriesLoaded</name>
-        <briefdescription>
-<para>Signals that all plugin factories have been loaded. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="293" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

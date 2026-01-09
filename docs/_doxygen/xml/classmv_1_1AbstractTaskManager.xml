@@ -127,6 +127,90 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="59" column="11" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskManager.h" bodystart="59" bodyend="68"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskManager_1ae62841435dee731f3b3e6f52411591f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskManager::taskAdded</definition>
+        <argsstring>(Task *task)</argsstring>
+        <name>taskAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>task</computeroutput> is added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> which is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskManager_1a769a27e9edd44fb89cb9c1c323cba7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskManager::taskAboutToBeRemoved</definition>
+        <argsstring>(Task *task)</argsstring>
+        <name>taskAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>task</computeroutput> is about to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> which is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractTaskManager_1a65d698dd3e3c83cc92cc58399980b495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractTaskManager::taskRemoved</definition>
+        <argsstring>(const QString &amp;taskId)</argsstring>
+        <name>taskRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>taskId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that task with <computeroutput>taskId</computeroutput> is removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>taskId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Globally unique identifier of the task which is removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="102" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classmv_1_1AbstractTaskManager_1a783af4cde721515d4cbd81a19d7921f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -186,92 +270,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="82" column="18"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1AbstractTaskManager_1ae62841435dee731f3b3e6f52411591f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractTaskManager::taskAdded</definition>
-        <argsstring>(Task *task)</argsstring>
-        <name>taskAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
-          <declname>task</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>task</computeroutput> is added. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>task</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> which is added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="90" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractTaskManager_1a769a27e9edd44fb89cb9c1c323cba7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractTaskManager::taskAboutToBeRemoved</definition>
-        <argsstring>(Task *task)</argsstring>
-        <name>taskAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
-          <declname>task</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>task</computeroutput> is about to be removed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>task</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> which is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="96" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractTaskManager_1a65d698dd3e3c83cc92cc58399980b495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractTaskManager::taskRemoved</definition>
-        <argsstring>(const QString &amp;taskId)</argsstring>
-        <name>taskRemoved</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>taskId</declname>
-        </param>
-        <briefdescription>
-<para>Signals that task with <computeroutput>taskId</computeroutput> is removed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>taskId</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Globally unique identifier of the task which is removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskManager.h" line="102" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
