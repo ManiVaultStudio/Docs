@@ -333,6 +333,146 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="129" column="17"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1af730d3eff3a472fc538da804443737af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemAdded</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is added to the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to added data hierarchy item </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a60728acfff5ab2ce4d2f9ce45d535f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemAboutToBeRemoved</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is about to be removed from the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data hierarchy item which is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a946fe39042ea16b6f9a7b8eb2f12575f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemRemoved</definition>
+        <argsstring>(const QString &amp;datasetId)</argsstring>
+        <name>itemRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that hierarchy item <computeroutput>datasetId</computeroutput> is removed from the hierarchy manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the removed dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1a440c7b730fa04df4c446cb8bcdbed4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::itemParentChanged</definition>
+        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
+        <name>itemParentChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
+          <declname>dataHierarchyItem</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the parent of <computeroutput>dataHierarchyItem</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataHierarchyItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to data hierarchy item of which the parent changed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1aec40e878dd11ce423042ff43cad07e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataHierarchyManager::selectedItemsChanged</definition>
+        <argsstring>(DataHierarchyItems selectedItems)</argsstring>
+        <name>selectedItemsChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
+          <declname>selectedItems</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the selected items changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selectedItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointers to selected data hierarchy items </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="161" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classmv_1_1AbstractDataHierarchyManager_1abe8087d35fd6242a8bc43a6df81f1df0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -432,148 +572,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="115" column="18"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1af730d3eff3a472fc538da804443737af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataHierarchyManager::itemAdded</definition>
-        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
-        <name>itemAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
-          <declname>dataHierarchyItem</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is added to the hierarchy manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataHierarchyItem</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to added data hierarchy item </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="137" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a60728acfff5ab2ce4d2f9ce45d535f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataHierarchyManager::itemAboutToBeRemoved</definition>
-        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
-        <name>itemAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
-          <declname>dataHierarchyItem</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>dataHierarchyItem</computeroutput> is about to be removed from the hierarchy manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataHierarchyItem</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to data hierarchy item which is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="143" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a946fe39042ea16b6f9a7b8eb2f12575f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataHierarchyManager::itemRemoved</definition>
-        <argsstring>(const QString &amp;datasetId)</argsstring>
-        <name>itemRemoved</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>datasetId</declname>
-        </param>
-        <briefdescription>
-<para>Signals that hierarchy item <computeroutput>datasetId</computeroutput> is removed from the hierarchy manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>datasetId</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>GUID of the removed dataset </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="149" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1a440c7b730fa04df4c446cb8bcdbed4a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataHierarchyManager::itemParentChanged</definition>
-        <argsstring>(DataHierarchyItem *dataHierarchyItem)</argsstring>
-        <name>itemParentChanged</name>
-        <param>
-          <type><ref refid="classmv_1_1DataHierarchyItem" kindref="compound">DataHierarchyItem</ref> *</type>
-          <declname>dataHierarchyItem</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the parent of <computeroutput>dataHierarchyItem</computeroutput> changed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataHierarchyItem</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to data hierarchy item of which the parent changed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="155" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataHierarchyManager_1aec40e878dd11ce423042ff43cad07e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataHierarchyManager::selectedItemsChanged</definition>
-        <argsstring>(DataHierarchyItems selectedItems)</argsstring>
-        <name>selectedItemsChanged</name>
-        <param>
-          <type><ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref></type>
-          <declname>selectedItems</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the selected items changed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>selectedItems</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointers to selected data hierarchy items </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataHierarchyManager.h" line="161" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

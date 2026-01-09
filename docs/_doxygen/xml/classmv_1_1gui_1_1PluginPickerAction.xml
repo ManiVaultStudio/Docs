@@ -471,6 +471,142 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="164" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/PluginPickerAction.cpp" bodystart="342" bodyend="351"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginPickerAction_1a5894ad24ae068a19e8c9e4c8290bc94d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PluginPickerAction::pluginPicked</definition>
+        <argsstring>(plugin::Plugin *pickedPlugin)</argsstring>
+        <name>pluginPicked</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <declname>pickedPlugin</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>pickedPlugin</computeroutput> is picked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pickedPlugin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to picked plugin </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginPickerAction_1a891ee1370b643d93883a77296a0f60cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PluginPickerAction::pluginsChanged</definition>
+        <argsstring>(const plugin::Plugins &amp;plugins)</argsstring>
+        <name>pluginsChanged</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" kindref="member">plugin::Plugins</ref> &amp;</type>
+          <declname>plugins</declname>
+        </param>
+        <briefdescription>
+<para>Signals that selectable plugins changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plugins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selectable plugins </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginPickerAction_1a1b638542bc6f74efed4714fc4e30caf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PluginPickerAction::populationModeChanged</definition>
+        <argsstring>(AbstractPluginsModel::PopulationMode previousPopulationMode, AbstractPluginsModel::PopulationMode currentPopulationMode)</argsstring>
+        <name>populationModeChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractPluginsModel_1adfda7a84e25069b474f1efb922e2cb95" kindref="member">AbstractPluginsModel::PopulationMode</ref></type>
+          <declname>previousPopulationMode</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1AbstractPluginsModel_1adfda7a84e25069b474f1efb922e2cb95" kindref="member">AbstractPluginsModel::PopulationMode</ref></type>
+          <declname>currentPopulationMode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the population mode changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousPopulationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previous population mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPopulationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current population mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="185" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginPickerAction_1a53a031bf5fc4bdb0c34ae087a39eb300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::PluginPickerAction::filterPluginTypesChanged</definition>
+        <argsstring>(const plugin::Types &amp;previousFilterPluginTypes, const plugin::Types &amp;currentFilterPluginTypes)</argsstring>
+        <name>filterPluginTypesChanged</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <declname>previousFilterPluginTypes</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <declname>currentFilterPluginTypes</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the filter plugin types changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousFilterPluginTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previous filter plugin types </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentFilterPluginTypes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current filter plugin types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="192" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginPickerAction_1a7d96b6628fcb92a3f756968710fba5ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -603,144 +739,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="150" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginPickerAction.cpp" bodystart="313" bodyend="331"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1gui_1_1PluginPickerAction_1a5894ad24ae068a19e8c9e4c8290bc94d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::PluginPickerAction::pluginPicked</definition>
-        <argsstring>(plugin::Plugin *pickedPlugin)</argsstring>
-        <name>pluginPicked</name>
-        <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
-          <declname>pickedPlugin</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>pickedPlugin</computeroutput> is picked. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pickedPlugin</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to picked plugin </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="172" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1PluginPickerAction_1a891ee1370b643d93883a77296a0f60cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::PluginPickerAction::pluginsChanged</definition>
-        <argsstring>(const plugin::Plugins &amp;plugins)</argsstring>
-        <name>pluginsChanged</name>
-        <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" kindref="member">plugin::Plugins</ref> &amp;</type>
-          <declname>plugins</declname>
-        </param>
-        <briefdescription>
-<para>Signals that selectable plugins changed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>plugins</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Selectable plugins </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="178" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1PluginPickerAction_1a1b638542bc6f74efed4714fc4e30caf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::PluginPickerAction::populationModeChanged</definition>
-        <argsstring>(AbstractPluginsModel::PopulationMode previousPopulationMode, AbstractPluginsModel::PopulationMode currentPopulationMode)</argsstring>
-        <name>populationModeChanged</name>
-        <param>
-          <type><ref refid="classmv_1_1AbstractPluginsModel_1adfda7a84e25069b474f1efb922e2cb95" kindref="member">AbstractPluginsModel::PopulationMode</ref></type>
-          <declname>previousPopulationMode</declname>
-        </param>
-        <param>
-          <type><ref refid="classmv_1_1AbstractPluginsModel_1adfda7a84e25069b474f1efb922e2cb95" kindref="member">AbstractPluginsModel::PopulationMode</ref></type>
-          <declname>currentPopulationMode</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the population mode changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>previousPopulationMode</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Previous population mode </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>currentPopulationMode</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Current population mode </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="185" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1PluginPickerAction_1a53a031bf5fc4bdb0c34ae087a39eb300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::PluginPickerAction::filterPluginTypesChanged</definition>
-        <argsstring>(const plugin::Types &amp;previousFilterPluginTypes, const plugin::Types &amp;currentFilterPluginTypes)</argsstring>
-        <name>filterPluginTypesChanged</name>
-        <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
-          <declname>previousFilterPluginTypes</declname>
-        </param>
-        <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
-          <declname>currentFilterPluginTypes</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the filter plugin types changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>previousFilterPluginTypes</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Previous filter plugin types </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>currentFilterPluginTypes</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Current filter plugin types </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginPickerAction.h" line="192" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

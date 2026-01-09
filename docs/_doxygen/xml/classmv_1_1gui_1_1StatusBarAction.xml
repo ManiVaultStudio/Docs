@@ -507,6 +507,158 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="171" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="155" bodyend="163"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1addb98d7aca3d34b6df8da8d425404348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::popupActionChanged</definition>
+        <argsstring>(WidgetAction *previousPopupAction, WidgetAction *popupAction)</argsstring>
+        <name>popupActionChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>previousPopupAction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>popupAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the popup action changed from <computeroutput>previousPopupAction</computeroutput> to <computeroutput>popupAction</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousPopupAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to previous action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>popupAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to current action (maybe nullptr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1abb390b8dac54d839daedb7c41446da61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::indexChanged</definition>
+        <argsstring>(std::int32_t index)</argsstring>
+        <name>indexChanged</name>
+        <param>
+          <type>std::int32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the position <computeroutput>index</computeroutput> changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1ac519d64d1c0cf038ba82acfd0f6bd20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::menuActionAdded</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>menuActionAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>menuAction</computeroutput> was added. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a8e44677ac65e4092d61f52b4e843e59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::menuActionAboutToBeRemoved</definition>
+        <argsstring>(WidgetAction *menuAction)</argsstring>
+        <name>menuActionAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
+          <declname>menuAction</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>menuAction</computeroutput> is about to be removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to menu action is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="206" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a8263e95610f0dfe0740081f238d8be0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::requirePopupShow</definition>
+        <argsstring>()</argsstring>
+        <name>requirePopupShow</name>
+        <briefdescription>
+<para>Signals that a popup should be displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="209" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1af1e3283000c43aa2241967c46a5d51e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::StatusBarAction::requirePopupHide</definition>
+        <argsstring>()</argsstring>
+        <name>requirePopupHide</name>
+        <briefdescription>
+<para>Signals that a popup should be hidden. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="212" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classmv_1_1gui_1_1StatusBarAction_1a1c69a393075950b8a6483546a629ba6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -555,160 +707,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="179" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/StatusBarAction.cpp" bodystart="165" bodyend="222"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1addb98d7aca3d34b6df8da8d425404348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::popupActionChanged</definition>
-        <argsstring>(WidgetAction *previousPopupAction, WidgetAction *popupAction)</argsstring>
-        <name>popupActionChanged</name>
-        <param>
-          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
-          <declname>previousPopupAction</declname>
-        </param>
-        <param>
-          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
-          <declname>popupAction</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the popup action changed from <computeroutput>previousPopupAction</computeroutput> to <computeroutput>popupAction</computeroutput>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>previousPopupAction</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to previous action (maybe nullptr) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>popupAction</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to current action (maybe nullptr) </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="188" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1abb390b8dac54d839daedb7c41446da61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::indexChanged</definition>
-        <argsstring>(std::int32_t index)</argsstring>
-        <name>indexChanged</name>
-        <param>
-          <type>std::int32_t</type>
-          <declname>index</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the position <computeroutput>index</computeroutput> changed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>index</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Position index </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="194" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1ac519d64d1c0cf038ba82acfd0f6bd20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::menuActionAdded</definition>
-        <argsstring>(WidgetAction *menuAction)</argsstring>
-        <name>menuActionAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
-          <declname>menuAction</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>menuAction</computeroutput> was added. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>menuAction</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to menu action that was added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="200" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1a8e44677ac65e4092d61f52b4e843e59e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::menuActionAboutToBeRemoved</definition>
-        <argsstring>(WidgetAction *menuAction)</argsstring>
-        <name>menuActionAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *</type>
-          <declname>menuAction</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>menuAction</computeroutput> is about to be removed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>menuAction</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to menu action is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="206" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1a8263e95610f0dfe0740081f238d8be0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::requirePopupShow</definition>
-        <argsstring>()</argsstring>
-        <name>requirePopupShow</name>
-        <briefdescription>
-<para>Signals that a popup should be displayed. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="209" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1StatusBarAction_1af1e3283000c43aa2241967c46a5d51e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::StatusBarAction::requirePopupHide</definition>
-        <argsstring>()</argsstring>
-        <name>requirePopupHide</name>
-        <briefdescription>
-<para>Signals that a popup should be hidden. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/StatusBarAction.h" line="212" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -2582,8 +2582,8 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QDesktopServices::openUrl(QUrl(</highlight><highlight class="stringliteral">&quot;https://github.com/ManiVaultStudio/PublicWiki&quot;</highlight><highlight class="normal">,<sp/>QUrl::TolerantMode));</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;_aboutAction,<sp/>&amp;TriggerAction::triggered,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;HelpMenu::about);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;_aboutThirdPartiesAction,<sp/>&amp;TriggerAction::triggered,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;HelpMenu::aboutThirdParties);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;_aboutAction,<sp/>&amp;TriggerAction::triggered,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classHelpMenu_1a0544cc9f3e27a487f2ec902620078dd5" kindref="member">HelpMenu::about</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;_aboutThirdPartiesAction,<sp/>&amp;TriggerAction::triggered,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classHelpMenu_1a18d3932df52c6d23f7c48471996c50eb" kindref="member">HelpMenu::aboutThirdParties</ref>);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;_aboutQtAction,<sp/>&amp;TriggerAction::triggered,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::aboutQt(this-&gt;parentWidget(),<sp/></highlight><highlight class="stringliteral">&quot;About<sp/>Qt&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -2596,12 +2596,12 @@
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline lineno="109"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HelpMenu::about()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpMenu_1a0544cc9f3e27a487f2ec902620078dd5" kindref="member">HelpMenu::about</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="112"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::about(this-&gt;parentWidget(),<sp/>tr(</highlight><highlight class="stringliteral">&quot;About<sp/>ManiVault&quot;</highlight><highlight class="normal">),<sp/>Application::getAbout());</highlight></codeline>
 <codeline lineno="114"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HelpMenu::aboutThirdParties()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpMenu_1a18d3932df52c6d23f7c48471996c50eb" kindref="member">HelpMenu::aboutThirdParties</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="117"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>message<sp/>=<sp/>QMessageBox::tr(</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;p&gt;ManiVault<sp/>uses<sp/>several<sp/>third<sp/>party<sp/>libraries:<sp/>&lt;/p&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>

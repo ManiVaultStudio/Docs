@@ -446,6 +446,102 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="156" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.cpp" bodystart="315" bodyend="326"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DatasetPickerAction_1aa4221b0bf5d0bae33b56757d05909751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DatasetPickerAction::datasetPicked</definition>
+        <argsstring>(mv::Dataset&lt;&gt; pickedDataset)</argsstring>
+        <name>datasetPicked</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt;&gt;</type>
+          <declname>pickedDataset</declname>
+        </param>
+        <briefdescription>
+<para>Signals that a dataset has been picked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pickedDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Smart pointer to picked dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="182" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DatasetPickerAction_1ab2449279c678d4b086f71f8f450ab830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DatasetPickerAction::datasetsChanged</definition>
+        <argsstring>(mv::Datasets datasets)</argsstring>
+        <name>datasetsChanged</name>
+        <param>
+          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref></type>
+          <declname>datasets</declname>
+        </param>
+        <briefdescription>
+<para>Signals that selectable datasets changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Selectable datasets </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1gui_1_1DatasetPickerAction_1a52c98155ca2ace596333252a7076985d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::gui::DatasetPickerAction::populationModeChanged</definition>
+        <argsstring>(AbstractDatasetsModel::PopulationMode previousPopulationMode, AbstractDatasetsModel::PopulationMode currentPopulationMode)</argsstring>
+        <name>populationModeChanged</name>
+        <param>
+          <type><ref refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" kindref="member">AbstractDatasetsModel::PopulationMode</ref></type>
+          <declname>previousPopulationMode</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" kindref="member">AbstractDatasetsModel::PopulationMode</ref></type>
+          <declname>currentPopulationMode</declname>
+        </param>
+        <briefdescription>
+<para>Signals that the population mode changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>previousPopulationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Previous population mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentPopulationMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current population mode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="195" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classmv_1_1gui_1_1DatasetPickerAction_1a4065319e97612b7c67443790c46bc0dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -654,104 +750,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="174" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.cpp" bodystart="343" bodyend="346"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1gui_1_1DatasetPickerAction_1aa4221b0bf5d0bae33b56757d05909751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::DatasetPickerAction::datasetPicked</definition>
-        <argsstring>(mv::Dataset&lt;&gt; pickedDataset)</argsstring>
-        <name>datasetPicked</name>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset</ref>&lt;&gt;</type>
-          <declname>pickedDataset</declname>
-        </param>
-        <briefdescription>
-<para>Signals that a dataset has been picked. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pickedDataset</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Smart pointer to picked dataset </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="182" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1DatasetPickerAction_1ab2449279c678d4b086f71f8f450ab830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::DatasetPickerAction::datasetsChanged</definition>
-        <argsstring>(mv::Datasets datasets)</argsstring>
-        <name>datasetsChanged</name>
-        <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref></type>
-          <declname>datasets</declname>
-        </param>
-        <briefdescription>
-<para>Signals that selectable datasets changed. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>datasets</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Selectable datasets </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="188" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1gui_1_1DatasetPickerAction_1a52c98155ca2ace596333252a7076985d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::gui::DatasetPickerAction::populationModeChanged</definition>
-        <argsstring>(AbstractDatasetsModel::PopulationMode previousPopulationMode, AbstractDatasetsModel::PopulationMode currentPopulationMode)</argsstring>
-        <name>populationModeChanged</name>
-        <param>
-          <type><ref refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" kindref="member">AbstractDatasetsModel::PopulationMode</ref></type>
-          <declname>previousPopulationMode</declname>
-        </param>
-        <param>
-          <type><ref refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" kindref="member">AbstractDatasetsModel::PopulationMode</ref></type>
-          <declname>currentPopulationMode</declname>
-        </param>
-        <briefdescription>
-<para>Signals that the population mode changed from <computeroutput>previousPopulationMode</computeroutput> to <computeroutput>currentPopulationMode</computeroutput>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>previousPopulationMode</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Previous population mode </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>currentPopulationMode</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Current population mode </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/DatasetPickerAction.h" line="195" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

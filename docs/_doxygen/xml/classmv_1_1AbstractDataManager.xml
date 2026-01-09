@@ -1136,6 +1136,283 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="332" column="18"/>
       </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a61ece8a64df45be1882e40df3e9b4969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::rawDataAdded</definition>
+        <argsstring>(plugin::RawData *rawData)</argsstring>
+        <name>rawDataAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <declname>rawData</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>rawData</computeroutput> is added to the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to raw data that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="340" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a11f2cbec53734b438f9ad6617ff107ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::rawDataAboutToBeRemoved</definition>
+        <argsstring>(plugin::RawData *rawData)</argsstring>
+        <name>rawDataAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <declname>rawData</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>rawData</computeroutput> is about to be removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to raw data that is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="346" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a2911cfe3ec258ba97e40ff34ba0d5b83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::rawDataRemoved</definition>
+        <argsstring>(const QString &amp;rawDataId)</argsstring>
+        <name>rawDataRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>rawDataId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that raw data with <computeroutput>rawDataId</computeroutput> is removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to raw data that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="352" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a33f0899627aa817672e81e289aefc9d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::datasetAdded</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, Dataset&lt; DatasetImpl &gt; parentDataset, bool visible=true)</argsstring>
+        <name>datasetAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>parentDataset</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataset</computeroutput> is added to the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> that was added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentDataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent dataset (if any) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether <computeroutput>dataset</computeroutput> should be visible or not </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="360" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a757ec5d41671a0880c2e4c3027f13ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::datasetAboutToBeRemoved</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
+        <name>datasetAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>dataset</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>dataset</computeroutput> is about to be removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> which is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="366" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1ada7ddc11155258a93d5e5d98ea9a60f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::datasetRemoved</definition>
+        <argsstring>(const QString &amp;datasetId)</argsstring>
+        <name>datasetRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>datasetId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that dataset with <computeroutput>datasetId</computeroutput> is removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>datasetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the removed dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="372" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1aa95a869814f143b7b5b67ad469ff978e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::selectionAdded</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; selection)</argsstring>
+        <name>selectionAdded</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>selection</computeroutput> dataset is added to the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that was added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a9b8d1870ff45a6c95020e8b8b6ccef8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::selectionAboutToBeRemoved</definition>
+        <argsstring>(Dataset&lt; DatasetImpl &gt; selection)</argsstring>
+        <name>selectionAboutToBeRemoved</name>
+        <param>
+          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+<para>Signals that <computeroutput>selection</computeroutput> dataset is about to be removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that is about to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="384" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a348db827452788e5bf47c50ed2615bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mv::AbstractDataManager::selectionRemoved</definition>
+        <argsstring>(const QString &amp;selectionId)</argsstring>
+        <name>selectionRemoved</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>selectionId</declname>
+        </param>
+        <briefdescription>
+<para>Signals that selection dataset with <computeroutput>selectionId</computeroutput> is removed from the data manager. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selectionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUID of the removed selection dataset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="390" column="10"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classmv_1_1AbstractDataManager_1ac564746f4e85bdd898515c3a0dc4d3c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -1385,285 +1662,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="302" column="18"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="signal">
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a61ece8a64df45be1882e40df3e9b4969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::rawDataAdded</definition>
-        <argsstring>(plugin::RawData *rawData)</argsstring>
-        <name>rawDataAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
-          <declname>rawData</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>rawData</computeroutput> is added to the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>rawData</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to raw data that was added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="340" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a11f2cbec53734b438f9ad6617ff107ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::rawDataAboutToBeRemoved</definition>
-        <argsstring>(plugin::RawData *rawData)</argsstring>
-        <name>rawDataAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
-          <declname>rawData</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>rawData</computeroutput> is about to be removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>rawData</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to raw data that is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="346" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a2911cfe3ec258ba97e40ff34ba0d5b83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::rawDataRemoved</definition>
-        <argsstring>(const QString &amp;rawDataId)</argsstring>
-        <name>rawDataRemoved</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>rawDataId</declname>
-        </param>
-        <briefdescription>
-<para>Signals that raw data with <computeroutput>rawDataId</computeroutput> is removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>rawData</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to raw data that was added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="352" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a33f0899627aa817672e81e289aefc9d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::datasetAdded</definition>
-        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, Dataset&lt; DatasetImpl &gt; parentDataset, bool visible=true)</argsstring>
-        <name>datasetAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-          <declname>dataset</declname>
-        </param>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-          <declname>parentDataset</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>visible</declname>
-          <defval>true</defval>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>dataset</computeroutput> is added to the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataset</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> that was added </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>parentDataset</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Parent dataset (if any) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>visible</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether <computeroutput>dataset</computeroutput> should be visible or not </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="360" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a757ec5d41671a0880c2e4c3027f13ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::datasetAboutToBeRemoved</definition>
-        <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
-        <name>datasetAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-          <declname>dataset</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>dataset</computeroutput> is about to be removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dataset</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref> which is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="366" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1ada7ddc11155258a93d5e5d98ea9a60f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::datasetRemoved</definition>
-        <argsstring>(const QString &amp;datasetId)</argsstring>
-        <name>datasetRemoved</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>datasetId</declname>
-        </param>
-        <briefdescription>
-<para>Signals that dataset with <computeroutput>datasetId</computeroutput> is removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>datasetId</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>GUID of the removed dataset </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="372" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1aa95a869814f143b7b5b67ad469ff978e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::selectionAdded</definition>
-        <argsstring>(Dataset&lt; DatasetImpl &gt; selection)</argsstring>
-        <name>selectionAdded</name>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-          <declname>selection</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>selection</computeroutput> dataset is added to the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>selection</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that was added </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="378" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a9b8d1870ff45a6c95020e8b8b6ccef8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::selectionAboutToBeRemoved</definition>
-        <argsstring>(Dataset&lt; DatasetImpl &gt; selection)</argsstring>
-        <name>selectionAboutToBeRemoved</name>
-        <param>
-          <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-          <declname>selection</declname>
-        </param>
-        <briefdescription>
-<para>Signals that <computeroutput>selection</computeroutput> dataset is about to be removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>selection</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that is about to be removed </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="384" column="10"/>
-      </memberdef>
-      <memberdef kind="signal" id="classmv_1_1AbstractDataManager_1a348db827452788e5bf47c50ed2615bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void mv::AbstractDataManager::selectionRemoved</definition>
-        <argsstring>(const QString &amp;selectionId)</argsstring>
-        <name>selectionRemoved</name>
-        <param>
-          <type>const QString &amp;</type>
-          <declname>selectionId</declname>
-        </param>
-        <briefdescription>
-<para>Signals that selection dataset with <computeroutput>selectionId</computeroutput> is removed from the data manager. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>selectionId</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>GUID of the removed selection dataset </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="390" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
