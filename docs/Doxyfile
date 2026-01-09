@@ -81,4 +81,19 @@ HIDE_UNDOC_NAMESPACES  = NO   # if present in your Doxyfile
 ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
 EXPAND_ONLY_PREDEF     = YES
-PREDEFINED             = Q_OBJECT= Q_GADGET= signals=public slots=public
+
+PREDEFINED             = Q_OBJECT=
+PREDEFINED            += Q_GADGET=
+PREDEFINED            += signals=public
+PREDEFINED            += slots=
+PREDEFINED            += Q_SLOTS=
+PREDEFINED            += Q_SIGNALS=public
+
+# Critical: prevent Doxygen from generating memberdef kind="property"
+PREDEFINED            += Q_PROPERTY(...)=
+
+# Often helpful too (prevents enum/meta noise)
+PREDEFINED            += Q_ENUM(...)=
+PREDEFINED            += Q_FLAG(...)=
+PREDEFINED            += Q_FLAGS(...)=
+PREDEFINED            += Q_DECLARE_METATYPE(...)=
