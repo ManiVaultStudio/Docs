@@ -1,11 +1,147 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
-  <compounddef id="namespacemv_1_1Plugin" kind="namespace" language="C++">
-    <compoundname>mv::Plugin</compoundname>
+  <compounddef id="namespacemv_1_1plugin" kind="namespace" language="C++">
+    <compoundname>mv::plugin</compoundname>
+    <innerclass refid="structmv_1_1plugin_1_1TypeHash" prot="public">mv::plugin::TypeHash</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1ViewPlugin" prot="public">mv::plugin::ViewPlugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1ViewPluginFactory" prot="public">mv::plugin::ViewPluginFactory</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1Plugin" prot="public">mv::plugin::Plugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1PluginFactory" prot="public">mv::plugin::PluginFactory</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1PluginMetadata" prot="public">mv::plugin::PluginMetadata</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1AnalysisPlugin" prot="public">mv::plugin::AnalysisPlugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1AnalysisPluginFactory" prot="public">mv::plugin::AnalysisPluginFactory</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1RawData" prot="public">mv::plugin::RawData</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1RawDataFactory" prot="public">mv::plugin::RawDataFactory</innerclass>
+    <innerclass refid="structmv_1_1plugin_1_1DataLoadException" prot="public">mv::plugin::DataLoadException</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1LoaderPlugin" prot="public">mv::plugin::LoaderPlugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1LoaderPluginFactory" prot="public">mv::plugin::LoaderPluginFactory</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1TransformationPlugin" prot="public">mv::plugin::TransformationPlugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1TransformationPluginFactory" prot="public">mv::plugin::TransformationPluginFactory</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1WriterPlugin" prot="public">mv::plugin::WriterPlugin</innerclass>
+    <innerclass refid="classmv_1_1plugin_1_1WriterPluginFactory" prot="public">mv::plugin::WriterPluginFactory</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Type</name>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" prot="public">
+          <name>ANALYSIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" prot="public">
+          <name>DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" prot="public">
+          <name>LOADER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" prot="public">
+          <name>WRITER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" prot="public">
+          <name>TRANSFORMATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" prot="public">
+          <name>VIEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/PluginType.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/PluginType.h" bodystart="30" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" prot="public" static="no">
+        <type>QVector&lt; <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref> &gt;</type>
+        <definition>using mv::plugin::Types = typedef QVector&lt;Type&gt;</definition>
+        <argsstring></argsstring>
+        <name>Types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/PluginType.h" line="47" column="5" bodyfile="Docs/external/core/ManiVault/src/PluginType.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacemv_1_1plugin_1a127963235a19eda216c80ec0e9d3ffe5" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">Plugin</ref> * &gt;</type>
+        <definition>using mv::plugin::Plugins = typedef std::vector&lt;Plugin*&gt;</definition>
+        <argsstring></argsstring>
+        <name>Plugins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/Plugin.h" line="221" column="1" bodyfile="Docs/external/core/ManiVault/src/Plugin.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemv_1_1plugin_1a20250a87e55bfd88aedd86b1acd878d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref> QString</type>
+        <definition>QString mv::plugin::getPluginTypeName</definition>
+        <argsstring>(const Type &amp;type)</argsstring>
+        <name>getPluginTypeName</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/PluginType.cpp" line="13" column="9" bodyfile="Docs/external/core/ManiVault/src/PluginType.cpp" bodystart="13" bodyend="25" declfile="Docs/external/core/ManiVault/src/PluginType.h" declline="49" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemv_1_1plugin_1a8ef0a4861c55a41239efbf18c4bb95fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref> QIcon</type>
+        <definition>QIcon mv::plugin::getPluginTypeIcon</definition>
+        <argsstring>(const Type &amp;type)</argsstring>
+        <name>getPluginTypeIcon</name>
+        <param>
+          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Docs/external/core/ManiVault/src/PluginType.cpp" line="27" column="7" bodyfile="Docs/external/core/ManiVault/src/PluginType.cpp" bodystart="27" bodyend="39" declfile="Docs/external/core/ManiVault/src/PluginType.h" declline="50" declcolumn="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Docs/external/core/ManiVault/src/DataType.h" line="14" column="5"/>
+    <location file="Docs/external/core/ManiVault/src/CoreInterface.h" line="37" column="5"/>
   </compounddef>
 </doxygen>
