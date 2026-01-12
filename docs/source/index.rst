@@ -12,6 +12,7 @@ Welcome to ManiVault's documentation!
    :caption: User Guide
 
    usage
+   learning_center
 
 .. toctree::
    :maxdepth: 2
