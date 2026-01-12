@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1PluginManager" kind="class" language="C++" prot="public" final="yes">
     <compoundname>mv::PluginManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractPluginManager" prot="public" virt="non-virtual">mv::AbstractPluginManager</basecompoundref>
-    <includes refid="PluginManager_8h" local="no">PluginManager.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1PluginManager_1a24599da26743816af391f692f11d327c" prot="private" static="no" mutable="no">
         <type>QHash&lt; QString, <ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref> * &gt;</type>
@@ -168,7 +167,7 @@
 <parametername>kind</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> kind </para>
+<para>Plugin kind </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -191,14 +190,14 @@
           <declname>kind</declname>
         </param>
         <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <type>Datasets</type>
           <declname>inputDatasets</declname>
-          <defval><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref>()</defval>
+          <defval>Datasets()</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <type>Datasets</type>
           <declname>outputDatasets</declname>
-          <defval><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref>()</defval>
+          <defval>Datasets()</defval>
         </param>
         <briefdescription>
 <para>Create a plugin of <computeroutput>kind</computeroutput> with input <computeroutput>datasets</computeroutput>. </para>
@@ -253,14 +252,14 @@
           <defval>nullptr</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref></type>
+          <type>gui::DockAreaFlag</type>
           <declname>dockArea</declname>
-          <defval><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4da92b09c7c48c520c3c55e497875da437c" kindref="member">gui::DockAreaFlag::Right</ref></defval>
+          <defval>gui::DockAreaFlag::Right</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <type>Datasets</type>
           <declname>datasets</declname>
-          <defval><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref>()</defval>
+          <defval>Datasets()</defval>
         </param>
         <briefdescription>
 <para>Create a view plugin of <computeroutput>kind</computeroutput>, dock it to <computeroutput>dockToViewPlugin</computeroutput> at <computeroutput>dockArea</computeroutput> and assign the <computeroutput>datasets</computeroutput>. </para>
@@ -318,9 +317,9 @@
           <declname>kind</declname>
         </param>
         <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref></type>
+          <type>Datasets</type>
           <declname>datasets</declname>
-          <defval><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref>()</defval>
+          <defval>Datasets()</defval>
         </param>
         <briefdescription>
 <para>Create a view plugin of <computeroutput>kind</computeroutput>, assign the <computeroutput>datasets</computeroutput> and float it on top of the main window. </para>
@@ -432,7 +431,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> factory of <computeroutput>pluginKind</computeroutput>, nullptr if not found </para>
+<simplesect kind="return"><para>Plugin factory of <computeroutput>pluginKind</computeroutput>, nullptr if not found </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -447,7 +446,7 @@
         <name>getPluginFactoriesByType</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1ab5b3f8bd59d9cd0f80500efaa22e04a6">getPluginFactoriesByType</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref> &amp;</type>
+          <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
         </param>
         <briefdescription>
@@ -459,7 +458,7 @@
 <parametername>pluginType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> type </para>
+<para>Plugin type </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -478,9 +477,9 @@
         <name>getPluginFactoriesByTypes</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1ab02123a4a1f488586dbabb6162a4b0c5">getPluginFactoriesByTypes</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
-          <defval><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref>{ <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" kindref="member">plugin::Type::ANALYSIS</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" kindref="member">plugin::Type::DATA</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" kindref="member">plugin::Type::LOADER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" kindref="member">plugin::Type::WRITER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" kindref="member">plugin::Type::TRANSFORMATION</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" kindref="member">plugin::Type::VIEW</ref> }</defval>
+          <defval>plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }</defval>
         </param>
         <briefdescription>
 <para>Get plugin factories for <computeroutput>pluginTypes</computeroutput> (by default it gets all plugins factories for all types) </para>
@@ -491,7 +490,7 @@
 <parametername>pluginTypes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> types </para>
+<para>Plugin types </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -541,7 +540,7 @@
         <name>getPluginsByType</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1a9c672aa8501c6f7e094e9c66ad850965">getPluginsByType</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref> &amp;</type>
+          <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
         </param>
         <briefdescription>
@@ -553,7 +552,7 @@
 <parametername>pluginType</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> type </para>
+<para>Plugin type </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -572,9 +571,9 @@
         <name>getPluginsByTypes</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1a786370171ebf6c0b9ff51762aeed648a">getPluginsByTypes</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
-          <defval><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref>{ <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" kindref="member">plugin::Type::ANALYSIS</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" kindref="member">plugin::Type::DATA</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" kindref="member">plugin::Type::LOADER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" kindref="member">plugin::Type::WRITER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" kindref="member">plugin::Type::TRANSFORMATION</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" kindref="member">plugin::Type::VIEW</ref> }</defval>
+          <defval>plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }</defval>
         </param>
         <briefdescription>
 <para>Get plugin instances for <computeroutput>pluginTypes</computeroutput>. </para>
@@ -585,7 +584,7 @@
 <parametername>pluginTypes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> types </para>
+<para>Plugin types </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -604,9 +603,9 @@
         <name>getPluginKindsByPluginTypes</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1a5fd2ac965f838cbe91451d4b58ee6466">getPluginKindsByPluginTypes</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
-          <defval><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref>{ <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" kindref="member">plugin::Type::ANALYSIS</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" kindref="member">plugin::Type::DATA</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" kindref="member">plugin::Type::LOADER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" kindref="member">plugin::Type::WRITER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" kindref="member">plugin::Type::TRANSFORMATION</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" kindref="member">plugin::Type::VIEW</ref> }</defval>
+          <defval>plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }</defval>
         </param>
         <briefdescription>
 <para>Get plugin kinds by <computeroutput>pluginType</computeroutput>. </para>
@@ -617,7 +616,7 @@
 <parametername>pluginTypes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> type(s), all plugin types if empty </para>
+<para>Plugin type(s), all plugin types if empty </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -636,9 +635,9 @@
         <name>getLoadedPluginKinds</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1aad1854b61fca631c0f57b5255a4f3ee2">getLoadedPluginKinds</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
-          <defval><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref>{ <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" kindref="member">plugin::Type::ANALYSIS</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" kindref="member">plugin::Type::DATA</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" kindref="member">plugin::Type::LOADER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" kindref="member">plugin::Type::WRITER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" kindref="member">plugin::Type::TRANSFORMATION</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" kindref="member">plugin::Type::VIEW</ref> }</defval>
+          <defval>plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }</defval>
         </param>
         <briefdescription>
 <para>Get loaded plugin kinds by <computeroutput>pluginType</computeroutput>. </para>
@@ -649,7 +648,7 @@
 <parametername>pluginTypes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> type(s), all plugin types if empty </para>
+<para>Plugin type(s), all plugin types if empty </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -668,9 +667,9 @@
         <name>getUsedPluginKinds</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1a9cb17fbc1e18503b061b6d097a3c9aed">getUsedPluginKinds</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref> &amp;</type>
+          <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
-          <defval><ref refid="namespacemv_1_1plugin_1ac42e5aab13b4c0734d8f728172b585f7" kindref="member">plugin::Types</ref>{ <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da211568d8e3915e86126e21f552fdf834" kindref="member">plugin::Type::ANALYSIS</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dae44f9e348e41cb272efa87387728571b" kindref="member">plugin::Type::DATA</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da82b8350d28f0a14e36de1958b3be9205" kindref="member">plugin::Type::LOADER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dade6a892dfba28ced005d17c79010b112" kindref="member">plugin::Type::WRITER</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013dac4bd4daef9a9217247c24768d88c40e6" kindref="member">plugin::Type::TRANSFORMATION</ref>, <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013da5824b315fdbb0f42abfe1bb03f78c270" kindref="member">plugin::Type::VIEW</ref> }</defval>
+          <defval>plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }</defval>
         </param>
         <briefdescription>
 <para>Get used plugin kinds by <computeroutput>pluginType</computeroutput>. </para>
@@ -681,7 +680,7 @@
 <parametername>pluginTypes</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> type(s), all plugin types if empty </para>
+<para>Plugin type(s), all plugin types if empty </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -694,13 +693,13 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="161" column="17" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="726" bodyend="743"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1ad890c7856af59d71f5a36d33120f6f31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>mv::gui::PluginTriggerActions mv::PluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType) const override</argsstring>
         <name>getPluginTriggerActions</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1aa86f7b75ecf78e897de529b05e1c299f">getPluginTriggerActions</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref> &amp;</type>
+          <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
         </param>
         <briefdescription>
@@ -725,17 +724,17 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="170" column="31" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="745" bodyend="758"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1a00d251144c7ac196a602ba8294797d0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>PluginTriggerActions mv::PluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType, const Datasets &amp;datasets) const override</argsstring>
         <name>getPluginTriggerActions</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1ad84e069f17ce88e628934280b7da15d0">getPluginTriggerActions</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref> &amp;</type>
+          <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -768,17 +767,17 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="178" column="31" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="760" bodyend="773"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1aa1e5dc84e703d0969b033f7c0edd79cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>PluginTriggerActions mv::PluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType, const DataTypes &amp;dataTypes) const override</argsstring>
         <name>getPluginTriggerActions</name>
         <reimplements refid="classmv_1_1AbstractPluginManager_1adc5f030d6c29fbed97efdc3c8185b823">getPluginTriggerActions</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">plugin::Type</ref> &amp;</type>
+          <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacemv_1a6ed34faa46563cf7e4591a1f502c2d3e" kindref="member">DataTypes</ref> &amp;</type>
+          <type>const DataTypes &amp;</type>
           <declname>dataTypes</declname>
         </param>
         <briefdescription>
@@ -811,7 +810,7 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="186" column="31" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="775" bodyend="788"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1aacaf0c9e80f7730d64296960176945c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>PluginTriggerActions mv::PluginManager::getPluginTriggerActions</definition>
         <argsstring>(const QString &amp;pluginKind, const Datasets &amp;datasets) const override</argsstring>
         <name>getPluginTriggerActions</name>
@@ -821,7 +820,7 @@
           <declname>pluginKind</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -854,7 +853,7 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="194" column="31" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="790" bodyend="803"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1a163097715c40dd5906db52346ea5460a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>PluginTriggerActions mv::PluginManager::getPluginTriggerActions</definition>
         <argsstring>(const QString &amp;pluginKind, const DataTypes &amp;dataTypes) const override</argsstring>
         <name>getPluginTriggerActions</name>
@@ -864,7 +863,7 @@
           <declname>pluginKind</declname>
         </param>
         <param>
-          <type>const <ref refid="namespacemv_1a6ed34faa46563cf7e4591a1f502c2d3e" kindref="member">DataTypes</ref> &amp;</type>
+          <type>const DataTypes &amp;</type>
           <declname>dataTypes</declname>
         </param>
         <briefdescription>
@@ -956,7 +955,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> icon name of the plugin, null icon the plugin kind was not found </para>
+<simplesect kind="return"><para>Plugin icon name of the plugin, null icon the plugin kind was not found </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -971,7 +970,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -994,7 +993,7 @@
         <location file="Docs/external/core/ManiVault/src/private/PluginManager.h" line="226" column="10" bodyfile="Docs/external/core/ManiVault/src/private/PluginManager.cpp" bodystart="836" bodyend="890"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1PluginManager_1a22104cf5431eeff28ea6c6e7c60a1f3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::PluginManager::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
@@ -1099,7 +1098,7 @@
 <parametername>pluginDir</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> scan directory </para>
+<para>Plugin scan directory </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

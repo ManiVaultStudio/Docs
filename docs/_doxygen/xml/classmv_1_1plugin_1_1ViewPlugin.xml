@@ -10,7 +10,6 @@
     <derivedcompoundref refid="classSharedParametersPlugin" prot="public" virt="non-virtual">SharedParametersPlugin</derivedcompoundref>
     <derivedcompoundref refid="classTasksPlugin" prot="public" virt="non-virtual">TasksPlugin</derivedcompoundref>
     <derivedcompoundref refid="classTutorialPlugin" prot="public" virt="non-virtual">TutorialPlugin</derivedcompoundref>
-    <includes refid="ViewPlugin_8h" local="no">ViewPlugin.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="typedef" id="classmv_1_1plugin_1_1ViewPlugin_1ab3d05c368ecb78f231b60a27bdc5325c" prot="public" static="no">
         <type>std::pair&lt; QPointer&lt; <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> &gt;, QPointer&lt; <ref refid="classmv_1_1gui_1_1ActionOverlayWidget" kindref="compound">gui::ActionOverlayWidget</ref> &gt; &gt;</type>
@@ -209,7 +208,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="215" column="45" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPlugin_1a06f6afdf33bc5e40554fb557de1bf42b" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <type>gui::WidgetActions</type>
         <definition>gui::WidgetActions mv::plugin::ViewPlugin::_titleBarMenuActions</definition>
         <argsstring></argsstring>
         <name>_titleBarMenuActions</name>
@@ -223,7 +222,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="216" column="45" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPlugin_1a7d6a10b928e96681a3b03788a2bcfed3" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <type>gui::WidgetActions</type>
         <definition>gui::WidgetActions mv::plugin::ViewPlugin::_settingsActions</definition>
         <argsstring></argsstring>
         <name>_settingsActions</name>
@@ -251,7 +250,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="218" column="44" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.h" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1plugin_1_1ViewPlugin_1aa92c7282a6bbea0f12ef2b04b74ea3f0" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1ViewPlugin_1ab3d05c368ecb78f231b60a27bdc5325c" kindref="member">ActionWidgetPair</ref> &gt;</type>
+        <type>std::vector&lt; ActionWidgetPair &gt;</type>
         <definition>std::vector&lt;ActionWidgetPair&gt; mv::plugin::ViewPlugin::_actionsWidgets</definition>
         <argsstring></argsstring>
         <name>_actionsWidgets</name>
@@ -336,7 +335,7 @@
         <argsstring>(const Datasets &amp;datasets)</argsstring>
         <name>loadData</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -508,7 +507,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="94" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="284" bodyend="292"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPlugin_1a1dfebb6acc1a40ee6e6ff32a49c8d6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <type>gui::WidgetActions</type>
         <definition>mv::gui::WidgetActions mv::plugin::ViewPlugin::getTitleBarMenuActions</definition>
         <argsstring>()</argsstring>
         <name>getTitleBarMenuActions</name>
@@ -539,9 +538,9 @@
           <defval>nullptr</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4d" kindref="member">gui::DockAreaFlag</ref></type>
+          <type>gui::DockAreaFlag</type>
           <declname>dockArea</declname>
-          <defval><ref refid="namespacemv_1_1gui_1a98979ba5287c3407ced538834713ac4da92b09c7c48c520c3c55e497875da437c" kindref="member">gui::DockAreaFlag::Right</ref></defval>
+          <defval>gui::DockAreaFlag::Right</defval>
         </param>
         <param>
           <type>bool</type>
@@ -549,9 +548,9 @@
           <defval>false</defval>
         </param>
         <param>
-          <type>const <ref refid="namespacemv_1_1gui_1a6261b2823fa4c0ba766d748811822962" kindref="member">gui::AutoHideLocation</ref> &amp;</type>
+          <type>const gui::AutoHideLocation &amp;</type>
           <declname>autoHideLocation</declname>
-          <defval><ref refid="namespacemv_1_1gui_1a6261b2823fa4c0ba766d748811822962a945d5e233cf7d6240f6b783b36a374ff" kindref="member">gui::AutoHideLocation::Left</ref></defval>
+          <defval>gui::AutoHideLocation::Left</defval>
         </param>
         <param>
           <type>const QSize &amp;</type>
@@ -618,7 +617,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="113" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="299" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPlugin_1a8e49a63bfa8cf71e4f1d740ba05f6438" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <type>gui::WidgetActions</type>
         <definition>mv::gui::WidgetActions mv::plugin::ViewPlugin::getDockingActions</definition>
         <argsstring>() const</argsstring>
         <name>getDockingActions</name>
@@ -701,7 +700,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="131" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="336" bodyend="353"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPlugin_1a403d89f7904fbcac7d78b19ad6611d6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">gui::WidgetActions</ref></type>
+        <type>gui::WidgetActions</type>
         <definition>WidgetActions mv::plugin::ViewPlugin::getOverlayActions</definition>
         <argsstring>() const</argsstring>
         <name>getOverlayActions</name>
@@ -799,7 +798,7 @@
         <reimplementedby refid="classSampleScopePlugin_1a77210cef8c9c5d2da8503919b9cb8d8a">fromVariantMap</reimplementedby>
         <reimplementedby refid="classTutorialPlugin_1a5c5f092f83f2aee4011b86eea267855d">fromVariantMap</reimplementedby>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -822,7 +821,7 @@
         <location file="Docs/external/core/ManiVault/src/ViewPlugin.h" line="165" column="10" bodyfile="Docs/external/core/ManiVault/src/ViewPlugin.cpp" bodystart="246" bodyend="257"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1ViewPlugin_1ace257b02ba40f6fc4b70cb274428e597" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::plugin::ViewPlugin::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>

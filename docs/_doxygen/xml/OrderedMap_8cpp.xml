@@ -30,7 +30,7 @@
       </node>
       <node id="7">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -48,7 +48,7 @@
       </node>
       <node id="19">
         <label>util/Timer.h</label>
-        <link refid="Timer_8h"/>
+        <link refid="Timer_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
@@ -58,7 +58,7 @@
       </node>
       <node id="5">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
@@ -70,7 +70,7 @@
       </node>
       <node id="2">
         <label>OrderedMap.h</label>
-        <link refid="OrderedMap_8h"/>
+        <link refid="OrderedMap_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -95,7 +95,7 @@
       </node>
       <node id="4">
         <label>util/Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -133,14 +133,14 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="OrderedMap_8h" kindref="compound">OrderedMap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;OrderedMap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Serialization_8h" kindref="compound">util/Serialization.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Timer_8h" kindref="compound">util/Timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;util/Serialization.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;util/Timer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">mv::util;</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal">{</highlight></codeline>
@@ -174,7 +174,7 @@
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>stdToVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;QString,<sp/>std::vector&lt;QString&gt;&gt;&amp;<sp/>map)</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map.empty())</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>over<sp/>all<sp/>key-value<sp/>pairs<sp/>and<sp/>add<sp/>them<sp/>to<sp/>a<sp/>big<sp/>stringlist</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>combinedList;</highlight></codeline>
@@ -188,7 +188,7 @@
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/>combinedList;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>variantMap<sp/>=<sp/><ref refid="namespacemv_1_1util_1a0c24ba94eb04221cae3cf6641216d203" kindref="member">storeOnDisk</ref>(combinedList);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>variantMap<sp/>=<sp/>storeOnDisk(combinedList);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>variantMap;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -209,7 +209,7 @@
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stdFromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap,<sp/>std::unordered_map&lt;QString,<sp/>std::vector&lt;QString&gt;&gt;&amp;<sp/>map)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>combinedList;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a01c496bb94b7b67bc4301b9113e72433" kindref="member">loadFromDisk</ref>(variantMap,<sp/>combinedList);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loadFromDisk(variantMap,<sp/>combinedList);</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>over<sp/>the<sp/>big<sp/>stringlist<sp/>and<sp/>extract<sp/>the<sp/>key-value<sp/>pairs</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(qsizetype<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>combinedList.size();<sp/>)</highlight></codeline>
@@ -233,7 +233,7 @@
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="100"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1OrderedMap_1a5c933b669d45cffa4e0c4a2b9fab1ed6" kindref="member">OrderedMap::OrderedMap</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>OrderedMap::OrderedMap()<sp/>:</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_numRows(-1)</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
@@ -301,15 +301,15 @@
 <codeline lineno="166"><highlight class="normal"></highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serializable::fromVariantMap(variantMap);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;NumRows&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;ColumnHeaders&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;NumRows&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;ColumnHeaders&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//variantMapMustContain(variantMap,<sp/>&quot;Columns&quot;);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_numRows<sp/>=<sp/>variantMap[</highlight><highlight class="stringliteral">&quot;NumRows&quot;</highlight><highlight class="normal">].value&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&gt;();</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>columnHeadersMap<sp/>=<sp/>variantMap[</highlight><highlight class="stringliteral">&quot;ColumnHeaders&quot;</highlight><highlight class="normal">].toMap();</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>columnHeaders;</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a01c496bb94b7b67bc4301b9113e72433" kindref="member">loadFromDisk</ref>(columnHeadersMap,<sp/>columnHeaders);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loadFromDisk(columnHeadersMap,<sp/>columnHeaders);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(QString<sp/>header<sp/>:<sp/>columnHeaders)</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_columnHeaders.push_back(header);</highlight></codeline>
@@ -336,7 +336,7 @@
 <codeline lineno="201"><highlight class="normal"></highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variantMap.insert({</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;NumRows&quot;</highlight><highlight class="normal">,<sp/>QVariant::fromValue(_numRows)<sp/>},</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ColumnHeaders&quot;</highlight><highlight class="normal">,<sp/>QVariant::fromValue(<ref refid="namespacemv_1_1util_1a0c24ba94eb04221cae3cf6641216d203" kindref="member">storeOnDisk</ref>(columnHeaders))<sp/>},</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;ColumnHeaders&quot;</highlight><highlight class="normal">,<sp/>QVariant::fromValue(storeOnDisk(columnHeaders))<sp/>},</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;Columns&quot;</highlight><highlight class="normal">,<sp/>QVariant::fromValue(columnsMap)<sp/>}</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight></codeline>

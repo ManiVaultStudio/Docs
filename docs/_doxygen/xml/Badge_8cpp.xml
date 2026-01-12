@@ -24,7 +24,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -42,7 +42,7 @@
       </node>
       <node id="2">
         <label>Badge.h</label>
-        <link refid="Badge_8h"/>
+        <link refid="Badge_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -54,7 +54,7 @@
       </node>
       <node id="8">
         <label>Icon.h</label>
-        <link refid="Icon_8h"/>
+        <link refid="Icon_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
@@ -74,13 +74,13 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Badge_8h" kindref="compound">Badge.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Badge.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Icon_8h" kindref="compound">Icon.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Icon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><ref refid="classmv_1_1util_1_1Badge_1a799b4c999f735730f0c7b80f1e25a06b" kindref="member">Badge::Badge</ref>(QObject*<sp/>parent<sp/></highlight><highlight class="comment">/*=<sp/>nullptr*/</highlight><highlight class="normal">,<sp/>std::uint32_t<sp/>number<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>backgroundColor<sp/></highlight><highlight class="comment">/*=<sp/>Qt::red*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>foregroundColor<sp/></highlight><highlight class="comment">/*=<sp/>Qt::white*/</highlight><highlight class="normal">,<sp/>Qt::Alignment<sp/>alignment<sp/></highlight><highlight class="comment">/*=<sp/>Qt::AlignTop<sp/>|<sp/>Qt::AlignRight*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/></highlight><highlight class="comment">/*=<sp/>0.5f*/</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject(parent),</highlight></codeline>
@@ -93,7 +93,7 @@
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_parameters._customPixmap.isNull())</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_parameters._customPixmap;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1gui_1ad0aeabfdaee204b830f45c1e00db1859" kindref="member">gui::createNumberBadgeOverlayPixmap</ref>(_parameters._number,<sp/>_parameters._backgroundColor,<sp/>_parameters._foregroundColor);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gui::createNumberBadgeOverlayPixmap(_parameters._number,<sp/>_parameters._backgroundColor,<sp/>_parameters._foregroundColor);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">Badge::Parameters<sp/>Badge::getParameters()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>

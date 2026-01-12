@@ -36,7 +36,7 @@
       </node>
       <node id="2">
         <label>Common.h</label>
-        <link refid="Common_8h"/>
+        <link refid="Common_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -56,14 +56,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="8">
-        <label>InfoAction.cpp</label>
-        <link refid="ImageData_2src_2InfoAction_8cpp"/>
-      </node>
-      <node id="6">
-        <label>Images.cpp</label>
-        <link refid="Images_8cpp"/>
-      </node>
       <node id="1">
         <label>Image.h</label>
         <link refid="Image_8h"/>
@@ -71,43 +63,21 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>Images.h</label>
-        <link refid="Images_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>InfoAction.h</label>
-        <link refid="ImageData_2src_2InfoAction_8h"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Image.cpp</label>
-        <link refid="Image_8cpp"/>
-      </node>
-      <node id="4">
-        <label>ImageData.cpp</label>
-        <link refid="ImageData_8cpp"/>
       </node>
       <node id="3">
-        <label>ImageData.h</label>
-        <link refid="ImageData_8h"/>
+        <label>Images.h</label>
+        <link refid="Images_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+      </node>
+      <node id="4">
+        <label>InfoAction.h</label>
+        <link refid="ImageData_2src_2InfoAction_8h_source"/>
+      </node>
+      <node id="2">
+        <label>ImageData.h</label>
+        <link refid="ImageData_8h_source"/>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -146,7 +116,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Common_8h" kindref="compound">Common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSize&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -160,7 +130,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImage" kindref="compound">Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize&amp;<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::uint32_t&amp;<sp/>noComponents,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>imageFilePath);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint16_t*<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint16_t*<sp/>data();</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize&amp;<sp/>size);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint32_t<sp/>width()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -187,9 +157,9 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dimensionName;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="Image_8h_1ae02a82465ef86edf85774d748dbc6b09" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>QDebug<sp/><ref refid="Image_8h_1ae02a82465ef86edf85774d748dbc6b09" kindref="member">operator&lt;&lt;</ref>(QDebug<sp/>dbg,<sp/><ref refid="classImage" kindref="compound">Image</ref>&amp;<sp/>image)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>QDebug<sp/>operator&lt;&lt;(QDebug<sp/>dbg,<sp/><ref refid="classImage" kindref="compound">Image</ref>&amp;<sp/>image)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>dbg<sp/>&lt;&lt;<sp/>QString(</highlight><highlight class="stringliteral">&quot;Image<sp/>%1x%2,<sp/>%3<sp/>components&quot;</highlight><highlight class="normal">).arg(QString::number(image.<ref refid="classImage_1ac60dd757869917d40162d2a253878257" kindref="member">width</ref>()),<sp/>QString::number(image.<ref refid="classImage_1a4ed759206478efcc5b14b70baa9e6f9a" kindref="member">height</ref>()),<sp/>QString::number(image.<ref refid="classImage_1a2b2cc4af6b69724589625ab07e4bf36d" kindref="member">noComponents</ref>()));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>dbg<sp/>&lt;&lt;<sp/>QString(</highlight><highlight class="stringliteral">&quot;Image<sp/>%1x%2,<sp/>%3<sp/>components&quot;</highlight><highlight class="normal">).arg(QString::number(image.width()),<sp/>QString::number(image.height()),<sp/>QString::number(image.noComponents()));</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dbg;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal">}</highlight></codeline>

@@ -24,7 +24,7 @@
       </node>
       <node id="9">
         <label>event/EventListener.h</label>
-        <link refid="EventListener_8h"/>
+        <link refid="EventListener_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -43,7 +43,7 @@
       </node>
       <node id="4">
         <label>DataType.h</label>
-        <link refid="DataType_8h"/>
+        <link refid="DataType_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -59,7 +59,7 @@
       </node>
       <node id="8">
         <label>DatasetPrivate.h</label>
-        <link refid="DatasetPrivate_8h"/>
+        <link refid="DatasetPrivate_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -88,7 +88,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -103,7 +103,7 @@
       </node>
       <node id="7">
         <label>Dataset.h</label>
-        <link refid="Dataset_8h"/>
+        <link refid="Dataset_8h_source"/>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -127,7 +127,7 @@
       </node>
       <node id="14">
         <label>util/Exception.h</label>
-        <link refid="Exception_8h"/>
+        <link refid="Exception_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -140,78 +140,6 @@
         </childnode>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="10">
-        <label>InfoAction.cpp</label>
-        <link refid="ImageData_2src_2InfoAction_8cpp"/>
-      </node>
-      <node id="7">
-        <label>ClusterData.cpp</label>
-        <link refid="ClusterData_8cpp"/>
-      </node>
-      <node id="4">
-        <label>DatasetPrivate.cpp</label>
-        <link refid="DatasetPrivate_8cpp"/>
-      </node>
-      <node id="3">
-        <label>PluginPickerAction.cpp</label>
-        <link refid="PluginPickerAction_8cpp"/>
-      </node>
-      <node id="11">
-        <label>PointData.cpp</label>
-        <link refid="PointData_8cpp"/>
-      </node>
-      <node id="9">
-        <label>InfoAction.cpp</label>
-        <link refid="ClusterData_2src_2InfoAction_8cpp"/>
-      </node>
-      <node id="8">
-        <label>ClustersAction.cpp</label>
-        <link refid="ClustersAction_8cpp"/>
-      </node>
-      <node id="1">
-        <label>Event.h</label>
-        <link refid="Event_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>EventManager.cpp</label>
-        <link refid="EventManager_8cpp"/>
-      </node>
-      <node id="2">
-        <label>DatasetPickerAction.cpp</label>
-        <link refid="DatasetPickerAction_8cpp"/>
-      </node>
-      <node id="6">
-        <label>EventListener.cpp</label>
-        <link refid="EventListener_8cpp"/>
-      </node>
-      <node id="5">
-        <label>Event.cpp</label>
-        <link refid="Event_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classmv_1_1ManiVaultEvent" prot="public">mv::ManiVaultEvent</innerclass>
     <innerclass refid="classmv_1_1DatasetEvent" prot="public">mv::DatasetEvent</innerclass>
     <innerclass refid="classmv_1_1DatasetAddedEvent" prot="public">mv::DatasetAddedEvent</innerclass>
@@ -238,10 +166,10 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataType_8h" kindref="compound">DataType.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dataset_8h" kindref="compound">Dataset.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DataType.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Dataset.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
@@ -258,43 +186,43 @@
 <codeline lineno="24" refid="classmv_1_1util_1_1SmartDataset" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1util_1_1SmartDataset" kindref="compound">SmartDataset</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>EventType</highlight></codeline>
 <codeline lineno="28"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3affd5a5fc816befd064689dd3574ec2ec" kindref="member">DatasetAdded</ref>,</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a38a9dc92154f6c3b2f6f6b8423796a08" kindref="member">DatasetDataChanged</ref>,</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3ae08f2e653446a17023c5d769ccacc33e" kindref="member">DatasetDataDimensionsChanged</ref>,</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a1cbc02f23f966ed5c557b2dcf298c56f" kindref="member">DatasetAboutToBeRemoved</ref>,</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a3a5d49b6136a4bbd73b5e52d41183005" kindref="member">DatasetRemoved</ref>,</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a73cb1ef1a211516ada778791f4837bf2" kindref="member">DatasetDataSelectionChanged</ref>,</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a8f4372860eecfe2e71a62935c461b1c0" kindref="member">DatasetChildAdded</ref>,</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a4b887e56f02a2a4b7ed24b3032410a45" kindref="member">DatasetChildRemoved</ref>,</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a64bd4d6bd8deab0a83c94826fb14f667" kindref="member">DatasetLocked</ref>,</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a74b29422868d7862c8220beb5130e351" kindref="member">DatasetUnlocked</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetAdded,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetDataChanged,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetDataDimensionsChanged,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetAboutToBeRemoved,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetRemoved,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetDataSelectionChanged,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetChildAdded,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetChildRemoved,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetLocked,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>DatasetUnlocked</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="classmv_1_1ManiVaultEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
+<codeline lineno="41" refid="classmv_1_1ManiVaultEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
 <codeline lineno="42"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="44" refid="classmv_1_1ManiVaultEvent_1a20d1a3278ef55aba79161e9debff1455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ManiVaultEvent_1a20d1a3278ef55aba79161e9debff1455" kindref="member">ManiVaultEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref><sp/>type)<sp/>:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref>(EventType<sp/>type)<sp/>:</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_type(type)</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="classmv_1_1ManiVaultEvent_1abcd21160044460bec622e216f34dde7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref><sp/><ref refid="classmv_1_1ManiVaultEvent_1abcd21160044460bec622e216f34dde7d" kindref="member">getType</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>EventType<sp/>getType()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="51"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_type;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref><sp/>_type;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>EventType<sp/>_type;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63" refid="classmv_1_1DatasetEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
+<codeline lineno="63" refid="classmv_1_1DatasetEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
 <codeline lineno="64"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classmv_1_1DatasetEvent_1a9809bc53b9809cba125c2b9b333f4743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent_1a9809bc53b9809cba125c2b9b333f4743" kindref="member">DatasetEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>&amp;<sp/>eventType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
+<codeline lineno="72" refid="classmv_1_1DatasetEvent_1a9809bc53b9809cba125c2b9b333f4743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent_1a9809bc53b9809cba125c2b9b333f4743" kindref="member">DatasetEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EventType&amp;<sp/>eventType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref>(eventType),</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dataset(dataset)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -318,15 +246,15 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="102" refid="classmv_1_1DatasetEvent_1a55d1181672b397a5e38a58fdbb8e5a83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent_1a55d1181672b397a5e38a58fdbb8e5a83" kindref="member">_dataset</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><sp/><sp/><sp/>_dataset;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="103"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109" refid="classmv_1_1DatasetAddedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetAddedEvent" kindref="compound">DatasetAddedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="109" refid="classmv_1_1DatasetAddedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetAddedEvent" kindref="compound">DatasetAddedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="110"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="117" refid="classmv_1_1DatasetAddedEvent_1aec38c5e85d8592795a41cc2202063bc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetAddedEvent_1aec38c5e85d8592795a41cc2202063bc7" kindref="member">DatasetAddedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3affd5a5fc816befd064689dd3574ec2ec" kindref="member">DatasetAdded</ref>,<sp/>dataset),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetAdded,<sp/>dataset),</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_parentDatasetName(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_visible(true)</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -349,46 +277,46 @@
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="151" refid="classmv_1_1DatasetAddedEvent_1a1d3437ecbbddb745fac77648bf37c823" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetAddedEvent_1a1d3437ecbbddb745fac77648bf37c823" kindref="member">_parentDatasetName</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>_parentDatasetName;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="152" refid="classmv_1_1DatasetAddedEvent_1ac301455cbcf8d9042efc5116fffceeba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetAddedEvent_1ac301455cbcf8d9042efc5116fffceeba" kindref="member">_visible</ref>;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159" refid="classmv_1_1DatasetDataChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetDataChangedEvent" kindref="compound">DatasetDataChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="159" refid="classmv_1_1DatasetDataChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetDataChangedEvent" kindref="compound">DatasetDataChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="160"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
 <codeline lineno="167" refid="classmv_1_1DatasetDataChangedEvent_1ae0bd82589254569d161e98f0a51ec319" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetDataChangedEvent_1ae0bd82589254569d161e98f0a51ec319" kindref="member">DatasetDataChangedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a38a9dc92154f6c3b2f6f6b8423796a08" kindref="member">DatasetDataChanged</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetDataChanged,<sp/>dataset)</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="171"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177" refid="classmv_1_1DatasetDataDimensionsChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetDataDimensionsChangedEvent" kindref="compound">DatasetDataDimensionsChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="177" refid="classmv_1_1DatasetDataDimensionsChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetDataDimensionsChangedEvent" kindref="compound">DatasetDataDimensionsChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="178"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="185" refid="classmv_1_1DatasetDataDimensionsChangedEvent_1adfe09c6b69df4391e8b766f12af3d7e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetDataDimensionsChangedEvent_1adfe09c6b69df4391e8b766f12af3d7e4" kindref="member">DatasetDataDimensionsChangedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3ae08f2e653446a17023c5d769ccacc33e" kindref="member">DatasetDataDimensionsChanged</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetDataDimensionsChanged,<sp/>dataset)</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195" refid="classmv_1_1DatasetAboutToBeRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetAboutToBeRemovedEvent" kindref="compound">DatasetAboutToBeRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="195" refid="classmv_1_1DatasetAboutToBeRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetAboutToBeRemovedEvent" kindref="compound">DatasetAboutToBeRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="196"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
 <codeline lineno="203" refid="classmv_1_1DatasetAboutToBeRemovedEvent_1a9a6f60ae6e549128a4ab0f3ef20b7748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetAboutToBeRemovedEvent_1a9a6f60ae6e549128a4ab0f3ef20b7748" kindref="member">DatasetAboutToBeRemovedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a1cbc02f23f966ed5c557b2dcf298c56f" kindref="member">DatasetAboutToBeRemoved</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetAboutToBeRemoved,<sp/>dataset)</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="207"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213" refid="classmv_1_1DatasetRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetRemovedEvent" kindref="compound">DatasetRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="213" refid="classmv_1_1DatasetRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetRemovedEvent" kindref="compound">DatasetRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="214"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
 <codeline lineno="222" refid="classmv_1_1DatasetRemovedEvent_1a37e5ef20907321b2badec75c68319209" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetRemovedEvent_1a37e5ef20907321b2badec75c68319209" kindref="member">DatasetRemovedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>datasetGuid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref>&amp;<sp/>dataType)<sp/>:</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a3a5d49b6136a4bbd73b5e52d41183005" kindref="member">DatasetRemoved</ref>,<sp/>nullptr),</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetRemoved,<sp/>nullptr),</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_datasetGuid(datasetGuid),</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dataType(dataType)</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -403,26 +331,26 @@
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="240" refid="classmv_1_1DatasetRemovedEvent_1a74e30b5c6ce805a50fa39ba947575c84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetRemovedEvent_1a74e30b5c6ce805a50fa39ba947575c84" kindref="member">_datasetGuid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>_datasetGuid;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="241" refid="classmv_1_1DatasetRemovedEvent_1aec29e7e25da2ccea7f488faa75c7831d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetRemovedEvent_1aec29e7e25da2ccea7f488faa75c7831d" kindref="member">_dataType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="242"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"></highlight></codeline>
-<codeline lineno="248" refid="classmv_1_1DatasetDataSelectionChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetDataSelectionChangedEvent" kindref="compound">DatasetDataSelectionChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="248" refid="classmv_1_1DatasetDataSelectionChangedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetDataSelectionChangedEvent" kindref="compound">DatasetDataSelectionChangedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="249"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight></codeline>
 <codeline lineno="256" refid="classmv_1_1DatasetDataSelectionChangedEvent_1a9c7e4d2c00b90a5e629072a95cba894e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetDataSelectionChangedEvent_1a9c7e4d2c00b90a5e629072a95cba894e" kindref="member">DatasetDataSelectionChangedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a73cb1ef1a211516ada778791f4837bf2" kindref="member">DatasetDataSelectionChanged</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetDataSelectionChanged,<sp/>dataset)</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="260"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
-<codeline lineno="266" refid="classmv_1_1DatasetChildAddedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetChildAddedEvent" kindref="compound">DatasetChildAddedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="266" refid="classmv_1_1DatasetChildAddedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetChildAddedEvent" kindref="compound">DatasetChildAddedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="267"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight></codeline>
 <codeline lineno="275" refid="classmv_1_1DatasetChildAddedEvent_1a2dcdd0bf695f35cf790ec61553cb31b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetChildAddedEvent_1a2dcdd0bf695f35cf790ec61553cb31b4" kindref="member">DatasetChildAddedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>childDataset)<sp/>:</highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a8f4372860eecfe2e71a62935c461b1c0" kindref="member">DatasetChildAdded</ref>,<sp/>dataset),</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetChildAdded,<sp/>dataset),</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_childDataset(childDataset)</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -432,15 +360,15 @@
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="287" refid="classmv_1_1DatasetChildAddedEvent_1a5ef816e727e4229b1db1851a4acd6d16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetChildAddedEvent_1a5ef816e727e4229b1db1851a4acd6d16" kindref="member">_childDataset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><sp/><sp/><sp/>_childDataset;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="288"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
-<codeline lineno="294" refid="classmv_1_1DatasetChildRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetChildRemovedEvent" kindref="compound">DatasetChildRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="294" refid="classmv_1_1DatasetChildRemovedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetChildRemovedEvent" kindref="compound">DatasetChildRemovedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="295"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"></highlight></codeline>
 <codeline lineno="303" refid="classmv_1_1DatasetChildRemovedEvent_1a4a61e47831dbbd2531a99cf603cae993" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetChildRemovedEvent_1a4a61e47831dbbd2531a99cf603cae993" kindref="member">DatasetChildRemovedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>childDatasetGuid)<sp/>:</highlight></codeline>
-<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a4b887e56f02a2a4b7ed24b3032410a45" kindref="member">DatasetChildRemoved</ref>,<sp/>dataset),</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetChildRemoved,<sp/>dataset),</highlight></codeline>
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_childDatasetGuid(childDatasetGuid)</highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -450,34 +378,34 @@
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"></highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="315" refid="classmv_1_1DatasetChildRemovedEvent_1a002b0fa49442335195a5b11a55f53b54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetChildRemovedEvent_1a002b0fa49442335195a5b11a55f53b54" kindref="member">_childDatasetGuid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>_childDatasetGuid;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="316"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"></highlight></codeline>
-<codeline lineno="322" refid="classmv_1_1DatasetLockedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetLockedEvent" kindref="compound">DatasetLockedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="322" refid="classmv_1_1DatasetLockedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetLockedEvent" kindref="compound">DatasetLockedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="323"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"></highlight></codeline>
 <codeline lineno="330" refid="classmv_1_1DatasetLockedEvent_1a33fba68ef68d9c4bed3281a2fa4aa80e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetLockedEvent_1a33fba68ef68d9c4bed3281a2fa4aa80e" kindref="member">DatasetLockedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a64bd4d6bd8deab0a83c94826fb14f667" kindref="member">DatasetLocked</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetLocked,<sp/>dataset)</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="334"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
-<codeline lineno="340" refid="classmv_1_1DatasetUnlockedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetUnlockedEvent" kindref="compound">DatasetUnlockedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
+<codeline lineno="340" refid="classmv_1_1DatasetUnlockedEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetUnlockedEvent" kindref="compound">DatasetUnlockedEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref></highlight></codeline>
 <codeline lineno="341"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="343"><highlight class="normal"></highlight></codeline>
 <codeline lineno="348" refid="classmv_1_1DatasetUnlockedEvent_1ad5abbbfca285bd040bfd48145ccfdfa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetUnlockedEvent_1ad5abbbfca285bd040bfd48145ccfdfa3" kindref="member">DatasetUnlockedEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>dataset)<sp/>:</highlight></codeline>
-<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>::<ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3a74b29422868d7862c8220beb5130e351" kindref="member">DatasetUnlocked</ref>,<sp/>dataset)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetEvent" kindref="compound">DatasetEvent</ref>(EventType::DatasetUnlocked,<sp/>dataset)</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="352"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"></highlight></codeline>
-<codeline lineno="358" refid="classmv_1_1DatasetGroupingEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DatasetGroupingEvent" kindref="compound">DatasetGroupingEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
+<codeline lineno="358" refid="classmv_1_1DatasetGroupingEvent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DatasetGroupingEvent" kindref="compound">DatasetGroupingEvent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref></highlight></codeline>
 <codeline lineno="359"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="360"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"></highlight></codeline>
-<codeline lineno="367" refid="classmv_1_1DatasetGroupingEvent_1a25cbacde1ca7f6dbb09ad907af2e7352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetGroupingEvent_1a25cbacde1ca7f6dbb09ad907af2e7352" kindref="member">DatasetGroupingEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a963419e096af47f8e07d956e3a317cd3" kindref="member">EventType</ref>&amp;<sp/>eventType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>datasetGroupingEnabled)<sp/>:</highlight></codeline>
+<codeline lineno="367" refid="classmv_1_1DatasetGroupingEvent_1a25cbacde1ca7f6dbb09ad907af2e7352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetGroupingEvent_1a25cbacde1ca7f6dbb09ad907af2e7352" kindref="member">DatasetGroupingEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EventType&amp;<sp/>eventType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>datasetGroupingEnabled)<sp/>:</highlight></codeline>
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ManiVaultEvent" kindref="compound">ManiVaultEvent</ref>(eventType),</highlight></codeline>
 <codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_datasetGroupingEnabled(datasetGroupingEnabled)</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -497,7 +425,7 @@
 <codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="387"><highlight class="normal"></highlight></codeline>
 <codeline lineno="388"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="389" refid="classmv_1_1DatasetGroupingEvent_1a7e71aa5e1987a4725741bfe0a0743e55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetGroupingEvent_1a7e71aa5e1987a4725741bfe0a0743e55" kindref="member">_datasetGroupingEnabled</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>_datasetGroupingEnabled;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="390"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"></highlight></codeline>
 <codeline lineno="392"><highlight class="normal">}</highlight></codeline>

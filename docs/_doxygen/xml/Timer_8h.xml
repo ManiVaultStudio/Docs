@@ -22,7 +22,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -36,36 +36,6 @@
         <label>chrono</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="2">
-        <label>Images.cpp</label>
-        <link refid="Images_8cpp"/>
-      </node>
-      <node id="3">
-        <label>OrderedMap.cpp</label>
-        <link refid="OrderedMap_8cpp"/>
-      </node>
-      <node id="1">
-        <label>Timer.h</label>
-        <link refid="Timer_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>Timer.cpp</label>
-        <link refid="Timer_8cpp"/>
-      </node>
-      <node id="4">
-        <label>ProjectManager.cpp</label>
-        <link refid="ProjectManager_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classTimer" prot="public">Timer</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" prot="public" static="no">
@@ -106,16 +76,16 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" kindref="member">SteadyClock</ref><sp/><sp/><sp/>=<sp/>std::chrono::time_point&lt;std::chrono::steady_clock&gt;;</highlight></codeline>
-<codeline lineno="14" refid="Timer_8h_1ac10fdfcf3c7e408cc0b0020e8a7fed41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="Timer_8h_1ac10fdfcf3c7e408cc0b0020e8a7fed41" kindref="member">MilliSeconds</ref><sp/><sp/>=<sp/>std::chrono::microseconds;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>SteadyClock<sp/><sp/><sp/>=<sp/>std::chrono::time_point&lt;std::chrono::steady_clock&gt;;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>MilliSeconds<sp/><sp/>=<sp/>std::chrono::microseconds;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="classTimer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classTimer" kindref="compound">Timer</ref></highlight></codeline>
+<codeline lineno="26" refid="classTimer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classTimer" kindref="compound">Timer</ref></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Construction/destruction</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
@@ -125,9 +95,9 @@
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Timer<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::int64_t<sp/>elapsedTime(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" kindref="member">SteadyClock</ref>&amp;<sp/>start)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::int64_t<sp/>elapsedTime(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SteadyClock&amp;<sp/>start)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>elapsedTimeMilliseconds(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" kindref="member">SteadyClock</ref>&amp;<sp/>start)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>elapsedTimeMilliseconds(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SteadyClock&amp;<sp/>start)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printElapsedTime(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>reset<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
@@ -139,8 +109,8 @@
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_event;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" kindref="member">SteadyClock</ref><sp/><sp/><sp/><sp/><sp/>_start;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Timer_8h_1aecd85c985106972f8f9c3facf1fd44d8" kindref="member">SteadyClock</ref><sp/><sp/><sp/><sp/><sp/>_eventStart;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>SteadyClock<sp/><sp/><sp/><sp/><sp/>_start;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>SteadyClock<sp/><sp/><sp/><sp/><sp/>_eventStart;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="74"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/util/Timer.h"/>

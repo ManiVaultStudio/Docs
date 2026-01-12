@@ -3,7 +3,6 @@
   <compounddef id="classPointData" kind="class" language="C++" prot="public">
     <compoundname>PointData</compoundname>
     <basecompoundref refid="classmv_1_1plugin_1_1RawData" prot="public" virt="non-virtual">mv::plugin::RawData</basecompoundref>
-    <includes refid="PointData_8h" local="no">PointData.h</includes>
     <innerclass refid="classPointData_1_1Experimental" prot="public">PointData::Experimental</innerclass>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" prot="public" static="no" strong="yes">
@@ -86,7 +85,7 @@
         <argsstring></argsstring>
         <name>ElementTypeAt</name>
         <briefdescription>
-<para>Yields the n-th supported element type. Corresponds to the n-th entry in the array of type names, returned by <ref refid="classPointData_1ac827deb78fbef5d0f69af51536463cfb" kindref="member">getElementTypeNames()</ref>. </para>
+<para>Yields the n-th supported element type. Corresponds to the n-th entry in the array of type names, returned by getElementTypeNames(). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -257,7 +256,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type>constexpr <ref refid="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" kindref="member">ElementTypeSpecifier</ref></type>
+        <type>constexpr ElementTypeSpecifier</type>
         <definition>static constexpr ElementTypeSpecifier PointData::getElementTypeSpecifier</definition>
         <argsstring>()</argsstring>
         <name>getElementTypeSpecifier</name>
@@ -363,7 +362,7 @@
         <argsstring>(const ElementTypeSpecifier elementTypeSpecifier)</argsstring>
         <name>setElementTypeSpecifier</name>
         <param>
-          <type>const <ref refid="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" kindref="member">ElementTypeSpecifier</ref></type>
+          <type>const ElementTypeSpecifier</type>
           <declname>elementTypeSpecifier</declname>
         </param>
         <briefdescription>
@@ -375,7 +374,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.h" line="155" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.h" bodystart="155" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classPointData_1a56f74bc87f214fae74dab003953b5b0f" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" kindref="member">ElementTypeSpecifier</ref></type>
+        <type>ElementTypeSpecifier</type>
         <definition>ElementTypeSpecifier PointData::getElementTypeSpecifier</definition>
         <argsstring>() const</argsstring>
         <name>getElementTypeSpecifier</name>
@@ -831,7 +830,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.h" line="321" column="23" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.cpp" bodystart="94" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classPointData_1a701b991ffd73834309e00a506c829652" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" kindref="member">ElementTypeSpecifier</ref></type>
+        <type>ElementTypeSpecifier</type>
         <definition>ElementTypeSpecifier PointData::getElementType</definition>
         <argsstring>() const</argsstring>
         <name>getElementType</name>
@@ -849,7 +848,7 @@
         <argsstring>(const ElementTypeSpecifier elementTypSpecifier)</argsstring>
         <name>setElementType</name>
         <param>
-          <type>const <ref refid="classPointData_1a3f34f421b7fd42091adecb83fbe5d072" kindref="member">ElementTypeSpecifier</ref></type>
+          <type>const ElementTypeSpecifier</type>
           <declname>elementTypSpecifier</declname>
         </param>
         <briefdescription>
@@ -1112,7 +1111,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1plugin_1_1Plugin_1a3c696c99ccfa3305cce6488492a09269">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -1135,7 +1134,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.h" line="475" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.cpp" bodystart="135" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classPointData_1a89c137c3fb0bead129b09b168d508c85" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap PointData::toVariantMap</definition>
         <argsstring>() const final</argsstring>
         <name>toVariantMap</name>

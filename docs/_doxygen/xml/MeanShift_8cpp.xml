@@ -18,7 +18,7 @@
       </node>
       <node id="13">
         <label>graphics/Framebuffer.h</label>
-        <link refid="Framebuffer_8h"/>
+        <link refid="Framebuffer_8h_source"/>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
@@ -30,7 +30,7 @@
       </node>
       <node id="2">
         <label>MeanShift.h</label>
-        <link refid="MeanShift_8h"/>
+        <link refid="MeanShift_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -48,7 +48,7 @@
       </node>
       <node id="19">
         <label>graphics/Shader.h</label>
-        <link refid="Shader_8h"/>
+        <link refid="Shader_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
@@ -60,7 +60,7 @@
       </node>
       <node id="6">
         <label>graphics/Bounds.h</label>
-        <link refid="Bounds_8h"/>
+        <link refid="Bounds_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -86,7 +86,7 @@
       </node>
       <node id="10">
         <label>graphics/BufferObject.h</label>
-        <link refid="BufferObject_8h"/>
+        <link refid="BufferObject_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
@@ -105,7 +105,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -120,7 +120,7 @@
       </node>
       <node id="7">
         <label>Vector2f.h</label>
-        <link refid="Vector2f_8h"/>
+        <link refid="Vector2f_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -145,7 +145,7 @@
       </node>
       <node id="22">
         <label>graphics/Matrix3f.h</label>
-        <link refid="Matrix3f_8h"/>
+        <link refid="Matrix3f_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -153,7 +153,7 @@
       </node>
       <node id="14">
         <label>Texture.h</label>
-        <link refid="Texture_8h"/>
+        <link refid="Texture_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -168,7 +168,7 @@
       </node>
       <node id="5">
         <label>DensityComputation.h</label>
-        <link refid="DensityComputation_8h"/>
+        <link refid="DensityComputation_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -195,9 +195,9 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MeanShift_8h" kindref="compound">MeanShift.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MeanShift.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Matrix3f_8h" kindref="compound">graphics/Matrix3f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Matrix3f.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
@@ -210,41 +210,41 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">Matrix3f<sp/><ref refid="namespacemv_1a52169c6ee59895b63d194c78a9d84ef0" kindref="member">createProjectionMatrix</ref>(QRectF<sp/>bounds)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">Matrix3f<sp/>createProjectionMatrix(QRectF<sp/>bounds)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>m;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>m.<ref refid="classmv_1_1Matrix3f_1aa937a6839c1fc2ba18d5b84bf397d38f" kindref="member">setIdentity</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>m.setIdentity();</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>m[0]<sp/>=<sp/>2<sp/>/<sp/>(bounds.right()<sp/>-<sp/>bounds.left());</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>m[4]<sp/>=<sp/>2<sp/>/<sp/>(bounds.top()<sp/>-<sp/>bounds.bottom());</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>m[6]<sp/>=<sp/>-((bounds.right()<sp/>+<sp/>bounds.left())<sp/>/<sp/>(bounds.right()<sp/>-<sp/>bounds.left()));</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>m[7]<sp/>=<sp/>-((bounds.top()<sp/>+<sp/>bounds.bottom())<sp/>/<sp/>(bounds.top()<sp/>-<sp/>bounds.bottom()));</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a41ccda5c2add76fe82c65306c1f3fbca" kindref="member">MeanShift::init</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::init()</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>initializeOpenGLFunctions();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>glClearColor(1,<sp/>1,<sp/>1,<sp/>1);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1ad0b93040f9d4cfd6d3b429442e0981ef" kindref="member">init</ref>(QOpenGLContext::currentContext());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.init(QOpenGLContext::currentContext());</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenVertexArrays(1,<sp/>&amp;_quad);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable(GL_BLEND);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>glBlendFunc(GL_SRC_ALPHA,<sp/>GL_ONE_MINUS_SRC_ALPHA);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loaded<sp/>=<sp/>_shaderGradientCompute.<ref refid="classmv_1_1ShaderProgram_1a1a4afd0cc645819be9385da80f9c6427" kindref="member">loadShaderFromFile</ref>(</highlight><highlight class="stringliteral">&quot;:shaders/GradientCompute.vert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:shaders/GradientCompute.frag&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loaded<sp/>=<sp/>_shaderGradientCompute.loadShaderFromFile(</highlight><highlight class="stringliteral">&quot;:shaders/GradientCompute.vert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:shaders/GradientCompute.frag&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!loaded)<sp/>{</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>load<sp/>GradientCompute<sp/>shader&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>loaded<sp/>=<sp/>_shaderMeanshiftCompute.<ref refid="classmv_1_1ShaderProgram_1a1a4afd0cc645819be9385da80f9c6427" kindref="member">loadShaderFromFile</ref>(</highlight><highlight class="stringliteral">&quot;:shaders/MeanshiftCompute.vert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:shaders/MeanshiftCompute.frag&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>loaded<sp/>=<sp/>_shaderMeanshiftCompute.loadShaderFromFile(</highlight><highlight class="stringliteral">&quot;:shaders/MeanshiftCompute.vert&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:shaders/MeanshiftCompute.frag&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!loaded)<sp/>{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>load<sp/>MeanshiftCompute<sp/>shader&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a4af41f39fad0534d5ab3e76079b4247c" kindref="member">create</ref>();</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a76e51920928c1d52c8c6230a2764fb01" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.create();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.bind();</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>_gradientTexture.<ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>_gradientTexture.<ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>();</highlight></codeline>
@@ -255,8 +255,8 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexImage2D(GL_TEXTURE_2D,<sp/>0,<sp/>GL_RGB32F,<sp/>RESOLUTION,<sp/>RESOLUTION,<sp/>0,<sp/>GL_RGB,<sp/>GL_FLOAT,<sp/>NULL);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a3a13cb5f5cc0e1517c6e2b7ddee2d6f1" kindref="member">addColorTexture</ref>(1,<sp/>&amp;_gradientTexture);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1abe518bf33620d7de016552b618241170" kindref="member">validate</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.addColorTexture(1,<sp/>&amp;_gradientTexture);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.validate();</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftTexture.<ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftTexture.<ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>();</highlight></codeline>
@@ -267,22 +267,22 @@
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexImage2D(GL_TEXTURE_2D,<sp/>0,<sp/>GL_RGB32F,<sp/>RESOLUTION,<sp/>RESOLUTION,<sp/>0,<sp/>GL_RGB,<sp/>GL_FLOAT,<sp/>NULL);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a3a13cb5f5cc0e1517c6e2b7ddee2d6f1" kindref="member">addColorTexture</ref>(2,<sp/>&amp;_meanshiftTexture);</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1abe518bf33620d7de016552b618241170" kindref="member">validate</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.addColorTexture(2,<sp/>&amp;_meanshiftTexture);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.validate();</highlight></codeline>
 <codeline lineno="79"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a8448a846e93e3ec9b622264d4805b17c" kindref="member">MeanShift::cleanup</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::cleanup()</highlight></codeline>
 <codeline lineno="82"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal">QRectF<sp/><ref refid="namespacemv_1a8220fd66722dade44783e9ed197a0a96" kindref="member">getDataBounds</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;&amp;<sp/>points)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">QRectF<sp/>getDataBounds(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;&amp;<sp/>points)</highlight></codeline>
 <codeline lineno="87"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDimension<sp/>=<sp/>-FLT_MAX;</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>point<sp/>:<sp/>points)</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDimension<sp/>=<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(std::abs(point.x),<sp/>maxDimension);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDimension<sp/>=<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(std::abs(point.y),<sp/>maxDimension);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDimension<sp/>=<sp/>std::max(std::abs(point.x),<sp/>maxDimension);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDimension<sp/>=<sp/>std::max(std::abs(point.y),<sp/>maxDimension);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>a<sp/>square<sp/>to<sp/>make<sp/>sure<sp/>that<sp/>the<sp/>gaussian<sp/>is<sp/>not<sp/>squished</highlight><highlight class="normal"></highlight></codeline>
@@ -295,23 +295,23 @@
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bounds;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a779406e058abe96efee921c43af7cd7b" kindref="member">MeanShift::setData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;*<sp/>points)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::setData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;*<sp/>points)</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/>bounds<sp/>=<sp/><ref refid="namespacemv_1a8220fd66722dade44783e9ed197a0a96" kindref="member">getDataBounds</ref>(*points);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/>bounds<sp/>=<sp/>getDataBounds(*points);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>_points<sp/>=<sp/>points;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>_bounds<sp/>=<sp/>bounds;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1a8376a37e8aa9fc50887207ef79857391" kindref="member">setData</ref>(points);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1ad340daf2436e21c7c9e3a1e043950521" kindref="member">setBounds</ref>(bounds.left(),<sp/>bounds.right(),<sp/>bounds.bottom(),<sp/>bounds.top());</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.setData(points);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.setBounds(bounds.left(),<sp/>bounds.right(),<sp/>bounds.bottom(),<sp/>bounds.top());</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>_needsDensityMapUpdate<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a1328421b1f6ecbfe2395110ea2d0bdbc" kindref="member">MeanShift::setSigma</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sigma)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::setSigma(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sigma)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>_sigma<sp/>=<sp/>sigma;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a4d8001225cf00e98d3180b1c3cb61208" kindref="member">MeanShift::drawFullscreenQuad</ref>()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::drawFullscreenQuad()</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindVertexArray(_quad);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>glDrawArrays(GL_TRIANGLES,<sp/>0,<sp/>3);</highlight></codeline>
@@ -320,7 +320,7 @@
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::computeGradient()</highlight></codeline>
 <codeline lineno="129"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a76e51920928c1d52c8c6230a2764fb01" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.bind();</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>glDrawBuffer(GL_COLOR_ATTACHMENT1);</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>glViewport(0,<sp/>0,<sp/>RESOLUTION,<sp/>RESOLUTION);</highlight></codeline>
@@ -328,16 +328,16 @@
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>glClearColor(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>glClear(GL_COLOR_BUFFER_BIT<sp/>|<sp/>GL_DEPTH_BUFFER_BIT);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.<ref refid="classmv_1_1ShaderProgram_1a052bf015c5319e73ebefef8cbcea4d2d" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.bind();</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1a8adeea5461f7832d865dc0080232874c" kindref="member">getDensityTexture</ref>().<ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>(0);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.<ref refid="classmv_1_1ShaderProgram_1a3b03d3a93122237105f6daad867edbd2" kindref="member">uniform1i</ref>(</highlight><highlight class="stringliteral">&quot;densityTexture&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.getDensityTexture().<ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>(0);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.uniform1i(</highlight><highlight class="stringliteral">&quot;densityTexture&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.<ref refid="classmv_1_1ShaderProgram_1a050853a404afbf70edf55d23918377de" kindref="member">uniform4f</ref>(</highlight><highlight class="stringliteral">&quot;renderParams&quot;</highlight><highlight class="normal">,<sp/>1.0f<sp/>/<sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" kindref="member">getMaxDensity</ref>(),<sp/>1.0f<sp/>/<sp/>100000,<sp/>1.0f<sp/>/<sp/>RESOLUTION,<sp/>1.0f);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.uniform4f(</highlight><highlight class="stringliteral">&quot;renderParams&quot;</highlight><highlight class="normal">,<sp/>1.0f<sp/>/<sp/>densityComputation.getMaxDensity(),<sp/>1.0f<sp/>/<sp/>100000,<sp/>1.0f<sp/>/<sp/>RESOLUTION,<sp/>1.0f);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1MeanShift_1a4d8001225cf00e98d3180b1c3cb61208" kindref="member">drawFullscreenQuad</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>drawFullscreenQuad();</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.<ref refid="classmv_1_1ShaderProgram_1a6d9e80073e9170190c18b9748e955960" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderGradientCompute.release();</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEANSHIFT_IMAGE_DEBUG</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>gradientValues;</highlight></codeline>
@@ -357,7 +357,7 @@
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2f<sp/>p(gradientValues[idx<sp/>*<sp/>3],<sp/>gradientValues[idx<sp/>*<sp/>3<sp/>+<sp/>1]);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>l<sp/>=<sp/>p.length();</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxL<sp/>=<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(l,<sp/>maxL);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxL<sp/>=<sp/>std::max(l,<sp/>maxL);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
@@ -396,7 +396,7 @@
 <codeline lineno="203"><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::computeMeanShift()</highlight></codeline>
 <codeline lineno="205"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.<ref refid="classmv_1_1Framebuffer_1a76e51920928c1d52c8c6230a2764fb01" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftFramebuffer.bind();</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>glDrawBuffer(GL_COLOR_ATTACHMENT2);</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>glViewport(0,<sp/>0,<sp/>RESOLUTION,<sp/>RESOLUTION);</highlight></codeline>
@@ -404,16 +404,16 @@
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>glClearColor(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f);</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>glClear(GL_COLOR_BUFFER_BIT<sp/>|<sp/>GL_DEPTH_BUFFER_BIT);</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.<ref refid="classmv_1_1ShaderProgram_1a052bf015c5319e73ebefef8cbcea4d2d" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.bind();</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>_gradientTexture.<ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>(0);</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.<ref refid="classmv_1_1ShaderProgram_1a3b03d3a93122237105f6daad867edbd2" kindref="member">uniform1i</ref>(</highlight><highlight class="stringliteral">&quot;gradientTexture&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.uniform1i(</highlight><highlight class="stringliteral">&quot;gradientTexture&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.<ref refid="classmv_1_1ShaderProgram_1a050853a404afbf70edf55d23918377de" kindref="member">uniform4f</ref>(</highlight><highlight class="stringliteral">&quot;renderParams&quot;</highlight><highlight class="normal">,<sp/>0.25f,<sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" kindref="member">getMaxDensity</ref>(),<sp/>1.0f<sp/>/<sp/>RESOLUTION,<sp/>1.0f<sp/>/<sp/>RESOLUTION);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.uniform4f(</highlight><highlight class="stringliteral">&quot;renderParams&quot;</highlight><highlight class="normal">,<sp/>0.25f,<sp/>densityComputation.getMaxDensity(),<sp/>1.0f<sp/>/<sp/>RESOLUTION,<sp/>1.0f<sp/>/<sp/>RESOLUTION);</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1MeanShift_1a4d8001225cf00e98d3180b1c3cb61208" kindref="member">drawFullscreenQuad</ref>();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>drawFullscreenQuad();</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/>&quot;Drawing<sp/>meanshift&quot;;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.<ref refid="classmv_1_1ShaderProgram_1a6d9e80073e9170190c18b9748e955960" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderMeanshiftCompute.release();</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>_meanshiftPixels.resize(RESOLUTION<sp/>*<sp/>RESOLUTION);</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
@@ -431,7 +431,7 @@
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>centers.save(</highlight><highlight class="stringliteral">&quot;meanshift_centers.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/><ref refid="namespacemv_1a52169c6ee59895b63d194c78a9d84ef0" kindref="member">createProjectionMatrix</ref>(_bounds);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/>createProjectionMatrix(_bounds);</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_points-&gt;size();<sp/>i++)<sp/>{</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>the<sp/>coordinate<sp/>of<sp/>the<sp/>pixel<sp/>center<sp/>on<sp/>the<sp/>texture</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2f<sp/>p<sp/>=<sp/>(ortho<sp/>*<sp/>(*_points)[i]);</highlight></codeline>
@@ -448,12 +448,12 @@
 <codeline lineno="255"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="256"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a41cbcfdf89598013a31820ff2460d22d" kindref="member">MeanShift::cluster</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;&amp;<sp/>points,<sp/>std::vector&lt;std::vector&lt;unsigned<sp/>int&gt;&gt;&amp;<sp/>clusters)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MeanShift::cluster(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector2f&gt;&amp;<sp/>points,<sp/>std::vector&lt;std::vector&lt;unsigned<sp/>int&gt;&gt;&amp;<sp/>clusters)</highlight></codeline>
 <codeline lineno="259"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(points.size()<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1ab051a062b8a87ec4f97ac16756b70f5f" kindref="member">setSigma</ref>(_sigma);</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.<ref refid="classmv_1_1DensityComputation_1ac16868aa872068432f7bb553904e278d" kindref="member">compute</ref>();</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.setSigma(_sigma);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>densityComputation.compute();</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>computeGradient();</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>computeMeanShift();</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"></highlight></codeline>
@@ -482,7 +482,7 @@
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clusterId<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>clusterCenters.size();<sp/>c++)</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classmv_1_1MeanShift_1a4cb940ad04b09957c45ad71de1cb47cc" kindref="member">equal</ref>(center,<sp/>clusterCenters[c],<sp/>epsilon))</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(equal(center,<sp/>clusterCenters[c],<sp/>epsilon))</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clusterFound<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clusterId<sp/>=<sp/>c;</highlight></codeline>
@@ -513,7 +513,7 @@
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>vector<sp/>with<sp/>the<sp/>same<sp/>size<sp/>as<sp/>the<sp/>number<sp/>of<sp/>clusters,<sp/>and<sp/>set<sp/>all<sp/>IDs<sp/>to<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>activeIds(clusterCenters.size(),<sp/>-1);</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"></highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/><ref refid="namespacemv_1a52169c6ee59895b63d194c78a9d84ef0" kindref="member">createProjectionMatrix</ref>(_bounds);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/>createProjectionMatrix(_bounds);</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>runningIdx<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>_clusterPositions.clear();</highlight></codeline>
@@ -609,22 +609,22 @@
 <codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="417"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="418"><highlight class="normal"></highlight></codeline>
-<codeline lineno="419"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1MeanShift_1a4cb940ad04b09957c45ad71de1cb47cc" kindref="member">MeanShift::equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>p2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>epsilon)</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>MeanShift::equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2f&amp;<sp/>p2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>epsilon)</highlight></codeline>
 <codeline lineno="420"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fabs(p1.x<sp/>-<sp/>p2.x)<sp/>&lt;<sp/>epsilon<sp/>&amp;&amp;<sp/>fabs(p1.y<sp/>-<sp/>p2.y<sp/>&lt;<sp/>epsilon);</highlight></codeline>
 <codeline lineno="422"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="423"><highlight class="normal"></highlight></codeline>
-<codeline lineno="424"><highlight class="normal">Texture2D&amp;<sp/><ref refid="classmv_1_1MeanShift_1a764e476cda63bef4f45db0e581d161a9" kindref="member">MeanShift::getGradientTexture</ref>()</highlight></codeline>
+<codeline lineno="424"><highlight class="normal">Texture2D&amp;<sp/>MeanShift::getGradientTexture()</highlight></codeline>
 <codeline lineno="425"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_gradientTexture;</highlight></codeline>
 <codeline lineno="427"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"></highlight></codeline>
-<codeline lineno="429"><highlight class="normal">Texture2D&amp;<sp/><ref refid="classmv_1_1MeanShift_1a2e43abdba1dbbfefbd13669029f4c1b9" kindref="member">MeanShift::getMeanShiftTexture</ref>()</highlight></codeline>
+<codeline lineno="429"><highlight class="normal">Texture2D&amp;<sp/>MeanShift::getMeanShiftTexture()</highlight></codeline>
 <codeline lineno="430"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_meanshiftTexture;</highlight></codeline>
 <codeline lineno="432"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="433"><highlight class="normal"></highlight></codeline>
-<codeline lineno="434"><highlight class="normal">std::uint32_t<sp/><ref refid="classmv_1_1MeanShift_1a63e4306c1f371d7f2ae00ceab59b5eea" kindref="member">MeanShift::getResolution</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="434"><highlight class="normal">std::uint32_t<sp/>MeanShift::getResolution()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="435"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RESOLUTION;</highlight></codeline>
 <codeline lineno="437"><highlight class="normal">}</highlight></codeline>

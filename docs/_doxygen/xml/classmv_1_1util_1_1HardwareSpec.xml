@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classmv_1_1util_1_1HardwareSpec" kind="class" language="C++" prot="public" final="yes">
     <compoundname>mv::util::HardwareSpec</compoundname>
-    <includes refid="HardwareSpec_8h" local="no">HardwareSpec.h</includes>
     <innerclass refid="structmv_1_1util_1_1HardwareSpec_1_1SystemCompatibilityInfo" prot="public">mv::util::HardwareSpec::SystemCompatibilityInfo</innerclass>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="classmv_1_1util_1_1HardwareSpec_1af18e94eb8bc15427ef4d90c55d2750d4" prot="public" static="no" strong="yes">
@@ -101,7 +100,7 @@
         <location file="Docs/external/core/ManiVault/src/util/HardwareSpec.h" line="202" column="29" bodyfile="Docs/external/core/ManiVault/src/util/HardwareSpec.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1util_1_1HardwareSpec_1ad24e4dddd189d28cebfe5252a7c4c5a2" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1util_1ac40b4c50c2b14fb0520ec33a7038b8d8" kindref="member">HardwareComponentSpecs</ref></type>
+        <type>HardwareComponentSpecs</type>
         <definition>HardwareComponentSpecs mv::util::HardwareSpec::_hardwareComponentSpecs</definition>
         <argsstring></argsstring>
         <name>_hardwareComponentSpecs</name>
@@ -121,7 +120,7 @@
         <definition>HardwareSpec mv::util::HardwareSpec::systemHardwareSpec</definition>
         <argsstring></argsstring>
         <name>systemHardwareSpec</name>
-        <initializer>= <ref refid="classmv_1_1util_1_1HardwareSpec" kindref="compound">HardwareSpec</ref>(<ref refid="classmv_1_1util_1_1HardwareSpec_1af18e94eb8bc15427ef4d90c55d2750d4aa45da96d0bf6575970f2d27af22be28a" kindref="member">HardwareSpec::Type::System</ref>)</initializer>
+        <initializer>= <ref refid="classmv_1_1util_1_1HardwareSpec" kindref="compound">HardwareSpec</ref>(HardwareSpec::Type::System)</initializer>
         <briefdescription>
 <para>Hardware component specifications. </para>
         </briefdescription>
@@ -167,7 +166,7 @@
         <argsstring>(const QVariantMap &amp;variantMap)</argsstring>
         <name>fromVariantMap</name>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -256,7 +255,7 @@
         <location file="Docs/external/core/ManiVault/src/util/HardwareSpec.h" line="70" column="21" bodyfile="Docs/external/core/ManiVault/src/util/HardwareSpec.h" bodystart="70" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1HardwareSpec_1ac3ce746e0cc59a49d22884263d8a542e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1util_1ac40b4c50c2b14fb0520ec33a7038b8d8" kindref="member">HardwareComponentSpecs</ref></type>
+        <type>HardwareComponentSpecs</type>
         <definition>HardwareComponentSpecs mv::util::HardwareSpec::getHardwareComponentSpecs</definition>
         <argsstring>(bool initializedOnly=true) const</argsstring>
         <name>getHardwareComponentSpecs</name>

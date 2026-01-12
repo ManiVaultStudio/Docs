@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1gui_1_1PointRenderer" kind="class" language="C++" prot="public">
     <compoundname>mv::gui::PointRenderer</compoundname>
     <basecompoundref refid="classmv_1_1Renderer2D" prot="public" virt="non-virtual">mv::Renderer2D</basecompoundref>
-    <includes refid="PointRenderer_8h" local="no">PointRenderer.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a9640c6f13b96067b2027fd42ec2b0aa7" prot="private" static="no" mutable="no">
         <type><ref refid="structmv_1_1gui_1_1PointSettings" kindref="compound">PointSettings</ref></type>
@@ -20,7 +19,7 @@
         <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="205" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1ad79c945c1cc1bd1f808551a17b373cc8" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+        <type>PointEffect</type>
         <definition>PointEffect mv::gui::PointRenderer::_pointEffect</definition>
         <argsstring></argsstring>
         <name>_pointEffect</name>
@@ -34,11 +33,11 @@
         <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="206" column="41" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1PointRenderer_1a58ea22c7b85da48a68e9082512b3e280" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+        <type>PointSelectionDisplayMode</type>
         <definition>PointSelectionDisplayMode mv::gui::PointRenderer::_selectionDisplayMode</definition>
         <argsstring></argsstring>
         <name>_selectionDisplayMode</name>
-        <initializer>= <ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17a606b51cc1c9d0b4af394419a22f2ff1f" kindref="member">PointSelectionDisplayMode::Outline</ref></initializer>
+        <initializer>= PointSelectionDisplayMode::Outline</initializer>
         <briefdescription>
 <para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> visualization. </para>
         </briefdescription>
@@ -418,7 +417,7 @@
         <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="156" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="338" bodyend="341"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a7317c473443689d2456ad71776545706" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+        <type>PointEffect</type>
         <definition>PointEffect mv::gui::PointRenderer::getScalarEffect</definition>
         <argsstring>() const</argsstring>
         <name>getScalarEffect</name>
@@ -436,7 +435,7 @@
         <argsstring>(const PointEffect effect)</argsstring>
         <name>setScalarEffect</name>
         <param>
-          <type>const <ref refid="namespacemv_1_1gui_1a8b530a3fc2412b69958a2386ed0c77e4" kindref="member">PointEffect</ref></type>
+          <type>const PointEffect</type>
           <declname>effect</declname>
         </param>
         <briefdescription>
@@ -543,7 +542,7 @@
         <argsstring>(PointScaling scalingMode)</argsstring>
         <name>setPointScaling</name>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1af2288903abcbc6c0645e28942ab06382" kindref="member">PointScaling</ref></type>
+          <type>PointScaling</type>
           <declname>scalingMode</declname>
         </param>
         <briefdescription>
@@ -568,7 +567,7 @@
         <location file="Docs/external/core/ManiVault/src/renderers/PointRenderer.h" line="171" column="18" bodyfile="Docs/external/core/ManiVault/src/renderers/PointRenderer.cpp" bodystart="460" bodyend="463"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PointRenderer_1a47396f39f25432b6fb12c32c1530650b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+        <type>PointSelectionDisplayMode</type>
         <definition>mv::gui::PointSelectionDisplayMode mv::gui::PointRenderer::getSelectionDisplayMode</definition>
         <argsstring>() const</argsstring>
         <name>getSelectionDisplayMode</name>
@@ -586,7 +585,7 @@
         <argsstring>(PointSelectionDisplayMode selectionDisplayMode)</argsstring>
         <name>setSelectionDisplayMode</name>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1a8625253b1bbfe65c8ad9ca9712026d17" kindref="member">PointSelectionDisplayMode</ref></type>
+          <type>PointSelectionDisplayMode</type>
           <declname>selectionDisplayMode</declname>
         </param>
         <briefdescription>

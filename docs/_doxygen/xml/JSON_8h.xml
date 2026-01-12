@@ -22,7 +22,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -30,36 +30,6 @@
         <label>QtCore/QtGlobal</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="4">
-        <label>HelpManager.cpp</label>
-        <link refid="HelpManager_8cpp"/>
-      </node>
-      <node id="2">
-        <label>AbstractProjectsModel.cpp</label>
-        <link refid="AbstractProjectsModel_8cpp"/>
-      </node>
-      <node id="1">
-        <label>JSON.h</label>
-        <link refid="JSON_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>JSON.cpp</label>
-        <link refid="JSON_8cpp"/>
-      </node>
-      <node id="3">
-        <label>LearningCenterTutorialsModel.cpp</label>
-        <link refid="LearningCenterTutorialsModel_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innernamespace refid="namespacemv">mv</innernamespace>
     <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
     <briefdescription>
@@ -73,17 +43,17 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util<sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a908267e19452db45673cca30fca81289" kindref="member">isValidJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">CORE_EXPORT<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isValidJson(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/>std::string<sp/><ref refid="namespacemv_1_1util_1aa748f828f9943a3c1bc9f358dc937664" kindref="member">loadJsonFromResource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>resourcePath);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">CORE_EXPORT<sp/>std::string<sp/>loadJsonFromResource(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>resourcePath);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a285dc6b9ace1e70b3b0b5ba4f3d29b8a" kindref="member">validateJson</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonString,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonLocation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonSchemaString,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>publicJsonSchemaLocation);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">CORE_EXPORT<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>validateJson(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonString,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonLocation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>jsonSchemaString,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>publicJsonSchemaLocation);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal">}</highlight></codeline>
     </programlisting>

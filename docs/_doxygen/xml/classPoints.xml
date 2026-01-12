@@ -3,7 +3,6 @@
   <compounddef id="classPoints" kind="class" language="C++" prot="public">
     <compoundname>Points</compoundname>
     <basecompoundref refid="classmv_1_1DatasetImpl" prot="public" virt="non-virtual">mv::DatasetImpl</basecompoundref>
-    <includes refid="PointData_8h" local="no">PointData.h</includes>
     <innerclass refid="classPoints_1_1Experimental" prot="public">Points::Experimental</innerclass>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classPoints_1a7e5e0d4145f7b533d1d88ce3c166e206" prot="public" static="no" mutable="no">
@@ -719,7 +718,7 @@
         <name>mayProxy</name>
         <reimplements refid="classmv_1_1DatasetImpl_1a4f92b0b7cb207f290d0524e6d1f788d5">mayProxy</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref> &amp;</type>
+          <type>const mv::Datasets &amp;</type>
           <declname>proxyDatasets</declname>
         </param>
         <briefdescription>
@@ -993,7 +992,7 @@
         <name>setProxyMembers</name>
         <reimplements refid="classmv_1_1DatasetImpl_1a77d1fc8da1c2c5fc236a21f7165cc6f6">setProxyMembers</reimplements>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">mv::Datasets</ref> &amp;</type>
+          <type>const mv::Datasets &amp;</type>
           <declname>proxyMembers</declname>
         </param>
         <briefdescription>
@@ -1298,7 +1297,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1DatasetImpl_1a1db2ebe6566eb494ef97ada4b06ec9b5">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -1321,7 +1320,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.h" line="988" column="10" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointData.cpp" bodystart="978" bodyend="1073"/>
       </memberdef>
       <memberdef kind="function" id="classPoints_1ada7c6af2dcc5b351bdf99c331df32116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap Points::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>

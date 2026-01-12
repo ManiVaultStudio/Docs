@@ -18,29 +18,17 @@
       </node>
       <node id="2">
         <label>DockAreaTitleBar.h</label>
-        <link refid="DockAreaTitleBar_8h"/>
+        <link refid="DockAreaTitleBar_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>DockComponentsFactory.cpp</label>
-        <link refid="DockComponentsFactory_8cpp"/>
-      </node>
       <node id="1">
         <label>DockComponentsFactory.h</label>
         <link refid="DockComponentsFactory_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>WorkspaceManager.cpp</label>
-        <link refid="WorkspaceManager_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classDockComponentsFactory" prot="public">DockComponentsFactory</innerclass>
@@ -55,15 +43,15 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="DockComponentsFactory_8h" kindref="compound">DockComponentsFactory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="DockAreaTitleBar_8h" kindref="compound">DockAreaTitleBar.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DockComponentsFactory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DockAreaTitleBar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DockAreaTitleBar_8h" kindref="compound">DockAreaTitleBar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DockAreaTitleBar.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19" refid="classDockComponentsFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDockComponentsFactory" kindref="compound">DockComponentsFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ads::CDockComponentsFactory</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="22" refid="classDockComponentsFactory_1ae194b118505425cfb626767549a5e42e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classDockComponentsFactory_1ae194b118505425cfb626767549a5e42e" kindref="member">Super</ref><sp/>=<sp/>ads::CDockComponentsFactory;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Super<sp/>=<sp/>ads::CDockComponentsFactory;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>ads::CDockAreaTitleBar*<sp/><ref refid="classDockComponentsFactory_1a774ae6469a443f16cbc63e219221fb25" kindref="member">createDockAreaTitleBar</ref>(ads::CDockAreaWidget*<sp/>dockAreaWidget)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>

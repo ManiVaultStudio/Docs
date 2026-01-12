@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1EventManager" kind="class" language="C++" prot="public" final="yes">
     <compoundname>mv::EventManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractEventManager" prot="public" virt="non-virtual">mv::AbstractEventManager</basecompoundref>
-    <includes refid="EventManager_8h" local="no">EventManager.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1EventManager_1ada52af934bde74d98e86dc6d3cec7a69" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> * &gt;</type>
@@ -320,7 +319,7 @@
           <declname>dataset</declname>
         </param>
         <param>
-          <type><ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> *</type>
+          <type>Datasets *</type>
           <declname>ignoreDatasets</declname>
           <defval>nullptr</defval>
         </param>
@@ -474,7 +473,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -497,7 +496,7 @@
         <location file="Docs/external/core/ManiVault/src/private/EventManager.h" line="111" column="10" bodyfile="Docs/external/core/ManiVault/src/private/EventManager.cpp" bodystart="341" bodyend="352"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventManager_1a489788353e838033a7b41c8153e19db1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::EventManager::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>

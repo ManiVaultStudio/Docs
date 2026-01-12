@@ -17,7 +17,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -40,24 +40,6 @@
         <label>QtCore/QtGlobal</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="3">
-        <label>Math.cpp</label>
-        <link refid="Math_8cpp"/>
-      </node>
-      <node id="1">
-        <label>Math.h</label>
-        <link refid="Math_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Navigator2D.cpp</label>
-        <link refid="Navigator2D_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innernamespace refid="namespacemv">mv</innernamespace>
     <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
     <briefdescription>
@@ -71,32 +53,32 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPointF&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QRectF&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSize&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a1ee4183038af56f61f4b2b6198bdb430" kindref="member">lerp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">CORE_EXPORT<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lerp(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="34" refid="namespacemv_1_1util_1a43b405c8777ccd76b5f81196dd7686d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a43b405c8777ccd76b5f81196dd7686d6" kindref="member">almostEqual</ref>(T<sp/>a,<sp/>T<sp/>b,<sp/>T<sp/>relativeTolerance<sp/>=<sp/>T(1e-6),<sp/>T<sp/>absoluteTolerance<sp/>=<sp/>T(1e-12))<sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::fabs(a<sp/>-<sp/>b)<sp/>&lt;=<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(relativeTolerance<sp/>*<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(std::fabs(a),<sp/>std::fabs(b)),<sp/>absoluteTolerance);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>almostEqual(T<sp/>a,<sp/>T<sp/>b,<sp/>T<sp/>relativeTolerance<sp/>=<sp/>T(1e-6),<sp/>T<sp/>absoluteTolerance<sp/>=<sp/>T(1e-12))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::fabs(a<sp/>-<sp/>b)<sp/>&lt;=<sp/>std::max(relativeTolerance<sp/>*<sp/>std::max(std::fabs(a),<sp/>std::fabs(b)),<sp/>absoluteTolerance);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="namespacemv_1_1util_1afc897f27d8d1e0ec9e3c1e9d60de29e9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1afc897f27d8d1e0ec9e3c1e9d60de29e9" kindref="member">arePointsEqual</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>point1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>point2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>arePointsEqual(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>point1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>point2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>qAbs(point1.x()<sp/>-<sp/>point2.x())<sp/>&lt;<sp/>epsilon<sp/>&amp;&amp;<sp/>qAbs(point1.y()<sp/>-<sp/>point2.y())<sp/>&lt;<sp/>epsilon;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="namespacemv_1_1util_1a9ad1c33f63d6e074040300e56dd5e073" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a9ad1c33f63d6e074040300e56dd5e073" kindref="member">areSizesEqual</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSizeF&amp;<sp/>size1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSizeF&amp;<sp/>size2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>areSizesEqual(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSizeF&amp;<sp/>size1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSizeF&amp;<sp/>size2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>qAbs(size1.width()<sp/>-<sp/>size2.width())<sp/>&lt;<sp/>epsilon<sp/>&amp;&amp;<sp/>qAbs(size1.height()<sp/>-<sp/>size2.height())<sp/>&lt;<sp/>epsilon;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="namespacemv_1_1util_1ab0842d291668ec8dc1e8ebf8cb68f4dc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1ab0842d291668ec8dc1e8ebf8cb68f4dc" kindref="member">areRectanglesEqual</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1afc897f27d8d1e0ec9e3c1e9d60de29e9" kindref="member">arePointsEqual</ref>(rect1.topLeft(),<sp/>rect2.topLeft())<sp/>&amp;&amp;<sp/><ref refid="namespacemv_1_1util_1a9ad1c33f63d6e074040300e56dd5e073" kindref="member">areSizesEqual</ref>(rect1.size(),<sp/>rect2.size());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>areRectanglesEqual(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect2,<sp/>qreal<sp/>epsilon<sp/>=<sp/>1e-5)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>arePointsEqual(rect1.topLeft(),<sp/>rect2.topLeft())<sp/>&amp;&amp;<sp/>areSizesEqual(rect1.size(),<sp/>rect2.size());</highlight></codeline>
 <codeline lineno="69"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>

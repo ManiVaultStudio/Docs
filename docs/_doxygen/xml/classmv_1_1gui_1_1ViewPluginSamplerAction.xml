@@ -97,7 +97,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/ViewPluginSamplerAction.h" line="88" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/ViewPluginSamplerAction.h" bodystart="89" bodyend="92"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1gui_1_1ViewPluginSamplerAction_1a90b4bf1e7fdb1072cc59d60aa5e370e3" prot="public" static="no">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>using mv::gui::ViewPluginSamplerAction::SampleContext =  QVariantMap</definition>
         <argsstring></argsstring>
         <name>SampleContext</name>
@@ -493,7 +493,7 @@
         <param>
           <type>const <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af40073b9f1830debd562ff8717047815" kindref="member">ViewingMode</ref> &amp;</type>
           <declname>viewingMode</declname>
-          <defval><ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af40073b9f1830debd562ff8717047815a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">ViewingMode::None</ref></defval>
+          <defval>ViewingMode::None</defval>
         </param>
         <briefdescription>
 <para>Construct with pointer to <computeroutput>parent</computeroutput> object and title. </para>
@@ -749,7 +749,7 @@
           <declname>htmlViewGeneratorFunction</declname>
         </param>
         <briefdescription>
-<para>Sets the HTML view generator function to <computeroutput>htmlViewGeneratorFunction</computeroutput> (automatically sets the viewing type to <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1ad3fac9df6b1b9ad0beadad745bc51b7aa4c4ad5fca2e7a3f74dbb1ced00381aa4" kindref="member">ViewGeneratorType::HTML</ref>) </para>
+<para>Sets the HTML view generator function to <computeroutput>htmlViewGeneratorFunction</computeroutput> (automatically sets the viewing type to ViewGeneratorType::HTML) </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -881,7 +881,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1gui_1_1GroupAction_1ae5a855c83fe180d88f1f69408dc5f5d1">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -904,7 +904,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/ViewPluginSamplerAction.h" line="245" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/ViewPluginSamplerAction.cpp" bodystart="529" bodyend="540"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1ViewPluginSamplerAction_1af37ee9256e7f40bfa110eac5ed6745d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::gui::ViewPluginSamplerAction::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
@@ -1432,14 +1432,14 @@
     <detaileddescription>
 <para>Provides sampling support in view plugins</para>
 <para>Sampling is based on either:<itemizedlist>
-<listitem><para>The current selection (<ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1aac2b3ba572e01687f0c8cc60aac9cca1a6ff9dd0d34f65181173c1e4bc39939de" kindref="member">SamplingMode::Selection</ref>) In this mode, the view plugin updates the sample context whenever its selection changes, it calls <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af218b028881cd43f0b6dffd8f0e4f5be" kindref="member">ViewPluginSamplerAction::setSampleContext(const SampleContext&amp; sampleContext)</ref>. The sample context is a QVariantMap and depends on the type of view plugin.</para>
+<listitem><para>The current selection (SamplingMode::Selection) In this mode, the view plugin updates the sample context whenever its selection changes, it calls <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af218b028881cd43f0b6dffd8f0e4f5be" kindref="member">ViewPluginSamplerAction::setSampleContext(const SampleContext&amp; sampleContext)</ref>. The sample context is a QVariantMap and depends on the type of view plugin.</para>
 </listitem><listitem><para>Focus region (circular) around the mouse cursor (<ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1aac2b3ba572e01687f0c8cc60aac9cca1a22aadb477436272ac3375b16ea6ec5e2" kindref="member">SamplingMode::FocusRegion</ref>) In this mode, the <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1ad09f2848fcbd501c7cacb125cecfb2d5" kindref="member">ViewPluginSamplerAction::sampleContextRequested()</ref> signal is called periodically. The view plugin collects the samples in response to the signal and calls <ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af218b028881cd43f0b6dffd8f0e4f5be" kindref="member">ViewPluginSamplerAction::setSampleContext(const SampleContext&amp; sampleContext)</ref> to update the current sample context.</para>
 </listitem></itemizedlist>
 </para>
 <para>When the current sample context changes, the current ViewPluginSamplerAction::_viewGeneratorType determines whether the HTML or widget view generator function is called to update the view:<itemizedlist>
 <listitem><para>ViewPluginSamplerAction::_htmlViewGeneratorFunction, see ViewPluginSamplerAction::setHtmlViewGeneratorFunction(...)</para>
 </listitem><listitem><para>ViewPluginSamplerAction::_widgetViewGeneratorFunction, see ViewPluginSamplerAction::setWidgetViewGeneratorFunction(...) The generated view is then either:</para>
-</listitem><listitem><para>Not shown at all (<ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af40073b9f1830debd562ff8717047815a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">ViewingMode::None</ref>)</para>
+</listitem><listitem><para>Not shown at all (ViewingMode::None)</para>
 </listitem><listitem><para>Shown in a tooltip (<ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af40073b9f1830debd562ff8717047815ac983077ca27977bb5cb4b6398f144166" kindref="member">ViewingMode::Tooltip</ref>)</para>
 </listitem><listitem><para>Shown in a window (<ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction_1af40073b9f1830debd562ff8717047815ab13311ab51c4c34757f67f26580018dd" kindref="member">ViewingMode::Windowed</ref>)</para>
 </listitem></itemizedlist>

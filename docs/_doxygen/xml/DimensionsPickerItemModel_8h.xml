@@ -24,57 +24,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>DimensionsPickerFilterAction.cpp</label>
-        <link refid="DimensionsPickerFilterAction_8cpp"/>
-      </node>
-      <node id="7">
-        <label>PointData.cpp</label>
-        <link refid="PointData_8cpp"/>
-      </node>
-      <node id="3">
-        <label>DimensionsPickerAction.cpp</label>
-        <link refid="DimensionsPickerAction_8cpp"/>
-      </node>
-      <node id="5">
-        <label>DimensionsPickerMiscellaneousAction.cpp</label>
-        <link refid="DimensionsPickerMiscellaneousAction_8cpp"/>
-      </node>
       <node id="2">
         <label>DimensionsPickerAction.h</label>
-        <link refid="DimensionsPickerAction_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="DimensionsPickerAction_8h_source"/>
       </node>
       <node id="1">
         <label>DimensionsPickerItemModel.h</label>
         <link refid="DimensionsPickerItemModel_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>DimensionsPickerProxyModel.cpp</label>
-        <link refid="DimensionsPickerProxyModel_8cpp"/>
-      </node>
-      <node id="8">
-        <label>DimensionsPickerItemModel.cpp</label>
-        <link refid="DimensionsPickerItemModel_8cpp"/>
-      </node>
-      <node id="6">
-        <label>DimensionsPickerSelectAction.cpp</label>
-        <link refid="DimensionsPickerSelectAction_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmv_1_1DimensionsPickerItemModel" prot="public">mv::DimensionsPickerItemModel</innerclass>
@@ -102,18 +60,18 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>&amp;<sp/>_holder;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19" refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52" kindref="member">ColumnEnum</ref>:<sp/>int</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>ColumnEnum:<sp/>int</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52a49ee3087348e8d44e1feda1917443987" kindref="member">Name</ref>,</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52a3d6c9ac08ada31c184094bbc67afe00d" kindref="member">Mean</ref>,</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52a690ab5004e5e4913a865cbc8ed6a53b4" kindref="member">StandardDeviation</ref>,</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a9fcbbbb876d96a53509db23da1e5ff52ae2942a04780e223b215eb8b663cf5353" kindref="member">count</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mean,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StandardDeviation,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1abb226be1c2cc90284a210a69329f7080" kindref="member">DimensionsPickerItemModel</ref>(<ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>&amp;);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerItemModel" kindref="compound">DimensionsPickerItemModel</ref>(<ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>&amp;);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QModelIndex<sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a15a9910acb39cb214eebcaf592ce8eb4" kindref="member">index</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerItemModel_1a148acea440fa64dece85be11d6757e94" kindref="member">rowCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QModelIndex<sp/>index(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/><sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rowCount(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Implementation<sp/>of<sp/>pure<sp/>virtual<sp/>member<sp/>functions<sp/>of<sp/>QAbstractItemModel</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>

@@ -138,7 +138,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="46" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1gui_1_1GroupAction_1a8d8927a98b46c7467baa9eff37b12718" prot="public" static="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; const <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *, <ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref> &gt;</type>
+        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; const <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> *, WidgetConfigurationFunction &gt;</type>
         <definition>using mv::gui::GroupAction::WidgetConfigurationFunctionsMap =  QMap&lt;const WidgetAction*, WidgetConfigurationFunction&gt;</definition>
         <argsstring></argsstring>
         <name>WidgetConfigurationFunctionsMap</name>
@@ -207,7 +207,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="313" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.h" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1GroupAction_1a32f17ff0db605a5eba3ea70c0119a13c" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <type>WidgetActions</type>
         <definition>WidgetActions mv::gui::GroupAction::_actions</definition>
         <argsstring></argsstring>
         <name>_actions</name>
@@ -235,7 +235,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="315" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1GroupAction_1ae90389d0522f670d8c7a2d8e1c840219" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1gui_1_1GroupAction_1ac6ea8459b138c1d690ed065aeddfbdb1" kindref="member">WidgetFlagsMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">WidgetFlagsMap</ref></type>
         <definition>WidgetFlagsMap mv::gui::GroupAction::_widgetFlagsMap</definition>
         <argsstring></argsstring>
         <name>_widgetFlagsMap</name>
@@ -249,7 +249,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="316" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.h" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1GroupAction_1a5b0d56ffb9627ad2368bb3059f7d0b47" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1gui_1_1GroupAction_1a8d8927a98b46c7467baa9eff37b12718" kindref="member">WidgetConfigurationFunctionsMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">WidgetConfigurationFunctionsMap</ref></type>
         <definition>WidgetConfigurationFunctionsMap mv::gui::GroupAction::_widgetConfigurationFunctionsMap</definition>
         <argsstring></argsstring>
         <name>_widgetConfigurationFunctionsMap</name>
@@ -685,9 +685,9 @@
           <defval>-1</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref></type>
+          <type>WidgetConfigurationFunction</type>
           <declname>widgetConfigurationFunction</declname>
-          <defval><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">WidgetConfigurationFunction</ref>()</defval>
+          <defval>WidgetConfigurationFunction()</defval>
         </param>
         <param>
           <type>bool</type>
@@ -794,7 +794,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="189" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.cpp" bodystart="310" bodyend="313"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1GroupAction_1ad1927fa59910e23bfda8486d3e0b7945" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref></type>
+        <type>WidgetActions</type>
         <definition>WidgetActions mv::gui::GroupAction::getActions</definition>
         <argsstring>() final</argsstring>
         <name>getActions</name>
@@ -811,7 +811,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="195" column="27" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.cpp" bodystart="178" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1GroupAction_1a15cc71f14a1c7cff0174e1a95b4eee2e" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1a4d872f2d9674614e3faed84fdb83fcbf" kindref="member">ConstWidgetActions</ref></type>
+        <type>ConstWidgetActions</type>
         <definition>ConstWidgetActions mv::gui::GroupAction::getConstActions</definition>
         <argsstring>() final</argsstring>
         <name>getConstActions</name>
@@ -828,7 +828,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="201" column="32" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.cpp" bodystart="183" bodyend="191"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1GroupAction_1a6a3bbe0c8a5e6adc6b6b97a52c372bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1gui_1_1GroupAction_1ac6ea8459b138c1d690ed065aeddfbdb1" kindref="member">WidgetFlagsMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">WidgetFlagsMap</ref></type>
         <definition>GroupAction::WidgetFlagsMap mv::gui::GroupAction::getWidgetFlagsMap</definition>
         <argsstring>()</argsstring>
         <name>getWidgetFlagsMap</name>
@@ -845,7 +845,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="207" column="20" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.cpp" bodystart="273" bodyend="276"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1GroupAction_1a19b16e0382635a2c030eff1ef45ed587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1gui_1_1GroupAction_1a8d8927a98b46c7467baa9eff37b12718" kindref="member">WidgetConfigurationFunctionsMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">WidgetConfigurationFunctionsMap</ref></type>
         <definition>GroupAction::WidgetConfigurationFunctionsMap mv::gui::GroupAction::getWidgetConfigurationFunctionsMap</definition>
         <argsstring>()</argsstring>
         <name>getWidgetConfigurationFunctionsMap</name>
@@ -1013,7 +1013,7 @@
         <reimplementedby refid="classmv_1_1ProjectCompressionAction_1ab6a337b26993e221a6b185603cb19895">fromVariantMap</reimplementedby>
         <reimplementedby refid="classmv_1_1ProjectMetaAction_1a269a52485ded2f4a6547088622acfc6b">fromVariantMap</reimplementedby>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -1036,7 +1036,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/GroupAction.h" line="258" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/GroupAction.cpp" bodystart="283" bodyend="290"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1GroupAction_1a2086c39774b8f1bf2e1f0c3e6dac036b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::gui::GroupAction::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
@@ -1075,7 +1075,7 @@
         <argsstring>(const WidgetActions &amp;actions)</argsstring>
         <name>actionsChanged</name>
         <param>
-          <type>const <ref refid="namespacemv_1_1gui_1a3c1b86e506c2dddebac64a6db2a32667" kindref="member">WidgetActions</ref> &amp;</type>
+          <type>const WidgetActions &amp;</type>
           <declname>actions</declname>
         </param>
         <briefdescription>

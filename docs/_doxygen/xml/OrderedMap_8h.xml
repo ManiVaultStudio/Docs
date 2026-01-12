@@ -19,7 +19,7 @@
       </node>
       <node id="6">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -37,7 +37,7 @@
       </node>
       <node id="4">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -74,7 +74,7 @@
       </node>
       <node id="3">
         <label>util/Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -104,28 +104,14 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
-        <label>InfoAction.cpp</label>
-        <link refid="TextData_2src_2InfoAction_8cpp"/>
+      <node id="3">
+        <label>InfoAction.h</label>
+        <link refid="TextData_2src_2InfoAction_8h_source"/>
       </node>
       <node id="2">
-        <label>OrderedMap.cpp</label>
-        <link refid="OrderedMap_8cpp"/>
-      </node>
-      <node id="4">
-        <label>InfoAction.h</label>
-        <link refid="TextData_2src_2InfoAction_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
         <label>TextData.h</label>
-        <link refid="TextData_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+        <link refid="TextData_8h_source"/>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -133,12 +119,6 @@
         <link refid="OrderedMap_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>TextData.cpp</label>
-        <link refid="TextData_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmv_1_1OrderedMap" prot="public">mv::OrderedMap</innerclass>
@@ -156,7 +136,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;textdata_export.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Serializable_8h" kindref="compound">util/Serializable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;util/Serializable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>

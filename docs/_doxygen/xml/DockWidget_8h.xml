@@ -29,7 +29,7 @@
       </node>
       <node id="5">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -47,7 +47,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -62,7 +62,7 @@
       </node>
       <node id="2">
         <label>util/Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -89,43 +89,23 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="8">
-        <label>DockAreaTitleBar.cpp</label>
-        <link refid="DockAreaTitleBar_8cpp"/>
-      </node>
-      <node id="4">
+      <node id="3">
         <label>DockManager.h</label>
-        <link refid="DockManager_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
+        <link refid="DockManager_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>Core.cpp</label>
-        <link refid="Core_8cpp"/>
       </node>
       <node id="2">
         <label>CentralDockWidget.h</label>
-        <link refid="CentralDockWidget_8h"/>
+        <link refid="CentralDockWidget_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>ViewPluginDockWidget.cpp</label>
-        <link refid="ViewPluginDockWidget_8cpp"/>
       </node>
       <node id="1">
         <label>DockWidget.h</label>
@@ -134,76 +114,28 @@
         </childnode>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+      </node>
+      <node id="4">
+        <label>WorkspaceManager.h</label>
+        <link refid="WorkspaceManager_8h_source"/>
+      </node>
+      <node id="6">
+        <label>ViewPluginsDockWidget.h</label>
+        <link refid="ViewPluginsDockWidget_8h_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="5">
-        <label>WorkspaceManager.h</label>
-        <link refid="WorkspaceManager_8h"/>
+        <label>ViewPluginDockWidget.h</label>
+        <link refid="ViewPluginDockWidget_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>ViewPluginsDockWidget.h</label>
-        <link refid="ViewPluginsDockWidget_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>ViewPluginsDockWidget.cpp</label>
-        <link refid="ViewPluginsDockWidget_8cpp"/>
-      </node>
-      <node id="13">
-        <label>LoadSystemViewMenu.cpp</label>
-        <link refid="LoadSystemViewMenu_8cpp"/>
-      </node>
-      <node id="9">
-        <label>DockManager.cpp</label>
-        <link refid="DockManager_8cpp"/>
-      </node>
-      <node id="10">
-        <label>ViewPluginDockWidget.h</label>
-        <link refid="ViewPluginDockWidget_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>DockWidget.cpp</label>
-        <link refid="DockWidget_8cpp"/>
-      </node>
-      <node id="14">
-        <label>ViewMenu.cpp</label>
-        <link refid="ViewMenu_8cpp"/>
-      </node>
-      <node id="7">
-        <label>WorkspaceManager.cpp</label>
-        <link refid="WorkspaceManager_8cpp"/>
-      </node>
-      <node id="3">
-        <label>CentralDockWidget.cpp</label>
-        <link refid="CentralDockWidget_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classDockWidget" prot="public">DockWidget</innerclass>
@@ -233,9 +165,9 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="Serializable_8h" kindref="compound">util/Serializable.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;util/Serializable.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="DockWidget_8h" kindref="compound">DockWidget.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DockWidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMenu&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
@@ -272,7 +204,7 @@
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_settingsMenu;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="85"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="DockWidget_8h_1a2a26f9e99a9d763908457ba6f4904256" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="DockWidget_8h_1a2a26f9e99a9d763908457ba6f4904256" kindref="member">DockWidgets</ref><sp/>=<sp/>QVector&lt;DockWidget*&gt;;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>DockWidgets<sp/>=<sp/>QVector&lt;DockWidget*&gt;;</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/private/DockWidget.h"/>
   </compounddef>

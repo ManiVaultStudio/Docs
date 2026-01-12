@@ -16,7 +16,7 @@
       </node>
       <node id="12">
         <label>graphics/Framebuffer.h</label>
-        <link refid="Framebuffer_8h"/>
+        <link refid="Framebuffer_8h_source"/>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -31,7 +31,7 @@
       </node>
       <node id="18">
         <label>graphics/Shader.h</label>
-        <link refid="Shader_8h"/>
+        <link refid="Shader_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -43,7 +43,7 @@
       </node>
       <node id="3">
         <label>graphics/Bounds.h</label>
-        <link refid="Bounds_8h"/>
+        <link refid="Bounds_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -51,7 +51,7 @@
       </node>
       <node id="9">
         <label>graphics/BufferObject.h</label>
-        <link refid="BufferObject_8h"/>
+        <link refid="BufferObject_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -70,7 +70,7 @@
       </node>
       <node id="4">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -85,7 +85,7 @@
       </node>
       <node id="6">
         <label>Vector2f.h</label>
-        <link refid="Vector2f_8h"/>
+        <link refid="Vector2f_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -107,7 +107,7 @@
       </node>
       <node id="21">
         <label>graphics/Matrix3f.h</label>
-        <link refid="Matrix3f_8h"/>
+        <link refid="Matrix3f_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -115,7 +115,7 @@
       </node>
       <node id="13">
         <label>Texture.h</label>
-        <link refid="Texture_8h"/>
+        <link refid="Texture_8h_source"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
@@ -141,7 +141,7 @@
       </node>
       <node id="2">
         <label>DensityComputation.h</label>
-        <link refid="DensityComputation_8h"/>
+        <link refid="DensityComputation_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -168,10 +168,10 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DensityComputation_8h" kindref="compound">DensityComputation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DensityComputation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Bounds_8h" kindref="compound">graphics/Bounds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Matrix3f_8h" kindref="compound">graphics/Matrix3f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Bounds.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Matrix3f.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -193,10 +193,10 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt(maxDimension);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Matrix3f<sp/><ref refid="namespacemv_1a52169c6ee59895b63d194c78a9d84ef0" kindref="member">createProjectionMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Bounds&amp;<sp/>bounds)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Matrix3f<sp/>createProjectionMatrix(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Bounds&amp;<sp/>bounds)</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Matrix3f<sp/>m;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.<ref refid="classmv_1_1Matrix3f_1aa937a6839c1fc2ba18d5b84bf397d38f" kindref="member">setIdentity</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m.setIdentity();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m[0]<sp/>=<sp/>2<sp/>/<sp/>(bounds.getRight()<sp/>-<sp/>bounds.getLeft());</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m[4]<sp/>=<sp/>2<sp/>/<sp/>(bounds.getTop()<sp/>-<sp/>bounds.getBottom());</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m[6]<sp/>=<sp/>-((bounds.getRight()<sp/>+<sp/>bounds.getLeft())<sp/>/<sp/>(bounds.getRight()<sp/>-<sp/>bounds.getLeft()));</highlight></codeline>
@@ -205,7 +205,7 @@
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1GaussianTexture_1a9829cb621274b0db9773e7b19ba13413" kindref="member">GaussianTexture::generate</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GaussianTexture::generate()</highlight></codeline>
 <codeline lineno="43"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
@@ -228,7 +228,7 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/><ref refid="classmv_1_1Texture_1a092070395cb999c82a246c1481c07fdb" kindref="member">_handle</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/>_handle);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexImage2D(GL_TEXTURE_2D,<sp/>0,<sp/>GL_R32F,<sp/>w,<sp/>h,<sp/>0,<sp/>GL_RED,<sp/>GL_FLOAT,<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MAG_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>glTexParameteri(GL_TEXTURE_2D,<sp/>GL_TEXTURE_MIN_FILTER,<sp/>GL_LINEAR);</highlight></codeline>
@@ -236,7 +236,7 @@
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><ref refid="classmv_1_1DensityComputation_1a636e059ab24bf01e82862cf8c6183f05" kindref="member">DensityComputation::DensityComputation</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">DensityComputation::DensityComputation()<sp/>:</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>QOpenGLFunctions_3_3_Core(),</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>_initialized(false),</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>_ctx(nullptr),</highlight></codeline>
@@ -428,7 +428,7 @@
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>_gaussTexture.bind(0);</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderDensityCompute.uniform1i(</highlight><highlight class="stringliteral">&quot;gaussSampler&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/><ref refid="namespacemv_1a52169c6ee59895b63d194c78a9d84ef0" kindref="member">createProjectionMatrix</ref>(_bounds);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>Matrix3f<sp/>ortho<sp/>=<sp/>createProjectionMatrix(_bounds);</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderDensityCompute.uniformMatrix3f(</highlight><highlight class="stringliteral">&quot;projMatrix&quot;</highlight><highlight class="normal">,<sp/>ortho);</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>_shaderDensityCompute.uniform1i(</highlight><highlight class="stringliteral">&quot;hasWeight&quot;</highlight><highlight class="normal">,<sp/>hasWeight);</highlight></codeline>
@@ -462,7 +462,7 @@
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxKDE<sp/>=<sp/>std::numeric_limits&lt;float&gt;::lowest();</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>kde.size();<sp/>i<sp/>+=<sp/>3)<sp/></highlight><highlight class="comment">//<sp/>only<sp/>lookup<sp/>red<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxKDE<sp/>=<sp/><ref refid="namespacemv_1a4fa398e0efe31b141888d4edbc8102d8" kindref="member">std::max</ref>(maxKDE,<sp/>kde[i]);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxKDE<sp/>=<sp/>std::max(maxKDE,<sp/>kde[i]);</highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"></highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxKDE;</highlight></codeline>

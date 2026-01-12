@@ -12,7 +12,7 @@
       </node>
       <node id="6">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -30,13 +30,13 @@
       </node>
       <node id="4">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>Version.h</label>
-        <link refid="Version_8h"/>
+        <link refid="Version_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -53,7 +53,7 @@
       </node>
       <node id="3">
         <label>Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -96,9 +96,9 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Version_8h" kindref="compound">Version.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Version.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util<sp/>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>Version::semanticVersioningRegex<sp/>=<sp/>QString(R</highlight><highlight class="stringliteral">&quot;((0|[1-9]\d*)(?:\.(0|[1-9]\d*))?(?:\.(0|[1-9]\d*))?(?:-([\da-zA-Z-]+(?:\.[\da-zA-Z-]+)*))?(?:\+([\da-zA-Z-]+(?:\.[\da-zA-Z-]+)*))?)&quot;);</highlight></codeline>
 <codeline lineno="10"><highlight class="stringliteral"></highlight></codeline>
@@ -234,10 +234,10 @@
 <codeline lineno="140"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>Serializable::fromVariantMap(variantMap);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Major&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Minor&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Patch&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a46eac6dd2eabef2bbc0b8ad8e8dd5229" kindref="member">variantMapMustContain</ref>(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Suffix&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Major&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Minor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Patch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>variantMapMustContain(variantMap,<sp/></highlight><highlight class="stringliteral">&quot;Suffix&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>setMajor(variantMap[</highlight><highlight class="stringliteral">&quot;Major&quot;</highlight><highlight class="normal">].toInt());</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>setMinor(variantMap[</highlight><highlight class="stringliteral">&quot;Minor&quot;</highlight><highlight class="normal">].toInt());</highlight></codeline>

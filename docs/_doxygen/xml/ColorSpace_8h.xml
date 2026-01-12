@@ -21,18 +21,6 @@
         <label>QString</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="1">
-        <label>ColorSpace.h</label>
-        <link refid="ColorSpace_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>ColorSpace.cpp</label>
-        <link refid="ColorSpace_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innernamespace refid="namespacemv">mv</innernamespace>
     <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
     <briefdescription>
@@ -53,21 +41,21 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bc" kindref="member">ColorSpaceType</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>ColorSpaceType</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca5d9b47bd3b65072e0d5daf55f01da086" kindref="member">Mono</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca9d6ea08e871ed0e7206290f6b82173aa" kindref="member">Duo</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca889574aebacda6bfd3e534e2b49b8028" kindref="member">RGB</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca855c12a901e2564e19adcd8706ab867e" kindref="member">HSL</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bcaa18771cf7e181cdf9dad769d494bafef" kindref="member">LAB</ref><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Mono,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Duo,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>RGB,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>HSL,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>LAB<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="22"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QMap&lt;ColorSpaceType, QString&gt;</ref><sp/>colorSpaces<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca5d9b47bd3b65072e0d5daf55f01da086" kindref="member">ColorSpaceType::Mono</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Mono&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca9d6ea08e871ed0e7206290f6b82173aa" kindref="member">ColorSpaceType::Duo</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Duo&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca889574aebacda6bfd3e534e2b49b8028" kindref="member">ColorSpaceType::RGB</ref>,<sp/></highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bca855c12a901e2564e19adcd8706ab867e" kindref="member">ColorSpaceType::HSL</ref>,<sp/></highlight><highlight class="stringliteral">&quot;HSL&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a69edcfacb7815a958d6b5c98527769bcaa18771cf7e181cdf9dad769d494bafef" kindref="member">ColorSpaceType::LAB</ref>,<sp/></highlight><highlight class="stringliteral">&quot;LAB&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ColorSpaceType::Mono,<sp/></highlight><highlight class="stringliteral">&quot;Mono&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ColorSpaceType::Duo,<sp/></highlight><highlight class="stringliteral">&quot;Duo&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ColorSpaceType::RGB,<sp/></highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ColorSpaceType::HSL,<sp/></highlight><highlight class="stringliteral">&quot;HSL&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>ColorSpaceType::LAB,<sp/></highlight><highlight class="stringliteral">&quot;LAB&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal">}</highlight></codeline>

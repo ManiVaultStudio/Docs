@@ -9,7 +9,6 @@
     <derivedcompoundref refid="classmv_1_1plugin_1_1TransformationPlugin" prot="public" virt="non-virtual">mv::plugin::TransformationPlugin</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1plugin_1_1ViewPlugin" prot="public" virt="non-virtual">mv::plugin::ViewPlugin</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1plugin_1_1WriterPlugin" prot="public" virt="non-virtual">mv::plugin::WriterPlugin</derivedcompoundref>
-    <includes refid="Plugin_8h" local="no">Plugin.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classmv_1_1plugin_1_1Plugin_1a97327c8bba20d066d18756541945ef39" prot="protected" static="no" mutable="no">
         <type><ref refid="classmv_1_1CoreInterface" kindref="compound">CoreInterface</ref> *</type>
@@ -304,7 +303,7 @@
         <location file="Docs/external/core/ManiVault/src/Plugin.h" line="72" column="13" bodyfile="Docs/external/core/ManiVault/src/Plugin.cpp" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1Plugin_1a5ff4071b4a672fd92790a9229aa8512f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref></type>
+        <type>Type</type>
         <definition>mv::plugin::Type mv::plugin::Plugin::getType</definition>
         <argsstring>() const</argsstring>
         <name>getType</name>
@@ -631,7 +630,7 @@
         <reimplementedby refid="classTextData_1a2582e1f8d3878a5400ea6e15ffda127d">fromVariantMap</reimplementedby>
         <reimplementedby refid="classTutorialPlugin_1a5c5f092f83f2aee4011b86eea267855d">fromVariantMap</reimplementedby>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -654,7 +653,7 @@
         <location file="Docs/external/core/ManiVault/src/Plugin.h" line="159" column="10" bodyfile="Docs/external/core/ManiVault/src/Plugin.cpp" bodystart="141" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1Plugin_1aaf2ab1f312d5e679d71b3f8fef1c5cdf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::plugin::Plugin::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
@@ -703,7 +702,7 @@
         <param>
           <type>const <ref refid="classmv_1_1util_1_1Notification_1ad2a6e97e598c8f73b425788ac84e67ac" kindref="member">util::Notification::DurationType</ref> &amp;</type>
           <declname>durationType</declname>
-          <defval><ref refid="classmv_1_1util_1_1Notification_1ad2a6e97e598c8f73b425788ac84e67aca4457d440870ad6d42bab9082d9bf9b61" kindref="member">util::Notification::DurationType::Fixed</ref></defval>
+          <defval>util::Notification::DurationType::Fixed</defval>
         </param>
         <param>
           <type>std::int32_t</type>
@@ -746,12 +745,12 @@
         <location file="Docs/external/core/ManiVault/src/Plugin.h" line="178" column="10" bodyfile="Docs/external/core/ManiVault/src/Plugin.cpp" bodystart="177" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1Plugin_1a6751fe8d7268d9067a5a509845cabc9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1a4d419dc79f88ca452ff9a158c0401316" kindref="member">gui::ScriptTriggerActions</ref></type>
+        <type>gui::ScriptTriggerActions</type>
         <definition>virtual gui::ScriptTriggerActions mv::plugin::Plugin::getScriptTriggerActions</definition>
         <argsstring>(const Datasets &amp;datasets) const</argsstring>
         <name>getScriptTriggerActions</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>

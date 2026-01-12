@@ -318,7 +318,7 @@
         <argsstring></argsstring>
         <name>statusNames</name>
         <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref>, QString&gt;({
-    { <ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">Task::Status::Undefined</ref>, &quot;Undefined&quot; },
+    { Task::Status::Undefined, &quot;Undefined&quot; },
     { Task::Status::Idle, &quot;Idle&quot; },
     { Task::Status::Running, &quot;Running&quot; },
     { Task::Status::RunningIndeterminate, &quot;Running Indeterminate&quot; },
@@ -342,7 +342,7 @@
         <argsstring></argsstring>
         <name>progressModeNames</name>
         <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" kindref="member">ProgressMode</ref>, QString&gt;({
-    { <ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61ae1ba155a9f2e8c3be94020eef32a0301" kindref="member">Task::ProgressMode::Manual</ref>, &quot;Manual&quot; },
+    { Task::ProgressMode::Manual, &quot;Manual&quot; },
     { Task::ProgressMode::Subtasks, &quot;Subtasks&quot; },
     { Task::ProgressMode::Aggregate, &quot;Aggregate&quot; }
 })</initializer>
@@ -361,7 +361,7 @@
         <argsstring></argsstring>
         <name>guiScopeNames</name>
         <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" kindref="member">GuiScope</ref>, QString&gt;({
-    { <ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">Task::GuiScope::None</ref>, &quot;None&quot; },
+    { Task::GuiScope::None, &quot;None&quot; },
     { Task::GuiScope::Background, &quot;Background&quot; },
     { Task::GuiScope::Foreground, &quot;Foreground&quot; },
     { Task::GuiScope::Modal, &quot;Modal&quot; },
@@ -575,7 +575,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="973" column="29" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="973" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1Task_1a35f7cc314002afa8c7d8a86b7472bf67" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref></type>
+        <type>GuiScopes</type>
         <definition>GuiScopes mv::Task::_guiScopes</definition>
         <argsstring></argsstring>
         <name>_guiScopes</name>
@@ -687,7 +687,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="981" column="28" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="981" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1Task_1af4e753f5260579d0baf0ad3f2014b591" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" kindref="member">TasksPtrs</ref></type>
+        <type>TasksPtrs</type>
         <definition>TasksPtrs mv::Task::_childTasks</definition>
         <argsstring></argsstring>
         <name>_childTasks</name>
@@ -715,7 +715,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="983" column="29" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="983" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1Task_1a65330c9eadd2b136adeb85abb9d67955" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" kindref="member">ProgressTextFormatter</ref></type>
+        <type>ProgressTextFormatter</type>
         <definition>ProgressTextFormatter mv::Task::_progressTextFormatter</definition>
         <argsstring></argsstring>
         <name>_progressTextFormatter</name>
@@ -776,14 +776,14 @@
           <declname>name</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
-          <defval>{ <ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639a6adf97f83acf6453d4a6a4b1070f3754" kindref="member">GuiScope::None</ref> }</defval>
+          <defval>{ GuiScope::None }</defval>
         </param>
         <param>
           <type>const <ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref> &amp;</type>
           <declname>status</declname>
-          <defval><ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476aec0fc0100c4fc1ce4eea230c3dc10360" kindref="member">Status::Undefined</ref></defval>
+          <defval>Status::Undefined</defval>
         </param>
         <param>
           <type>bool</type>
@@ -1149,7 +1149,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="198" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="222" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a8733ebe10ef1c968d0fca18edb90a327" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" kindref="member">TasksPtrs</ref></type>
+        <type>TasksPtrs</type>
         <definition>Task::TasksPtrs mv::Task::getChildTasks</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true) const</argsstring>
         <name>getChildTasks</name>
@@ -1193,7 +1193,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="206" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="227" bodyend="243"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a06e4df362ae044526a74bb2eb80724a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" kindref="member">TasksPtrs</ref></type>
+        <type>TasksPtrs</type>
         <definition>Task::TasksPtrs mv::Task::getChildTasksForStatuses</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const Statuses &amp;statuses=Statuses()) const</argsstring>
         <name>getChildTasksForStatuses</name>
@@ -1208,9 +1208,9 @@
           <defval>true</defval>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" kindref="member">Statuses</ref> &amp;</type>
+          <type>const Statuses &amp;</type>
           <declname>statuses</declname>
-          <defval><ref refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" kindref="member">Statuses</ref>()</defval>
+          <defval>Statuses()</defval>
         </param>
         <briefdescription>
 <para>Get child tasks for <computeroutput>statuses</computeroutput>. </para>
@@ -1250,7 +1250,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="215" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="245" bodyend="256"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1abf3dd345e6862d0cedcb5f3c04b68cb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" kindref="member">TasksPtrs</ref></type>
+        <type>TasksPtrs</type>
         <definition>Task::TasksPtrs mv::Task::getChildTasksForGuiScopes</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const GuiScopes &amp;guiScopes=GuiScopes()) const</argsstring>
         <name>getChildTasksForGuiScopes</name>
@@ -1265,9 +1265,9 @@
           <defval>true</defval>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
-          <defval><ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref>()</defval>
+          <defval>GuiScopes()</defval>
         </param>
         <briefdescription>
 <para>Get child tasks for <computeroutput>guiScopes</computeroutput>. </para>
@@ -1307,7 +1307,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="224" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="258" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a3c0de7e23810cf50bfb2e38d31b124f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1Task_1affca56dd8ba76a24a5d1cc821bb01afb" kindref="member">TasksPtrs</ref></type>
+        <type>TasksPtrs</type>
         <definition>Task::TasksPtrs mv::Task::getChildTasksForGuiScopesAndStatuses</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const GuiScopes &amp;guiScopes=GuiScopes(), const Statuses &amp;statuses=Statuses()) const</argsstring>
         <name>getChildTasksForGuiScopesAndStatuses</name>
@@ -1322,14 +1322,14 @@
           <defval>true</defval>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
-          <defval><ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref>()</defval>
+          <defval>GuiScopes()</defval>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" kindref="member">Statuses</ref> &amp;</type>
+          <type>const Statuses &amp;</type>
           <declname>statuses</declname>
-          <defval><ref refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" kindref="member">Statuses</ref>()</defval>
+          <defval>Statuses()</defval>
         </param>
         <briefdescription>
 <para>Get child tasks for <computeroutput>guiScopes</computeroutput> and <computeroutput>statuses</computeroutput>. </para>
@@ -2200,7 +2200,7 @@
         <location file="Docs/external/core/ManiVault/src/Task.h" line="444" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="496" bodyend="499"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a3069b9c26e05ad0c369878284aa5a9fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref></type>
+        <type>GuiScopes</type>
         <definition>Task::GuiScopes mv::Task::getGuiScopes</definition>
         <argsstring>() const</argsstring>
         <name>getGuiScopes</name>
@@ -2222,7 +2222,7 @@
         <argsstring>(const GuiScopes &amp;guiScopes)</argsstring>
         <name>setGuiScopes</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
         </param>
         <briefdescription>
@@ -2306,11 +2306,11 @@
         <argsstring>(const GuiScopes &amp;guiScopesA, const GuiScopes &amp;guiScopesB) const</argsstring>
         <name>doGuiScopesOverlap</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopesA</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopesB</declname>
         </param>
         <briefdescription>
@@ -2369,7 +2369,7 @@
           <defval>&quot;&quot;</defval>
         </param>
         <briefdescription>
-<para>Sets the task progress percentage to <computeroutput>progress</computeroutput> This method only has an effect when Task::_progressMode is set to <ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61ae1ba155a9f2e8c3be94020eef32a0301" kindref="member">ProgressMode::Manual</ref>. </para>
+<para>Sets the task progress percentage to <computeroutput>progress</computeroutput> This method only has an effect when Task::_progressMode is set to ProgressMode::Manual. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -2802,7 +2802,7 @@
           <declname>subtaskName</declname>
         </param>
         <briefdescription>
-<para>Get subtask index for <computeroutput>subtaskName</computeroutput> Returns -1 when <computeroutput>subtaskName</computeroutput> is not found or Task::_progressMode is set to <ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61ae1ba155a9f2e8c3be94020eef32a0301" kindref="member">ProgressMode::Manual</ref>. </para>
+<para>Get subtask index for <computeroutput>subtaskName</computeroutput> Returns -1 when <computeroutput>subtaskName</computeroutput> is not found or Task::_progressMode is set to ProgressMode::Manual. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -2943,7 +2943,7 @@
         <argsstring>(const ProgressTextFormatter &amp;progressTextFormatter)</argsstring>
         <name>setProgressTextFormatter</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" kindref="member">ProgressTextFormatter</ref> &amp;</type>
+          <type>const ProgressTextFormatter &amp;</type>
           <declname>progressTextFormatter</declname>
         </param>
         <briefdescription>
@@ -3472,7 +3472,7 @@
         <argsstring>(const GuiScopes &amp;guiScopes)</argsstring>
         <name>guiScopesChanged</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
         </param>
         <briefdescription>
@@ -4313,7 +4313,7 @@
         <argsstring>(const GuiScopes &amp;guiScopes, QPrivateSignal)</argsstring>
         <name>privateSetGuiScopesSignal</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
         </param>
         <param>
@@ -4601,7 +4601,7 @@
         <argsstring>(const ProgressTextFormatter &amp;progressTextFormatter, QPrivateSignal)</argsstring>
         <name>privateSetProgressTextFormatterSignal</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" kindref="member">ProgressTextFormatter</ref> &amp;</type>
+          <type>const ProgressTextFormatter &amp;</type>
           <declname>progressTextFormatter</declname>
         </param>
         <param>
@@ -4681,7 +4681,7 @@
         <argsstring>(const GuiScopes &amp;guiScopes)</argsstring>
         <name>guiScopesToStringlist</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
         </param>
         <briefdescription>
@@ -5185,7 +5185,7 @@
         <argsstring>(const GuiScopes &amp;guiScopes)</argsstring>
         <name>privateSetGuiScopes</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" kindref="member">GuiScopes</ref> &amp;</type>
+          <type>const GuiScopes &amp;</type>
           <declname>guiScopes</declname>
         </param>
         <briefdescription>
@@ -5459,7 +5459,7 @@
         <argsstring>(const ProgressTextFormatter &amp;progressTextFormatter)</argsstring>
         <name>privateSetProgressTextFormatter</name>
         <param>
-          <type>const <ref refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" kindref="member">ProgressTextFormatter</ref> &amp;</type>
+          <type>const ProgressTextFormatter &amp;</type>
           <declname>progressTextFormatter</declname>
         </param>
         <briefdescription>

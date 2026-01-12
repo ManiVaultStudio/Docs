@@ -17,7 +17,7 @@
       </node>
       <node id="11">
         <label>graphics/Framebuffer.h</label>
-        <link refid="Framebuffer_8h"/>
+        <link refid="Framebuffer_8h_source"/>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -29,7 +29,7 @@
       </node>
       <node id="17">
         <label>graphics/Shader.h</label>
-        <link refid="Shader_8h"/>
+        <link refid="Shader_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -41,7 +41,7 @@
       </node>
       <node id="2">
         <label>graphics/Bounds.h</label>
-        <link refid="Bounds_8h"/>
+        <link refid="Bounds_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -49,7 +49,7 @@
       </node>
       <node id="8">
         <label>graphics/BufferObject.h</label>
-        <link refid="BufferObject_8h"/>
+        <link refid="BufferObject_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -68,7 +68,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -83,7 +83,7 @@
       </node>
       <node id="5">
         <label>Vector2f.h</label>
-        <link refid="Vector2f_8h"/>
+        <link refid="Vector2f_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -105,7 +105,7 @@
       </node>
       <node id="12">
         <label>Texture.h</label>
-        <link refid="Texture_8h"/>
+        <link refid="Texture_8h_source"/>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
@@ -135,38 +135,20 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
-        <label>DensityRenderer.cpp</label>
-        <link refid="DensityRenderer_8cpp"/>
+      <node id="2">
+        <label>MeanShift.h</label>
+        <link refid="MeanShift_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="3">
-        <label>MeanShift.h</label>
-        <link refid="MeanShift_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
         <label>DensityRenderer.h</label>
-        <link refid="DensityRenderer_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>MeanShift.cpp</label>
-        <link refid="MeanShift_8cpp"/>
-      </node>
-      <node id="2">
-        <label>DensityComputation.cpp</label>
-        <link refid="DensityComputation_8cpp"/>
+        <link refid="DensityRenderer_8h_source"/>
       </node>
       <node id="1">
         <label>DensityComputation.h</label>
         <link refid="DensityComputation_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -184,26 +166,26 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Bounds_8h" kindref="compound">graphics/Bounds.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BufferObject_8h" kindref="compound">graphics/BufferObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Framebuffer_8h" kindref="compound">graphics/Framebuffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Shader_8h" kindref="compound">graphics/Shader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Texture_8h" kindref="compound">graphics/Texture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Bounds.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/BufferObject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Framebuffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Shader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vector2f_8h" kindref="compound">graphics/Vector2f.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;graphics/Vector2f.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QOffscreenSurface&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classmv_1_1GaussianTexture" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1GaussianTexture" kindref="compound">GaussianTexture</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></highlight></codeline>
+<codeline lineno="20" refid="classmv_1_1GaussianTexture" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1GaussianTexture" kindref="compound">GaussianTexture</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref></highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generate();</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="classmv_1_1DensityComputation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1DensityComputation" kindref="compound">DensityComputation</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>QOpenGLFunctions_3_3_Core</highlight></codeline>
+<codeline lineno="26" refid="classmv_1_1DensityComputation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1DensityComputation" kindref="compound">DensityComputation</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>QOpenGLFunctions_3_3_Core</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DensityComputation" kindref="compound">DensityComputation</ref>();</highlight></codeline>
@@ -217,14 +199,14 @@
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBounds(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>right,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bottom,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>top);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSigma(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sigma);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="classmv_1_1DensityComputation_1a8adeea5461f7832d865dc0080232874c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref>&amp;<sp/><ref refid="classmv_1_1DensityComputation_1a8adeea5461f7832d865dc0080232874c" kindref="member">getDensityTexture</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_densityTexture;<sp/>}</highlight></codeline>
-<codeline lineno="41" refid="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DensityComputation_1a05e2ac610b812d7ed8e37428ef865e74" kindref="member">getMaxDensity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_maxKDE;<sp/>}</highlight></codeline>
-<codeline lineno="42" refid="classmv_1_1DensityComputation_1a11f8b342214f371b3219b59c433efaa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DensityComputation_1a11f8b342214f371b3219b59c433efaa0" kindref="member">getNumPoints</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_numPoints;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref>&amp;<sp/>getDensityTexture()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_densityTexture;<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getMaxDensity()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_maxKDE;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getNumPoints()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_numPoints;<sp/>}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>compute();</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="classmv_1_1DensityComputation_1ae1fd9d182098bc61699dc6b50ed81f03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/><ref refid="classmv_1_1DensityComputation_1ae1fd9d182098bc61699dc6b50ed81f03" kindref="member">getDensityTextureSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QSize(RESOLUTION,<sp/>RESOLUTION);<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/>getDensityTextureSize()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QSize(RESOLUTION,<sp/>RESOLUTION);<sp/>}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasData()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>

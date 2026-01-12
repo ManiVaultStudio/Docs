@@ -29,7 +29,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -44,41 +44,29 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
+      <node id="3">
         <label>Renderer.h</label>
-        <link refid="Renderer_8h"/>
-        <childnode refid="6" relation="include">
+        <link refid="Renderer_8h_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>DensityRenderer.cpp</label>
-        <link refid="DensityRenderer_8cpp"/>
-      </node>
-      <node id="6">
         <label>Renderer2D.h</label>
-        <link refid="Renderer2D_8h"/>
-        <childnode refid="3" relation="include">
+        <link refid="Renderer2D_8h_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="7">
         <label>MeanShift.h</label>
-        <link refid="MeanShift_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
+        <link refid="MeanShift_8h_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="2">
         <label>DensityRenderer.h</label>
-        <link refid="DensityRenderer_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
+        <link refid="DensityRenderer_8h_source"/>
       </node>
       <node id="1">
         <label>Shader.h</label>
@@ -87,49 +75,19 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="14">
-        <label>MeanShift.cpp</label>
-        <link refid="MeanShift_8cpp"/>
-      </node>
-      <node id="8">
+      <node id="5">
         <label>PointRenderer.h</label>
-        <link refid="PointRenderer_8h"/>
-        <childnode refid="9" relation="include">
-        </childnode>
+        <link refid="PointRenderer_8h_source"/>
       </node>
-      <node id="2">
-        <label>Shader.cpp</label>
-        <link refid="Shader_8cpp"/>
-      </node>
-      <node id="9">
-        <label>PointRenderer.cpp</label>
-        <link refid="PointRenderer_8cpp"/>
-      </node>
-      <node id="7">
-        <label>Navigator2D.cpp</label>
-        <link refid="Navigator2D_8cpp"/>
-      </node>
-      <node id="10">
-        <label>Renderer2D.cpp</label>
-        <link refid="Renderer2D_8cpp"/>
-      </node>
-      <node id="12">
-        <label>DensityComputation.cpp</label>
-        <link refid="DensityComputation_8cpp"/>
-      </node>
-      <node id="11">
+      <node id="6">
         <label>DensityComputation.h</label>
-        <link refid="DensityComputation_8h"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
+        <link refid="DensityComputation_8h_source"/>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -146,7 +104,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QOpenGLFunctions_3_3_Core&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
@@ -159,7 +117,7 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix3f;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Matrix4f;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classmv_1_1ShaderProgram" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>QOpenGLFunctions_3_3_Core</highlight></codeline>
+<codeline lineno="20" refid="classmv_1_1ShaderProgram" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>QOpenGLFunctions_3_3_Core</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ShaderProgram" kindref="compound">ShaderProgram</ref>();</highlight></codeline>

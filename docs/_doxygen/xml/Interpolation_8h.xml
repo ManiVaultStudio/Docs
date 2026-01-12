@@ -21,18 +21,6 @@
         </childnode>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="2">
-        <label>Interpolation.cpp</label>
-        <link refid="Interpolation_8cpp"/>
-      </node>
-      <node id="1">
-        <label>Interpolation.h</label>
-        <link refid="Interpolation_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innernamespace refid="namespacemv">mv</innernamespace>
     <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
     <briefdescription>
@@ -53,15 +41,15 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837e" kindref="member">InterpolationType</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>InterpolationType</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837eaaf17c98bbd83c27d6426d2ff3fa81d7f" kindref="member">Bilinear</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837eaaa020331bb30d2fa2ecf7c3a0777823f" kindref="member">NearestNeighbor</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Bilinear,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>NearestNeighbor,<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="19"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QMap&lt;InterpolationType, QString&gt;</ref><sp/>interpolationTypes<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837eaaf17c98bbd83c27d6426d2ff3fa81d7f" kindref="member">InterpolationType::Bilinear</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Bilinear&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="namespacemv_1_1util_1a3a6ddbd54f8027e17927da40fea8837eaaa020331bb30d2fa2ecf7c3a0777823f" kindref="member">InterpolationType::NearestNeighbor</ref>,<sp/></highlight><highlight class="stringliteral">&quot;NearestNeighbor&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>InterpolationType::Bilinear,<sp/></highlight><highlight class="stringliteral">&quot;Bilinear&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>InterpolationType::NearestNeighbor,<sp/></highlight><highlight class="stringliteral">&quot;NearestNeighbor&quot;</highlight><highlight class="normal"><sp/>}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">}</highlight></codeline>

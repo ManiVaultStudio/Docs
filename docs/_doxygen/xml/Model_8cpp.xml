@@ -10,7 +10,7 @@
       </node>
       <node id="2">
         <label>Model.h</label>
-        <link refid="Model_8h"/>
+        <link refid="Model_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -21,7 +21,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -48,14 +48,14 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Model_8h" kindref="compound">Model.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Model.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util</highlight></codeline>
 <codeline lineno="10"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal">QList&lt;QPersistentModelIndex&gt;<sp/><ref refid="namespacemv_1_1util_1a37741a47282f5b9dca3e10e3ec74247f" kindref="member">getAllPersistentModelIndexesAtColumn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QAbstractItemModel*<sp/>model,<sp/>std::int32_t<sp/>columnIndex)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">QList&lt;QPersistentModelIndex&gt;<sp/>getAllPersistentModelIndexesAtColumn(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QAbstractItemModel*<sp/>model,<sp/>std::int32_t<sp/>columnIndex)</highlight></codeline>
 <codeline lineno="13"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QPersistentModelIndex&gt;<sp/>results;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
@@ -77,11 +77,11 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>results;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal">QList&lt;QStandardItem*&gt;<sp/><ref refid="namespacemv_1_1util_1aa0303090d064a67c0bfb4249b1956b7c" kindref="member">getAllStandardItemsAtColumn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStandardItemModel*<sp/>model,<sp/>std::int32_t<sp/>columnIndex)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">QList&lt;QStandardItem*&gt;<sp/>getAllStandardItemsAtColumn(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStandardItemModel*<sp/>model,<sp/>std::int32_t<sp/>columnIndex)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;QStandardItem*&gt;<sp/>results;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>indexes<sp/>=<sp/><ref refid="namespacemv_1_1util_1a37741a47282f5b9dca3e10e3ec74247f" kindref="member">getAllPersistentModelIndexesAtColumn</ref>(model,<sp/>columnIndex);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>indexes<sp/>=<sp/>getAllPersistentModelIndexesAtColumn(model,<sp/>columnIndex);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>index<sp/>:<sp/>indexes)<sp/>{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index.isValid())</highlight></codeline>

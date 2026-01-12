@@ -43,62 +43,14 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>DimensionsPickerFilterAction.cpp</label>
-        <link refid="DimensionsPickerFilterAction_8cpp"/>
-      </node>
-      <node id="7">
-        <label>PointData.cpp</label>
-        <link refid="PointData_8cpp"/>
-      </node>
-      <node id="3">
-        <label>DimensionsPickerAction.cpp</label>
-        <link refid="DimensionsPickerAction_8cpp"/>
-      </node>
-      <node id="8">
-        <label>DimensionsPickerHolder.cpp</label>
-        <link refid="DimensionsPickerHolder_8cpp"/>
-      </node>
-      <node id="5">
-        <label>DimensionsPickerMiscellaneousAction.cpp</label>
-        <link refid="DimensionsPickerMiscellaneousAction_8cpp"/>
-      </node>
       <node id="2">
         <label>DimensionsPickerAction.h</label>
-        <link refid="DimensionsPickerAction_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>DimensionsPickerProxyModel.cpp</label>
-        <link refid="DimensionsPickerProxyModel_8cpp"/>
-      </node>
-      <node id="9">
-        <label>DimensionsPickerItemModel.cpp</label>
-        <link refid="DimensionsPickerItemModel_8cpp"/>
-      </node>
-      <node id="6">
-        <label>DimensionsPickerSelectAction.cpp</label>
-        <link refid="DimensionsPickerSelectAction_8cpp"/>
+        <link refid="DimensionsPickerAction_8h_source"/>
       </node>
       <node id="1">
         <label>DimensionsPickerHolder.h</label>
         <link refid="DimensionsPickerHolder_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -128,8 +80,8 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mean[0]<sp/>and<sp/>standardDeviation[0]<sp/>include<sp/>zero-valued<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mean[1]<sp/>and<sp/>standardDeviation[1]<sp/>ignore<sp/>zero-valued<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="structmv_1_1StatisticsPerDimension_1a021fff2aa6a28c31827495652a0be4f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structmv_1_1StatisticsPerDimension_1a021fff2aa6a28c31827495652a0be4f6" kindref="member">mean</ref>[2];</highlight></codeline>
-<codeline lineno="20" refid="structmv_1_1StatisticsPerDimension_1aac63fc72abffe11d46b656c3895e5bc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structmv_1_1StatisticsPerDimension_1aac63fc72abffe11d46b656c3895e5bc4" kindref="member">standardDeviation</ref>[2];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean[2];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>standardDeviation[2];</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23" refid="classmv_1_1DimensionsPickerHolder" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref></highlight></codeline>
@@ -139,39 +91,39 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>_numberOfDimensions{};</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="30" refid="classmv_1_1DimensionsPickerHolder_1ab6da708aacd27d9c7fe53420d1ed9a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;StatisticsPerDimension&gt;<sp/><ref refid="classmv_1_1DimensionsPickerHolder_1ab6da708aacd27d9c7fe53420d1ed9a3c" kindref="member">_statistics</ref>;</highlight></codeline>
-<codeline lineno="31" refid="classmv_1_1DimensionsPickerHolder_1ac3624c3f332e6c9b06e8945eab0cfa95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classmv_1_1DimensionsPickerHolder_1ac3624c3f332e6c9b06e8945eab0cfa95" kindref="member">distinctStandardDeviationsWithAndWithoutZero</ref>[2];</highlight></codeline>
-<codeline lineno="32" refid="classmv_1_1DimensionsPickerHolder_1a358f17ebc1d5e800883bada394877897" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a358f17ebc1d5e800883bada394877897" kindref="member">_ignoreZeroValues</ref>{};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;StatisticsPerDimension&gt;<sp/>_statistics;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>distinctStandardDeviationsWithAndWithoutZero[2];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_ignoreZeroValues{};</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>C++<sp/>&quot;Rule<sp/>of<sp/>Zero&quot;:<sp/>implicitly<sp/>defaulted<sp/>move-constructor<sp/>and<sp/>move<sp/>assignment<sp/>are<sp/>just<sp/>fine.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36" refid="classmv_1_1DimensionsPickerHolder_1ad45c2e52c29792cea9d3480727c7420a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1ad45c2e52c29792cea9d3480727c7420a" kindref="member">DimensionsPickerHolder</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1ad45c2e52c29792cea9d3480727c7420a" kindref="member">DimensionsPickerHolder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numberOfDimensions);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numberOfDimensions);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1ad45c2e52c29792cea9d3480727c7420a" kindref="member">DimensionsPickerHolder</ref>(</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder" kindref="compound">DimensionsPickerHolder</ref>(</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>names,</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numberOfDimensions);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a0d4a6dd3450a9c642e1e13917fc1afd3" kindref="member">getNumberOfDimensions</ref>()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>getNumberOfDimensions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1aa9aa1358fd9bb90f53c50c6572eacf6d" kindref="member">getNumberOfSelectedDimensions</ref>()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>getNumberOfSelectedDimensions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a69c12de1a9371220cd2df786a572008b" kindref="member">getName</ref>(const<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)<sp/>const;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>getName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a05cdaccfc9c1c1e741762bb4ef1933f7" kindref="member">lessThanName</ref>(std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/>std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lessThanName(std::size_t,<sp/>std::size_t)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>noexcept;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a2b27019bf0071c69c4e2bdda1d1368a2" kindref="member">disableAllDimensions</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableAllDimensions();</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a7d7dd6fb2bde69d701a60db35d38ffe4" kindref="member">tryToEnableDimensionByName</ref>(const<sp/>QString&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tryToEnableDimensionByName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a81e6b971ab9e51acea159cabbae0e0d5" kindref="member">isDimensionEnabled</ref>(std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)<sp/>const;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDimensionEnabled(std::size_t)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a0dbe0992e410caaaf04e1cbc4c09c522" kindref="member">toggleDimensionEnabled</ref>(std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toggleDimensionEnabled(std::size_t);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DimensionsPickerHolder_1aeb1bc7a768be66fef268980ffc3e686c" kindref="member">setDimensionEnabled</ref>(std::</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setDimensionEnabled(std::size_t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/><ref refid="classmv_1_1DimensionsPickerHolder_1a0576a1aae9b3ddea8288fa6f7df0443a" kindref="member">getEnabledDimensions</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;bool&gt;<sp/>getEnabledDimensions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mv</highlight><highlight class="normal"></highlight></codeline>

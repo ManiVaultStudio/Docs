@@ -9,7 +9,6 @@
     <derivedcompoundref refid="classmv_1_1plugin_1_1TransformationPluginFactory" prot="public" virt="non-virtual">mv::plugin::TransformationPluginFactory</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1plugin_1_1ViewPluginFactory" prot="public" virt="non-virtual">mv::plugin::ViewPluginFactory</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1plugin_1_1WriterPluginFactory" prot="public" virt="non-virtual">mv::plugin::WriterPluginFactory</derivedcompoundref>
-    <includes refid="PluginFactory_8h" local="no">PluginFactory.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1plugin_1_1PluginFactory_1a3eae5e7068cde3aedc15e6d32c93313e" prot="private" static="no" mutable="no">
         <type>QString</type>
@@ -25,7 +24,7 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="411" column="45" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.h" bodystart="411" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1plugin_1_1PluginFactory_1aa227f7e54da5233649af3da48ced4de7" prot="private" static="no" mutable="no">
-        <type><ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref></type>
+        <type>Type</type>
         <definition>Type mv::plugin::PluginFactory::_type</definition>
         <argsstring></argsstring>
         <name>_type</name>
@@ -203,7 +202,7 @@
         <argsstring>(Type type, const QString &amp;title)</argsstring>
         <name>PluginFactory</name>
         <param>
-          <type><ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref></type>
+          <type>Type</type>
           <declname>type</declname>
         </param>
         <param>
@@ -297,7 +296,7 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="65" column="10" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.cpp" bodystart="45" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1PluginFactory_1a36fcd0538d86ac4080dfa0d63f690162" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="namespacemv_1_1plugin_1ac4ec1436d850ffaa9f12663bd511013d" kindref="member">Type</ref></type>
+        <type>Type</type>
         <definition>mv::plugin::Type mv::plugin::PluginFactory::getType</definition>
         <argsstring>() const</argsstring>
         <name>getType</name>
@@ -691,7 +690,7 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="189" column="10" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.cpp" bodystart="142" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1PluginFactory_1a951e2db41d149b182f19f95e13916daa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacemv_1a6ed34faa46563cf7e4591a1f502c2d3e" kindref="member">mv::DataTypes</ref></type>
+        <type>mv::DataTypes</type>
         <definition>virtual mv::DataTypes mv::plugin::PluginFactory::supportedDataTypes</definition>
         <argsstring>() const</argsstring>
         <name>supportedDataTypes</name>
@@ -725,13 +724,13 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="203" column="38" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.cpp" bodystart="147" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1PluginFactory_1a0c6cf2e52227aa692a76aa76cd69ae8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>virtual gui::PluginTriggerActions mv::plugin::PluginFactory::getPluginTriggerActions</definition>
         <argsstring>(const Datasets &amp;datasets) const</argsstring>
         <name>getPluginTriggerActions</name>
         <reimplementedby refid="classmv_1_1plugin_1_1LoaderPluginFactory_1aab0a2921857252ce39da245199a2519a">getPluginTriggerActions</reimplementedby>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -756,13 +755,13 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="210" column="39" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.h" bodystart="210" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1PluginFactory_1a168ae22ee2c7d5fc8649409213d8a6a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref></type>
+        <type>gui::PluginTriggerActions</type>
         <definition>virtual gui::PluginTriggerActions mv::plugin::PluginFactory::getPluginTriggerActions</definition>
         <argsstring>(const DataTypes &amp;dataTypes) const</argsstring>
         <name>getPluginTriggerActions</name>
         <reimplementedby refid="classmv_1_1plugin_1_1LoaderPluginFactory_1a3fcd73e341a4b172af4dee48d94909d2">getPluginTriggerActions</reimplementedby>
         <param>
-          <type>const <ref refid="namespacemv_1a6ed34faa46563cf7e4591a1f502c2d3e" kindref="member">DataTypes</ref> &amp;</type>
+          <type>const DataTypes &amp;</type>
           <declname>dataTypes</declname>
         </param>
         <briefdescription>
@@ -832,12 +831,12 @@
         <location file="Docs/external/core/ManiVault/src/PluginFactory.h" line="242" column="10" bodyfile="Docs/external/core/ManiVault/src/PluginFactory.cpp" bodystart="269" bodyend="272"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1plugin_1_1PluginFactory_1a1c9ef541a0d93fee77a06da5fccbafdf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="namespacemv_1_1gui_1a4d419dc79f88ca452ff9a158c0401316" kindref="member">gui::ScriptTriggerActions</ref></type>
+        <type>gui::ScriptTriggerActions</type>
         <definition>virtual gui::ScriptTriggerActions mv::plugin::PluginFactory::getScriptTriggerActions</definition>
         <argsstring>(const Datasets &amp;datasets) const</argsstring>
         <name>getScriptTriggerActions</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -1459,7 +1458,7 @@
         <argsstring>(gui::PluginTriggerActions &amp;pluginTriggerActions)</argsstring>
         <name>initializePluginTriggerActions</name>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1ab12c7cbad56e44b5742657ee7c5467c8" kindref="member">gui::PluginTriggerActions</ref> &amp;</type>
+          <type>gui::PluginTriggerActions &amp;</type>
           <declname>pluginTriggerActions</declname>
         </param>
         <briefdescription>
@@ -1489,7 +1488,7 @@
         <argsstring>(const Datasets &amp;datasets)</argsstring>
         <name>getDatasetTypesAsStringList</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <briefdescription>
@@ -1519,7 +1518,7 @@
         <argsstring>(const Datasets &amp;datasets, const DataType &amp;dataType)</argsstring>
         <name>areAllDatasetsOfTheSameType</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <param>
@@ -1561,7 +1560,7 @@
         <argsstring>(const Datasets &amp;datasets, const DataType &amp;dataType)</argsstring>
         <name>getNumberOfDatasetsForType</name>
         <param>
-          <type>const <ref refid="namespacemv_1ad306504bc3cc56b39e416cb338ebfc04" kindref="member">Datasets</ref> &amp;</type>
+          <type>const Datasets &amp;</type>
           <declname>datasets</declname>
         </param>
         <param>

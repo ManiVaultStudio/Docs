@@ -39,7 +39,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -53,66 +53,6 @@
         <label>QtCore/QtGlobal</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="1">
-        <label>FileDialog.h</label>
-        <link refid="FileDialog_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>OptionsAction.cpp</label>
-        <link refid="OptionsAction_8cpp"/>
-      </node>
-      <node id="3">
-        <label>FilePickerAction.cpp</label>
-        <link refid="FilePickerAction_8cpp"/>
-      </node>
-      <node id="5">
-        <label>LoaderPlugin.cpp</label>
-        <link refid="LoaderPlugin_8cpp"/>
-      </node>
-      <node id="10">
-        <label>FileDialog.cpp</label>
-        <link refid="FileDialog_8cpp"/>
-      </node>
-      <node id="2">
-        <label>DirectoryPickerAction.cpp</label>
-        <link refid="DirectoryPickerAction_8cpp"/>
-      </node>
-      <node id="9">
-        <label>ViewPlugin.cpp</label>
-        <link refid="ViewPlugin_8cpp"/>
-      </node>
-      <node id="7">
-        <label>ProjectManager.cpp</label>
-        <link refid="ProjectManager_8cpp"/>
-      </node>
-      <node id="6">
-        <label>DimensionsPickerSelectAction.cpp</label>
-        <link refid="DimensionsPickerSelectAction_8cpp"/>
-      </node>
-      <node id="8">
-        <label>WorkspaceManager.cpp</label>
-        <link refid="WorkspaceManager_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classmv_1_1gui_1_1FileDialog" prot="public">mv::gui::FileDialog</innerclass>
     <innerclass refid="classmv_1_1gui_1_1FileOpenDialog" prot="public">mv::gui::FileOpenDialog</innerclass>
     <innerclass refid="classmv_1_1gui_1_1DirectoryOpenDialog" prot="public">mv::gui::DirectoryOpenDialog</innerclass>
@@ -130,16 +70,16 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFileDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSize&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QUrl&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1gui" kindref="compound">mv::gui</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::gui<sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classmv_1_1gui_1_1FileDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QFileDialog</highlight></codeline>
+<codeline lineno="23" refid="classmv_1_1gui_1_1FileDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QFileDialog</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
@@ -165,21 +105,21 @@
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QUrl<sp/>getExistingDirectoryUrl(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>caption<sp/>=<sp/>QString(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QUrl&amp;<sp/>directoryUrl<sp/>=<sp/>QUrl(),<sp/>Options<sp/>options<sp/>=<sp/>ShowDirsOnly,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>supportedSchemes<sp/>=<sp/>QStringList());</highlight></codeline>
 <codeline lineno="100"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109" refid="classmv_1_1gui_1_1FileOpenDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1gui_1_1FileOpenDialog" kindref="compound">FileOpenDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
+<codeline lineno="109" refid="classmv_1_1gui_1_1FileOpenDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1FileOpenDialog" kindref="compound">FileOpenDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
 <codeline lineno="110"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileOpenDialog" kindref="compound">FileOpenDialog</ref>(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>caption<sp/>=<sp/>QString(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>directory<sp/>=<sp/>QString(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>filter<sp/>=<sp/>QString());</highlight></codeline>
 <codeline lineno="121"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130" refid="classmv_1_1gui_1_1DirectoryOpenDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1gui_1_1DirectoryOpenDialog" kindref="compound">DirectoryOpenDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
+<codeline lineno="130" refid="classmv_1_1gui_1_1DirectoryOpenDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1DirectoryOpenDialog" kindref="compound">DirectoryOpenDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
 <codeline lineno="131"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DirectoryOpenDialog" kindref="compound">DirectoryOpenDialog</ref>(QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>caption<sp/>=<sp/>QString(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>directory<sp/>=<sp/>QString(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>filter<sp/>=<sp/>QString());</highlight></codeline>
 <codeline lineno="142"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151" refid="classmv_1_1gui_1_1FileSaveDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1gui_1_1FileSaveDialog" kindref="compound">FileSaveDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
+<codeline lineno="151" refid="classmv_1_1gui_1_1FileSaveDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1FileSaveDialog" kindref="compound">FileSaveDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1FileDialog" kindref="compound">FileDialog</ref></highlight></codeline>
 <codeline lineno="152"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>

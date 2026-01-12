@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1ThemeManager" kind="class" language="C++" prot="public">
     <compoundname>mv::ThemeManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractThemeManager" prot="public" virt="non-virtual">mv::AbstractThemeManager</basecompoundref>
-    <includes refid="ThemeManager_8h" local="no">ThemeManager.h</includes>
     <innerclass refid="classmv_1_1ThemeManager_1_1ThemeSettings" prot="public">mv::ThemeManager::ThemeSettings</innerclass>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1ThemeManager_1afa88442d31325c55fa82686eb48b89d0" prot="private" static="no" mutable="no">
@@ -437,7 +436,7 @@
         <param>
           <type>const <ref refid="classmv_1_1util_1_1ColorScheme_1a89665ace08ce42317a73f4f5360d7f61" kindref="member">util::ColorScheme::Modes</ref> &amp;</type>
           <declname>customColorSchemeModes</declname>
-          <defval>{ <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaca8f2e8d70641ce17b9b304086c19657" kindref="member">util::ColorScheme::Mode::BuiltIn</ref>, <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaf9146f0549075dee8bfe94b068e4210c" kindref="member">util::ColorScheme::Mode::UserAdded</ref> }</defval>
+          <defval>{ util::ColorScheme::Mode::BuiltIn, <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaf9146f0549075dee8bfe94b068e4210c" kindref="member">util::ColorScheme::Mode::UserAdded</ref> }</defval>
         </param>
         <briefdescription>
 <para>Get custom color scheme mode names for <computeroutput>customColorSchemeModes</computeroutput>. </para>
@@ -452,7 +451,7 @@
         <location file="Docs/external/core/ManiVault/src/private/ThemeManager.h" line="134" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ThemeManager.cpp" bodystart="302" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1ThemeManager_1ae5aa8299f2e5fce1cecd4f5c7d5876cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="namespacemv_1_1util_1a53888aafe17cd72bc7fe12f52824bebb" kindref="member">util::ColorSchemesMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">util::ColorSchemesMap</ref></type>
         <definition>ColorSchemesMap mv::ThemeManager::getCustomColorSchemes</definition>
         <argsstring>(const util::ColorScheme::Modes &amp;customColorSchemeModes={ util::ColorScheme::Mode::BuiltIn, util::ColorScheme::Mode::UserAdded }) const override</argsstring>
         <name>getCustomColorSchemes</name>
@@ -460,7 +459,7 @@
         <param>
           <type>const <ref refid="classmv_1_1util_1_1ColorScheme_1a89665ace08ce42317a73f4f5360d7f61" kindref="member">util::ColorScheme::Modes</ref> &amp;</type>
           <declname>customColorSchemeModes</declname>
-          <defval>{ <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaca8f2e8d70641ce17b9b304086c19657" kindref="member">util::ColorScheme::Mode::BuiltIn</ref>, <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaf9146f0549075dee8bfe94b068e4210c" kindref="member">util::ColorScheme::Mode::UserAdded</ref> }</defval>
+          <defval>{ util::ColorScheme::Mode::BuiltIn, <ref refid="classmv_1_1util_1_1ColorScheme_1a4a4bf1dd424ed3a2f81eec4bfbb81b8eaf9146f0549075dee8bfe94b068e4210c" kindref="member">util::ColorScheme::Mode::UserAdded</ref> }</defval>
         </param>
         <briefdescription>
 <para>Get custom color schemes for <computeroutput>customColorSchemeModes</computeroutput>. </para>

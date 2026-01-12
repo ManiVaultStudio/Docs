@@ -25,7 +25,7 @@
       </node>
       <node id="6">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -43,7 +43,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -61,7 +61,7 @@
       </node>
       <node id="4">
         <label>Task.h</label>
-        <link refid="Task_8h"/>
+        <link refid="Task_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -80,7 +80,7 @@
       </node>
       <node id="5">
         <label>util/Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -119,41 +119,17 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7">
+      <node id="4">
         <label>ModalTaskTester.h</label>
-        <link refid="ModalTaskTester_8h"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>ForegroundTaskTester.h</label>
-        <link refid="ForegroundTaskTester_8h"/>
-        <childnode refid="6" relation="include">
-        </childnode>
+        <link refid="ModalTaskTester_8h_source"/>
       </node>
       <node id="3">
-        <label>BackgroundTaskTester.h</label>
-        <link refid="BackgroundTaskTester_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>TasksPlugin.cpp</label>
-        <link refid="TasksPlugin_8cpp"/>
+        <label>ForegroundTaskTester.h</label>
+        <link refid="ForegroundTaskTester_8h_source"/>
       </node>
       <node id="2">
-        <label>AbstractTaskTester.cpp</label>
-        <link refid="AbstractTaskTester_8cpp"/>
-      </node>
-      <node id="8">
-        <label>ModalTaskTester.cpp</label>
-        <link refid="ModalTaskTester_8cpp"/>
-      </node>
-      <node id="6">
-        <label>ForegroundTaskTester.cpp</label>
-        <link refid="ForegroundTaskTester_8cpp"/>
+        <label>BackgroundTaskTester.h</label>
+        <link refid="BackgroundTaskTester_8h_source"/>
       </node>
       <node id="1">
         <label>AbstractTaskTester.h</label>
@@ -162,14 +138,8 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>BackgroundTaskTester.cpp</label>
-        <link refid="BackgroundTaskTester_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classmv_1_1AbstractTaskTester" prot="public">mv::AbstractTaskTester</innerclass>
@@ -185,9 +155,9 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Task_8h" kindref="compound">Task.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Task.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -195,14 +165,14 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="classmv_1_1AbstractTaskTester" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1AbstractTaskTester" kindref="compound">AbstractTaskTester</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
+<codeline lineno="17" refid="classmv_1_1AbstractTaskTester" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1AbstractTaskTester" kindref="compound">AbstractTaskTester</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1AbstractTaskTester" kindref="compound">AbstractTaskTester</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="classmv_1_1AbstractTaskTester_1aec96ac2cc71e1a370c1d5151b42f4bbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1AbstractTaskTester_1aec96ac2cc71e1a370c1d5151b42f4bbf" kindref="member">run</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>run()<sp/>{};</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>registerTester(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>taskTesterName);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
@@ -212,7 +182,7 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/>_name;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="34" refid="classmv_1_1AbstractTaskTester_1a68c7c6df55bb38ac70de581890a29b00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QStringList<sp/><ref refid="classmv_1_1AbstractTaskTester_1a68c7c6df55bb38ac70de581890a29b00" kindref="member">testerNames</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QStringList<sp/>testerNames;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal">}</highlight></codeline>

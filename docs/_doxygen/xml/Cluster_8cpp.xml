@@ -45,7 +45,7 @@
       </node>
       <node id="2">
         <label>Cluster.h</label>
-        <link refid="Cluster_8h"/>
+        <link refid="Cluster_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -67,7 +67,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Cluster_8h" kindref="compound">Cluster.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Cluster.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QUuid&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -87,14 +87,14 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal">QString<sp/><ref refid="classCluster_1a41547c3fd912e04459d328e43f917f3a" kindref="member">Cluster::getName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="24"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCluster_1af74d0a11b940469c3d68cf7d335634a3" kindref="member">_name</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_name;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a98243ba6c17d3238374eea2604db789d" kindref="member">Cluster::setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name)</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_ASSERT(!name.isEmpty());</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCluster_1af74d0a11b940469c3d68cf7d335634a3" kindref="member">_name</ref><sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>_name<sp/>=<sp/>name;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal">QString<sp/><ref refid="classCluster_1a71311014ed11d70ff7b18516b418b1c3" kindref="member">Cluster::getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -167,7 +167,7 @@
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><ref refid="classCluster" kindref="compound">Cluster</ref><sp/><ref refid="classCluster_1a6240d4c405c86b6feb1dd7e6a9a72222" kindref="member">Cluster::copy</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="104"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a508b5c90bd031026ee10b14f72924f21" kindref="member">Cluster</ref>(<ref refid="classCluster_1af74d0a11b940469c3d68cf7d335634a3" kindref="member">_name</ref>,<sp/><ref refid="classCluster_1a69cfa7446af53ed4229e39acf5fa1033" kindref="member">_color</ref>,<sp/><ref refid="classCluster_1a22d245f023520f7536d6a20be303acfd" kindref="member">_indices</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a508b5c90bd031026ee10b14f72924f21" kindref="member">Cluster</ref>(_name,<sp/><ref refid="classCluster_1a69cfa7446af53ed4229e39acf5fa1033" kindref="member">_color</ref>,<sp/><ref refid="classCluster_1a22d245f023520f7536d6a20be303acfd" kindref="member">_indices</ref>);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/Cluster.cpp"/>

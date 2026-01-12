@@ -20,7 +20,7 @@
       </node>
       <node id="2">
         <label>DockWidget.h</label>
-        <link refid="DockWidget_8h"/>
+        <link refid="DockWidget_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
@@ -30,7 +30,7 @@
       </node>
       <node id="6">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -48,7 +48,7 @@
       </node>
       <node id="4">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -63,7 +63,7 @@
       </node>
       <node id="3">
         <label>util/Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -90,103 +90,41 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7">
-        <label>DockAreaTitleBar.cpp</label>
-        <link refid="DockAreaTitleBar_8cpp"/>
-      </node>
-      <node id="3">
+      <node id="2">
         <label>DockManager.h</label>
-        <link refid="DockManager_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="DockManager_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>Core.cpp</label>
-        <link refid="Core_8cpp"/>
       </node>
       <node id="1">
         <label>CentralDockWidget.h</label>
         <link refid="CentralDockWidget_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="3">
+        <label>WorkspaceManager.h</label>
+        <link refid="WorkspaceManager_8h_source"/>
+      </node>
+      <node id="5">
+        <label>ViewPluginsDockWidget.h</label>
+        <link refid="ViewPluginsDockWidget_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="14">
-        <label>ViewPluginDockWidget.cpp</label>
-        <link refid="ViewPluginDockWidget_8cpp"/>
       </node>
       <node id="4">
-        <label>WorkspaceManager.h</label>
-        <link refid="WorkspaceManager_8h"/>
+        <label>ViewPluginDockWidget.h</label>
+        <link refid="ViewPluginDockWidget_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>ViewPluginsDockWidget.h</label>
-        <link refid="ViewPluginsDockWidget_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>ViewPluginsDockWidget.cpp</label>
-        <link refid="ViewPluginsDockWidget_8cpp"/>
-      </node>
-      <node id="12">
-        <label>LoadSystemViewMenu.cpp</label>
-        <link refid="LoadSystemViewMenu_8cpp"/>
-      </node>
-      <node id="8">
-        <label>DockManager.cpp</label>
-        <link refid="DockManager_8cpp"/>
-      </node>
-      <node id="9">
-        <label>ViewPluginDockWidget.h</label>
-        <link refid="ViewPluginDockWidget_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>ViewMenu.cpp</label>
-        <link refid="ViewMenu_8cpp"/>
-      </node>
-      <node id="6">
-        <label>WorkspaceManager.cpp</label>
-        <link refid="WorkspaceManager_8cpp"/>
-      </node>
-      <node id="2">
-        <label>CentralDockWidget.cpp</label>
-        <link refid="CentralDockWidget_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classCentralDockWidget" prot="public">CentralDockWidget</innerclass>
@@ -201,7 +139,7 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DockWidget_8h" kindref="compound">DockWidget.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DockWidget.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="classCentralDockWidget" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCentralDockWidget" kindref="compound">CentralDockWidget</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classDockWidget" kindref="compound">DockWidget</ref></highlight></codeline>
 <codeline lineno="17"><highlight class="normal">{</highlight></codeline>

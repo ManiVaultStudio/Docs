@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1SelectionMap" kind="class" language="C++" prot="public">
     <compoundname>mv::SelectionMap</compoundname>
     <basecompoundref refid="classmv_1_1util_1_1Serializable" prot="public" virt="non-virtual">mv::util::Serializable</basecompoundref>
-    <includes refid="LinkedData_8h" local="no">LinkedData.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" prot="public" static="no" strong="yes">
         <type></type>
@@ -47,7 +46,7 @@
         <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="30" column="5" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" prot="public" static="no">
-        <type>std::map&lt; std::uint32_t, <ref refid="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" kindref="member">Indices</ref> &gt;</type>
+        <type>std::map&lt; std::uint32_t, Indices &gt;</type>
         <definition>using mv::SelectionMap::Map =  std::map&lt;std::uint32_t, Indices&gt;</definition>
         <argsstring></argsstring>
         <name>Map</name>
@@ -75,7 +74,7 @@
         <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="87" column="13" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1SelectionMap_1a2298e8cc27b043ab96b38ad9f9e1515b" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref></type>
+        <type>Map</type>
         <definition>Map mv::SelectionMap::_map</definition>
         <argsstring></argsstring>
         <name>_map</name>
@@ -126,7 +125,7 @@
         <param>
           <type><ref refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034" kindref="member">Type</ref></type>
           <declname>type</declname>
-          <defval><ref refid="classmv_1_1SelectionMap_1af7aba57f8af09a8488f0c8adab969034acccd5fd8c8f59fe9373c56b1b951780c" kindref="member">Type::Indexed</ref></defval>
+          <defval>Type::Indexed</defval>
         </param>
         <briefdescription>
 <para>Constructs a selection mapping of <computeroutput>type</computeroutput>. </para>
@@ -197,7 +196,7 @@
           <declname>pointIndex</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1SelectionMap_1afd01374340f4060b89c013c8e61122d7" kindref="member">Indices</ref> &amp;</type>
+          <type>Indices &amp;</type>
           <declname>indices</declname>
         </param>
         <briefdescription>
@@ -228,7 +227,7 @@
         <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="27" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1SelectionMap_1a28861b5e4b6ebbf116e4a64adf91124f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref> &amp;</type>
+        <type>Map &amp;</type>
         <definition>Map&amp; mv::SelectionMap::getMap</definition>
         <argsstring>()</argsstring>
         <name>getMap</name>
@@ -245,7 +244,7 @@
         <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="59" column="9" bodyfile="Docs/external/core/ManiVault/src/LinkedData.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1SelectionMap_1a43d0b1ed4f2706ba10b0282e8d0e6eab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="classmv_1_1SelectionMap_1a7cd2507596f5f135eb1ab70ac04f030b" kindref="member">Map</ref> &amp;</type>
+        <type>const Map &amp;</type>
         <definition>const Map&amp; mv::SelectionMap::getMap</definition>
         <argsstring>() const</argsstring>
         <name>getMap</name>
@@ -298,7 +297,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref> &amp;</type>
+          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -321,7 +320,7 @@
         <location file="Docs/external/core/ManiVault/src/LinkedData.h" line="78" column="10" bodyfile="Docs/external/core/ManiVault/src/LinkedData.cpp" bodystart="93" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1SelectionMap_1a3a4f03ca8e4679f95294f3a13684016a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="Vector3f_8h_1aa90e6cbf54a8e79153d35230f332a7aa" kindref="member">QVariantMap</ref></type>
+        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
         <definition>QVariantMap mv::SelectionMap::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>

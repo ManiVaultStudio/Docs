@@ -21,7 +21,7 @@
       </node>
       <node id="35">
         <label>StyledIconEngine.h</label>
-        <link refid="StyledIconEngine_8h"/>
+        <link refid="StyledIconEngine_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
@@ -35,7 +35,7 @@
       </node>
       <node id="5">
         <label>util/Miscellaneous.h</label>
-        <link refid="Miscellaneous_8h"/>
+        <link refid="Miscellaneous_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -70,7 +70,7 @@
       </node>
       <node id="19">
         <label>StyledIcon.h</label>
-        <link refid="StyledIcon_8h"/>
+        <link refid="StyledIcon_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
@@ -90,7 +90,7 @@
       </node>
       <node id="30">
         <label>StyledIconCommon.h</label>
-        <link refid="StyledIconCommon_8h"/>
+        <link refid="StyledIconCommon_8h_source"/>
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="34" relation="include">
@@ -101,7 +101,7 @@
       </node>
       <node id="4">
         <label>HardwareComponentSpec.h</label>
-        <link refid="HardwareComponentSpec_8h"/>
+        <link refid="HardwareComponentSpec_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -124,7 +124,7 @@
       </node>
       <node id="22">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
@@ -142,7 +142,7 @@
       </node>
       <node id="2">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -154,7 +154,7 @@
       </node>
       <node id="20">
         <label>Version.h</label>
-        <link refid="Version_8h"/>
+        <link refid="Version_8h_source"/>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
@@ -191,7 +191,7 @@
       </node>
       <node id="21">
         <label>Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
@@ -209,7 +209,7 @@
       </node>
       <node id="31">
         <label>Badge.h</label>
-        <link refid="Badge_8h"/>
+        <link refid="Badge_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
@@ -238,24 +238,6 @@
         <label>QVector</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="2">
-        <label>HardwareSpec.cpp</label>
-        <link refid="HardwareSpec_8cpp"/>
-      </node>
-      <node id="1">
-        <label>StorageComponentSpec.h</label>
-        <link refid="StorageComponentSpec_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>StorageComponentSpec.cpp</label>
-        <link refid="StorageComponentSpec_8cpp"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classmv_1_1util_1_1StorageComponentSpec" prot="public">mv::util::StorageComponentSpec</innerclass>
     <innernamespace refid="namespacemv">mv</innernamespace>
     <innernamespace refid="namespacemv_1_1util">mv::util</innernamespace>
@@ -270,14 +252,14 @@
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ManiVaultGlobals_8h" kindref="compound">ManiVaultGlobals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ManiVaultGlobals.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="HardwareComponentSpec_8h" kindref="compound">HardwareComponentSpec.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HardwareComponentSpec.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="classmv_1_1util_1_1StorageComponentSpec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="ManiVaultGlobals_8h_1ad077ea58eb39ec8f3bae93b9ea48bc31" kindref="member">CORE_EXPORT</ref><sp/><ref refid="classmv_1_1util_1_1StorageComponentSpec" kindref="compound">StorageComponentSpec</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref></highlight></codeline>
+<codeline lineno="21" refid="classmv_1_1util_1_1StorageComponentSpec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1util_1_1StorageComponentSpec" kindref="compound">StorageComponentSpec</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1HardwareComponentSpec" kindref="compound">HardwareComponentSpec</ref></highlight></codeline>
 <codeline lineno="22"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>

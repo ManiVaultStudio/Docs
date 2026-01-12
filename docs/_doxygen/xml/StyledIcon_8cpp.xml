@@ -51,7 +51,7 @@
       </node>
       <node id="24">
         <label>StyledIconEngine.h</label>
-        <link refid="StyledIconEngine_8h"/>
+        <link refid="StyledIconEngine_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
@@ -68,7 +68,7 @@
       </node>
       <node id="2">
         <label>StyledIcon.h</label>
-        <link refid="StyledIcon_8h"/>
+        <link refid="StyledIcon_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -88,7 +88,7 @@
       </node>
       <node id="17">
         <label>StyledIconCommon.h</label>
-        <link refid="StyledIconCommon_8h"/>
+        <link refid="StyledIconCommon_8h_source"/>
         <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
@@ -108,7 +108,7 @@
       </node>
       <node id="7">
         <label>Serialization.h</label>
-        <link refid="Serialization_8h"/>
+        <link refid="Serialization_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -132,7 +132,7 @@
       </node>
       <node id="3">
         <label>ManiVaultGlobals.h</label>
-        <link refid="ManiVaultGlobals_8h"/>
+        <link refid="ManiVaultGlobals_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -144,7 +144,7 @@
       </node>
       <node id="5">
         <label>Version.h</label>
-        <link refid="Version_8h"/>
+        <link refid="Version_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
@@ -164,7 +164,7 @@
       </node>
       <node id="6">
         <label>Serializable.h</label>
-        <link refid="Serializable_8h"/>
+        <link refid="Serializable_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -185,7 +185,7 @@
       </node>
       <node id="18">
         <label>Badge.h</label>
-        <link refid="Badge_8h"/>
+        <link refid="Badge_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
@@ -222,8 +222,8 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>corresponding<sp/>LICENSE<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>this<sp/>source<sp/>tree<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2023<sp/>BioVault<sp/>(Biomedical<sp/>Visual<sp/>Analytics<sp/>Unit<sp/>LUMC<sp/>-<sp/>TU<sp/>Delft)<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="StyledIcon_8h" kindref="compound">StyledIcon.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Serializable_8h" kindref="compound">Serializable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;StyledIcon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Serializable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QFontDatabase&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -239,10 +239,10 @@
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STYLED_ICON_VERBOSE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv_1_1util" kindref="compound">mv::util</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::util</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal">QStringList<sp/><ref refid="namespacemv_1_1util_1a4d7b929fa159a9b6c2d801ae4d7555f4" kindref="member">findResourcesWithPrefix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>prefix)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">QStringList<sp/>findResourcesWithPrefix(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>prefix)<sp/>{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>matchedResources;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>QDirIterator<sp/>it(</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>QDir::Files,<sp/>QDirIterator::Subdirectories);</highlight></codeline>
@@ -280,9 +280,9 @@
 <codeline lineno="60"><highlight class="normal"><ref refid="classmv_1_1util_1_1StyledIcon_1a9a2c3d001ce3044063d167e57884b464" kindref="member">StyledIcon::StyledIcon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>other)</highlight></codeline>
 <codeline lineno="61"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!other.isNull())<sp/>{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref><sp/>=<sp/><ref refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" kindref="member">Serializable::createId</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconSettings._sha<sp/>=<sp/><ref refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" kindref="member">Serializable::createId</ref>();</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref>]<sp/>=<sp/>other.pixmap(64,<sp/>64);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings._sha]<sp/>=<sp/>other.pixmap(64,<sp/>64);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
@@ -298,7 +298,7 @@
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconFontName<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>iconFontName;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconFontVersion<sp/><sp/><sp/><sp/>=<sp/>iconFontVersion;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref><sp/>=<sp/>generateSha(_iconName,<sp/>_iconFontName,<sp/>_iconFontVersion);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_iconSettings._sha<sp/>=<sp/>generateSha(_iconName,<sp/>_iconFontName,<sp/>_iconFontVersion);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iconFontResourcePath<sp/>=<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aad3bfa1b66db67f7f241c86e40ca6def" kindref="member">getIconFontResourcePath</ref>(_iconFontName,<sp/>_iconFontVersion);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
@@ -323,7 +323,7 @@
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a9a2c3d001ce3044063d167e57884b464" kindref="member">StyledIcon</ref>(iconName,<sp/></highlight><highlight class="stringliteral">&quot;FontAwesomeBrandsRegular&quot;</highlight><highlight class="normal">,<sp/>version);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal">StyledIcon<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa8d9fb316afbbb2374d4a8a06291dafd" kindref="member">StyledIcon::fromQIcon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a8774d2a06fc3a0f11bd7132aa3ea5cf2" kindref="member">StyledIconMode</ref>&amp;<sp/>mode<sp/></highlight><highlight class="comment">/*=<sp/>StyledIconMode::ThemeAware*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">StyledIcon<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa8d9fb316afbbb2374d4a8a06291dafd" kindref="member">StyledIcon::fromQIcon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>StyledIconMode&amp;<sp/>mode<sp/></highlight><highlight class="comment">/*=<sp/>StyledIconMode::ThemeAware*/</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="107"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a9a2c3d001ce3044063d167e57884b464" kindref="member">StyledIcon</ref>(icon).withMode(mode);</highlight></codeline>
 <codeline lineno="109"><highlight class="normal">}</highlight></codeline>
@@ -464,7 +464,7 @@
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
 <codeline lineno="245"><highlight class="normal">StyledIcon&amp;<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a320f3bbe3e4f9d3f1116fb6fb14969bd" kindref="member">StyledIcon::withColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>color)</highlight></codeline>
 <codeline lineno="246"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="namespacemv_1_1util_1a8774d2a06fc3a0f11bd7132aa3ea5cf2a7549af950ee01aa2709a9eeb7de767bf" kindref="member">StyledIconMode::FixedColor</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>StyledIconMode::FixedColor;</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1adecbe4f7705993c78c33ab156f56f5e4" kindref="member">_fixedColor</ref><sp/><sp/><sp/>=<sp/>color;</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"></highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>updateIconPixmap();</highlight></codeline>
@@ -472,7 +472,7 @@
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="253"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="normal">StyledIcon<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a616bd3daa981c4688e47cf5d5f574358" kindref="member">StyledIcon::withMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1_1util_1a8774d2a06fc3a0f11bd7132aa3ea5cf2" kindref="member">StyledIconMode</ref>&amp;<sp/>mode)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">StyledIcon<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a616bd3daa981c4688e47cf5d5f574358" kindref="member">StyledIcon::withMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>StyledIconMode&amp;<sp/>mode)</highlight></codeline>
 <codeline lineno="256"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/>=<sp/>mode;</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>
@@ -497,7 +497,7 @@
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!QFile::exists(iconFontResourcePath))</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(QString(</highlight><highlight class="stringliteral">&quot;Font<sp/>resource<sp/>not<sp/>found:<sp/>%1&quot;</highlight><highlight class="normal">).arg(iconFontResourcePath).toStdString());</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a7b794020aa7bd77dd4371217ea93bb67" kindref="member">_modifierSha</ref>]<sp/>=<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa0f23b0259a06d89b879fa900c426a09" kindref="member">createIconPixmap</ref>(_modifierIconName,<sp/>_modifierIconFontName,<sp/>_modifierIconFontVersion,<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/>==<sp/><ref refid="namespacemv_1_1util_1a8774d2a06fc3a0f11bd7132aa3ea5cf2a7549af950ee01aa2709a9eeb7de767bf" kindref="member">StyledIconMode::FixedColor</ref><sp/>?<sp/>Qt::black<sp/>:<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1adecbe4f7705993c78c33ab156f56f5e4" kindref="member">_fixedColor</ref>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a7b794020aa7bd77dd4371217ea93bb67" kindref="member">_modifierSha</ref>]<sp/>=<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa0f23b0259a06d89b879fa900c426a09" kindref="member">createIconPixmap</ref>(_modifierIconName,<sp/>_modifierIconFontName,<sp/>_modifierIconFontVersion,<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/>==<sp/>StyledIconMode::FixedColor<sp/>?<sp/>Qt::black<sp/>:<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1adecbe4f7705993c78c33ab156f56f5e4" kindref="member">_fixedColor</ref>);</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -600,12 +600,12 @@
 <codeline lineno="380"><highlight class="normal"></highlight></codeline>
 <codeline lineno="381"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ad82182068734e2ca4dc03f804d157941" kindref="member">StyledIcon::setBadgeEnabled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>badgeEnabled)</highlight></codeline>
 <codeline lineno="382"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a854fd0be4c8a40beb23b010d13043de1" kindref="member">_badgeParameters</ref>.<ref refid="structmv_1_1util_1_1Badge_1_1Parameters_1a538c464e2b702738c32283af9908f9ec" kindref="member">_enabled</ref><sp/>=<sp/>badgeEnabled;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a854fd0be4c8a40beb23b010d13043de1" kindref="member">_badgeParameters</ref>._enabled<sp/>=<sp/>badgeEnabled;</highlight></codeline>
 <codeline lineno="384"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"></highlight></codeline>
 <codeline lineno="386"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a4777d2227a4eb546976defa29ec3bc48" kindref="member">StyledIcon::isBadgeEnabled</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="387"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a854fd0be4c8a40beb23b010d13043de1" kindref="member">_badgeParameters</ref>.<ref refid="structmv_1_1util_1_1Badge_1_1Parameters_1a538c464e2b702738c32283af9908f9ec" kindref="member">_enabled</ref>;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a854fd0be4c8a40beb23b010d13043de1" kindref="member">_badgeParameters</ref>._enabled;</highlight></codeline>
 <codeline lineno="389"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="390"><highlight class="normal"></highlight></codeline>
 <codeline lineno="391"><highlight class="normal">QString<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1a43f43469f5f47024fa69608f5945ea0e" kindref="member">StyledIcon::getIconFontResourceName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>iconFontName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Version&amp;<sp/>iconFontVersion)</highlight></codeline>
@@ -631,8 +631,8 @@
 <codeline lineno="411"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StyledIcon::updateIconPixmap()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="412"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref>.isEmpty()<sp/>&amp;&amp;<sp/>!<ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>.contains(_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1aa86f4d6051a4115765ec593e3a040d26" kindref="member">_sha</ref>]<sp/>=<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa0f23b0259a06d89b879fa900c426a09" kindref="member">createIconPixmap</ref>(_iconName,<sp/>_iconFontName,<sp/>_iconFontVersion,<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/>==<sp/><ref refid="namespacemv_1_1util_1a8774d2a06fc3a0f11bd7132aa3ea5cf2a7549af950ee01aa2709a9eeb7de767bf" kindref="member">StyledIconMode::FixedColor</ref><sp/>?<sp/>Qt::black<sp/>:<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1adecbe4f7705993c78c33ab156f56f5e4" kindref="member">_fixedColor</ref>);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_iconSettings._sha.isEmpty()<sp/>&amp;&amp;<sp/>!<ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>.contains(_iconSettings._sha))<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1StyledIcon_1ab2e1b23d4c6d9c6e02e3e2b6a8d5312d" kindref="member">pixmaps</ref>[_iconSettings._sha]<sp/>=<sp/><ref refid="classmv_1_1util_1_1StyledIcon_1aa0f23b0259a06d89b879fa900c426a09" kindref="member">createIconPixmap</ref>(_iconName,<sp/>_iconFontName,<sp/>_iconFontVersion,<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1a5cf0b2d35429e98707932d47fbac0a70" kindref="member">_mode</ref><sp/>==<sp/>StyledIconMode::FixedColor<sp/>?<sp/>Qt::black<sp/>:<sp/>_iconSettings.<ref refid="structmv_1_1util_1_1StyledIconSettings_1adecbe4f7705993c78c33ab156f56f5e4" kindref="member">_fixedColor</ref>);</highlight></codeline>
 <codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)</highlight></codeline>
@@ -659,7 +659,7 @@
 <codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="440"><highlight class="normal"></highlight></codeline>
 <codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>icon<sp/>fonts<sp/>with<sp/>matching<sp/>icon<sp/>font<sp/>name</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>matchingResources<sp/>=<sp/><ref refid="namespacemv_1_1util_1a4d7b929fa159a9b6c2d801ae4d7555f4" kindref="member">findResourcesWithPrefix</ref>(QString(</highlight><highlight class="stringliteral">&quot;:/IconFonts/%1&quot;</highlight><highlight class="normal">).arg(iconFontName));</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>matchingResources<sp/>=<sp/>findResourcesWithPrefix(QString(</highlight><highlight class="stringliteral">&quot;:/IconFonts/%1&quot;</highlight><highlight class="normal">).arg(iconFontName));</highlight></codeline>
 <codeline lineno="443"><highlight class="normal"></highlight></codeline>
 <codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Extract<sp/>version<sp/>string<sp/>from<sp/>a<sp/>matching<sp/>resource<sp/>name</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>extractVersionString<sp/>=<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text)<sp/>-&gt;<sp/>QString<sp/>{</highlight></codeline>

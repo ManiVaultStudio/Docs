@@ -95,9 +95,9 @@
           <defval>-1</defval>
         </param>
         <param>
-          <type><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">mv::gui::WidgetConfigurationFunction</ref></type>
+          <type>mv::gui::WidgetConfigurationFunction</type>
           <declname>widgetConfigurationFunction</declname>
-          <defval><ref refid="namespacemv_1_1gui_1a26fb6712ed1864faf2f73cd90f7cf76e" kindref="member">mv::gui::WidgetConfigurationFunction</ref>()</defval>
+          <defval>mv::gui::WidgetConfigurationFunction()</defval>
         </param>
         <briefdescription>
 <para>Add <computeroutput>action</computeroutput> to the group (facade for <ref refid="classmv_1_1gui_1_1GroupAction" kindref="compound">GroupAction</ref> that automatically sets the <ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref> settings prefix) </para>
@@ -149,7 +149,7 @@
     <detaileddescription>
 <para>Base action class which groups settings for<itemizedlist>
 <listitem><para>Common global settings (e.g. tasks &amp; parameters)</para>
-</listitem><listitem><para><ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> global settings</para>
+</listitem><listitem><para>Plugin global settings</para>
 </listitem></itemizedlist>
 </para>
 <para>This class ensures that settings are store in the correct place because it overrides the GroupAction::addAction(...) and adjusts the settings prefix of the added actions.</para>
@@ -171,7 +171,7 @@
 <listitem><para>Add actions to the particular settings action (derived from <ref refid="classmv_1_1gui_1_1PluginGlobalSettingsGroupAction" kindref="compound">PluginGlobalSettingsGroupAction</ref>)</para>
 </listitem></itemizedlist>
 </para>
-<para>Procedure for retrieving global settings: Common global setting example: <ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings()</ref>.getMiscellaneousSettings().getAskConfirmationBeforeRemovingDatasetsAction() <ref refid="namespacemv_1_1Plugin" kindref="compound">Plugin</ref> global setting example: <ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings()</ref>.getPluginGlobalSettingsGroupAction&lt;GlobalSettingsAction&gt;(_exampleViewGLPlugin)-&gt;getDefaultPointSizeAction().getValue()</para>
+<para>Procedure for retrieving global settings: Common global setting example: <ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings()</ref>.getMiscellaneousSettings().getAskConfirmationBeforeRemovingDatasetsAction() Plugin global setting example: <ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings()</ref>.getPluginGlobalSettingsGroupAction&lt;GlobalSettingsAction&gt;(_exampleViewGLPlugin)-&gt;getDefaultPointSizeAction().getValue()</para>
 <para><simplesect kind="author"><para>Thomas Kroes </para>
 </simplesect>
 </para>
