@@ -17,9 +17,7 @@ Welcome to ManiVault's documentation!
    :maxdepth: 2
    :caption: Development
 
-   development/building_plugins/index
-   development/core_interaction/index
-   development/building_applications/index
+   development/index
    
 .. toctree::
    :maxdepth: 2

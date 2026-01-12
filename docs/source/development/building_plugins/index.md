@@ -12,5 +12,6 @@ icons
 limit_creation
 global_settings
 status_bar
+notifications
+learning_center
 actions/index
-learning_center/index
