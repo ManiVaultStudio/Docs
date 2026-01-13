@@ -3,5 +3,6 @@
 ```{toctree}
 :maxdepth: 1
 
-## Textual
+trigger/index
+textual/index
 
