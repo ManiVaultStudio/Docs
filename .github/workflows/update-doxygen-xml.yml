@@ -34,10 +34,22 @@ jobs:
           doxygen docs/Doxyfile
           test -f docs/_doxygen/xml/index.xml
 
-      - name: Commit changes (if any)
+      - name: Create archive
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github-actions.com"
-          git add -A docs/_doxygen/xml
-          git diff --cached --quiet || git commit -m "Update Doxygen XML"
-          git push
+          # Create a deterministic archive name
+          tar -C docs/_doxygen -czf doxygen-xml.tar.gz xml
+          ls -lh doxygen-xml.tar.gz
+
+      - name: Publish/Update GitHub Release asset
+        uses: ncipollo/release-action@v1
+        with:
+          tag: doxygen-xml-latest
+          name: Doxygen XML (latest)
+          body: |
+            Auto-generated Doxygen XML for Read the Docs.
+            Updated from workflow run ${{ github.run_id }}.
+          artifacts: doxygen-xml.tar.gz
+          artifactErrorsFailBuild: true
+          allowUpdates: true
+          replacesArtifacts: true
+          makeLatest: false

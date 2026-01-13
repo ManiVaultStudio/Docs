@@ -21,8 +21,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
-    'breathe',
-    'exhale'
+    'breathe'
 ]
 
 source_suffix = {
