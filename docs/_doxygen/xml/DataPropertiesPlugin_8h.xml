@@ -5,8 +5,6 @@
     <includes refid="DataPropertiesWidget_8h" local="yes">DataPropertiesWidget.h</includes>
     <includes refid="ViewPlugin_8h" local="no">ViewPlugin.h</includes>
     <includes refid="TriggerAction_8h" local="no">actions/TriggerAction.h</includes>
-    <includedby refid="DataPropertiesPlugin_8cpp" local="yes">DataPropertiesPlugin.cpp</includedby>
-    <includedby refid="DataPropertiesWidget_8cpp" local="yes">DataPropertiesWidget.cpp</includedby>
     <incdepgraph>
       <node id="48">
         <label>QMap</label>
@@ -1445,41 +1443,41 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">mv::plugin;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="classDataPropertiesPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDataPropertiesPlugin" kindref="compound">DataPropertiesPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">ViewPlugin</ref></highlight></codeline>
+<codeline lineno="22" refid="classDataPropertiesPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDataPropertiesPlugin" kindref="compound">DataPropertiesPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ViewPlugin</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataPropertiesPlugin" kindref="compound">DataPropertiesPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref>*<sp/>factory);</highlight></codeline>
+<codeline lineno="32" refid="classDataPropertiesPlugin_1a6ca6e7d6a1a8f6e526f09b92325bb9b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataPropertiesPlugin_1a6ca6e7d6a1a8f6e526f09b92325bb9b7" kindref="member">DataPropertiesPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PluginFactory*<sp/>factory);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="classDataPropertiesPlugin_1abf6a85318cae2a1d5b8c19d9d9c64a9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDataPropertiesPlugin_1abf6a85318cae2a1d5b8c19d9d9c64a9c" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateWindowTitle(<ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref><sp/>selectedDataHierarchyItems);</highlight></codeline>
+<codeline lineno="43" refid="classDataPropertiesPlugin_1a1fde82182c410e28a0d3a3cc3878e36c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDataPropertiesPlugin_1a1fde82182c410e28a0d3a3cc3878e36c" kindref="member">updateWindowTitle</ref>(<ref refid="classmv_1_1DataHierarchyItems" kindref="compound">DataHierarchyItems</ref><sp/>selectedDataHierarchyItems);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref><sp/><sp/><sp/><sp/><sp/><sp/>_additionalEditorAction;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataPropertiesWidget" kindref="compound">DataPropertiesWidget</ref><sp/><sp/><sp/><sp/>_dataPropertiesWidget;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="48"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="classDataPropertiesPluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDataPropertiesPluginFactory" kindref="compound">DataPropertiesPluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">ViewPluginFactory</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DataPropertiesPluginFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ViewPluginFactory</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">mv::plugin::ViewPluginFactory</ref><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(mv::plugin::ViewPluginFactory<sp/>mv::plugin::PluginFactory)</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;studio.manivault.DataPropertiesPlugin&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/></highlight><highlight class="stringliteral">&quot;DataPropertiesPlugin.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDataPropertiesPluginFactory" kindref="compound">DataPropertiesPluginFactory</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>DataPropertiesPluginFactory();</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getReadmeMarkdownUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getRepositoryUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">ViewPlugin</ref>*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewPlugin*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/DataPropertiesPlugin/src/DataPropertiesPlugin.h"/>

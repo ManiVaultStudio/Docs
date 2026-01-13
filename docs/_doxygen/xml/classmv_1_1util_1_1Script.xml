@@ -105,19 +105,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classmv_1_1util_1_1Script_1a4f89510970820c381ec6fdb0884c3611" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1util_1_1Script_1a5003e88b0c53473b424f0324f6eab386" kindref="member">Type</ref>, QString &gt;</type>
-        <definition>QMap&lt; Script::Type, QString &gt; mv::util::Script::typeMap</definition>
+      <memberdef kind="variable" id="classmv_1_1util_1_1Script_1a640ec6bdb63b83be6bc20ffd49edd855" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1util_1_1Script_1a5003e88b0c53473b424f0324f6eab386" kindref="member">Type</ref>, QString &gt;</type>
+        <definition>QMap&lt;Type, QString&gt; mv::util::Script::typeMap</definition>
         <argsstring></argsstring>
         <name>typeMap</name>
-        <initializer>= {
-    { Type::None, &quot;None&quot; },
-    { Type::Loader, &quot;Loader&quot; },
-    { Type::Writer, &quot;Writer&quot; },
-    { Type::Analysis, &quot;Analysis&quot; },
-    { Type::Transformation, &quot;Transformation&quot; },
-    { Type::View, &quot;View&quot; }
-}</initializer>
         <briefdescription>
 <para>Maps type to type name. </para>
         </briefdescription>
@@ -127,16 +119,11 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/util/Script.h" line="41" column="17" bodyfile="Docs/external/core/ManiVault/src/util/Script.h" bodystart="41" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmv_1_1util_1_1Script_1a1227c93016670d70a948820d1be1c3f4" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1util_1_1Script_1a59409ecfd8139de3e16582844208a2c8" kindref="member">Language</ref>, QString &gt;</type>
-        <definition>QMap&lt; Script::Language, QString &gt; mv::util::Script::languageMap</definition>
+      <memberdef kind="variable" id="classmv_1_1util_1_1Script_1af6b8ce04135d2303e5ebdb0587caea81" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1util_1_1Script_1a59409ecfd8139de3e16582844208a2c8" kindref="member">Language</ref>, QString &gt;</type>
+        <definition>QMap&lt;Language, QString&gt; mv::util::Script::languageMap</definition>
         <argsstring></argsstring>
         <name>languageMap</name>
-        <initializer>= {
-    { Language::None, &quot;None&quot; },
-    { Language::Python, &quot;Python&quot; },
-    { Language::R, &quot;R&quot; }
-}</initializer>
         <briefdescription>
 <para>Maps language enum to language name. </para>
         </briefdescription>
@@ -248,9 +235,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a7354635a604bf01ca455bd746020e8bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a25f4c6589eebf5d2f7c4848e6212583d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
-        <definition>QString mv::util::Script::getTypeName</definition>
+        <definition>static QString mv::util::Script::getTypeName</definition>
         <argsstring>(const Type &amp;type)</argsstring>
         <name>getTypeName</name>
         <param>
@@ -276,11 +263,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="48" column="20" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="31" bodyend="34"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="48" column="20"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1Script_1adca291c93227163f48201567ae6a68f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a2394d57de0abb52f4029a15355271d9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1util_1_1Script_1a5003e88b0c53473b424f0324f6eab386" kindref="member">Type</ref></type>
-        <definition>Script::Type mv::util::Script::getTypeEnum</definition>
+        <definition>static Type mv::util::Script::getTypeEnum</definition>
         <argsstring>(const QString &amp;typeName)</argsstring>
         <name>getTypeEnum</name>
         <param>
@@ -306,11 +293,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="55" column="17" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="36" bodyend="44"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="55" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a7b9a38b74b29ef9d86dec0dfa26326ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a035fba53cdb513c119840669f774fcce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
-        <definition>QString mv::util::Script::getLanguageName</definition>
+        <definition>static QString mv::util::Script::getLanguageName</definition>
         <argsstring>(const Language &amp;language)</argsstring>
         <name>getLanguageName</name>
         <param>
@@ -336,11 +323,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="72" column="20" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="46" bodyend="49"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="72" column="20"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1Script_1ab257bad2dfc99205c9595ccf40af3cb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1Script_1a0246c92ad089de739726bf128e76d305" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1util_1_1Script_1a59409ecfd8139de3e16582844208a2c8" kindref="member">Language</ref></type>
-        <definition>Script::Language mv::util::Script::getLanguageEnum</definition>
+        <definition>static Language mv::util::Script::getLanguageEnum</definition>
         <argsstring>(const QString &amp;languageName)</argsstring>
         <name>getLanguageEnum</name>
         <param>
@@ -366,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="79" column="21" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="51" bodyend="59"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="79" column="21"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -465,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="93" column="14" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="61" bodyend="71"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="93" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1Script_1a986f531be6b5325dbd1e97a3297f2d04" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -566,7 +553,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="105" column="14" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="73" bodyend="83"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="105" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1Script_1a13f2098cbce274a452baa6aac3ed6ffa" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -667,11 +654,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="117" column="14" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="85" bodyend="95"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="117" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1Script_1aa7657f603b9b68abe1514bf0f6c8e19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1Script_1af90614e486ca88613d8aca2d976973db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::util::Script::run</definition>
+        <definition>virtual void mv::util::Script::run</definition>
         <argsstring>()</argsstring>
         <name>run</name>
         <briefdescription>
@@ -681,7 +668,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="120" column="18" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="97" bodyend="102"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="120" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1Script_1adda5ea00b3d3a4cc3aa0d019b7e7a45f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>QString</type>
@@ -806,7 +793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="131" column="11" bodyfile="Docs/external/core/ManiVault/src/util/Script.cpp" bodystart="104" bodyend="118"/>
+        <location file="Docs/external/core/ManiVault/src/util/Script.h" line="131" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1Script_1a6d0e9743edecd6c3c93c13e6ba5f182c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -944,42 +931,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="1">
-        <label>mv::util::Script</label>
-        <link refid="classmv_1_1util_1_1Script"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="3">
-        <label>QMap&lt; Language, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="4">
-        <label>QMap&lt; Type, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="1">
-        <label>mv::util::Script</label>
-        <link refid="classmv_1_1util_1_1Script"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>languageMap</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>typeMap</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/util/Script.h" line="24" column="1" bodyfile="Docs/external/core/ManiVault/src/util/Script.h" bodystart="25" bodyend="150"/>
     <listofallmembers>
       <member refid="classmv_1_1util_1_1Script_1a5d62e2657ffdef5197ff84f4f5f00175" prot="private" virt="non-virtual"><scope>mv::util::Script</scope><name>_datasets</name></member>
@@ -992,19 +943,19 @@
       <member refid="classmv_1_1util_1_1Script_1a5489047db7a51323022df72c7ffb9d96" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getDatasets</name></member>
       <member refid="classmv_1_1util_1_1Script_1aaaba15e3e04ad10bb235bebf1f12167d" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getDataTypes</name></member>
       <member refid="classmv_1_1util_1_1Script_1aab2ed1ced687d11c31f09fb0dc3ca9f5" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguage</name></member>
-      <member refid="classmv_1_1util_1_1Script_1ab257bad2dfc99205c9595ccf40af3cb4" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageEnum</name></member>
+      <member refid="classmv_1_1util_1_1Script_1a0246c92ad089de739726bf128e76d305" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageEnum</name></member>
       <member refid="classmv_1_1util_1_1Script_1aff54f12901a48eca4e8a3cf37d76d9e4" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageIcon</name></member>
-      <member refid="classmv_1_1util_1_1Script_1a7b9a38b74b29ef9d86dec0dfa26326ec" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageName</name></member>
+      <member refid="classmv_1_1util_1_1Script_1a035fba53cdb513c119840669f774fcce" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageName</name></member>
       <member refid="classmv_1_1util_1_1Script_1a1afab1e7e9a65de769f5f8d7bdc83644" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLanguageVersion</name></member>
       <member refid="classmv_1_1util_1_1Script_1a208992b5f65a2614f4fc59c8b7a90869" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getLocation</name></member>
       <member refid="classmv_1_1util_1_1Script_1adda5ea00b3d3a4cc3aa0d019b7e7a45f" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTitle</name></member>
       <member refid="classmv_1_1util_1_1Script_1a74c1fc633f1433c554e45a474c9a05c8" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getType</name></member>
-      <member refid="classmv_1_1util_1_1Script_1adca291c93227163f48201567ae6a68f9" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTypeEnum</name></member>
-      <member refid="classmv_1_1util_1_1Script_1a7354635a604bf01ca455bd746020e8bd" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTypeName</name></member>
+      <member refid="classmv_1_1util_1_1Script_1a2394d57de0abb52f4029a15355271d9b" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTypeEnum</name></member>
+      <member refid="classmv_1_1util_1_1Script_1a25f4c6589eebf5d2f7c4848e6212583d" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTypeName</name></member>
       <member refid="classmv_1_1util_1_1Script_1a48b6bd05d08393ba39b2330d201ba1ff" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>getTypeName</name></member>
       <member refid="classmv_1_1util_1_1Script_1a59409ecfd8139de3e16582844208a2c8" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>Language</name></member>
-      <member refid="classmv_1_1util_1_1Script_1a1227c93016670d70a948820d1be1c3f4" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>languageMap</name></member>
-      <member refid="classmv_1_1util_1_1Script_1aa7657f603b9b68abe1514bf0f6c8e19f" prot="public" virt="virtual"><scope>mv::util::Script</scope><name>run</name></member>
+      <member refid="classmv_1_1util_1_1Script_1af6b8ce04135d2303e5ebdb0587caea81" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>languageMap</name></member>
+      <member refid="classmv_1_1util_1_1Script_1af90614e486ca88613d8aca2d976973db" prot="public" virt="virtual"><scope>mv::util::Script</scope><name>run</name></member>
       <member refid="classmv_1_1util_1_1Script_1a747e5da67b996c87590f24953fff3975" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>Script</name></member>
       <member refid="classmv_1_1util_1_1Script_1a986f531be6b5325dbd1e97a3297f2d04" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>Script</name></member>
       <member refid="classmv_1_1util_1_1Script_1a13f2098cbce274a452baa6aac3ed6ffa" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>Script</name></member>
@@ -1016,7 +967,7 @@
       <member refid="classmv_1_1util_1_1Script_1a6d0e9743edecd6c3c93c13e6ba5f182c" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>setTitle</name></member>
       <member refid="classmv_1_1util_1_1Script_1a030fb8aedd2f88cda2615cd9b22bbc50" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>setType</name></member>
       <member refid="classmv_1_1util_1_1Script_1a5003e88b0c53473b424f0324f6eab386" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>Type</name></member>
-      <member refid="classmv_1_1util_1_1Script_1a4f89510970820c381ec6fdb0884c3611" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>typeMap</name></member>
+      <member refid="classmv_1_1util_1_1Script_1a640ec6bdb63b83be6bc20ffd49edd855" prot="public" virt="non-virtual"><scope>mv::util::Script</scope><name>typeMap</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

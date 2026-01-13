@@ -73,7 +73,6 @@
         <argsstring>() override</argsstring>
         <name>initialize</name>
         <reimplements refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48">initialize</reimplements>
-        <reimplementedby refid="classmv_1_1TaskManager_1ad934baaad24158ea5a836d80e214b0fd">initialize</reimplementedby>
         <briefdescription>
 <para>Perform manager startup initialization. </para>
         </briefdescription>
@@ -88,7 +87,6 @@
         <definition>virtual Tasks mv::AbstractTaskManager::getTasks</definition>
         <argsstring>()=0</argsstring>
         <name>getTasks</name>
-        <reimplementedby refid="classmv_1_1TaskManager_1aa87a3e0e05864c9008a42a7fab12d27a">getTasks</reimplementedby>
         <briefdescription>
 <para>Get all tasks. </para>
         </briefdescription>
@@ -218,7 +216,6 @@
         <definition>virtual void mv::AbstractTaskManager::addTask</definition>
         <argsstring>(Task *task)=0</argsstring>
         <name>addTask</name>
-        <reimplementedby refid="classmv_1_1TaskManager_1a245611e1009da0bd38038d4f2edae43e">addTask</reimplementedby>
         <param>
           <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
           <declname>task</declname>
@@ -247,7 +244,6 @@
         <definition>virtual void mv::AbstractTaskManager::removeTask</definition>
         <argsstring>(Task *task)=0</argsstring>
         <name>removeTask</name>
-        <reimplementedby refid="classmv_1_1TaskManager_1a209738c379eda26a7694d5b759b8d1b6">removeTask</reimplementedby>
         <param>
           <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
           <declname>task</declname>
@@ -282,16 +278,13 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
       <node id="1">
         <label>mv::AbstractTaskManager</label>
         <link refid="classmv_1_1AbstractTaskManager"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -299,28 +292,17 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>mv::TaskManager</label>
-        <link refid="classmv_1_1TaskManager"/>
-        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
       <node id="1">
         <label>mv::AbstractTaskManager</label>
         <link refid="classmv_1_1AbstractTaskManager"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -328,8 +310,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -340,16 +320,16 @@
       <member refid="classmv_1_1AbstractTaskManager_1a783af4cde721515d4cbd81a19d7921f8" prot="protected" virt="pure-virtual"><scope>mv::AbstractTaskManager</scope><name>addTask</name></member>
       <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>beginInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>beginReset</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>endInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>getIcon</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>getId</name></member>
       <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>getLockingAction</name></member>
@@ -362,8 +342,8 @@
       <member refid="classmv_1_1AbstractTaskManager_1a88174d2cab0ea24ab5392851a0638edb" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>getTasksByHandlerTypeAndStatus</name></member>
       <member refid="classmv_1_1AbstractTaskManager_1ab989aae9ef1202d1d2c0b776b9e9e393" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>isInitializing</name></member>
@@ -391,8 +371,8 @@
       <member refid="classmv_1_1AbstractTaskManager_1aee93466036006b59a32e973c21041a22" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>Tasks</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractTaskManager</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

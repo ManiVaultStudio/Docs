@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="151" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.cpp" bodystart="426" bodyend="491"/>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="151" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -125,118 +125,85 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>mv::gui::OptionsAction::ListViewWidget</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QWidget</label>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="7">
-        <label>QMap&lt; Scope, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="15">
+      <node id="11">
         <label>mv::gui::VerticalGroupAction</label>
         <link refid="classmv_1_1gui_1_1VerticalGroupAction"/>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>mv::gui::OptionsAction::FileAction</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction_1_1FileAction"/>
-        <childnode refid="11" relation="public-inheritance">
-        </childnode>
-        <childnode refid="13" relation="usage">
-          <edgelabel>_loadSelectionAction</edgelabel>
-          <edgelabel>_saveSelectionAction</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>_optionsAction</edgelabel>
-        </childnode>
-      </node>
-      <node id="1">
-        <label>mv::gui::OptionsAction::ListViewWidget</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>_optionsAction</edgelabel>
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>_tableAction</edgelabel>
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::gui::WidgetAction</label>
-        <link refid="classmv_1_1gui_1_1WidgetAction"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>scopeNames</edgelabel>
+        <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
       <node id="6">
-        <label>mv::util::Serializable</label>
-        <link refid="classmv_1_1util_1_1Serializable"/>
-      </node>
-      <node id="11">
-        <label>mv::gui::HorizontalGroupAction</label>
-        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
-        <childnode refid="12" relation="public-inheritance">
+        <label>mv::gui::OptionsAction::FileAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1FileAction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_loadSelectionAction</edgelabel>
+          <edgelabel>_saveSelectionAction</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_optionsAction</edgelabel>
         </childnode>
       </node>
-      <node id="2">
-        <label>QWidget</label>
-      </node>
-      <node id="12">
-        <label>mv::gui::GroupAction</label>
-        <link refid="classmv_1_1gui_1_1GroupAction"/>
-        <childnode refid="4" relation="public-inheritance">
+      <node id="1">
+        <label>mv::gui::OptionsAction::ListViewWidget</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1ListViewWidget"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_optionsAction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_tableAction</edgelabel>
         </childnode>
       </node>
       <node id="3">
-        <label>mv::gui::OptionsAction</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction"/>
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>_optionsModel</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>_fileAction</edgelabel>
-        </childnode>
       </node>
-      <node id="5">
-        <label>QWidgetAction</label>
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
-      <node id="14">
-        <label>mv::gui::TableAction</label>
-        <link refid="classmv_1_1gui_1_1TableAction"/>
-        <childnode refid="15" relation="public-inheritance">
+      <node id="7">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
       <node id="8">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::OptionsAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_optionsModel</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_fileAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mv::gui::TableAction</label>
+        <link refid="classmv_1_1gui_1_1TableAction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
         <label>mv::CheckableStringListModel</label>
         <link refid="classmv_1_1CheckableStringListModel"/>
-        <childnode refid="9" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>mv::gui::TriggerAction</label>
-        <link refid="classmv_1_1gui_1_1TriggerAction"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="9">
-        <label>QStringListModel</label>
+        <label>mv::gui::TriggerAction</label>
+        <link refid="classmv_1_1gui_1_1TriggerAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="142" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="142" bodyend="159"/>

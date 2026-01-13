@@ -20,7 +20,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1EventListener_1abeb298131123ef9eae5542f5639b2f0f" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; QString, <ref refid="classmv_1_1EventListener_1a8af3b7b8a2d02626104ee6b1f017c0cf" kindref="member">DataEventHandler</ref> &gt;</type>
+        <type>std::unordered_map&lt; QString, DataEventHandler &gt;</type>
         <definition>std::unordered_map&lt;QString, DataEventHandler&gt; mv::EventListener::_dataEventHandlersById</definition>
         <argsstring></argsstring>
         <name>_dataEventHandlersById</name>
@@ -33,7 +33,7 @@
         <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="79" column="26" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1EventListener_1a634b6059a8ffbcc535fb1669a1a6b7a4" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref>, <ref refid="classmv_1_1EventListener_1a8af3b7b8a2d02626104ee6b1f017c0cf" kindref="member">DataEventHandler</ref> &gt;</type>
+        <type>std::unordered_map&lt; DataType, DataEventHandler &gt;</type>
         <definition>std::unordered_map&lt;DataType, DataEventHandler&gt; mv::EventListener::_dataEventHandlersByType</definition>
         <argsstring></argsstring>
         <name>_dataEventHandlersByType</name>
@@ -47,7 +47,7 @@
         <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="80" column="25" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1EventListener_1a365c63bb22a6c0b8d366750babebed7c" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="classmv_1_1EventListener_1a8af3b7b8a2d02626104ee6b1f017c0cf" kindref="member">DataEventHandler</ref> &gt;</type>
+        <type>std::vector&lt; DataEventHandler &gt;</type>
         <definition>std::vector&lt;DataEventHandler&gt; mv::EventListener::_dataEventHandlers</definition>
         <argsstring></argsstring>
         <name>_dataEventHandlers</name>
@@ -101,11 +101,11 @@
         <argsstring>(DataType dataType, DataEventHandler callback)</argsstring>
         <name>registerDataEventByType</name>
         <param>
-          <type><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></type>
+          <type>DataType</type>
           <declname>dataType</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1EventListener_1a8af3b7b8a2d02626104ee6b1f017c0cf" kindref="member">DataEventHandler</ref></type>
+          <type>DataEventHandler</type>
           <declname>callback</declname>
         </param>
         <briefdescription>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="33" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="54" bodyend="57"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="33" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1ac90d4a4f9236f362f9dd4fdd372c6569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -122,7 +122,7 @@
         <argsstring>(DataEventHandler callback)</argsstring>
         <name>registerDataEvent</name>
         <param>
-          <type><ref refid="classmv_1_1EventListener_1a8af3b7b8a2d02626104ee6b1f017c0cf" kindref="member">DataEventHandler</ref></type>
+          <type>DataEventHandler</type>
           <declname>callback</declname>
         </param>
         <briefdescription>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="34" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="59" bodyend="62"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="34" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1a05be0a1a90ed6a8874f64d3d386855e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -145,11 +145,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="39" column="5" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="18" bodyend="21"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="39" column="5"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1EventListener_1adf3c1f95d274e4645e592af184193986" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1EventListener_1ae91d5a89c9506dce7a7344718013bb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
-        <definition>mv::EventListener::~EventListener</definition>
+        <definition>virtual mv::EventListener::~EventListener</definition>
         <argsstring>()</argsstring>
         <name>~EventListener</name>
         <briefdescription>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="42" column="13" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="23" bodyend="27"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="42" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1a1294e78691d7da54461cd75c2ecfcc90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -189,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="51" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="29" bodyend="32"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="51" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1a8778281b769c0d94ac712ab52230c769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="57" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="34" bodyend="37"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="57" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1a386a6d8c2b58f31a4dee27dcd0f14d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="63" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="39" bodyend="42"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="63" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1EventListener_1a5f95af4c81e5d79941bf5e6577ab2dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="69" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="44" bodyend="47"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="69" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="77" column="10" bodyfile="Docs/external/core/ManiVault/src/event/EventListener.cpp" bodystart="64" bodyend="93"/>
+        <location file="Docs/external/core/ManiVault/src/event/EventListener.h" line="77" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -326,7 +326,7 @@
       <member refid="classmv_1_1EventListener_1ac674b311a1d3883fced47fb0749dff85" prot="public" virt="non-virtual"><scope>mv::EventListener</scope><name>registerDataEventByType</name></member>
       <member refid="classmv_1_1EventListener_1a386a6d8c2b58f31a4dee27dcd0f14d99" prot="public" virt="non-virtual"><scope>mv::EventListener</scope><name>removeSupportedEventType</name></member>
       <member refid="classmv_1_1EventListener_1a5f95af4c81e5d79941bf5e6577ab2dd9" prot="public" virt="non-virtual"><scope>mv::EventListener</scope><name>setSupportedEventTypes</name></member>
-      <member refid="classmv_1_1EventListener_1adf3c1f95d274e4645e592af184193986" prot="public" virt="virtual"><scope>mv::EventListener</scope><name>~EventListener</name></member>
+      <member refid="classmv_1_1EventListener_1ae91d5a89c9506dce7a7344718013bb95" prot="public" virt="virtual"><scope>mv::EventListener</scope><name>~EventListener</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -55,7 +55,7 @@
       </sectiondef>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classViewMenu_1ad7b4cc077dcc0e095ec1bbc84734058f" prot="private" static="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; mv::gui::DockAreaFlag, QSharedPointer&lt; QMenu &gt; &gt;</type>
+        <type>QMap&lt; mv::gui::DockAreaFlag, QSharedPointer&lt; QMenu &gt; &gt;</type>
         <definition>using ViewMenu::MenuMap =  QMap&lt;mv::gui::DockAreaFlag, QSharedPointer&lt;QMenu&gt; &gt;</definition>
         <argsstring></argsstring>
         <name>MenuMap</name>
@@ -140,7 +140,7 @@
         <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="79" column="24" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classViewMenu_1aea064b181a2267402f18e4b8d1899c3d" prot="private" static="no" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">MenuMap</ref></type>
+        <type>MenuMap</type>
         <definition>MenuMap ViewMenu::_loadViewsDockedMenus</definition>
         <argsstring></argsstring>
         <name>_loadViewsDockedMenus</name>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="49" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.cpp" bodystart="22" bodyend="55"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="49" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classViewMenu_1a9a3c80361440c11aa7d4f4387f7136c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="55" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.cpp" bodystart="105" bodyend="118"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="55" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -238,11 +238,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="62" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.cpp" bodystart="57" bodyend="103"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="62" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classViewMenu_1a465088d2e7f1abd2f458ae9d7186dee3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classViewMenu_1a4f73608e100db67b418d4771cf0704d0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QVector&lt; QPointer&lt; <ref refid="classmv_1_1gui_1_1PluginTriggerAction" kindref="compound">mv::gui::PluginTriggerAction</ref> &gt; &gt;</type>
-        <definition>QVector&lt; QPointer&lt; PluginTriggerAction &gt; &gt; ViewMenu::getLoadViewsActions</definition>
+        <definition>QVector&lt;QPointer&lt;mv::gui::PluginTriggerAction&gt; &gt; ViewMenu::getLoadViewsActions</definition>
         <argsstring>(mv::gui::DockAreaFlag dockArea) const</argsstring>
         <name>getLoadViewsActions</name>
         <param>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="69" column="13" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.cpp" bodystart="120" bodyend="149"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="69" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -280,28 +280,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>QMenu</label>
-      </node>
-      <node id="1">
-        <label>ViewMenu</label>
-        <link refid="classViewMenu"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>QMenu</label>
-      </node>
-      <node id="1">
-        <label>ViewMenu</label>
-        <link refid="classViewMenu"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/private/ViewMenu.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/private/ViewMenu.h" bodystart="27" bodyend="82"/>
     <listofallmembers>
       <member refid="classViewMenu_1afa1b6c6a8db6b09e8da60c18df6976e8" prot="private" virt="non-virtual"><scope>ViewMenu</scope><name>_dockAreaWidget</name></member>
@@ -311,7 +289,7 @@
       <member refid="classViewMenu_1a652aac09694016b54fabafe87b8640a6" prot="private" virt="non-virtual"><scope>ViewMenu</scope><name>_options</name></member>
       <member refid="classViewMenu_1a4050977d8a9551428cb3431e7746e33b" prot="private" virt="non-virtual"><scope>ViewMenu</scope><name>_separator</name></member>
       <member refid="classViewMenu_1a3d231ef00d4b525bcf81fc649c79fa1eae53afecb8c80f885f38173a30c117546" prot="public" virt="non-virtual"><scope>ViewMenu</scope><name>Default</name></member>
-      <member refid="classViewMenu_1a465088d2e7f1abd2f458ae9d7186dee3" prot="private" virt="non-virtual"><scope>ViewMenu</scope><name>getLoadViewsActions</name></member>
+      <member refid="classViewMenu_1a4f73608e100db67b418d4771cf0704d0" prot="private" virt="non-virtual"><scope>ViewMenu</scope><name>getLoadViewsActions</name></member>
       <member refid="classViewMenu_1a3d231ef00d4b525bcf81fc649c79fa1eaf5b0f68c9d8a9c78a8c913003ad3d1c4" prot="public" virt="non-virtual"><scope>ViewMenu</scope><name>LoadedViewsSubMenu</name></member>
       <member refid="classViewMenu_1a3d231ef00d4b525bcf81fc649c79fa1eafa4fa064561fdf2c8e5a6d9f1e9f5878" prot="public" virt="non-virtual"><scope>ViewMenu</scope><name>LoadSystemViewPlugins</name></member>
       <member refid="classViewMenu_1a3d231ef00d4b525bcf81fc649c79fa1ea824f707b0348b7c08310ebe239c73934" prot="public" virt="non-virtual"><scope>ViewMenu</scope><name>LoadViewPlugins</name></member>

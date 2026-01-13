@@ -11,13 +11,10 @@
     <includes local="no">DockAreaWidget.h</includes>
     <includes local="no">QString</includes>
     <includes local="no">QWidget</includes>
-    <includedby refid="WorkspaceManager_8h" local="yes">WorkspaceManager.h</includedby>
-    <includedby refid="DockAreaTitleBar_8cpp" local="yes">DockAreaTitleBar.cpp</includedby>
     <includedby refid="DockManager_8h" local="no">DockManager.h</includedby>
-    <includedby refid="DockManager_8cpp" local="yes">DockManager.cpp</includedby>
     <includedby refid="ViewPluginDockWidget_8h" local="no">ViewPluginDockWidget.h</includedby>
     <includedby refid="ViewPluginsDockWidget_8h" local="yes">ViewPluginsDockWidget.h</includedby>
-    <includedby refid="ViewPluginDockWidget_8cpp" local="yes">ViewPluginDockWidget.cpp</includedby>
+    <includedby refid="WorkspaceManager_8h" local="yes">WorkspaceManager.h</includedby>
     <incdepgraph>
       <node id="20">
         <label>QMap</label>
@@ -1446,31 +1443,31 @@
       <node id="1">
         <label>DockManager.h</label>
         <link refid="DockManager_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
         <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="2">
+      <node id="4">
         <label>WorkspaceManager.h</label>
         <link refid="WorkspaceManager_8h_source"/>
       </node>
-      <node id="4">
+      <node id="3">
         <label>ViewPluginsDockWidget.h</label>
         <link refid="ViewPluginsDockWidget_8h_source"/>
-        <childnode refid="2" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="2">
         <label>ViewPluginDockWidget.h</label>
         <link refid="ViewPluginDockWidget_8h_source"/>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -1517,45 +1514,45 @@
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ViewPluginDockWidgets<sp/>=<sp/>std::vector&lt;ViewPluginDockWidget*&gt;;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDockManager_1a131f322a9e2e56c5d0e8961af433f501" kindref="member">DockManager</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52" refid="classDockManager_1a131f322a9e2e56c5d0e8961af433f501" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDockManager_1a131f322a9e2e56c5d0e8961af433f501" kindref="member">DockManager</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDockManager_1af46eac2470a67e2257f6945a368ce9d5" kindref="member">~DockManager</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55" refid="classDockManager_1af46eac2470a67e2257f6945a368ce9d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDockManager_1af46eac2470a67e2257f6945a368ce9d5" kindref="member">~DockManager</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewPluginDockWidgets<sp/><ref refid="classDockManager_1abc50428764f8f10eb07384180a65d13e" kindref="member">getViewPluginDockWidgets</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>floating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62" refid="classDockManager_1ac5813bbee954f416e80e0ad481f7d18f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewPluginDockWidgets<sp/><ref refid="classDockManager_1ac5813bbee954f416e80e0ad481f7d18f" kindref="member">getViewPluginDockWidgets</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>floating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewPluginDockWidgets<sp/><ref refid="classDockManager_1abc50428764f8f10eb07384180a65d13e" kindref="member">getViewPluginDockWidgets</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>floating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69" refid="classDockManager_1a25a0361bfa18e9627673fe4865c1d153" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ViewPluginDockWidgets<sp/><ref refid="classDockManager_1a25a0361bfa18e9627673fe4865c1d153" kindref="member">getViewPluginDockWidgets</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>floating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget" kindref="compound">ViewPluginDockWidget</ref>*<sp/><ref refid="classDockManager_1a44056bd167dd08747e5f6c69e41ed77b" kindref="member">findViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>viewPlugin)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76" refid="classDockManager_1a5671b555474b0e45dbf38deaf7a3e199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget" kindref="compound">ViewPluginDockWidget</ref>*<sp/><ref refid="classDockManager_1a5671b555474b0e45dbf38deaf7a3e199" kindref="member">findViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::ViewPlugin*<sp/>viewPlugin)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>ads::CDockAreaWidget*<sp/><ref refid="classDockManager_1afe1ae2c7b2fc87398cee01cb0427df18" kindref="member">findDockAreaWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>viewPlugin)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83" refid="classDockManager_1a80ff0e28cd34b12dc93b7850216b32ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ads::CDockAreaWidget*<sp/><ref refid="classDockManager_1a80ff0e28cd34b12dc93b7850216b32ad" kindref="member">findDockAreaWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::ViewPlugin*<sp/>viewPlugin)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1ac9e0c8dc46f114b12599807521666a75" kindref="member">removeViewPluginDockWidget</ref>(<ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref><sp/>*<sp/>viewPlugin);</highlight></codeline>
+<codeline lineno="89" refid="classDockManager_1ac9e0c8dc46f114b12599807521666a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1ac9e0c8dc46f114b12599807521666a75" kindref="member">removeViewPluginDockWidget</ref>(mv::plugin::ViewPlugin<sp/>*<sp/>viewPlugin);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1aabdeb207fede77f65d5f3f4d8b75efaf" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="92" refid="classDockManager_1aabdeb207fede77f65d5f3f4d8b75efaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1aabdeb207fede77f65d5f3f4d8b75efaf" kindref="member">reset</ref>();</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1ae7883bf61e4a7ce15129351731f22560" kindref="member">addViewPluginDockWidget</ref>(ads::DockWidgetArea<sp/>area,<sp/>ads::CDockWidget*<sp/>dockWidget,<sp/>ads::CDockAreaWidget*<sp/>dockAreaWidget<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95" refid="classDockManager_1ae7883bf61e4a7ce15129351731f22560" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1ae7883bf61e4a7ce15129351731f22560" kindref="member">addViewPluginDockWidget</ref>(ads::DockWidgetArea<sp/>area,<sp/>ads::CDockWidget*<sp/>dockWidget,<sp/>ads::CDockAreaWidget*<sp/>dockAreaWidget<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1ac9e0c8dc46f114b12599807521666a75" kindref="member">removeViewPluginDockWidget</ref>(<ref refid="classViewPluginDockWidget" kindref="compound">ViewPluginDockWidget</ref>*<sp/>viewPluginDockWidget);</highlight></codeline>
+<codeline lineno="98" refid="classDockManager_1a45aedb1fe7b6fcc086c2481c962314fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a45aedb1fe7b6fcc086c2481c962314fc" kindref="member">removeViewPluginDockWidget</ref>(<ref refid="classViewPluginDockWidget" kindref="compound">ViewPluginDockWidget</ref>*<sp/>viewPluginDockWidget);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classDockManager_1a632ed51ba503f97f8246c3b76224ad4e" kindref="member">getWidget</ref>();</highlight></codeline>
+<codeline lineno="101" refid="classDockManager_1ac16f8f74a244788b0af2a4b897b864e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classDockManager_1ac16f8f74a244788b0af2a4b897b864e0" kindref="member">getWidget</ref>();</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>For<sp/>prevent<sp/>app<sp/>flickering<sp/>(minimizing<sp/>and<sp/>maximizing<sp/>in<sp/>sequence<sp/>when<sp/>native<sp/>widgets<sp/>are<sp/>docked)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1aba6fb4306060b11305b6cc86574f7e1d" kindref="member">warmupNativeWidgets</ref>();</highlight></codeline>
+<codeline lineno="106" refid="classDockManager_1aba6fb4306060b11305b6cc86574f7e1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1aba6fb4306060b11305b6cc86574f7e1d" kindref="member">warmupNativeWidgets</ref>();</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a943bcfbed67c171fdd58f46321905666" kindref="member">hasWarmedUpNativeWidgets</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112" refid="classDockManager_1a943bcfbed67c171fdd58f46321905666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a943bcfbed67c171fdd58f46321905666" kindref="member">hasWarmedUpNativeWidgets</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization<sp/>task</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/><ref refid="classDockManager_1affc64b0ca6665f80a4cd182280a9e9fe" kindref="member">getSerializationTask</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117" refid="classDockManager_1af846eace00062d6f452f48ce4c98e032" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/><ref refid="classDockManager_1af846eace00062d6f452f48ce4c98e032" kindref="member">getSerializationTask</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a5a9e7ac6eb74f6cfad560394b401ba83" kindref="member">setSerializationTask</ref>(<ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/>serializationTask);</highlight></codeline>
+<codeline lineno="123" refid="classDockManager_1a5a9e7ac6eb74f6cfad560394b401ba83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a5a9e7ac6eb74f6cfad560394b401ba83" kindref="member">setSerializationTask</ref>(<ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/>serializationTask);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a89900553ffe05f682b87ba7a9b29cca9" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131" refid="classDockManager_1a89900553ffe05f682b87ba7a9b29cca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDockManager_1a89900553ffe05f682b87ba7a9b29cca9" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><ref refid="classDockManager_1a771afd8182b302b62f2af675f50522c5" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137" refid="classDockManager_1a771afd8182b302b62f2af675f50522c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classDockManager_1a771afd8182b302b62f2af675f50522c5" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classViewPluginsDockWidget" kindref="compound">ViewPluginsDockWidget</ref>;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QPointer&lt;<ref refid="classDockManager" kindref="compound">DockManager</ref>&gt;;</highlight></codeline>

@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/OverwriteClustersConfirmationDialog.h" line="31" column="5" bodyfile="Docs/external/core/ManiVault/src/plugins/ClusterData/src/OverwriteClustersConfirmationDialog.cpp" bodystart="15" bodyend="53"/>
+        <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/OverwriteClustersConfirmationDialog.h" line="31" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classOverwriteClustersConfirmationDialog_1a37b823e4c101b3ebdc69bb997f7125d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>QSize</type>
@@ -138,66 +138,38 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>QDialog</label>
-      </node>
-      <node id="1">
-        <label>OverwriteClustersConfirmationDialog</label>
-        <link refid="classOverwriteClustersConfirmationDialog"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="7">
-        <label>QMap&lt; Scope, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="8">
+      <node id="5">
         <label>mv::gui::ToggleAction</label>
         <link refid="classmv_1_1gui_1_1ToggleAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
-        <label>mv::gui::WidgetAction</label>
-        <link refid="classmv_1_1gui_1_1WidgetAction"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>scopeNames</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
-      </node>
-      <node id="2">
-        <label>QDialog</label>
       </node>
       <node id="1">
         <label>OverwriteClustersConfirmationDialog</label>
         <link refid="classOverwriteClustersConfirmationDialog"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>_cancelAction</edgelabel>
           <edgelabel>_discardAction</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>_alwaysAskPermissionAction</edgelabel>
         </childnode>
       </node>
-      <node id="5">
-        <label>QWidgetAction</label>
-      </node>
-      <node id="3">
+      <node id="2">
         <label>mv::gui::TriggerAction</label>
         <link refid="classmv_1_1gui_1_1TriggerAction"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

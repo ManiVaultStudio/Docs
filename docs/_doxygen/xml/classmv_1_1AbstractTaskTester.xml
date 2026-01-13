@@ -27,7 +27,6 @@
         <definition>QStringList mv::AbstractTaskTester::testerNames</definition>
         <argsstring></argsstring>
         <name>testerNames</name>
-        <initializer>= QStringList()</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -38,9 +37,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1a71cc9b23dd74b1d9d45fdd932178b336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1a4606358744a6c9cc4a9d7200985872b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Q_INVOKABLE</type>
-        <definition>mv::AbstractTaskTester::AbstractTaskTester</definition>
+        <definition>Q_INVOKABLE mv::AbstractTaskTester::AbstractTaskTester</definition>
         <argsstring>(QObject *parent, const QString &amp;name)</argsstring>
         <name>AbstractTaskTester</name>
         <param>
@@ -57,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="22" column="17" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskTester.cpp" bodystart="12" bodyend="16"/>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="22" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1aec96ac2cc71e1a370c1d5151b42f4bbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -74,9 +73,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1af2b6d19366580bbc1c401a79af8ca64c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1a1fcf344ff702c41a2725a442a5d7cf27" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void mv::AbstractTaskTester::registerTester</definition>
+        <definition>static void mv::AbstractTaskTester::registerTester</definition>
         <argsstring>(const QString taskTesterName)</argsstring>
         <name>registerTester</name>
         <param>
@@ -89,11 +88,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="26" column="17" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskTester.cpp" bodystart="18" bodyend="21"/>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="26" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1ae34f8cc76000a5dfc70e8094523a9212" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractTaskTester_1a916a5dcd2bcdd97aecd9c66402a44526" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QStringList</type>
-        <definition>QStringList mv::AbstractTaskTester::getTesterNames</definition>
+        <definition>static QStringList mv::AbstractTaskTester::getTesterNames</definition>
         <argsstring>()</argsstring>
         <name>getTesterNames</name>
         <briefdescription>
@@ -102,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="28" column="24" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskTester.cpp" bodystart="23" bodyend="26"/>
+        <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="28" column="24"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -110,51 +109,22 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4">
+      <node id="2">
         <label>mv::ForegroundTaskTester</label>
         <link refid="classmv_1_1ForegroundTaskTester"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="5">
-        <label>mv::ModalTaskTester</label>
-        <link refid="classmv_1_1ModalTaskTester"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>mv::BackgroundTaskTester</label>
-        <link refid="classmv_1_1BackgroundTaskTester"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="1">
         <label>mv::AbstractTaskTester</label>
-        <link refid="classmv_1_1AbstractTaskTester"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
       </node>
     </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="1">
-        <label>mv::AbstractTaskTester</label>
-        <link refid="classmv_1_1AbstractTaskTester"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/AbstractTaskTester.h" line="17" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractTaskTester.h" bodystart="18" bodyend="35"/>
     <listofallmembers>
       <member refid="classmv_1_1AbstractTaskTester_1a44711d2407bb2b475583a305d81205ab" prot="private" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>_name</name></member>
-      <member refid="classmv_1_1AbstractTaskTester_1a71cc9b23dd74b1d9d45fdd932178b336" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>AbstractTaskTester</name></member>
-      <member refid="classmv_1_1AbstractTaskTester_1ae34f8cc76000a5dfc70e8094523a9212" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>getTesterNames</name></member>
-      <member refid="classmv_1_1AbstractTaskTester_1af2b6d19366580bbc1c401a79af8ca64c" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>registerTester</name></member>
+      <member refid="classmv_1_1AbstractTaskTester_1a4606358744a6c9cc4a9d7200985872b0" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>AbstractTaskTester</name></member>
+      <member refid="classmv_1_1AbstractTaskTester_1a916a5dcd2bcdd97aecd9c66402a44526" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>getTesterNames</name></member>
+      <member refid="classmv_1_1AbstractTaskTester_1a1fcf344ff702c41a2725a442a5d7cf27" prot="public" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>registerTester</name></member>
       <member refid="classmv_1_1AbstractTaskTester_1aec96ac2cc71e1a370c1d5151b42f4bbf" prot="public" virt="virtual"><scope>mv::AbstractTaskTester</scope><name>run</name></member>
       <member refid="classmv_1_1AbstractTaskTester_1a68c7c6df55bb38ac70de581890a29b00" prot="protected" virt="non-virtual"><scope>mv::AbstractTaskTester</scope><name>testerNames</name></member>
     </listofallmembers>

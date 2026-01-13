@@ -9,11 +9,6 @@
     <includes local="no">QResizeEvent</includes>
     <includes local="no">QGraphicsView</includes>
     <includedby refid="ColorMapEditor1DAction_8h" local="yes">ColorMapEditor1DAction.h</includedby>
-    <includedby refid="ColorMapEditor1DEdgesGraphicsItem_8cpp" local="yes">ColorMapEditor1DEdgesGraphicsItem.cpp</includedby>
-    <includedby refid="ColorMapEditor1DHistogramGraphicsItem_8cpp" local="yes">ColorMapEditor1DHistogramGraphicsItem.cpp</includedby>
-    <includedby refid="ColorMapEditor1DNodeGraphicsItem_8cpp" local="yes">ColorMapEditor1DNodeGraphicsItem.cpp</includedby>
-    <includedby refid="ColorMapEditor1DScene_8cpp" local="yes">ColorMapEditor1DScene.cpp</includedby>
-    <includedby refid="ColorMapEditor1DWidget_8cpp" local="yes">ColorMapEditor1DWidget.cpp</includedby>
     <incdepgraph>
       <node id="17">
         <label>QObject</label>
@@ -137,16 +132,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>ColorMap1DAction.h</label>
         <link refid="ColorMap1DAction_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>ColorizeClustersAction.h</label>
         <link refid="ColorizeClustersAction_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -154,7 +149,7 @@
         <link refid="ColorMapAction_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
@@ -165,13 +160,13 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>ClustersAction.h</label>
         <link refid="ClustersAction_8h_source"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>InfoAction.h</label>
         <link refid="ClusterData_2src_2InfoAction_8h_source"/>
       </node>
@@ -181,11 +176,11 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>ColorMap2DAction.h</label>
         <link refid="ColorMap2DAction_8h_source"/>
       </node>
-      <node id="9">
+      <node id="4">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -224,35 +219,35 @@
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget" kindref="compound">ColorMapEditor1DWidget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref>&amp;<sp/>colorMapEditor1DAction);</highlight></codeline>
+<codeline lineno="39" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae96004f40de713f8e31a0d64cb26bdc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae96004f40de713f8e31a0d64cb26bdc8" kindref="member">ColorMapEditor1DWidget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DAction" kindref="compound">ColorMapEditor1DAction</ref>&amp;<sp/>colorMapEditor1DAction);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget" kindref="compound">ColorMapEditor1DWidget</ref>();</highlight></codeline>
+<codeline lineno="42" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a12df17c1644b711a4d50e98c959faf1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a12df17c1644b711a4d50e98c959faf1f" kindref="member">~ColorMapEditor1DWidget</ref>();</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>showEvent(QShowEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9afb2ae40535bd486252e23ab1f1fa46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9afb2ae40535bd486252e23ab1f1fa46" kindref="member">showEvent</ref>(QShowEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>eventFilter(QObject*<sp/>target,<sp/>QEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae5da1713f787013c43fabd5e40aa189b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ae5da1713f787013c43fabd5e40aa189b" kindref="member">eventFilter</ref>(QObject*<sp/>target,<sp/>QEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addNodeAtScenePosition(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>scenePosition);</highlight></codeline>
+<codeline lineno="61" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a11909983dd1bb48636eaaeb93214dc5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a11909983dd1bb48636eaaeb93214dc5a" kindref="member">addNodeAtScenePosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QPointF&amp;<sp/>scenePosition);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addNodeGraphicsItem(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="67" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9eb11514d914ccd8d036701618534682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9eb11514d914ccd8d036701618534682" kindref="member">addNodeGraphicsItem</ref>(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeNodeGraphicsItem(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="73" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9fac77def346ae6e61aa16d00ea05e26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a9fac77def346ae6e61aa16d00ea05e26" kindref="member">removeNodeGraphicsItem</ref>(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drawBackground(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a70d3f245e6915ec27bbff2c93e8d2487" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a70d3f245e6915ec27bbff2c93e8d2487" kindref="member">drawBackground</ref>(QPainter*<sp/>painter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rect)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/>getColorMap();</highlight></codeline>
+<codeline lineno="86" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a146688810b60903bee38653d49143449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a146688810b60903bee38653d49143449" kindref="member">getColorMap</ref>();</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>selectNode(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="92" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ab760e21d1cdfb471b79a04907a7d152b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1ab760e21d1cdfb471b79a04907a7d152b" kindref="member">selectNode</ref>(<ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>node);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;ColorMapEditor1DNode*&gt;&amp;<sp/>getNodes();</highlight></codeline>
+<codeline lineno="100" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa90c8756c037fb5824d0fa5153566a14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;ColorMapEditor1DNode*&gt;&amp;<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1aa90c8756c037fb5824d0fa5153566a14" kindref="member">getNodes</ref>();</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVector&lt;ColorMapEditor1DNode*&gt;&amp;<sp/>getNodes()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1addfb20cc1b3945852648a379e24f9d99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVector&lt;ColorMapEditor1DNode*&gt;&amp;<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1addfb20cc1b3945852648a379e24f9d99" kindref="member">getNodes</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/>getCurrentNode();</highlight></codeline>
+<codeline lineno="112" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a09e6a97abcf8b53e5bb037a9a0a482e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DNode" kindref="compound">ColorMapEditor1DNode</ref>*<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a09e6a97abcf8b53e5bb037a9a0a482e1" kindref="member">getCurrentNode</ref>();</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/>getGraphRectangle()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118" refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a99a561b884a854dfd085e97f24cd8ae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/><ref refid="classmv_1_1gui_1_1ColorMapEditor1DWidget_1a99a561b884a854dfd085e97f24cd8ae6" kindref="member">getGraphRectangle</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>

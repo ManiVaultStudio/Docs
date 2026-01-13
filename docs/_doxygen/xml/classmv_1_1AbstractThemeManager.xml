@@ -43,7 +43,7 @@
         <location file="Docs/external/core/ManiVault/src/AbstractThemeManager.h" line="43" column="5" bodyfile="Docs/external/core/ManiVault/src/AbstractThemeManager.h" bodystart="43" bodyend="47"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1AbstractThemeManager_1a17c23887494d718a8c59a809e36308bb" prot="public" static="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, QPalette &gt;</type>
+        <type>QMap&lt; QString, QPalette &gt;</type>
         <definition>using mv::AbstractThemeManager::CustomColorSchemesMap =  QMap&lt;QString, QPalette&gt;</definition>
         <argsstring></argsstring>
         <name>CustomColorSchemesMap</name>
@@ -110,7 +110,6 @@
         <argsstring>() override</argsstring>
         <name>initialize</name>
         <reimplements refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48">initialize</reimplements>
-        <reimplementedby refid="classmv_1_1ThemeManager_1aa08f69fc2a77a220f09f909385b95fff">initialize</reimplementedby>
         <briefdescription>
 <para>Perform event manager startup initialization. </para>
         </briefdescription>
@@ -170,7 +169,6 @@
         <definition>virtual bool mv::AbstractThemeManager::isSystemColorSchemeModeActive</definition>
         <argsstring>() const =0</argsstring>
         <name>isSystemColorSchemeModeActive</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a51f0f987cb0c65c9ca26d4841d4dc32d">isSystemColorSchemeModeActive</reimplementedby>
         <briefdescription>
 <para>Get whether the system color scheme mode is active. </para>
         </briefdescription>
@@ -188,7 +186,6 @@
         <definition>virtual bool mv::AbstractThemeManager::isSystemLightDarkColorSchemeModeActive</definition>
         <argsstring>() const =0</argsstring>
         <name>isSystemLightDarkColorSchemeModeActive</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1ae243accd7d31c53042d0feed19668d94">isSystemLightDarkColorSchemeModeActive</reimplementedby>
         <briefdescription>
 <para>Get whether the system light/dark color scheme mode is active. </para>
         </briefdescription>
@@ -206,7 +203,6 @@
         <definition>virtual bool mv::AbstractThemeManager::isSystemLightColorSchemeActive</definition>
         <argsstring>() const =0</argsstring>
         <name>isSystemLightColorSchemeActive</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a6a896be168fff4f13f446620be33f8ad">isSystemLightColorSchemeActive</reimplementedby>
         <briefdescription>
 <para>Get whether the light system color scheme is active. </para>
         </briefdescription>
@@ -224,7 +220,6 @@
         <definition>virtual bool mv::AbstractThemeManager::isSystemDarkColorSchemeActive</definition>
         <argsstring>() const =0</argsstring>
         <name>isSystemDarkColorSchemeActive</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1ac29f8e32f8d926c423872dafe7970e18">isSystemDarkColorSchemeActive</reimplementedby>
         <briefdescription>
 <para>Get whether the dark system color scheme is active. </para>
         </briefdescription>
@@ -242,7 +237,6 @@
         <definition>virtual bool mv::AbstractThemeManager::isCustomColorSchemeModeActive</definition>
         <argsstring>() const =0</argsstring>
         <name>isCustomColorSchemeModeActive</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a492328be6cc0b6a6d3165eeb888ea184">isCustomColorSchemeModeActive</reimplementedby>
         <briefdescription>
 <para>Get whether a custom color scheme mode is active. </para>
         </briefdescription>
@@ -260,7 +254,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateSystemColorScheme</definition>
         <argsstring>()=0</argsstring>
         <name>activateSystemColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a72f8262e90f2b76121fd2caf1f84bb71">activateSystemColorScheme</reimplementedby>
         <briefdescription>
 <para>Set color scheme mode to system. </para>
         </briefdescription>
@@ -275,7 +268,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateSystemColorSchemeLightDark</definition>
         <argsstring>()=0</argsstring>
         <name>activateSystemColorSchemeLightDark</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1af0cafccfa01ea045d7ee4b18376e34a8">activateSystemColorSchemeLightDark</reimplementedby>
         <briefdescription>
 <para>Set color scheme mode to system light/dark. </para>
         </briefdescription>
@@ -290,7 +282,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateLightSystemColorScheme</definition>
         <argsstring>()=0</argsstring>
         <name>activateLightSystemColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a2e399066f4f31bdb1c1e79922b02bad1">activateLightSystemColorScheme</reimplementedby>
         <briefdescription>
 <para>Set color scheme to system light (this will activate the system light/dark color scheme mode) </para>
         </briefdescription>
@@ -305,7 +296,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateDarkSystemColorScheme</definition>
         <argsstring>()=0</argsstring>
         <name>activateDarkSystemColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a3c5ae6aed72d099c86bd3c83f5e36bbb">activateDarkSystemColorScheme</reimplementedby>
         <briefdescription>
 <para>Set theme to system dark (this will activate the system light/dark color scheme mode) </para>
         </briefdescription>
@@ -320,7 +310,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateCustomColorScheme</definition>
         <argsstring>()=0</argsstring>
         <name>activateCustomColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a3a461bb84e137bc3dc75377382fb7dd9">activateCustomColorScheme</reimplementedby>
         <briefdescription>
 <para>Activates the currently selected custom color scheme. </para>
         </briefdescription>
@@ -335,7 +324,6 @@
         <definition>virtual void mv::AbstractThemeManager::activateCustomColorScheme</definition>
         <argsstring>(const QString &amp;customColorSchemeName)=0</argsstring>
         <name>activateCustomColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1aa9becdd3faec3947f368de78b1836428">activateCustomColorScheme</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>customColorSchemeName</declname>
@@ -364,7 +352,6 @@
         <definition>virtual QStringList mv::AbstractThemeManager::getCustomColorSchemeNames</definition>
         <argsstring>(const util::ColorScheme::Modes &amp;customColorSchemeModes={ util::ColorScheme::Mode::BuiltIn, util::ColorScheme::Mode::UserAdded }) const =0</argsstring>
         <name>getCustomColorSchemeNames</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1ab6524bc70a84e308685a2b0cbd2d394a">getCustomColorSchemeNames</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1util_1_1ColorScheme_1a89665ace08ce42317a73f4f5360d7f61" kindref="member">util::ColorScheme::Modes</ref> &amp;</type>
           <declname>customColorSchemeModes</declname>
@@ -383,11 +370,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractThemeManager.h" line="146" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractThemeManager_1aca3d46b0790cae9bd040e2d78cb34013" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classQMap" kindref="compound">util::ColorSchemesMap</ref></type>
+        <type>util::ColorSchemesMap</type>
         <definition>virtual util::ColorSchemesMap mv::AbstractThemeManager::getCustomColorSchemes</definition>
         <argsstring>(const util::ColorScheme::Modes &amp;customColorSchemeModes={ util::ColorScheme::Mode::BuiltIn, util::ColorScheme::Mode::UserAdded }) const =0</argsstring>
         <name>getCustomColorSchemes</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1ae5aa8299f2e5fce1cecd4f5c7d5876cf">getCustomColorSchemes</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1util_1_1ColorScheme_1a89665ace08ce42317a73f4f5360d7f61" kindref="member">util::ColorScheme::Modes</ref> &amp;</type>
           <declname>customColorSchemeModes</declname>
@@ -419,7 +405,6 @@
         <definition>virtual void mv::AbstractThemeManager::addCustomColorScheme</definition>
         <argsstring>(const util::ColorScheme &amp;colorScheme)=0</argsstring>
         <name>addCustomColorScheme</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1ab4c2d7b793130c4b6c4c2e8ca35609d1">addCustomColorScheme</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1util_1_1ColorScheme" kindref="compound">util::ColorScheme</ref> &amp;</type>
           <declname>colorScheme</declname>
@@ -448,7 +433,6 @@
         <definition>virtual const ColorSchemesListModel&amp; mv::AbstractThemeManager::getCustomColorSchemeListModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getCustomColorSchemeListModel</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a07704b2bf658800f0fc28ad25fcdbf7f">getCustomColorSchemeListModel</reimplementedby>
         <briefdescription>
 <para>Get custom color schemes list model. </para>
         </briefdescription>
@@ -508,7 +492,6 @@
         <definition>virtual const gui::OptionAction&amp; mv::AbstractThemeManager::getColorSchemeModeAction</definition>
         <argsstring>() const =0</argsstring>
         <name>getColorSchemeModeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1aab96a23f4d3c122ebc55ac9883224b4b">getColorSchemeModeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -522,7 +505,6 @@
         <definition>virtual const gui::ToggleAction&amp; mv::AbstractThemeManager::getSystemLightColorSchemeAction</definition>
         <argsstring>() const =0</argsstring>
         <name>getSystemLightColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1aec783ba1e606cded182099da9f400e07">getSystemLightColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -536,7 +518,6 @@
         <definition>virtual const gui::ToggleAction&amp; mv::AbstractThemeManager::getSystemDarkColorSchemeAction</definition>
         <argsstring>() const =0</argsstring>
         <name>getSystemDarkColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a67b62c6f9377f3694c945e4275296cd3">getSystemDarkColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -550,7 +531,6 @@
         <definition>virtual const gui::ColorSchemeAction&amp; mv::AbstractThemeManager::getCustomColorSchemeAction</definition>
         <argsstring>() const =0</argsstring>
         <name>getCustomColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a41196f25091bd4d0135f57d5ced8f023">getCustomColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -582,7 +562,6 @@
         <definition>virtual ColorSchemesListModel&amp; mv::AbstractThemeManager::getCustomColorSchemeListModel</definition>
         <argsstring>()=0</argsstring>
         <name>getCustomColorSchemeListModel</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a4ffa4b75b8bd7b9e6dfb0d7534848635">getCustomColorSchemeListModel</reimplementedby>
         <briefdescription>
 <para>Get custom color schemes list model. </para>
         </briefdescription>
@@ -600,7 +579,6 @@
         <definition>virtual gui::OptionAction&amp; mv::AbstractThemeManager::getColorSchemeModeAction</definition>
         <argsstring>()=0</argsstring>
         <name>getColorSchemeModeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a84f46fa194f5fcf57f45dc5e8a127691">getColorSchemeModeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -614,7 +592,6 @@
         <definition>virtual gui::ToggleAction&amp; mv::AbstractThemeManager::getSystemLightColorSchemeAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSystemLightColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a1a45c0bb21bb8fb2d95112508fa60578">getSystemLightColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -628,7 +605,6 @@
         <definition>virtual gui::ToggleAction&amp; mv::AbstractThemeManager::getSystemDarkColorSchemeAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSystemDarkColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1a4ca2e1f2118e6450aa9ae020a8f02806">getSystemDarkColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -642,7 +618,6 @@
         <definition>virtual gui::ColorSchemeAction&amp; mv::AbstractThemeManager::getCustomColorSchemeAction</definition>
         <argsstring>()=0</argsstring>
         <name>getCustomColorSchemeAction</name>
-        <reimplementedby refid="classmv_1_1ThemeManager_1aeef1300e94f2f9dc02c272020f1ad817">getCustomColorSchemeAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -662,45 +637,31 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
       <node id="1">
         <label>mv::AbstractThemeManager</label>
         <link refid="classmv_1_1AbstractThemeManager"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
-      </node>
-      <node id="5">
-        <label>mv::ThemeManager</label>
-        <link refid="classmv_1_1ThemeManager"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="2">
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
       <node id="1">
         <label>mv::AbstractThemeManager</label>
         <link refid="classmv_1_1AbstractThemeManager"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -708,8 +669,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -729,17 +688,17 @@
       <member refid="classmv_1_1AbstractThemeManager_1af51b2a5a00a874c83c931fb7c76c958a" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>colorSchemeChanged</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a5e876877383397ee644e6e475e600d5c" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>ColorSchemeMode</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a753d28e52a2d8cef61d52ef92df4a5b1" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>colorSchemeModeChanged</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>createId</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a17c23887494d718a8c59a809e36308bb" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>CustomColorSchemesMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>endInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a557da71c34b4825964a8ac471d89c087" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>getColorSchemeMode</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a80320700e5f98f790947603a2fa19344" prot="protected" virt="pure-virtual"><scope>mv::AbstractThemeManager</scope><name>getColorSchemeModeAction</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1ae353d1a7f96524f6cc943567d81f9425" prot="public" virt="pure-virtual"><scope>mv::AbstractThemeManager</scope><name>getColorSchemeModeAction</name></member>
@@ -764,8 +723,8 @@
       <member refid="classmv_1_1AbstractThemeManager_1a24637ff3960abc05135231d6432af19f" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>gui::AppearanceSettingsAction</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1aeffc851b10f5be59ee54b0f961b381ef" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractThemeManager_1a5d8e99cbd070f039015a78397bded0e4" prot="public" virt="pure-virtual"><scope>mv::AbstractThemeManager</scope><name>isCustomColorSchemeModeActive</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>isInitialized</name></member>
@@ -794,8 +753,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>State</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractThemeManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractThemeManager</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

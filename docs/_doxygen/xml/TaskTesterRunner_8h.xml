@@ -6,10 +6,6 @@
     <includes local="no">QObject</includes>
     <includes local="no">QThread</includes>
     <includes local="no">QDebug</includes>
-    <includedby refid="BackgroundTaskTester_8cpp" local="yes">BackgroundTaskTester.cpp</includedby>
-    <includedby refid="ForegroundTaskTester_8cpp" local="yes">ForegroundTaskTester.cpp</includedby>
-    <includedby refid="ModalTaskTester_8cpp" local="yes">ModalTaskTester.cpp</includedby>
-    <includedby refid="TaskTesterRunner_8cpp" local="yes">TaskTesterRunner.cpp</includedby>
     <incdepgraph>
       <node id="4">
         <label>QObject</label>
@@ -65,7 +61,7 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="14"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="classmv_1_1TaskTesterRunnerPrivate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1TaskTesterRunnerPrivate" kindref="compound">TaskTesterRunnerPrivate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/>QObject</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/>TaskTesterRunnerPrivate<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/>QObject</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
@@ -75,16 +71,16 @@
 <codeline lineno="23"><highlight class="normal">signals:</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>finished();</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1TaskTesterRunner" kindref="compound">TaskTesterRunner</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TaskTesterRunner;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="classmv_1_1TaskTesterRunner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1TaskTesterRunner" kindref="compound">TaskTesterRunner</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1TaskTesterRunnerPrivate" kindref="compound">TaskTesterRunnerPrivate</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/>TaskTesterRunner<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TaskTesterRunnerPrivate</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>RunFunction<sp/>=<sp/>std::function&lt;void(<ref refid="classmv_1_1TaskTesterRunner" kindref="compound">TaskTesterRunner</ref>*)&gt;;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>RunFunction<sp/>=<sp/>std::function&lt;void(TaskTesterRunner*)&gt;;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1TaskTesterRunner" kindref="compound">TaskTesterRunner</ref>(QObject*<sp/>parent,<sp/>RunFunction<sp/>runFunction);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>TaskTesterRunner(QObject*<sp/>parent,<sp/>RunFunction<sp/>runFunction);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runTask();</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>

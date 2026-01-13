@@ -193,32 +193,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classmv_1_1AbstractActionsModel_1a58c1f506aa8c6fc7237c37a7f58aa272" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" kindref="member">Column</ref>, <ref refid="structmv_1_1AbstractActionsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
-        <definition>QMap&lt; AbstractActionsModel::Column, AbstractActionsModel::ColumHeaderInfo &gt; mv::AbstractActionsModel::columnInfo</definition>
+      <memberdef kind="variable" id="classmv_1_1AbstractActionsModel_1a7d6d790c00c89ec1d61ee2ba1a7eda40" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" kindref="member">Column</ref>, <ref refid="structmv_1_1AbstractActionsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
+        <definition>QMap&lt;Column, ColumHeaderInfo&gt; mv::AbstractActionsModel::columnInfo</definition>
         <argsstring></argsstring>
         <name>columnInfo</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" kindref="member">Column</ref>, <ref refid="structmv_1_1AbstractActionsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref>&gt;({
-    { <ref refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125ea258c0778316cf13be05a5f39ea0661f2" kindref="member">Column::ForceDisabled</ref>, { &quot;&quot; , &quot;Enabled&quot;, &quot;Whether the parameter is enabled or not&quot; } },
-    { Column::Name, { &quot;Name&quot; , &quot;Name&quot;, &quot;Name of the parameter&quot; } },
-    { Column::Location, { &quot;Location&quot; , &quot;Location&quot;, &quot;Where the parameter is located in the user interface&quot; } },
-    { Column::ID, { &quot;ID&quot;,  &quot;ID&quot;, &quot;Globally unique identifier of the parameter&quot; } },
-    { Column::Type, { &quot;Type&quot;,  &quot;Type&quot;, &quot;Type of parameter&quot; } },
-    { Column::Scope, { &quot;Scope&quot;,  &quot;Scope&quot;, &quot;Scope of the parameter (whether the parameter is public or private)&quot; } },
-    { Column::ForceDisabled, { &quot;&quot;, &quot;Force Disabled&quot;, &quot;Whether the parameter is forcibly disabled (regardless of its programmatic enabled setting)&quot; } },
-    { Column::ForceHidden, { &quot;&quot;, &quot;Force Hidden&quot;, &quot;Whether the parameter is forcibly hidden (regardless of its programmatic visibility setting)&quot; } },
-    { Column::MayPublish, { &quot;&quot;, &quot;May Publish&quot;, &quot;Whether the parameter may be published&quot; } },
-    { Column::MayConnect, { &quot;&quot;, &quot;May Connect&quot;, &quot;Whether the parameter may connect to a public parameter&quot; } },
-    { Column::MayDisconnect, { &quot;&quot;, &quot;May Disconnect&quot;, &quot;Whether the parameter may disconnect from a public parameter&quot; } },
-    { Column::SortIndex, { &quot;Sort Index&quot;, &quot;Sort Index&quot;, &quot;The sorting index of the parameter (its relative position in parameter groups)&quot; } },
-    { Column::Stretch, { &quot;Stretch&quot;, &quot;Stretch&quot;, &quot;The parameter stretch in parameter groups&quot; } },
-    { Column::ParentActionId, { &quot;Parent ID&quot;, &quot;Parent ID&quot;, &quot;The identifier of the parent parameter (if not a top-level parameter)&quot; } },
-    { Column::IsConnected, { &quot;Connected&quot;, &quot;Connected&quot;, &quot;Whether the parameter is connected or not&quot; } },
-    { Column::NumberOfConnectedActions, { &quot;No. Connected Parameters&quot;, &quot;No. Connected Parameters&quot;, &quot;The number of connected parameters (in case the parameter is public)&quot; } },
-    { Column::PublicActionID, { &quot;Public Parameter ID&quot;, &quot;Public Parameter ID&quot;, &quot;The identifier of the public parameter with which the parameter is connected&quot; } },
-    { Column::IsRoot, { &quot;Root&quot;, &quot;Root&quot;, &quot;Whether the parameter is located at the root of the hierarchy&quot; } },
-    { Column::IsLeaf, { &quot;Leaf&quot;, &quot;Leaf&quot;, &quot;Whether the parameter is a leaf or not&quot; } }
-})</initializer>
         <briefdescription>
 <para>Column name and tooltip. </para>
         </briefdescription>
@@ -291,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="427" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="612" bodyend="624"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="427" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1adc13b4ff7a7abc5e748ceeeeaa53ae9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -329,11 +308,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="436" column="19" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="626" bodyend="632"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="436" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a10020e86111d666eb494d3f058fa96a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a14eb3c01ff06b74aea9bfc848611f471" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
-        <definition>WidgetAction * mv::AbstractActionsModel::getAction</definition>
+        <definition>gui::WidgetAction* mv::AbstractActionsModel::getAction</definition>
         <argsstring>(const QModelIndex &amp;index) const</argsstring>
         <name>getAction</name>
         <param>
@@ -359,11 +338,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="443" column="23" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="634" bodyend="642"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="443" column="23"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1aaed4772836f26a7372d5127007b108b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a20dc340a02d2f39f087174a9b767d735" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
-        <definition>WidgetAction * mv::AbstractActionsModel::getAction</definition>
+        <definition>gui::WidgetAction* mv::AbstractActionsModel::getAction</definition>
         <argsstring>(std::int32_t rowIndex) const</argsstring>
         <name>getAction</name>
         <param>
@@ -389,11 +368,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="450" column="23" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="644" bodyend="647"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="450" column="23"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1ad888439ec59c97a84767bf4b8484e621" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a3f506650b425d3fdf730a45af0704abf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
-        <definition>WidgetAction * mv::AbstractActionsModel::getAction</definition>
+        <definition>gui::WidgetAction* mv::AbstractActionsModel::getAction</definition>
         <argsstring>(const QString &amp;name) const</argsstring>
         <name>getAction</name>
         <param>
@@ -419,11 +398,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="457" column="23" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="649" bodyend="660"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="457" column="23"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a83ce945d29fc9f542567f238cf46ea80" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1af490ff7d9f67cb9a4a0b13f73d2f9d56" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
         <type>QModelIndex</type>
-        <definition>QModelIndex mv::AbstractActionsModel::getActionIndex</definition>
+        <definition>virtual QModelIndex mv::AbstractActionsModel::getActionIndex</definition>
         <argsstring>(const gui::WidgetAction *action, const Column &amp;column=Column::Name) const final</argsstring>
         <name>getActionIndex</name>
         <param>
@@ -434,8 +413,6 @@
           <type>const <ref refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" kindref="member">Column</ref> &amp;</type>
           <declname>column</declname>
           <defval>Column::Name</defval>
-          <briefdescription><para>= Column::Name </para>
-</briefdescription>
         </param>
         <briefdescription>
 <para>Get model index for <computeroutput>action</computeroutput> and column. </para>
@@ -464,11 +441,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="465" column="25" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="662" bodyend="670"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="465" column="25"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a8666f60127eb439317bce6ab16494311" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a55a45b2703eff83cd463cf77e87f72f1" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
         <type>QStandardItem *</type>
-        <definition>QStandardItem * mv::AbstractActionsModel::getActionItem</definition>
+        <definition>virtual QStandardItem* mv::AbstractActionsModel::getActionItem</definition>
         <argsstring>(const gui::WidgetAction *action) const final</argsstring>
         <name>getActionItem</name>
         <param>
@@ -494,7 +471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="472" column="27" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="672" bodyend="685"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="472" column="27"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -510,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="477" column="21" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="687" bodyend="690"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="477" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1afa4ca9de01114b229941f60d08dc9f1e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Qt::DropActions</type>
@@ -524,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="480" column="21" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="692" bodyend="695"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="480" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1ab74a4e55e4adea676967485a6dd94320" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QStringList</type>
@@ -541,11 +518,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="486" column="17" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="697" bodyend="700"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="486" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1ab4b639ec7753b36e0ccdd02064aeaf1d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1acb108da7871a0afbd7e362bcf714db1e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QMimeData *</type>
-        <definition>QMimeData * mv::AbstractActionsModel::mimeData</definition>
+        <definition>QMimeData* mv::AbstractActionsModel::mimeData</definition>
         <argsstring>(const QModelIndexList &amp;indexes) const override</argsstring>
         <name>mimeData</name>
         <param>
@@ -562,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="492" column="15" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="702" bodyend="708"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="492" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a3233de00b59d5e4e1660768f871a801c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -640,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="503" column="10" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="710" bodyend="731"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="503" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1a38cd45ae804cd0eb53f96654b9b24379" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -718,7 +695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="514" column="10" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.cpp" bodystart="733" bodyend="754"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="514" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractActionsModel_1ad1bbc0bc255794cd48a8b73d6151e490" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -853,14 +830,11 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5">
+      <node id="4">
         <label>mv::ActionsHierarchyModel</label>
         <link refid="classmv_1_1ActionsHierarchyModel"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="3">
-        <label>QStandardItemModel</label>
       </node>
       <node id="1">
         <label>mv::AbstractActionsModel</label>
@@ -868,13 +842,13 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>mv::ActionsListModel</label>
         <link refid="classmv_1_1ActionsListModel"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -883,10 +857,8 @@
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>mv::PublicActionsModel</label>
         <link refid="classmv_1_1PublicActionsModel"/>
         <childnode refid="1" relation="public-inheritance">
@@ -894,19 +866,13 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
-        <label>QStandardItemModel</label>
-      </node>
       <node id="1">
         <label>mv::AbstractActionsModel</label>
         <link refid="classmv_1_1AbstractActionsModel"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>columnInfo</edgelabel>
-        </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -915,12 +881,6 @@
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>QMap&lt; Column, mv::AbstractActionsModel::ColumHeaderInfo &gt;</label>
-        <link refid="classQMap"/>
       </node>
     </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/models/AbstractActionsModel.h" bodystart="27" bodyend="544"/>
@@ -931,26 +891,26 @@
       <member refid="classmv_1_1AbstractActionsModel_1acea7395708fa9bb957118385e1fe5a15" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>ActionsFilterModel</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1a3233de00b59d5e4e1660768f871a801c" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>canDropMimeData</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1a94d7f2cd66a52102fcf75d03c078125e" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>Column</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1a58c1f506aa8c6fc7237c37a7f58aa272" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>columnInfo</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a7d6d790c00c89ec1d61ee2ba1a7eda40" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1a38cd45ae804cd0eb53f96654b9b24379" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>dropMimeData</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1a14f8d6f9ab398462052b180868830a4b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>flags</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>fromParentVariantMap</name></member>
       <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1a10020e86111d666eb494d3f058fa96a5" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1aaed4772836f26a7372d5127007b108b2" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1ad888439ec59c97a84767bf4b8484e621" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1a83ce945d29fc9f542567f238cf46ea80" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>getActionIndex</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1a8666f60127eb439317bce6ab16494311" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>getActionItem</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a14eb3c01ff06b74aea9bfc848611f471" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a20dc340a02d2f39f087174a9b767d735" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a3f506650b425d3fdf730a45af0704abf" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getAction</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1af490ff7d9f67cb9a4a0b13f73d2f9d56" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>getActionIndex</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1a55a45b2703eff83cd463cf77e87f72f1" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>getActionItem</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getId</name></member>
       <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getNumberOfRowsAction</name></member>
       <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getNumberOfRowsAction</name></member>
-      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae415de52b9078c51c0806f5e6314cb8b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getPopulationMode</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>getSerializationCountTo</name></member>
@@ -958,11 +918,11 @@
       <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>getSettingsPrefix</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1adc13b4ff7a7abc5e748ceeeeaa53ae9e" prot="public" virt="pure-virtual"><scope>mv::AbstractActionsModel</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1aad85754f188b769ff61150eaf36106c4" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>Item</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>makeUnique</name></member>
-      <member refid="classmv_1_1AbstractActionsModel_1ab4b639ec7753b36e0ccdd02064aeaf1d" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>mimeData</name></member>
+      <member refid="classmv_1_1AbstractActionsModel_1acb108da7871a0afbd7e362bcf714db1e" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>mimeData</name></member>
       <member refid="classmv_1_1AbstractActionsModel_1ab74a4e55e4adea676967485a6dd94320" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>mimeTypes</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>operator!=</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>operator==</name></member>
@@ -981,7 +941,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractActionsModel</scope><name>toJsonFile</name></member>
       <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractActionsModel</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractActionsModel</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

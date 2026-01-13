@@ -15,19 +15,9 @@
     <includes refid="ColorMapSettings2DAction_8h" local="yes">ColorMapSettings2DAction.h</includes>
     <includes refid="ColorMapEditor1DAction_8h" local="yes">ColorMapEditor1DAction.h</includes>
     <includes refid="ColorMapSettingsAction_8h" local="yes">ColorMapSettingsAction.h</includes>
+    <includedby refid="Actions_8h" local="yes">Actions.h</includedby>
     <includedby refid="ColorMap1DAction_8h" local="yes">ColorMap1DAction.h</includedby>
     <includedby refid="ColorMap2DAction_8h" local="yes">ColorMap2DAction.h</includedby>
-    <includedby refid="ColorMapAction_8cpp" local="yes">ColorMapAction.cpp</includedby>
-    <includedby refid="ColorMapAxisAction_8cpp" local="yes">ColorMapAxisAction.cpp</includedby>
-    <includedby refid="ColorMapDiscreteAction_8cpp" local="yes">ColorMapDiscreteAction.cpp</includedby>
-    <includedby refid="ColorMapEditor1DAction_8cpp" local="yes">ColorMapEditor1DAction.cpp</includedby>
-    <includedby refid="ColorMapEditor1DNodeAction_8cpp" local="yes">ColorMapEditor1DNodeAction.cpp</includedby>
-    <includedby refid="ColorMapEditor1DWidget_8cpp" local="yes">ColorMapEditor1DWidget.cpp</includedby>
-    <includedby refid="ColorMapSettings1DAction_8cpp" local="yes">ColorMapSettings1DAction.cpp</includedby>
-    <includedby refid="ColorMapSettings2DAction_8cpp" local="yes">ColorMapSettings2DAction.cpp</includedby>
-    <includedby refid="ColorMapSettingsAction_8cpp" local="yes">ColorMapSettingsAction.cpp</includedby>
-    <includedby refid="ColorMapViewAction_8cpp" local="yes">ColorMapViewAction.cpp</includedby>
-    <includedby refid="Actions_8h" local="yes">Actions.h</includedby>
     <incdepgraph>
       <node id="32">
         <label>util/ColorMap.h</label>
@@ -591,16 +581,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
+      <node id="3">
         <label>ColorMap1DAction.h</label>
         <link refid="ColorMap1DAction_8h_source"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>ColorizeClustersAction.h</label>
         <link refid="ColorizeClustersAction_8h_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -608,26 +598,26 @@
         <link refid="ColorMapAction_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>ClustersAction.h</label>
         <link refid="ClustersAction_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>InfoAction.h</label>
         <link refid="ClusterData_2src_2InfoAction_8h_source"/>
       </node>
-      <node id="6">
+      <node id="7">
         <label>ColorMap2DAction.h</label>
         <link refid="ColorMap2DAction_8h_source"/>
       </node>
-      <node id="7">
+      <node id="2">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -704,9 +694,9 @@
 <codeline lineno="57" refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget" kindref="compound">ComboBoxWidget</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1OptionAction_1_1ComboBoxWidget" kindref="compound">OptionAction::ComboBoxWidget</ref><sp/>{</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget" kindref="compound">ComboBoxWidget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref>*<sp/>optionAction,<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>*<sp/>colorMapAction);</highlight></codeline>
+<codeline lineno="66" refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget_1a329e38ded8270632e81c6061db33e9b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget_1a329e38ded8270632e81c6061db33e9b9" kindref="member">ComboBoxWidget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref>*<sp/>optionAction,<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>*<sp/>colorMapAction);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>paintEvent(QPaintEvent*<sp/>paintEvent)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget_1affac0c707146440fab9188206f3bd770" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1_1ComboBoxWidget_1affac0c707146440fab9188206f3bd770" kindref="member">paintEvent</ref>(QPaintEvent*<sp/>paintEvent)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>*<sp/><sp/><sp/>_colorMapAction;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -715,41 +705,41 @@
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/>getWidget(QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::int32_t&amp;<sp/>widgetFlags)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87" refid="classmv_1_1gui_1_1ColorMapAction_1a9e39e45f38b96a9c66e43d8cf4fac58a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a9e39e45f38b96a9c66e43d8cf4fac58a" kindref="member">getWidget</ref>(QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::int32_t&amp;<sp/>widgetFlags)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref>&amp;<sp/>colorMapType<sp/>=<sp/>util::ColorMap::Type::OneDimensional,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;RdYlBu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98" refid="classmv_1_1gui_1_1ColorMapAction_1afc76ae1db3343df18e0b9dcf548966d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1afc76ae1db3343df18e0b9dcf548966d9" kindref="member">ColorMapAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref>&amp;<sp/>colorMapType<sp/>=<sp/>util::ColorMap::Type::OneDimensional,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;RdYlBu&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap);</highlight></codeline>
+<codeline lineno="106" refid="classmv_1_1gui_1_1ColorMapAction_1aebf429df1e92d68ba9b60a226cbb1328" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1aebf429df1e92d68ba9b60a226cbb1328" kindref="member">initialize</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref><sp/>getColorMapType()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109" refid="classmv_1_1gui_1_1ColorMapAction_1abb3ff48903bcf4fe539d049f20469c17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1abb3ff48903bcf4fe539d049f20469c17" kindref="member">getColorMapType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setColorMapType(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref>&amp;<sp/>colorMapType);</highlight></codeline>
+<codeline lineno="114" refid="classmv_1_1gui_1_1ColorMapAction_1a79da7a2f43732c87d92f4bb4c8ad92ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a79da7a2f43732c87d92f4bb4c8ad92ef" kindref="member">setColorMapType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1ColorMap_1a3a7c1569718b2b5670f558c2cba56e0a" kindref="member">util::ColorMap::Type</ref>&amp;<sp/>colorMapType);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Option<sp/>action<sp/>wrappers</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>getColorMap()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119" refid="classmv_1_1gui_1_1ColorMapAction_1a4d2b8fcf717b5ecb249d6b4b3cee4edd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a4d2b8fcf717b5ecb249d6b4b3cee4edd" kindref="member">getColorMap</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/>getColorMapImage()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122" refid="classmv_1_1gui_1_1ColorMapAction_1a2e8f1974bfef0d14e021984ecf894455" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a2e8f1974bfef0d14e021984ecf894455" kindref="member">getColorMapImage</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setColorMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap);</highlight></codeline>
+<codeline lineno="128" refid="classmv_1_1gui_1_1ColorMapAction_1aab58265717e7a5f4e2c1866d93cc64f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1aab58265717e7a5f4e2c1866d93cc64f1" kindref="member">setColorMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>colorMap);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Linking</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>connectToPublicAction(<ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref>*<sp/>publicAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137" refid="classmv_1_1gui_1_1ColorMapAction_1af7f360a3516d009ab0d6835111960b68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1af7f360a3516d009ab0d6835111960b68" kindref="member">connectToPublicAction</ref>(<ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref>*<sp/>publicAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disconnectFromPublicAction(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143" refid="classmv_1_1gui_1_1ColorMapAction_1a5ab6304ab7947f61df0252edcade3da4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a5ab6304ab7947f61df0252edcade3da4" kindref="member">disconnectFromPublicAction</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151" refid="classmv_1_1gui_1_1ColorMapAction_1ae862926fa1ba3e9f843ac9145f1b7d65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1ae862926fa1ba3e9f843ac9145f1b7d65" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157" refid="classmv_1_1gui_1_1ColorMapAction_1a56d469c28e19571224cbd951ba2e4ec9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classmv_1_1gui_1_1ColorMapAction_1a56d469c28e19571224cbd951ba2e4ec9" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal">signals:</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
@@ -761,7 +751,7 @@
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref>&amp;<sp/>getCurrentColorMapAction()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_currentColorMapAction;<sp/>}</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref>&amp;<sp/>getRangeAction(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Axis&amp;<sp/>axis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_rangeAction[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(axis)];<sp/>}</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRangeAction" kindref="compound">DecimalRangeAction</ref>&amp;<sp/>getDataRangeAction(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Axis&amp;<sp/>axis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_dataRangeAction[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(axis)];<sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DecimalRangeAction&amp;<sp/>getDataRangeAction(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Axis&amp;<sp/>axis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_dataRangeAction[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(axis)];<sp/>}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DecimalRangeAction&amp;<sp/>getSharedDataRangeAction(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Axis&amp;<sp/>axis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_sharedDataRangeAction[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(axis)];<sp/>}</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ToggleAction&amp;<sp/>getLockToSharedDataRangeAction()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_lockToSharedDataRangeAction;<sp/>}</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ToggleAction&amp;<sp/>getMirrorAction(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Axis&amp;<sp/>axis)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_mirrorAction[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(axis)];<sp/>}</highlight></codeline>

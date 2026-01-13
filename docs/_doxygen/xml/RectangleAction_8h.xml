@@ -9,7 +9,6 @@
     <includes local="no">QVBoxLayout</includes>
     <includedby refid="DecimalRectangleAction_8h" local="yes">DecimalRectangleAction.h</includedby>
     <includedby refid="IntegralRectangleAction_8h" local="yes">IntegralRectangleAction.h</includedby>
-    <includedby refid="RectangleAction_8cpp" local="yes">RectangleAction.cpp</includedby>
     <incdepgraph>
       <node id="37">
         <label>util/NumericalRange.h</label>
@@ -286,12 +285,12 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
+      <node id="6">
         <label>Renderer2D.h</label>
         <link refid="Renderer2D_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -299,27 +298,27 @@
         <link refid="DecimalRectangleAction_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>DensityRenderer.h</label>
-        <link refid="DensityRenderer_8h_source"/>
-      </node>
-      <node id="4">
-        <label>Navigator2D.h</label>
-        <link refid="Navigator2D_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="7">
+        <label>DensityRenderer.h</label>
+        <link refid="DensityRenderer_8h_source"/>
+      </node>
+      <node id="5">
+        <label>Navigator2D.h</label>
+        <link refid="Navigator2D_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>PointRenderer.h</label>
         <link refid="PointRenderer_8h_source"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>NavigationAction.h</label>
         <link refid="NavigationAction_8h_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -333,10 +332,10 @@
       <node id="9">
         <label>IntegralRectangleAction.h</label>
         <link refid="IntegralRectangleAction_8h_source"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="3">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -399,8 +398,8 @@
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRangeAction(<ref refid="classmv_1_1gui_1_1RectangleAction_1a32d7744f47d891d568a6167427d10763a57cec4137b614c87cb4e24a3d003a3e0" kindref="member">Axis::Y</ref>).getRangeMinAction().setPrefix(</highlight><highlight class="stringliteral">&quot;yMin:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRangeAction(<ref refid="classmv_1_1gui_1_1RectangleAction_1a32d7744f47d891d568a6167427d10763a57cec4137b614c87cb4e24a3d003a3e0" kindref="member">Axis::Y</ref>).getRangeMaxAction().setPrefix(</highlight><highlight class="stringliteral">&quot;yMax:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1GroupAction_1a8152c992d51606e5603258126bcaa998" kindref="member">addAction</ref>(&amp;getRangeAction(Axis::X));</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1GroupAction_1a8152c992d51606e5603258126bcaa998" kindref="member">addAction</ref>(&amp;getRangeAction(<ref refid="classmv_1_1gui_1_1RectangleAction_1a32d7744f47d891d568a6167427d10763a57cec4137b614c87cb4e24a3d003a3e0" kindref="member">Axis::Y</ref>));</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1GroupAction_1a77b168a570931a6c42ab5bdcf22be475" kindref="member">addAction</ref>(&amp;getRangeAction(Axis::X));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1GroupAction_1a77b168a570931a6c42ab5bdcf22be475" kindref="member">addAction</ref>(&amp;getRangeAction(<ref refid="classmv_1_1gui_1_1RectangleAction_1a32d7744f47d891d568a6167427d10763a57cec4137b614c87cb4e24a3d003a3e0" kindref="member">Axis::Y</ref>));</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74" refid="classmv_1_1gui_1_1RectangleAction_1a16cd552101ffc17fa218e856202f6415" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPair&lt;util::NumericalRange&lt;NumValType&gt;,<sp/><ref refid="classmv_1_1util_1_1NumericalRange" kindref="compound">util::NumericalRange&lt;NumValType&gt;</ref>&gt;<sp/><ref refid="classmv_1_1gui_1_1RectangleAction_1a16cd552101ffc17fa218e856202f6415" kindref="member">getRectangle</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>

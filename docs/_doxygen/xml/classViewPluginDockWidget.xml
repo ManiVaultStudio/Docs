@@ -8,7 +8,7 @@
     <innerclass refid="classViewPluginDockWidget_1_1SettingsActionWidget" prot="private">ViewPluginDockWidget::SettingsActionWidget</innerclass>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classViewPluginDockWidget_1ae2bdc3102dffb9c15d8bfd02eac3ffba" prot="private" static="no" mutable="no">
-        <type>QPointer&lt; <ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> &gt;</type>
+        <type>QPointer&lt; mv::plugin::ViewPlugin &gt;</type>
         <definition>QPointer&lt;mv::plugin::ViewPlugin&gt; ViewPluginDockWidget::_viewPlugin</definition>
         <argsstring></argsstring>
         <name>_viewPlugin</name>
@@ -35,7 +35,7 @@
         <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="203" column="41" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classViewPluginDockWidget_1a4ffa580f65f320a9ae84014d5ef96152" prot="private" static="no" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
+        <type>QVariantMap</type>
         <definition>QVariantMap ViewPluginDockWidget::_viewPluginMap</definition>
         <argsstring></argsstring>
         <name>_viewPluginMap</name>
@@ -133,7 +133,7 @@
         <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="210" column="41" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" bodystart="210" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classViewPluginDockWidget_1a8d0c6cf91afb1a87c6523ec83d1c21d2" prot="private" static="no" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, CDockWidget * &gt;</type>
+        <type>QMap&lt; QString, CDockWidget * &gt;</type>
         <definition>QMap&lt;QString, CDockWidget*&gt; ViewPluginDockWidget::_settingsDockWidgetsMap</definition>
         <argsstring></argsstring>
         <name>_settingsDockWidgetsMap</name>
@@ -162,12 +162,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-static-attrib">
-      <memberdef kind="variable" id="classViewPluginDockWidget_1ab46a724465966fc4bc72f90fc66cd7c8" prot="protected" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, <ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref> * &gt;</type>
-        <definition>QMap&lt; QString, Task * &gt; ViewPluginDockWidget::serializationTasks</definition>
+      <memberdef kind="variable" id="classViewPluginDockWidget_1af91e8607114d27baae930f84d695b5c6" prot="protected" static="yes" mutable="no">
+        <type>QMap&lt; QString, <ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref> * &gt;</type>
+        <definition>QMap&lt;QString, mv::Task*&gt; ViewPluginDockWidget::serializationTasks</definition>
         <argsstring></argsstring>
         <name>serializationTasks</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;QString, Task*&gt;()</initializer>
         <briefdescription>
 <para>Overlay widget which shows a very thin view progress bar. </para>
         </briefdescription>
@@ -254,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="101" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="35" bodyend="48"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="101" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1ab93307726b13ef307fa5fe30f1e3b033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -266,7 +265,7 @@
           <declname>title</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> *</type>
+          <type>mv::plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
         </param>
         <param>
@@ -307,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="109" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="50" bodyend="54"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="109" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a18080767e55c30f418908411f43439c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -315,7 +314,7 @@
         <argsstring>(const QVariantMap &amp;variantMap)</argsstring>
         <name>ViewPluginDockWidget</name>
         <param>
-          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
+          <type>const QVariantMap &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -335,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="115" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="56" bodyend="60"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="115" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a8e451a32af7fc485b6e136b06a13ea19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -349,14 +348,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="118" column="5" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="62" bodyend="69"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="118" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a77d791268559255ac5ac65015130360f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>QString</type>
         <definition>QString ViewPluginDockWidget::getTypeString</definition>
         <argsstring>() const override</argsstring>
         <name>getTypeString</name>
-        <reimplements refid="classDockWidget_1af54a1534c56c43de829a2e406d058ca5">getTypeString</reimplements>
+        <reimplements refid="classDockWidget_1a3bf2fe8d91f0345d738f993d0fa7d495">getTypeString</reimplements>
         <briefdescription>
 <para>Get string that describes the dock widget type. </para>
         </briefdescription>
@@ -367,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="124" column="13" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="71" bodyend="74"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="124" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1ad8df89b9b7d3c58c3a9ba1286315eede" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -382,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="127" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="76" bodyend="147"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="127" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1ac6bacd46f94475b23a39947832bc17d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -396,11 +395,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="130" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="149" bodyend="160"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="130" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classViewPluginDockWidget_1a834af566ee9d5ff7d3f867c8a38bbbee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> *</type>
-        <definition>ViewPlugin * ViewPluginDockWidget::getViewPlugin</definition>
+      <memberdef kind="function" id="classViewPluginDockWidget_1a23ee19406c98593f0f2d143aff63f8c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>mv::plugin::ViewPlugin *</type>
+        <definition>mv::plugin::ViewPlugin* ViewPluginDockWidget::getViewPlugin</definition>
         <argsstring>() const</argsstring>
         <name>getViewPlugin</name>
         <briefdescription>
@@ -413,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="136" column="28" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="162" bodyend="165"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="136" column="28"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a2bd1a3c2505d095b7fa9058b7cf16eb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -427,14 +426,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="139" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="167" bodyend="178"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="139" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classViewPluginDockWidget_1a892831b688761486f0d2673912b188ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classViewPluginDockWidget_1a2ff000a8b7803afcd14d878a031ced12" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>QMenu *</type>
-        <definition>QMenu * ViewPluginDockWidget::getSettingsMenu</definition>
+        <definition>QMenu* ViewPluginDockWidget::getSettingsMenu</definition>
         <argsstring>() override</argsstring>
         <name>getSettingsMenu</name>
-        <reimplements refid="classDockWidget_1acf569c37c5a430349fa96d334ddb4ef7">getSettingsMenu</reimplements>
+        <reimplements refid="classDockWidget_1a672a55d96ba24908ad4a79c689dc111b">getSettingsMenu</reimplements>
         <briefdescription>
 <para>Get settings menu for view plugin dock widget (edit view, create screenshot etc.) </para>
         </briefdescription>
@@ -445,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="147" column="11" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="180" bodyend="183"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="147" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a067dabef60319bd68b032cab91407333" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -454,7 +453,7 @@
         <name>fromVariantMap</name>
         <reimplements refid="classDockWidget_1addc66d1114d5489171ac988e64bd9879">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
+          <type>const QVariantMap &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -474,10 +473,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="155" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="185" bodyend="225"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="155" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a0fea18a9d9856b2c82111fe2f8896eb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
+        <type>QVariantMap</type>
         <definition>QVariantMap ViewPluginDockWidget::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
@@ -492,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="161" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="227" bodyend="252"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="161" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a29a29014a8e2142f8282124917d3cd2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -506,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="185" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="254" bodyend="257"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="185" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1a0ac0fb49b8ea036e658829a2feedc446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -520,13 +519,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="188" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="259" bodyend="262"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="188" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classViewPluginDockWidget_1a63647c942f5eeaa9d6ca33f6078ad087" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classViewPluginDockWidget_1ac55c980b2b9337cf16e0a66f0d28b553" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void ViewPluginDockWidget::preRegisterSerializationTask</definition>
+        <definition>static void ViewPluginDockWidget::preRegisterSerializationTask</definition>
         <argsstring>(QObject *parent, const QString &amp;viewPluginDockWidgetId, DockManager *dockManager)</argsstring>
         <name>preRegisterSerializationTask</name>
         <param>
@@ -574,11 +573,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="170" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="264" bodyend="275"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="170" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classViewPluginDockWidget_1af98aab8fa11b24b670a46822c7a089db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classViewPluginDockWidget_1abf9c1b00f27fdc6b485eeb381efc13f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref> *</type>
-        <definition>Task * ViewPluginDockWidget::getSerializationTask</definition>
+        <definition>static mv::Task* ViewPluginDockWidget::getSerializationTask</definition>
         <argsstring>(const QString &amp;viewPluginDockWidgetId)</argsstring>
         <name>getSerializationTask</name>
         <param>
@@ -604,11 +603,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="177" column="21" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="277" bodyend="283"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="177" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="classViewPluginDockWidget_1a3f9880e1042a2fff44ab3b621c86cfbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classViewPluginDockWidget_1ac82f40555ad8ba2fd377e31082629bee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void ViewPluginDockWidget::removeAllSerializationTasks</definition>
+        <definition>static void ViewPluginDockWidget::removeAllSerializationTasks</definition>
         <argsstring>()</argsstring>
         <name>removeAllSerializationTasks</name>
         <briefdescription>
@@ -618,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="180" column="17" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="285" bodyend="291"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="180" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -628,7 +627,7 @@
         <argsstring>(mv::plugin::ViewPlugin *viewPlugin)</argsstring>
         <name>setViewPlugin</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> *</type>
+          <type>mv::plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
         </param>
         <briefdescription>
@@ -648,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="196" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="293" bodyend="396"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="196" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classViewPluginDockWidget_1ab744ceb7bc05d876049016f41e968d8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -665,7 +664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="199" column="10" bodyfile="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.cpp" bodystart="398" bodyend="490"/>
+        <location file="Docs/external/core/ManiVault/src/private/ViewPluginDockWidget.h" line="199" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -679,9 +678,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>ads::CDockWidget</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -689,8 +685,6 @@
         <label>DockWidget</label>
         <link refid="classDockWidget"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -702,13 +696,6 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>ads::CDockWidget</label>
-      </node>
-      <node id="5">
-        <label>QMap&lt; QString, mv::Task * &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -717,16 +704,11 @@
         <link refid="classDockWidget"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="1">
         <label>ViewPluginDockWidget</label>
         <link refid="classViewPluginDockWidget"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>serializationTasks</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
@@ -745,38 +727,38 @@
       <member refid="classViewPluginDockWidget_1a4ffa580f65f320a9ae84014d5ef96152" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>_viewPluginMap</name></member>
       <member refid="classViewPluginDockWidget_1ab744ceb7bc05d876049016f41e968d8d" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>addDockingAction</name></member>
       <member refid="classViewPluginDockWidget_1a29a29014a8e2142f8282124917d3cd2a" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>cacheVisibility</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>Direction</name></member>
       <member refid="classDockWidget_1abaf75c30be5404c2d0ab9a767a282f9d" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>DockWidget</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>fromParentVariantMap</name></member>
       <member refid="classViewPluginDockWidget_1a067dabef60319bd68b032cab91407333" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationCountTo</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationName</name></member>
-      <member refid="classViewPluginDockWidget_1af98aab8fa11b24b670a46822c7a089db" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationTask</name></member>
-      <member refid="classViewPluginDockWidget_1a892831b688761486f0d2673912b188ae" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>getSettingsMenu</name></member>
+      <member refid="classViewPluginDockWidget_1abf9c1b00f27fdc6b485eeb381efc13f8" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getSerializationTask</name></member>
+      <member refid="classViewPluginDockWidget_1a2ff000a8b7803afcd14d878a031ced12" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>getSettingsMenu</name></member>
       <member refid="classViewPluginDockWidget_1a77d791268559255ac5ac65015130360f" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>getTypeString</name></member>
-      <member refid="classViewPluginDockWidget_1a834af566ee9d5ff7d3f867c8a38bbbee" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getViewPlugin</name></member>
+      <member refid="classViewPluginDockWidget_1a23ee19406c98593f0f2d143aff63f8c0" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>getViewPlugin</name></member>
       <member refid="classViewPluginDockWidget_1ad8df89b9b7d3c58c3a9ba1286315eede" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>insertIntoVariantMap</name></member>
       <member refid="classViewPluginDockWidget_1ac6bacd46f94475b23a39947832bc17d5" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>loadViewPlugin</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>makeUnique</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>operator!=</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>operator==</name></member>
-      <member refid="classViewPluginDockWidget_1a63647c942f5eeaa9d6ca33f6078ad087" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>preRegisterSerializationTask</name></member>
-      <member refid="classViewPluginDockWidget_1a3f9880e1042a2fff44ab3b621c86cfbe" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>removeAllSerializationTasks</name></member>
+      <member refid="classViewPluginDockWidget_1ac55c980b2b9337cf16e0a66f0d28b553" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>preRegisterSerializationTask</name></member>
+      <member refid="classViewPluginDockWidget_1ac82f40555ad8ba2fd377e31082629bee" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>removeAllSerializationTasks</name></member>
       <member refid="classViewPluginDockWidget_1a2bd1a3c2505d095b7fa9058b7cf16eb9" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>restoreViewPluginState</name></member>
       <member refid="classViewPluginDockWidget_1a0ac0fb49b8ea036e658829a2feedc446" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>restoreVisibility</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>Serializable</name></member>
-      <member refid="classViewPluginDockWidget_1ab46a724465966fc4bc72f90fc66cd7c8" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>serializationTasks</name></member>
+      <member refid="classViewPluginDockWidget_1af91e8607114d27baae930f84d695b5c6" prot="protected" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>serializationTasks</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>setId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa5c1638a114df6366b5e3655d7951615" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>setSerializationName</name></member>
       <member refid="classViewPluginDockWidget_1aacbedfc18f57da56b325a3f9c5ebff44" prot="private" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>setViewPlugin</name></member>
@@ -786,7 +768,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>toJsonFile</name></member>
       <member refid="classViewPluginDockWidget_1a0fea18a9d9856b2c82111fe2f8896eb2" prot="public" virt="virtual"><scope>ViewPluginDockWidget</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>ViewPluginDockWidget</scope><name>toVariantMap</name></member>
       <member refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>ViewPluginDockWidget</name></member>
       <member refid="classViewPluginDockWidget_1ab93307726b13ef307fa5fe30f1e3b033" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>ViewPluginDockWidget</name></member>
       <member refid="classViewPluginDockWidget_1a18080767e55c30f418908411f43439c9" prot="public" virt="non-virtual"><scope>ViewPluginDockWidget</scope><name>ViewPluginDockWidget</name></member>

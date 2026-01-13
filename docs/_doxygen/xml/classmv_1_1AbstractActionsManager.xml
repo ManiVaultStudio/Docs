@@ -50,7 +50,7 @@
         <location file="Docs/external/core/ManiVault/src/AbstractActionsManager.h" line="568" column="33" bodyfile="Docs/external/core/ManiVault/src/AbstractActionsManager.h" bodystart="568" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1AbstractActionsManager_1afb031f0511fd0329b6eb52c87400ace5" prot="protected" static="no" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, ActionType &gt;</type>
+        <type>QMap&lt; QString, ActionType &gt;</type>
         <definition>QMap&lt;QString, ActionType&gt; mv::AbstractActionsManager::_actionTypes</definition>
         <argsstring></argsstring>
         <name>_actionTypes</name>
@@ -487,7 +487,7 @@
         <definition>virtual ActionsListModel&amp; mv::AbstractActionsManager::getActionsListModel</definition>
         <argsstring>()=0</argsstring>
         <name>getActionsListModel</name>
-        <reimplementedby refid="classmv_1_1ActionsManager_1adb3545407242f19aa2048754b2cd87c2">getActionsListModel</reimplementedby>
+        <reimplementedby refid="classmv_1_1ActionsManager_1ad9d7478afc8611c1dbfe77a02beb1391">getActionsListModel</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1012,9 +1012,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1024,7 +1021,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::ActionsManager</label>
         <link refid="classmv_1_1ActionsManager"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1035,19 +1032,10 @@
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="5">
-        <label>QMap&lt; QString, ActionType &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1056,16 +1044,11 @@
         <link refid="classmv_1_1AbstractActionsManager"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>_actionTypes</edgelabel>
-        </childnode>
       </node>
       <node id="2">
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1092,17 +1075,17 @@
       <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>beginReset</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1ab20537710f189fd83f0cf63a95c173f9" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>connectPrivateActions</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1a78823f3400a2b8851e928856ff273917" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>connectPrivateActionToPublicAction</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1a5fbea7ff046f3da979c017b10d7ae96b" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>disconnectPrivateActionFromPublicAction</name></member>
       <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>endInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1a994d77faf50e1e3e8e860f0d13190e9e" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getAction</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1a7e229ce91f04902d779843d4b71dbdeb" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>getActions</name></member>
       <member refid="classmv_1_1AbstractActionsManager_1a32c7b2711f4790018d40964276e54afd" prot="public" virt="pure-virtual"><scope>mv::AbstractActionsManager</scope><name>getActionsListModel</name></member>
@@ -1120,8 +1103,8 @@
       <member refid="classmv_1_1AbstractActionsManager_1a9e24bd2f3f084520845f110cb839d2da" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>gui::WidgetAction</name></member>
       <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>isInitializing</name></member>
@@ -1152,8 +1135,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>State</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractActionsManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractActionsManager</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

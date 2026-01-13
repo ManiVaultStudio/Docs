@@ -77,7 +77,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1LoggingModel_1a5adadf4df853d3adb991d33556ad31cc" prot="private" static="no" mutable="no">
-        <type>std::deque&lt; const <ref refid="structmv_1_1util_1_1MessageRecord" kindref="compound">mv::util::MessageRecord</ref> * &gt;</type>
+        <type>std::deque&lt; const mv::util::MessageRecord * &gt;</type>
         <definition>std::deque&lt;const mv::util::MessageRecord*&gt; mv::LoggingModel::_messageRecords</definition>
         <argsstring></argsstring>
         <name>_messageRecords</name>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="321" column="5" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.cpp" bodystart="202" bodyend="213"/>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="321" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1LoggingModel_1a35223f209f5865268628451fc8949121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="339" column="14" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.cpp" bodystart="215" bodyend="242"/>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="339" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1LoggingModel_1a0c01cd157a8759c0bb6c2639649da701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="350" column="10" bodyfile="Docs/external/core/ManiVault/src/models/LoggingModel.cpp" bodystart="244" bodyend="257"/>
+        <location file="Docs/external/core/ManiVault/src/models/LoggingModel.h" line="350" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -305,9 +305,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QStandardItemModel</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -321,16 +318,11 @@
         <label>mv::StandardItemModel</label>
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QStandardItemModel</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -344,8 +336,6 @@
         <label>mv::StandardItemModel</label>
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -355,18 +345,18 @@
       <member refid="classmv_1_1LoggingModel_1a5adadf4df853d3adb991d33556ad31cc" prot="private" virt="non-virtual"><scope>mv::LoggingModel</scope><name>_messageRecords</name></member>
       <member refid="classmv_1_1LoggingModel_1a39876ab290d360d60ec6643057fe1dd7" prot="private" virt="non-virtual"><scope>mv::LoggingModel</scope><name>_wordWrapAction</name></member>
       <member refid="classmv_1_1LoggingModel_1ae1985cf314db717795e1cc83643bff95" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>Column</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>Direction</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::LoggingModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::LoggingModel</scope><name>fromParentVariantMap</name></member>
       <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::LoggingModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getId</name></member>
       <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getNumberOfRowsAction</name></member>
       <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getNumberOfRowsAction</name></member>
-      <member refid="classmv_1_1StandardItemModel_1aac247043c0e7c74be8d4cc832ef80c2a" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1StandardItemModel_1ae415de52b9078c51c0806f5e6314cb8b" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getPopulationMode</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getSerializationCountTo</name></member>
@@ -376,8 +366,8 @@
       <member refid="classmv_1_1LoggingModel_1a5db8f3264ccf88a63b73af9bfd0c8b3b" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>getWordWrapAction</name></member>
       <member refid="classmv_1_1LoggingModel_1af2b75663711322a9398f4d2c48911c54" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>headerData</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::LoggingModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::LoggingModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::LoggingModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::LoggingModel</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1LoggingModel_1a618d1344151be8af82634a7e8d21a5d1" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>LoggingModel</name></member>
       <member refid="classmv_1_1LoggingModel_1a35223f209f5865268628451fc8949121" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>LoggingModel</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>makeUnique</name></member>
@@ -396,7 +386,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>toJsonFile</name></member>
       <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::LoggingModel</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::LoggingModel</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1LoggingModel_1a29cd4ea58b2c22b57e7258d0a731ab85" prot="public" virt="non-virtual"><scope>mv::LoggingModel</scope><name>~LoggingModel</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::LoggingModel</scope><name>~Serializable</name></member>
     </listofallmembers>

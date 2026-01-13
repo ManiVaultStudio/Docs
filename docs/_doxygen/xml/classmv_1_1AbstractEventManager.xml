@@ -48,11 +48,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractEventManager.h" line="38" column="13" bodyfile="Docs/external/core/ManiVault/src/AbstractEventManager.h" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractEventManager_1a60750f5c82083a743b063d5c5c9fed8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref> &gt; &amp;</type>
+        <type>std::vector&lt; KeyBasedSelectionGroup &gt; &amp;</type>
         <definition>virtual std::vector&lt;KeyBasedSelectionGroup&gt;&amp; mv::AbstractEventManager::getSelectionGroups</definition>
         <argsstring>()=0</argsstring>
         <name>getSelectionGroups</name>
-        <reimplementedby refid="classmv_1_1EventManager_1adf1e9f83186fbfa1fd2ba4642e2e67dc">getSelectionGroups</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -66,9 +65,8 @@
         <definition>virtual void mv::AbstractEventManager::addSelectionGroup</definition>
         <argsstring>(KeyBasedSelectionGroup &amp;selectionGroup)=0</argsstring>
         <name>addSelectionGroup</name>
-        <reimplementedby refid="classmv_1_1EventManager_1abe3698d1b1645a8678747d543dbdbaf7">addSelectionGroup</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1KeyBasedSelectionGroup" kindref="compound">KeyBasedSelectionGroup</ref> &amp;</type>
+          <type>KeyBasedSelectionGroup &amp;</type>
           <declname>selectionGroup</declname>
         </param>
         <briefdescription>
@@ -84,7 +82,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetAdded</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetAdded</name>
-        <reimplementedby refid="classmv_1_1EventManager_1a9aa458583a39e702e4cf541b28814944">notifyDatasetAdded</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -113,7 +110,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetAboutToBeRemoved</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetAboutToBeRemoved</name>
-        <reimplementedby refid="classmv_1_1EventManager_1a95cb34f2bbcc202684d85f14709f251a">notifyDatasetAboutToBeRemoved</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -142,13 +138,12 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetRemoved</definition>
         <argsstring>(const QString &amp;datasetGuid, const DataType &amp;dataType)=0</argsstring>
         <name>notifyDatasetRemoved</name>
-        <reimplementedby refid="classmv_1_1EventManager_1a2610e231de44222a482903a295f7bf5c">notifyDatasetRemoved</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>datasetGuid</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &amp;</type>
+          <type>const DataType &amp;</type>
           <declname>dataType</declname>
         </param>
         <briefdescription>
@@ -183,7 +178,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetDataChanged</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetDataChanged</name>
-        <reimplementedby refid="classmv_1_1EventManager_1ad8fa90fd41dab4d676ae68986766f9ec">notifyDatasetDataChanged</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -212,7 +206,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetDataDimensionsChanged</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetDataDimensionsChanged</name>
-        <reimplementedby refid="classmv_1_1EventManager_1abcd07e4f4a7569e10902f41ae7b31d57">notifyDatasetDataDimensionsChanged</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -241,7 +234,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetDataSelectionChanged</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset, Datasets *ignoreDatasets=nullptr)=0</argsstring>
         <name>notifyDatasetDataSelectionChanged</name>
-        <reimplementedby refid="classmv_1_1EventManager_1acaea44f6c660b20e082396398078267c">notifyDatasetDataSelectionChanged</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -283,7 +275,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetLocked</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetLocked</name>
-        <reimplementedby refid="classmv_1_1EventManager_1aa01c71db84ef518a8044a8edd01fa0e5">notifyDatasetLocked</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -312,7 +303,6 @@
         <definition>virtual void mv::AbstractEventManager::notifyDatasetUnlocked</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;dataset)=0</argsstring>
         <name>notifyDatasetUnlocked</name>
-        <reimplementedby refid="classmv_1_1EventManager_1a2666dfc4d6bdcb54b73bd7f713e5109b">notifyDatasetUnlocked</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>dataset</declname>
@@ -341,9 +331,8 @@
         <definition>virtual void mv::AbstractEventManager::registerEventListener</definition>
         <argsstring>(EventListener *eventListener)=0</argsstring>
         <name>registerEventListener</name>
-        <reimplementedby refid="classmv_1_1EventManager_1aae0ea47377e3213c5773a33b33f6fea9">registerEventListener</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> *</type>
+          <type>EventListener *</type>
           <declname>eventListener</declname>
         </param>
         <briefdescription>
@@ -370,9 +359,8 @@
         <definition>virtual void mv::AbstractEventManager::unregisterEventListener</definition>
         <argsstring>(EventListener *eventListener)=0</argsstring>
         <name>unregisterEventListener</name>
-        <reimplementedby refid="classmv_1_1EventManager_1a6bb2b4fdb7e662ce63e4d1787e3ee1eb">unregisterEventListener</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> *</type>
+          <type>EventListener *</type>
           <declname>eventListener</declname>
         </param>
         <briefdescription>
@@ -402,7 +390,7 @@
         <argsstring>(EventListener *eventListener, DatasetEvent *dataEvent)</argsstring>
         <name>callListenerDataEvent</name>
         <param>
-          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref> *</type>
+          <type>EventListener *</type>
           <declname>eventListener</declname>
         </param>
         <param>
@@ -448,15 +436,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="5">
-        <label>mv::EventManager</label>
-        <link refid="classmv_1_1EventManager"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -470,16 +449,11 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -493,8 +467,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -506,16 +478,16 @@
       <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>beginInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>beginReset</name></member>
       <member refid="classmv_1_1AbstractEventManager_1ae6b5c5af966002df7ec868bf12467f41" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>callListenerDataEvent</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>endInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>getIcon</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>getId</name></member>
       <member refid="classmv_1_1AbstractManager_1a419cf66195b57b0596d7fe8e72f7e630" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>getLockingAction</name></member>
@@ -527,8 +499,8 @@
       <member refid="classmv_1_1AbstractManager_1aa54611d93e80919c8d2f3587a4630b23" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>getSettingsPrefix</name></member>
       <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>isInitializing</name></member>
@@ -559,8 +531,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>State</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractEventManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1AbstractEventManager_1a4eb5c2513af3abd5e1b75fe5e7f6b833" prot="public" virt="pure-virtual"><scope>mv::AbstractEventManager</scope><name>unregisterEventListener</name></member>
       <member refid="classmv_1_1AbstractEventManager_1ab3489da88921f87e719090eb123eb295" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>~AbstractEventManager</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractEventManager</scope><name>~Serializable</name></member>

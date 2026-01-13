@@ -3,8 +3,6 @@
   <compounddef id="ModalTaskTester_8h" kind="file" language="C++">
     <compoundname>ModalTaskTester.h</compoundname>
     <includes refid="AbstractTaskTester_8h" local="yes">AbstractTaskTester.h</includes>
-    <includedby refid="ModalTaskTester_8cpp" local="yes">ModalTaskTester.cpp</includedby>
-    <includedby refid="TasksPlugin_8cpp" local="no">TasksPlugin.cpp</includedby>
     <incdepgraph>
       <node id="1">
         <label>ModalTaskTester.h</label>
@@ -127,7 +125,7 @@
         <definition>const auto modalTaskTesterMetaTypeId</definition>
         <argsstring></argsstring>
         <name>modalTaskTesterMetaTypeId</name>
-        <initializer>= qRegisterMetaType&lt;<ref refid="classmv_1_1ModalTaskTester" kindref="compound">mv::ModalTaskTester</ref>*&gt;(&quot;mv::ModalTaskTester&quot;)</initializer>
+        <initializer>= qRegisterMetaType&lt;mv::ModalTaskTester*&gt;(&quot;mv::ModalTaskTester&quot;)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -153,12 +151,12 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref></highlight></codeline>
 <codeline lineno="10"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="classmv_1_1ModalTaskTester" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1ModalTaskTester" kindref="compound">ModalTaskTester</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1AbstractTaskTester" kindref="compound">AbstractTaskTester</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/>ModalTaskTester<sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>AbstractTaskTester</highlight></codeline>
 <codeline lineno="13"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1ModalTaskTester" kindref="compound">ModalTaskTester</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/>ModalTaskTester(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>testRunningIndeterminate();</highlight></codeline>
@@ -168,7 +166,7 @@
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">Q_DECLARE_METATYPE(<ref refid="classmv_1_1ModalTaskTester" kindref="compound">mv::ModalTaskTester</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">Q_DECLARE_METATYPE(mv::ModalTaskTester)</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>modalTaskTesterMetaTypeId<sp/>=<sp/>qRegisterMetaType&lt;mv::ModalTaskTester*&gt;(</highlight><highlight class="stringliteral">&quot;mv::ModalTaskTester&quot;</highlight><highlight class="normal">);</highlight></codeline>
     </programlisting>

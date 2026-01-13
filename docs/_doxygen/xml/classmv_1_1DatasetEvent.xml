@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classmv_1_1DatasetEvent" kind="class" language="C++" prot="public">
     <compoundname>mv::DatasetEvent</compoundname>
-    <basecompoundref refid="classmv_1_1ManiVaultEvent" prot="public" virt="non-virtual">mv::ManiVaultEvent</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">mv::ManiVaultEvent</basecompoundref>
     <derivedcompoundref refid="classmv_1_1DatasetAboutToBeRemovedEvent" prot="public" virt="non-virtual">mv::DatasetAboutToBeRemovedEvent</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1DatasetAddedEvent" prot="public" virt="non-virtual">mv::DatasetAddedEvent</derivedcompoundref>
     <derivedcompoundref refid="classmv_1_1DatasetChildAddedEvent" prot="public" virt="non-virtual">mv::DatasetChildAddedEvent</derivedcompoundref>
@@ -138,13 +138,13 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11">
+      <node id="10">
         <label>mv::DatasetRemovedEvent</label>
         <link refid="classmv_1_1DatasetRemovedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="11">
         <label>mv::DatasetUnlockedEvent</label>
         <link refid="classmv_1_1DatasetUnlockedEvent"/>
         <childnode refid="1" relation="public-inheritance">
@@ -153,56 +153,50 @@
       <node id="1">
         <label>mv::DatasetEvent</label>
         <link refid="classmv_1_1DatasetEvent"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::DatasetAddedEvent</label>
         <link refid="classmv_1_1DatasetAddedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="9">
         <label>mv::DatasetLockedEvent</label>
         <link refid="classmv_1_1DatasetLockedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="8">
         <label>mv::DatasetDataSelectionChangedEvent</label>
         <link refid="classmv_1_1DatasetDataSelectionChangedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>mv::ManiVaultEvent</label>
-        <link refid="classmv_1_1ManiVaultEvent"/>
-      </node>
-      <node id="6">
+      <node id="5">
         <label>mv::DatasetChildRemovedEvent</label>
         <link refid="classmv_1_1DatasetChildRemovedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>mv::DatasetDataChangedEvent</label>
         <link refid="classmv_1_1DatasetDataChangedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="2">
         <label>mv::DatasetAboutToBeRemovedEvent</label>
         <link refid="classmv_1_1DatasetAboutToBeRemovedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>mv::DatasetDataDimensionsChangedEvent</label>
         <link refid="classmv_1_1DatasetDataDimensionsChangedEvent"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::DatasetChildAddedEvent</label>
         <link refid="classmv_1_1DatasetChildAddedEvent"/>
         <childnode refid="1" relation="public-inheritance">
@@ -210,32 +204,21 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
-        <label>QObject</label>
-      </node>
-      <node id="4">
+      <node id="3">
         <label>mv::DatasetPrivate</label>
         <link refid="classmv_1_1DatasetPrivate"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="1">
         <label>mv::DatasetEvent</label>
         <link refid="classmv_1_1DatasetEvent"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>_dataset</edgelabel>
         </childnode>
       </node>
       <node id="2">
-        <label>mv::ManiVaultEvent</label>
-        <link refid="classmv_1_1ManiVaultEvent"/>
-      </node>
-      <node id="3">
         <label>mv::Dataset&lt; mv::DatasetImpl &gt;</label>
         <link refid="classmv_1_1Dataset"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

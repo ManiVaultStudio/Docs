@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classmv_1_1TaskTesterRunner" kind="class" language="C++" prot="public">
     <compoundname>mv::TaskTesterRunner</compoundname>
-    <basecompoundref refid="classmv_1_1TaskTesterRunnerPrivate" prot="public" virt="non-virtual">mv::TaskTesterRunnerPrivate</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">mv::TaskTesterRunnerPrivate</basecompoundref>
       <sectiondef kind="public-type">
       <memberdef kind="typedef" id="classmv_1_1TaskTesterRunner_1a75aae49e156d7493fa75f37f075dd311" prot="public" static="no">
-        <type>std::function&lt; void(<ref refid="classmv_1_1TaskTesterRunner" kindref="compound">TaskTesterRunner</ref> *)&gt;</type>
+        <type>std::function&lt; void(TaskTesterRunner *)&gt;</type>
         <definition>using mv::TaskTesterRunner::RunFunction =  std::function&lt;void(TaskTesterRunner*)&gt;</definition>
         <argsstring></argsstring>
         <name>RunFunction</name>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="35" column="5" bodyfile="Docs/external/core/ManiVault/src/TaskTesterRunner.cpp" bodystart="10" bodyend="14"/>
+        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="35" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1TaskTesterRunner_1af4ca2461bc45662eaf510c3ff79222ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,13 +66,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="37" column="10" bodyfile="Docs/external/core/ManiVault/src/TaskTesterRunner.cpp" bodystart="16" bodyend="21"/>
+        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="37" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classmv_1_1TaskTesterRunner_1a2c8abd3cc29a04e62dab7bedf67eba73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1TaskTesterRunner_1a8f81f94c3147e9a7194f5c09cf5aada1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void mv::TaskTesterRunner::createAndRun</definition>
+        <definition>static void mv::TaskTesterRunner::createAndRun</definition>
         <argsstring>(QObject *parent, RunFunction runFunction)</argsstring>
         <name>createAndRun</name>
         <param>
@@ -89,51 +89,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="41" column="17" bodyfile="Docs/external/core/ManiVault/src/TaskTesterRunner.cpp" bodystart="23" bodyend="37"/>
+        <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="41" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="1">
-        <label>mv::TaskTesterRunner</label>
-        <link refid="classmv_1_1TaskTesterRunner"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>mv::TaskTesterRunnerPrivate</label>
-        <link refid="classmv_1_1TaskTesterRunnerPrivate"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="1">
-        <label>mv::TaskTesterRunner</label>
-        <link refid="classmv_1_1TaskTesterRunner"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>mv::TaskTesterRunnerPrivate</label>
-        <link refid="classmv_1_1TaskTesterRunnerPrivate"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/TaskTesterRunner.h" line="29" column="1" bodyfile="Docs/external/core/ManiVault/src/TaskTesterRunner.h" bodystart="30" bodyend="45"/>
     <listofallmembers>
       <member refid="classmv_1_1TaskTesterRunner_1a62a3de4013d195714e0e3972cb594c3d" prot="protected" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>_runFunction</name></member>
-      <member refid="classmv_1_1TaskTesterRunner_1a2c8abd3cc29a04e62dab7bedf67eba73" prot="public" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>createAndRun</name></member>
+      <member refid="classmv_1_1TaskTesterRunner_1a8f81f94c3147e9a7194f5c09cf5aada1" prot="public" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>createAndRun</name></member>
       <member refid="classmv_1_1TaskTesterRunnerPrivate_1aac4773255483b20bc16777a65d1ab760" prot="public" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>finished</name></member>
       <member refid="classmv_1_1TaskTesterRunner_1a75aae49e156d7493fa75f37f075dd311" prot="public" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>RunFunction</name></member>
       <member refid="classmv_1_1TaskTesterRunner_1af4ca2461bc45662eaf510c3ff79222ec" prot="public" virt="non-virtual"><scope>mv::TaskTesterRunner</scope><name>runTask</name></member>

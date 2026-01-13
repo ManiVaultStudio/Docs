@@ -137,7 +137,7 @@
         <argsstring></argsstring>
         <name>plugin::RawData</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref></type>
+          <type>plugin::RawData</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -169,7 +169,7 @@
         <argsstring></argsstring>
         <name>EventListener</name>
         <param>
-          <type><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref></type>
+          <type>EventListener</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -200,7 +200,6 @@
         <definition>virtual void mv::CoreInterface::createManagers</definition>
         <argsstring>()=0</argsstring>
         <name>createManagers</name>
-        <reimplementedby refid="classmv_1_1Core_1af45c4c196ddad0a9991bbbc00f9e5401">createManagers</reimplementedby>
         <briefdescription>
 <para>Creates the core managers. </para>
         </briefdescription>
@@ -215,7 +214,6 @@
         <definition>virtual void mv::CoreInterface::setManagersCreated</definition>
         <argsstring>()=0</argsstring>
         <name>setManagersCreated</name>
-        <reimplementedby refid="classmv_1_1Core_1a162021824c8fa47e623ca720776f95e0">setManagersCreated</reimplementedby>
         <briefdescription>
 <para>Flag the core managers as created and notify listeners. </para>
         </briefdescription>
@@ -230,7 +228,6 @@
         <definition>virtual void mv::CoreInterface::reset</definition>
         <argsstring>()=0</argsstring>
         <name>reset</name>
-        <reimplementedby refid="classmv_1_1Core_1a3a0e49b2163b51e31aa1b8400ef5b543">reset</reimplementedby>
         <briefdescription>
 <para>Resets the entire core implementation. </para>
         </briefdescription>
@@ -245,7 +242,6 @@
         <definition>virtual void mv::CoreInterface::initialize</definition>
         <argsstring>()=0</argsstring>
         <name>initialize</name>
-        <reimplementedby refid="classmv_1_1Core_1a71cc205834791d0d7757e938bc72d0b9">initialize</reimplementedby>
         <briefdescription>
 <para>Initializes the core. </para>
         </briefdescription>
@@ -260,7 +256,6 @@
         <definition>virtual void mv::CoreInterface::setAboutToBeInitialized</definition>
         <argsstring>()=0</argsstring>
         <name>setAboutToBeInitialized</name>
-        <reimplementedby refid="classmv_1_1Core_1a245d706c85f34e1b289106f4efdefb53">setAboutToBeInitialized</reimplementedby>
         <briefdescription>
 <para>Notify listeners that the core is about to be initialized. </para>
         </briefdescription>
@@ -275,7 +270,6 @@
         <definition>virtual void mv::CoreInterface::setInitialized</definition>
         <argsstring>()=0</argsstring>
         <name>setInitialized</name>
-        <reimplementedby refid="classmv_1_1Core_1abbfd7d0655cc98a972b64d476ad169cc">setInitialized</reimplementedby>
         <briefdescription>
 <para>Flag the core as initialized and notify listeners. </para>
         </briefdescription>
@@ -290,7 +284,6 @@
         <definition>virtual bool mv::CoreInterface::isInitialized</definition>
         <argsstring>() const =0</argsstring>
         <name>isInitialized</name>
-        <reimplementedby refid="classmv_1_1Core_1ad789d994c6d3ea33ce9d063abdafd9de">isInitialized</reimplementedby>
         <briefdescription>
 <para>Get whether the core is initialized or not. </para>
         </briefdescription>
@@ -308,7 +301,6 @@
         <definition>virtual bool mv::CoreInterface::isAboutToBeDestroyed</definition>
         <argsstring>() const =0</argsstring>
         <name>isAboutToBeDestroyed</name>
-        <reimplementedby refid="classmv_1_1Core_1abaf56764bed21dd9a7e808a6098c2da6">isAboutToBeDestroyed</reimplementedby>
         <briefdescription>
 <para>Get whether the core is about to be destroyed or not. </para>
         </briefdescription>
@@ -326,9 +318,8 @@
         <definition>virtual AbstractManager* mv::CoreInterface::getManager</definition>
         <argsstring>(const ManagerType &amp;managerType)=0</argsstring>
         <name>getManager</name>
-        <reimplementedby refid="classmv_1_1Core_1aef781f89d01fc4c98600d14540a6a99c">getManager</reimplementedby>
         <param>
-          <type>const <ref refid="classmv_1_1CoreInterface_1a6fdd523b0a93697bed56d23ee1840db6" kindref="member">ManagerType</ref> &amp;</type>
+          <type>const ManagerType &amp;</type>
           <declname>managerType</declname>
         </param>
         <briefdescription>
@@ -344,7 +335,6 @@
         <definition>virtual AbstractErrorManager&amp; mv::CoreInterface::getErrorManager</definition>
         <argsstring>()=0</argsstring>
         <name>getErrorManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a6a9d85a3d1a7a2033270791f21ccd39f">getErrorManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -358,7 +348,6 @@
         <definition>virtual AbstractActionsManager&amp; mv::CoreInterface::getActionsManager</definition>
         <argsstring>()=0</argsstring>
         <name>getActionsManager</name>
-        <reimplementedby refid="classmv_1_1Core_1adef476ad3180d9dae05257c4e4da071c">getActionsManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -372,7 +361,6 @@
         <definition>virtual AbstractThemeManager&amp; mv::CoreInterface::getThemeManager</definition>
         <argsstring>()=0</argsstring>
         <name>getThemeManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a9cd489c479016f1a3eb2d892a2fe7572">getThemeManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -386,7 +374,6 @@
         <definition>virtual AbstractPluginManager&amp; mv::CoreInterface::getPluginManager</definition>
         <argsstring>()=0</argsstring>
         <name>getPluginManager</name>
-        <reimplementedby refid="classmv_1_1Core_1aa7c6ea71d3eddf7f7f5d35ff2cfed8a6">getPluginManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -400,7 +387,6 @@
         <definition>virtual AbstractEventManager&amp; mv::CoreInterface::getEventManager</definition>
         <argsstring>()=0</argsstring>
         <name>getEventManager</name>
-        <reimplementedby refid="classmv_1_1Core_1aa0749518f32ac32b7b0011e382d7727c">getEventManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -414,7 +400,6 @@
         <definition>virtual AbstractDataManager&amp; mv::CoreInterface::getDataManager</definition>
         <argsstring>()=0</argsstring>
         <name>getDataManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a1b12e04ad3547286dbdd65a828017c87">getDataManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -428,7 +413,6 @@
         <definition>virtual AbstractDataHierarchyManager&amp; mv::CoreInterface::getDataHierarchyManager</definition>
         <argsstring>()=0</argsstring>
         <name>getDataHierarchyManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a7a2c62c58fb3b379fb43cbcc229a1335">getDataHierarchyManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -442,7 +426,6 @@
         <definition>virtual AbstractTaskManager&amp; mv::CoreInterface::getTaskManager</definition>
         <argsstring>()=0</argsstring>
         <name>getTaskManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a11ff683def453a13cb7071f2b6418917">getTaskManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -456,7 +439,6 @@
         <definition>virtual AbstractWorkspaceManager&amp; mv::CoreInterface::getWorkspaceManager</definition>
         <argsstring>()=0</argsstring>
         <name>getWorkspaceManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a6d05594cd2fbb56f457ac45433a47d3d">getWorkspaceManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -470,7 +452,6 @@
         <definition>virtual AbstractProjectManager&amp; mv::CoreInterface::getProjectManager</definition>
         <argsstring>()=0</argsstring>
         <name>getProjectManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a6086e6866bcfb572fa1c46d107ed2f7b">getProjectManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -484,7 +465,6 @@
         <definition>virtual AbstractSettingsManager&amp; mv::CoreInterface::getSettingsManager</definition>
         <argsstring>()=0</argsstring>
         <name>getSettingsManager</name>
-        <reimplementedby refid="classmv_1_1Core_1a4783c3667d269b0c2a33a556325241db">getSettingsManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -498,7 +478,6 @@
         <definition>virtual AbstractHelpManager&amp; mv::CoreInterface::getHelpManager</definition>
         <argsstring>()=0</argsstring>
         <name>getHelpManager</name>
-        <reimplementedby refid="classmv_1_1Core_1aae2262007b95ee3539cea69581e03a7a">getHelpManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -512,7 +491,6 @@
         <definition>virtual AbstractScriptingManager&amp; mv::CoreInterface::getScriptingManager</definition>
         <argsstring>()=0</argsstring>
         <name>getScriptingManager</name>
-        <reimplementedby refid="classmv_1_1Core_1afbcfbd8d2eadb26bd1bdc881837a413c">getScriptingManager</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -584,9 +562,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="3">
         <label>mv::Core</label>
         <link refid="classmv_1_1Core"/>
         <childnode refid="1" relation="public-inheritance">
@@ -594,22 +569,8 @@
       </node>
       <node id="1">
         <label>mv::CoreInterface</label>
-        <link refid="classmv_1_1CoreInterface"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
       </node>
     </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="1">
-        <label>mv::CoreInterface</label>
-        <link refid="classmv_1_1CoreInterface"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/CoreInterface.h" line="55" column="1" bodyfile="Docs/external/core/ManiVault/src/CoreInterface.h" bodystart="56" bodyend="152"/>
     <listofallmembers>
       <member refid="classmv_1_1CoreInterface_1ac355b650369176c67c24b0c291a4149a" prot="public" virt="non-virtual"><scope>mv::CoreInterface</scope><name>aboutToBeDestroyed</name></member>

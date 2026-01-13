@@ -75,20 +75,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classWorkspaceInventoryModel_1a663257ed350125cda8c03375a2fbd848" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" kindref="member">Column</ref>, QPair&lt; QString, QString &gt; &gt;</type>
-        <definition>QMap&lt; WorkspaceInventoryModel::Column, QPair&lt; QString, QString &gt; &gt; WorkspaceInventoryModel::columns</definition>
+      <memberdef kind="variable" id="classWorkspaceInventoryModel_1a4d61474141e2c4e4f68d2617a14d0710" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" kindref="member">Column</ref>, QPair&lt; QString, QString &gt; &gt;</type>
+        <definition>QMap&lt;Column, QPair&lt;QString, QString&gt; &gt; WorkspaceInventoryModel::columns</definition>
         <argsstring></argsstring>
         <name>columns</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" kindref="member">WorkspaceInventoryModel::Column</ref>, QPair&lt;QString, QString&gt;&gt;({
-    { WorkspaceInventoryModel::Column::SummaryDelegate, { &quot;Summary&quot;, &quot;Workspace summary delegate column&quot; }},
-    { WorkspaceInventoryModel::Column::Icon, { &quot;Icon&quot;, &quot;Icon of the workspace&quot; }},
-    { WorkspaceInventoryModel::Column::Name, { &quot;Name&quot;, &quot;Name of the workspace&quot; }},
-    { WorkspaceInventoryModel::Column::Description, { &quot;Description&quot;, &quot;Description of the workspace&quot; }},
-    { WorkspaceInventoryModel::Column::Tags, { &quot;Tags&quot;, &quot;Workspace tags&quot; }},
-    { WorkspaceInventoryModel::Column::FilePath, { &quot;FilePath&quot;, &quot;Location of the workspace on disk&quot; }},
-    { WorkspaceInventoryModel::Column::Type, { &quot;Type&quot;, &quot;Type of workspace (built-in or recent)&quot; }}
-})</initializer>
         <briefdescription>
 <para>Column name and tooltip. </para>
         </briefdescription>
@@ -127,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="40" column="5" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.cpp" bodystart="27" bodyend="36"/>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="40" column="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -143,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="45" column="10" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.cpp" bodystart="38" bodyend="68"/>
+        <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="45" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -155,39 +146,10 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>WorkspaceInventoryModel</label>
-        <link refid="classWorkspaceInventoryModel"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QStandardItemModel</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="3">
-        <label>QMap&lt; Column, QPair&lt; QString, QString &gt; &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="1">
-        <label>WorkspaceInventoryModel</label>
-        <link refid="classWorkspaceInventoryModel"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>columns</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QStandardItemModel</label>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" line="16" column="1" bodyfile="Docs/external/core/ManiVault/src/private/WorkspaceInventoryModel.h" bodystart="17" bodyend="46"/>
     <listofallmembers>
       <member refid="classWorkspaceInventoryModel_1adbc6c87b58f448b9481d17660c0105c5" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>Column</name></member>
-      <member refid="classWorkspaceInventoryModel_1a663257ed350125cda8c03375a2fbd848" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>columns</name></member>
+      <member refid="classWorkspaceInventoryModel_1a4d61474141e2c4e4f68d2617a14d0710" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>columns</name></member>
       <member refid="classWorkspaceInventoryModel_1a61c0812bc570778df815f78d48ba1b22" prot="private" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>synchronizeWithWorkspaceManager</name></member>
       <member refid="classWorkspaceInventoryModel_1a9d0de5e45aca62b914e5f46b3d64f4df" prot="public" virt="non-virtual"><scope>WorkspaceInventoryModel</scope><name>WorkspaceInventoryModel</name></member>
     </listofallmembers>

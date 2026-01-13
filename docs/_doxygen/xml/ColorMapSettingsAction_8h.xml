@@ -4,9 +4,6 @@
     <compoundname>ColorMapSettingsAction.h</compoundname>
     <includes refid="WidgetAction_8h" local="yes">WidgetAction.h</includes>
     <includedby refid="ColorMapAction_8h" local="yes">ColorMapAction.h</includedby>
-    <includedby refid="ColorMapAxisAction_8cpp" local="yes">ColorMapAxisAction.cpp</includedby>
-    <includedby refid="ColorMapEditor1DNodeAction_8cpp" local="yes">ColorMapEditor1DNodeAction.cpp</includedby>
-    <includedby refid="ColorMapSettingsAction_8cpp" local="yes">ColorMapSettingsAction.cpp</includedby>
     <incdepgraph>
       <node id="10">
         <label>QObject</label>
@@ -200,16 +197,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
+      <node id="4">
         <label>ColorMap1DAction.h</label>
         <link refid="ColorMap1DAction_8h_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>ColorizeClustersAction.h</label>
         <link refid="ColorizeClustersAction_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -223,26 +220,26 @@
         <link refid="ColorMapAction_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>ClustersAction.h</label>
         <link refid="ClustersAction_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="7">
         <label>InfoAction.h</label>
         <link refid="ClusterData_2src_2InfoAction_8h_source"/>
       </node>
-      <node id="7">
+      <node id="8">
         <label>ColorMap2DAction.h</label>
         <link refid="ColorMap2DAction_8h_source"/>
       </node>
-      <node id="8">
+      <node id="3">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -293,7 +290,7 @@
 <codeline lineno="27" refid="classmv_1_1gui_1_1ColorMapSettingsAction_1_1Widget" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction_1_1Widget" kindref="compound">Widget</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1WidgetActionWidget" kindref="compound">WidgetActionWidget</ref><sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction_1_1Widget" kindref="compound">Widget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref>*<sp/>colorMapSettingsAction,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::int32_t&amp;<sp/>widgetFlags);</highlight></codeline>
+<codeline lineno="36" refid="classmv_1_1gui_1_1ColorMapSettingsAction_1_1Widget_1ad66f6e01edabf0c66b258e03d8147a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction_1_1Widget_1ad66f6e01edabf0c66b258e03d8147a3c" kindref="member">Widget</ref>(QWidget*<sp/>parent,<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref>*<sp/>colorMapSettingsAction,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::int32_t&amp;<sp/>widgetFlags);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="classmv_1_1gui_1_1ColorMapSettingsAction_1a639d1d4ef8e122009e25c21a5247b69f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction_1a639d1d4ef8e122009e25c21a5247b69f" kindref="member">getWidget</ref>(QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::int32_t&amp;<sp/>widgetFlags)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
@@ -302,7 +299,7 @@
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction" kindref="compound">ColorMapSettingsAction</ref>(<ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>&amp;<sp/>colorMapAction,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
+<codeline lineno="55" refid="classmv_1_1gui_1_1ColorMapSettingsAction_1ace80ecc1fab11ad3d364f38c03f8512b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ColorMapSettingsAction_1ace80ecc1fab11ad3d364f38c03f8512b" kindref="member">ColorMapSettingsAction</ref>(<ref refid="classmv_1_1gui_1_1ColorMapAction" kindref="compound">ColorMapAction</ref>&amp;<sp/>colorMapAction,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
