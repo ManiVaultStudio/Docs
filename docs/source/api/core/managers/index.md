@@ -10,6 +10,16 @@ Each manager typically focuses on a specific domain and exposes a stable API for
 ```{toctree}
 :maxdepth: 1
 
+abstract_manager
 abstract_actions_manager
 abstract_data_hierarchy_manager
 abstract_data_manager
+abstract_error_manager
+abstract_event_manager
+abstract_help_manager
+abstract_plugin_manager
+abstract_project_manager
+abstract_scripting_manager
+abstract_settings_manager
+abstract_task_manager
+abstract_theme_manager
