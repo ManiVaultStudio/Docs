@@ -7,10 +7,6 @@
     <includes local="no">DockAreaWidget.h</includes>
     <includes local="no">QMenu</includes>
     <includes local="no">QSharedPointer</includes>
-    <includedby refid="DockAreaTitleBar_8cpp" local="yes">DockAreaTitleBar.cpp</includedby>
-    <includedby refid="MainWindow_8cpp" local="yes">MainWindow.cpp</includedby>
-    <includedby refid="ViewMenu_8cpp" local="yes">ViewMenu.cpp</includedby>
-    <includedby refid="WorkspaceManager_8cpp" local="yes">WorkspaceManager.cpp</includedby>
     <incdepgraph>
       <node id="5">
         <label>QMap</label>
@@ -403,9 +399,9 @@
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewMenu_1aee227d0f321ef753948f70f5e4d89b31" kindref="member">ViewMenu</ref>(QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Options&amp;<sp/>options<sp/>=<sp/>Option::Default,<sp/>ads::CDockAreaWidget*<sp/>dockAreaWidget<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49" refid="classViewMenu_1aee227d0f321ef753948f70f5e4d89b31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewMenu_1aee227d0f321ef753948f70f5e4d89b31" kindref="member">ViewMenu</ref>(QWidget<sp/>*parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Options&amp;<sp/>options<sp/>=<sp/>Option::Default,<sp/>ads::CDockAreaWidget*<sp/>dockAreaWidget<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classViewMenu_1a9a3c80361440c11aa7d4f4387f7136c4" kindref="member">mayProducePlugins</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55" refid="classViewMenu_1a9a3c80361440c11aa7d4f4387f7136c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classViewMenu_1a9a3c80361440c11aa7d4f4387f7136c4" kindref="member">mayProducePlugins</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -414,7 +410,7 @@
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QPointer&lt;mv::gui::PluginTriggerAction&gt;&gt;<sp/>getLoadViewsActions(mv::gui::DockAreaFlag<sp/>dockArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>MenuMap<sp/>=<sp/><ref refid="classQMap" kindref="compound">QMap&lt;mv::gui::DockAreaFlag, QSharedPointer&lt;QMenu&gt;</ref>&gt;;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>MenuMap<sp/>=<sp/>QMap&lt;mv::gui::DockAreaFlag,<sp/>QSharedPointer&lt;QMenu&gt;&gt;;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>ads::CDockAreaWidget*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dockAreaWidget;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>Options<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_options;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>

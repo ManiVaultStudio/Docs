@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/ImageAction.h" line="70" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/ImageAction.cpp" bodystart="105" bodyend="122"/>
+        <location file="Docs/external/core/ManiVault/src/actions/ImageAction.h" line="70" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -99,99 +99,71 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>mv::gui::ImageAction::LoaderWidget</label>
-        <link refid="classmv_1_1gui_1_1ImageAction_1_1LoaderWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QWidget</label>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="7">
-        <label>QMap&lt; Scope, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="9">
+      <node id="6">
         <label>mv::gui::FilePickerAction</label>
         <link refid="classmv_1_1gui_1_1FilePickerAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
-        <label>mv::gui::WidgetAction</label>
-        <link refid="classmv_1_1gui_1_1WidgetAction"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>scopeNames</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
       <node id="1">
         <label>mv::gui::ImageAction::LoaderWidget</label>
         <link refid="classmv_1_1gui_1_1ImageAction_1_1LoaderWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>_imageAction</edgelabel>
         </childnode>
-        <childnode refid="11" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>_groupAction</edgelabel>
         </childnode>
       </node>
-      <node id="11">
+      <node id="8">
         <label>mv::gui::HorizontalGroupAction</label>
         <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mv::gui::StringAction</label>
+        <link refid="classmv_1_1gui_1_1StringAction"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
-        <label>QWidget</label>
-      </node>
-      <node id="12">
-        <label>mv::gui::GroupAction</label>
-        <link refid="classmv_1_1gui_1_1GroupAction"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>mv::gui::StringAction</label>
-        <link refid="classmv_1_1gui_1_1StringAction"/>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>QWidgetAction</label>
-      </node>
-      <node id="3">
         <label>mv::gui::ImageAction</label>
         <link refid="classmv_1_1gui_1_1ImageAction"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>_previewAction</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>_filePickerAction</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>_fileNameAction</edgelabel>
           <edgelabel>_filePathAction</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="5">
         <label>mv::gui::TriggerAction</label>
         <link refid="classmv_1_1gui_1_1TriggerAction"/>
-        <childnode refid="4" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

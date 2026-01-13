@@ -5,9 +5,8 @@
     <includes refid="RectangleAction_8h" local="yes">RectangleAction.h</includes>
     <includes refid="DecimalRangeAction_8h" local="yes">DecimalRangeAction.h</includes>
     <includes local="no">QRectF</includes>
-    <includedby refid="DecimalRectangleAction_8cpp" local="yes">DecimalRectangleAction.cpp</includedby>
-    <includedby refid="NavigationAction_8h" local="yes">NavigationAction.h</includedby>
     <includedby refid="Actions_8h" local="yes">Actions.h</includedby>
+    <includedby refid="NavigationAction_8h" local="yes">NavigationAction.h</includedby>
     <incdepgraph>
       <node id="38">
         <label>util/NumericalRange.h</label>
@@ -334,12 +333,12 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>Renderer2D.h</label>
         <link refid="Renderer2D_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -347,30 +346,30 @@
         <link refid="DecimalRectangleAction_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>DensityRenderer.h</label>
-        <link refid="DensityRenderer_8h_source"/>
-      </node>
-      <node id="3">
-        <label>Navigator2D.h</label>
-        <link refid="Navigator2D_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>PointRenderer.h</label>
-        <link refid="PointRenderer_8h_source"/>
-      </node>
-      <node id="2">
-        <label>NavigationAction.h</label>
-        <link refid="NavigationAction_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>DensityRenderer.h</label>
+        <link refid="DensityRenderer_8h_source"/>
+      </node>
+      <node id="4">
+        <label>Navigator2D.h</label>
+        <link refid="Navigator2D_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
       <node id="7">
+        <label>PointRenderer.h</label>
+        <link refid="PointRenderer_8h_source"/>
+      </node>
+      <node id="3">
+        <label>NavigationAction.h</label>
+        <link refid="NavigationAction_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -422,28 +421,28 @@
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction" kindref="compound">DecimalRectangleAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
+<codeline lineno="36" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a3b034198aff4acb034ab850e9f4173be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a3b034198aff4acb034ab850e9f4173be" kindref="member">DecimalRectangleAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42" refid="classmv_1_1gui_1_1DecimalRectangleAction_1ab4c3661b03ec61c178b8639638d559f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1ab4c3661b03ec61c178b8639638d559f3" kindref="member">setRectangle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rectangle)</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1RectangleAction_1a07f36a526bab141d8b0b0f405f62df91" kindref="member">RectangleAction::setRectangle</ref>(rectangle.left(),<sp/>rectangle.right(),<sp/>rectangle.bottom(),<sp/>rectangle.top());</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/>toRectF()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a7c56b13ad24614beb3c1888cba1ab5ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QRectF<sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a7c56b13ad24614beb3c1888cba1ab5ae" kindref="member">toRectF</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRectF(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rectangle);</highlight></codeline>
+<codeline lineno="57" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a3e5e538df4112da65e80b5c43954dd03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a3e5e538df4112da65e80b5c43954dd03" kindref="member">setRectF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QRectF&amp;<sp/>rectangle);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Linking</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>connectToPublicAction(<ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref>*<sp/>publicAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a457e2c311a080135eb6174da9a8216f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a457e2c311a080135eb6174da9a8216f5" kindref="member">connectToPublicAction</ref>(<ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">WidgetAction</ref>*<sp/>publicAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disconnectFromPublicAction(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="classmv_1_1gui_1_1DecimalRectangleAction_1aa7f3582ece4fe7b3cea417f025dc5c48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1aa7f3582ece4fe7b3cea417f025dc5c48" kindref="member">disconnectFromPublicAction</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a11c9e7a662edff90a995fafe372bacbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a11c9e7a662edff90a995fafe372bacbb" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86" refid="classmv_1_1gui_1_1DecimalRectangleAction_1a7fcf3f24996bca3027c7763ef303663f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classmv_1_1gui_1_1DecimalRectangleAction_1a7fcf3f24996bca3027c7763ef303663f" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal">signals:</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>

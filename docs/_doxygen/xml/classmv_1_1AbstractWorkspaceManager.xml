@@ -41,11 +41,11 @@
         <name>addViewPlugin</name>
         <reimplementedby refid="classmv_1_1WorkspaceManager_1a7a6b2b71006ffb0f2faf76d1c6118c13">addViewPlugin</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <type>plugin::ViewPlugin *</type>
           <declname>dockToViewPlugin</declname>
           <defval>nullptr</defval>
         </param>
@@ -96,7 +96,7 @@
         <name>addViewPluginFloated</name>
         <reimplementedby refid="classmv_1_1WorkspaceManager_1acfb1e253b544d5770bc33a74a7afbd39">addViewPluginFloated</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
         </param>
         <briefdescription>
@@ -125,7 +125,7 @@
         <name>isolateViewPlugin</name>
         <reimplementedby refid="classmv_1_1WorkspaceManager_1a67069127d26ddb2b2b806942a549fb9d">isolateViewPlugin</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
         </param>
         <param>
@@ -164,7 +164,7 @@
         <definition>virtual QWidget* mv::AbstractWorkspaceManager::getWidget</definition>
         <argsstring>()=0</argsstring>
         <name>getWidget</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1ad62c0380286599aa003f26f6ac1dae0c">getWidget</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a564704d2c24c3576ccc9a5f9838adaa5">getWidget</reimplementedby>
         <briefdescription>
 <para>Get workspace widget. </para>
         </briefdescription>
@@ -182,7 +182,7 @@
         <definition>virtual QMenu* mv::AbstractWorkspaceManager::getMenu</definition>
         <argsstring>(QWidget *parent=nullptr)=0</argsstring>
         <name>getMenu</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a8f54d8db1f9277969ed4ad9dc0f4b04f">getMenu</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a97be94a2b88bd1bf258f5108d27b7d1a">getMenu</reimplementedby>
         <param>
           <type>QWidget *</type>
           <declname>parent</declname>
@@ -557,7 +557,7 @@
         <definition>virtual const Workspace* mv::AbstractWorkspaceManager::getCurrentWorkspace</definition>
         <argsstring>() const =0</argsstring>
         <name>getCurrentWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a6b504d4859bad8ae2931d9e69a85ef5a">getCurrentWorkspace</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a49b59222090b6583e7c6c98a04709cb4">getCurrentWorkspace</reimplementedby>
         <briefdescription>
 <para>Get current workspace. </para>
         </briefdescription>
@@ -575,7 +575,7 @@
         <definition>virtual Workspace* mv::AbstractWorkspaceManager::getCurrentWorkspace</definition>
         <argsstring>()=0</argsstring>
         <name>getCurrentWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a5be5af4cd854ec52961b5994a85cc66f">getCurrentWorkspace</reimplementedby>
+        <reimplementedby refid="classmv_1_1WorkspaceManager_1a3598741411b487cbc83b645c83553616">getCurrentWorkspace</reimplementedby>
         <briefdescription>
 <para>Get current workspace. </para>
         </briefdescription>
@@ -851,16 +851,13 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="5">
+      <node id="4">
         <label>mv::WorkspaceManager</label>
         <link refid="classmv_1_1WorkspaceManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -868,8 +865,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -881,9 +876,6 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -891,8 +883,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -912,7 +902,7 @@
       <member refid="classmv_1_1AbstractWorkspaceManager_1a4c0edc4849b8ab8006bf4f6720605266" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>beginLoadWorkspace</name></member>
       <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>beginReset</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a4b90463b979c222e8dd0d7001a60a4e4" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>beginSaveWorkspace</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>Direction</name></member>
       <member refid="classmv_1_1AbstractManager_1a71b643dc064479890a1bf53d6cfd1a86" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>endInitialization</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a68355e25668e646ba43ee0f91d390674" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>endLoadWorkspace</name></member>
@@ -920,10 +910,10 @@
       <member refid="classmv_1_1AbstractWorkspaceManager_1a98f5e0c79ec6a069650f96f084180263" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>endSaveWorkspace</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a9d1288c427f2f816c84381b834d8bde0" prot="public" virt="pure-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>getCurrentWorkspace</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1ae80987822d7df3c7062360bc1432409e" prot="public" virt="pure-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>getCurrentWorkspace</name></member>
       <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>getIcon</name></member>
@@ -944,8 +934,8 @@
       <member refid="classmv_1_1AbstractWorkspaceManager_1a1016af09272f6beec01ba9b0e4f07441" prot="public" virt="pure-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>importWorkspaceFromProjectFile</name></member>
       <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>isInitializing</name></member>
@@ -975,8 +965,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toJsonFile</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a0148f53f5a4b398240ac0ebae373332c" prot="public" virt="pure-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toPreviewImage</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a63bcb18a7be63c8b411ec898acc187c8" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>workspaceAboutToBeCreated</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a769301795dac202881e2ad58e9d95a3b" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>workspaceAboutToBeLoaded</name></member>
       <member refid="classmv_1_1AbstractWorkspaceManager_1a2450ec023ab738628208a66b6dd34c72" prot="public" virt="non-virtual"><scope>mv::AbstractWorkspaceManager</scope><name>workspaceAboutToBeSaved</name></member>

@@ -5,9 +5,7 @@
     <includes refid="ManiVaultGlobals_8h" local="yes">ManiVaultGlobals.h</includes>
     <includes refid="Vector2f_8h" local="yes">Vector2f.h</includes>
     <includedby refid="RectangleAction_8h" local="yes">RectangleAction.h</includedby>
-    <includedby refid="Bounds_8cpp" local="yes">Bounds.cpp</includedby>
     <includedby refid="PointRenderer_8h" local="yes">PointRenderer.h</includedby>
-    <includedby refid="DensityComputation_8cpp" local="yes">DensityComputation.cpp</includedby>
     <includedby refid="DensityComputation_8h" local="yes">DensityComputation.h</includedby>
     <incdepgraph>
       <node id="1">
@@ -45,12 +43,12 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6">
+      <node id="7">
         <label>Renderer2D.h</label>
         <link refid="Renderer2D_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -58,16 +56,16 @@
         <link refid="DecimalRectangleAction_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="12">
         <label>MeanShift.h</label>
         <link refid="MeanShift_8h_source"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>DensityRenderer.h</label>
         <link refid="DensityRenderer_8h_source"/>
       </node>
@@ -76,25 +74,25 @@
         <link refid="Bounds_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>Navigator2D.h</label>
         <link refid="Navigator2D_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>PointRenderer.h</label>
         <link refid="PointRenderer_8h_source"/>
       </node>
-      <node id="4">
+      <node id="5">
         <label>NavigationAction.h</label>
         <link refid="NavigationAction_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -108,10 +106,10 @@
       <node id="10">
         <label>IntegralRectangleAction.h</label>
         <link refid="IntegralRectangleAction_8h_source"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="4">
         <label>Actions.h</label>
         <link refid="Actions_8h_source"/>
       </node>
@@ -158,7 +156,7 @@
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getWidth()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_right<sp/>-<sp/>_left;<sp/>}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getHeight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_top<sp/>-<sp/>_bottom;<sp/>}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Vector2f" kindref="compound">Vector2f</ref><sp/>getCenter()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>(_left<sp/>+<sp/>_right)<sp/>/<sp/>2,<sp/>(_bottom<sp/>+<sp/>_top)<sp/>/<sp/>2<sp/>};<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2f<sp/>getCenter()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<sp/>(_left<sp/>+<sp/>_right)<sp/>/<sp/>2,<sp/>(_bottom<sp/>+<sp/>_top)<sp/>/<sp/>2<sp/>};<sp/>}</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getLeft()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_left;<sp/>}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>getRight()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_right;<sp/>}</highlight></codeline>

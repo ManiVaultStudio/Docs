@@ -7,7 +7,6 @@
     <includes local="no">QDebug</includes>
     <includes local="no">QColor</includes>
     <includes local="no">QRandomGenerator</includes>
-    <includedby refid="Cluster_8cpp" local="yes">Cluster.cpp</includedby>
     <includedby refid="ClusterData_8h" local="yes">ClusterData.h</includedby>
     <includedby refid="ClustersModel_8h" local="yes">ClustersModel.h</includedby>
     <incdepgraph>
@@ -45,16 +44,16 @@
       <node id="6">
         <label>ClustersActionWidget.h</label>
         <link refid="ClustersActionWidget_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>ClustersAction.h</label>
-        <link refid="ClustersAction_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="3">
+        <label>ClustersAction.h</label>
+        <link refid="ClustersAction_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>InfoAction.h</label>
         <link refid="ClusterData_2src_2InfoAction_8h_source"/>
       </node>
@@ -77,7 +76,7 @@
       <node id="5">
         <label>ClustersModel.h</label>
         <link refid="ClustersModel_8h_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -188,29 +187,29 @@
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCluster" kindref="compound">Cluster</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>color<sp/>=<sp/>Qt::gray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/>indices<sp/>=<sp/>std::vector&lt;std::uint32_t&gt;());</highlight></codeline>
+<codeline lineno="30" refid="classCluster_1a508b5c90bd031026ee10b14f72924f21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCluster_1a508b5c90bd031026ee10b14f72924f21" kindref="member">Cluster</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>color<sp/>=<sp/>Qt::gray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/>indices<sp/>=<sp/>std::vector&lt;std::uint32_t&gt;());</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Getters/setters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>getName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="classCluster_1a41547c3fd912e04459d328e43f917f3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classCluster_1a41547c3fd912e04459d328e43f917f3a" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="43" refid="classCluster_1a98243ba6c17d3238374eea2604db789d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a98243ba6c17d3238374eea2604db789d" kindref="member">setName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>getId()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="classCluster_1a71311014ed11d70ff7b18516b418b1c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classCluster_1a71311014ed11d70ff7b18516b418b1c3" kindref="member">getId</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setId(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55" refid="classCluster_1acd4677ce8774986d608fbb554522fdc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1acd4677ce8774986d608fbb554522fdc8" kindref="member">setId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/>getColor()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61" refid="classCluster_1a757c06b9bca5aa1cf9c5b94232669395" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="classCluster_1a757c06b9bca5aa1cf9c5b94232669395" kindref="member">getColor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setColor(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>color);</highlight></codeline>
+<codeline lineno="67" refid="classCluster_1a62775c2268db9db4e6db8e621a64a389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a62775c2268db9db4e6db8e621a64a389" kindref="member">setColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QColor&amp;<sp/>color);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/>getIndices()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73" refid="classCluster_1a02c202daaf9b95d659b69e7578a15e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/><ref refid="classCluster_1a02c202daaf9b95d659b69e7578a15e6f" kindref="member">getIndices</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/>getIndices();</highlight></codeline>
+<codeline lineno="79" refid="classCluster_1a6eaeac4141cdb9e255114d7c9c475dd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::uint32_t&gt;&amp;<sp/><ref refid="classCluster_1a6eaeac4141cdb9e255114d7c9c475dd1" kindref="member">getIndices</ref>();</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint32_t<sp/>getNumberOfIndices()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85" refid="classCluster_1add3e38ef44709ece62af88eb7b45698c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint32_t<sp/><ref refid="classCluster_1add3e38ef44709ece62af88eb7b45698c" kindref="member">getNumberOfIndices</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setIndices(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>int&gt;&amp;<sp/>indices);</highlight></codeline>
+<codeline lineno="91" refid="classCluster_1aaaa73690fd033dffa0539245a6d3776b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1aaaa73690fd033dffa0539245a6d3776b" kindref="member">setIndices</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>int&gt;&amp;<sp/>indices);</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94" refid="classCluster_1a8135bb52fc13b40358434d6d7133052d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;&amp;<sp/><ref refid="classCluster_1a8135bb52fc13b40358434d6d7133052d" kindref="member">getMedian</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_median;<sp/>}</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>getMedian()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_median;<sp/>}</highlight></codeline>
@@ -221,11 +220,11 @@
 <codeline lineno="102" refid="classCluster_1ac16762dcf5ce45088dfdcb8b834b1b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;&amp;<sp/><ref refid="classCluster_1ac16762dcf5ce45088dfdcb8b834b1b70" kindref="member">getStandardDeviation</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_stddev;<sp/>}</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>getStandardDeviation()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_stddev;<sp/>}</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>colorizeClusters(QVector&lt;Cluster&gt;&amp;<sp/>clusters,<sp/>std::int32_t<sp/>randomSeed<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="110" refid="classCluster_1a6e6174e1e71ed6a555a2d6211aa07f61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a6e6174e1e71ed6a555a2d6211aa07f61" kindref="member">colorizeClusters</ref>(QVector&lt;Cluster&gt;&amp;<sp/>clusters,<sp/>std::int32_t<sp/>randomSeed<sp/>=<sp/>0);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>colorizeClusters(QVector&lt;Cluster&gt;&amp;<sp/>clusters,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>colorMapImage);</highlight></codeline>
+<codeline lineno="117" refid="classCluster_1a2ad922b7da8a50cbd1d8947c9500b7e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a2ad922b7da8a50cbd1d8947c9500b7e3" kindref="member">colorizeClusters</ref>(QVector&lt;Cluster&gt;&amp;<sp/>clusters,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>colorMapImage);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCluster" kindref="compound">Cluster</ref><sp/>copy()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123" refid="classCluster_1a6240d4c405c86b6feb1dd7e6a9a72222" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCluster" kindref="compound">Cluster</ref><sp/><ref refid="classCluster_1a6240d4c405c86b6feb1dd7e6a9a72222" kindref="member">copy</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129" refid="classCluster_1a3009698f59567212aeb0489394fcde2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCluster_1a3009698f59567212aeb0489394fcde2a" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCluster" kindref="compound">Cluster</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rhs._name<sp/>!=<sp/>_name)</highlight></codeline>
@@ -264,7 +263,7 @@
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>QDebug<sp/>operator<sp/>&lt;&lt;<sp/>(QDebug<sp/>debug,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCluster" kindref="compound">Cluster</ref>&amp;<sp/>cluster)</highlight></codeline>
 <codeline lineno="170"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>debug.nospace()<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a41547c3fd912e04459d328e43f917f3a" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a757c06b9bca5aa1cf9c5b94232669395" kindref="member">getColor</ref>().name(QColor::HexRgb)<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a1e6e6f49f3415a1216999acaef1f8603" kindref="member">getIndices</ref>();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>debug.nospace()<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a41547c3fd912e04459d328e43f917f3a" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a757c06b9bca5aa1cf9c5b94232669395" kindref="member">getColor</ref>().name(QColor::HexRgb)<sp/>&lt;&lt;<sp/>cluster.<ref refid="classCluster_1a02c202daaf9b95d659b69e7578a15e6f" kindref="member">getIndices</ref>();</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>debug.space();</highlight></codeline>
 <codeline lineno="174"><highlight class="normal">}</highlight></codeline>

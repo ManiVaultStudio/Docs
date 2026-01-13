@@ -2,6 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="structmv_1_1util_1_1FileDownloader_1_1ISink" kind="struct" language="C++" prot="protected" abstract="yes">
     <compoundname>mv::util::FileDownloader::ISink</compoundname>
+    <derivedcompoundref refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink" prot="public" virt="non-virtual">mv::util::FileDownloader::ByteArraySink</derivedcompoundref>
+    <derivedcompoundref refid="classmv_1_1util_1_1FileDownloader_1_1FileSink" prot="public" virt="non-virtual">mv::util::FileDownloader::FileSink</derivedcompoundref>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -41,8 +43,6 @@
         <definition>virtual bool mv::util::FileDownloader::ISink&lt; T &gt;::open</definition>
         <argsstring>(QNetworkReply *reply, const QUrl &amp;url, const QString &amp;targetDirectory, bool overwriteAllowed, QString *error)=0</argsstring>
         <name>open</name>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1FileSink_1a1a208f8b4e6165af3faa24fc434264ed">open</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a3199913cb9d846af8aefc84377fd9c58">open</reimplementedby>
         <param>
           <type>QNetworkReply *</type>
           <declname>reply</declname>
@@ -121,8 +121,6 @@
         <definition>virtual bool mv::util::FileDownloader::ISink&lt; T &gt;::write</definition>
         <argsstring>(const QByteArray &amp;chunk, QString *error)=0</argsstring>
         <name>write</name>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1FileSink_1ad9e7c64a77970fa622c45f3fecc6ce9a">write</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a565deb851da76be10cfd35f56280cd49">write</reimplementedby>
         <param>
           <type>const QByteArray &amp;</type>
           <declname>chunk</declname>
@@ -165,8 +163,6 @@
         <definition>virtual bool mv::util::FileDownloader::ISink&lt; T &gt;::commit</definition>
         <argsstring>(QString *error)=0</argsstring>
         <name>commit</name>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1FileSink_1ace791f35f017385c4fc06ac1a80f7b86">commit</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a04a077c4816d8815fc4e70af052244f4">commit</reimplementedby>
         <param>
           <type>QString *</type>
           <declname>error</declname>
@@ -197,8 +193,6 @@
         <definition>virtual void mv::util::FileDownloader::ISink&lt; T &gt;::cancel</definition>
         <argsstring>() noexcept=0</argsstring>
         <name>cancel</name>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1FileSink_1a3a4c334989e0c24f573a47d7da3b6b1b">cancel</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1a75adaf2c088520b09301cb6b1d5ccc97">cancel</reimplementedby>
         <briefdescription>
 <para>Discards partial output. </para>
         </briefdescription>
@@ -213,8 +207,6 @@
         <definition>virtual Result mv::util::FileDownloader::ISink&lt; T &gt;::result</definition>
         <argsstring>() const =0</argsstring>
         <name>result</name>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1FileSink_1a1c7108b57d3fa9b9230f57a0dba19298">result</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink_1afcf6ec993481c79b80d018f31b663c6e">result</reimplementedby>
         <briefdescription>
 <para>Get the resulting value to emit into the promise. </para>
         </briefdescription>
@@ -232,6 +224,23 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mv::util::FileDownloader::FileSink&lt; QString &gt;</label>
+        <link refid="classmv_1_1util_1_1FileDownloader_1_1FileSink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mv::util::FileDownloader::ISink&lt; T &gt;</label>
+      </node>
+      <node id="2">
+        <label>mv::util::FileDownloader::ByteArraySink&lt; QByteArray &gt;</label>
+        <link refid="classmv_1_1util_1_1FileDownloader_1_1ByteArraySink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
     <location file="Docs/external/core/ManiVault/src/util/FileDownloader.h" line="44" column="5" bodyfile="Docs/external/core/ManiVault/src/util/FileDownloader.h" bodystart="44" bodyend="82"/>
     <listofallmembers>
       <member refid="structmv_1_1util_1_1FileDownloader_1_1ISink_1acd2fa8de8b1e33c63b56770b6fddd15c" prot="public" virt="pure-virtual"><scope>mv::util::FileDownloader::ISink</scope><name>cancel</name></member>

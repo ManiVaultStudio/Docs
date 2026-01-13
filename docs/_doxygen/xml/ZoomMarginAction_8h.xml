@@ -7,7 +7,6 @@
     <includes refid="DecimalAction_8h" local="no">actions/DecimalAction.h</includes>
     <includes local="no">QObject</includes>
     <includedby refid="NavigationAction_8h" local="yes">NavigationAction.h</includedby>
-    <includedby refid="ZoomMarginAction_8cpp" local="yes">ZoomMarginAction.cpp</includedby>
     <incdepgraph>
       <node id="47">
         <label>util/NumericalRange.h</label>
@@ -389,24 +388,24 @@
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ZoomMarginAction" kindref="compound">ZoomMarginAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
+<codeline lineno="36" refid="classmv_1_1gui_1_1ZoomMarginAction_1af234b2c47f1f6fffd6a11cdb318baea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INVOKABLE<sp/><ref refid="classmv_1_1gui_1_1ZoomMarginAction_1af234b2c47f1f6fffd6a11cdb318baea0" kindref="member">ZoomMarginAction</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classmv_1_1gui_1_1ZoomMarginAction_1a526e14823a1f99f7939a45131ccbc3cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1gui_1_1ZoomMarginAction_1a526e14823a1f99f7939a45131ccbc3cb" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51" refid="classmv_1_1gui_1_1ZoomMarginAction_1a6e15f8e112ee6d41e7e97f4b2ba143bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classmv_1_1gui_1_1ZoomMarginAction_1a6e15f8e112ee6d41e7e97f4b2ba143bf" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref>&amp;<sp/>getZoomMarginTypeAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_marginTypeAction;<sp/>}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1DecimalAction" kindref="compound">DecimalAction</ref>&amp;<sp/>getZoomMarginScreenAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_zoomMarginScreenAction;<sp/>}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1DecimalAction" kindref="compound">DecimalAction</ref>&amp;<sp/>getZoomMarginDataAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_zoomMarginDataAction;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>DecimalAction&amp;<sp/>getZoomMarginDataAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_zoomMarginDataAction;<sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">OptionAction</ref><sp/><sp/><sp/><sp/>_marginTypeAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1DecimalAction" kindref="compound">DecimalAction</ref><sp/><sp/><sp/>_zoomMarginScreenAction;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1DecimalAction" kindref="compound">DecimalAction</ref><sp/><sp/><sp/>_zoomMarginDataAction;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>OptionAction<sp/><sp/><sp/><sp/>_marginTypeAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>DecimalAction<sp/><sp/><sp/>_zoomMarginScreenAction;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>DecimalAction<sp/><sp/><sp/>_zoomMarginDataAction;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList<sp/>marginTypeOptions;<sp/></highlight></codeline>
 <codeline lineno="65"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>

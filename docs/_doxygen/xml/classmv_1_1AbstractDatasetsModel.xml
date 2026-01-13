@@ -104,18 +104,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classmv_1_1AbstractDatasetsModel_1afddff59efe55400d6c90a5ffbffc6e44" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1AbstractDatasetsModel_1a18231afe87e1bf83fba337be30dff14f" kindref="member">Column</ref>, <ref refid="structmv_1_1AbstractDatasetsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
-        <definition>QMap&lt; AbstractDatasetsModel::Column, AbstractDatasetsModel::ColumHeaderInfo &gt; mv::AbstractDatasetsModel::columnInfo</definition>
+      <memberdef kind="variable" id="classmv_1_1AbstractDatasetsModel_1a3461eaf8a890464dc0300c0e918fcbb4" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1AbstractDatasetsModel_1a18231afe87e1bf83fba337be30dff14f" kindref="member">Column</ref>, <ref refid="structmv_1_1AbstractDatasetsModel_1_1ColumHeaderInfo" kindref="compound">ColumHeaderInfo</ref> &gt;</type>
+        <definition>QMap&lt;Column, ColumHeaderInfo&gt; mv::AbstractDatasetsModel::columnInfo</definition>
         <argsstring></argsstring>
         <name>columnInfo</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1AbstractDatasetsModel_1a18231afe87e1bf83fba337be30dff14f" kindref="member">AbstractDatasetsModel::Column</ref>, <ref refid="structmv_1_1AbstractDatasetsModel_1_1ColumHeaderInfo" kindref="compound">AbstractDatasetsModel::ColumHeaderInfo</ref>&gt;({
-    { AbstractDatasetsModel::Column::Name, { &quot;Name&quot; , &quot;Name&quot;, &quot;Name of the dataset&quot; } },
-    { AbstractDatasetsModel::Column::Location, { &quot;&quot; , &quot;Enabled&quot;, &quot;Whether the dataset is enabled or not&quot; } },
-    { AbstractDatasetsModel::Column::ID, { &quot;ID&quot;,  &quot;ID&quot;, &quot;Globally unique identifier of the dataset&quot; } },
-    { AbstractDatasetsModel::Column::RawDataName, { &quot;Raw <ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref> name&quot;,  &quot;Raw <ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref> name&quot;, &quot;Name of the raw <ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>&quot; } },
-    { AbstractDatasetsModel::Column::SourceDatasetID, { &quot;Source dataset ID&quot;,  &quot;Source dataset ID&quot;, &quot;Globally unique identifier of the source dataset&quot; } }
-})</initializer>
         <briefdescription>
 <para>Column name and tooltip. </para>
         </briefdescription>
@@ -230,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="225" column="5" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="199" bodyend="210"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="225" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a919bf27778d6c8ce3cdba33cb0cc5eff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QModelIndex</type>
@@ -260,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="232" column="17" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="212" bodyend="230"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="232" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1aab5a785808756861c4b1767408d50a4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QModelIndex</type>
@@ -290,11 +283,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="239" column="17" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="232" bodyend="247"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="239" column="17"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1afb78ad235f515eb58973683a9f4ad2fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a5a5b76e0e128eafb8d3e0b173c01c96d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QStandardItem *</type>
-        <definition>QStandardItem * mv::AbstractDatasetsModel::getItemFromDataset</definition>
+        <definition>QStandardItem* mv::AbstractDatasetsModel::getItemFromDataset</definition>
         <argsstring>(const QString &amp;datasetId) const</argsstring>
         <name>getItemFromDataset</name>
         <param>
@@ -320,11 +313,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="246" column="19" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="249" bodyend="257"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="246" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a00f720c9366ef5a41b6321e311ec5034" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a8f4978ab544dcf864dddf1234e8bbfcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QStandardItem *</type>
-        <definition>QStandardItem * mv::AbstractDatasetsModel::getItemFromDataset</definition>
+        <definition>QStandardItem* mv::AbstractDatasetsModel::getItemFromDataset</definition>
         <argsstring>(Dataset&lt; DatasetImpl &gt; dataset) const</argsstring>
         <name>getItemFromDataset</name>
         <param>
@@ -350,11 +343,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="253" column="19" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="259" bodyend="270"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="253" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a59e92208438820cc81a01681e3aa024b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1ab17638e88a2894f3c3faf09a2d0b6bb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" kindref="member">PopulationMode</ref></type>
-        <definition>AbstractDatasetsModel::PopulationMode mv::AbstractDatasetsModel::getPopulationMode</definition>
+        <definition>PopulationMode mv::AbstractDatasetsModel::getPopulationMode</definition>
         <argsstring>() const</argsstring>
         <name>getPopulationMode</name>
         <briefdescription>
@@ -367,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="259" column="20" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="272" bodyend="275"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="259" column="20"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a4381b2171b7f9bee5d02d6a6eb6f0602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -395,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="265" column="10" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="277" bodyend="308"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="265" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1af0f2d47a92f42374197678da117b41cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Datasets</type>
@@ -412,11 +405,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="271" column="14" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="310" bodyend="313"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="271" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1ab45c0081556478d5618573ed1f2e0dcc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a8907dc592e986d83f36a365f9c8c23a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
-        <definition>Dataset&lt; DatasetImpl &gt; mv::AbstractDatasetsModel::getDataset</definition>
+        <definition>Dataset&lt;DatasetImpl&gt; mv::AbstractDatasetsModel::getDataset</definition>
         <argsstring>(std::int32_t rowIndex) const</argsstring>
         <name>getDataset</name>
         <param>
@@ -442,7 +435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="278" column="13" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="315" bodyend="323"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="278" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a8fa43fd44287f832e1dd7451aaba444d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -470,7 +463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="284" column="10" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="325" bodyend="332"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="284" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a38458fafc4bd689efd9a3421992c03a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref> &amp;</type>
@@ -487,9 +480,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a33e1eb91bbef6e22108c2544f22e4fa7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a98955b6bb02bb04649e087e02b9324fb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::AbstractDatasetsModel::addDataset</definition>
+        <definition>virtual void mv::AbstractDatasetsModel::addDataset</definition>
         <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)</argsstring>
         <name>addDataset</name>
         <reimplementedby refid="classmv_1_1DatasetsListModel_1a6e7ed06ef337bf4c28909dfdbacca29d">addDataset</reimplementedby>
@@ -514,11 +507,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="292" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="334" bodyend="337"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="292" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a70325f24efbe8c330414e87c8ec87dee" prot="protected" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1AbstractDatasetsModel_1a62cb65d30b44f7619a4a9171c6533917" prot="protected" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
         <type>void</type>
-        <definition>void mv::AbstractDatasetsModel::removeDataset</definition>
+        <definition>virtual void mv::AbstractDatasetsModel::removeDataset</definition>
         <argsstring>(Dataset&lt; DatasetImpl &gt; dataset) final</argsstring>
         <name>removeDataset</name>
         <param>
@@ -542,7 +535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="298" column="18" bodyfile="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.cpp" bodystart="339" bodyend="364"/>
+        <location file="Docs/external/core/ManiVault/src/models/AbstractDatasetsModel.h" line="298" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -556,9 +549,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QStandardItemModel</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -567,8 +557,6 @@
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="1">
         <label>mv::AbstractDatasetsModel</label>
@@ -576,7 +564,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::DatasetsListModel</label>
         <link refid="classmv_1_1DatasetsListModel"/>
         <childnode refid="1" relation="public-inheritance">
@@ -585,13 +573,6 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QStandardItemModel</label>
-      </node>
-      <node id="5">
-        <label>QMap&lt; Column, mv::AbstractDatasetsModel::ColumHeaderInfo &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -600,16 +581,11 @@
         <link refid="classmv_1_1StandardItemModel"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="1">
         <label>mv::AbstractDatasetsModel</label>
         <link refid="classmv_1_1AbstractDatasetsModel"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>columnInfo</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
@@ -619,27 +595,27 @@
       <member refid="classmv_1_1AbstractDatasetsModel_1a059c5aba1c28dfc9a3d71bd19accdec2" prot="private" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>_populationMode</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a5439133eee529a70fd93bc3e6152a527" prot="private" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>_showIconAction</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a01e1045219263974cad3287e5eab373f" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>AbstractDatasetsModel</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1a33e1eb91bbef6e22108c2544f22e4fa7" prot="protected" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>addDataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a98955b6bb02bb04649e087e02b9324fb" prot="protected" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>addDataset</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a18231afe87e1bf83fba337be30dff14f" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>Column</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1afddff59efe55400d6c90a5ffbffc6e44" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>columnInfo</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>createId</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a3461eaf8a890464dc0300c0e918fcbb4" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>columnInfo</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>createId</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>Direction</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>fromParentVariantMap</name></member>
       <member refid="classmv_1_1StandardItemModel_1a48cabf7556ecbe0894777c7143048fcc" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1ab45c0081556478d5618573ed1f2e0dcc" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getDataset</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a8907dc592e986d83f36a365f9c8c23a3" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getDataset</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1af0f2d47a92f42374197678da117b41cd" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getDatasets</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getId</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a919bf27778d6c8ce3cdba33cb0cc5eff" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getIndexFromDataset</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1aab5a785808756861c4b1767408d50a4a" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getIndexFromDataset</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1afb78ad235f515eb58973683a9f4ad2fe" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getItemFromDataset</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1a00f720c9366ef5a41b6321e311ec5034" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getItemFromDataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a5a5b76e0e128eafb8d3e0b173c01c96d" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getItemFromDataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a8f4978ab544dcf864dddf1234e8bbfcb" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getItemFromDataset</name></member>
       <member refid="classmv_1_1StandardItemModel_1a9bcf41a2edf839be4fcab336f426d498" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getNumberOfRowsAction</name></member>
       <member refid="classmv_1_1StandardItemModel_1af393045fb674cbccaa157e4c29f8dbcd" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getNumberOfRowsAction</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1a59e92208438820cc81a01681e3aa024b" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getPopulationMode</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1ab17638e88a2894f3c3faf09a2d0b6bb2" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getPopulationMode</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getSerializationCountTo</name></member>
@@ -647,15 +623,15 @@
       <member refid="classmv_1_1StandardItemModel_1ae62bdb6f37584ae46a25ea5504817db5" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>getSettingsPrefix</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a38458fafc4bd689efd9a3421992c03a7" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>getShowIconAction</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1aad85754f188b769ff61150eaf36106c4" prot="private" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>Item</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a3bb166d5843f4ef17791915334cc5353" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>makeUnique</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>operator!=</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>operator==</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1ab0daaa0eba6db9050989e6e80ad145b4" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>PopulationMode</name></member>
       <member refid="classmv_1_1StandardItemModel_1aea0878d70c5241174881b2470cbfa228" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>populationModeChanged</name></member>
-      <member refid="classmv_1_1AbstractDatasetsModel_1a70325f24efbe8c330414e87c8ec87dee" prot="protected" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>removeDataset</name></member>
+      <member refid="classmv_1_1AbstractDatasetsModel_1a62cb65d30b44f7619a4a9171c6533917" prot="protected" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>removeDataset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>Serializable</name></member>
       <member refid="classmv_1_1AbstractDatasetsModel_1a8fa43fd44287f832e1dd7451aaba444d" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>setDatasets</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>setId</name></member>
@@ -667,7 +643,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractDatasetsModel</scope><name>toJsonFile</name></member>
       <member refid="classmv_1_1StandardItemModel_1a918ca27dd22e16d4aa2b8b98475f27d4" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::AbstractDatasetsModel</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractDatasetsModel</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

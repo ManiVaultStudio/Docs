@@ -10,7 +10,6 @@
         <definition>const QStringList mv::gui::PluginLearningCenterAction::alignmentOptions</definition>
         <argsstring></argsstring>
         <name>alignmentOptions</name>
-        <initializer>= { &quot;TopLeft&quot;, &quot;TopRight&quot;, &quot;BottomLeft&quot;, &quot;BottomRight&quot; }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -19,17 +18,11 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="224" column="30" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" bodystart="224" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmv_1_1gui_1_1PluginLearningCenterAction_1af1e828924294e8aab9c4f5e617731a9f" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classmv_1_1gui_1_1PluginLearningCenterAction_1aa8783085776a6b16f093232a766aa629" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; Qt::Alignment &gt;</type>
-        <definition>const std::vector&lt; Qt::Alignment &gt; mv::gui::PluginLearningCenterAction::alignmentFlags</definition>
+        <definition>const std::vector&lt;Qt::Alignment&gt; mv::gui::PluginLearningCenterAction::alignmentFlags</definition>
         <argsstring></argsstring>
         <name>alignmentFlags</name>
-        <initializer>= {
-        Qt::AlignTop | Qt::AlignLeft,
-        Qt::AlignTop | Qt::AlignRight,
-        Qt::AlignBottom | Qt::AlignLeft,
-        Qt::AlignBottom | Qt::AlignRight
-}</initializer>
         <briefdescription>
 <para>Names of the supported alignments in the case of a view plugin. </para>
         </briefdescription>
@@ -42,7 +35,7 @@
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1gui_1_1PluginLearningCenterAction_1afb13bad51f3f89d4ce4f3e70fb5b8fcb" prot="private" static="no" mutable="no">
-        <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+        <type>plugin::Plugin *</type>
         <definition>plugin::Plugin* mv::gui::PluginLearningCenterAction::_plugin</definition>
         <argsstring></argsstring>
         <name>_plugin</name>
@@ -231,7 +224,7 @@
         <argsstring></argsstring>
         <name>plugin::ViewPlugin</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref></type>
+          <type>plugin::ViewPlugin</type>
         </param>
         <briefdescription>
 <para>Add learning center overlay widget. </para>
@@ -244,9 +237,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a44994473de8c8ef6bd30a09cc8b7a290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a7bc38a6cd35a69d67ef001a02f334cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Q_INVOKABLE</type>
-        <definition>mv::gui::PluginLearningCenterAction::PluginLearningCenterAction</definition>
+        <definition>Q_INVOKABLE mv::gui::PluginLearningCenterAction::PluginLearningCenterAction</definition>
         <argsstring>(QObject *parent, const QString &amp;title)</argsstring>
         <name>PluginLearningCenterAction</name>
         <param>
@@ -282,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="47" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="30" bodyend="90"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="47" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a0c3dfa7f164d467dbbbf5bc376d820c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -290,7 +283,7 @@
         <argsstring>(plugin::Plugin *plugin)</argsstring>
         <name>initialize</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <type>plugin::Plugin *</type>
           <declname>plugin</declname>
         </param>
         <briefdescription>
@@ -310,14 +303,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="53" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="92" bodyend="105"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="53" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a55ad80dcb35a35f1c0de6aa0e50f96cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a49bd725c50ec4d5c66c7e8071fd2a7e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>QMenu *</type>
-        <definition>QMenu * mv::gui::PluginLearningCenterAction::getContextMenu</definition>
+        <definition>QMenu* mv::gui::PluginLearningCenterAction::getContextMenu</definition>
         <argsstring>(QWidget *parent=nullptr) override</argsstring>
         <name>getContextMenu</name>
-        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1ad30b3578eca15001e4014d301a9dc606">getContextMenu</reimplements>
+        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1aeee874a643bdbdead3de24d61af4e60e">getContextMenu</reimplements>
         <param>
           <type>QWidget *</type>
           <declname>parent</declname>
@@ -342,11 +335,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="60" column="11" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="107" bodyend="117"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="60" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a655ab56b46b84953396e5dbca3d219b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a764c20dafb06fac07c66e4a6a216f95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QMenu *</type>
-        <definition>QMenu * mv::gui::PluginLearningCenterAction::getAlignmentContextMenu</definition>
+        <definition>QMenu* mv::gui::PluginLearningCenterAction::getAlignmentContextMenu</definition>
         <argsstring>(QWidget *parent=nullptr)</argsstring>
         <name>getAlignmentContextMenu</name>
         <param>
@@ -373,11 +366,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="67" column="11" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="119" bodyend="139"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="67" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a0d09755c25ad1239aef480ee452902ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a2628bb22093c383bc473b1284e4377d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1ViewPluginLearningCenterOverlayWidget" kindref="compound">ViewPluginLearningCenterOverlayWidget</ref> *</type>
-        <definition>ViewPluginLearningCenterOverlayWidget * mv::gui::PluginLearningCenterAction::getViewPluginOverlayWidget</definition>
+        <definition>ViewPluginLearningCenterOverlayWidget* mv::gui::PluginLearningCenterAction::getViewPluginOverlayWidget</definition>
         <argsstring>() const</argsstring>
         <name>getViewPluginOverlayWidget</name>
         <briefdescription>
@@ -390,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="73" column="43" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="141" bodyend="144"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="73" column="43"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a640b3dda79f96ddf3a1f7351a40367fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>Qt::Alignment</type>
@@ -407,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="79" column="19" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="146" bodyend="154"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="79" column="19"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1adea2f272b487ff6f4c3be316831bfdb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -435,11 +428,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="85" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="156" bodyend="162"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="85" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a0e1fef961aaab5130af060f86fb25ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ad8bcc67934822234ad98974557f9f8d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1plugin_1_1PluginMetadata" kindref="compound">plugin::PluginMetadata</ref> &amp;</type>
-        <definition>plugin::PluginMetadata &amp; mv::gui::PluginLearningCenterAction::getPluginMetadata</definition>
+        <definition>plugin::PluginMetadata&amp; mv::gui::PluginLearningCenterAction::getPluginMetadata</definition>
         <argsstring>()</argsstring>
         <name>getPluginMetadata</name>
         <briefdescription>
@@ -452,11 +445,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="91" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="164" bodyend="167"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="91" column="28"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a4449dc07cc9dc8fd696b45fe3fb174f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a749ef7e69f2229695a8c8475a87f0e29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classmv_1_1plugin_1_1PluginMetadata" kindref="compound">plugin::PluginMetadata</ref> &amp;</type>
-        <definition>const plugin::PluginMetadata &amp; mv::gui::PluginLearningCenterAction::getPluginMetaData</definition>
+        <definition>const plugin::PluginMetadata&amp; mv::gui::PluginLearningCenterAction::getPluginMetaData</definition>
         <argsstring>() const</argsstring>
         <name>getPluginMetaData</name>
         <briefdescription>
@@ -469,7 +462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="97" column="34" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="169" bodyend="172"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="97" column="34"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ae4aa1713ce7bd742d13416f798744061" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -486,7 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="110" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="180" bodyend="183"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="110" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a44bd816d1649e282dea899e28efedabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -514,7 +507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="118" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="185" bodyend="188"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="118" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ab40ee4ab0fa8f01773913694c8c509fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -542,7 +535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="124" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="190" bodyend="193"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="124" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a3c00066cbf9b5aeef0506e1e858d4ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -570,7 +563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="130" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="195" bodyend="198"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="130" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a7a7721964a2de43342ab915e09454505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -598,11 +591,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="136" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="200" bodyend="203"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="136" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a9b5477a5f1ae060e6ae295a8e3875a9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ad12bed5150da86520d4c0014c4b65f6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const util::LearningCenterVideos &amp;</type>
-        <definition>const LearningCenterVideos &amp; mv::gui::PluginLearningCenterAction::getVideos</definition>
+        <definition>const util::LearningCenterVideos&amp; mv::gui::PluginLearningCenterAction::getVideos</definition>
         <argsstring>() const</argsstring>
         <name>getVideos</name>
         <briefdescription>
@@ -615,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="142" column="38" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="205" bodyend="208"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="142" column="38"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ad4599781e759ae9f777c127a08802895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -643,7 +636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="150" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="210" bodyend="213"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="150" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1aa2b099f546de3d3efa7d69e2f451c67d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -671,7 +664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="156" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="215" bodyend="218"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="156" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1aebb0f1f927f4459e492f07fc83db3dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -699,7 +692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="162" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="220" bodyend="223"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="162" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a2e27e9d5e8048d1237cdd0ef70ede4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -727,11 +720,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="168" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="225" bodyend="228"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="168" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a247abddb9f59d9536f0ae0fe547a7843" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a916416f32230ab99e6a5970ea12f0e45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const util::LearningCenterTutorials &amp;</type>
-        <definition>const util::LearningCenterTutorials &amp; mv::gui::PluginLearningCenterAction::getTutorials</definition>
+        <definition>const util::LearningCenterTutorials&amp; mv::gui::PluginLearningCenterAction::getTutorials</definition>
         <argsstring>() const</argsstring>
         <name>getTutorials</name>
         <briefdescription>
@@ -744,16 +737,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="174" column="41" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="230" bodyend="233"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="174" column="41"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1ad5acbf876a3f09dca6c54fbc7b679d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>void mv::gui::PluginLearningCenterAction::fromVariantMap</definition>
         <argsstring>(const QVariantMap &amp;variantMap) override</argsstring>
         <name>fromVariantMap</name>
-        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a55f780f706b32e9d0b8e87ba26756db5">fromVariantMap</reimplements>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf">fromVariantMap</reimplements>
         <param>
-          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
+          <type>const QVariantMap &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -773,14 +766,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="196" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="250" bodyend="256"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="196" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a2f75a69c808a542d1b85b847eb295688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
+        <type>QVariantMap</type>
         <definition>QVariantMap mv::gui::PluginLearningCenterAction::toVariantMap</definition>
         <argsstring>() const override</argsstring>
         <name>toVariantMap</name>
-        <reimplements refid="classmv_1_1gui_1_1WidgetAction_1a018fd49dcba20d6c069c8e4ae469f887">toVariantMap</reimplements>
+        <reimplements refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e">toVariantMap</reimplements>
         <briefdescription>
 <para>Save widget action to variant. </para>
         </briefdescription>
@@ -791,7 +784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="202" column="17" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="258" bodyend="266"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="202" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a015a220c99b0a1e1f28e6187ab22e355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">TriggerAction</ref> &amp;</type>
@@ -1002,7 +995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="102" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="174" bodyend="178"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="102" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1021,11 +1014,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="182" column="10" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="235" bodyend="243"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="182" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1aab9221411d37ffcc498c349cf422a1ef" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref> *</type>
-        <definition>plugin::ViewPlugin * mv::gui::PluginLearningCenterAction::getViewPlugin</definition>
+      <memberdef kind="function" id="classmv_1_1gui_1_1PluginLearningCenterAction_1a754d57967c6a83da5e6525104361bce2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>mv::plugin::ViewPlugin *</type>
+        <definition>mv::plugin::ViewPlugin* mv::gui::PluginLearningCenterAction::getViewPlugin</definition>
         <argsstring>() const</argsstring>
         <name>getViewPlugin</name>
         <briefdescription>
@@ -1038,7 +1031,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="188" column="28" bodyfile="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.cpp" bodystart="245" bodyend="248"/>
+        <location file="Docs/external/core/ManiVault/src/actions/PluginLearningCenterAction.h" line="188" column="28"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1057,15 +1050,10 @@
         <link refid="classmv_1_1gui_1_1WidgetAction"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::util::Serializable</label>
-        <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
       <node id="3">
-        <label>QWidgetAction</label>
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
       <node id="1">
         <label>mv::gui::PluginLearningCenterAction</label>
@@ -1075,38 +1063,20 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="5">
-        <label>QMap&lt; Scope, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="6">
-        <label>std::vector&lt; Qt::Alignment &gt;</label>
-      </node>
       <node id="2">
         <label>mv::gui::WidgetAction</label>
         <link refid="classmv_1_1gui_1_1WidgetAction"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
-        <childnode refid="4" relation="public-inheritance">
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>scopeNames</edgelabel>
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::util::Serializable</label>
-        <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
       <node id="3">
-        <label>QWidgetAction</label>
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
       <node id="1">
         <label>mv::gui::PluginLearningCenterAction</label>
         <link refid="classmv_1_1gui_1_1PluginLearningCenterAction"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>alignmentFlags</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
@@ -1135,7 +1105,7 @@
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ab40ee4ab0fa8f01773913694c8c509fe" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>addVideos</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a3c00066cbf9b5aeef0506e1e858d4ec4" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>addVideos</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a7a7721964a2de43342ab915e09454505" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>addVideos</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1af1e828924294e8aab9c4f5e617731a9f" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>alignmentFlags</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1aa8783085776a6b16f093232a766aa629" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>alignmentFlags</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a027f000685536985df4dedf719d66d9f" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>alignmentOptions</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438ae58d2fb4a399869c95e856b078bd6e02" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>Api</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438a73c461c2075be67ccc739128474177c2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>ApiAndGui</name></member>
@@ -1147,51 +1117,51 @@
       <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>ConnectionContextFlag</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a43b025ad95f0f17c045bc05db3aea82b" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>ConnectionPermissionFlag</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a078c5841ca226601b53b0e1602d2189a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>connectionPermissionsChanged</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a8408d6403777741ad326c39aae7af595" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>connectToPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a678431fdc69cacb34374c9ce4dd5abc4" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>connectToPublicAction</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a36f726a73034d0979cf0c70171649364" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>connectToPublicActionByName</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a532db4b7ac9750f1ef06515300622395" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createCollapsedWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a14d31df1073e882b23f5360cf32a9314" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createCollapsedWidget</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createId</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a460431aa96c2ea2777e8778f5c5820f1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createLabelWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a242fcf0a03a6f918a98cb08d32bffeeb" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ab995fee58ba3403e8af3855912e3b9d3" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createCollapsedWidget</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createId</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1acb2f61ae027d1f0ad33657fb8ee9851e" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createLabelWidget</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a6f4d64e2651d3ae00e509f96a8b3ebf9" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createViewPluginOverlayWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a3dd7bc7c980aebef0fa558e3b491ba73" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a5802641a5529233b1d6c7a39db20674a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a55baff3ed38c1eb0374aa487946494e8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a48391d0a6a9c18b7a65163a931b9a21f" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a85e05886e38e4f50b768fee5d64caa8d" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a350ca82c4d62846c24e41ec5892aec0b" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a304312bbf8b85408eafdb2b482b3611d" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a34686bbad3d4db7d06553c10d9db5840" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>createWidget</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>Direction</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ae2529bb164aafc3c4070b640327e6e28" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>disconnectFromPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a00af0045a35b0b6cdcb16f8016eff324" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>disconnectFromPublicAction</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a3af6c81db1598cfdba9a95bcfcb653ee" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>findChildByPath</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a1d9cecb34d4911a7acbf542104fcfc4c" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>forceDisabledChanged</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1aaedaec06e61d0d6fa41847e90fafc6b7" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>forceHiddenChanged</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromParentVariantMap</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ad5acbf876a3f09dca6c54fbc7b679d5e" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a640b3dda79f96ddf3a1f7351a40367fe" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAlignment</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ae410e6cb1f1baf10156f4c3e94a56330" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAlignmentAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1af7a28943c4ab96116102c99e255299ba" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAlignmentAction</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a655ab56b46b84953396e5dbca3d219b3" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAlignmentContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a764c20dafb06fac07c66e4a6a216f95a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAlignmentContextMenu</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1aa8220572932c9f06819bbe924c2c88dc" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getAncestors</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a7540caa404e23eaa0dce21b1936f1e33" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getBadge</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afe6b5868ed9e4f347454e65b009f97f5" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getBadge</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a2e6147ac7db560d508f86f92d72203aa" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getChildren</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a65ade12e2e02e1253b4521813715d613" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getChildren</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a3f33628f63ccc845470ac4fed7660000" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getConfiguration</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1ac30e8fe64af7257b3c90b802063421e8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getConnectedActions</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ace57647882111fe55c6c76ee0d6b0195" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getConnectedActions</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af5716a362b311c726cdf5f672760ed7e" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getConnectedActions</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a31593792c90abea6192b8031b35d70b8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getConnectionPermissions</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a55ad80dcb35a35f1c0de6aa0e50f96cd" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getContextMenu</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a49bd725c50ec4d5c66c7e8071fd2a7e2" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getContextMenu</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1af5fb9fffdb596a2daaa51ed64805829f" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getDefaultWidgetFlags</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1abb34034d7f858960c2f04cd5b77021b5" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getDepth</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a56ac9cd5d6e9b85f26d72610b31cb364" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getDrag</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afd77f926c82b6979b5070752bbec06ba" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getDrag</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a9086d652ab747947773596e32222e18a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getForceDisabled</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1ab1a994eba796885d54adb8d4d6f12176" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getForceHidden</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1aaefbaf2e15cd339f78e820e518c37139" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getHideToolbarAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ab72bf44dc1ce0aa6a6b4d5a2f90470b3" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getHideToolbarAction</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ae9e505816d96baf2af0fb3c02e50ce64" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getHighlighting</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a4afdba6c5f6ffb5bf6af9ebd7ffc8256" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getHighlighting</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getId</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ad2f0fa0c888a2b590ae32a19dea42cac" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getLocation</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1aa4a079cca503bfa2f910b2b9e6ed2541" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getLocation</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ae5be527e79df3658750ea63f16ca3179" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getMoveToBottomLeftAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a6e166f725dfe8b8fa404ee0cd668914a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getMoveToBottomLeftAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1adc788063129eed5271e5c4dbe4129865" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getMoveToBottomRightAction</name></member>
@@ -1202,29 +1172,29 @@
       <member refid="classmv_1_1gui_1_1WidgetAction_1aed3b231ca89dd8f0a7ffe8f62f4451be" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getNumberOfChildren</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a25b0db7e8241a63fe99ab3535b902c98" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getOverrideSizeHint</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a837e0c553ecc5dc827beb2ec303c030c" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getParent</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a0e1fef961aaab5130af060f86fb25ad1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPluginMetadata</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a4449dc07cc9dc8fd696b45fe3fb174f3" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPluginMetaData</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ad8bcc67934822234ad98974557f9f8d7" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPluginMetadata</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a749ef7e69f2229695a8c8475a87f0e29" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPluginMetaData</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1aefb344bebaafd839ea0c6ae6ea613e82" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPopupSizeHint</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1adbb2bf8d8d928e72689618d3ea8bcdc4" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPublicAction</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a10f16d37bec0c499b91bdca859cd0b16" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPublicCopy</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1adb6389e11999f86c9913a50a0f31f67d" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getScope</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7b699aef0e7d081e86595064552bc721" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPublicAction</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a7018c1c6a8945d9152d8ea7544ee7cb3" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getPublicCopy</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1ae43778cfeb81b3e0da05dac4896ce5b7" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getScope</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSerializationCountTo</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSerializationName</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ace5d13867e3acc522502240374dc42e6" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSettingsPrefix</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1afa8460ee6ca0bf79acbce88c04375011" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSettingsPrefix</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1abb2ebd4506d3f2615d2ff1fddd253b3c" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getSortIndex</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a03973581d4846999bad47c76b6436aef" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getStretch</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a448650766f8f1e569b2297f83c7956c9" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getToolbarVisibleAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a42ab5469cc10d441962f648172a2e9b8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getToolbarVisibleAction</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a247abddb9f59d9536f0ae0fe547a7843" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getTutorials</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a916416f32230ab99e6a5970ea12f0e45" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getTutorials</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a2b208fc9b6a7700af5d5ca7f4e3acb6c" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getTypeString</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a9b5477a5f1ae060e6ae295a8e3875a9a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getVideos</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1ad12bed5150da86520d4c0014c4b65f6b" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getVideos</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a015a220c99b0a1e1f28e6187ab22e355" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewHelpAction</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1aa71de67214eea53bcaacbafc438dfa40" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewHelpAction</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1aab9221411d37ffcc498c349cf422a1ef" prot="private" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewPlugin</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a0d09755c25ad1239aef480ee452902ec" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewPluginOverlayWidget</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1add32862b8e8dde5824a8b8154942da33" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getWidget</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a754d57967c6a83da5e6525104361bce2" prot="private" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewPlugin</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a2628bb22093c383bc473b1284e4377d8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getViewPluginOverlayWidget</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a1466209e1c5fe2811e2c0333b82318b9" prot="protected" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getWidget</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a0d291cff25459ea085a9537cb3c65b3b" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>getWidgetConfigurationFunction</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a96028ad16d0e7bf21c52d31776709438aa8628c2735526660aa6615bc23823861" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>Gui</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a2bf72d2720cc811df5db71075fb93de8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>hasCacheState</name></member>
@@ -1238,8 +1208,8 @@
       <member refid="classmv_1_1gui_1_1WidgetAction_1a944ad9aac5d2880f8def64d59a0870a1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>idChanged</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a0c3dfa7f164d467dbbbf5bc376d820c1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a72146622fffd81ea51e6275443207d84" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>isChildOf</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a81d3f4b97802b0111989561f4c19df98" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>isChildOf</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a0031fa60ce15c2e726a7dbc6050ea2fd" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>isConfigurationFlagSet</name></member>
@@ -1268,7 +1238,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a36078c1b71c2178148e7d91900cf4eed" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>operator!=</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a6ea8e97055914178f2381d8c7457b3fe" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>operator==</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a4b4cbf929211d48347a68aac9b65240a" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>plugin::ViewPlugin</name></member>
-      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a44994473de8c8ef6bd30a09cc8b7a290" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>PluginLearningCenterAction</name></member>
+      <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a7bc38a6cd35a69d67ef001a02f334cdf" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>PluginLearningCenterAction</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a1e18aaf4dec9898caf9d7ce50fc4eeda" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>printChildren</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a6836cd10e93a37e704d5e3bb48a35633" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>publish</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1ab465b430862f31f21c165ebca8cbd626" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>reset</name></member>
@@ -1277,7 +1247,7 @@
       <member refid="classmv_1_1gui_1_1WidgetAction_1a56c5e548bef9f9f80faa914eab8b46d9" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>saveToSettings</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a50058b9083e844a9a98c1eb1dea33ca1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>Scope</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a5db48ba05b9b7a111a2c02ac871d0ea9" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>scopeChanged</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a4b4cbd3bf014155df6ca53e3664e58a8" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>scopeNames</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a788f71fd2b2df5be06aa13c0f12de5cd" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>scopeNames</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>Serializable</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1adea2f272b487ff6f4c3be316831bfdb2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setAlignment</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a14b9ef955812b41a197ec0a72b7fddf2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setConfiguration</name></member>
@@ -1293,8 +1263,8 @@
       <member refid="classmv_1_1gui_1_1WidgetAction_1a66d6dc95e4ecd824c668fbc014f792d3" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setForceHidden</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a90ed4e4c77ca27369362236f83a9cb52" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setHighlighted</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1af3992fedb9e5e8b1b8447ea63e4f92d2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setHighlighting</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1ae67cc54f020eac9010f865d42afe981b" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setIconByName</name></member>
-      <member refid="classmv_1_1gui_1_1WidgetAction_1a72a3987a5f66cc257cba329c36cdb5a7" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1a2627152fe163a0d6c41c6c02e5f860ea" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setIconByName</name></member>
+      <member refid="classmv_1_1gui_1_1WidgetAction_1af30a98ec7465a52d1e57cc6b2cd697c0" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setIconByName</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a2549c9a35c41e20875a9b1f4b8ac99a1" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setId</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1ae316a2eb6c10c00546bd6ddc8cdf5387" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setOverrideSizeHint</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a6dd2a2806d44c040edf2b053927a32ea" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>setPopupSizeHint</name></member>
@@ -1313,7 +1283,7 @@
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>toJsonFile</name></member>
       <member refid="classmv_1_1gui_1_1PluginLearningCenterAction_1a2f75a69c808a542d1b85b847eb295688" prot="public" virt="virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual" ambiguityscope="mv::util::Serializable::"><scope>mv::gui::PluginLearningCenterAction</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a9e9ed45ab52fb9460001a8fa5e0f6128" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>unHighlight</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1a5c1adde8d29bb43b73ab325c4dd499c2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>WidgetAction</name></member>
       <member refid="classmv_1_1gui_1_1WidgetAction_1af326e914083fa8d9ff38ac19b132f9c2" prot="public" virt="non-virtual"><scope>mv::gui::PluginLearningCenterAction</scope><name>widgetConfigurationFunctionChanged</name></member>

@@ -7,7 +7,6 @@
     <includes refid="Set_8h" local="no">Set.h</includes>
     <includes local="no">QColor</includes>
     <includes local="no">vector</includes>
-    <includedby refid="ColorData_8cpp" local="yes">ColorData.cpp</includedby>
     <incdepgraph>
       <node id="224">
         <label>Project.h</label>
@@ -2508,11 +2507,11 @@
     <innerclass refid="classColorDataFactory" prot="public">ColorDataFactory</innerclass>
       <sectiondef kind="var">
       <memberdef kind="variable" id="ColorData_8h_1abc832b5c571a2bec01207723825208eb" prot="public" static="no" mutable="no">
-        <type>const <ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref></type>
+        <type>const mv::DataType</type>
         <definition>const mv::DataType ColorType</definition>
         <argsstring></argsstring>
         <name>ColorType</name>
-        <initializer>= <ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref>(QString(&quot;Colors&quot;))</initializer>
+        <initializer>= mv::DataType(QString(&quot;Colors&quot;))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2543,17 +2542,17 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref><sp/>ColorType<sp/>=<sp/><ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref>(QString(</highlight><highlight class="stringliteral">&quot;Colors&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::DataType<sp/>ColorType<sp/>=<sp/>mv::DataType(QString(</highlight><highlight class="stringliteral">&quot;Colors&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Raw<sp/>Data</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classColorData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">COLORDATA_EXPORT<sp/><ref refid="classColorData" kindref="compound">ColorData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">mv::plugin::RawData</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">COLORDATA_EXPORT<sp/>ColorData<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::RawData</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classColorData" kindref="compound">ColorData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>*<sp/>factory)<sp/>:<sp/><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">mv::plugin::RawData</ref>(factory,<sp/>ColorType)<sp/>{<sp/>}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classColorData" kindref="compound">ColorData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ColorData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::PluginFactory*<sp/>factory)<sp/>:<sp/><ref refid="namespacemv" kindref="compound">mv</ref>::plugin::RawData(factory,<sp/>ColorType)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>~ColorData(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
@@ -2565,19 +2564,19 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;QColor&gt;<sp/>_colors;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="classColors" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">COLORDATA_EXPORT<sp/><ref refid="classColors" kindref="compound">Colors</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">mv::DatasetImpl</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">COLORDATA_EXPORT<sp/>Colors<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">mv::DatasetImpl</ref></highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classColors" kindref="compound">Colors</ref>(QString<sp/>dataName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mayUnderive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guid<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Colors(QString<sp/>dataName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mayUnderive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guid<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref>(dataName,<sp/>mayUnderive,<sp/>guid)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classColors" kindref="compound">Colors</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>~Colors()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="classColors_1a1ed7d26e19f5c053a80cd0266bbafc97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><ref refid="classColors_1a1ed7d26e19f5c053a80cd0266bbafc97" kindref="member">copy</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/>copy()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="59"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colors<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classColors" kindref="compound">Colors</ref>(getRawDataName());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>colors<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Colors(getRawDataName());</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colors-&gt;setText(text());</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colors-&gt;indices<sp/>=<sp/>indices;</highlight></codeline>
@@ -2585,7 +2584,7 @@
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(colors);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="classColors_1a62a1589e0d83b1f5c6ca3c44561be818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><ref refid="classColors_1a62a1589e0d83b1f5c6ca3c44561be818" kindref="member">createSubsetFromSelection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>parentDataSet<sp/>=<sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>visible<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/>createSubsetFromSelection(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>parentDataSet<sp/>=<sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>visible<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a90223622ff9123d3113ab7996818fb43" kindref="member">createSubsetFromSelection</ref>(getSelection(),<sp/>toSmartPointer(),<sp/>guiName,<sp/>parentDataSet,<sp/>visible);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
@@ -2616,23 +2615,23 @@
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Factory</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121" refid="classColorDataFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classColorDataFactory" kindref="compound">ColorDataFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1RawDataFactory" kindref="compound">mv::plugin::RawDataFactory</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ColorDataFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::RawDataFactory</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classmv_1_1plugin_1_1RawDataFactory" kindref="compound">mv::plugin::RawDataFactory</ref><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(mv::plugin::RawDataFactory<sp/>mv::plugin::PluginFactory)</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;studio.manivault.ColorData&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/></highlight><highlight class="stringliteral">&quot;ColorData.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classColorDataFactory" kindref="compound">ColorDataFactory</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>ColorDataFactory();</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classColorDataFactory" kindref="compound">ColorDataFactory</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>~ColorDataFactory()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getReadmeMarkdownUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getRepositoryUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">mv::plugin::RawData</ref>*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::plugin::RawData*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="146"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/ColorData/src/ColorData.h"/>

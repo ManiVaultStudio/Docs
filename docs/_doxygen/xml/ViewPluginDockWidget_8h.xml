@@ -11,12 +11,7 @@
     <includes local="no">QMenu</includes>
     <includes local="no">QMap</includes>
     <includedby refid="DockManager_8h" local="yes">DockManager.h</includedby>
-    <includedby refid="DockManager_8cpp" local="yes">DockManager.cpp</includedby>
     <includedby refid="ViewPluginsDockWidget_8h" local="yes">ViewPluginsDockWidget.h</includedby>
-    <includedby refid="LoadSystemViewMenu_8cpp" local="yes">LoadSystemViewMenu.cpp</includedby>
-    <includedby refid="ViewMenu_8cpp" local="yes">ViewMenu.cpp</includedby>
-    <includedby refid="ViewPluginDockWidget_8cpp" local="yes">ViewPluginDockWidget.cpp</includedby>
-    <includedby refid="WorkspaceManager_8cpp" local="yes">WorkspaceManager.cpp</includedby>
     <incdepgraph>
       <node id="18">
         <label>QMap</label>
@@ -1445,23 +1440,23 @@
       <node id="2">
         <label>DockManager.h</label>
         <link refid="DockManager_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="1" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>WorkspaceManager.h</label>
         <link refid="WorkspaceManager_8h_source"/>
       </node>
-      <node id="4">
+      <node id="3">
         <label>ViewPluginsDockWidget.h</label>
         <link refid="ViewPluginsDockWidget_8h_source"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -1469,7 +1464,7 @@
         <link refid="ViewPluginDockWidget_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -1546,49 +1541,49 @@
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101" refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title,<sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>viewPlugin,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109" refid="classViewPluginDockWidget_1ab93307726b13ef307fa5fe30f1e3b033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1ab93307726b13ef307fa5fe30f1e3b033" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>title,<sp/>mv::plugin::ViewPlugin*<sp/>viewPlugin,<sp/>QWidget*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1aaf2cf17bb3d3a678632053e1f9677a93" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap);</highlight></codeline>
+<codeline lineno="115" refid="classViewPluginDockWidget_1a18080767e55c30f418908411f43439c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1a18080767e55c30f418908411f43439c9" kindref="member">ViewPluginDockWidget</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1a8e451a32af7fc485b6e136b06a13ea19" kindref="member">~ViewPluginDockWidget</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118" refid="classViewPluginDockWidget_1a8e451a32af7fc485b6e136b06a13ea19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classViewPluginDockWidget_1a8e451a32af7fc485b6e136b06a13ea19" kindref="member">~ViewPluginDockWidget</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classViewPluginDockWidget_1a77d791268559255ac5ac65015130360f" kindref="member">getTypeString</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124" refid="classViewPluginDockWidget_1a77d791268559255ac5ac65015130360f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classViewPluginDockWidget_1a77d791268559255ac5ac65015130360f" kindref="member">getTypeString</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ad8df89b9b7d3c58c3a9ba1286315eede" kindref="member">initialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127" refid="classViewPluginDockWidget_1ad8df89b9b7d3c58c3a9ba1286315eede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ad8df89b9b7d3c58c3a9ba1286315eede" kindref="member">initialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ac6bacd46f94475b23a39947832bc17d5" kindref="member">loadViewPlugin</ref>();</highlight></codeline>
+<codeline lineno="130" refid="classViewPluginDockWidget_1ac6bacd46f94475b23a39947832bc17d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ac6bacd46f94475b23a39947832bc17d5" kindref="member">loadViewPlugin</ref>();</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/><ref refid="classViewPluginDockWidget_1a834af566ee9d5ff7d3f867c8a38bbbee" kindref="member">getViewPlugin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136" refid="classViewPluginDockWidget_1a23ee19406c98593f0f2d143aff63f8c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::plugin::ViewPlugin*<sp/><ref refid="classViewPluginDockWidget_1a23ee19406c98593f0f2d143aff63f8c0" kindref="member">getViewPlugin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a2bd1a3c2505d095b7fa9058b7cf16eb9" kindref="member">restoreViewPluginState</ref>();</highlight></codeline>
+<codeline lineno="139" refid="classViewPluginDockWidget_1a2bd1a3c2505d095b7fa9058b7cf16eb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a2bd1a3c2505d095b7fa9058b7cf16eb9" kindref="member">restoreViewPluginState</ref>();</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Title<sp/>bar<sp/>settings<sp/>menu</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu*<sp/><ref refid="classViewPluginDockWidget_1a892831b688761486f0d2673912b188ae" kindref="member">getSettingsMenu</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147" refid="classViewPluginDockWidget_1a2ff000a8b7803afcd14d878a031ced12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu*<sp/><ref refid="classViewPluginDockWidget_1a2ff000a8b7803afcd14d878a031ced12" kindref="member">getSettingsMenu</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a067dabef60319bd68b032cab91407333" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155" refid="classViewPluginDockWidget_1a067dabef60319bd68b032cab91407333" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a067dabef60319bd68b032cab91407333" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><ref refid="classViewPluginDockWidget_1a0fea18a9d9856b2c82111fe2f8896eb2" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161" refid="classViewPluginDockWidget_1a0fea18a9d9856b2c82111fe2f8896eb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classViewPluginDockWidget_1a0fea18a9d9856b2c82111fe2f8896eb2" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a63647c942f5eeaa9d6ca33f6078ad087" kindref="member">preRegisterSerializationTask</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>viewPluginDockWidgetId,<sp/><ref refid="classDockManager" kindref="compound">DockManager</ref>*<sp/>dockManager);</highlight></codeline>
+<codeline lineno="170" refid="classViewPluginDockWidget_1ac55c980b2b9337cf16e0a66f0d28b553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ac55c980b2b9337cf16e0a66f0d28b553" kindref="member">preRegisterSerializationTask</ref>(QObject*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>viewPluginDockWidgetId,<sp/><ref refid="classDockManager" kindref="compound">DockManager</ref>*<sp/>dockManager);</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/><ref refid="classViewPluginDockWidget_1af98aab8fa11b24b670a46822c7a089db" kindref="member">getSerializationTask</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>viewPluginDockWidgetId);</highlight></codeline>
+<codeline lineno="177" refid="classViewPluginDockWidget_1abf9c1b00f27fdc6b485eeb381efc13f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Task" kindref="compound">mv::Task</ref>*<sp/><ref refid="classViewPluginDockWidget_1abf9c1b00f27fdc6b485eeb381efc13f8" kindref="member">getSerializationTask</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>viewPluginDockWidgetId);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a3f9880e1042a2fff44ab3b621c86cfbe" kindref="member">removeAllSerializationTasks</ref>();</highlight></codeline>
+<codeline lineno="180" refid="classViewPluginDockWidget_1ac82f40555ad8ba2fd377e31082629bee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1ac82f40555ad8ba2fd377e31082629bee" kindref="member">removeAllSerializationTasks</ref>();</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>View<sp/>plugin<sp/>isolation</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a29a29014a8e2142f8282124917d3cd2a" kindref="member">cacheVisibility</ref>();</highlight></codeline>
+<codeline lineno="185" refid="classViewPluginDockWidget_1a29a29014a8e2142f8282124917d3cd2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a29a29014a8e2142f8282124917d3cd2a" kindref="member">cacheVisibility</ref>();</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a0ac0fb49b8ea036e658829a2feedc446" kindref="member">restoreVisibility</ref>();</highlight></codeline>
+<codeline lineno="188" refid="classViewPluginDockWidget_1a0ac0fb49b8ea036e658829a2feedc446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classViewPluginDockWidget_1a0ac0fb49b8ea036e658829a2feedc446" kindref="member">restoreVisibility</ref>();</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setViewPlugin(<ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>viewPlugin);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setViewPlugin(mv::plugin::ViewPlugin*<sp/>viewPlugin);</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addDockingAction(<ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">mv::gui::WidgetAction</ref>*<sp/>dockingAction);</highlight></codeline>
@@ -1596,19 +1591,19 @@
 <codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>QPointer&lt;mv::plugin::ViewPlugin&gt;<sp/><sp/><sp/><sp/>_viewPlugin;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_viewPluginKind;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_viewPluginMap;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_viewPluginMap;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_settingsMenu;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_toggleMenu;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">mv::gui::TriggerAction</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_helpAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cachedVisibility;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>CDockWidget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_centralDockWidget;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>ads::CDockManager<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dockManager;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QMap&lt;QString, CDockWidget*&gt;</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_settingsDockWidgetsMap;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>CDockWidget*&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_settingsDockWidgetsMap;<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mv::Task<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_progressTask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**<sp/>Task<sp/>for<sp/>reporting<sp/>dock<sp/>widget<sp/>progress<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>ProgressOverlayWidget<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_progressOverlayWidget;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221" refid="classViewPluginDockWidget_1ab46a724465966fc4bc72f90fc66cd7c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QMap&lt;QString, mv::Task*&gt;</ref><sp/><sp/><ref refid="classViewPluginDockWidget_1ab46a724465966fc4bc72f90fc66cd7c8" kindref="member">serializationTasks</ref>;</highlight></codeline>
+<codeline lineno="221" refid="classViewPluginDockWidget_1af91e8607114d27baae930f84d695b5c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>QMap&lt;QString,<sp/>mv::Task*&gt;<sp/><sp/><ref refid="classViewPluginDockWidget_1af91e8607114d27baae930f84d695b5c6" kindref="member">serializationTasks</ref>;</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classViewPluginsDockWidget" kindref="compound">ViewPluginsDockWidget</ref>;</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">WorkspaceManager;</highlight></codeline>

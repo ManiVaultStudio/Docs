@@ -5,8 +5,6 @@
     <includes refid="Plugin_8h" local="yes">Plugin.h</includes>
     <includes refid="OptionAction_8h" local="yes">actions/OptionAction.h</includes>
     <includes refid="Set_8h" local="yes">Set.h</includes>
-    <includedby refid="PluginManager_8cpp" local="no">PluginManager.cpp</includedby>
-    <includedby refid="TransformationPlugin_8cpp" local="yes">TransformationPlugin.cpp</includedby>
     <incdepgraph>
       <node id="222">
         <label>Project.h</label>
@@ -2518,15 +2516,15 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mv::plugin</highlight></codeline>
 <codeline lineno="13"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classmv_1_1plugin_1_1TransformationPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin" kindref="compound">TransformationPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">Plugin</ref></highlight></codeline>
+<codeline lineno="20" refid="classmv_1_1plugin_1_1TransformationPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin" kindref="compound">TransformationPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Plugin</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin" kindref="compound">TransformationPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref>*<sp/>factory);</highlight></codeline>
+<codeline lineno="28" refid="classmv_1_1plugin_1_1TransformationPlugin_1ad5093bc71f8787f8103c4dd2cc6ea111" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1ad5093bc71f8787f8103c4dd2cc6ea111" kindref="member">TransformationPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PluginFactory*<sp/>factory);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="classmv_1_1plugin_1_1TransformationPlugin_1ac7c2ceb4bc382fa16179d97cd595df4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1ac7c2ceb4bc382fa16179d97cd595df4c" kindref="member">transform</ref>()<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/>getInputDatasets()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="classmv_1_1plugin_1_1TransformationPlugin_1a15925a95874d4764742aaf092d433dd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1a15925a95874d4764742aaf092d433dd8" kindref="member">getInputDatasets</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>DatasetType<sp/>=<sp/>DatasetImpl&gt;</highlight></codeline>
 <codeline lineno="44" refid="classmv_1_1plugin_1_1TransformationPlugin_1a46709048f168d59f6ca9fdd28d52993a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetType&gt;</ref><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1a46709048f168d59f6ca9fdd28d52993a" kindref="member">getInputDataset</ref>()<sp/>{</highlight></codeline>
@@ -2536,25 +2534,25 @@
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInputDatasets(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Datasets&amp;<sp/>inputDatasets);</highlight></codeline>
+<codeline lineno="55" refid="classmv_1_1plugin_1_1TransformationPlugin_1a97f990d37b1f4aacd04bd04e356f1ca0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1a97f990d37b1f4aacd04bd04e356f1ca0" kindref="member">setInputDatasets</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Datasets&amp;<sp/>inputDatasets);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInputDataset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>inputDataset);</highlight></codeline>
+<codeline lineno="61" refid="classmv_1_1plugin_1_1TransformationPlugin_1a1f0e8693fc2bba1fc208010b649cb08b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1a1f0e8693fc2bba1fc208010b649cb08b" kindref="member">setInputDataset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>inputDataset);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">gui::OptionAction</ref>&amp;<sp/>getTypeAction();</highlight></codeline>
+<codeline lineno="68" refid="classmv_1_1plugin_1_1TransformationPlugin_1a474b58a3fae559c1c4f7eadfafc920a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">gui::OptionAction</ref>&amp;<sp/><ref refid="classmv_1_1plugin_1_1TransformationPlugin_1a474b58a3fae559c1c4f7eadfafc920a3" kindref="member">getTypeAction</ref>();</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_inputDatasets;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionAction" kindref="compound">gui::OptionAction</ref><sp/><sp/><sp/>_typeAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="73"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="classmv_1_1plugin_1_1TransformationPluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1TransformationPluginFactory" kindref="compound">TransformationPluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref></highlight></codeline>
+<codeline lineno="80" refid="classmv_1_1plugin_1_1TransformationPluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1TransformationPluginFactory" kindref="compound">TransformationPluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>PluginFactory</highlight></codeline>
 <codeline lineno="81"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1TransformationPluginFactory" kindref="compound">TransformationPluginFactory</ref>();</highlight></codeline>
+<codeline lineno="87" refid="classmv_1_1plugin_1_1TransformationPluginFactory_1a16883c77f35c2b0f3e8ffd569eb3c39f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1TransformationPluginFactory_1a16883c77f35c2b0f3e8ffd569eb3c39f" kindref="member">TransformationPluginFactory</ref>();</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90" refid="classmv_1_1plugin_1_1TransformationPluginFactory_1a15378b58cb81a1a5906c2c0209a32742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1TransformationPluginFactory_1a15378b58cb81a1a5906c2c0209a32742" kindref="member">~TransformationPluginFactory</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>

@@ -4,10 +4,6 @@
     <compoundname>AnalysisPlugin.h</compoundname>
     <includes refid="Plugin_8h" local="yes">Plugin.h</includes>
     <includes refid="Set_8h" local="yes">Set.h</includes>
-    <includedby refid="AnalysisPlugin_8cpp" local="yes">AnalysisPlugin.cpp</includedby>
-    <includedby refid="DataManager_8cpp" local="no">DataManager.cpp</includedby>
-    <includedby refid="PluginManager_8cpp" local="no">PluginManager.cpp</includedby>
-    <includedby refid="Set_8cpp" local="yes">Set.cpp</includedby>
     <incdepgraph>
       <node id="222">
         <label>Project.h</label>
@@ -2519,85 +2515,85 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">plugin</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="classmv_1_1plugin_1_1AnalysisPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">AnalysisPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">Plugin</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/>AnalysisPlugin<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Plugin</highlight></codeline>
 <codeline lineno="18"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">AnalysisPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref>*<sp/>factory);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>AnalysisPlugin(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PluginFactory*<sp/>factory);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">AnalysisPlugin</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>~AnalysisPlugin()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setObjectName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInputDataset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>inputDataset);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInputDataset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetImpl&gt;&amp;<sp/>inputDataset);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInputDatasets(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Datasets&amp;<sp/>inputDatasets);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>DatasetType<sp/>=<sp/>DatasetImpl&gt;</highlight></codeline>
-<codeline lineno="45" refid="classmv_1_1plugin_1_1AnalysisPlugin_1af6e7eb408457588255aa8b9537f52e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetType&gt;</ref><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1af6e7eb408457588255aa8b9537f52e50" kindref="member">getInputDataset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>Dataset&lt;DatasetType&gt;<sp/>getInputDataset()<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_input.size()<sp/>&gt;<sp/>0)</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetType&gt;</ref>(_input[0].get&lt;DatasetType&gt;());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetType&gt;(_input[0].get&lt;DatasetType&gt;());</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetImpl&gt;();</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="classmv_1_1plugin_1_1AnalysisPlugin_1ad264c11924ce940f6b49d6e7d4dab410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1ad264c11924ce940f6b49d6e7d4dab410" kindref="member">getInputDatasets</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/>getInputDatasets()<sp/>{</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_input;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setOutputDataset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>outputDataset);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setOutputDataset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetImpl&gt;&amp;<sp/>outputDataset);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setOutputDatasets(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Datasets&amp;<sp/>outputDatasets);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>DatasetType<sp/>=<sp/>DatasetImpl&gt;</highlight></codeline>
-<codeline lineno="72" refid="classmv_1_1plugin_1_1AnalysisPlugin_1ad141ba596b6f8d40371f9b5805356f2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetType&gt;</ref><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1ad141ba596b6f8d40371f9b5805356f2c" kindref="member">getOutputDataset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>Dataset&lt;DatasetType&gt;<sp/>getOutputDataset()<sp/>{</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_output.size()<sp/>&gt;<sp/>0)</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetType&gt;</ref>(_output[0].get&lt;DatasetType&gt;());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetType&gt;(_output[0].get&lt;DatasetType&gt;());</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Dataset&lt;DatasetImpl&gt;();</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="classmv_1_1plugin_1_1AnalysisPlugin_1a78b41d5a941c8e0c9d2ccc0a8f312764" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1a78b41d5a941c8e0c9d2ccc0a8f312764" kindref="member">getOutputDatasets</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/>getOutputDatasets()<sp/>{</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="100" refid="classmv_1_1plugin_1_1AnalysisPlugin_1a41418e959699ec197f0c45a471c97bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1a41418e959699ec197f0c45a471c97bc6" kindref="member">outputDataInit</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output.size()<sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>outputDataInit()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_output.size()<sp/>&gt;<sp/>0;<sp/>}</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><sp/><sp/><sp/>_input;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104" refid="classmv_1_1plugin_1_1AnalysisPlugin_1ae4429652773f13ceac22dbb6c05f5bc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin_1ae4429652773f13ceac22dbb6c05f5bc8" kindref="member">_output</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>Datasets<sp/><sp/><sp/><sp/>_output;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="105"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107" refid="classmv_1_1plugin_1_1AnalysisPluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/><ref refid="classmv_1_1plugin_1_1AnalysisPluginFactory" kindref="compound">AnalysisPluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CORE_EXPORT<sp/>AnalysisPluginFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>PluginFactory</highlight></codeline>
 <codeline lineno="108"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPluginFactory" kindref="compound">AnalysisPluginFactory</ref>()<sp/>:</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">PluginFactory</ref>(Type::ANALYSIS,<sp/></highlight><highlight class="stringliteral">&quot;Analysis&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>AnalysisPluginFactory()<sp/>:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PluginFactory(Type::ANALYSIS,<sp/></highlight><highlight class="stringliteral">&quot;Analysis&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setIconByName(</highlight><highlight class="stringliteral">&quot;square-root-variable&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCategoryIconByName(</highlight><highlight class="stringliteral">&quot;square-root-variable&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmv_1_1plugin_1_1AnalysisPluginFactory" kindref="compound">AnalysisPluginFactory</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>~AnalysisPluginFactory()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121" refid="classmv_1_1plugin_1_1AnalysisPluginFactory_1afd81dffb09e3488941bfb40ff9bf1a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1AnalysisPlugin" kindref="compound">AnalysisPlugin</ref>*<sp/><ref refid="classmv_1_1plugin_1_1AnalysisPluginFactory_1afd81dffb09e3488941bfb40ff9bf1a5f" kindref="member">produce</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>AnalysisPlugin*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="122"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal">Q_DECLARE_INTERFACE(<ref refid="classmv_1_1plugin_1_1AnalysisPluginFactory" kindref="compound">mv::plugin::AnalysisPluginFactory</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ManiVault.AnalysisPluginFactory&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">Q_DECLARE_INTERFACE(mv::plugin::AnalysisPluginFactory,<sp/></highlight><highlight class="stringliteral">&quot;ManiVault.AnalysisPluginFactory&quot;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/AnalysisPlugin.h"/>
   </compounddef>

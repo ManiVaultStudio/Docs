@@ -6,9 +6,7 @@
     <includes refid="StandardItemModel_8h" local="no">models/StandardItemModel.h</includes>
     <includes local="no">QMap</includes>
     <includes local="no">QString</includes>
-    <includedby refid="AbstractPageActionsModel_8cpp" local="yes">AbstractPageActionsModel.cpp</includedby>
     <includedby refid="PageActionsTreeModel_8h" local="yes">PageActionsTreeModel.h</includedby>
-    <includedby refid="PageActionDelegateEditorWidget_8cpp" local="yes">PageActionDelegateEditorWidget.cpp</includedby>
     <incdepgraph>
       <node id="70">
         <label>QMap</label>
@@ -497,40 +495,40 @@
         <link refid="PageActionsWidget_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>LearningPageContentWidget.h</label>
         <link refid="LearningPageContentWidget_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>PageTutorialsWidget.h</label>
-        <link refid="PageTutorialsWidget_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>StartPageWidget.h</label>
-        <link refid="StartPageWidget_8h_source"/>
-      </node>
-      <node id="8">
-        <label>StartPageContentWidget.h</label>
-        <link refid="StartPageContentWidget_8h_source"/>
-        <childnode refid="9" relation="include">
+      <node id="5">
+        <label>PageTutorialsWidget.h</label>
+        <link refid="PageTutorialsWidget_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="10">
+        <label>StartPageWidget.h</label>
+        <link refid="StartPageWidget_8h_source"/>
+      </node>
+      <node id="9">
+        <label>StartPageContentWidget.h</label>
+        <link refid="StartPageContentWidget_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>NewProjectDialog.h</label>
         <link refid="NewProjectDialog_8h_source"/>
       </node>
@@ -541,16 +539,16 @@
       <node id="11">
         <label>StartPageOpenProjectWidget.h</label>
         <link refid="StartPageOpenProjectWidget_8h_source"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>StartPageGetStartedWidget.h</label>
+        <link refid="StartPageGetStartedWidget_8h_source"/>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="7">
-        <label>StartPageGetStartedWidget.h</label>
-        <link refid="StartPageGetStartedWidget_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
         <label>LearningPageWidget.h</label>
         <link refid="LearningPageWidget_8h_source"/>
       </node>
@@ -599,11 +597,11 @@
 <codeline lineno="33" refid="classAbstractPageActionsModel_1_1Item" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAbstractPageActionsModel_1_1Item" kindref="compound">Item</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QStandardItem<sp/>{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractPageActionsModel_1_1Item_1ab67f16aa747f32e7322ad0a32aca2f53" kindref="member">Item</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PageActionSharedPtr&amp;<sp/>pageAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>editable<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41" refid="classAbstractPageActionsModel_1_1Item_1ab67f16aa747f32e7322ad0a32aca2f53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAbstractPageActionsModel_1_1Item_1ab67f16aa747f32e7322ad0a32aca2f53" kindref="member">Item</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PageActionSharedPtr&amp;<sp/>pageAction,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>editable<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVariant<sp/>data(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>role)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PageActionSharedPtr<sp/><ref refid="classAbstractPageActionsModel_1_1Item_1ae8e6bdbc9fbe2c6b349f20ade896727a" kindref="member">getPageAction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="classAbstractPageActionsModel_1_1Item_1ae8e6bdbc9fbe2c6b349f20ade896727a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PageActionSharedPtr<sp/><ref refid="classAbstractPageActionsModel_1_1Item_1ae8e6bdbc9fbe2c6b349f20ade896727a" kindref="member">getPageAction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PageActionSharedPtr<sp/><sp/><sp/>_pageAction;<sp/><sp/><sp/><sp/></highlight></codeline>
@@ -611,13 +609,13 @@
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPageActionsModel_1a5513f2df9f3198704a8059c982032ca3" kindref="member">AbstractPageActionsModel</ref>(QObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61" refid="classAbstractPageActionsModel_1a5513f2df9f3198704a8059c982032ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAbstractPageActionsModel_1a5513f2df9f3198704a8059c982032ca3" kindref="member">AbstractPageActionsModel</ref>(QObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67" refid="classAbstractPageActionsModel_1ae43cadd6a893f0e28a5647bd01079431" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPageActionsModel_1ae43cadd6a893f0e28a5647bd01079431" kindref="member">add</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PageActionSharedPtr&amp;<sp/>pageAction)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73" refid="classAbstractPageActionsModel_1a5f472b739c6a6fc04edc9914f51dd67b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPageActionsModel_1a5f472b739c6a6fc04edc9914f51dd67b" kindref="member">remove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PageActionSharedPtr&amp;<sp/>pageAction)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPageActionsModel_1a143d52044b6713e75beb53cc4f3f595b" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="76" refid="classAbstractPageActionsModel_1a143d52044b6713e75beb53cc4f3f595b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAbstractPageActionsModel_1a143d52044b6713e75beb53cc4f3f595b" kindref="member">reset</ref>();</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>PageActionSharedPtrs<sp/><sp/>_pageActions;<sp/><sp/><sp/></highlight></codeline>

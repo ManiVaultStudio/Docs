@@ -43,7 +43,7 @@
         <argsstring></argsstring>
         <name>HardwareSpec</name>
         <param>
-          <type><ref refid="classmv_1_1util_1_1HardwareSpec" kindref="compound">HardwareSpec</ref></type>
+          <type>HardwareSpec</type>
         </param>
         <briefdescription>
 <para>Whether the hardware spec has been initialized (either from variant map or system) </para>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="33" column="5" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.cpp" bodystart="11" bodyend="15"/>
+        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="33" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a50b4f51ec16f044ef323421b09fc371e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -114,9 +114,9 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="41" column="13" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" bodystart="41" bodyend="41"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a45e57acfda68ac8b23e4e5f024e85a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1aa369730306c289e671ec9b18f55aae0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::util::HardwareComponentSpec::fromVariantMap</definition>
+        <definition>virtual void mv::util::HardwareComponentSpec::fromVariantMap</definition>
         <argsstring>(const QVariantMap &amp;variantMap)</argsstring>
         <name>fromVariantMap</name>
         <reimplementedby refid="classmv_1_1util_1_1CpuComponentSpec_1abac8dafc00c10b2c591d16bb4259221d">fromVariantMap</reimplementedby>
@@ -124,7 +124,7 @@
         <reimplementedby refid="classmv_1_1util_1_1RamComponentSpec_1af2dff04dbf87f02624de3bd5f19f51a0">fromVariantMap</reimplementedby>
         <reimplementedby refid="classmv_1_1util_1_1StorageComponentSpec_1a508d3b60395df23eec726df6cddcdd9f">fromVariantMap</reimplementedby>
         <param>
-          <type>const <ref refid="classQMap" kindref="compound">QVariantMap</ref> &amp;</type>
+          <type>const QVariantMap &amp;</type>
           <declname>variantMap</declname>
         </param>
         <briefdescription>
@@ -144,11 +144,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="47" column="18" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.cpp" bodystart="17" bodyend="19"/>
+        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="47" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1af7b4fe479d20471a741ac254f06b4c46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="classQMap" kindref="compound">QVariantMap</ref></type>
-        <definition>QVariantMap mv::util::HardwareComponentSpec::toVariantMap</definition>
+      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a7beb1228ab88be4cee9dbfa1fa9f078f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QVariantMap</type>
+        <definition>virtual QVariantMap mv::util::HardwareComponentSpec::toVariantMap</definition>
         <argsstring>() const</argsstring>
         <name>toVariantMap</name>
         <briefdescription>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="53" column="25" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.cpp" bodystart="21" bodyend="24"/>
+        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="53" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a5ec80fbe94718aa502c0004ff96825fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>QString</type>
@@ -316,15 +316,15 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="87" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a73e2a00ce74808dbeb54bfa35f84a9a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a5f40a559e3669b57b30403ed60156dcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>QStandardItem *</type>
-        <definition>QStandardItem * mv::util::HardwareComponentSpec::getStandardItem</definition>
+        <definition>virtual QStandardItem* mv::util::HardwareComponentSpec::getStandardItem</definition>
         <argsstring>() const</argsstring>
         <name>getStandardItem</name>
-        <reimplementedby refid="classmv_1_1util_1_1CpuComponentSpec_1aab40647c2bbcc03c2fb1637289af2800">getStandardItem</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1DisplayComponentSpec_1a252ba7c23df5b3a13c50f21c8e7d9d0c">getStandardItem</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1RamComponentSpec_1a6b90f9293828a5359e951ba4031f6792">getStandardItem</reimplementedby>
-        <reimplementedby refid="classmv_1_1util_1_1StorageComponentSpec_1a8bb3eb955432bafb70da3ccb824db257">getStandardItem</reimplementedby>
+        <reimplementedby refid="classmv_1_1util_1_1CpuComponentSpec_1aa7bb17e8d597f7f7053fca0536e171f5">getStandardItem</reimplementedby>
+        <reimplementedby refid="classmv_1_1util_1_1DisplayComponentSpec_1aa8585bb5c2faf38487aad2e0ad07d13c">getStandardItem</reimplementedby>
+        <reimplementedby refid="classmv_1_1util_1_1RamComponentSpec_1a9d5a8072d0f209799d4c92d8bc5a25e4">getStandardItem</reimplementedby>
+        <reimplementedby refid="classmv_1_1util_1_1StorageComponentSpec_1a4d2c8cdf4440e6cd63bdc13a1abb2b3d">getStandardItem</reimplementedby>
         <briefdescription>
 <para>Get standard item. </para>
         </briefdescription>
@@ -335,13 +335,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="93" column="27" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.cpp" bodystart="26" bodyend="29"/>
+        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="93" column="27"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a2adfe02402606c0a3f65709d4daf9bfb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1HardwareComponentSpec_1a6cbc828df9e0f6be1315e0ff93e059fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QList&lt; QStandardItem * &gt;</type>
-        <definition>QList&lt; QStandardItem * &gt; mv::util::HardwareComponentSpec::getParameterRow</definition>
+        <definition>static QList&lt;QStandardItem*&gt; mv::util::HardwareComponentSpec::getParameterRow</definition>
         <argsstring>(const QString &amp;parameterName, const QString &amp;systemValue=&quot;&quot;, const QString &amp;requiredValue=&quot;&quot;, bool valid=true)</argsstring>
         <name>getParameterRow</name>
         <param>
@@ -406,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="103" column="18" bodyfile="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.cpp" bodystart="31" bodyend="43"/>
+        <location file="Docs/external/core/ManiVault/src/util/HardwareComponentSpec.h" line="103" column="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -502,10 +502,10 @@
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a98d8c47cc495689f2fc5b3fe8ea86ec5" prot="private" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>_title</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1acee14126443e794540693df1fc749293" prot="public" virt="pure-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>equals</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a1001807f3430e1292e42fb2db5a1b3a6" prot="protected" virt="pure-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>fromSystem</name></member>
-      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a45e57acfda68ac8b23e4e5f024e85a0d" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1aa369730306c289e671ec9b18f55aae0c" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a5ec80fbe94718aa502c0004ff96825fb" prot="public" virt="pure-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getFailureString</name></member>
-      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a2adfe02402606c0a3f65709d4daf9bfb" prot="public" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getParameterRow</name></member>
-      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a73e2a00ce74808dbeb54bfa35f84a9a4" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getStandardItem</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a6cbc828df9e0f6be1315e0ff93e059fd" prot="public" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getParameterRow</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a5f40a559e3669b57b30403ed60156dcb" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getStandardItem</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a66612ea3db2f6d2697580c92336544a2" prot="public" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>getTitle</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a124e5e1455f1dbe1e39addbd8db65a65" prot="public" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>HardwareComponentSpec</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a5abed5c3fa9652a70b9493a756afcb1f" prot="private" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>HardwareSpec</name></member>
@@ -513,7 +513,7 @@
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a1a4bf30d66ff6d0d733553504d0eb166" prot="public" virt="pure-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>lessThan</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a64d679dcd2bbe3fadc0f6479094487bc" prot="public" virt="pure-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>meets</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a0543ebc4dddf5ed7a9062677f9bc93bf" prot="protected" virt="non-virtual"><scope>mv::util::HardwareComponentSpec</scope><name>setInitialized</name></member>
-      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1af7b4fe479d20471a741ac254f06b4c46" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a7beb1228ab88be4cee9dbfa1fa9f078f" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1HardwareComponentSpec_1a50b4f51ec16f044ef323421b09fc371e" prot="public" virt="virtual"><scope>mv::util::HardwareComponentSpec</scope><name>~HardwareComponentSpec</name></member>
     </listofallmembers>
   </compounddef>

@@ -8,7 +8,6 @@
     <includes local="no">QIcon</includes>
     <includes local="no">QImage</includes>
     <includedby refid="PageAction_8h" local="yes">PageAction.h</includedby>
-    <includedby refid="PageSubAction_8cpp" local="yes">PageSubAction.cpp</includedby>
     <incdepgraph>
       <node id="42">
         <label>functional</label>
@@ -319,40 +318,40 @@
         <link refid="PageActionsWidget_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>LearningPageContentWidget.h</label>
         <link refid="LearningPageContentWidget_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>PageTutorialsWidget.h</label>
-        <link refid="PageTutorialsWidget_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>StartPageWidget.h</label>
-        <link refid="StartPageWidget_8h_source"/>
-      </node>
-      <node id="10">
-        <label>StartPageContentWidget.h</label>
-        <link refid="StartPageContentWidget_8h_source"/>
-        <childnode refid="11" relation="include">
+      <node id="7">
+        <label>PageTutorialsWidget.h</label>
+        <link refid="PageTutorialsWidget_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="12">
+        <label>StartPageWidget.h</label>
+        <link refid="StartPageWidget_8h_source"/>
+      </node>
+      <node id="11">
+        <label>StartPageContentWidget.h</label>
+        <link refid="StartPageContentWidget_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>NewProjectDialog.h</label>
         <link refid="NewProjectDialog_8h_source"/>
       </node>
@@ -377,20 +376,20 @@
       <node id="13">
         <label>StartPageOpenProjectWidget.h</label>
         <link refid="StartPageOpenProjectWidget_8h_source"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="15">
         <label>PageActionDelegateEditorWidget.h</label>
         <link refid="PageActionDelegateEditorWidget_8h_source"/>
       </node>
-      <node id="9">
+      <node id="10">
         <label>StartPageGetStartedWidget.h</label>
         <link refid="StartPageGetStartedWidget_8h_source"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>LearningPageWidget.h</label>
         <link refid="LearningPageWidget_8h_source"/>
       </node>
@@ -472,27 +471,27 @@
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ClickedCallback<sp/>=<sp/>std::function&lt;void()&gt;;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="27" refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref><sp/>=<sp/>std::function&lt;QString()&gt;;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageSubAction_1acb88248731f3ac4cff6d4d2a18710b43" kindref="member">PageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback<sp/>=<sp/>{},<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ClickedCallback&amp;<sp/>clickedCallback<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="35" refid="classPageSubAction_1acb88248731f3ac4cff6d4d2a18710b43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageSubAction_1acb88248731f3ac4cff6d4d2a18710b43" kindref="member">PageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback<sp/>=<sp/>{},<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ClickedCallback&amp;<sp/>clickedCallback<sp/>=<sp/>{});</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1a636bd1e2ca12db88fbba8e18cbdf8b92" kindref="member">~PageSubAction</ref>();</highlight></codeline>
+<codeline lineno="38" refid="classPageSubAction_1aea15e40f55ae8df3300da7a6783ae66a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aea15e40f55ae8df3300da7a6783ae66a" kindref="member">~PageSubAction</ref>();</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1afb6620c3b1e23a426c95621599e430a1" kindref="member">setIcon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon);</highlight></codeline>
+<codeline lineno="44" refid="classPageSubAction_1afb6620c3b1e23a426c95621599e430a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1afb6620c3b1e23a426c95621599e430a1" kindref="member">setIcon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classPageSubAction_1a6b9374fb5a7aad27a23bad6446ffbcc3" kindref="member">getTooltip</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="classPageSubAction_1a6b9374fb5a7aad27a23bad6446ffbcc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classPageSubAction_1a6b9374fb5a7aad27a23bad6446ffbcc3" kindref="member">getTooltip</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1a8083a39a9c29cf29630558411cebe689" kindref="member">setVisible</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visible);</highlight></codeline>
+<codeline lineno="56" refid="classPageSubAction_1a8083a39a9c29cf29630558411cebe689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1a8083a39a9c29cf29630558411cebe689" kindref="member">setVisible</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visible);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1IconLabel" kindref="compound">mv::gui::IconLabel</ref>*<sp/><ref refid="classPageSubAction_1a7e7a88763035718bd3eca406b8a50caa" kindref="member">getIconLabel</ref>();</highlight></codeline>
+<codeline lineno="62" refid="classPageSubAction_1afcf3b7ae8e0f91704443614104f8541b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1IconLabel" kindref="compound">mv::gui::IconLabel</ref>*<sp/><ref refid="classPageSubAction_1afcf3b7ae8e0f91704443614104f8541b" kindref="member">getIconLabel</ref>();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Callbacks</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>ClickedCallback<sp/><ref refid="classPageSubAction_1a442de30d490692646990808ff3eb1dd7" kindref="member">getClickedCallback</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70" refid="classPageSubAction_1aa53dbd0fc611d69fa45470f6979b5ed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ClickedCallback<sp/><ref refid="classPageSubAction_1aa53dbd0fc611d69fa45470f6979b5ed0" kindref="member">getClickedCallback</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1af5405a6706b2ea7d5c59b35edd5dec43" kindref="member">setClickedCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ClickedCallback&amp;<sp/>clickedCallback);</highlight></codeline>
+<codeline lineno="76" refid="classPageSubAction_1af5405a6706b2ea7d5c59b35edd5dec43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1af5405a6706b2ea7d5c59b35edd5dec43" kindref="member">setClickedCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ClickedCallback&amp;<sp/>clickedCallback);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref><sp/><ref refid="classPageSubAction_1a45652c4160f8e58418f58fe9cb9d80bb" kindref="member">getTooltipCallback</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82" refid="classPageSubAction_1ad54eb80d6b42080f634ea63d2503a677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref><sp/><ref refid="classPageSubAction_1ad54eb80d6b42080f634ea63d2503a677" kindref="member">getTooltipCallback</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1a8b0cba628d064742551932b47bb7465a" kindref="member">setTooltipCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback);</highlight></codeline>
+<codeline lineno="88" refid="classPageSubAction_1a8b0cba628d064742551932b47bb7465a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1a8b0cba628d064742551932b47bb7465a" kindref="member">setTooltipCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>QPointer&lt;mv::gui::IconLabel&gt;<sp/><sp/><sp/><sp/>_iconLabel;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -503,7 +502,7 @@
 <codeline lineno="98"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPurgePageSubAction_1af0898ef420c14bd899655c09fd666ccf" kindref="member">ProjectPurgePageSubAction</ref>(mv::util::ProjectsModelProjectSharedPtr<sp/>project);</highlight></codeline>
+<codeline lineno="105" refid="classProjectPurgePageSubAction_1af0898ef420c14bd899655c09fd666ccf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPurgePageSubAction_1af0898ef420c14bd899655c09fd666ccf" kindref="member">ProjectPurgePageSubAction</ref>(mv::util::ProjectsModelProjectSharedPtr<sp/>project);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::util::ProjectsModelProjectSharedPtr<sp/><sp/><sp/><sp/><sp/>_project;<sp/><sp/><sp/></highlight></codeline>
@@ -513,58 +512,58 @@
 <codeline lineno="113"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCommentsPageSubAction_1a03687f945e7a8d0cab1d6489ec204fe2" kindref="member">CommentsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>comments);</highlight></codeline>
+<codeline lineno="120" refid="classCommentsPageSubAction_1a03687f945e7a8d0cab1d6489ec204fe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCommentsPageSubAction_1a03687f945e7a8d0cab1d6489ec204fe2" kindref="member">CommentsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>comments);</highlight></codeline>
 <codeline lineno="121"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="124" refid="classTagsPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTagsPageSubAction" kindref="compound">TagsPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="125"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTagsPageSubAction_1ade8e9ae58827436f665963f5d7e52db9" kindref="member">TagsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>tags);</highlight></codeline>
+<codeline lineno="132" refid="classTagsPageSubAction_1ade8e9ae58827436f665963f5d7e52db9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTagsPageSubAction_1ade8e9ae58827436f665963f5d7e52db9" kindref="member">TagsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>tags);</highlight></codeline>
 <codeline lineno="133"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136" refid="classPageDownloadSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPageDownloadSubAction" kindref="compound">PageDownloadSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="137"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageDownloadSubAction_1a4482fb8548c0cdac7bb440cff632380d" kindref="member">PageDownloadSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>downloadSize);</highlight></codeline>
+<codeline lineno="144" refid="classPageDownloadSubAction_1a4482fb8548c0cdac7bb440cff632380d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPageDownloadSubAction_1a4482fb8548c0cdac7bb440cff632380d" kindref="member">PageDownloadSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>downloadSize);</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148" refid="classProjectCompatibilityPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classProjectCompatibilityPageSubAction" kindref="compound">ProjectCompatibilityPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="149"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectCompatibilityPageSubAction_1a42e2249ab5077367bbfdb74a55708f42" kindref="member">ProjectCompatibilityPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmv_1_1util_1_1HardwareSpec_1_1SystemCompatibilityInfo" kindref="compound">mv::util::HardwareSpec::SystemCompatibilityInfo</ref>&amp;<sp/>systemCompatibilityInfo);</highlight></codeline>
+<codeline lineno="156" refid="classProjectCompatibilityPageSubAction_1a42e2249ab5077367bbfdb74a55708f42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectCompatibilityPageSubAction_1a42e2249ab5077367bbfdb74a55708f42" kindref="member">ProjectCompatibilityPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmv_1_1util_1_1HardwareSpec_1_1SystemCompatibilityInfo" kindref="compound">mv::util::HardwareSpec::SystemCompatibilityInfo</ref>&amp;<sp/>systemCompatibilityInfo);</highlight></codeline>
 <codeline lineno="157"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="160" refid="classContributorsPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classContributorsPageSubAction" kindref="compound">ContributorsPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="161"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContributorsPageSubAction_1a71189dd7003c0bb580b3b7c62018541e" kindref="member">ContributorsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>contributors);</highlight></codeline>
+<codeline lineno="168" refid="classContributorsPageSubAction_1a71189dd7003c0bb580b3b7c62018541e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContributorsPageSubAction_1a71189dd7003c0bb580b3b7c62018541e" kindref="member">ContributorsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>contributors);</highlight></codeline>
 <codeline lineno="169"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172" refid="classProjectsJsonUrlPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classProjectsJsonUrlPageSubAction" kindref="compound">ProjectsJsonUrlPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="173"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectsJsonUrlPageSubAction_1a85470f21cdfe303f6017797db5d5515b" kindref="member">ProjectsJsonUrlPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QUrl&amp;<sp/>projectJsonUrl);</highlight></codeline>
+<codeline lineno="180" refid="classProjectsJsonUrlPageSubAction_1a85470f21cdfe303f6017797db5d5515b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectsJsonUrlPageSubAction_1a85470f21cdfe303f6017797db5d5515b" kindref="member">ProjectsJsonUrlPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QUrl&amp;<sp/>projectJsonUrl);</highlight></codeline>
 <codeline lineno="181"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
 <codeline lineno="184" refid="classProjectPluginsPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classProjectPluginsPageSubAction" kindref="compound">ProjectPluginsPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="185"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPluginsPageSubAction_1ae41da655092067909149ef5229067cab" kindref="member">ProjectPluginsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>plugins);</highlight></codeline>
+<codeline lineno="192" refid="classProjectPluginsPageSubAction_1ae41da655092067909149ef5229067cab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPluginsPageSubAction_1ae41da655092067909149ef5229067cab" kindref="member">ProjectPluginsPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>plugins);</highlight></codeline>
 <codeline lineno="193"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="196" refid="classProjectLastUpdatedPageSubAction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classProjectLastUpdatedPageSubAction" kindref="compound">ProjectLastUpdatedPageSubAction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction" kindref="compound">PageSubAction</ref></highlight></codeline>
 <codeline lineno="197"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectLastUpdatedPageSubAction_1a401e4cc1860d849a414a490c29e25491" kindref="member">ProjectLastUpdatedPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QDateTime&amp;<sp/>projectLastUpdated<sp/>=<sp/>QDateTime());</highlight></codeline>
+<codeline lineno="204" refid="classProjectLastUpdatedPageSubAction_1a401e4cc1860d849a414a490c29e25491" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectLastUpdatedPageSubAction_1a401e4cc1860d849a414a490c29e25491" kindref="member">ProjectLastUpdatedPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QDateTime&amp;<sp/>projectLastUpdated<sp/>=<sp/>QDateTime());</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProjectLastUpdatedPageSubAction_1a71368bcbf294f21439666e58c1afec92" kindref="member">setProjectLastUpdated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QDateTime&amp;<sp/>projectLastUpdated);</highlight></codeline>
+<codeline lineno="210" refid="classProjectLastUpdatedPageSubAction_1a71368bcbf294f21439666e58c1afec92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProjectLastUpdatedPageSubAction_1a71368bcbf294f21439666e58c1afec92" kindref="member">setProjectLastUpdated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QDateTime&amp;<sp/>projectLastUpdated);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>QDateTime<sp/><sp/><sp/>_projectLastUpdated;<sp/><sp/><sp/><sp/></highlight></codeline>
@@ -574,9 +573,9 @@
 <codeline lineno="218"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPreviewPageSubAction_1a72c425a7aa2a217a373656ff809d89ef" kindref="member">ProjectPreviewPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>previewImage);</highlight></codeline>
+<codeline lineno="225" refid="classProjectPreviewPageSubAction_1a72c425a7aa2a217a373656ff809d89ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProjectPreviewPageSubAction_1a72c425a7aa2a217a373656ff809d89ef" kindref="member">ProjectPreviewPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>previewImage);</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProjectPreviewPageSubAction_1a7b9d82e92727184c3d2937f2465f80cf" kindref="member">setPreviewImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>previewImage);</highlight></codeline>
+<codeline lineno="231" refid="classProjectPreviewPageSubAction_1a7b9d82e92727184c3d2937f2465f80cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProjectPreviewPageSubAction_1a7b9d82e92727184c3d2937f2465f80cf" kindref="member">setPreviewImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QImage&amp;<sp/>previewImage);</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight></codeline>
 <codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>QImage<sp/><sp/><sp/>_previewImage;<sp/><sp/><sp/><sp/></highlight></codeline>
@@ -586,7 +585,7 @@
 <codeline lineno="239"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="241"><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProxyPageSubAction_1ac48a1bf8aebc57b4a6d145dd41eb3c06" kindref="member">ProxyPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback);</highlight></codeline>
+<codeline lineno="247" refid="classProxyPageSubAction_1ac48a1bf8aebc57b4a6d145dd41eb3c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProxyPageSubAction_1ac48a1bf8aebc57b4a6d145dd41eb3c06" kindref="member">ProxyPageSubAction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QIcon&amp;<sp/>icon,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classPageSubAction_1aa8ae8a5c7a31007c1b375d3bb5fcddb6" kindref="member">TooltipCallback</ref>&amp;<sp/>tooltipCallback);</highlight></codeline>
 <codeline lineno="248"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"></highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>PageSubActionPtr<sp/><sp/>=<sp/>std::shared_ptr&lt;PageSubAction&gt;;</highlight></codeline>

@@ -6,7 +6,7 @@
     <includes refid="StyledIconEngine_8h" local="no">StyledIconEngine.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classmv_1_1util_1_1StyledIconEngine_1a35d1ee5140f9939a2aab86cd14e95f1d" prot="private" static="no" mutable="no">
-        <type><ref refid="structmv_1_1util_1_1StyledIconSettings" kindref="compound">StyledIconSettings</ref></type>
+        <type>StyledIconSettings</type>
         <definition>StyledIconSettings mv::util::StyledIconEngine::_iconSettings</definition>
         <argsstring></argsstring>
         <name>_iconSettings</name>
@@ -45,7 +45,7 @@
         <argsstring>(const StyledIconSettings &amp;styledIconSettings)</argsstring>
         <name>StyledIconEngine</name>
         <param>
-          <type>const <ref refid="structmv_1_1util_1_1StyledIconSettings" kindref="compound">StyledIconSettings</ref> &amp;</type>
+          <type>const StyledIconSettings &amp;</type>
           <declname>styledIconSettings</declname>
         </param>
         <briefdescription>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="34" column="5" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.cpp" bodystart="20" bodyend="23"/>
+        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="34" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a6d5ca0f2d1261ae1ad6a1685a5032b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="43" column="10" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.cpp" bodystart="25" bodyend="28"/>
+        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="43" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a2ca58db8719d4b5a21c4d2d6a207bab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QPixmap</type>
@@ -183,11 +183,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="52" column="13" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.cpp" bodystart="30" bodyend="133"/>
+        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="52" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a003bd142b137f8e8f039f8f6fda173ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a82e532805ed9e1983bd05c122a0bc398" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QIconEngine *</type>
-        <definition>QIconEngine * mv::util::StyledIconEngine::clone</definition>
+        <definition>QIconEngine* mv::util::StyledIconEngine::clone</definition>
         <argsstring>() const override</argsstring>
         <name>clone</name>
         <briefdescription>
@@ -200,13 +200,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="58" column="17" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.cpp" bodystart="135" bodyend="138"/>
+        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="58" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
-      <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a697456600d990f168b7b635f0be79273" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1util_1_1StyledIconEngine_1a6083bf14ff0d8728ea99d03da5d52933" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QPixmap</type>
-        <definition>QPixmap mv::util::StyledIconEngine::recolorPixmap</definition>
+        <definition>static QPixmap mv::util::StyledIconEngine::recolorPixmap</definition>
         <argsstring>(const QPixmap &amp;pixmap, const QSize &amp;size, const QColor &amp;color)</argsstring>
         <name>recolorPixmap</name>
         <param>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="69" column="20" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.cpp" bodystart="140" bodyend="159"/>
+        <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="69" column="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -268,35 +268,13 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>QIconEngine</label>
-      </node>
-      <node id="1">
-        <label>mv::util::StyledIconEngine</label>
-        <link refid="classmv_1_1util_1_1StyledIconEngine"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>QIconEngine</label>
-      </node>
-      <node id="1">
-        <label>mv::util::StyledIconEngine</label>
-        <link refid="classmv_1_1util_1_1StyledIconEngine"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" line="26" column="1" bodyfile="Docs/external/core/ManiVault/src/util/StyledIconEngine.h" bodystart="27" bodyend="75"/>
     <listofallmembers>
       <member refid="classmv_1_1util_1_1StyledIconEngine_1a35d1ee5140f9939a2aab86cd14e95f1d" prot="private" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>_iconSettings</name></member>
-      <member refid="classmv_1_1util_1_1StyledIconEngine_1a003bd142b137f8e8f039f8f6fda173ca" prot="public" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>clone</name></member>
+      <member refid="classmv_1_1util_1_1StyledIconEngine_1a82e532805ed9e1983bd05c122a0bc398" prot="public" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>clone</name></member>
       <member refid="classmv_1_1util_1_1StyledIconEngine_1a6d5ca0f2d1261ae1ad6a1685a5032b99" prot="public" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>paint</name></member>
       <member refid="classmv_1_1util_1_1StyledIconEngine_1a2ca58db8719d4b5a21c4d2d6a207bab5" prot="public" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>pixmap</name></member>
-      <member refid="classmv_1_1util_1_1StyledIconEngine_1a697456600d990f168b7b635f0be79273" prot="private" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>recolorPixmap</name></member>
+      <member refid="classmv_1_1util_1_1StyledIconEngine_1a6083bf14ff0d8728ea99d03da5d52933" prot="private" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>recolorPixmap</name></member>
       <member refid="classmv_1_1util_1_1StyledIconEngine_1a5e1e2c6eccf3bee58d524d47e0744fdc" prot="private" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>StyledIcon</name></member>
       <member refid="classmv_1_1util_1_1StyledIconEngine_1a3a17a1ab4e2326771bb0319ea835a50a" prot="public" virt="non-virtual"><scope>mv::util::StyledIconEngine</scope><name>StyledIconEngine</name></member>
     </listofallmembers>

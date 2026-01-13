@@ -6,11 +6,11 @@
     <includes local="no">QPixmap</includes>
     <includes local="no">QImage</includes>
     <includes local="no">QRgb</includes>
+    <includedby refid="Framebuffer_8h" local="yes">Framebuffer.h</includedby>
     <includedby refid="DensityRenderer_8h" local="yes">DensityRenderer.h</includedby>
     <includedby refid="PointRenderer_8h" local="yes">PointRenderer.h</includedby>
     <includedby refid="DensityComputation_8h" local="yes">DensityComputation.h</includedby>
     <includedby refid="MeanShift_8h" local="yes">MeanShift.h</includedby>
-    <includedby refid="Framebuffer_8h" local="yes">Framebuffer.h</includedby>
     <incdepgraph>
       <node id="4">
         <label>QImage</label>
@@ -38,25 +38,25 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6">
+      <node id="2">
         <label>Framebuffer.h</label>
         <link refid="Framebuffer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>MeanShift.h</label>
+        <link refid="MeanShift_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="5">
-        <label>MeanShift.h</label>
-        <link refid="MeanShift_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
         <label>DensityRenderer.h</label>
         <link refid="DensityRenderer_8h_source"/>
       </node>
-      <node id="3">
+      <node id="6">
         <label>PointRenderer.h</label>
         <link refid="PointRenderer_8h_source"/>
       </node>
@@ -65,19 +65,19 @@
         <link refid="Texture_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
-      <node id="4">
+      <node id="3">
         <label>DensityComputation.h</label>
         <link refid="DensityComputation_8h_source"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -172,10 +172,10 @@
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>GLenum<sp/>_target;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134" refid="classmv_1_1Texture1D" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1Texture1D" kindref="compound">Texture1D</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Texture" kindref="compound">Texture</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Texture1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Texture</highlight></codeline>
 <codeline lineno="135"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture1D" kindref="compound">Texture1D</ref>()<sp/>:<sp/><ref refid="classmv_1_1Texture_1a6043623d8845b646f370a4146c94d1a9" kindref="member">Texture</ref>(GL_TEXTURE_1D)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>Texture1D()<sp/>:<sp/>Texture(GL_TEXTURE_1D)<sp/>{<sp/>}</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromFile(QString<sp/>path)</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -185,7 +185,7 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>();</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage1D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width()*image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
@@ -197,17 +197,17 @@
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="157"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159" refid="classmv_1_1Texture2D" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Texture" kindref="compound">Texture</ref></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Texture2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Texture</highlight></codeline>
 <codeline lineno="160"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture2D" kindref="compound">Texture2D</ref>()<sp/>:<sp/><ref refid="classmv_1_1Texture_1a6043623d8845b646f370a4146c94d1a9" kindref="member">Texture</ref>(GL_TEXTURE_2D)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>Texture2D()<sp/>:<sp/><ref refid="classmv_1_1Texture_1a6043623d8845b646f370a4146c94d1a9" kindref="member">Texture</ref>(GL_TEXTURE_2D)<sp/>{<sp/>}</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromImage(QImage<sp/>image)</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>();</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
@@ -226,7 +226,7 @@
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)<sp/>image.bits();</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a271bedd862b6f20d8dbc88e4249826d0" kindref="member">bind</ref>();</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>

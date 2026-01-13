@@ -312,21 +312,11 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classmv_1_1Task_1a2efebf721c46b20e08a052fe6446eafa" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref>, QString &gt;</type>
-        <definition>QMap&lt; Task::Status, QString &gt; mv::Task::statusNames</definition>
+      <memberdef kind="variable" id="classmv_1_1Task_1ab64f4ddba89de61710edf42797b31ffb" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref>, QString &gt;</type>
+        <definition>QMap&lt;Status, QString&gt; mv::Task::statusNames</definition>
         <argsstring></argsstring>
         <name>statusNames</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref>, QString&gt;({
-    { Task::Status::Undefined, &quot;Undefined&quot; },
-    { Task::Status::Idle, &quot;Idle&quot; },
-    { Task::Status::Running, &quot;Running&quot; },
-    { Task::Status::RunningIndeterminate, &quot;Running Indeterminate&quot; },
-    { Task::Status::Finished, &quot;Finished&quot; },
-    { Task::Status::Aborting, &quot;Aborting&quot; },
-    { Task::Status::AboutToBeAborted, &quot;About to be aborted&quot; },
-    { Task::Status::Aborted, &quot;Aborted&quot; }
-})</initializer>
         <briefdescription>
 <para>Couples status enum value to status name string. </para>
         </briefdescription>
@@ -336,16 +326,11 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/Task.h" line="71" column="17" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmv_1_1Task_1ab427ba0d57b586079dc3c5bdac0a0658" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" kindref="member">ProgressMode</ref>, QString &gt;</type>
-        <definition>QMap&lt; Task::ProgressMode, QString &gt; mv::Task::progressModeNames</definition>
+      <memberdef kind="variable" id="classmv_1_1Task_1aca47066800030b769ebc8481ed734b25" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" kindref="member">ProgressMode</ref>, QString &gt;</type>
+        <definition>QMap&lt;ProgressMode, QString&gt; mv::Task::progressModeNames</definition>
         <argsstring></argsstring>
         <name>progressModeNames</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" kindref="member">ProgressMode</ref>, QString&gt;({
-    { Task::ProgressMode::Manual, &quot;Manual&quot; },
-    { Task::ProgressMode::Subtasks, &quot;Subtasks&quot; },
-    { Task::ProgressMode::Aggregate, &quot;Aggregate&quot; }
-})</initializer>
         <briefdescription>
 <para>Couples scope enum value to scope name string. </para>
         </briefdescription>
@@ -355,18 +340,11 @@
         </inbodydescription>
         <location file="Docs/external/core/ManiVault/src/Task.h" line="81" column="17" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="81" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classmv_1_1Task_1ae0fa9d896126915bcb008d6747c0ff14" prot="public" static="yes" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; <ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" kindref="member">GuiScope</ref>, QString &gt;</type>
-        <definition>QMap&lt; Task::GuiScope, QString &gt; mv::Task::guiScopeNames</definition>
+      <memberdef kind="variable" id="classmv_1_1Task_1a6c078368de8bea2a93458c18b3a1d93f" prot="public" static="yes" mutable="no">
+        <type>QMap&lt; <ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" kindref="member">GuiScope</ref>, QString &gt;</type>
+        <definition>QMap&lt;GuiScope, QString&gt; mv::Task::guiScopeNames</definition>
         <argsstring></argsstring>
         <name>guiScopeNames</name>
-        <initializer>= <ref refid="classQMap" kindref="compound">QMap</ref>&lt;<ref refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" kindref="member">GuiScope</ref>, QString&gt;({
-    { Task::GuiScope::None, &quot;None&quot; },
-    { Task::GuiScope::Background, &quot;Background&quot; },
-    { Task::GuiScope::Foreground, &quot;Foreground&quot; },
-    { Task::GuiScope::Modal, &quot;Modal&quot; },
-    { Task::GuiScope::DataHierarchy, &quot;DataHierarchy&quot; }
-})</initializer>
         <briefdescription>
 <para>Couples scope enum value to scope name string. </para>
         </briefdescription>
@@ -852,7 +830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="124" column="5" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="41" bodyend="123"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="124" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1acd3965781c83009dfd9c262f5323ac71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -866,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="127" column="5" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="125" bodyend="141"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="127" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a13a444bac45f16103bc9a1eed2df89f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -897,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="134" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="143" bodyend="156"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="134" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1afe8fac5691994ad581a8c312620d0792" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::int32_t</type>
@@ -914,7 +892,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="142" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="158" bodyend="161"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="142" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a32f191ce17a180ee6d973fa9c44d8978" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -944,7 +922,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="149" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="163" bodyend="166"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="149" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1acf6f39faa6ed6d86fc60d0f307b5f24f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -998,7 +976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="157" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="168" bodyend="186"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="157" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae75909266697f5d77a3ba44f0262e249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1039,11 +1017,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="164" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="188" bodyend="198"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="164" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a1f2d7a30f78f9ca23367ad01f32c596a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a352a9312e5b561500fc502550ff8033d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>float</type>
-        <definition>float mv::Task::getWeight</definition>
+        <definition>virtual float mv::Task::getWeight</definition>
         <argsstring>() const</argsstring>
         <name>getWeight</name>
         <briefdescription>
@@ -1056,11 +1034,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="172" column="19" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="200" bodyend="203"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="172" column="19"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a1d0a408eddacce3dcde7938979ab5d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ac226fbe5a65ebf3a5dff07d27d7cb8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::Task::setWeight</definition>
+        <definition>virtual void mv::Task::setWeight</definition>
         <argsstring>(float weight)</argsstring>
         <name>setWeight</name>
         <param>
@@ -1084,11 +1062,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="178" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="205" bodyend="210"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="178" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a9ca5e3f6e30dafb36573da553eac3f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ada18e1919951c5e4d69a21eef9d0343b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1Task" kindref="compound">Task</ref> *</type>
-        <definition>Task * mv::Task::getParentTask</definition>
+        <definition>Task* mv::Task::getParentTask</definition>
         <argsstring>()</argsstring>
         <name>getParentTask</name>
         <briefdescription>
@@ -1101,7 +1079,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="186" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="212" bodyend="215"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="186" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1afcedf165c947f1e93761a7c9914c5436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1129,7 +1107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="192" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="217" bodyend="220"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="192" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2d17cc4abdabe9634cf3dcad133b3d75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1146,11 +1124,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="198" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="222" bodyend="225"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="198" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a8733ebe10ef1c968d0fca18edb90a327" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a8cd0f09fa0183cecd1405495d1516350" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TasksPtrs</type>
-        <definition>Task::TasksPtrs mv::Task::getChildTasks</definition>
+        <definition>TasksPtrs mv::Task::getChildTasks</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true) const</argsstring>
         <name>getChildTasks</name>
         <param>
@@ -1190,11 +1168,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="206" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="227" bodyend="243"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="206" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a06e4df362ae044526a74bb2eb80724a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a88c8651c4fece772af6340b2c52ce362" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TasksPtrs</type>
-        <definition>Task::TasksPtrs mv::Task::getChildTasksForStatuses</definition>
+        <definition>TasksPtrs mv::Task::getChildTasksForStatuses</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const Statuses &amp;statuses=Statuses()) const</argsstring>
         <name>getChildTasksForStatuses</name>
         <param>
@@ -1247,11 +1225,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="215" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="245" bodyend="256"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="215" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1abf3dd345e6862d0cedcb5f3c04b68cb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a94fe15a831bb7b5a1fa784695e5252f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TasksPtrs</type>
-        <definition>Task::TasksPtrs mv::Task::getChildTasksForGuiScopes</definition>
+        <definition>TasksPtrs mv::Task::getChildTasksForGuiScopes</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const GuiScopes &amp;guiScopes=GuiScopes()) const</argsstring>
         <name>getChildTasksForGuiScopes</name>
         <param>
@@ -1304,11 +1282,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="224" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="258" bodyend="269"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="224" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a3c0de7e23810cf50bfb2e38d31b124f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ab8877daa584c604374207258add566de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>TasksPtrs</type>
-        <definition>Task::TasksPtrs mv::Task::getChildTasksForGuiScopesAndStatuses</definition>
+        <definition>TasksPtrs mv::Task::getChildTasksForGuiScopesAndStatuses</definition>
         <argsstring>(bool recursively=false, bool enabledOnly=true, const GuiScopes &amp;guiScopes=GuiScopes(), const Statuses &amp;statuses=Statuses()) const</argsstring>
         <name>getChildTasksForGuiScopesAndStatuses</name>
         <param>
@@ -1374,7 +1352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="234" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="271" bodyend="282"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="234" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2ec22184c2fe3dcd5ca40e4195816d13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -1391,7 +1369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="256" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="294" bodyend="297"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="256" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a5b2ea327d5eaf2a6f37de2bb14481d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1419,7 +1397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="262" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="299" bodyend="302"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="262" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a3accdb38d6fd4e77ab9d279f29b72bc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -1433,7 +1411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="265" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="304" bodyend="307"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="265" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a4107804d4161e68e9ffd0a3cbab07a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1461,7 +1439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="271" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="309" bodyend="312"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="271" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a8856106f01d1538002962c97f6abed6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QIcon</type>
@@ -1475,7 +1453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="274" column="11" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="314" bodyend="317"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="274" column="11"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a6ae5a676cf585fabc7357de1aa30364b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1503,7 +1481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="280" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="319" bodyend="322"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="280" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad4bbf24ab9beef4c63b5722afe09a548" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1520,7 +1498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="286" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="324" bodyend="327"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="286" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac751f424de479eda7e7e57ac9b7acb51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1561,7 +1539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="293" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="329" bodyend="332"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="293" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac593329347bb9927944f83b77231f8a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1578,7 +1556,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="299" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="334" bodyend="337"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="299" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae082034e207a3680b2445114fe3b52d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1606,7 +1584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="305" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="339" bodyend="342"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="305" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1340e129e8bb4118494027f131a0008f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1623,7 +1601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="311" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="344" bodyend="347"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="311" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aaf409917d764517c65b10953c9ebfffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1664,7 +1642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="318" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="349" bodyend="352"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="318" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a6b531ae2a9631fc6b127cfd317aee4cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1685,7 +1663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="327" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="354" bodyend="360"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="327" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a9fd512313b3d0626f69ef0b7848248b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1714,7 +1692,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="333" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="362" bodyend="365"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="333" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1c6522c34a627bf0fb03b213453edfc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1742,7 +1720,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="339" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="367" bodyend="370"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="339" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a08bfcb1e28c503d844ed1fc791fd5d3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1759,11 +1737,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="345" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="372" bodyend="375"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="345" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1ac5810ae82c1ead540d65fab2eaf98eb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1afbb82d0a22a7e203677d71e42d20f452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" kindref="member">Status</ref></type>
-        <definition>Task::Status mv::Task::getStatus</definition>
+        <definition>Status mv::Task::getStatus</definition>
         <argsstring>() const</argsstring>
         <name>getStatus</name>
         <briefdescription>
@@ -1773,7 +1751,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="350" column="12" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="377" bodyend="380"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="350" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a7aafff80c084ed09943ef190eef6c415" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1787,7 +1765,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="353" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="382" bodyend="385"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="353" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af90144b6ce7d82b60a778f59460a1cb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1801,7 +1779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="356" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="387" bodyend="390"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="356" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aacea9f1364b7a93424adc3ff5449b6e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1815,7 +1793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="359" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="392" bodyend="395"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="359" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a78fdac61569daff41d248c4dd2c93208" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1829,7 +1807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="362" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="397" bodyend="400"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="362" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a930dfcce7cf590d472715868b18b6d6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1843,7 +1821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="365" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="402" bodyend="405"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="365" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a3f3b9fdbb5ea67f1fabb694b574593e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1857,7 +1835,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="368" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="407" bodyend="410"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="368" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aae9365db07f27b5e7347c6aed1926ac8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1871,7 +1849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="371" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="412" bodyend="415"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="371" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a02c2614aef17e93a2f8dd88d0aaf0ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1912,7 +1890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="378" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="417" bodyend="420"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="378" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a963f63a98b89a5b6a930a5d102869ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1966,7 +1944,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="386" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="422" bodyend="425"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="386" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a368fc02aa13f168df77142ba2277ef49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1980,7 +1958,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="389" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="427" bodyend="430"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="389" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2d73d8d621e71e87127245f05e021f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1994,7 +1972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="392" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="432" bodyend="435"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="392" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aa78176d452141592ea81684cf33946f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2008,7 +1986,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="395" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="437" bodyend="442"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="395" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a288fd7a1b8a31ec12eb670cd6201e5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2022,7 +2000,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="398" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="444" bodyend="449"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="398" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a614dc64d948910ea5009f894fefe8574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2036,7 +2014,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="401" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="451" bodyend="454"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="401" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a30bb7aa82846596938a3e774cd6e60eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2050,7 +2028,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="404" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="456" bodyend="459"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="404" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a88ac4e6afc4611943f1751508a878589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2064,7 +2042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="407" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="461" bodyend="464"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="407" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af8b23f71f83f3c8633cf04d8bdf92ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2078,7 +2056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="410" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="466" bodyend="469"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="410" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad4dd3333104a6fa247989f5407e0b6f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2107,11 +2085,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="416" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="471" bodyend="474"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="416" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a0c7ec04effe88d61d4def767133d2b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ae39670b6535b47d6a0906a226f0b4b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1AbstractTaskHandler" kindref="compound">AbstractTaskHandler</ref> *</type>
-        <definition>AbstractTaskHandler * mv::Task::getHandler</definition>
+        <definition>AbstractTaskHandler* mv::Task::getHandler</definition>
         <argsstring>()</argsstring>
         <name>getHandler</name>
         <briefdescription>
@@ -2124,7 +2102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="424" column="25" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="476" bodyend="479"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="424" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1c6e5980b07463f539f6cdc46af05ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2152,11 +2130,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="430" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="481" bodyend="489"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="430" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a56d0deac76cee419dd652421cadfa411" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1af195311d97d0971c0eb827de0d58daa2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" kindref="member">ProgressMode</ref></type>
-        <definition>Task::ProgressMode mv::Task::getProgressMode</definition>
+        <definition>ProgressMode mv::Task::getProgressMode</definition>
         <argsstring>() const</argsstring>
         <name>getProgressMode</name>
         <briefdescription>
@@ -2169,7 +2147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="438" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="491" bodyend="494"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="438" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ab8351a413af1cda8f352379838e8e0a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2197,11 +2175,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="444" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="496" bodyend="499"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="444" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a3069b9c26e05ad0c369878284aa5a9fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a341c49a6ab508d4cc112e7a8e8f727f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>GuiScopes</type>
-        <definition>Task::GuiScopes mv::Task::getGuiScopes</definition>
+        <definition>GuiScopes mv::Task::getGuiScopes</definition>
         <argsstring>() const</argsstring>
         <name>getGuiScopes</name>
         <briefdescription>
@@ -2214,7 +2192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="452" column="15" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="501" bodyend="504"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="452" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2dee7b8bdf63a6ec99d235051b1bd680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2242,7 +2220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="458" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="506" bodyend="509"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="458" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad0ba32f92716465e23ec57924a33d41b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2270,7 +2248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="464" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="511" bodyend="514"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="464" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1abbd37cbfd02b52ae2e88f0b494530e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2298,7 +2276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="470" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="516" bodyend="519"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="470" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a8b3a5132b6ecfeefb01f19b15f2eb167" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2338,7 +2316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="477" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="521" bodyend="528"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="477" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad33726c17208c7700eabe4ea57174a14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -2352,11 +2330,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="488" column="11" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="540" bodyend="543"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="488" column="11"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a27810160a93c94d005cfb449b063e9c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a5fafd5c983230584b70226afc3a41237" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::Task::setProgress</definition>
+        <definition>virtual void mv::Task::setProgress</definition>
         <argsstring>(float progress, const QString &amp;subtaskDescription=&quot;&quot;)</argsstring>
         <name>setProgress</name>
         <param>
@@ -2393,11 +2371,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="496" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="545" bodyend="548"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="496" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1ad582692b5555dc7fbf5c8c17a98cb0be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a98bce19a956314b11d56e6cfdf2954e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::Task::resetProgress</definition>
+        <definition>virtual void mv::Task::resetProgress</definition>
         <argsstring>(bool recursive=false)</argsstring>
         <name>resetProgress</name>
         <param>
@@ -2422,11 +2400,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="502" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="550" bodyend="553"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="502" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1a5e33668b4d261981a7d7dac2c1fd6aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1aa57364f2572b68067f663c0019cb117c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QTimer &amp;</type>
-        <definition>QTimer &amp; mv::Task::getTimer</definition>
+        <definition>QTimer&amp; mv::Task::getTimer</definition>
         <argsstring>(const TimerType &amp;timerType)</argsstring>
         <name>getTimer</name>
         <param>
@@ -2443,7 +2421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="510" column="12" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="555" bodyend="558"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="510" column="12"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1dd02b1bf8e5a3edaeb5a573023580f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2483,7 +2461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="517" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="560" bodyend="563"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="517" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1adde0b238ccc96c6a33485d9533c3559f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2511,7 +2489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="526" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="565" bodyend="568"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="526" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2bb3a36fb4b9441ce8db95223bfaea60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2539,7 +2517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="533" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="570" bodyend="573"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="533" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a080cf0a128238948f46c79c0fcc78d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2580,7 +2558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="542" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="575" bodyend="578"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="542" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a637358cade9c38b7a15e3811773d1bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2621,7 +2599,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="551" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="580" bodyend="583"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="551" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac1ae2037281bfe874df8d872259249c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2662,7 +2640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="560" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="585" bodyend="588"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="560" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af2bbcc906a340213d40f8e66dfccc325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2703,7 +2681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="570" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="590" bodyend="593"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="570" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae6f44ab625cd1e5af437d4db7dae1e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2743,7 +2721,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="578" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="595" bodyend="598"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="578" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae6b7e0d4eb6f7cddace1c8a99721db06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QStringList</type>
@@ -2760,7 +2738,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="584" column="17" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="600" bodyend="603"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="584" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a6478df6c9ae40149178622ef35cda649" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -2790,7 +2768,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="591" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="605" bodyend="611"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="591" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a5ed6dcaaa1f9e95261a9c8689b831308" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::int32_t</type>
@@ -2818,7 +2796,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="598" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="613" bodyend="622"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="598" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a7462cc2ccf583ed4773d5038cb8a88ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -2835,7 +2813,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="604" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="624" bodyend="627"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="604" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a5f3a7456e60f546ebda473d73edf7e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2863,7 +2841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="610" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="629" bodyend="639"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="610" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aab2ddc0f2cdfed90a3b099106683f46f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -2880,7 +2858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="618" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="641" bodyend="644"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="618" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ab54a2b23e4e4414803aea0cca6fed42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2921,7 +2899,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="625" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="646" bodyend="649"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="625" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1acceba3ac4a3e5df14a9fae40d4ddef9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -2935,7 +2913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="630" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="651" bodyend="654"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="630" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af95b8be99d12a465c4f7d43796e0aae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2963,7 +2941,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="636" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="656" bodyend="659"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="636" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a229eaf495be48a47d56e7fb7797639da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2978,7 +2956,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="726" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1486" bodyend="1493"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="726" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af6a04c75b33a6b76d51a0847d47d2b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4617,9 +4595,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classmv_1_1Task_1a672c3bdcae179493da5cd74d643217c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ae653923779431ecfdd38e2b40e32ac80" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::Task::addChildTask</definition>
+        <definition>virtual void mv::Task::addChildTask</definition>
         <argsstring>(Task *childTask)</argsstring>
         <name>addChildTask</name>
         <param>
@@ -4643,11 +4621,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="242" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="284" bodyend="287"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="242" column="18"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1Task_1ac486c92998d48eb813d285a28ca36a83" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1a2717a476c30cee41e59c7b07116d338e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
-        <definition>void mv::Task::removeChildTask</definition>
+        <definition>virtual void mv::Task::removeChildTask</definition>
         <argsstring>(Task *childTask)</argsstring>
         <name>removeChildTask</name>
         <param>
@@ -4671,13 +4649,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="248" column="18" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="289" bodyend="292"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="248" column="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classmv_1_1Task_1a318efc8fdf1f22f87290510053a13c08" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1Task_1ad1a73ebece13ede0880551680361c5e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>QStringList</type>
-        <definition>QStringList mv::Task::guiScopesToStringlist</definition>
+        <definition>static QStringList mv::Task::guiScopesToStringlist</definition>
         <argsstring>(const GuiScopes &amp;guiScopes)</argsstring>
         <name>guiScopesToStringlist</name>
         <param>
@@ -4694,7 +4672,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="483" column="24" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="530" bodyend="538"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="483" column="24"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -4710,7 +4688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="641" column="13" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="661" bodyend="694"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="641" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a09aa8e1cecf7619a37e135057adbf924" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4724,7 +4702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="646" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="696" bodyend="762"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="646" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1afcce303e474ada414e10a9f010d0304c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4738,7 +4716,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="649" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="764" bodyend="777"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="649" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a5fa831c07828d0aa2ca967b714ff5033" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4766,7 +4744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="657" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="779" bodyend="813"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="657" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aebf13f6ba94e04b605d1930304567458" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4794,7 +4772,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="663" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="815" bodyend="825"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="663" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a15f700ac911503e6bfcb06faaf88592e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4808,7 +4786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="669" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="827" bodyend="858"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="669" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a11606cb2cf9e9cd95c63823a465f37eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4825,7 +4803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="673" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="860" bodyend="895"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="673" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1e9f024737b1e28a52e89912e394ba40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4842,7 +4820,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="674" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="897" bodyend="928"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="674" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1adc2398f701b5315824f288ff27acdbff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4859,7 +4837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="675" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="930" bodyend="962"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="675" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a01d38d3f809930dd8b2795c8f76b19ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4876,7 +4854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="676" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="964" bodyend="972"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="676" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af2842080d5e0c510eccf5957fc5e42b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4893,7 +4871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="677" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="974" bodyend="982"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="677" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac568de92af7dddfce2452103d3ac1d5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4910,7 +4888,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="678" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="984" bodyend="989"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="678" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a36ae660e8c2afe075bfa4f79ddf8ed6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4932,7 +4910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="679" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="991" bodyend="1003"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="679" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac2a85b13921acfe701d85241614946cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4949,7 +4927,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="680" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1005" bodyend="1013"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="680" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a944d123d37f2ecded3ed1afdc5779073" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4971,7 +4949,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="681" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1015" bodyend="1028"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="681" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a06d7444b364d63c817f9a07294bb5477" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4989,7 +4967,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="682" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1030" bodyend="1043"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="682" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a0afb3ab0a585e432074022047fbbe26a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5011,7 +4989,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="683" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1045" bodyend="1147"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="683" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1e5213f5aeb17ad2be7e3faec24f2620" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5038,7 +5016,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="684" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1149" bodyend="1155"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="684" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ac1703b183acc7ad69e8e0b6b9f9990ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5051,7 +5029,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="685" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1157" bodyend="1160"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="685" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a57fb05ad0fb3bbc723f2850f3ff096d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5064,7 +5042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="686" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1162" bodyend="1165"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="686" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a190c0c4c0756f88bc37a034508554763" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5077,7 +5055,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="687" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1167" bodyend="1170"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="687" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1d63a1324343e11adc119c04f10961a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5090,7 +5068,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="688" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1172" bodyend="1175"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="688" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a338c8385b48239880e52c610bc66aedc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5103,7 +5081,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="689" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1177" bodyend="1187"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="689" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a7dccaa8ea54d0637c44a540602f78ff4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5116,7 +5094,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="690" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1189" bodyend="1192"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="690" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a9bd666c2f65d7658c9ed412cf763aea1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5129,7 +5107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="691" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1194" bodyend="1197"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="691" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ab143a92925152913d3c27debf0c20e84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5142,7 +5120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="692" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1199" bodyend="1202"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="692" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a7fdcc9af5b64401c7dd0bc4ba93680f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5160,7 +5138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="693" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1204" bodyend="1225"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="693" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a2fc22e649e94f7ca367582bde8d698bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5177,7 +5155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="694" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1227" bodyend="1240"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="694" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad127b9a1d908b3ae985f0c0725f7a74d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5194,7 +5172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="695" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1242" bodyend="1250"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="695" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a033026bfa8e26d55ede0be9f858d6cd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5211,7 +5189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="696" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1252" bodyend="1260"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="696" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a381d717c4e26381de51ac8e20661400d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5228,7 +5206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="697" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1262" bodyend="1270"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="697" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a9df10d4626854a854b1850ec81bfbd80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5246,7 +5224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="698" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1272" bodyend="1279"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="698" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af33b672d3b4457105e0899515d6693d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5268,7 +5246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="699" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1281" bodyend="1299"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="699" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a122886016e3e620846921bac0ecdc0c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5285,7 +5263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="700" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1301" bodyend="1319"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="700" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a6f146b6fea826421fc17580fc12a981f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5302,7 +5280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="701" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1321" bodyend="1335"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="701" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae1465890f2ed1a1a6555fbe6b3f35277" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5323,7 +5301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="702" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1337" bodyend="1351"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="702" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a378c27d1a2e22d4e8216e75771576aaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5344,7 +5322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="703" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1353" bodyend="1367"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="703" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ab6d976ff436daabc6fffd44d35000079" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5365,7 +5343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="704" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1369" bodyend="1389"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="704" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a1877731acf540f5b14defcf4753cebb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5386,7 +5364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="705" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1391" bodyend="1402"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="705" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a323d330f96404d1d058182ceea13fd5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5407,7 +5385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="706" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1404" bodyend="1413"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="706" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ad584530144e1f01fdb9fad90535f51f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5429,7 +5407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="707" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1415" bodyend="1425"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="707" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a846ccef5cdd7be0e5d324c06a3bed5b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5451,7 +5429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="708" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1427" bodyend="1435"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="708" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1ae584355af03a0b9f70d35f689cf735b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5468,7 +5446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="709" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1437" bodyend="1442"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="709" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a0261bde82e1565ee205428107c272b11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5481,7 +5459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="713" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1444" bodyend="1456"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="713" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1a7b915a481419c85e092cb81ae69a9b9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5494,7 +5472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="714" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1458" bodyend="1470"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="714" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1aa2c63078a80db0e8874c534e610fb546" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5507,7 +5485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="715" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1472" bodyend="1484"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="715" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1Task_1af396dc4d97544e126951af944e1cb33c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -5521,7 +5499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/Task.h" line="731" column="10" bodyfile="Docs/external/core/ManiVault/src/Task.cpp" bodystart="1495" bodyend="1505"/>
+        <location file="Docs/external/core/ManiVault/src/Task.h" line="731" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -5529,7 +5507,7 @@
     </briefdescription>
     <detaileddescription>
 <para>Convenience class for managing a task.</para>
-<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> progress can be determined in three ways (see <ref refid="classmv_1_1Task_1ab8351a413af1cda8f352379838e8e0a1" kindref="member">Task::setProgressMode()</ref> and <ref refid="classmv_1_1Task_1a56d0deac76cee419dd652421cadfa411" kindref="member">Task::getProgressMode()</ref>):<itemizedlist>
+<para><ref refid="classmv_1_1Task" kindref="compound">Task</ref> progress can be determined in three ways (see <ref refid="classmv_1_1Task_1ab8351a413af1cda8f352379838e8e0a1" kindref="member">Task::setProgressMode()</ref> and <ref refid="classmv_1_1Task_1af195311d97d0971c0eb827de0d58daa2" kindref="member">Task::getProgressMode()</ref>):<itemizedlist>
 <listitem><para>Setting progress directly setProgress(...)</para>
 </listitem><listitem><para>Setting sub tasks items via one of the overloads of Task::setSubTasks() and flagging items as finished with <ref refid="classmv_1_1Task_1ac1ae2037281bfe874df8d872259249c5" kindref="member">Task::setSubtaskFinished()</ref>, the percentage is then updated automatically</para>
 </listitem><listitem><para>Computing the combined progress of child tasks using aggregation (initialize with parent task or use <ref refid="classmv_1_1Task_1afcedf165c947f1e93761a7c9914c5436" kindref="member">Task::setParentTask()</ref>)</para>
@@ -5553,44 +5531,41 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="9">
+      <node id="8">
         <label>mv::ProjectSerializationTask</label>
         <link refid="classmv_1_1ProjectSerializationTask"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="8">
+      <node id="7">
         <label>mv::ModalTask</label>
         <link refid="classmv_1_1ModalTask"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::BackgroundTask</label>
         <link refid="classmv_1_1BackgroundTask"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>mv::DatasetTask</label>
         <link refid="classmv_1_1DatasetTask"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="2">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
-      <node id="4">
+      <node id="3">
         <label>mv::ApplicationStartupTask</label>
         <link refid="classmv_1_1ApplicationStartupTask"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>mv::ForegroundTask</label>
         <link refid="classmv_1_1ForegroundTask"/>
         <childnode refid="1" relation="public-inheritance">
@@ -5601,46 +5576,18 @@
         <link refid="classmv_1_1Task"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="2">
-        <label>QObject</label>
-      </node>
-      <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
-      </node>
-      <node id="5">
-        <label>QMap&lt; Status, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="4">
-        <label>QMap&lt; GuiScope, QString &gt;</label>
-        <link refid="classQMap"/>
       </node>
       <node id="1">
         <label>mv::Task</label>
         <link refid="classmv_1_1Task"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>guiScopeNames</edgelabel>
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>statusNames</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>progressModeNames</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
-        <label>QMap&lt; ProgressMode, QString &gt;</label>
-        <link refid="classQMap"/>
       </node>
     </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/Task.h" line="45" column="1" bodyfile="Docs/external/core/ManiVault/src/Task.h" bodystart="46" bodyend="989"/>
@@ -5670,7 +5617,7 @@
       <member refid="classmv_1_1Task_1a1bc2bec53ffadbce18f61417fd660f3d" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>_timers</name></member>
       <member refid="classmv_1_1Task_1a02a7b29c6474470064f7a2e67d7f493b" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>_visible</name></member>
       <member refid="classmv_1_1Task_1a5fe5fa243a27d585777ad01924c13b64" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>_weight</name></member>
-      <member refid="classmv_1_1Task_1a672c3bdcae179493da5cd74d643217c1" prot="protected" virt="virtual"><scope>mv::Task</scope><name>addChildTask</name></member>
+      <member refid="classmv_1_1Task_1ae653923779431ecfdd38e2b40e32ac80" prot="protected" virt="virtual"><scope>mv::Task</scope><name>addChildTask</name></member>
       <member refid="classmv_1_1Task_1ad0ba32f92716465e23ec57924a33d41b" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>addGuiScope</name></member>
       <member refid="classmv_1_1Task_1a229eaf495be48a47d56e7fb7797639da" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>addToTaskManager</name></member>
       <member refid="classmv_1_1Task_1a461ceaace1a6befff0a0290b0dc5a552" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>childTaskAboutToBeRemoved</name></member>
@@ -5679,7 +5626,7 @@
       <member refid="classmv_1_1Task_1a3b4e6d1deae348c15019090c4b655ce2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>configurationChanged</name></member>
       <member refid="classmv_1_1Task_1a5b7b73f3504f0422d950c18c11553757" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>ConfigurationFlag</name></member>
       <member refid="classmv_1_1Task_1a881059bcb1ebb8242424cb0b9dd7114a" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>configurationFlagToggled</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>createId</name></member>
       <member refid="classmv_1_1Task_1aaf792ebfb7ee0242247a5a9d3ebc4900" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>DEFERRED_TASK_STATUS_INTERVAL</name></member>
       <member refid="classmv_1_1Task_1a98b9423952a1db850b6781a2b4bdf693" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>descriptionChanged</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>Direction</name></member>
@@ -5688,54 +5635,54 @@
       <member refid="classmv_1_1Task_1aadbc11eba918cd619f0213269887abaf" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>enabledChanged</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::Task</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::Task</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1Task_1a08bfcb1e28c503d844ed1fc791fd5d3f" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getAlwaysProcessEvents</name></member>
-      <member refid="classmv_1_1Task_1a8733ebe10ef1c968d0fca18edb90a327" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasks</name></member>
-      <member refid="classmv_1_1Task_1abf3dd345e6862d0cedcb5f3c04b68cb1" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForGuiScopes</name></member>
-      <member refid="classmv_1_1Task_1a3c0de7e23810cf50bfb2e38d31b124f2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForGuiScopesAndStatuses</name></member>
-      <member refid="classmv_1_1Task_1a06e4df362ae044526a74bb2eb80724a2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForStatuses</name></member>
+      <member refid="classmv_1_1Task_1a8cd0f09fa0183cecd1405495d1516350" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasks</name></member>
+      <member refid="classmv_1_1Task_1a94fe15a831bb7b5a1fa784695e5252f6" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForGuiScopes</name></member>
+      <member refid="classmv_1_1Task_1ab8877daa584c604374207258add566de" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForGuiScopesAndStatuses</name></member>
+      <member refid="classmv_1_1Task_1a88c8651c4fece772af6340b2c52ce362" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getChildTasksForStatuses</name></member>
       <member refid="classmv_1_1Task_1afe8fac5691994ad581a8c312620d0792" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getConfiguration</name></member>
       <member refid="classmv_1_1Task_1a3accdb38d6fd4e77ab9d279f29b72bc9" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getDescription</name></member>
       <member refid="classmv_1_1Task_1ad4bbf24ab9beef4c63b5722afe09a548" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getEnabled</name></member>
-      <member refid="classmv_1_1Task_1a3069b9c26e05ad0c369878284aa5a9fb" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getGuiScopes</name></member>
-      <member refid="classmv_1_1Task_1a0c7ec04effe88d61d4def767133d2b67" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getHandler</name></member>
+      <member refid="classmv_1_1Task_1a341c49a6ab508d4cc112e7a8e8f727f3" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getGuiScopes</name></member>
+      <member refid="classmv_1_1Task_1ae39670b6535b47d6a0906a226f0b4b8a" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getHandler</name></member>
       <member refid="classmv_1_1Task_1a8856106f01d1538002962c97f6abed6d" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getIcon</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getId</name></member>
       <member refid="classmv_1_1Task_1a1340e129e8bb4118494027f131a0008f" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getMayKill</name></member>
       <member refid="classmv_1_1Task_1a2ec22184c2fe3dcd5ca40e4195816d13" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getName</name></member>
-      <member refid="classmv_1_1Task_1a9ca5e3f6e30dafb36573da553eac3f24" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getParentTask</name></member>
+      <member refid="classmv_1_1Task_1ada18e1919951c5e4d69a21eef9d0343b" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getParentTask</name></member>
       <member refid="classmv_1_1Task_1ad33726c17208c7700eabe4ea57174a14" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getProgress</name></member>
       <member refid="classmv_1_1Task_1aab2ddc0f2cdfed90a3b099106683f46f" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getProgressDescription</name></member>
-      <member refid="classmv_1_1Task_1a56d0deac76cee419dd652421cadfa411" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getProgressMode</name></member>
+      <member refid="classmv_1_1Task_1af195311d97d0971c0eb827de0d58daa2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getProgressMode</name></member>
       <member refid="classmv_1_1Task_1acceba3ac4a3e5df14a9fae40d4ddef9a" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getProgressText</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a08b0f945eaed9d774741f325ae6db78b" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSerializationCount</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a21282960393847a797509ddf46023fa7" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSerializationCountFrom</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a9085d62f11884beac2bc1c4bf83833e1" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSerializationCountTo</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1ae0ff3065f78d2a8d406c703bd664f61a" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSerializationName</name></member>
       <member refid="classmv_1_1Task_1a2a33f151331b74df2dc3488624aee2e8" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>getStandardProgressText</name></member>
-      <member refid="classmv_1_1Task_1ac5810ae82c1ead540d65fab2eaf98eb5" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getStatus</name></member>
+      <member refid="classmv_1_1Task_1afbb82d0a22a7e203677d71e42d20f452" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getStatus</name></member>
       <member refid="classmv_1_1Task_1a5ed6dcaaa1f9e95261a9c8689b831308" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSubtaskIndex</name></member>
       <member refid="classmv_1_1Task_1a7462cc2ccf583ed4773d5038cb8a88ff" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSubtaskNamePrefix</name></member>
       <member refid="classmv_1_1Task_1a6478df6c9ae40149178622ef35cda649" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSubtasksName</name></member>
       <member refid="classmv_1_1Task_1ae6b7e0d4eb6f7cddace1c8a99721db06" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getSubtasksNames</name></member>
-      <member refid="classmv_1_1Task_1a5e33668b4d261981a7d7dac2c1fd6aa3" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getTimer</name></member>
+      <member refid="classmv_1_1Task_1aa57364f2572b68067f663c0019cb117c" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getTimer</name></member>
       <member refid="classmv_1_1Task_1a13a444bac45f16103bc9a1eed2df89f1" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getTypeName</name></member>
       <member refid="classmv_1_1Task_1ac593329347bb9927944f83b77231f8a5" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>getVisible</name></member>
-      <member refid="classmv_1_1Task_1a1f2d7a30f78f9ca23367ad01f32c596a" prot="public" virt="virtual"><scope>mv::Task</scope><name>getWeight</name></member>
+      <member refid="classmv_1_1Task_1a352a9312e5b561500fc502550ff8033d" prot="public" virt="virtual"><scope>mv::Task</scope><name>getWeight</name></member>
       <member refid="classmv_1_1Task_1ac294d6c7ad5abdddf43cbca47cf27639" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>GuiScope</name></member>
-      <member refid="classmv_1_1Task_1ae0fa9d896126915bcb008d6747c0ff14" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>guiScopeNames</name></member>
+      <member refid="classmv_1_1Task_1a6c078368de8bea2a93458c18b3a1d93f" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>guiScopeNames</name></member>
       <member refid="classmv_1_1Task_1adb384eb9df2528fc5d43946cd069fd88" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>GuiScopes</name></member>
       <member refid="classmv_1_1Task_1ac8b69728cffb89f87125c1e628380c55" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>guiScopesChanged</name></member>
-      <member refid="classmv_1_1Task_1a318efc8fdf1f22f87290510053a13c08" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>guiScopesToStringlist</name></member>
+      <member refid="classmv_1_1Task_1ad1a73ebece13ede0880551680361c5e5" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>guiScopesToStringlist</name></member>
       <member refid="classmv_1_1Task_1aae49cd47fccd96013ec182f03fc6f2d0" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>handlerChanged</name></member>
       <member refid="classmv_1_1Task_1a2d17cc4abdabe9634cf3dcad133b3d75" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>hasParentTask</name></member>
       <member refid="classmv_1_1Task_1a3b171aaa5d9f3620228160e34fe5036c" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>iconChanged</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1Task_1aae9365db07f27b5e7347c6aed1926ac8" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>isAborted</name></member>
       <member refid="classmv_1_1Task_1a3f3b9fdbb5ea67f1fabb694b574593e6" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>isAborting</name></member>
       <member refid="classmv_1_1Task_1a930dfcce7cf590d472715868b18b6d6d" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>isAboutToBeAborted</name></member>
@@ -5834,15 +5781,15 @@
       <member refid="classmv_1_1Task_1a95c4125b84e2f68475e875fbc927f3ff" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>progressDescriptionChanged</name></member>
       <member refid="classmv_1_1Task_1a4476ad9cb2e2740039affed5f7503e61" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>ProgressMode</name></member>
       <member refid="classmv_1_1Task_1add9814bd402eb8ee8683545e370bbb18" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>progressModeChanged</name></member>
-      <member refid="classmv_1_1Task_1ab427ba0d57b586079dc3c5bdac0a0658" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>progressModeNames</name></member>
+      <member refid="classmv_1_1Task_1aca47066800030b769ebc8481ed734b25" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>progressModeNames</name></member>
       <member refid="classmv_1_1Task_1a56fe5949863b84e169111827999071c2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>progressTextChanged</name></member>
       <member refid="classmv_1_1Task_1ad1433b5f95ecd119a51d22cc3b1b7c0c" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>ProgressTextFormatter</name></member>
       <member refid="classmv_1_1Task_1a5fa831c07828d0aa2ca967b714ff5033" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>registerChildTask</name></member>
-      <member refid="classmv_1_1Task_1ac486c92998d48eb813d285a28ca36a83" prot="protected" virt="virtual"><scope>mv::Task</scope><name>removeChildTask</name></member>
+      <member refid="classmv_1_1Task_1a2717a476c30cee41e59c7b07116d338e" prot="protected" virt="virtual"><scope>mv::Task</scope><name>removeChildTask</name></member>
       <member refid="classmv_1_1Task_1abbd37cbfd02b52ae2e88f0b494530e64" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>removeGuiScope</name></member>
       <member refid="classmv_1_1Task_1a233f014be89ae47fe080327655380da8" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>requestAbort</name></member>
       <member refid="classmv_1_1Task_1a9fd512313b3d0626f69ef0b7848248b3" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>reset</name></member>
-      <member refid="classmv_1_1Task_1ad582692b5555dc7fbf5c8c17a98cb0be" prot="public" virt="virtual"><scope>mv::Task</scope><name>resetProgress</name></member>
+      <member refid="classmv_1_1Task_1a98bce19a956314b11d56e6cfdf2954e6" prot="public" virt="virtual"><scope>mv::Task</scope><name>resetProgress</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1abb9506bb5c3303f002e1f541774b39fc" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>Serializable</name></member>
       <member refid="classmv_1_1Task_1af8b23f71f83f3c8633cf04d8bdf92ec3" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setAborted</name></member>
       <member refid="classmv_1_1Task_1a88ac4e6afc4611943f1751508a878589" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setAborting</name></member>
@@ -5861,7 +5808,7 @@
       <member refid="classmv_1_1Task_1aaf409917d764517c65b10953c9ebfffe" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setMayKill</name></member>
       <member refid="classmv_1_1Task_1a5b2ea327d5eaf2a6f37de2bb14481d23" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setName</name></member>
       <member refid="classmv_1_1Task_1afcedf165c947f1e93761a7c9914c5436" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setParentTask</name></member>
-      <member refid="classmv_1_1Task_1a27810160a93c94d005cfb449b063e9c2" prot="public" virt="virtual"><scope>mv::Task</scope><name>setProgress</name></member>
+      <member refid="classmv_1_1Task_1a5fafd5c983230584b70226afc3a41237" prot="public" virt="virtual"><scope>mv::Task</scope><name>setProgress</name></member>
       <member refid="classmv_1_1Task_1ab54a2b23e4e4414803aea0cca6fed42f" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setProgressDescription</name></member>
       <member refid="classmv_1_1Task_1ab8351a413af1cda8f352379838e8e0a1" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setProgressMode</name></member>
       <member refid="classmv_1_1Task_1af95b8be99d12a465c4f7d43796e0aae2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setProgressTextFormatter</name></member>
@@ -5881,7 +5828,7 @@
       <member refid="classmv_1_1Task_1a1dd02b1bf8e5a3edaeb5a573023580f2" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setTimerInterval</name></member>
       <member refid="classmv_1_1Task_1a368fc02aa13f168df77142ba2277ef49" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setUndefined</name></member>
       <member refid="classmv_1_1Task_1ae082034e207a3680b2445114fe3b52d7" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>setVisible</name></member>
-      <member refid="classmv_1_1Task_1a1d0a408eddacce3dcde7938979ab5d8a" prot="public" virt="virtual"><scope>mv::Task</scope><name>setWeight</name></member>
+      <member refid="classmv_1_1Task_1ac226fbe5a65ebf3a5dff07d27d7cb8a1" prot="public" virt="virtual"><scope>mv::Task</scope><name>setWeight</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>State</name></member>
       <member refid="classmv_1_1Task_1a646b3a1ec8736860202a56133c424476" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>Status</name></member>
       <member refid="classmv_1_1Task_1a35048b1786520c1a3b238f813df13495" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>statusChanged</name></member>
@@ -5894,7 +5841,7 @@
       <member refid="classmv_1_1Task_1a3371fc8af79c819690efed8936c9ef68" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>statusChangedToRunningIndeterminate</name></member>
       <member refid="classmv_1_1Task_1ade9b58d3d2e829deedcff721cb7558ed" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>statusChangedToUndefined</name></member>
       <member refid="classmv_1_1Task_1a2c1d440f1a6c1b3b8f54d2553cee72e6" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>Statuses</name></member>
-      <member refid="classmv_1_1Task_1a2efebf721c46b20e08a052fe6446eafa" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>statusNames</name></member>
+      <member refid="classmv_1_1Task_1ab64f4ddba89de61710edf42797b31ffb" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>statusNames</name></member>
       <member refid="classmv_1_1Task_1a87655f3640490588739fb9ab5c5378fa" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>subtaskFinished</name></member>
       <member refid="classmv_1_1Task_1ab3b9a4c588f6a01b0bbe946732dbe4ce" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>subtaskNamePrefixChanged</name></member>
       <member refid="classmv_1_1Task_1adc3b58e76387d223a46141e6e16fd061" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>subtasksAdded</name></member>
@@ -5905,8 +5852,8 @@
       <member refid="classmv_1_1Task_1a4e0b1302a1be2b1d248049373d240c1c" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>TimerType</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::Task</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::Task</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::Task</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::Task</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1Task_1aebf13f6ba94e04b605d1930304567458" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>unregisterChildTask</name></member>
       <member refid="classmv_1_1Task_1a15f700ac911503e6bfcb06faaf88592e" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>updateAggregateStatus</name></member>
       <member refid="classmv_1_1Task_1a09aa8e1cecf7619a37e135057adbf924" prot="private" virt="non-virtual"><scope>mv::Task</scope><name>updateProgress</name></member>

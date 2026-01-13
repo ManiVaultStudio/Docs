@@ -12,7 +12,7 @@
         <argsstring></argsstring>
         <name>PluginManager</name>
         <param>
-          <type><ref refid="classmv_1_1PluginManager" kindref="compound">PluginManager</ref></type>
+          <type>PluginManager</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -183,7 +183,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDataset</definition>
         <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true)=0</argsstring>
         <name>createDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1ad134a14721c8b57bfc2437b6c3e38039">createDataset</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1aafe07ef8fb5352d0c078c1acdcbfa482">createDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -265,7 +265,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDatasetWithoutSelection</definition>
         <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true)=0</argsstring>
         <name>createDatasetWithoutSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1aea3438e8b41c39b4417932cd502d3bc7">createDatasetWithoutSelection</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a32afc50725bf1657c435eb477e499998">createDatasetWithoutSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -518,7 +518,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDerivedDataset</definition>
         <argsstring>(const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), bool notify=true)=0</argsstring>
         <name>createDerivedDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a69ff8e204969a313e2e54287b85f3357">createDerivedDataset</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a76f765299fa20ae847a2ff12c323d0b6">createDerivedDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>guiName</declname>
@@ -660,7 +660,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createSubsetFromSelection</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;selection, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset, const bool &amp;visible=true, bool notify=true)=0</argsstring>
         <name>createSubsetFromSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a8e39751f3bcd823ef0b406096803cb3d">createSubsetFromSelection</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1ab76fc2a787c85b7584d8275766e417d8">createSubsetFromSelection</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>selection</declname>
@@ -850,7 +850,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::getDataset</definition>
         <argsstring>(const QString &amp;datasetId)=0</argsstring>
         <name>getDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a8ac8d813c5a1b57adff66cbc698833bb">getDataset</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a6a097debd36fef15d9c3c411aa1528c9">getDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>datasetId</declname>
@@ -918,9 +918,9 @@
         <name>getAllDatasets</name>
         <reimplementedby refid="classmv_1_1DataManager_1a1669e7b3fd1288ffa14c10f1fc149d84">getAllDatasets</reimplementedby>
         <param>
-          <type>const std::vector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt; &amp;</type>
+          <type>const std::vector&lt; DataType &gt; &amp;</type>
           <declname>dataTypes</declname>
-          <defval>std::vector&lt; <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &gt;()</defval>
+          <defval>std::vector&lt; DataType &gt;()</defval>
         </param>
         <briefdescription>
 <para>Get all datasets for <computeroutput>dataTypes</computeroutput>. </para>
@@ -948,7 +948,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::getSelection</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>getSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a19349ebb272af34658445e23706fcc39">getSelection</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a434d5ff2ab687ff6751af1032826c97d">getSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1032,7 +1032,7 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::groupDatasets</definition>
         <argsstring>(const Datasets &amp;datasets, const QString &amp;guiName=&quot;&quot;)=0</argsstring>
         <name>groupDatasets</name>
-        <reimplementedby refid="classmv_1_1DataManager_1acb2a8e395b7fa65811d5c3be844c4e4b">groupDatasets</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1afea8f9a4e525f3513c3ac22434972ebc">groupDatasets</reimplementedby>
         <param>
           <type>const Datasets &amp;</type>
           <declname>datasets</declname>
@@ -1076,7 +1076,7 @@
         <definition>virtual gui::ToggleAction* mv::AbstractDataManager::getSelectionGroupingAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSelectionGroupingAction</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a011e09e8e64dfc5ba835596afec421e4">getSelectionGroupingAction</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a39a4a206ea48d5dc76bdb96117e1fb3f">getSelectionGroupingAction</reimplementedby>
         <briefdescription>
 <para>Get selection grouping setEnabled action. </para>
         </briefdescription>
@@ -1094,7 +1094,7 @@
         <definition>virtual const DatasetsListModel&amp; mv::AbstractDataManager::getDatasetsListModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getDatasetsListModel</name>
-        <reimplementedby refid="classmv_1_1DataManager_1ad93406171b6e9fc6ecae84fe48e8e529">getDatasetsListModel</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a4cbc7334ce0ffd94429df438c782110e">getDatasetsListModel</reimplementedby>
         <briefdescription>
 <para>Get datasets list model. </para>
         </briefdescription>
@@ -1142,7 +1142,7 @@
         <argsstring>(plugin::RawData *rawData)</argsstring>
         <name>rawDataAdded</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <type>plugin::RawData *</type>
           <declname>rawData</declname>
         </param>
         <briefdescription>
@@ -1170,7 +1170,7 @@
         <argsstring>(plugin::RawData *rawData)</argsstring>
         <name>rawDataAboutToBeRemoved</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <type>plugin::RawData *</type>
           <declname>rawData</declname>
         </param>
         <briefdescription>
@@ -1347,7 +1347,7 @@
 <parametername>selection</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that was added </para>
+<para>Selection dataset that was added </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1375,7 +1375,7 @@
 <parametername>selection</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><ref refid="classmv_1_1Selection" kindref="compound">Selection</ref> dataset that is about to be removed </para>
+<para>Selection dataset that is about to be removed </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -1422,7 +1422,7 @@
         <name>addRawData</name>
         <reimplementedby refid="classmv_1_1DataManager_1a9968f3fdc431de36368699981a5859ac">addRawData</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+          <type>plugin::RawData *</type>
           <declname>rawData</declname>
         </param>
         <briefdescription>
@@ -1474,11 +1474,11 @@
         <location file="Docs/external/core/ManiVault/src/AbstractDataManager.h" line="58" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">plugin::RawData</ref> *</type>
+        <type>plugin::RawData *</type>
         <definition>virtual plugin::RawData* mv::AbstractDataManager::getRawData</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>getRawData</name>
-        <reimplementedby refid="classmv_1_1DataManager_1af35d76749bcee6f6bb6bb63f308991d9">getRawData</reimplementedby>
+        <reimplementedby refid="classmv_1_1DataManager_1a4b8f3e7171a5f2d438ec876c43599314">getRawData</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1675,9 +1675,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1685,8 +1682,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -1695,7 +1690,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::DataManager</label>
         <link refid="classmv_1_1DataManager"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1704,9 +1699,6 @@
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1714,8 +1706,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -1739,7 +1729,7 @@
       <member refid="classmv_1_1AbstractDataManager_1affea010b01662861a875278bcc591b78" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>createDatasetWithoutSelection</name></member>
       <member refid="classmv_1_1AbstractDataManager_1a708fae2f9bdc099354c17075d9085c08" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>createDerivedDataset</name></member>
       <member refid="classmv_1_1AbstractDataManager_1acfe98b6d9ebc9cb8edd9b00d543f9fe0" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>createDerivedDataset</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>createId</name></member>
       <member refid="classmv_1_1AbstractDataManager_1a90223622ff9123d3113ab7996818fb43" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>createSubsetFromSelection</name></member>
       <member refid="classmv_1_1AbstractDataManager_1acf19ab38be006b6d977b5484d733fe87" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>createSubsetFromSelection</name></member>
       <member refid="classmv_1_1AbstractDataManager_1a757ec5d41671a0880c2e4c3027f13ba9" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>datasetAboutToBeRemoved</name></member>
@@ -1751,10 +1741,10 @@
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractDataManager_1a15fc490ed76c6b8dc2a1c81e8ecc2828" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>getAllDatasets</name></member>
       <member refid="classmv_1_1AbstractDataManager_1a6df89940e5d46a191b7782b91fdf7e74" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>getAllSelections</name></member>
       <member refid="classmv_1_1AbstractDataManager_1af483f02549e17659c4e2a5b5f6c34690" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>getDataset</name></member>
@@ -1780,8 +1770,8 @@
       <member refid="classmv_1_1AbstractDataManager_1ab2707c53ede3598cd317ce91f3168135" prot="public" virt="pure-virtual"><scope>mv::AbstractDataManager</scope><name>groupDatasets</name></member>
       <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>isInitializing</name></member>
@@ -1817,8 +1807,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>State</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractDataManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractDataManager</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

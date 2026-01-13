@@ -48,7 +48,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="244" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1aaf29785c184add1439f2bd4eb1055c33" prot="protected" static="no" mutable="no">
-        <type><ref refid="classmv_1_1gui_1_1FlowLayout" kindref="compound">FlowLayout</ref></type>
+        <type>FlowLayout</type>
         <definition>FlowLayout mv::gui::OptionsAction::TagsViewWidget::_flowLayout</definition>
         <argsstring></argsstring>
         <name>_flowLayout</name>
@@ -62,7 +62,7 @@
         <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="245" column="37" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1aeedb73cd8c708e43361b60e6314b0022" prot="protected" static="no" mutable="no">
-        <type><ref refid="classQMap" kindref="compound">QMap</ref>&lt; QString, QWidget * &gt;</type>
+        <type>QMap&lt; QString, QWidget * &gt;</type>
         <definition>QMap&lt;QString, QWidget*&gt; mv::gui::OptionsAction::TagsViewWidget::_widgetsMap</definition>
         <argsstring></argsstring>
         <name>_widgetsMap</name>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="225" column="9" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.cpp" bodystart="493" bodyend="505"/>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="225" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -162,11 +162,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="230" column="14" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.cpp" bodystart="507" bodyend="526"/>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="230" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1abfa4dbb221f945561c4e41237bb65321" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1a32bfa7d050becacc50d00439f51cc6d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TagLabel *</type>
-        <definition>OptionsAction::TagsViewWidget::TagLabel * mv::gui::OptionsAction::TagsViewWidget::addOption</definition>
+        <definition>TagLabel* mv::gui::OptionsAction::TagsViewWidget::addOption</definition>
         <argsstring>(const QString &amp;option, const TagLabel::Type &amp;type, QWidget *parent=nullptr)</argsstring>
         <name>addOption</name>
         <param>
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="239" column="18" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.cpp" bodystart="528" bodyend="537"/>
+        <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="239" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -225,122 +225,70 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>mv::gui::OptionsAction::TagsViewWidget</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QWidget</label>
-      </node>
-    </inheritancegraph>
     <collaborationgraph>
-      <node id="8">
-        <label>QMap&lt; Scope, QString &gt;</label>
-        <link refid="classQMap"/>
-      </node>
-      <node id="16">
-        <label>QLayout</label>
-      </node>
-      <node id="15">
-        <label>mv::gui::FlowLayout</label>
-        <link refid="classmv_1_1gui_1_1FlowLayout"/>
-        <childnode refid="16" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="1">
         <label>mv::gui::OptionsAction::TagsViewWidget</label>
         <link refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>_widgetsMap</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="2" relation="usage">
           <edgelabel>_optionsAction</edgelabel>
-        </childnode>
-        <childnode refid="15" relation="usage">
-          <edgelabel>_flowLayout</edgelabel>
-        </childnode>
-      </node>
-      <node id="11">
-        <label>mv::gui::OptionsAction::FileAction</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction_1_1FileAction"/>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-        <childnode refid="14" relation="usage">
-          <edgelabel>_loadSelectionAction</edgelabel>
-          <edgelabel>_saveSelectionAction</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>_optionsAction</edgelabel>
-        </childnode>
-      </node>
-      <node id="5">
-        <label>mv::gui::WidgetAction</label>
-        <link refid="classmv_1_1gui_1_1WidgetAction"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-        <childnode refid="7" relation="public-inheritance">
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>scopeNames</edgelabel>
-        </childnode>
-      </node>
-      <node id="7">
-        <label>mv::util::Serializable</label>
-        <link refid="classmv_1_1util_1_1Serializable"/>
-      </node>
-      <node id="12">
-        <label>mv::gui::HorizontalGroupAction</label>
-        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
-        <childnode refid="13" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>QWidget</label>
-      </node>
-      <node id="13">
-        <label>mv::gui::GroupAction</label>
-        <link refid="classmv_1_1gui_1_1GroupAction"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::gui::OptionsAction</label>
-        <link refid="classmv_1_1gui_1_1OptionsAction"/>
-        <childnode refid="5" relation="public-inheritance">
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>_optionsModel</edgelabel>
-        </childnode>
-        <childnode refid="11" relation="usage">
-          <edgelabel>_fileAction</edgelabel>
         </childnode>
       </node>
       <node id="6">
-        <label>QWidgetAction</label>
+        <label>mv::gui::OptionsAction::FileAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction_1_1FileAction"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_loadSelectionAction</edgelabel>
+          <edgelabel>_saveSelectionAction</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_optionsAction</edgelabel>
+        </childnode>
       </node>
       <node id="3">
-        <label>QMap&lt; QString, QWidget * &gt;</label>
-        <link refid="classQMap"/>
+        <label>mv::gui::WidgetAction</label>
+        <link refid="classmv_1_1gui_1_1WidgetAction"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="9">
+      <node id="4">
+        <label>mv::util::Serializable</label>
+        <link refid="classmv_1_1util_1_1Serializable"/>
+      </node>
+      <node id="7">
+        <label>mv::gui::HorizontalGroupAction</label>
+        <link refid="classmv_1_1gui_1_1HorizontalGroupAction"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mv::gui::GroupAction</label>
+        <link refid="classmv_1_1gui_1_1GroupAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mv::gui::OptionsAction</label>
+        <link refid="classmv_1_1gui_1_1OptionsAction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_optionsModel</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_fileAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
         <label>mv::CheckableStringListModel</label>
         <link refid="classmv_1_1CheckableStringListModel"/>
-        <childnode refid="10" relation="public-inheritance">
-        </childnode>
       </node>
-      <node id="14">
+      <node id="9">
         <label>mv::gui::TriggerAction</label>
         <link refid="classmv_1_1gui_1_1TriggerAction"/>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="10">
-        <label>QStringListModel</label>
       </node>
     </collaborationgraph>
     <location file="Docs/external/core/ManiVault/src/actions/OptionsAction.h" line="162" column="5" bodyfile="Docs/external/core/ManiVault/src/actions/OptionsAction.h" bodystart="162" bodyend="249"/>
@@ -350,7 +298,7 @@
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1a969235c91e98124421082d696c06fe6c" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>_hasSelectionTags</name></member>
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1ac85f3723106ae17bf3b06583e65ec7d6" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>_optionsAction</name></member>
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1aeedb73cd8c708e43361b60e6314b0022" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>_widgetsMap</name></member>
-      <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1abfa4dbb221f945561c4e41237bb65321" prot="private" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>addOption</name></member>
+      <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1a32bfa7d050becacc50d00439f51cc6d1" prot="private" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>addOption</name></member>
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1ab27d20529cfe8e3d057b6469dc0cfaec" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>OptionsAction</name></member>
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1a34f4283632e934b732b7860977bd67b7" prot="protected" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>TagsViewWidget</name></member>
       <member refid="classmv_1_1gui_1_1OptionsAction_1_1TagsViewWidget_1a90a90746f16c4b8b25d8f3896139a0a2" prot="private" virt="non-virtual"><scope>mv::gui::OptionsAction::TagsViewWidget</scope><name>updateFlowLayout</name></member>

@@ -8,8 +8,6 @@
     <includes refid="PluginPickerAction_8h" local="no">actions/PluginPickerAction.h</includes>
     <includes refid="ViewPluginSamplerAction_8h" local="no">actions/ViewPluginSamplerAction.h</includes>
     <includes refid="EventAction_8h" local="no">actions/EventAction.h</includes>
-    <includedby refid="SampleScopePlugin_8cpp" local="yes">SampleScopePlugin.cpp</includedby>
-    <includedby refid="SampleScopeWidget_8cpp" local="yes">SampleScopeWidget.cpp</includedby>
     <incdepgraph>
       <node id="62">
         <label>QMap</label>
@@ -1510,25 +1508,25 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;actions/ViewPluginSamplerAction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;actions/EventAction.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="classSampleScopePlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSampleScopePlugin" kindref="compound">SampleScopePlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref></highlight></codeline>
+<codeline lineno="23" refid="classSampleScopePlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSampleScopePlugin" kindref="compound">SampleScopePlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::ViewPlugin</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSampleScopePlugin_1afadabc2c6d85e24e8a9c10a83626bad1" kindref="member">SampleScopePlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>*<sp/>factory);</highlight></codeline>
+<codeline lineno="33" refid="classSampleScopePlugin_1afadabc2c6d85e24e8a9c10a83626bad1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSampleScopePlugin_1afadabc2c6d85e24e8a9c10a83626bad1" kindref="member">SampleScopePlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::PluginFactory*<sp/>factory);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSampleScopePlugin_1a69cbb73c7258d83a4defc8f8bcc5d89f" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="classSampleScopePlugin_1a69cbb73c7258d83a4defc8f8bcc5d89f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSampleScopePlugin_1a69cbb73c7258d83a4defc8f8bcc5d89f" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction" kindref="compound">mv::gui::ViewPluginSamplerAction</ref>*<sp/><ref refid="classSampleScopePlugin_1acc22c70cdf802b72683357563c5c0d46" kindref="member">getViewPluginSamplerAction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classSampleScopePlugin_1a710d407b6fbbd0ad672b0b54b689ced4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ViewPluginSamplerAction" kindref="compound">mv::gui::ViewPluginSamplerAction</ref>*<sp/><ref refid="classSampleScopePlugin_1a710d407b6fbbd0ad672b0b54b689ced4" kindref="member">getViewPluginSamplerAction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSampleScopePlugin_1a77210cef8c9c5d2da8503919b9cb8d8a" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52" refid="classSampleScopePlugin_1a77210cef8c9c5d2da8503919b9cb8d8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSampleScopePlugin_1a77210cef8c9c5d2da8503919b9cb8d8a" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><ref refid="classSampleScopePlugin_1ae4dd6a7550280489af52ce4549f50e9a" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58" refid="classSampleScopePlugin_1ae4dd6a7550280489af52ce4549f50e9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classSampleScopePlugin_1ae4dd6a7550280489af52ce4549f50e9a" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
@@ -1544,20 +1542,20 @@
 <codeline lineno="72" refid="classSampleScopePlugin_1a68960b565b815072fec2a32b68b0373e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSampleScopeWidget" kindref="compound">SampleScopeWidget</ref>;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="classSampleScopePluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSampleScopePluginFactory" kindref="compound">SampleScopePluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">mv::plugin::ViewPluginFactory</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SampleScopePluginFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::ViewPluginFactory</highlight></codeline>
 <codeline lineno="76"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">mv::plugin::ViewPluginFactory</ref><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(mv::plugin::ViewPluginFactory<sp/>mv::plugin::PluginFactory)</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;studio.manivault.SampleScopePlugin&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/></highlight><highlight class="stringliteral">&quot;SampleScopePlugin.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSampleScopePluginFactory" kindref="compound">SampleScopePluginFactory</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>SampleScopePluginFactory();</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/><ref refid="classmv_1_1plugin_1_1PluginFactory_1a0257ad9676c433ee1020db303e9aa704" kindref="member">getRepositoryUrl</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getRepositoryUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::plugin::ViewPlugin*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/SampleScopePlugin/src/SampleScopePlugin.h"/>

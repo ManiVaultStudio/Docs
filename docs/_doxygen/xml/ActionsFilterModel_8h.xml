@@ -9,9 +9,6 @@
     <includes refid="AbstractActionsModel_8h" local="yes">AbstractActionsModel.h</includes>
     <includes local="no">QCompleter</includes>
     <includedby refid="WidgetActionMimeData_8h" local="yes">WidgetActionMimeData.h</includedby>
-    <includedby refid="WidgetActionContextMenu_8cpp" local="yes">WidgetActionContextMenu.cpp</includedby>
-    <includedby refid="ActionsFilterModel_8cpp" local="yes">ActionsFilterModel.cpp</includedby>
-    <includedby refid="ActionsManager_8cpp" local="no">ActionsManager.cpp</includedby>
     <includedby refid="ActionsWidget_8h" local="yes">ActionsWidget.h</includedby>
     <incdepgraph>
       <node id="223">
@@ -2445,7 +2442,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>ViewPluginEditorDialog.h</label>
         <link refid="ViewPluginEditorDialog_8h_source"/>
       </node>
@@ -2457,7 +2454,7 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>SharedParametersPlugin.h</label>
         <link refid="SharedParametersPlugin_8h_source"/>
       </node>
@@ -2505,13 +2502,13 @@
 <codeline lineno="29"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ActionsFilterModel" kindref="compound">ActionsFilterModel</ref>(QObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35" refid="classmv_1_1ActionsFilterModel_1a625df75d514bb9dedc097864bae10903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1ActionsFilterModel_1a625df75d514bb9dedc097864bae10903" kindref="member">ActionsFilterModel</ref>(QObject*<sp/>parent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>filterAcceptsRow(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>parent)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="classmv_1_1ActionsFilterModel_1a981389dbd2ccbfb93227634fd96b7d23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ActionsFilterModel_1a981389dbd2ccbfb93227634fd96b7d23" kindref="member">filterAcceptsRow</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>parent)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lessThan(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="classmv_1_1ActionsFilterModel_1a0fa735b5de3116d36a56e873c147d5ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1ActionsFilterModel_1a0fa735b5de3116d36a56e873c147d5ce" kindref="member">lessThan</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex&amp;<sp/>rhs)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref>*<sp/>getAction(std::int32_t<sp/>rowIndex);</highlight></codeline>
+<codeline lineno="57" refid="classmv_1_1ActionsFilterModel_1a6790806c8b65f730f85a96c6ec348275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref>*<sp/><ref refid="classmv_1_1ActionsFilterModel_1a6790806c8b65f730f85a96c6ec348275" kindref="member">getAction</ref>(std::int32_t<sp/>rowIndex);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
@@ -2521,27 +2518,27 @@
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref>&amp;<sp/>getTypeFilterAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_typeFilterAction;<sp/>}</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref>&amp;<sp/>getTypeFilterHumanReadableAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_typeFilterHumanReadableAction;<sp/>}</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getScopeFilterAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_scopeFilterAction;<sp/>}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getFilterForceHiddenAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterForceHiddenAction;<sp/>}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getFilterForceDisabledAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterForceDisabledAction;<sp/>}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getFilterMayPublishAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayPublishAction;<sp/>}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getFilterMayConnectAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayConnectAction;<sp/>}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref>&amp;<sp/>getFilterMayDisconnectAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayDisconnectAction;<sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref>&amp;<sp/>getPublicRootOnlyAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_publicRootOnlyAction;<sp/>}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref>&amp;<sp/>getRemoveFiltersAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_removeFiltersAction;<sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getScopeFilterAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_scopeFilterAction;<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getFilterForceHiddenAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterForceHiddenAction;<sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getFilterForceDisabledAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterForceDisabledAction;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getFilterMayPublishAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayPublishAction;<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getFilterMayConnectAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayConnectAction;<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction&amp;<sp/>getFilterMayDisconnectAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_filterMayDisconnectAction;<sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::ToggleAction&amp;<sp/>getPublicRootOnlyAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_publicRootOnlyAction;<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::TriggerAction&amp;<sp/>getRemoveFiltersAction()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_removeFiltersAction;<sp/>}</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref><sp/><sp/><sp/>_typeFilterAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1StringAction" kindref="compound">gui::StringAction</ref><sp/><sp/><sp/>_typeFilterHumanReadableAction;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::StringAction<sp/><sp/><sp/>_typeFilterAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::StringAction<sp/><sp/><sp/>_typeFilterHumanReadableAction;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>QCompleter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_typeCompleter;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_scopeFilterAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_filterForceHiddenAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_filterForceDisabledAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_filterMayPublishAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_filterMayConnectAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1OptionsAction" kindref="compound">gui::OptionsAction</ref><sp/><sp/>_filterMayDisconnectAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1ToggleAction" kindref="compound">gui::ToggleAction</ref><sp/><sp/><sp/>_publicRootOnlyAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1gui_1_1TriggerAction" kindref="compound">gui::TriggerAction</ref><sp/><sp/>_removeFiltersAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_scopeFilterAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_filterForceHiddenAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_filterForceDisabledAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_filterMayPublishAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_filterMayConnectAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::OptionsAction<sp/><sp/>_filterMayDisconnectAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::ToggleAction<sp/><sp/><sp/>_publicRootOnlyAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>gui::TriggerAction<sp/><sp/>_removeFiltersAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="95"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal">}</highlight></codeline>

@@ -57,7 +57,6 @@
         <definition>virtual void mv::AbstractPluginManager::loadPluginFactories</definition>
         <argsstring>()=0</argsstring>
         <name>loadPluginFactories</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a24aebaeff9c690a6f32dd884c2ff4745">loadPluginFactories</reimplementedby>
         <briefdescription>
 <para>Loads all plugin factories from the plugin directory. </para>
         </briefdescription>
@@ -72,7 +71,6 @@
         <definition>virtual bool mv::AbstractPluginManager::isPluginLoaded</definition>
         <argsstring>(const QString &amp;kind) const =0</argsstring>
         <name>isPluginLoaded</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1acc26d71bcf46cc9823b22eb3f0889f6a">isPluginLoaded</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -99,11 +97,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="59" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1af878a03a541818157750541748a1614f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+        <type>plugin::Plugin *</type>
         <definition>virtual plugin::Plugin* mv::AbstractPluginManager::requestPlugin</definition>
         <argsstring>(const QString &amp;kind, Datasets inputDatasets=Datasets(), Datasets outputDatasets=Datasets())=0</argsstring>
         <name>requestPlugin</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a5e97db23a5e4340e5dee0405b2c21967">requestPlugin</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -201,17 +198,16 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="78" column="16" bodyfile="Docs/external/core/ManiVault/src/AbstractPluginManager.h" bodystart="78" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1acab382dc694f384785ec28caa7ee339b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+        <type>plugin::ViewPlugin *</type>
         <definition>virtual plugin::ViewPlugin* mv::AbstractPluginManager::requestViewPlugin</definition>
         <argsstring>(const QString &amp;kind, plugin::ViewPlugin *dockToViewPlugin=nullptr, gui::DockAreaFlag dockArea=gui::DockAreaFlag::Right, Datasets datasets=Datasets())=0</argsstring>
         <name>requestViewPlugin</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a1507d17f0e3219d8b996e0e9730e281f">requestViewPlugin</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+          <type>plugin::ViewPlugin *</type>
           <declname>dockToViewPlugin</declname>
           <defval>nullptr</defval>
         </param>
@@ -271,11 +267,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="101" column="32"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a260295cfc61df52c4d3871d2d8dd83ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">plugin::ViewPlugin</ref> *</type>
+        <type>plugin::ViewPlugin *</type>
         <definition>virtual plugin::ViewPlugin* mv::AbstractPluginManager::requestViewPluginFloated</definition>
         <argsstring>(const QString &amp;kind, Datasets datasets=Datasets())=0</argsstring>
         <name>requestViewPluginFloated</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1ae9723ec0a3473b7e1d447aa4f35d0d54">requestViewPluginFloated</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -319,9 +314,8 @@
         <definition>virtual void mv::AbstractPluginManager::destroyPlugin</definition>
         <argsstring>(plugin::Plugin *plugin)=0</argsstring>
         <name>destroyPlugin</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a302a670800c287b66f10ca3c33a13160">destroyPlugin</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <type>plugin::Plugin *</type>
           <declname>plugin</declname>
         </param>
         <briefdescription>
@@ -348,7 +342,6 @@
         <definition>virtual void mv::AbstractPluginManager::destroyPluginById</definition>
         <argsstring>(const QString &amp;pluginId)=0</argsstring>
         <name>destroyPluginById</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a8ca29214648413f0660ba308d855c2a6">destroyPluginById</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginId</declname>
@@ -373,11 +366,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="123" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1aea2a3d41d46e8927f4e381ea0f18d985" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">plugin::PluginFactory</ref> *</type>
+        <type>plugin::PluginFactory *</type>
         <definition>virtual plugin::PluginFactory* mv::AbstractPluginManager::getPluginFactory</definition>
         <argsstring>(const QString &amp;pluginKind) const =0</argsstring>
         <name>getPluginFactory</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a64ecedcbbf4b6c65a4642492a0422d7f">getPluginFactory</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginKind</declname>
@@ -404,11 +396,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="132" column="35"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1ab5b3f8bd59d9cd0f80500efaa22e04a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">plugin::PluginFactory</ref> * &gt;</type>
+        <type>std::vector&lt; plugin::PluginFactory * &gt;</type>
         <definition>virtual std::vector&lt;plugin::PluginFactory*&gt; mv::AbstractPluginManager::getPluginFactoriesByType</definition>
         <argsstring>(const plugin::Type &amp;pluginType) const =0</argsstring>
         <name>getPluginFactoriesByType</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a4a4c1f57efc04e5bb44b799bdb7bcb96">getPluginFactoriesByType</reimplementedby>
         <param>
           <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
@@ -435,11 +426,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="139" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1ab02123a4a1f488586dbabb6162a4b0c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">plugin::PluginFactory</ref> * &gt;</type>
+        <type>std::vector&lt; plugin::PluginFactory * &gt;</type>
         <definition>virtual std::vector&lt;plugin::PluginFactory*&gt; mv::AbstractPluginManager::getPluginFactoriesByTypes</definition>
         <argsstring>(const plugin::Types &amp;pluginTypes=plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }) const =0</argsstring>
         <name>getPluginFactoriesByTypes</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a6a3ad4fd4a70c4e33d8cfb117235af2c">getPluginFactoriesByTypes</reimplementedby>
         <param>
           <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
@@ -467,13 +457,12 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="146" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a287d85e2999cbd62911a45100229502d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> * &gt;</type>
+        <type>std::vector&lt; plugin::Plugin * &gt;</type>
         <definition>virtual std::vector&lt;plugin::Plugin*&gt; mv::AbstractPluginManager::getPluginsByFactory</definition>
         <argsstring>(const plugin::PluginFactory *pluginFactory) const =0</argsstring>
         <name>getPluginsByFactory</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1abf684e3c034cc39629e67d10c4f4d23a">getPluginsByFactory</reimplementedby>
         <param>
-          <type>const <ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">plugin::PluginFactory</ref> *</type>
+          <type>const plugin::PluginFactory *</type>
           <declname>pluginFactory</declname>
         </param>
         <briefdescription>
@@ -498,11 +487,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="153" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a9c672aa8501c6f7e094e9c66ad850965" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> * &gt;</type>
+        <type>std::vector&lt; plugin::Plugin * &gt;</type>
         <definition>virtual std::vector&lt;plugin::Plugin*&gt; mv::AbstractPluginManager::getPluginsByType</definition>
         <argsstring>(const plugin::Type &amp;pluginType) const =0</argsstring>
         <name>getPluginsByType</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1ade59b3261cb197980645efbe46ef832d">getPluginsByType</reimplementedby>
         <param>
           <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
@@ -529,11 +517,10 @@
         <location file="Docs/external/core/ManiVault/src/AbstractPluginManager.h" line="162" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1AbstractPluginManager_1a786370171ebf6c0b9ff51762aeed648a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; <ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> * &gt;</type>
+        <type>std::vector&lt; plugin::Plugin * &gt;</type>
         <definition>virtual std::vector&lt;plugin::Plugin*&gt; mv::AbstractPluginManager::getPluginsByTypes</definition>
         <argsstring>(const plugin::Types &amp;pluginTypes=plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }) const =0</argsstring>
         <name>getPluginsByTypes</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a692f10e52d2a27fdf687ec18f1fa7387">getPluginsByTypes</reimplementedby>
         <param>
           <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
@@ -565,7 +552,6 @@
         <definition>virtual QStringList mv::AbstractPluginManager::getPluginKindsByPluginTypes</definition>
         <argsstring>(const plugin::Types &amp;pluginTypes=plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }) const =0</argsstring>
         <name>getPluginKindsByPluginTypes</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a91c7831deef98ac04426d87190c34889">getPluginKindsByPluginTypes</reimplementedby>
         <param>
           <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
@@ -597,7 +583,6 @@
         <definition>virtual QStringList mv::AbstractPluginManager::getLoadedPluginKinds</definition>
         <argsstring>(const plugin::Types &amp;pluginTypes=plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }) const =0</argsstring>
         <name>getLoadedPluginKinds</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a857bba19a15b48187de41bb967865ae2">getLoadedPluginKinds</reimplementedby>
         <param>
           <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
@@ -629,7 +614,6 @@
         <definition>virtual QStringList mv::AbstractPluginManager::getUsedPluginKinds</definition>
         <argsstring>(const plugin::Types &amp;pluginTypes=plugin::Types{ plugin::Type::ANALYSIS, plugin::Type::DATA, plugin::Type::LOADER, plugin::Type::WRITER, plugin::Type::TRANSFORMATION, plugin::Type::VIEW }) const =0</argsstring>
         <name>getUsedPluginKinds</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1aca183684e29f4a16c2f14d5dc3a88618">getUsedPluginKinds</reimplementedby>
         <param>
           <type>const plugin::Types &amp;</type>
           <declname>pluginTypes</declname>
@@ -661,7 +645,6 @@
         <definition>virtual gui::PluginTriggerActions mv::AbstractPluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType) const =0</argsstring>
         <name>getPluginTriggerActions</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1ad890c7856af59d71f5a36d33120f6f31">getPluginTriggerActions</reimplementedby>
         <param>
           <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
@@ -692,7 +675,6 @@
         <definition>virtual gui::PluginTriggerActions mv::AbstractPluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType, const Datasets &amp;datasets) const =0</argsstring>
         <name>getPluginTriggerActions</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a00d251144c7ac196a602ba8294797d0f">getPluginTriggerActions</reimplementedby>
         <param>
           <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
@@ -735,7 +717,6 @@
         <definition>virtual gui::PluginTriggerActions mv::AbstractPluginManager::getPluginTriggerActions</definition>
         <argsstring>(const plugin::Type &amp;pluginType, const DataTypes &amp;dataTypes) const =0</argsstring>
         <name>getPluginTriggerActions</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1aa1e5dc84e703d0969b033f7c0edd79cb">getPluginTriggerActions</reimplementedby>
         <param>
           <type>const plugin::Type &amp;</type>
           <declname>pluginType</declname>
@@ -778,7 +759,6 @@
         <definition>virtual gui::PluginTriggerActions mv::AbstractPluginManager::getPluginTriggerActions</definition>
         <argsstring>(const QString &amp;pluginKind, const Datasets &amp;datasets) const =0</argsstring>
         <name>getPluginTriggerActions</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1aacaf0c9e80f7730d64296960176945c3">getPluginTriggerActions</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginKind</declname>
@@ -821,7 +801,6 @@
         <definition>virtual gui::PluginTriggerActions mv::AbstractPluginManager::getPluginTriggerActions</definition>
         <argsstring>(const QString &amp;pluginKind, const DataTypes &amp;dataTypes) const =0</argsstring>
         <name>getPluginTriggerActions</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a163097715c40dd5906db52346ea5460a">getPluginTriggerActions</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginKind</declname>
@@ -864,7 +843,6 @@
         <definition>virtual QString mv::AbstractPluginManager::getPluginGuiName</definition>
         <argsstring>(const QString &amp;pluginKind) const =0</argsstring>
         <name>getPluginGuiName</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a3458b57ad6278027edf87b51cf1db373">getPluginGuiName</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginKind</declname>
@@ -901,7 +879,6 @@
         <definition>virtual QIcon mv::AbstractPluginManager::getPluginIcon</definition>
         <argsstring>(const QString &amp;pluginKind) const =0</argsstring>
         <name>getPluginIcon</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1aa830b7b55b695ae13fc60647fd085f77">getPluginIcon</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>pluginKind</declname>
@@ -932,7 +909,6 @@
         <definition>virtual const PluginsListModel&amp; mv::AbstractPluginManager::getListModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getListModel</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1ab151523dfbb547b204335f80ead40657">getListModel</reimplementedby>
         <briefdescription>
 <para>Get list model of all loaded plugins. </para>
         </briefdescription>
@@ -950,7 +926,6 @@
         <definition>virtual const PluginsTreeModel&amp; mv::AbstractPluginManager::getTreeModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getTreeModel</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a956ed706292173ec7198b4f6f11344d5">getTreeModel</reimplementedby>
         <briefdescription>
 <para>Get tree model of all loaded plugins. </para>
         </briefdescription>
@@ -969,7 +944,7 @@
         <argsstring>(plugin::Plugin *plugin)</argsstring>
         <name>pluginAdded</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <type>plugin::Plugin *</type>
           <declname>plugin</declname>
         </param>
         <briefdescription>
@@ -997,7 +972,7 @@
         <argsstring>(plugin::Plugin *plugin)</argsstring>
         <name>pluginAboutToBeDestroyed</name>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <type>plugin::Plugin *</type>
           <declname>plugin</declname>
         </param>
         <briefdescription>
@@ -1068,9 +1043,8 @@
         <definition>virtual void mv::AbstractPluginManager::addPlugin</definition>
         <argsstring>(plugin::Plugin *plugin)=0</argsstring>
         <name>addPlugin</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1a5377667237277793642ea1f6d6f05ff0">addPlugin</reimplementedby>
         <param>
-          <type><ref refid="classmv_1_1plugin_1_1Plugin" kindref="compound">plugin::Plugin</ref> *</type>
+          <type>plugin::Plugin *</type>
           <declname>plugin</declname>
         </param>
         <briefdescription>
@@ -1099,7 +1073,6 @@
         <definition>virtual QStringList mv::AbstractPluginManager::resolveDependencies</definition>
         <argsstring>(QDir pluginDir) const =0</argsstring>
         <name>resolveDependencies</name>
-        <reimplementedby refid="classmv_1_1PluginManager_1abd21141a55655a7f101761086a271a46">resolveDependencies</reimplementedby>
         <param>
           <type>QDir</type>
           <declname>pluginDir</declname>
@@ -1137,15 +1110,6 @@
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="5">
-        <label>mv::PluginManager</label>
-        <link refid="classmv_1_1PluginManager"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1159,16 +1123,11 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
       <node id="3">
-        <label>QObject</label>
-      </node>
-      <node id="4">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>
       </node>
@@ -1182,8 +1141,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -1194,7 +1151,7 @@
       <member refid="classmv_1_1AbstractPluginManager_1a70686230a4518abe90e4c82acb423490" prot="private" virt="pure-virtual"><scope>mv::AbstractPluginManager</scope><name>addPlugin</name></member>
       <member refid="classmv_1_1AbstractManager_1a1aca0378ec9ed73eeec3a42c05619c4b" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>beginInitialization</name></member>
       <member refid="classmv_1_1AbstractManager_1afbf976b2b3f1e66a8fcd840f666a0886" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>beginReset</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a992a87106e94dd640b8cda24aa0b099d" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>createId</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1abc8b130bf9b037725fb6bc5b1b97f610" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>createId</name></member>
       <member refid="classmv_1_1AbstractPluginManager_1a63e0ce65962b1cb7744ee3f5e91410a2" prot="public" virt="pure-virtual"><scope>mv::AbstractPluginManager</scope><name>destroyPlugin</name></member>
       <member refid="classmv_1_1AbstractPluginManager_1a14a32995cdfa4e8e56126045f05a9acf" prot="public" virt="pure-virtual"><scope>mv::AbstractPluginManager</scope><name>destroyPluginById</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8050106f06ba1bae6f5a911444630789" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>Direction</name></member>
@@ -1202,10 +1159,10 @@
       <member refid="classmv_1_1AbstractManager_1a258a964276906df615853691838c3a62" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>endReset</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a8518bc7913b14bdfab049d450d21ad0c" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1afcecc106b3e3d96b70033b5b32d36584" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1aa55a56de668b39f1cd1e1de0c52f0c82" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>fromParentVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a910aef5f04c212faa1281ba22857400d" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a9baf962fc8bdb1a80b7b2cb662999433" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a178c054f3c393f08aaaab94bd50d9d1f" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a831c66256e533a52473566b7c40c89d9" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>fromParentVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a3966d0241455cc4550653495368221cf" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a810bd7e55dad77a6d2dc09f5f205655c" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1acc33d6a3e2fe448232f41f7d4a8bb350" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>fromVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1abc555c99d583431e971356f85063928d" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>getIcon</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a0ddf624829acac13a384d1bff05d8e53" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>getId</name></member>
       <member refid="classmv_1_1AbstractPluginManager_1a64749c54c17f21f06e1caf8e89c4c57d" prot="public" virt="pure-virtual"><scope>mv::AbstractPluginManager</scope><name>getListModel</name></member>
@@ -1235,8 +1192,8 @@
       <member refid="classmv_1_1AbstractPluginManager_1aacbb23d173557e9f901bd940b720058c" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>gui::PluginTriggerAction</name></member>
       <member refid="classmv_1_1AbstractManager_1a772b30a36e4f391882a6d4ad20b22c48" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>initialize</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aaba9fedc1429728ff93773e4d711baae" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a69d58cc173aacffdfaf75ba6f1078ba5" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>insertIntoVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a53da0fd29f1d7f92b8c225b273eceb54" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1aab14166513ddfeb19a5ca16fddb87656" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>insertIntoVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a555ee816634d4e1db11848758d3580c6" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>insertIntoVariantMap</name></member>
       <member refid="classmv_1_1AbstractManager_1a35824b431be129ef20a711416e0a6736" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>isCoreDestroyed</name></member>
       <member refid="classmv_1_1AbstractManager_1a38cfc6616dfea8a8518a428ed87f9130" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>isInitialized</name></member>
       <member refid="classmv_1_1AbstractManager_1aba37c452dc5089986c31dee26a492814" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>isInitializing</name></member>
@@ -1269,8 +1226,8 @@
       <member refid="classmv_1_1util_1_1Serializable_1af528e8cf3e5cd095ed85bfd4bc4ab767" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>State</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a96e94b7a70797d4c151c9b0e1670ec71" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>toJsonDocument</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1a4856df82a9bda34939c987046e78a0fd" prot="public" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>toJsonFile</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1ae556bf96744eeca6782e0545d5a75659" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>toVariantMap</name></member>
-      <member refid="classmv_1_1util_1_1Serializable_1a95b7123585bfef1109e649159d6ea243" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1a7c7c63a0099cfdb650247fddc8b1c30e" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>toVariantMap</name></member>
+      <member refid="classmv_1_1util_1_1Serializable_1ac50a1aaddfc626ca629e9d731f051ee0" prot="protected" virt="non-virtual"><scope>mv::AbstractPluginManager</scope><name>toVariantMap</name></member>
       <member refid="classmv_1_1util_1_1Serializable_1aa8aa1c9a84f1d22546505ce53ac4bc93" prot="public" virt="virtual"><scope>mv::AbstractPluginManager</scope><name>~Serializable</name></member>
     </listofallmembers>
   </compounddef>

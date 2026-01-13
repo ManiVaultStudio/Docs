@@ -8,7 +8,6 @@
     <includes local="no">QDebug</includes>
     <includes local="no">QImage</includes>
     <includes local="no">vector</includes>
-    <includedby refid="Image_8cpp" local="yes">Image.cpp</includedby>
     <includedby refid="ImageData_8h" local="yes">ImageData.h</includedby>
     <includedby refid="Images_8h" local="yes">Images.h</includedby>
     <incdepgraph>
@@ -93,7 +92,7 @@
           <declname>dbg</declname>
         </param>
         <param>
-          <type><ref refid="classImage" kindref="compound">Image</ref> &amp;</type>
+          <type>Image &amp;</type>
           <declname>image</declname>
         </param>
         <briefdescription>
@@ -125,12 +124,12 @@
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="classImage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMAGEDATA_EXPORT<sp/><ref refid="classImage" kindref="compound">Image</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IMAGEDATA_EXPORT<sp/>Image</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImage" kindref="compound">Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize&amp;<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::uint32_t&amp;<sp/>noComponents,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>imageFilePath);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Image(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize&amp;<sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::uint32_t&amp;<sp/>noComponents,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>imageFilePath);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint16_t*<sp/>data();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint16_t*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>();</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>QSize<sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setSize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize&amp;<sp/>size);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>std::uint32_t<sp/>width()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
@@ -157,7 +156,7 @@
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dimensionName;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>QDebug<sp/>operator&lt;&lt;(QDebug<sp/>dbg,<sp/><ref refid="classImage" kindref="compound">Image</ref>&amp;<sp/>image)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>QDebug<sp/>operator&lt;&lt;(QDebug<sp/>dbg,<sp/>Image&amp;<sp/>image)</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>dbg<sp/>&lt;&lt;<sp/>QString(</highlight><highlight class="stringliteral">&quot;Image<sp/>%1x%2,<sp/>%3<sp/>components&quot;</highlight><highlight class="normal">).arg(QString::number(image.width()),<sp/>QString::number(image.height()),<sp/>QString::number(image.noComponents()));</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>

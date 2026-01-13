@@ -7,8 +7,6 @@
     <includes refid="LearningCenterTutorial_8h" local="no">util/LearningCenterTutorial.h</includes>
     <includes refid="HorizontalGroupAction_8h" local="no">actions/HorizontalGroupAction.h</includes>
     <includes refid="LearningCenterTutorialsFilterModel_8h" local="no">models/LearningCenterTutorialsFilterModel.h</includes>
-    <includedby refid="TutorialPlugin_8cpp" local="yes">TutorialPlugin.cpp</includedby>
-    <includedby refid="TutorialWidget_8cpp" local="yes">TutorialWidget.cpp</includedby>
     <incdepgraph>
       <node id="63">
         <label>QMap</label>
@@ -1467,17 +1465,17 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;models/LearningCenterTutorialsFilterModel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="classTutorialPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTutorialPlugin" kindref="compound">TutorialPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref></highlight></codeline>
+<codeline lineno="24" refid="classTutorialPlugin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTutorialPlugin" kindref="compound">TutorialPlugin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::ViewPlugin</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTutorialPlugin_1a4edbd33d4226b070b6947f9109f6b876" kindref="member">TutorialPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>*<sp/>factory);</highlight></codeline>
+<codeline lineno="34" refid="classTutorialPlugin_1a4edbd33d4226b070b6947f9109f6b876" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTutorialPlugin_1a4edbd33d4226b070b6947f9109f6b876" kindref="member">TutorialPlugin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::PluginFactory*<sp/>factory);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTutorialPlugin_1a4165dfe37ba79d39c66b1d450a6dda74" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="classTutorialPlugin_1a4165dfe37ba79d39c66b1d450a6dda74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTutorialPlugin_1a4165dfe37ba79d39c66b1d450a6dda74" kindref="member">init</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1LearningCenterTutorial" kindref="compound">mv::util::LearningCenterTutorial</ref>*<sp/><ref refid="classTutorialPlugin_1a9ea9177585a6875690bea1494191546c" kindref="member">getCurrentTutorial</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="classTutorialPlugin_1a2f156ef30fe8e3bb5e6b2d37b68698d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1util_1_1LearningCenterTutorial" kindref="compound">mv::util::LearningCenterTutorial</ref>*<sp/><ref refid="classTutorialPlugin_1a2f156ef30fe8e3bb5e6b2d37b68698d6" kindref="member">getCurrentTutorial</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
@@ -1485,9 +1483,9 @@
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTutorialPlugin_1a5c5f092f83f2aee4011b86eea267855d" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56" refid="classTutorialPlugin_1a5c5f092f83f2aee4011b86eea267855d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTutorialPlugin_1a5c5f092f83f2aee4011b86eea267855d" kindref="member">fromVariantMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><ref refid="classTutorialPlugin_1a68ceeec9f1d2e696947ec4f0df23dc51" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62" refid="classTutorialPlugin_1a68ceeec9f1d2e696947ec4f0df23dc51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/><ref refid="classTutorialPlugin_1a68ceeec9f1d2e696947ec4f0df23dc51" kindref="member">toVariantMap</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Action<sp/>getters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
@@ -1504,20 +1502,20 @@
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_autoOpenProject;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="77"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79" refid="classTutorialPluginFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTutorialPluginFactory" kindref="compound">TutorialPluginFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">mv::plugin::ViewPluginFactory</ref></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TutorialPluginFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::ViewPluginFactory</highlight></codeline>
 <codeline lineno="80"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classmv_1_1plugin_1_1ViewPluginFactory" kindref="compound">mv::plugin::ViewPluginFactory</ref><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(mv::plugin::ViewPluginFactory<sp/>mv::plugin::PluginFactory)</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;studio.manivault.TutorialPlugin&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/></highlight><highlight class="stringliteral">&quot;TutorialPlugin.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTutorialPluginFactory" kindref="compound">TutorialPluginFactory</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>TutorialPluginFactory();</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/><ref refid="classmv_1_1plugin_1_1PluginFactory_1a0257ad9676c433ee1020db303e9aa704" kindref="member">getRepositoryUrl</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getRepositoryUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">mv::plugin::ViewPlugin</ref>*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::plugin::ViewPlugin*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/TutorialPlugin/src/TutorialPlugin.h"/>

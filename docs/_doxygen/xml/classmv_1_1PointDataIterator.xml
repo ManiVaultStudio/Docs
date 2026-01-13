@@ -15,7 +15,7 @@
     </templateparamlist>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a4fa114a18d89b32e6ddbb603bbbb9548" prot="private" static="no">
-        <type><ref refid="classmv_1_1PointView" kindref="compound">PointView</ref>&lt; ValueIteratorType &gt;</type>
+        <type>PointView&lt; ValueIteratorType &gt;</type>
         <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::PointViewType =  PointView&lt;ValueIteratorType&gt;</definition>
         <argsstring></argsstring>
         <name>PointViewType</name>
@@ -43,7 +43,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="25" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a72484836f59cc9e844a223def483baec" prot="public" static="no">
-        <type><ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref></type>
+        <type>PointViewType</type>
         <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::value_type =  PointViewType</definition>
         <argsstring></argsstring>
         <name>value_type</name>
@@ -56,7 +56,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="26" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1afb6ee2eccdfa25e93e5ec40d26aaccc3" prot="public" static="no">
-        <type><ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref></type>
+        <type>PointViewType</type>
         <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::reference =  PointViewType</definition>
         <argsstring></argsstring>
         <name>reference</name>
@@ -69,7 +69,7 @@
         <location file="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" line="27" column="9" bodyfile="Docs/external/core/ManiVault/src/plugins/PointData/src/PointDataIterator.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classmv_1_1PointDataIterator_1a4a8e49809b5b7b2abf6d2e0f283f00cb" prot="public" static="no">
-        <type>const <ref refid="classmv_1_1PointView" kindref="compound">PointViewType</ref> *</type>
+        <type>const PointViewType *</type>
         <definition>using mv::PointDataIterator&lt; ValueIteratorType, IndexIteratorType, IndexFunctionType &gt;::pointer =  const PointViewType*</definition>
         <argsstring></argsstring>
         <name>pointer</name>
@@ -201,7 +201,7 @@
         <argsstring>() const</argsstring>
         <name>operator*</name>
         <briefdescription>
-<para>Returns a <ref refid="classmv_1_1PointView" kindref="compound">PointView</ref> object to the current point. </para>
+<para>Returns a PointView object to the current point. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -303,7 +303,7 @@
         <argsstring>(PointDataIterator &amp;it, const difference_type n)</argsstring>
         <name>operator+=</name>
         <param>
-          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>PointDataIterator &amp;</type>
           <declname>it</declname>
         </param>
         <param>
@@ -325,11 +325,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator-</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -347,7 +347,7 @@
         <argsstring>(PointDataIterator it, const difference_type n)</argsstring>
         <name>operator+</name>
         <param>
-          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <type>PointDataIterator</type>
           <declname>it</declname>
         </param>
         <param>
@@ -373,7 +373,7 @@
           <declname>n</declname>
         </param>
         <param>
-          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <type>PointDataIterator</type>
           <declname>it</declname>
         </param>
         <briefdescription>
@@ -391,7 +391,7 @@
         <argsstring>(PointDataIterator it, const difference_type n)</argsstring>
         <name>operator-</name>
         <param>
-          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref></type>
+          <type>PointDataIterator</type>
           <declname>it</declname>
         </param>
         <param>
@@ -413,11 +413,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator==</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -435,11 +435,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator!=</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -457,11 +457,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator&lt;</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -479,11 +479,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator&gt;</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -501,11 +501,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator&lt;=</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -523,11 +523,11 @@
         <argsstring>(const PointDataIterator &amp;it1, const PointDataIterator &amp;it2)</argsstring>
         <name>operator&gt;=</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it1</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>it2</declname>
         </param>
         <briefdescription>
@@ -545,7 +545,7 @@
         <argsstring>(PointDataIterator &amp;it, const difference_type n)</argsstring>
         <name>operator-=</name>
         <param>
-          <type><ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>PointDataIterator &amp;</type>
           <declname>it</declname>
         </param>
         <param>
@@ -567,7 +567,7 @@
         <argsstring>(const PointDataIterator &amp;arg)</argsstring>
         <name>index</name>
         <param>
-          <type>const <ref refid="classmv_1_1PointDataIterator" kindref="compound">PointDataIterator</ref> &amp;</type>
+          <type>const PointDataIterator &amp;</type>
           <declname>arg</declname>
         </param>
         <briefdescription>

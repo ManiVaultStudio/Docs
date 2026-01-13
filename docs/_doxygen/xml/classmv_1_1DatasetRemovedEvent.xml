@@ -19,7 +19,7 @@
         <location file="Docs/external/core/ManiVault/src/event/Event.h" line="240" column="17" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classmv_1_1DatasetRemovedEvent_1aec29e7e25da2ccea7f488faa75c7831d" prot="protected" static="no" mutable="no">
-        <type><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></type>
+        <type>DataType</type>
         <definition>DataType mv::DatasetRemovedEvent::_dataType</definition>
         <argsstring></argsstring>
         <name>_dataType</name>
@@ -48,7 +48,7 @@
           <declname>datasetGuid</declname>
         </param>
         <param>
-          <type>const <ref refid="classmv_1_1DataType" kindref="compound">DataType</ref> &amp;</type>
+          <type>const DataType &amp;</type>
           <declname>dataType</declname>
         </param>
         <briefdescription>
@@ -93,7 +93,7 @@
         <location file="Docs/external/core/ManiVault/src/event/Event.h" line="230" column="13" bodyfile="Docs/external/core/ManiVault/src/event/Event.h" bodystart="230" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="classmv_1_1DatasetRemovedEvent_1a192475803849b007736744c3f806e099" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="classmv_1_1DataType" kindref="compound">DataType</ref></type>
+        <type>DataType</type>
         <definition>DataType mv::DatasetRemovedEvent::getDataType</definition>
         <argsstring>() const</argsstring>
         <name>getDataType</name>
@@ -122,12 +122,6 @@
       <node id="2">
         <label>mv::DatasetEvent</label>
         <link refid="classmv_1_1DatasetEvent"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>mv::ManiVaultEvent</label>
-        <link refid="classmv_1_1ManiVaultEvent"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -136,40 +130,22 @@
         <link refid="classmv_1_1DatasetRemovedEvent"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>_dataType</edgelabel>
-        </childnode>
       </node>
-      <node id="7">
-        <label>mv::DataType</label>
-        <link refid="classmv_1_1DataType"/>
-      </node>
-      <node id="6">
-        <label>QObject</label>
-      </node>
-      <node id="5">
+      <node id="4">
         <label>mv::DatasetPrivate</label>
         <link refid="classmv_1_1DatasetPrivate"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
       </node>
       <node id="2">
         <label>mv::DatasetEvent</label>
         <link refid="classmv_1_1DatasetEvent"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>_dataset</edgelabel>
         </childnode>
       </node>
       <node id="3">
-        <label>mv::ManiVaultEvent</label>
-        <link refid="classmv_1_1ManiVaultEvent"/>
-      </node>
-      <node id="4">
         <label>mv::Dataset&lt; mv::DatasetImpl &gt;</label>
         <link refid="classmv_1_1Dataset"/>
-        <childnode refid="5" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -12,20 +12,8 @@
     <includes local="no">QColor</includes>
     <includes local="no">QUuid</includes>
     <includes local="no">vector</includes>
-    <includedby refid="ClusterData_8cpp" local="yes">ClusterData.cpp</includedby>
-    <includedby refid="ClusterData_2src_2InfoAction_8h" local="yes">InfoAction.h</includedby>
-    <includedby refid="ClustersAction_8cpp" local="yes">ClustersAction.cpp</includedby>
     <includedby refid="ClustersAction_8h" local="yes">ClustersAction.h</includedby>
-    <includedby refid="ClustersActionWidget_8cpp" local="yes">ClustersActionWidget.cpp</includedby>
-    <includedby refid="ClustersModel_8cpp" local="yes">ClustersModel.cpp</includedby>
-    <includedby refid="ColorizeClustersAction_8cpp" local="yes">ColorizeClustersAction.cpp</includedby>
-    <includedby refid="FilterClustersAction_8cpp" local="yes">FilterClustersAction.cpp</includedby>
-    <includedby refid="MergeClustersAction_8cpp" local="yes">MergeClustersAction.cpp</includedby>
-    <includedby refid="PrefixClustersAction_8cpp" local="yes">PrefixClustersAction.cpp</includedby>
-    <includedby refid="RefreshClustersAction_8cpp" local="yes">RefreshClustersAction.cpp</includedby>
-    <includedby refid="RemoveClustersAction_8cpp" local="yes">RemoveClustersAction.cpp</includedby>
-    <includedby refid="SelectClustersAction_8cpp" local="yes">SelectClustersAction.cpp</includedby>
-    <includedby refid="SubsetAction_8cpp" local="yes">SubsetAction.cpp</includedby>
+    <includedby refid="ClusterData_2src_2InfoAction_8h" local="yes">InfoAction.h</includedby>
     <incdepgraph>
       <node id="226">
         <label>Project.h</label>
@@ -2549,13 +2537,13 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
+      <node id="2">
         <label>ClustersAction.h</label>
         <link refid="ClustersAction_8h_source"/>
-        <childnode refid="2" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>InfoAction.h</label>
         <link refid="ClusterData_2src_2InfoAction_8h_source"/>
       </node>
@@ -2573,11 +2561,11 @@
     <innerclass refid="classClusterDataFactory" prot="public">ClusterDataFactory</innerclass>
       <sectiondef kind="var">
       <memberdef kind="variable" id="ClusterData_8h_1a7f2793814c65735cab69d000a4351b40" prot="public" static="no" mutable="no">
-        <type>const <ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref></type>
+        <type>const mv::DataType</type>
         <definition>const mv::DataType ClusterType</definition>
         <argsstring></argsstring>
         <name>ClusterType</name>
-        <initializer>= <ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref>(QString(&quot;Clusters&quot;))</initializer>
+        <initializer>= mv::DataType(QString(&quot;Clusters&quot;))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2616,15 +2604,15 @@
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemv" kindref="compound">mv</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref><sp/>ClusterType<sp/>=<sp/><ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref>(QString(</highlight><highlight class="stringliteral">&quot;Clusters&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::DataType<sp/>ClusterType<sp/>=<sp/>mv::DataType(QString(</highlight><highlight class="stringliteral">&quot;Clusters&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInfoAction" kindref="compound">InfoAction</ref>;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="classClusterData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CLUSTERDATA_EXPORT<sp/><ref refid="classClusterData" kindref="compound">ClusterData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">mv::plugin::RawData</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CLUSTERDATA_EXPORT<sp/>ClusterData<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::RawData</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClusterData" kindref="compound">ClusterData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>*<sp/>factory);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classClusterData" kindref="compound">ClusterData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ClusterData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mv::plugin::PluginFactory*<sp/>factory);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>~ClusterData(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
@@ -2650,9 +2638,9 @@
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;Cluster&gt;<sp/><sp/><sp/><sp/>_clusters;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
@@ -2662,15 +2650,15 @@
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Cluster<sp/>Set</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121" refid="classClusters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CLUSTERDATA_EXPORT<sp/><ref refid="classClusters" kindref="compound">Clusters</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CLUSTERDATA_EXPORT<sp/>Clusters<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref></highlight></codeline>
 <codeline lineno="122"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClusters" kindref="compound">Clusters</ref>(QString<sp/>dataName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mayUnderive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guid<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>Clusters(QString<sp/>dataName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mayUnderive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guid<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>:</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref>(dataName,<sp/>mayUnderive,<sp/>guid)</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classClusters" kindref="compound">Clusters</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>~Clusters()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
@@ -2691,12 +2679,12 @@
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addCluster(<ref refid="classCluster" kindref="compound">Cluster</ref>&amp;<sp/>cluster);</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158" refid="classClusters_1ad4f839fed0f308185cd896454879bcc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classClusters_1ad4f839fed0f308185cd896454879bcc2" kindref="member">setClusterNames</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;QString&gt;&amp;<sp/>clusterNames)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setClusterNames(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;QString&gt;&amp;<sp/>clusterNames)</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRawData&lt;ClusterData&gt;()-&gt;setClusterNames(clusterNames);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="classClusters_1aa999c3b43267b628e4f1eef7e69b5a77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;QString&gt;<sp/><ref refid="classClusters_1aa999c3b43267b628e4f1eef7e69b5a77" kindref="member">getClusterNames</ref>()</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;QString&gt;<sp/>getClusterNames()</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getRawData&lt;ClusterData&gt;()-&gt;getClusterNames();</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -2705,9 +2693,9 @@
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeClustersById(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QStringList&amp;<sp/>ids);</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188" refid="classClusters_1aee8e47c81be7569b51205e6ceea606d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><ref refid="classClusters_1aee8e47c81be7569b51205e6ceea606d7" kindref="member">copy</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/>copy()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="189"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>clusters<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classClusters" kindref="compound">Clusters</ref>(getRawDataName());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>clusters<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Clusters(getRawDataName());</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clusters-&gt;setText(text());</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clusters-&gt;indices<sp/>=<sp/>indices;</highlight></codeline>
@@ -2715,7 +2703,7 @@
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(clusters);</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205" refid="classClusters_1a39955697ff95afbfbf705120a63ad5aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/><ref refid="classClusters_1a39955697ff95afbfbf705120a63ad5aa" kindref="member">createSubsetFromSelection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>parentDataSet<sp/>=<sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>visible<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/>override</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref><sp/>createSubsetFromSelection(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>guiName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>&amp;<sp/>parentDataSet<sp/>=<sp/><ref refid="classmv_1_1Dataset" kindref="compound">Dataset&lt;DatasetImpl&gt;</ref>(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>visible<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/><sp/>override</highlight></codeline>
 <codeline lineno="206"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a90223622ff9123d3113ab7996818fb43" kindref="member">createSubsetFromSelection</ref>(getSelection(),<sp/>toSmartPointer(),<sp/>guiName,<sp/>parentDataSet,<sp/>visible);</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -2748,37 +2736,37 @@
 <codeline lineno="259"><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Serialization</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref>&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromVariantMap(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QVariantMap&amp;<sp/>variantMap)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariantMap<sp/>toVariantMap()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"></highlight></codeline>
 <codeline lineno="274"><highlight class="normal"></highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;unsigned<sp/>int&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>indices;</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>QSharedPointer&lt;InfoAction&gt;<sp/><sp/><sp/><sp/><sp/><sp/>_infoAction;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="277" refid="classClusters_1af761e7471809ba5d1c3572287cabf018" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1EventListener" kindref="compound">EventListener</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classClusters_1af761e7471809ba5d1c3572287cabf018" kindref="member">_eventListener</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>EventListener<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_eventListener;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="278"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight></codeline>
 <codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Factory</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight></codeline>
-<codeline lineno="284" refid="classClusterDataFactory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClusterDataFactory" kindref="compound">ClusterDataFactory</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmv_1_1plugin_1_1RawDataFactory" kindref="compound">mv::plugin::RawDataFactory</ref></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClusterDataFactory<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>mv::plugin::RawDataFactory</highlight></codeline>
 <codeline lineno="285"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(<ref refid="classmv_1_1plugin_1_1RawDataFactory" kindref="compound">mv::plugin::RawDataFactory</ref><sp/><ref refid="classmv_1_1plugin_1_1PluginFactory" kindref="compound">mv::plugin::PluginFactory</ref>)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_INTERFACES(mv::plugin::RawDataFactory<sp/>mv::plugin::PluginFactory)</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_PLUGIN_METADATA(IID<sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;studio.manivault.ClusterData&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/><sp/></highlight><highlight class="stringliteral">&quot;ClusterData.json&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="291"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClusterDataFactory" kindref="compound">ClusterDataFactory</ref>();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>ClusterDataFactory();</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"></highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classClusterDataFactory" kindref="compound">ClusterDataFactory</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>~ClusterDataFactory()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{}</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"></highlight></codeline>
 <codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getReadmeMarkdownUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="301"><highlight class="normal"></highlight></codeline>
 <codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>QUrl<sp/>getRepositoryUrl()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1plugin_1_1RawData" kindref="compound">mv::plugin::RawData</ref>*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>mv::plugin::RawData*<sp/>produce()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="309"><highlight class="normal">};</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/plugins/ClusterData/src/ClusterData.h"/>
