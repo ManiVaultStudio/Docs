@@ -1,7 +1,7 @@
-# OptionAction
+# DecimalAction
 
-**Qualified name:** `mv::gui::OptionAction`
+**Qualified name:** `mv::gui::DecimalAction`
 
-```{doxygenclass} mv::gui::OptionAction
+```{doxygenclass} mv::gui::DecimalAction
 :members:
 :protected-members:

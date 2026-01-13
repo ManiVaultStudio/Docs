@@ -1,7 +1,7 @@
-# OptionsAction
+# DecimalRectangleAction
 
-**Qualified name:** `mv::gui::OptionsAction`
+**Qualified name:** `mv::gui::DecimalRectangleAction`
 
-```{doxygenclass} mv::gui::OptionsAction
+```{doxygenclass} mv::gui::DecimalRectangleAction
 :members:
 :protected-members:

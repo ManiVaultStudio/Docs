@@ -1,7 +1,7 @@
-# OptionAction
+# IntegralAction
 
-**Qualified name:** `mv::gui::OptionAction`
+**Qualified name:** `mv::gui::IntegralAction`
 
-```{doxygenclass} mv::gui::OptionAction
+```{doxygenclass} mv::gui::IntegralAction
 :members:
 :protected-members:

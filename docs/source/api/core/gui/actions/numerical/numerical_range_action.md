@@ -1,7 +1,7 @@
-# OptionAction
+# NumericalRangeAction
 
-**Qualified name:** `mv::gui::OptionAction`
+**Qualified name:** `mv::gui::NumericalRangeAction`
 
-```{doxygenclass} mv::gui::OptionAction
+```{doxygenclass} mv::gui::NumericalRangeAction
 :members:
 :protected-members:

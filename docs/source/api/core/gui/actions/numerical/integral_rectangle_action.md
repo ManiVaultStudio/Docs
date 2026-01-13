@@ -1,7 +1,7 @@
-# OptionAction
+# IntegralRectangleAction
 
-**Qualified name:** `mv::gui::OptionAction`
+**Qualified name:** `mv::gui::IntegralRectangleAction`
 
-```{doxygenclass} mv::gui::OptionAction
+```{doxygenclass} mv::gui::IntegralRectangleAction
 :members:
 :protected-members:
