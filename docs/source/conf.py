@@ -72,4 +72,6 @@ exhale_args = {
 
     # Optional but nice:
     "createTreeView": True,
+
+    "excludedSymbolKinds": ["dir","file","define","variable","typedef","friend","function"]
 }
