@@ -1,7 +1,7 @@
-# MultiSelectCombobox
+# MultiSelectComboBox
 
-**Qualified name:** `mv::gui::MultiSelectCombobox`
+**Qualified name:** `mv::gui::MultiSelectComboBox`
 
-```{doxygenclass} mv::gui::MultiSelectCombobox
+```{doxygenclass} mv::gui::MultiSelectComboBox
 :members:
 :protected-members:
