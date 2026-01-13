@@ -10,3 +10,4 @@ textual/index
 toggle/index
 task/index
 option/index
+numerical/index
