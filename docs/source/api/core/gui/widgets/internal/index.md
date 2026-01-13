@@ -6,6 +6,9 @@ While nothing technically prevents external code from using these classes, they 
 
 Developers are advised to treat these classes as implementation details unless they have a specific and well-understood reason to depend on them.
 
+```{toctree}
+:maxdepth: 1
+
 action_overlay_widget
 actions_widget
 flow_layout
