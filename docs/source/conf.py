@@ -73,5 +73,12 @@ exhale_args = {
     # Optional but nice:
     "createTreeView": True,
 
-    "excludedSymbolKinds": ["dir","file","define","variable","typedef","friend","function"]
+    # Keep Full API from listing everything under the sun
+    "unabridgedOrphanKinds": {
+        "dir", "file", "page",
+        "define", "variable", "typedef", "enum", "function", "union"
+    },
+
+    # Also helps shorten the unabridged listing when it is present
+    "fullToctreeMaxDepth": 1,
 }
