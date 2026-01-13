@@ -1,4 +1,6 @@
-# Abstract Actions Manager
+# AbstractActionsManager
+
+**Qualified name:** `mv::gui::AbstractActionsManager`
 
 ```{doxygenclass} mv::AbstractActionsManager
 :members:

@@ -1,4 +1,6 @@
-# Abstract Plugin Manager
+# AbstractPluginManager
+
+**Qualified name:** `mv::gui::AbstractPluginManager`
 
 ```{doxygenclass} mv::AbstractPluginManager
 :members:

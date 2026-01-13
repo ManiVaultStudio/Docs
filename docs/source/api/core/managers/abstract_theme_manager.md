@@ -1,4 +1,6 @@
-# Abstract Theme Manager
+# AbstractThemeManager
+
+**Qualified name:** `mv::gui::AbstractThemeManager`
 
 ```{doxygenclass} mv::AbstractThemeManager
 :members:

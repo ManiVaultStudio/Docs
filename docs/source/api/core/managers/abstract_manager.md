@@ -1,4 +1,6 @@
-# Abstract Manager
+# AbstractManager
+
+**Qualified name:** `mv::gui::AbstractManager`
 
 ```{doxygenclass} mv::AbstractManager
 :members:
