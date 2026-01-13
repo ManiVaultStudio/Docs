@@ -1,6 +1,6 @@
 # API Reference
 
-## Managers
+```{toctree}
+:maxdepth: 2
 
-```{doxygengroup} mv_managers
-:inner:
+managers/index
