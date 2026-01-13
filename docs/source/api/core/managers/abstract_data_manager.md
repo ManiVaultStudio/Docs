@@ -1,4 +1,4 @@
-# Abstract Data Manager
+# AbstractDataManager
 
 **Qualified name:** `mv::gui::AbstractDataManager`
 

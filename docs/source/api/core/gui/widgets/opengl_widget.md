@@ -1,4 +1,4 @@
-# OpenGL Widget
+# OpenGLWidget
 
 **Qualified name:** `mv::gui::OpenGLWidget`
 
