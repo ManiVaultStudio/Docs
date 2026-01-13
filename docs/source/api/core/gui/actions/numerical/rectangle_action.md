@@ -1,7 +1,7 @@
-# ReectangleAction
+# RectangleAction
 
-**Qualified name:** `mv::gui::ReectangleAction`
+**Qualified name:** `mv::gui::RectangleAction`
 
-```{doxygenclass} mv::gui::ReectangleAction
+```{doxygenclass} mv::gui::RectangleAction
 :members:
 :protected-members:
