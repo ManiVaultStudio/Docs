@@ -96,7 +96,7 @@
         <argsstring></argsstring>
         <name>Core</name>
         <param>
-          <type><ref refid="classmv_1_1Core" kindref="compound">Core</ref></type>
+          <type>Core</type>
         </param>
         <briefdescription>
 <para>Boolean determining whether the manager is resetting. </para>
@@ -157,10 +157,6 @@
         <name>initialize</name>
         <reimplementedby refid="classmv_1_1AbstractTaskManager_1ab989aae9ef1202d1d2c0b776b9e9e393">initialize</reimplementedby>
         <reimplementedby refid="classmv_1_1AbstractThemeManager_1aeffc851b10f5be59ee54b0f961b381ef">initialize</reimplementedby>
-        <reimplementedby refid="classmv_1_1ActionsManager_1a5a173f98615d19f176b3085e39a24959">initialize</reimplementedby>
-        <reimplementedby refid="classmv_1_1DataManager_1a4679fb93d5a9d28a0cfc6f61db6310ff">initialize</reimplementedby>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a7d6b19196749807c2ea321e237ccf554">initialize</reimplementedby>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1aee42d8f39f2abe000c0042c81c63b9d8">initialize</reimplementedby>
         <briefdescription>
 <para>Perform manager startup initialization. </para>
         </briefdescription>
@@ -189,10 +185,6 @@
         <definition>virtual void mv::AbstractManager::reset</definition>
         <argsstring>()</argsstring>
         <name>reset</name>
-        <reimplementedby refid="classmv_1_1ActionsManager_1a1a270688864358eda1dffd0f00a40a7e">reset</reimplementedby>
-        <reimplementedby refid="classmv_1_1DataManager_1ab3dfde3a91dbb5ae8690953214c6b573">reset</reimplementedby>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a09b994594fc1b32b7042a68163e7afea">reset</reimplementedby>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a68c038f970042ec7f0e699a86273d2fa">reset</reimplementedby>
         <briefdescription>
 <para>Resets the contents of the manager. </para>
         </briefdescription>
@@ -300,7 +292,6 @@
         <definition>virtual QIcon mv::AbstractManager::getIcon</definition>
         <argsstring>() const</argsstring>
         <name>getIcon</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a0d424d718991a40cc63e821e382fece2">getIcon</reimplementedby>
         <briefdescription>
 <para>Get manager icon. </para>
         </briefdescription>
@@ -348,7 +339,6 @@
         <definition>virtual bool mv::AbstractManager::mayLock</definition>
         <argsstring>() const</argsstring>
         <name>mayLock</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1ad7c853bb3c80b84f6e45164dc6851064">mayLock</reimplementedby>
         <briefdescription>
 <para>Get whether the manager be locked. </para>
         </briefdescription>
@@ -366,7 +356,6 @@
         <definition>virtual bool mv::AbstractManager::mayUnlock</definition>
         <argsstring>() const</argsstring>
         <name>mayUnlock</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a627610fbe42a7a4ea02415ed0fb80a3c">mayUnlock</reimplementedby>
         <briefdescription>
 <para>Get whether the manager be unlocked. </para>
         </briefdescription>
@@ -479,37 +468,31 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="17">
+      <node id="14">
         <label>mv::AbstractThemeManager</label>
         <link refid="classmv_1_1AbstractThemeManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="16">
+      <node id="13">
         <label>mv::AbstractTaskManager</label>
         <link refid="classmv_1_1AbstractTaskManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
-        <label>mv::WorkspaceManager</label>
-        <link refid="classmv_1_1WorkspaceManager"/>
-        <childnode refid="18" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="8">
+      <node id="6">
         <label>mv::AbstractErrorManager</label>
         <link refid="classmv_1_1AbstractErrorManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="12">
         <label>mv::AbstractSettingsManager</label>
         <link refid="classmv_1_1AbstractSettingsManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>mv::AbstractDataHierarchyManager</label>
         <link refid="classmv_1_1AbstractDataHierarchyManager"/>
         <childnode refid="1" relation="public-inheritance">
@@ -525,25 +508,19 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="9">
+      <node id="7">
         <label>mv::AbstractEventManager</label>
         <link refid="classmv_1_1AbstractEventManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
-        <label>mv::ActionsManager</label>
-        <link refid="classmv_1_1ActionsManager"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="14">
+      <node id="11">
         <label>mv::AbstractScriptingManager</label>
         <link refid="classmv_1_1AbstractScriptingManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="11">
+      <node id="9">
         <label>mv::AbstractPluginManager</label>
         <link refid="classmv_1_1AbstractPluginManager"/>
         <childnode refid="1" relation="public-inheritance">
@@ -555,37 +532,25 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
+      <node id="5">
         <label>mv::AbstractDataManager</label>
         <link refid="classmv_1_1AbstractDataManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
-        <label>mv::ProjectManager</label>
-        <link refid="classmv_1_1ProjectManager"/>
-        <childnode refid="12" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>mv::DataManager</label>
-        <link refid="classmv_1_1DataManager"/>
-        <childnode refid="6" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="12">
+      <node id="10">
         <label>mv::AbstractProjectManager</label>
         <link refid="classmv_1_1AbstractProjectManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="10">
+      <node id="8">
         <label>mv::AbstractHelpManager</label>
         <link refid="classmv_1_1AbstractHelpManager"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="18">
+      <node id="15">
         <label>mv::AbstractWorkspaceManager</label>
         <link refid="classmv_1_1AbstractWorkspaceManager"/>
         <childnode refid="1" relation="public-inheritance">

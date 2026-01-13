@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1AbstractProjectManager" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>mv::AbstractProjectManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
-    <derivedcompoundref refid="classmv_1_1ProjectManager" prot="public" virt="non-virtual">mv::ProjectManager</derivedcompoundref>
     <includes refid="AbstractProjectManager_8h" local="no">AbstractProjectManager.h</includes>
     <innerclass refid="classmv_1_1AbstractProjectManager_1_1ProjectDownloadException" prot="public">mv::AbstractProjectManager::ProjectDownloadException</innerclass>
     <innerclass refid="classmv_1_1AbstractProjectManager_1_1ScopedState" prot="public">mv::AbstractProjectManager::ScopedState</innerclass>
@@ -253,7 +252,6 @@
         <definition>virtual void mv::AbstractProjectManager::newProject</definition>
         <argsstring>(const QString &amp;workspaceFilePath=&quot;&quot;)=0</argsstring>
         <name>newProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1ab1ec35e5c681950b941f3ed6081d1776">newProject</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>workspaceFilePath</declname>
@@ -283,7 +281,6 @@
         <definition>virtual void mv::AbstractProjectManager::newProject</definition>
         <argsstring>(const Qt::AlignmentFlag &amp;alignment, bool logging=false)=0</argsstring>
         <name>newProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a9d17bda987493d35ddf7b069a37e1c50">newProject</reimplementedby>
         <param>
           <type>const Qt::AlignmentFlag &amp;</type>
           <declname>alignment</declname>
@@ -325,7 +322,6 @@
         <definition>virtual void mv::AbstractProjectManager::newBlankProject</definition>
         <argsstring>()=0</argsstring>
         <name>newBlankProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1afa01235bff8d2292edcb9f4fd1817f42">newBlankProject</reimplementedby>
         <briefdescription>
 <para>Creates a new blank project (without any view plugins or data) </para>
         </briefdescription>
@@ -340,7 +336,6 @@
         <definition>virtual void mv::AbstractProjectManager::openProject</definition>
         <argsstring>(QString filePath=&quot;&quot;, bool importDataOnly=false, bool loadWorkspace=true)=0</argsstring>
         <name>openProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1ac4ea569a679c96eafca009926bed5867">openProject</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -396,7 +391,6 @@
         <definition>virtual void mv::AbstractProjectManager::openProject</definition>
         <argsstring>(QUrl url, const QString &amp;targetDirectory=&quot;&quot;, bool importDataOnly=false, bool loadWorkspace=true)=0</argsstring>
         <name>openProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a5f4e6df7e5766d164b819325ba8d172c">openProject</reimplementedby>
         <param>
           <type>QUrl</type>
           <declname>url</declname>
@@ -464,7 +458,6 @@
         <definition>virtual void mv::AbstractProjectManager::openProject</definition>
         <argsstring>(util::ProjectsModelProjectSharedPtr project, const QString &amp;targetDirectory=&quot;&quot;, bool importDataOnly=false, bool loadWorkspace=true)=0</argsstring>
         <name>openProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a4b167b29b73141c8558473d46513628a">openProject</reimplementedby>
         <param>
           <type>util::ProjectsModelProjectSharedPtr</type>
           <declname>project</declname>
@@ -532,7 +525,6 @@
         <definition>virtual void mv::AbstractProjectManager::importProject</definition>
         <argsstring>(QString filePath=&quot;&quot;)=0</argsstring>
         <name>importProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a70cb585854667f7780948320df1b399a">importProject</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -562,7 +554,6 @@
         <definition>virtual void mv::AbstractProjectManager::saveProject</definition>
         <argsstring>(QString filePath=&quot;&quot;, const QString &amp;password=&quot;&quot;)=0</argsstring>
         <name>saveProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1aa8e5da3304f68d5d22afcf7d0d1a30c8">saveProject</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -605,7 +596,6 @@
         <definition>virtual void mv::AbstractProjectManager::saveProjectAs</definition>
         <argsstring>()=0</argsstring>
         <name>saveProjectAs</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a44c20e9746197a05ee063ec0119df7f9">saveProjectAs</reimplementedby>
         <briefdescription>
 <para>Save project to different file (user is prompted to choose the file location) </para>
         </briefdescription>
@@ -620,7 +610,6 @@
         <definition>virtual void mv::AbstractProjectManager::publishProject</definition>
         <argsstring>(QString filePath=&quot;&quot;)=0</argsstring>
         <name>publishProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a1c6162843668a9df5649a4dd61a86852">publishProject</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -650,7 +639,6 @@
         <definition>virtual bool mv::AbstractProjectManager::hasProject</definition>
         <argsstring>() const =0</argsstring>
         <name>hasProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a434ea90b6df5d5848d8683b48fb76ee4">hasProject</reimplementedby>
         <briefdescription>
 <para>Get whether a project exists. </para>
         </briefdescription>
@@ -668,7 +656,6 @@
         <definition>virtual const Project* mv::AbstractProjectManager::getCurrentProject</definition>
         <argsstring>() const =0</argsstring>
         <name>getCurrentProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a09b6348359691b4a379da5fddbe65e9f">getCurrentProject</reimplementedby>
         <briefdescription>
 <para>Get current project. </para>
         </briefdescription>
@@ -686,7 +673,6 @@
         <definition>virtual Project* mv::AbstractProjectManager::getCurrentProject</definition>
         <argsstring>()=0</argsstring>
         <name>getCurrentProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a67803c47436fdbf2e7fc4fee954f538f">getCurrentProject</reimplementedby>
         <briefdescription>
 <para>Get current project. </para>
         </briefdescription>
@@ -704,7 +690,6 @@
         <definition>virtual const ProjectsListModel&amp; mv::AbstractProjectManager::getProjectsListModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getProjectsListModel</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1ae67b774452206c765caa5234015fa003">getProjectsListModel</reimplementedby>
         <briefdescription>
 <para>Get projects list model. </para>
         </briefdescription>
@@ -722,7 +707,6 @@
         <definition>virtual const ProjectsTreeModel&amp; mv::AbstractProjectManager::getProjectsTreeModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getProjectsTreeModel</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1acc6ca8376890f5499f6cedaf703c07dd">getProjectsTreeModel</reimplementedby>
         <briefdescription>
 <para>Get projects tree model. </para>
         </briefdescription>
@@ -740,7 +724,6 @@
         <definition>virtual QFuture&lt;QString&gt; mv::AbstractProjectManager::downloadProjectAsync</definition>
         <argsstring>(QUrl url, const QString &amp;targetDirectory=&quot;&quot;, Task *task=nullptr)=0</argsstring>
         <name>downloadProjectAsync</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a87a613dda010fe7977eac1baaeb18016">downloadProjectAsync</reimplementedby>
         <param>
           <type>QUrl</type>
           <declname>url</declname>
@@ -797,7 +780,6 @@
         <definition>virtual QFuture&lt;bool&gt; mv::AbstractProjectManager::isDownloadedProjectStaleAsync</definition>
         <argsstring>(QUrl url) const =0</argsstring>
         <name>isDownloadedProjectStaleAsync</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a2edb09c3deddd1e319d2f3363262cd95">isDownloadedProjectStaleAsync</reimplementedby>
         <param>
           <type>QUrl</type>
           <declname>url</declname>
@@ -819,7 +801,6 @@
         <definition>virtual QDir mv::AbstractProjectManager::getDownloadedProjectsDir</definition>
         <argsstring>() const =0</argsstring>
         <name>getDownloadedProjectsDir</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a0f84e8c5f384bdf53a51ca8de0cfe1d0">getDownloadedProjectsDir</reimplementedby>
         <briefdescription>
 <para>Get the directory where downloaded projects are stored. </para>
         </briefdescription>
@@ -867,7 +848,6 @@
         <definition>virtual QString mv::AbstractProjectManager::extractFileFromManiVaultProject</definition>
         <argsstring>(const QString &amp;maniVaultFilePath, const QTemporaryDir &amp;temporaryDir, const QString &amp;filePath)=0</argsstring>
         <name>extractFileFromManiVaultProject</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a4563afa73ad2c52e609ad3ef1c653e00">extractFileFromManiVaultProject</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>maniVaultFilePath</declname>
@@ -922,7 +902,6 @@
         <definition>virtual QImage mv::AbstractProjectManager::getWorkspacePreview</definition>
         <argsstring>(const QString &amp;projectFilePath, const QSize &amp;targetSize=QSize(500, 500)) const =0</argsstring>
         <name>getWorkspacePreview</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a76b20a23e88d12c8131669407613120c">getWorkspacePreview</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>projectFilePath</declname>
@@ -972,7 +951,6 @@
         <definition>virtual QMenu&amp; mv::AbstractProjectManager::getNewProjectMenu</definition>
         <argsstring>()=0</argsstring>
         <name>getNewProjectMenu</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1aa750fc461b06d90329a6782bc5cd03fe">getNewProjectMenu</reimplementedby>
         <briefdescription>
 <para>Get new project menu. </para>
         </briefdescription>
@@ -990,7 +968,6 @@
         <definition>virtual QMenu&amp; mv::AbstractProjectManager::getImportDataMenu</definition>
         <argsstring>()=0</argsstring>
         <name>getImportDataMenu</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1ae154fe61bba0e1eaa4398db7dc473e77">getImportDataMenu</reimplementedby>
         <briefdescription>
 <para>Get import data menu. </para>
         </briefdescription>
@@ -1121,7 +1098,6 @@
         <definition>virtual ProjectMetaAction* mv::AbstractProjectManager::getProjectMetaAction</definition>
         <argsstring>(const QString &amp;projectFilePath)=0</argsstring>
         <name>getProjectMetaAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a9f49d2d8f7e107b5c354062976aac668">getProjectMetaAction</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>projectFilePath</declname>
@@ -1169,7 +1145,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getNewBlankProjectAction</definition>
         <argsstring>()=0</argsstring>
         <name>getNewBlankProjectAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a3480f37394ee2087f66f7bf40b587f51">getNewBlankProjectAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1183,7 +1158,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getNewProjectFromWorkspaceAction</definition>
         <argsstring>()=0</argsstring>
         <name>getNewProjectFromWorkspaceAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a8cb779afac22303667e17997affeaa3d">getNewProjectFromWorkspaceAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1197,7 +1171,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getOpenProjectAction</definition>
         <argsstring>()=0</argsstring>
         <name>getOpenProjectAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1af62bc8eca7f22727b8e7fcc255a99763">getOpenProjectAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1211,7 +1184,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getImportProjectAction</definition>
         <argsstring>()=0</argsstring>
         <name>getImportProjectAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1ac04535febcdf499712c006fae2f0708b">getImportProjectAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1225,7 +1197,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getSaveProjectAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSaveProjectAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1adf3f5f5a3d4ebfa4a5770a1e617815c9">getSaveProjectAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1239,7 +1210,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getSaveProjectAsAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSaveProjectAsAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a1c3043a24d7804eb24e6450b44cc54b4">getSaveProjectAsAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1253,7 +1223,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getEditProjectSettingsAction</definition>
         <argsstring>()=0</argsstring>
         <name>getEditProjectSettingsAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1abcf5eb3ad43d8f9c471aca9b2315db2f">getEditProjectSettingsAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1267,7 +1236,6 @@
         <definition>virtual gui::RecentFilesAction&amp; mv::AbstractProjectManager::getRecentProjectsAction</definition>
         <argsstring>()=0</argsstring>
         <name>getRecentProjectsAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a2ea9147e82033f7731fa87eb8cd99a57">getRecentProjectsAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1281,7 +1249,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getPublishAction</definition>
         <argsstring>()=0</argsstring>
         <name>getPublishAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a1a94eb8c3f658276bbfb9d085c5225dc">getPublishAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1295,7 +1262,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getPluginManagerAction</definition>
         <argsstring>()=0</argsstring>
         <name>getPluginManagerAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a75baa1fb9abed51f8a0e3d24ecea94f9">getPluginManagerAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1309,7 +1275,6 @@
         <definition>virtual gui::ToggleAction&amp; mv::AbstractProjectManager::getShowStartPageAction</definition>
         <argsstring>()=0</argsstring>
         <name>getShowStartPageAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a12635dfc8d3167736b0aeaa3f4ebb0c7">getShowStartPageAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1323,7 +1288,6 @@
         <definition>virtual gui::TriggerAction&amp; mv::AbstractProjectManager::getBackToProjectAction</definition>
         <argsstring>()=0</argsstring>
         <name>getBackToProjectAction</name>
-        <reimplementedby refid="classmv_1_1ProjectManager_1a9c51f37cb66a3d293d40288c12dcc3b0">getBackToProjectAction</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1788,12 +1752,6 @@
         <label>mv::AbstractManager</label>
         <link refid="classmv_1_1AbstractManager"/>
         <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::ProjectManager</label>
-        <link refid="classmv_1_1ProjectManager"/>
-        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">

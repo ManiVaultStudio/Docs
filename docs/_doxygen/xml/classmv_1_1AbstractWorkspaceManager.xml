@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1AbstractWorkspaceManager" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>mv::AbstractWorkspaceManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
-    <derivedcompoundref refid="classmv_1_1WorkspaceManager" prot="public" virt="non-virtual">mv::WorkspaceManager</derivedcompoundref>
     <includes refid="AbstractWorkspaceManager_8h" local="no">AbstractWorkspaceManager.h</includes>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classmv_1_1AbstractWorkspaceManager_1aa4d7f47d937fcb6972eb63ccf9fa93f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -39,7 +38,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::addViewPlugin</definition>
         <argsstring>(plugin::ViewPlugin *viewPlugin, plugin::ViewPlugin *dockToViewPlugin=nullptr, gui::DockAreaFlag dockArea=gui::DockAreaFlag::Right)=0</argsstring>
         <name>addViewPlugin</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a7a6b2b71006ffb0f2faf76d1c6118c13">addViewPlugin</reimplementedby>
         <param>
           <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
@@ -94,7 +92,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::addViewPluginFloated</definition>
         <argsstring>(plugin::ViewPlugin *viewPlugin)=0</argsstring>
         <name>addViewPluginFloated</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1acfb1e253b544d5770bc33a74a7afbd39">addViewPluginFloated</reimplementedby>
         <param>
           <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
@@ -123,7 +120,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::isolateViewPlugin</definition>
         <argsstring>(plugin::ViewPlugin *viewPlugin, bool isolate)=0</argsstring>
         <name>isolateViewPlugin</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a67069127d26ddb2b2b806942a549fb9d">isolateViewPlugin</reimplementedby>
         <param>
           <type>plugin::ViewPlugin *</type>
           <declname>viewPlugin</declname>
@@ -164,7 +160,6 @@
         <definition>virtual QWidget* mv::AbstractWorkspaceManager::getWidget</definition>
         <argsstring>()=0</argsstring>
         <name>getWidget</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a564704d2c24c3576ccc9a5f9838adaa5">getWidget</reimplementedby>
         <briefdescription>
 <para>Get workspace widget. </para>
         </briefdescription>
@@ -182,7 +177,6 @@
         <definition>virtual QMenu* mv::AbstractWorkspaceManager::getMenu</definition>
         <argsstring>(QWidget *parent=nullptr)=0</argsstring>
         <name>getMenu</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a97be94a2b88bd1bf258f5108d27b7d1a">getMenu</reimplementedby>
         <param>
           <type>QWidget *</type>
           <declname>parent</declname>
@@ -315,7 +309,6 @@
         <definition>virtual bool mv::AbstractWorkspaceManager::hasWarmedUpNativeWidgets</definition>
         <argsstring>() const =0</argsstring>
         <name>hasWarmedUpNativeWidgets</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a734dc2d76243dacce3b944a69a967b43">hasWarmedUpNativeWidgets</reimplementedby>
         <briefdescription>
 <para>Applies the CSS stylesheet to the dock managers virtual void applyStyleSheet() final { QFile styleSheetFile(&quot;:/styles/ads_light.css&quot;);. </para>
         </briefdescription>
@@ -337,7 +330,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::setViewPluginDockWidgetPermissionsGlobally</definition>
         <argsstring>(const util::DockWidgetPermissions &amp;dockWidgetPermissions=util::DockWidgetPermission::All, bool set=true)=0</argsstring>
         <name>setViewPluginDockWidgetPermissionsGlobally</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1adbccdc2724bed74cdf689fadd275eefc">setViewPluginDockWidgetPermissionsGlobally</reimplementedby>
         <param>
           <type>const util::DockWidgetPermissions &amp;</type>
           <declname>dockWidgetPermissions</declname>
@@ -380,7 +372,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::newWorkspace</definition>
         <argsstring>()=0</argsstring>
         <name>newWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a658c722ebe6ba1a43a3693715cd3678e">newWorkspace</reimplementedby>
         <briefdescription>
 <para>Creates a new workspace. </para>
         </briefdescription>
@@ -395,7 +386,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::loadWorkspace</definition>
         <argsstring>(QString filePath=&quot;&quot;, bool addToRecentWorkspaces=true)=0</argsstring>
         <name>loadWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a3fb192bed3d3e9b33d44355805ddef32">loadWorkspace</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -438,7 +428,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::importWorkspaceFromProjectFile</definition>
         <argsstring>(QString filePath=&quot;&quot;, bool addToRecentWorkspaces=true)=0</argsstring>
         <name>importWorkspaceFromProjectFile</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a8da2fabc362bbc44b497eea8b6f9e98c">importWorkspaceFromProjectFile</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -481,7 +470,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::saveWorkspace</definition>
         <argsstring>(QString filePath=&quot;&quot;, bool addToRecentWorkspaces=true)=0</argsstring>
         <name>saveWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1afde9bf8286eafa232606f95e74bd6036">saveWorkspace</reimplementedby>
         <param>
           <type>QString</type>
           <declname>filePath</declname>
@@ -524,7 +512,6 @@
         <definition>virtual void mv::AbstractWorkspaceManager::saveWorkspaceAs</definition>
         <argsstring>()=0</argsstring>
         <name>saveWorkspaceAs</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1acf3822c5bb1035102e48f9d48df41a9a">saveWorkspaceAs</reimplementedby>
         <briefdescription>
 <para>Save a workspace to disk on a different location. </para>
         </briefdescription>
@@ -539,7 +526,6 @@
         <definition>virtual bool mv::AbstractWorkspaceManager::hasWorkspace</definition>
         <argsstring>() const =0</argsstring>
         <name>hasWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1ae1d94fc981e9cbfca7bca644505d0f2f">hasWorkspace</reimplementedby>
         <briefdescription>
 <para>Get whether a workspace exists. </para>
         </briefdescription>
@@ -557,7 +543,6 @@
         <definition>virtual const Workspace* mv::AbstractWorkspaceManager::getCurrentWorkspace</definition>
         <argsstring>() const =0</argsstring>
         <name>getCurrentWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a49b59222090b6583e7c6c98a04709cb4">getCurrentWorkspace</reimplementedby>
         <briefdescription>
 <para>Get current workspace. </para>
         </briefdescription>
@@ -575,7 +560,6 @@
         <definition>virtual Workspace* mv::AbstractWorkspaceManager::getCurrentWorkspace</definition>
         <argsstring>()=0</argsstring>
         <name>getCurrentWorkspace</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a3598741411b487cbc83b645c83553616">getCurrentWorkspace</reimplementedby>
         <briefdescription>
 <para>Get current workspace. </para>
         </briefdescription>
@@ -593,7 +577,6 @@
         <definition>virtual WorkspaceLocations mv::AbstractWorkspaceManager::getWorkspaceLocations</definition>
         <argsstring>(const WorkspaceLocation::Types &amp;types=WorkspaceLocation::Type::All)=0</argsstring>
         <name>getWorkspaceLocations</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1abff52053ecdda8d1f75ed867d02ef7d5">getWorkspaceLocations</reimplementedby>
         <param>
           <type>const WorkspaceLocation::Types &amp;</type>
           <declname>types</declname>
@@ -616,7 +599,6 @@
         <definition>virtual QStringList mv::AbstractWorkspaceManager::getViewPluginNames</definition>
         <argsstring>(const QString &amp;workspaceJsonFile) const =0</argsstring>
         <name>getViewPluginNames</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1aa885ae14ddb31c4ada97f6282ca871bb">getViewPluginNames</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>workspaceJsonFile</declname>
@@ -645,7 +627,6 @@
         <definition>virtual QImage mv::AbstractWorkspaceManager::toPreviewImage</definition>
         <argsstring>() const =0</argsstring>
         <name>toPreviewImage</name>
-        <reimplementedby refid="classmv_1_1WorkspaceManager_1a3b37da917c902c037af65ed4333b7859">toPreviewImage</reimplementedby>
         <briefdescription>
 <para>Get a preview image. </para>
         </briefdescription>
@@ -851,12 +832,6 @@
 </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="4">
-        <label>mv::WorkspaceManager</label>
-        <link refid="classmv_1_1WorkspaceManager"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="3">
         <label>mv::util::Serializable</label>
         <link refid="classmv_1_1util_1_1Serializable"/>

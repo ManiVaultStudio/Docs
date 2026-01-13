@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1AbstractErrorLogger" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>mv::AbstractErrorLogger</compoundname>
     <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
-    <derivedcompoundref refid="classSentryErrorLogger" prot="public" virt="non-virtual">SentryErrorLogger</derivedcompoundref>
     <includes refid="AbstractErrorLogger_8h" local="no">AbstractErrorLogger.h</includes>
     <innerclass refid="structmv_1_1AbstractErrorLogger_1_1Notification" prot="protected">mv::AbstractErrorLogger::Notification</innerclass>
       <sectiondef kind="protected-type">
@@ -125,7 +124,6 @@
         <definition>virtual void mv::AbstractErrorLogger::initialize</definition>
         <argsstring>()=0</argsstring>
         <name>initialize</name>
-        <reimplementedby refid="classSentryErrorLogger_1ae6ebac70bd59abd141a472a2e116f45f">initialize</reimplementedby>
         <briefdescription>
 <para>Connects to the error logging global settings. </para>
         </briefdescription>
@@ -272,7 +270,6 @@
         <definition>virtual void mv::AbstractErrorLogger::start</definition>
         <argsstring>()=0</argsstring>
         <name>start</name>
-        <reimplementedby refid="classSentryErrorLogger_1a1abc257503f2e89bb66a6c1d92658ac0">start</reimplementedby>
         <briefdescription>
 <para>Starts the error logger. </para>
         </briefdescription>
@@ -287,7 +284,6 @@
         <definition>virtual void mv::AbstractErrorLogger::stop</definition>
         <argsstring>()=0</argsstring>
         <name>stop</name>
-        <reimplementedby refid="classSentryErrorLogger_1abe86cd052f1725bb112b9e276118bc12">stop</reimplementedby>
         <briefdescription>
 <para>Shuts down the error logger. </para>
         </briefdescription>
@@ -302,7 +298,6 @@
         <definition>virtual bool mv::AbstractErrorLogger::isDsnValid</definition>
         <argsstring>() const =0</argsstring>
         <name>isDsnValid</name>
-        <reimplementedby refid="classSentryErrorLogger_1a8a86427ba2a539aabbd10e6e3da32f0e">isDsnValid</reimplementedby>
         <briefdescription>
 <para>Get whether the Sentry data source name (DSN) is valid. </para>
         </briefdescription>
@@ -411,18 +406,6 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>SentryErrorLogger</label>
-        <link refid="classSentryErrorLogger"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>mv::AbstractErrorLogger</label>
-        <link refid="classmv_1_1AbstractErrorLogger"/>
-      </node>
-    </inheritancegraph>
     <location file="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" line="27" column="1" bodyfile="Docs/external/core/ManiVault/src/AbstractErrorLogger.h" bodystart="28" bodyend="186"/>
     <listofallmembers>
       <member refid="classmv_1_1AbstractErrorLogger_1a19d8706f742cc828f1e48feb8d475041" prot="private" virt="non-virtual"><scope>mv::AbstractErrorLogger</scope><name>_initialized</name></member>

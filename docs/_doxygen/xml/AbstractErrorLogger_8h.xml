@@ -8,8 +8,6 @@
     <includes refid="CoreInterface_8h" local="yes">CoreInterface.h</includes>
     <includes refid="StyledIcon_8h" local="yes">util/StyledIcon.h</includes>
     <includes local="no">QTimer</includes>
-    <includedby refid="ErrorLoggingConsentDialog_8h" local="no">ErrorLoggingConsentDialog.h</includedby>
-    <includedby refid="SentryErrorLogger_8h" local="no">SentryErrorLogger.h</includedby>
     <incdepgraph>
       <node id="221">
         <label>Project.h</label>
@@ -2427,24 +2425,6 @@
         <label>QCoreApplication</label>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="1">
-        <label>AbstractErrorLogger.h</label>
-        <link refid="AbstractErrorLogger_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>SentryErrorLogger.h</label>
-        <link refid="SentryErrorLogger_8h_source"/>
-      </node>
-      <node id="2">
-        <label>ErrorLoggingConsentDialog.h</label>
-        <link refid="ErrorLoggingConsentDialog_8h_source"/>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classmv_1_1AbstractErrorLogger" prot="public">mv::AbstractErrorLogger</innerclass>
     <innerclass refid="structmv_1_1AbstractErrorLogger_1_1Notification" prot="protected">mv::AbstractErrorLogger::Notification</innerclass>
     <innernamespace refid="namespacemv">mv</innernamespace>

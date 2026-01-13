@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1AbstractDataManager" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>mv::AbstractDataManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
-    <derivedcompoundref refid="classmv_1_1DataManager" prot="public" virt="non-virtual">mv::DataManager</derivedcompoundref>
     <includes refid="AbstractDataManager_8h" local="no">AbstractDataManager.h</includes>
       <sectiondef kind="friend">
       <memberdef kind="friend" id="classmv_1_1AbstractDataManager_1ad0ccd35859b04e162412b22bf5200374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -89,7 +88,6 @@
         <definition>virtual QStringList mv::AbstractDataManager::getRawDataNames</definition>
         <argsstring>() const =0</argsstring>
         <name>getRawDataNames</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a630af5ac35a2857546c4606ec3ec3b15">getRawDataNames</reimplementedby>
         <briefdescription>
 <para>Get raw data names @retun Raw data names list. </para>
         </briefdescription>
@@ -104,7 +102,6 @@
         <definition>virtual std::uint64_t mv::AbstractDataManager::getRawDataSize</definition>
         <argsstring>(const QString &amp;rawDataName) const =0</argsstring>
         <name>getRawDataSize</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a86bd492e5c8c83923c0261473bada316">getRawDataSize</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -152,7 +149,6 @@
         <definition>virtual QString mv::AbstractDataManager::getRawDataType</definition>
         <argsstring>(const QString &amp;rawDataName) const =0</argsstring>
         <name>getRawDataType</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a0e2c95476e2b16d89c55b5ee070bc5ce">getRawDataType</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -183,7 +179,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDataset</definition>
         <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true)=0</argsstring>
         <name>createDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1aafe07ef8fb5352d0c078c1acdcbfa482">createDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -265,7 +260,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDatasetWithoutSelection</definition>
         <argsstring>(const QString &amp;kind, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), const QString &amp;id=&quot;&quot;, bool notify=true)=0</argsstring>
         <name>createDatasetWithoutSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a32afc50725bf1657c435eb477e499998">createDatasetWithoutSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>kind</declname>
@@ -433,7 +427,6 @@
         <definition>virtual void mv::AbstractDataManager::removeDataset</definition>
         <argsstring>(Dataset&lt; DatasetImpl &gt; dataset)=0</argsstring>
         <name>removeDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a9df0bfd70dc71a20b40236367d6a1e0e">removeDataset</reimplementedby>
         <param>
           <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
           <declname>dataset</declname>
@@ -462,7 +455,6 @@
         <definition>virtual void mv::AbstractDataManager::removeDatasets</definition>
         <argsstring>(Datasets datasets)=0</argsstring>
         <name>removeDatasets</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a474569a27162e84c6a9543d440e19539">removeDatasets</reimplementedby>
         <param>
           <type>Datasets</type>
           <declname>datasets</declname>
@@ -491,7 +483,6 @@
         <definition>virtual void mv::AbstractDataManager::removeDatasets</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>removeDatasets</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a69ad982e94a4064c787d76a438c42969">removeDatasets</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -518,7 +509,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createDerivedDataset</definition>
         <argsstring>(const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset=Dataset&lt; DatasetImpl &gt;(), bool notify=true)=0</argsstring>
         <name>createDerivedDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a76f765299fa20ae847a2ff12c323d0b6">createDerivedDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>guiName</declname>
@@ -660,7 +650,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::createSubsetFromSelection</definition>
         <argsstring>(const Dataset&lt; DatasetImpl &gt; &amp;selection, const Dataset&lt; DatasetImpl &gt; &amp;sourceDataset, const QString &amp;guiName, const Dataset&lt; DatasetImpl &gt; &amp;parentDataset, const bool &amp;visible=true, bool notify=true)=0</argsstring>
         <name>createSubsetFromSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1ab76fc2a787c85b7584d8275766e417d8">createSubsetFromSelection</reimplementedby>
         <param>
           <type>const <ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt; &amp;</type>
           <declname>selection</declname>
@@ -850,7 +839,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::getDataset</definition>
         <argsstring>(const QString &amp;datasetId)=0</argsstring>
         <name>getDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a6a097debd36fef15d9c3c411aa1528c9">getDataset</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>datasetId</declname>
@@ -916,7 +904,6 @@
         <definition>virtual Datasets mv::AbstractDataManager::getAllDatasets</definition>
         <argsstring>(const std::vector&lt; DataType &gt; &amp;dataTypes=std::vector&lt; DataType &gt;()) const =0</argsstring>
         <name>getAllDatasets</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a1669e7b3fd1288ffa14c10f1fc149d84">getAllDatasets</reimplementedby>
         <param>
           <type>const std::vector&lt; DataType &gt; &amp;</type>
           <declname>dataTypes</declname>
@@ -948,7 +935,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::getSelection</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>getSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a434d5ff2ab687ff6751af1032826c97d">getSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1014,7 +1000,6 @@
         <definition>virtual Datasets mv::AbstractDataManager::getAllSelections</definition>
         <argsstring>()=0</argsstring>
         <name>getAllSelections</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a385fa13b9d924cd5c40eb841fe1ef898">getAllSelections</reimplementedby>
         <briefdescription>
 <para>Get all selection datasets. </para>
         </briefdescription>
@@ -1032,7 +1017,6 @@
         <definition>virtual Dataset&lt;DatasetImpl&gt; mv::AbstractDataManager::groupDatasets</definition>
         <argsstring>(const Datasets &amp;datasets, const QString &amp;guiName=&quot;&quot;)=0</argsstring>
         <name>groupDatasets</name>
-        <reimplementedby refid="classmv_1_1DataManager_1afea8f9a4e525f3513c3ac22434972ebc">groupDatasets</reimplementedby>
         <param>
           <type>const Datasets &amp;</type>
           <declname>datasets</declname>
@@ -1076,7 +1060,6 @@
         <definition>virtual gui::ToggleAction* mv::AbstractDataManager::getSelectionGroupingAction</definition>
         <argsstring>()=0</argsstring>
         <name>getSelectionGroupingAction</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a39a4a206ea48d5dc76bdb96117e1fb3f">getSelectionGroupingAction</reimplementedby>
         <briefdescription>
 <para>Get selection grouping setEnabled action. </para>
         </briefdescription>
@@ -1094,7 +1077,6 @@
         <definition>virtual const DatasetsListModel&amp; mv::AbstractDataManager::getDatasetsListModel</definition>
         <argsstring>() const =0</argsstring>
         <name>getDatasetsListModel</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a4cbc7334ce0ffd94429df438c782110e">getDatasetsListModel</reimplementedby>
         <briefdescription>
 <para>Get datasets list model. </para>
         </briefdescription>
@@ -1112,7 +1094,6 @@
         <definition>virtual void mv::AbstractDataManager::linkFilterModelToDatasetsListModel</definition>
         <argsstring>(QSortFilterProxyModel *filterModel)=0</argsstring>
         <name>linkFilterModelToDatasetsListModel</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a805fd68f3e0415bc8dedbb7956b35081">linkFilterModelToDatasetsListModel</reimplementedby>
         <param>
           <type>QSortFilterProxyModel *</type>
           <declname>filterModel</declname>
@@ -1420,7 +1401,6 @@
         <definition>virtual void mv::AbstractDataManager::addRawData</definition>
         <argsstring>(plugin::RawData *rawData)=0</argsstring>
         <name>addRawData</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a9968f3fdc431de36368699981a5859ac">addRawData</reimplementedby>
         <param>
           <type>plugin::RawData *</type>
           <declname>rawData</declname>
@@ -1449,7 +1429,6 @@
         <definition>virtual void mv::AbstractDataManager::removeRawData</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>removeRawData</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a522a2705b592d282b03a8dadfb9e3783">removeRawData</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1478,7 +1457,6 @@
         <definition>virtual plugin::RawData* mv::AbstractDataManager::getRawData</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>getRawData</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a4b8f3e7171a5f2d438ec876c43599314">getRawData</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1544,7 +1522,6 @@
         <definition>virtual void mv::AbstractDataManager::addDataset</definition>
         <argsstring>(Dataset&lt; DatasetImpl &gt; dataset, Dataset&lt; DatasetImpl &gt; parentDataset, bool notify=true)=0</argsstring>
         <name>addDataset</name>
-        <reimplementedby refid="classmv_1_1DataManager_1aec8e9460c94f508a4938d74d318ab112">addDataset</reimplementedby>
         <param>
           <type><ref refid="classmv_1_1Dataset" kindref="compound">Dataset</ref>&lt; <ref refid="classmv_1_1DatasetImpl" kindref="compound">DatasetImpl</ref> &gt;</type>
           <declname>dataset</declname>
@@ -1598,7 +1575,6 @@
         <definition>virtual void mv::AbstractDataManager::addSelection</definition>
         <argsstring>(const QString &amp;rawDataName, Dataset&lt; DatasetImpl &gt; selection)=0</argsstring>
         <name>addSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a0bda8f0d2673dc60b0837a974e92128a">addSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1639,7 +1615,6 @@
         <definition>virtual void mv::AbstractDataManager::removeSelection</definition>
         <argsstring>(const QString &amp;rawDataName)=0</argsstring>
         <name>removeSelection</name>
-        <reimplementedby refid="classmv_1_1DataManager_1a6aec720e0380cb574cd6400a9f4f3ea8">removeSelection</reimplementedby>
         <param>
           <type>const QString &amp;</type>
           <declname>rawDataName</declname>
@@ -1688,12 +1663,6 @@
         <label>mv::AbstractDataManager</label>
         <link refid="classmv_1_1AbstractDataManager"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::DataManager</label>
-        <link refid="classmv_1_1DataManager"/>
-        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

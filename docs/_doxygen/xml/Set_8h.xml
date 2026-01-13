@@ -26,8 +26,6 @@
     <includedby refid="Images_8h" local="no">Images.h</includedby>
     <includedby refid="PointData_8h" local="yes">PointData.h</includedby>
     <includedby refid="TextData_8h" local="no">TextData.h</includedby>
-    <includedby refid="DataManager_8h" local="yes">DataManager.h</includedby>
-    <includedby refid="DatasetsToRemoveModel_8h" local="no">DatasetsToRemoveModel.h</includedby>
     <includedby refid="TransformationPlugin_8h" local="yes">TransformationPlugin.h</includedby>
     <incdepgraph>
       <node id="221">
@@ -2522,14 +2520,6 @@
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="34">
-        <label>RemoveDatasetsDialog.h</label>
-        <link refid="RemoveDatasetsDialog_8h_source"/>
-      </node>
-      <node id="32">
-        <label>DataManager.h</label>
-        <link refid="DataManager_8h_source"/>
-      </node>
       <node id="27">
         <label>ProxyDatasetsAction.h</label>
         <link refid="ProxyDatasetsAction_8h_source"/>
@@ -2636,12 +2626,6 @@
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="33">
-        <label>DatasetsToRemoveModel.h</label>
-        <link refid="DatasetsToRemoveModel_8h_source"/>
-        <childnode refid="34" relation="include">
-        </childnode>
-      </node>
       <node id="25">
         <label>DimensionsPickerAction.h</label>
         <link refid="DimensionsPickerAction_8h_source"/>
@@ -2707,10 +2691,6 @@
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
       </node>
       <node id="4">
         <label>AnalysisPlugin.h</label>
@@ -2724,7 +2704,7 @@
         <label>DimensionPickerAction.h</label>
         <link refid="DimensionPickerAction_8h_source"/>
       </node>
-      <node id="35">
+      <node id="32">
         <label>TransformationPlugin.h</label>
         <link refid="TransformationPlugin_8h_source"/>
       </node>
@@ -3101,8 +3081,8 @@
 <codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_aboutToBeRemoved;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_dirtySelection;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="624" refid="classmv_1_1DatasetImpl_1a1a3d6725008b25b6c7bc9db4f15786d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoreInterface;</highlight></codeline>
-<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1Core" kindref="compound">Core</ref>;</highlight></codeline>
-<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmv_1_1DataManager" kindref="compound">DataManager</ref>;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Core;</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DataManager;</highlight></codeline>
 <codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">EventListener;</highlight></codeline>
 <codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">EventManager;</highlight></codeline>
 <codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KeyBasedSelectionGroup;</highlight></codeline>

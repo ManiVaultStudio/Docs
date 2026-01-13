@@ -3,7 +3,6 @@
   <compounddef id="classmv_1_1AbstractActionsManager" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>mv::AbstractActionsManager</compoundname>
     <basecompoundref refid="classmv_1_1AbstractManager" prot="public" virt="non-virtual">mv::AbstractManager</basecompoundref>
-    <derivedcompoundref refid="classmv_1_1ActionsManager" prot="public" virt="non-virtual">mv::ActionsManager</derivedcompoundref>
     <includes refid="AbstractActionsManager_8h" local="no">AbstractActionsManager.h</includes>
       <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classmv_1_1AbstractActionsManager_1ad73c24f0b0cdf0f62c5d0a453b83c496" prot="private" static="no">
@@ -238,7 +237,6 @@
         <definition>virtual bool mv::AbstractActionsManager::publishPrivateAction</definition>
         <argsstring>(gui::WidgetAction *privateAction, const QString &amp;name=&quot;&quot;, bool recursive=true, bool allowDuplicateName=false)=0</argsstring>
         <name>publishPrivateAction</name>
-        <reimplementedby refid="classmv_1_1ActionsManager_1ac7a54f8183fed62e81327aee96878ceb">publishPrivateAction</reimplementedby>
         <param>
           <type><ref refid="classmv_1_1gui_1_1WidgetAction" kindref="compound">gui::WidgetAction</ref> *</type>
           <declname>privateAction</declname>
@@ -487,7 +485,6 @@
         <definition>virtual ActionsListModel&amp; mv::AbstractActionsManager::getActionsListModel</definition>
         <argsstring>()=0</argsstring>
         <name>getActionsListModel</name>
-        <reimplementedby refid="classmv_1_1ActionsManager_1ad9d7478afc8611c1dbfe77a02beb1391">getActionsListModel</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1019,12 +1016,6 @@
         <label>mv::AbstractActionsManager</label>
         <link refid="classmv_1_1AbstractActionsManager"/>
         <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>mv::ActionsManager</label>
-        <link refid="classmv_1_1ActionsManager"/>
-        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="2">
