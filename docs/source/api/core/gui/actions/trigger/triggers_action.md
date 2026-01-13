@@ -1,7 +1,7 @@
-# StringAction
+# TriggersAction
 
-**Qualified name:** `mv::gui::StringAction`
+**Qualified name:** `mv::gui::TriggersAction`
 
-```{doxygenclass} mv::gui::StringAction
+```{doxygenclass} mv::gui::TriggersAction
 :members:
 :protected-members:
