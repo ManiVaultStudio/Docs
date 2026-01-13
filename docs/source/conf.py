@@ -61,7 +61,7 @@ breathe_default_project = "ManiVault"
 
 exhale_args = {
     "containmentFolder": "./api",
-    "rootFileName": "library_root.rst",
+    "rootFileName": "EXCLUDE",
     "rootFileTitle": "API Reference",
 
     # REQUIRED by Exhale:
