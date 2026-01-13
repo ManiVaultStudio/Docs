@@ -10,3 +10,4 @@ Use this section when you need precise information about classes, functions, dat
 :maxdepth: 2
 
 managers/index
+gui/index
