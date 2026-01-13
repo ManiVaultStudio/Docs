@@ -1,9 +1,7 @@
-API Reference
-=============
+# API Reference
 
-Managers
---------
+## Managers
 
-.. doxygengroup:: mv_managers
-   :project: manivault
-   :members:
+```{doxygroup} mv_managers
+:project: manivault
+:members:
