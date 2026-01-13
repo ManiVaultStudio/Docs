@@ -1,8 +1,5 @@
 # GUI
 
-
-
-
 ```{toctree}
 :maxdepth: 1
 
