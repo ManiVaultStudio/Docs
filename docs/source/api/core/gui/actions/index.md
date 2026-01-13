@@ -7,4 +7,6 @@ The following pages describe the available action types and their associated API
 
 trigger/index
 textual/index
-
+toggle/index
+task/index
+option/index
