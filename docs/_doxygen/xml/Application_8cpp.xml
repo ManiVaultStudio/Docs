@@ -2593,7 +2593,7 @@
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QApplication(argc,<sp/>argv),</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmv_1_1util_1_1Serializable" kindref="compound">Serializable</ref>(</highlight><highlight class="stringliteral">&quot;Application&quot;</highlight><highlight class="normal">),</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>_core(nullptr),</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>_version(MV_VERSION_MAJOR,<sp/>MV_VERSION_MINOR,<sp/>MV_VERSION_PATCH,<sp/>std::string(MV_VERSION_SUFFIX.<ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>())),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>_version(MV_VERSION_MAJOR,<sp/>MV_VERSION_MINOR,<sp/>MV_VERSION_PATCH,<sp/>std::string(MV_VERSION_SUFFIX.<ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>())),</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>_serializationAborted(false),</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>_startupProjectMetaAction(nullptr),</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>_startupTask(nullptr),</highlight></codeline>
@@ -2663,7 +2663,7 @@
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_core<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_core<sp/>=<sp/><ref refid="namespacemv_1a41f83b5bdcaf2a0e426acd1d26d447ff" kindref="member">core</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_core<sp/>=<sp/><ref refid="namespacemv_1a0b63ded5085ff65516ce77d01747547a" kindref="member">core</ref>;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(core,<sp/>&amp;CoreInterface::aboutToBeInitialized,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>{<sp/>emit<sp/>coreAboutToBeInitialized(_core);<sp/>});</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(core,<sp/>&amp;CoreInterface::initialized,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>{<sp/>emit<sp/>coreInitialized(_core);<sp/>});</highlight></codeline>

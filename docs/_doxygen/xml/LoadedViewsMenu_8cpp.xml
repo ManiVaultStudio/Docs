@@ -2459,7 +2459,7 @@
 <codeline lineno="20"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>setTitle(</highlight><highlight class="stringliteral">&quot;Toggle&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>setToolTip(</highlight><highlight class="stringliteral">&quot;Toggle<sp/>loaded<sp/>view<sp/>plugin<sp/>visibility&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>setEnabled(!<ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW).empty());</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>setEnabled(!<ref refid="namespacemv_1a7146c190be221041dbe0709fc65c6b26" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW).empty());</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>setIcon(<ref refid="classmv_1_1util_1_1StyledIcon" kindref="compound">StyledIcon</ref>(</highlight><highlight class="stringliteral">&quot;eye-low-vision&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>_loadedSystemViewsMenu<sp/>=<sp/>QSharedPointer&lt;QMenu&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMenu(</highlight><highlight class="stringliteral">&quot;System&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
@@ -2471,7 +2471,7 @@
 <codeline lineno="32"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>clear();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>plugin<sp/>:<sp/><ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>plugin<sp/>:<sp/><ref refid="namespacemv_1a7146c190be221041dbe0709fc65c6b26" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW))<sp/>{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>viewPlugin<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">ViewPlugin</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(plugin);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disconnect(&amp;viewPlugin-&gt;getVisibleAction(),<sp/>&amp;QAction::toggled,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
@@ -2487,7 +2487,7 @@
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>viewToggleAction<sp/>:<sp/>getLoadedViewsActions(</highlight><highlight class="keyword">false</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addAction(viewToggleAction.get());</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref>().isEmpty())</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref>().isEmpty())</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addSeparator();</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>loadedSystemViewActions<sp/>=<sp/>getLoadedViewsActions(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
@@ -2512,9 +2512,9 @@
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal">LoadedViewsMenu::ToggleActions<sp/>LoadedViewsMenu::getLoadedViewsActions(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>systemView)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>ToggleActions<sp/><ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>ToggleActions<sp/><ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref>;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>plugin<sp/>:<sp/><ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW))<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>plugin<sp/>:<sp/><ref refid="namespacemv_1a7146c190be221041dbe0709fc65c6b26" kindref="member">plugins</ref>().getPluginsByType(plugin::Type::VIEW))<sp/>{</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>viewPlugin<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="classmv_1_1plugin_1_1ViewPlugin" kindref="compound">ViewPlugin</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(plugin);</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(systemView)<sp/>{</highlight></codeline>
@@ -2554,12 +2554,12 @@
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectViewToggleAction();</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref><sp/>&lt;&lt;<sp/>viewToggleAction;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref><sp/>&lt;&lt;<sp/>viewToggleAction;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>sortActions(actions);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref>;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Docs/external/core/ManiVault/src/private/LoadedViewsMenu.cpp"/>
