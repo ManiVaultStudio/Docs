@@ -8,7 +8,7 @@ build:
     - rm -rf docs/_doxygen/xml
     - mkdir -p docs/_doxygen
     - python -m pip install -r docs/requirements.txt
-    - curl -L -o /tmp/doxygen_xml.tar.gz <URL_TO_XML_TARBALL>
+    - curl -L -o /tmp/doxygen_xml.tar.gz https://github.com/ManiVaultStudio/Docs/releases/download/doxygen-xml-latest/doxygen-xml.tar.gz
     - tar -xzf /tmp/doxygen_xml.tar.gz -C docs/_doxygen
     - sphinx-build -b html docs/source $READTHEDOCS_OUTPUT/html
 
