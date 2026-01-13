@@ -3,5 +3,5 @@
 ## Managers
 
 ```{doxygroup} mv_managers
-:project: manivault
 :members:
+:undoc-members:
