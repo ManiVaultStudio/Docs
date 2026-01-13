@@ -23,5 +23,5 @@ Welcome to ManiVault's documentation!
    :maxdepth: 2
    :caption: Reference
 
-   api/library_root
+   api/index
    release_notes/index
