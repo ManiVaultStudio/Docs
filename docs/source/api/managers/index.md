@@ -11,3 +11,5 @@ Each manager typically focuses on a specific domain and exposes a stable API for
 :maxdepth: 1
 
 abstract_actions_manager
+abstract_data_hierarchy_manager
+abstract_data_manager
