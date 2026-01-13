@@ -73,7 +73,7 @@ HIDE_UNDOC_CLASSES     = YES
 HIDE_UNDOC_MEMBERS     = YES
 
 # Ensure namespaces are included
-EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_CLASSES  = NO
 
 HIDE_UNDOC_NAMESPACES  = YES   # if present in your Doxyfile
 
@@ -97,3 +97,13 @@ PREDEFINED            += Q_FLAG(...)=
 PREDEFINED            += Q_FLAGS(...)=
 PREDEFINED            += Q_DECLARE_METATYPE(...)=
 PREDEFINED            += CORE_EXPORT=
+
+# Avoid generating file pages/compounds
+SHOW_FILES = NO
+SHOW_USED_FILES = NO
+
+# Prevent relationship expansion that increases output
+REFERENCED_BY_RELATION = NO
+REFERENCES_RELATION = NO
+SOURCE_BROWSER = NO
+INLINE_SOURCES = NO
