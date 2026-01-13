@@ -1,9 +1,16 @@
 version: "2"
 
 build:
-  os: "ubuntu-22.04"
+  os: ubuntu-22.04
   tools:
-    python: "3.10"
+    python: "3.11"
+  commands:
+    - rm -rf docs/_doxygen/xml
+    - mkdir -p docs/_doxygen
+    - python -m pip install -r docs/requirements.txt
+    - curl -L -o /tmp/doxygen_xml.tar.gz <URL_TO_XML_TARBALL>
+    - tar -xzf /tmp/doxygen_xml.tar.gz -C docs/_doxygen
+    - sphinx-build -b html docs/source $READTHEDOCS_OUTPUT/html
 
 python:
   install:
