@@ -81,3 +81,17 @@ exhale_args = {
     # Also helps shorten the unabridged listing when it is present
     "fullToctreeMaxDepth": 1,
 }
+
+import os, glob
+
+print("DOXYGEN_XML_DIR =", DOXYGEN_XML_DIR)
+print("DOXYGEN_XML_DIR exists =", os.path.isdir(DOXYGEN_XML_DIR))
+
+index_xml = os.path.join(DOXYGEN_XML_DIR, "index.xml")
+print("index.xml exists =", os.path.isfile(index_xml))
+
+# Helpful size signal
+print("XML file count =", len(glob.glob(os.path.join(DOXYGEN_XML_DIR, "*.xml"))))
+
+# Fail fast if the XML is missing (prevents “empty pages” confusion)
+assert os.path.isfile(index_xml), f"Missing Doxygen XML: {index_xml}"
