@@ -3,5 +3,4 @@
 ## Managers
 
 ```{doxygengroup} mv_managers
-:members:
 :inner:
