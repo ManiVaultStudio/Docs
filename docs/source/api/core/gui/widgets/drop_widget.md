@@ -1,4 +1,6 @@
-# Drop Widget
+# DropWidget
+
+**Qualified name:** `mv::gui::DropWidget`
 
 ```{doxygenclass} mv::gui::DropWidget
 :members:
