@@ -2546,7 +2546,7 @@
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>_rawDataName<sp/>=<sp/>fullDataset-&gt;_rawDataName;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_rawDataName.isEmpty())</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rawData<sp/>=<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1" kindref="member">getRawData</ref>(getRawDataName());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_rawData<sp/>=<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1" kindref="member">getRawData</ref>(getRawDataName());</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>_fullDataset<sp/>=<sp/>fullDataset;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
@@ -2570,7 +2570,7 @@
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal">DataHierarchyItem&amp;<sp/><ref refid="classmv_1_1DatasetImpl_1a2d601e7800184078a3f45db54b693d56" kindref="member">DatasetImpl::getDataHierarchyItem</ref>()</highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="namespacemv_1a9036ba42468b1ea5572cbd46a14f916b" kindref="member">dataHierarchy</ref>().<ref refid="classmv_1_1AbstractDataHierarchyManager_1a7e379a87e3097040c3342f9fde0a27fd" kindref="member">getItem</ref>(getId());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="namespacemv_1aab212e6eef6e06553349f88d89d04ba5" kindref="member">dataHierarchy</ref>().<ref refid="classmv_1_1AbstractDataHierarchyManager_1a7e379a87e3097040c3342f9fde0a27fd" kindref="member">getItem</ref>(getId());</highlight></codeline>
 <codeline lineno="53"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset&lt;mv::DatasetImpl&gt;</ref><sp/><ref refid="classmv_1_1DatasetImpl_1a89f38fc602d0c5bf6f7d9a0f7343ee9e" kindref="member">DatasetImpl::getParent</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2615,7 +2615,7 @@
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>_locked<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1aac433737fed92f7d8eb24671bf472eff" kindref="member">notifyDatasetLocked</ref>(toSmartPointer());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1aac433737fed92f7d8eb24671bf472eff" kindref="member">notifyDatasetLocked</ref>(toSmartPointer());</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/>getDataHierarchyItem().lockedChanged(_locked);</highlight></codeline>
 <codeline lineno="100"><highlight class="normal">}</highlight></codeline>
@@ -2627,7 +2627,7 @@
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>_locked<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1adc820de1eefc197a1b4457d32a878229" kindref="member">notifyDatasetUnlocked</ref>(toSmartPointer());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1adc820de1eefc197a1b4457d32a878229" kindref="member">notifyDatasetUnlocked</ref>(toSmartPointer());</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>emit<sp/>getDataHierarchyItem().lockedChanged(_locked);</highlight></codeline>
 <codeline lineno="112"><highlight class="normal">}</highlight></codeline>
@@ -2684,7 +2684,7 @@
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(variantMap[</highlight><highlight class="stringliteral">&quot;Derived&quot;</highlight><highlight class="normal">].toBool())</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(variantMap.contains(</highlight><highlight class="stringliteral">&quot;SourceDatasetID&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSourceDataset(<ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().getDataset(variantMap[</highlight><highlight class="stringliteral">&quot;SourceDatasetID&quot;</highlight><highlight class="normal">].toString()));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSourceDataset(<ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().getDataset(variantMap[</highlight><highlight class="stringliteral">&quot;SourceDatasetID&quot;</highlight><highlight class="normal">].toString()));</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSourceDataset(getParent());</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight></codeline>
@@ -2695,7 +2695,7 @@
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(variantMap[</highlight><highlight class="stringliteral">&quot;PluginVersion&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>Version&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>!variantMap[</highlight><highlight class="stringliteral">&quot;Full&quot;</highlight><highlight class="normal">].toBool())</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(variantMap.contains(</highlight><highlight class="stringliteral">&quot;FullDatasetID&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeSubsetOf(<ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().getDataset(variantMap[</highlight><highlight class="stringliteral">&quot;FullDatasetID&quot;</highlight><highlight class="normal">].toString()));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeSubsetOf(<ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().getDataset(variantMap[</highlight><highlight class="stringliteral">&quot;FullDatasetID&quot;</highlight><highlight class="normal">].toString()));</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>makeSubsetOf(getParent()-&gt;getFullDataset&lt;mv::DatasetImpl&gt;());</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
@@ -2720,7 +2720,7 @@
 <codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Datasets<sp/>proxyMembers;</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>proxyMemberGuid<sp/>:<sp/>variantMap[</highlight><highlight class="stringliteral">&quot;ProxyMembers&quot;</highlight><highlight class="normal">].toStringList())</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxyMembers<sp/>&lt;&lt;<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1af483f02549e17659c4e2a5b5f6c34690" kindref="member">getDataset</ref>(proxyMemberGuid);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proxyMembers<sp/>&lt;&lt;<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1af483f02549e17659c4e2a5b5f6c34690" kindref="member">getDataset</ref>(proxyMemberGuid);</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setProxyMembers(proxyMembers);</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -2778,7 +2778,7 @@
 <codeline lineno="257"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>_groupIndex<sp/>=<sp/>groupIndex;</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"></highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="261"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight></codeline>
 <codeline lineno="263"><highlight class="normal">mv::Datasets<sp/>DatasetImpl::getProxyMembers()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2803,7 +2803,7 @@
 <codeline lineno="282"><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setStorageType(StorageType::Proxy);</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1a601c5cbcd27caf737547387bc58c3add" kindref="member">notifyDatasetDataChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1a601c5cbcd27caf737547387bc58c3add" kindref="member">notifyDatasetDataChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(std::exception&amp;<sp/>e)</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -2964,7 +2964,7 @@
 <codeline lineno="443"><highlight class="normal"></highlight></codeline>
 <codeline lineno="444"><highlight class="normal"><ref refid="classmv_1_1DataType" kindref="compound">mv::DataType</ref><sp/>DatasetImpl::getDataType()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="445"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1" kindref="member">getRawData</ref>(getRawDataName())-&gt;<ref refid="classmv_1_1plugin_1_1RawData_1ac8383af24b347b143fe7cf364318e524" kindref="member">getDataType</ref>();</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a60c8f3b9ff80a600e2e8cf3b46025bf1" kindref="member">getRawData</ref>(getRawDataName())-&gt;<ref refid="classmv_1_1plugin_1_1RawData_1ac8383af24b347b143fe7cf364318e524" kindref="member">getDataType</ref>();</highlight></codeline>
 <codeline lineno="447"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"></highlight></codeline>
 <codeline lineno="449"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DatasetImpl::setSourceDataset(Dataset&lt;DatasetImpl&gt;<sp/>dataset)</highlight></codeline>
@@ -2981,7 +2981,7 @@
 <codeline lineno="460"><highlight class="normal"></highlight></codeline>
 <codeline lineno="461"><highlight class="normal"><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset&lt;mv::DatasetImpl&gt;</ref><sp/>DatasetImpl::getSelection()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="462"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a609717411afafbb2d7808fef7676af0e" kindref="member">getSelection</ref>(getSourceDataset&lt;DatasetImpl&gt;()-&gt;getRawDataName());</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().<ref refid="classmv_1_1AbstractDataManager_1a609717411afafbb2d7808fef7676af0e" kindref="member">getSelection</ref>(getSourceDataset&lt;DatasetImpl&gt;()-&gt;getRawDataName());</highlight></codeline>
 <codeline lineno="464"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="465"><highlight class="normal"></highlight></codeline>
 <codeline lineno="466"><highlight class="normal"><ref refid="classmv_1_1Dataset" kindref="compound">mv::Dataset&lt;mv::DatasetImpl&gt;</ref>&amp;<sp/>DatasetImpl::getSmartPointer()</highlight></codeline>

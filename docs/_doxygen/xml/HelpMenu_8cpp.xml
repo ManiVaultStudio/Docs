@@ -2538,19 +2538,19 @@
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>clear();</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>addAction(&amp;<ref refid="namespacemv_1a0d9cf26f64b607f55ab4e90d42feb546" kindref="member">mv::help</ref>().getShowLearningCenterPageAction());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>addAction(&amp;<ref refid="namespacemv_1a2788340a235c205432b0233c950079ad" kindref="member">mv::help</ref>().getShowLearningCenterPageAction());</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>addAction(&amp;_devDocAction);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>addSeparator();</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QPointer&lt;TriggerAction&gt;&gt;<sp/><ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>QVector&lt;QPointer&lt;TriggerAction&gt;&gt;<sp/><ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref>;</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pluginFactory<sp/>:<sp/><ref refid="namespacemv_1a9c70bf3460537c2310f7b7a6f6ebd552" kindref="member">plugins</ref>().getPluginFactoriesByTypes({<sp/>Type::ANALYSIS,<sp/>Type::DATA,<sp/>Type::LOADER,<sp/>Type::WRITER,<sp/>Type::TRANSFORMATION,<sp/>Type::VIEW<sp/>}))</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pluginFactory<sp/>:<sp/><ref refid="namespacemv_1a7146c190be221041dbe0709fc65c6b26" kindref="member">plugins</ref>().getPluginFactoriesByTypes({<sp/>Type::ANALYSIS,<sp/>Type::DATA,<sp/>Type::LOADER,<sp/>Type::WRITER,<sp/>Type::TRANSFORMATION,<sp/>Type::VIEW<sp/>}))</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pluginFactory-&gt;hasHelp())</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref><sp/>&lt;&lt;<sp/>&amp;pluginFactory-&gt;getPluginMetadata().getTriggerHelpAction();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref><sp/>&lt;&lt;<sp/>&amp;pluginFactory-&gt;getPluginMetadata().getTriggerHelpAction();</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>sortActions(actions);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacemv_1a35f70ec517cbfc4e615956d7afcaab33" kindref="member">actions</ref>.isEmpty())<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="namespacemv_1abd8e6d6ba64001845d9a6c7ec80fe8f0" kindref="member">actions</ref>.isEmpty())<sp/>{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pluginHelpMenu<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QMenu(</highlight><highlight class="stringliteral">&quot;Plugins&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pluginHelpMenu-&gt;setToolTip(</highlight><highlight class="stringliteral">&quot;ManiVault<sp/>plugin<sp/>documentation&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -2564,8 +2564,8 @@
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>addSeparator();</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>addMenu(<ref refid="namespacemv_1a0d9cf26f64b607f55ab4e90d42feb546" kindref="member">mv::help</ref>().getVideosMenu());</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>addMenu(<ref refid="namespacemv_1a0d9cf26f64b607f55ab4e90d42feb546" kindref="member">mv::help</ref>().getTutorialsMenu());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>addMenu(<ref refid="namespacemv_1a2788340a235c205432b0233c950079ad" kindref="member">mv::help</ref>().getVideosMenu());</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>addMenu(<ref refid="namespacemv_1a2788340a235c205432b0233c950079ad" kindref="member">mv::help</ref>().getTutorialsMenu());</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isEmpty())</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addSeparator();</highlight></codeline>

@@ -182,11 +182,11 @@
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPixmap<sp/>pixmap(path);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QImage<sp/>image<sp/>=<sp/>pixmap.toImage();</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage1D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width()*image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage1D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width()*image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_T,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
@@ -204,11 +204,11 @@
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromImage(QImage<sp/>image)</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)image.bits();</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_T,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
@@ -223,11 +223,11 @@
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPixmap<sp/>pixmap(path);</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QImage<sp/>image<sp/>=<sp/>pixmap.toImage();</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref><sp/>=<sp/>(QRgb*)<sp/>image.bits();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QRgb*<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref><sp/>=<sp/>(QRgb*)<sp/>image.bits();</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1ac6fe816305635c03b2c34b858495a80e" kindref="member">create</ref>();</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmv_1_1Texture_1a8b1ca24710a2412ae3e24d14e12aaec0" kindref="member">bind</ref>();</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexImage2D(_target,<sp/>0,<sp/>GL_RGBA8,<sp/>image.width(),<sp/>image.height(),<sp/>0,<sp/>GL_BGRA,<sp/>GL_UNSIGNED_INT_8_8_8_8_REV,<sp/><ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_S,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glTexParameteri(_target,<sp/>GL_TEXTURE_WRAP_T,<sp/>GL_CLAMP_TO_EDGE);</highlight></codeline>

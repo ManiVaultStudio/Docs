@@ -2499,7 +2499,7 @@
 <codeline lineno="17"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>_actionsWidget.getFilterModel().getPublicRootOnlyAction().setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>exportMode<sp/>=<sp/><ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>exportMode<sp/>=<sp/><ref refid="namespacemv_1abf4b44a7fd06f93e26dd0bd5021fc32f" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction();</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>updateRootOnly<sp/>=<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;exportMode]()<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_actionsWidget.getFilterModel().getPublicRootOnlyAction().<ref refid="classmv_1_1gui_1_1ToggleAction_1a8e43a865c30c008cbdb98fe3c47d04cd" kindref="member">setChecked</ref>(!exportMode.isChecked());</highlight></codeline>
@@ -2507,7 +2507,7 @@
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>updateRootOnly();</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;<ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction(),<sp/>&amp;ToggleAction::toggled,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>updateRootOnly);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(&amp;<ref refid="namespacemv_1abf4b44a7fd06f93e26dd0bd5021fc32f" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction(),<sp/>&amp;ToggleAction::toggled,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>updateRootOnly);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>hierarchyWidget<sp/>=<sp/>_actionsWidget.getHierarchyWidget();</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
@@ -2523,7 +2523,7 @@
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>hierarchyWidget.getFilterGroupAction().setPopupSizeHint(QSize(350,<sp/>0));</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>hierarchyWidget.getToolbarAction().addAction(&amp;<ref refid="namespacemv_1acc99163ebdac95caab1d930446c28c08" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction(),<sp/>ToggleAction::PushButtonIcon);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>hierarchyWidget.getToolbarAction().addAction(&amp;<ref refid="namespacemv_1abf4b44a7fd06f93e26dd0bd5021fc32f" kindref="member">mv::settings</ref>().getParametersSettings().getExpertModeAction(),<sp/>ToggleAction::PushButtonIcon);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>getLearningCenterAction().addVideos(QStringList({<sp/></highlight><highlight class="stringliteral">&quot;Practitioner&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Developer&quot;</highlight><highlight class="normal"><sp/>}));</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>getLearningCenterAction().addTutorials(QStringList({<sp/></highlight><highlight class="stringliteral">&quot;GettingStarted&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;SharedParametersPlugin&quot;</highlight><highlight class="normal"><sp/>}));</highlight></codeline>

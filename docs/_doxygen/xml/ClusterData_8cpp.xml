@@ -3185,7 +3185,7 @@
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>synchronize<sp/>when<sp/>our<sp/>own<sp/>group<sp/>index<sp/>is<sp/>non-negative</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!<ref refid="namespacemv_1a041fb08c80c149d75b494583e2ff722f" kindref="member">mv::data</ref>().getSelectionGroupingAction()-&gt;isChecked()<sp/>||<sp/><ref refid="classmv_1_1DatasetImpl_1a296490bca59b756f0d4aaeb256dfb47b" kindref="member">getGroupIndex</ref>()<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!<ref refid="namespacemv_1a73d220fc08f953c94053551cf0a5dc24" kindref="member">mv::data</ref>().getSelectionGroupingAction()-&gt;isChecked()<sp/>||<sp/><ref refid="classmv_1_1DatasetImpl_1a296490bca59b756f0d4aaeb256dfb47b" kindref="member">getGroupIndex</ref>()<sp/>&lt;<sp/>0)</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dataEvent-&gt;<ref refid="classmv_1_1DatasetEvent_1a2b6425039b405bf5ab19d03c1309f178" kindref="member">getDataset</ref>()-&gt;getGroupIndex()<sp/>==<sp/><ref refid="classmv_1_1DatasetImpl_1a296490bca59b756f0d4aaeb256dfb47b" kindref="member">getGroupIndex</ref>()<sp/>&amp;&amp;<sp/>dataEvent-&gt;<ref refid="classmv_1_1DatasetEvent_1a2b6425039b405bf5ab19d03c1309f178" kindref="member">getDataset</ref>()-&gt;getDataType()<sp/>==<sp/>ClusterType)<sp/>{</highlight></codeline>
@@ -3247,7 +3247,7 @@
 <codeline lineno="325"><highlight class="normal"></highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>getRawData&lt;ClusterData&gt;()-&gt;fromVariantMap(variantMap);</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"></highlight></codeline>
-<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1a601c5cbcd27caf737547387bc58c3add" kindref="member">notifyDatasetDataChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1a601c5cbcd27caf737547387bc58c3add" kindref="member">notifyDatasetDataChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="329"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="330"><highlight class="normal"></highlight></codeline>
 <codeline lineno="331"><highlight class="normal"><ref refid="classQMap" kindref="compound">QVariantMap</ref><sp/><ref refid="classClusters_1a2d9b77c25832e8f500c9c1f85e9c01c9" kindref="member">Clusters::toVariantMap</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -3268,7 +3268,7 @@
 <codeline lineno="346"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>getSelection&lt;Clusters&gt;()-&gt;indices<sp/>=<sp/>indices;</highlight></codeline>
 <codeline lineno="348"><highlight class="normal"></highlight></codeline>
-<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="350"><highlight class="normal"></highlight></codeline>
 <codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classmv_1_1DatasetImpl_1a2d601e7800184078a3f45db54b693d56" kindref="member">getDataHierarchyItem</ref>().<ref refid="classmv_1_1DatasetImpl_1a89f38fc602d0c5bf6f7d9a0f7343ee9e" kindref="member">getParent</ref>())</highlight></codeline>
 <codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
@@ -3297,7 +3297,7 @@
 <codeline lineno="375"><highlight class="normal"></highlight></codeline>
 <codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>points-&gt;<ref refid="classPoints_1a955011d072ec9c9b29e337ec7171a430" kindref="member">setSelectionIndices</ref>(selectionIndices);</highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight></codeline>
-<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(points);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(points);</highlight></codeline>
 <codeline lineno="379"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="380"><highlight class="normal"></highlight></codeline>
 <codeline lineno="381"><highlight class="normal">QStringList<sp/><ref refid="classClusters_1aad595f6ac7afe9f9d07ffc554d9dc692" kindref="member">Clusters::getSelectionNames</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -3361,14 +3361,14 @@
 <codeline lineno="439"><highlight class="normal"></highlight></codeline>
 <codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>std::iota(selectionIndices.begin(),<sp/>selectionIndices.end(),<sp/>0);</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"></highlight></codeline>
-<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="443"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="444"><highlight class="normal"></highlight></codeline>
 <codeline lineno="445"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classClusters_1a97519d2fdfbb10c3783b4d06bc6388da" kindref="member">Clusters::selectNone</ref>()</highlight></codeline>
 <codeline lineno="446"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClusters_1acc2df6489eb7b19e873f41c251ca5884" kindref="member">getSelectionIndices</ref>().clear();</highlight></codeline>
 <codeline lineno="448"><highlight class="normal"></highlight></codeline>
-<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="450"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="451"><highlight class="normal"></highlight></codeline>
 <codeline lineno="452"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classClusters_1a6cd60334fa3076108f3fa5118f44474f" kindref="member">Clusters::selectInvert</ref>()</highlight></codeline>
@@ -3387,7 +3387,7 @@
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectionIndices.push_back(i);</highlight></codeline>
 <codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="467"><highlight class="normal"></highlight></codeline>
-<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a6a325ded7f1be0a15a57d4e35382717e" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemv_1a08677519fb3c23277405f455880a04d8" kindref="member">events</ref>().<ref refid="classmv_1_1AbstractEventManager_1ae77565f5e560cdf4faade7a139d38b46" kindref="member">notifyDatasetDataSelectionChanged</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="469"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="470"><highlight class="normal"></highlight></codeline>
 <codeline lineno="471"><highlight class="normal">ClusterDataFactory::ClusterDataFactory()</highlight></codeline>
