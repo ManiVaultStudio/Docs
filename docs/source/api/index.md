@@ -2,6 +2,7 @@
 
 ## Managers
 
-```{doxygroup} mv_managers
+```{doxygengroup} mv_managers
+:project: ManiVault
+:inner:
 :members:
-:undoc-members:
