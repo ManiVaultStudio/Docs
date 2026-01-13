@@ -1,5 +1,7 @@
 # Numerical
 
+This section documents action types that operate on numerical values, including points, ranges, and rectangular regions. The actions are organized by numeric type, covering base, decimal, and integral variants.
+
 ## Base numerical actions
 
 ```{toctree}
