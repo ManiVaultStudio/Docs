@@ -13,4 +13,5 @@ toggle/index
 task/index
 option/index
 numerical/index
+grouping/index
 miscellaneous/index
