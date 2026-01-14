@@ -2,6 +2,8 @@
 
 This section documents the specifications used by projects and the application to describe hardware requirements. The defined structures support both minimum and recommended hardware specifications across different hardware components.
 
+## Classes
+
 ```{toctree}
 :maxdepth: 1
 
