@@ -1,6 +1,6 @@
 # AbstractThemeManager
 
-**Qualified name:** `mv::gui::AbstractThemeManager`
+**Qualified name:** `mv::AbstractThemeManager`
 
 ```{doxygenclass} mv::AbstractThemeManager
 :members:

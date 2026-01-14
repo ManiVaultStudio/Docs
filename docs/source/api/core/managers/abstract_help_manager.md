@@ -1,6 +1,6 @@
 # AbstractHelpManager
 
-**Qualified name:** `mv::gui::AbstractHelpManager`
+**Qualified name:** `mv::AbstractHelpManager`
 
 ```{doxygenclass} mv::AbstractHelpManager
 :members:

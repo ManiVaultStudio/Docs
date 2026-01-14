@@ -1,6 +1,6 @@
 # AbstractErrorManager
 
-**Qualified name:** `mv::gui::AbstractErrorManager`
+**Qualified name:** `mv::AbstractErrorManager`
 
 ```{doxygenclass} mv::AbstractErrorManager
 :members:

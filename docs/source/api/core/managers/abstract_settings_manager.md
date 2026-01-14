@@ -1,6 +1,6 @@
 # AbstractSettingsManager
 
-**Qualified name:** `mv::gui::AbstractSettingsManager`
+**Qualified name:** `mv::AbstractSettingsManager`
 
 ```{doxygenclass} mv::AbstractSettingsManager
 :members:

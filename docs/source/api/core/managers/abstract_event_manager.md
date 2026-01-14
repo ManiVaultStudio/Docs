@@ -1,6 +1,6 @@
 # AbstractEventManager
 
-**Qualified name:** `mv::gui::AbstractEventManager`
+**Qualified name:** `mv::AbstractEventManager`
 
 ```{doxygenclass} mv::AbstractEventManager
 :members:

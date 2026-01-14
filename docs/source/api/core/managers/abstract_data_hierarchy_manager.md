@@ -1,6 +1,6 @@
 # AbstractDataHierarchyManager
 
-**Qualified name:** `mv::gui::AbstractDataHierarchyManager`
+**Qualified name:** `mv::AbstractDataHierarchyManager`
 
 ```{doxygenclass} mv::AbstractDataHierarchyManager
 :members:

@@ -1,6 +1,6 @@
 # AbstractTaskManager
 
-**Qualified name:** `mv::gui::AbstractTaskManager`
+**Qualified name:** `mv::AbstractTaskManager`
 
 ```{doxygenclass} mv::AbstractTaskManager
 :members:

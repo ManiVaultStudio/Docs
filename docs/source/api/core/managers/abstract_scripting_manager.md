@@ -1,6 +1,6 @@
 # AbstractScriptingManager
 
-**Qualified name:** `mv::gui::AbstractScriptingManager`
+**Qualified name:** `mv::AbstractScriptingManager`
 
 ```{doxygenclass} mv::AbstractScriptingManager
 :members:
