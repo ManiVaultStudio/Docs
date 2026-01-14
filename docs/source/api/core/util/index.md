@@ -10,3 +10,5 @@ color/index
 badge/index
 exception/index
 file/index
+heads_up_display_item/index
+https_error_reply/index
