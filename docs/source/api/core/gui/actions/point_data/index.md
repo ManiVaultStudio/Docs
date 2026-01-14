@@ -1,4 +1,4 @@
-# File
+# Point data actions
 
 This section documents action types related to file system interaction, such as selecting files or directories for input or configuration.
 
