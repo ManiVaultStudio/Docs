@@ -5,6 +5,7 @@
 
 styled_icon
 styled_icon_common
+styled_icon_engine
 ```
 
 ## Miscellaneous functions
