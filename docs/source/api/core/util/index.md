@@ -19,3 +19,4 @@ icon/index
 notifications/index
 pixel_selection/index
 widget/index
+serialization/index
