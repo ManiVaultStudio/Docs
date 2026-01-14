@@ -11,3 +11,4 @@ Use this section when you need precise information about classes, functions, dat
 
 managers/index
 gui/index
+util/index
