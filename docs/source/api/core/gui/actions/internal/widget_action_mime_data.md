@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionMimeData
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionMimeData`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionMimeData
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# DecimalAction
+# LabelProxyAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::LabelProxyAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::LabelProxyAction
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# DecimalAction
+# ViewPluginSamplerAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ViewPluginSamplerAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ViewPluginSamplerAction
 :members:
 :protected-members:

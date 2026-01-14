@@ -1,7 +1,7 @@
-# DecimalAction
+# PaletteColorAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::PaletteColorAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::PaletteColorAction
 :members:
 :protected-members:

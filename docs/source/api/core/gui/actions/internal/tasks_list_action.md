@@ -1,7 +1,7 @@
-# DecimalAction
+# TasksListAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::TasksListAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::TasksListAction
 :members:
 :protected-members:

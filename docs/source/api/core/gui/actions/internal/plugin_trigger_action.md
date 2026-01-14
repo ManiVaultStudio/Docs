@@ -1,7 +1,7 @@
-# DecimalAction
+# PluginTriggerAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::PluginTriggerAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::PluginTriggerAction
 :members:
 :protected-members:

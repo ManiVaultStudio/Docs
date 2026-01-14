@@ -1,7 +1,7 @@
-# DecimalAction
+# ModelSelectionAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ModelSelectionAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ModelSelectionAction
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionDrag
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionDrag`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionDrag
 :members:
 :protected-members:

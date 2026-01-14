@@ -1,7 +1,7 @@
-# DecimalAction
+# PluginLearningCenter
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::PluginLearningCenter`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::PluginLearningCenter
 :members:
 :protected-members:

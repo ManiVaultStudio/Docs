@@ -1,7 +1,7 @@
-# DecimalAction
+# HorizontalHeaderAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::HorizontalHeaderAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::HorizontalHeaderAction
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionContextMenu
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionContextMenu`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionContextMenu
 :members:
 :protected-members:

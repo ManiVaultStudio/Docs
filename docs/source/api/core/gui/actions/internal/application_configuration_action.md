@@ -1,7 +1,7 @@
 # ApplicationConfigurationAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ApplicationConfigurationAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ApplicationConfigurationAction
 :members:
 :protected-members:

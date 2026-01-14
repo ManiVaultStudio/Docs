@@ -1,7 +1,7 @@
-# DecimalAction
+# WatchVideoAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WatchVideoAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WatchVideoAction
 :members:
 :protected-members:

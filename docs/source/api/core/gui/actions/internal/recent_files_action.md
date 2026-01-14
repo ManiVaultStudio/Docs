@@ -1,7 +1,7 @@
-# DecimalAction
+# RecentFilesAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::RecentFilesAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::RecentFilesAction
 :members:
 :protected-members:

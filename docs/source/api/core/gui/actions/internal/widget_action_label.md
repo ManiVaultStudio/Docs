@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionLabel
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionLabel`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionLabel
 :members:
 :protected-members:

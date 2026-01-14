@@ -1,7 +1,7 @@
-# DecimalAction
+# ViewPluginHeadsUpDisplayAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ViewPluginHeadsUpDisplayAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ViewPluginHeadsUpDisplayAction
 :members:
 :protected-members:

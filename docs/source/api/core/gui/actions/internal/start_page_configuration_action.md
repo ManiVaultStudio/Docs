@@ -1,7 +1,7 @@
-# DecimalAction
+# StartPageConfigurationAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::StartPageConfigurationAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::StartPageConfigurationAction
 :members:
 :protected-members:

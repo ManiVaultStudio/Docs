@@ -1,7 +1,7 @@
-# DecimalAction
+# EditColorSchemeAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::EditColorSchemeAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::EditColorSchemeAction
 :members:
 :protected-members:

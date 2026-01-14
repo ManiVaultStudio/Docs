@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionCollapsedWidget
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionCollapsedWidget`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionCollapsedWidget
 :members:
 :protected-members:

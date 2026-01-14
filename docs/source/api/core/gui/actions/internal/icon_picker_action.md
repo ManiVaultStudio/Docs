@@ -1,7 +1,7 @@
-# DecimalAction
+# IconPickerAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::IconPickerAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::IconPickerAction
 :members:
 :protected-members:

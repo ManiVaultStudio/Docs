@@ -1,7 +1,7 @@
-# DecimalAction
+# WidgetActionToolButton
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::WidgetActionToolButton`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::WidgetActionToolButton
 :members:
 :protected-members:

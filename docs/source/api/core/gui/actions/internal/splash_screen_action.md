@@ -1,7 +1,7 @@
-# DecimalAction
+# SplashScreenAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::SplashScreenAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::SplashScreenAction
 :members:
 :protected-members:

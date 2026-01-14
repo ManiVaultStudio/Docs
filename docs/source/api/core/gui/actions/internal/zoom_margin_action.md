@@ -1,7 +1,7 @@
-# DecimalAction
+# ZoomMarginAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ZoomMarginAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ZoomMarginAction
 :members:
 :protected-members:

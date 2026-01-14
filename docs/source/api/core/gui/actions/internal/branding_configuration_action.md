@@ -1,7 +1,7 @@
-# DecimalAction
+# BrandingConfigurationAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::BrandingConfigurationAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::BrandingConfigurationAction
 :members:
 :protected-members:

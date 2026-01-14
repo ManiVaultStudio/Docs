@@ -1,7 +1,7 @@
-# DecimalAction
+# ProjectsConfigurationAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::ProjectsConfigurationAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::ProjectsConfigurationAction
 :members:
 :protected-members:

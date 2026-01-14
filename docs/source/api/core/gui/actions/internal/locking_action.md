@@ -1,7 +1,7 @@
-# DecimalAction
+# LockingAction
 
-**Qualified name:** `mv::gui::DecimalAction`
+**Qualified name:** `mv::gui::LockingAction`
 
-```{doxygenclass} mv::gui::DecimalAction
+```{doxygenclass} mv::gui::LockingAction
 :members:
 :protected-members:
