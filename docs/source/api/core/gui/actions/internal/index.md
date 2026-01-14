@@ -1,19 +1,51 @@
 # Internal
 
+This section documents action types that are part of the public API but are primarily intended for internal consumption by the core system and selected first-party plugins. They support application-specific behavior, UI integration, and internal workflows rather than serving as general-purpose extension points.
+
+While these actions are accessible, they should be considered implementation-oriented and may change as internal requirements evolve.
 
 ```{toctree}
 :maxdepth: 1
 
 dataset_picker_action
-event_action
-image_action
-pixel_selection_action
-plugin_picker_action
-plugin_status_bar_action
-status_action
-status_bar_action
-table_action
-tree_action
-variant_action
-version_action
-window_level_action
+application_icon_action
+branding_configuration_action
+color_scheme_action
+edit_color_scheme_action
+horizontal_header_action
+icon_action
+icon_picker_action
+label_proxy_action
+locking_action
+model_filter_action
+model_selection_action
+navigation_action
+palette_action
+palette_color_action
+palette_color_role_action
+plugin_learning_center
+plugin_trigger_action
+plugin_trigger_picker_action
+presets_action
+projects_configuration_action
+recent_files_action
+script_trigger_action
+splash_screen_action
+start_page_configuration_action
+tasks_list_action
+view_plugin_heads_up_display
+view_plugin_sampler_action
+watch_video_action
+widget_action_badge_overlay_widget
+widget_action_collapsed_widget
+widget_action_context_menu
+widget_action_drag
+widget_action_highlight_widget
+widget_action_label
+widget_action_mime_data
+widget_action_tool_button_menu
+widget_action_tool_button
+widget_action_view_widget
+widget_action_widget
+widget_action
+zoom_margin_action
