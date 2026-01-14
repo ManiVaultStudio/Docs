@@ -1,8 +1,9 @@
 # PixelSelection
 
-**Qualified name:** `mv::util::PixelSelection`
+## Classes
 
-```{doxygenclass} mv::util::PixelSelection
-:members:
-:protected-members:
+```{toctree}
+:maxdepth: 1
+
+pixel_selection_type_model
 ```
