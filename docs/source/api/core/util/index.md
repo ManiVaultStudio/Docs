@@ -26,3 +26,6 @@ model/index
 numerical_range/index
 preset/index
 standard_paths/index
+timer/index
+internal/index
+math/index

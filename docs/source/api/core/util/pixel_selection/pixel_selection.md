@@ -25,6 +25,7 @@ pixel_selection_type_model
 ```
 
 ## Functions
+
 ```{doxygenfunction} mv::util::getPixelSelectionTypeName
 ```
 
