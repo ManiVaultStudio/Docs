@@ -8,7 +8,7 @@ This section documents utility classes related to file handling, including file 
 :maxdepth: 1
 
 file_downloader
-file_util
+json
 ```
 
 ## Miscellaneous functions

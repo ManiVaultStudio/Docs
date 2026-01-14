@@ -12,4 +12,5 @@ exception/index
 file/index
 heads_up_display_item/index
 network/index
+learning_center/index
 icon/index
