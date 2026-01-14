@@ -29,3 +29,4 @@ standard_paths/index
 timer/index
 internal/index
 math/index
+miscellaneous/index
