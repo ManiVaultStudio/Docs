@@ -1,7 +1,7 @@
-# OptionAction
+# NumericalPointAction
 
-**Qualified name:** `mv::gui::OptionAction`
+**Qualified name:** `mv::gui::NumericalPointAction`
 
-```{doxygenclass} mv::gui::OptionAction
+```{doxygenclass} mv::gui::NumericalPointAction
 :members:
 :protected-members:
