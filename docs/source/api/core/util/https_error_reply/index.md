@@ -1,4 +1,4 @@
-# Badge
+# HTTPS Error Reply
 
 ```{toctree}
 :maxdepth: 1
