@@ -1,5 +1,7 @@
 # Network
 
+This section documents network-related utility classes used to support secure communication, error handling, and custom URL scheme integration within the application.
+
 ## Classes
 
 ```{toctree}
