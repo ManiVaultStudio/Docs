@@ -18,3 +18,4 @@ learning_center/index
 icon/index
 notifications/index
 pixel_selection/index
+widget/index
