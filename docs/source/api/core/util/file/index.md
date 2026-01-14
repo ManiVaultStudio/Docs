@@ -13,5 +13,5 @@ json
 
 ## Miscellaneous functions
 
-```{doxygenfunction} mv::util::loadFileContents```
-```{doxygenfunction} mv::util::showFileInFolder```
+```{doxygenfunction} mv::util::loadFileContents
+```{doxygenfunction} mv::util::showFileInFolder

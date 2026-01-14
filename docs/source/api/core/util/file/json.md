@@ -1,5 +1,5 @@
 # JSON
 
-```{doxygenfunction} mv::util::isValidJson```
-```{doxygenfunction} mv::util::loadJsonFromResource```
-```{doxygenfunction} mv::util::validateJson```
+```{doxygenfunction} mv::util::isValidJson
+```{doxygenfunction} mv::util::loadJsonFromResource
+```{doxygenfunction} mv::util::validateJson
