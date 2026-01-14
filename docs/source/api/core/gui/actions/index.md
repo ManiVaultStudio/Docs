@@ -17,3 +17,14 @@ grouping/index
 color/index
 colormap/index
 miscellaneous/index
+```
+
+## Plugin-specific
+point_data/index
+
+```{toctree}
+:maxdepth: 1
+
+trigger/index
+
+```

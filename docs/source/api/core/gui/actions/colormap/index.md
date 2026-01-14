@@ -15,7 +15,7 @@ color_map_settings_action
 color_map_view_action
 ```
 
-# Supporting classes
+## Supporting classes
 
 ```{toctree}
 :maxdepth: 1
