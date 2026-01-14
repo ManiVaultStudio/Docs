@@ -1,4 +1,4 @@
-# Heads-up Display Item
+# HeadsUpDisplayItem
 
 This section documents the badge component used to display small, contextual status or indicator information within the user interface.
 

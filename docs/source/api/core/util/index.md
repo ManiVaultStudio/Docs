@@ -22,3 +22,7 @@ widget/index
 serialization/index
 script/index
 shortcut_map/index
+model/index
+numerical_range/index
+preset/index
+standard_paths/index
