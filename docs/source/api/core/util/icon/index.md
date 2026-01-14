@@ -1,5 +1,7 @@
 # Icon
 
+# Classes
+
 ```{toctree}
 :maxdepth: 1
 
