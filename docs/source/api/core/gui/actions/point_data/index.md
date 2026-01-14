@@ -15,6 +15,7 @@ dimensions_picker_select_action
 ```
 
 ## Info
+
 ```{toctree}
 :maxdepth: 1
 
@@ -23,4 +24,15 @@ edit_proxy_datasets_action
 number_of_selected_points_action
 proxy_datasets_action
 selected_indices_action
+```
+
+## Supporting classes
+
+```{toctree}
+:maxdepth: 1
+
+dimensions_picker_holder
+dimensions_picker_item_model
+dimensions_picker_proxy_model
+model_resetter
 ```
