@@ -2,6 +2,8 @@
 
 This section documents core color-related data structures and models, including color maps, color schemes, and color spaces, used throughout the application and its visualization pipeline.
 
+## Classes
+
 ```{toctree}
 :maxdepth: 1
 
