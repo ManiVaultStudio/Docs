@@ -1,7 +1,7 @@
 # DimensionsPickerFilterAction
 
-**Qualified name:** `DimensionsPickerFilterAction`
+**Qualified name:** `mv::gui::DimensionsPickerFilterAction`
 
-```{doxygenclass} DimensionsPickerFilterAction
+```{doxygenclass} mv::gui::DimensionsPickerFilterAction
 :members:
 :protected-members:
