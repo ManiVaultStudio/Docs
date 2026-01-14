@@ -20,3 +20,5 @@ notifications/index
 pixel_selection/index
 widget/index
 serialization/index
+script/index
+shortcut_map/index
