@@ -1,7 +1,7 @@
-# FilePickerAction
+# InfoAction
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `InfoAction`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} InfoAction
 :members:
 :protected-members:

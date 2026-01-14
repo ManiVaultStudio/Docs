@@ -1,7 +1,7 @@
-# FilePickerAction
+# ModelResetter
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `ModelResetter`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} :ModelResetter
 :members:
 :protected-members:

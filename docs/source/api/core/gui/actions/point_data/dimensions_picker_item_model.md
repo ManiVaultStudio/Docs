@@ -1,7 +1,7 @@
-# FilePickerAction
+# DimensionsPickerItemHolder
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `DimensionsPickerItemHolder`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} DimensionsPickerItemHolder
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# FilePickerAction
+# NumberOfSelectedPointsAction
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `NumberOfSelectedPointsAction`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} NumberOfSelectedPointsAction
 :members:
 :protected-members:

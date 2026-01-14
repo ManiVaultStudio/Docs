@@ -1,7 +1,7 @@
-# FilePickerAction
+# DimensionsPickerProxyModel
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `DimensionsPickerProxyModel`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} DimensionsPickerProxyModel
 :members:
 :protected-members:

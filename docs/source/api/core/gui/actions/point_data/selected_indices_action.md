@@ -1,7 +1,7 @@
-# FilePickerAction
+# SelectedIndicesAction
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `SelectedIndicesAction`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} SelectedIndicesAction
 :members:
 :protected-members:

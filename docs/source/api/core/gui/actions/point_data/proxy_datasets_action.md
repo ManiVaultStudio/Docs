@@ -1,7 +1,7 @@
-# FilePickerAction
+# ProxyDatasetsAction
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `ProxyDatasetsAction`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} ProxyDatasetsAction
 :members:
 :protected-members:

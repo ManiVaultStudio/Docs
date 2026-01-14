@@ -1,7 +1,7 @@
-# DirectoryPickerAction
+# DimensionsPickerAction
 
-**Qualified name:** `mv::gui::DirectoryPickerAction`
+**Qualified name:** `DimensionsPickerAction`
 
-```{doxygenclass} mv::gui::DirectoryPickerAction
+```{doxygenclass} DimensionsPickerAction
 :members:
 :protected-members:

@@ -1,7 +1,7 @@
-# FilePickerAction
+# EditProxyDatasetsAction
 
-**Qualified name:** `mv::gui::FilePickerAction`
+**Qualified name:** `EditProxyDatasetsAction`
 
-```{doxygenclass} mv::gui::FilePickerAction
+```{doxygenclass} EditProxyDatasetsAction
 :members:
 :protected-members:
