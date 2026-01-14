@@ -1,11 +1,12 @@
-# Badge
+# Serialization
 
-This section documents the badge component used to display small, contextual status or indicator information within the user interface.
+This section documents the core classes used to support serialization and deserialization of data structures within the system.
 
 ## Classes
 
 ```{toctree}
 :maxdepth: 1
 
-badge
+serializable
+serialization
 ```
