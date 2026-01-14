@@ -1,7 +1,7 @@
 # DimensionsPickerMiscellaneousAction
 
-**Qualified name:** `DimensionsPickerMiscellaneousAction`
+**Qualified name:** `mv::gui::DimensionsPickerMiscellaneousAction`
 
-```{doxygenclass} DimensionsPickerMiscellaneousAction
+```{doxygenclass} mv::gui::DimensionsPickerMiscellaneousAction
 :members:
 :protected-members:
