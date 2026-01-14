@@ -14,4 +14,5 @@ task/index
 option/index
 numerical/index
 grouping/index
+colormap/index
 miscellaneous/index
