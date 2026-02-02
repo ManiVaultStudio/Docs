@@ -9,6 +9,7 @@ Use this section when you need precise information about classes, functions, dat
 ```{toctree}
 :maxdepth: 1
 
+plugin/index
 managers/index
 gui/index
 util/index
