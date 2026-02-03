@@ -10,6 +10,6 @@ This API is considered a **WIP**. Plugin developers typically do not need to int
 :maxdepth: 1
 
 abstract_heads_up_display_model
-heads_up_display_list_model
+heads_up_display_tree_model
 heads_up_display_filter_model
 ```
