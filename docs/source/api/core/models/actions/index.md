@@ -1,10 +1,10 @@
 # Actions
  
-Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {ref}`Actions Manager <api/core/managers/abstract_actions_manager>` with the use of dedicated actions models.
+Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {cpp:class}`actions manager <mv::AbstractActionsManager>` with the use of dedicated actions models.
 
 ```{note}
 This API is **stable** and intended for use by **core developers**.  
-Plugin developers typically do not need to interact with it directly, as it is fully wrapped by the {ref}`Actions Manager <api/core/managers/abstract_actions_manager>`.
+Plugin developers typically do not need to interact with it directly, as it is fully wrapped by the actions manager.
 ```
 
 The classes below are used to store, present and filter actions.
