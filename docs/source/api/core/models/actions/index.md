@@ -1,6 +1,6 @@
 # Actions
  
-Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {doc}`actions_manager` with the use of dedicated actions models.
+Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {doc}`api/core/managersactions_manager` with the use of dedicated actions models.
 
 ```{note}
 This API is **stable** and intended for use by **core developers**.  
