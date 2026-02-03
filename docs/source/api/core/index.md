@@ -13,3 +13,4 @@ plugin/index
 managers/index
 gui/index
 util/index
+models/index
