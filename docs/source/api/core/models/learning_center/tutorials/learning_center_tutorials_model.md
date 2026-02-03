@@ -1,8 +1,8 @@
-# AbstractHeadsUpDisplayModel
+# LearningCenterTutorialsModel
 
-**Qualified name:** `mv::AbstractHeadsUpDisplayModel`
+**Qualified name:** `mv::LearningCenterTutorialsModel`
 
-```{doxygenclass} mv::AbstractHeadsUpDisplayModel
+```{doxygenclass} mv::LearningCenterTutorialsModel
 :members:
 :protected-members:
 ```

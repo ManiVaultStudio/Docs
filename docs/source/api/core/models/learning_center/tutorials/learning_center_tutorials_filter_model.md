@@ -1,8 +1,8 @@
-# HeadsUpDisplayFilterModel
+# LearningCenterTutorialsFilterModel
 
-**Qualified name:** `mv::HeadsUpDisplayFilterModel`
+**Qualified name:** `mv::LearningCenterTutorialsFilterModel`
 
-```{doxygenclass} mv::HeadsUpDisplayFilterModel
+```{doxygenclass} mv::LearningCenterTutorialsFilterModel
 :members:
 :protected-members:
 ```
