@@ -2,6 +2,11 @@
  
 Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {doc}`actions_manager` with the use of dedicated actions models.
 
+```{note}
+This API is **stable** and intended for use by **core developers**.  
+Plugin developers typically do not need to interact with it directly, as it is fully wrapped by the actions manager.
+```
+
 ## Classes
 
 The classes below are used to store, present and filter actions.
