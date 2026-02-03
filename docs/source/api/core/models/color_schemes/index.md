@@ -1,10 +1,6 @@
 # Color Schemes
 
-Color schemes alter the look-and-feel of **ManiVault Studio**. Color schemes can be added, removed and altered from the GUI.
-
-## Classes
-
-The classes below are used to store, present and filter color schemes.
+Color schemes alter the look-and-feel of **ManiVault Studio**. Color schemes can be added, removed and altered from the GUI. The classes below are used to store, present and filter color schemes.
 
 ```{toctree}
 :maxdepth: 1
