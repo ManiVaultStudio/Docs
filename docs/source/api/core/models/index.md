@@ -22,13 +22,5 @@ recent_files/index
 scripts/index
 selections/index
 tasks/index
-```
-
-## Common
-
-```{toctree}
-:maxdepth: 1
-
 common/index
-
 ```

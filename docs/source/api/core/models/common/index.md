@@ -2,8 +2,6 @@
  
 Below are some common base model classes used throughout **ManiVault**.
 
-```
-
 ```{toctree}
 :maxdepth: 1
 
