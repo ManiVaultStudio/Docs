@@ -9,7 +9,7 @@ actions/index
 color_schemes/index
 data_hierarchy/index
 datasets/index
-hardware/spec
+hardware_spec/index
 hud/index
 learning_center/index
 logging/index
