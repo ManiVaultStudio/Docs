@@ -1,8 +1,8 @@
-# AbstractColorSchemesModel
+# AbstractDatasetsModel
 
-**Qualified name:** `mv::AbstractColorSchemesModel`
+**Qualified name:** `mv::AbstractDatasetsModel`
 
-```{doxygenclass} mv::AbstractColorSchemesModel
+```{doxygenclass} mv::AbstractDatasetsModel
 :members:
 :protected-members:
 ```

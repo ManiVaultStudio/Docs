@@ -1,8 +1,8 @@
-# ColorSchemesFilterModel
+# DatasetsFilterModel
 
-**Qualified name:** `mv::ColorSchemesFilterModel`
+**Qualified name:** `mv::DatasetsFilterModel`
 
-```{doxygenclass} mv::ColorSchemesFilterModel
+```{doxygenclass} mv::DatasetsFilterModel
 :members:
 :protected-members:
 ```

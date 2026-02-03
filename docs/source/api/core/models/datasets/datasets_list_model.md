@@ -1,8 +1,8 @@
-# ColorSchemesListModel
+# DatasetsListModel
 
-**Qualified name:** `mv::ColorSchemesListModel`
+**Qualified name:** `mv::DatasetsListModel`
 
-```{doxygenclass} mv::ColorSchemesListModel
+```{doxygenclass} mv::DatasetsListModel
 :members:
 :protected-members:
 ```

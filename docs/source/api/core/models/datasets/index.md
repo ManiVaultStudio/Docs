@@ -1,15 +1,11 @@
 # Datasets
 
-Color schemes alter the look-and-feel of **ManiVault Studio**. Color schemes can be added, removed and altered from the GUI.
-
-## Classes
-
-The classes below are used to store, present and filter color schemes.
+Datasets are stored in the {doc}`Data Manager <api/core/managers/abstract_data_manager>` and the classes below keep track of which datasets are in **ManiVault** at any point in time.
 
 ```{toctree}
 :maxdepth: 1
 
-abstract_color_schemes_model
-color_schemes_list_model
-color_schemes_filter_model
+abstract_datasets_model
+datasets_list_model
+datasets_filter_model
 ```
