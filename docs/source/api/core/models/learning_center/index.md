@@ -3,7 +3,7 @@
 The learning center is a centralized repository of **tutorials** and **videos**, accessible via the {cpp:class}`mv::AbstractHelpManager`.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 tutorials/index
 videos/index
