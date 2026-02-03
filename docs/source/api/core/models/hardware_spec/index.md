@@ -10,6 +10,6 @@ The model classes below are for storing and filtering hardware specs.
 :maxdepth: 1
 
 abstract_hardware_spec_model
-hardware_spec_list_model
+hardware_spec_tree_model
 hardware_spec_filter_model
 ```
