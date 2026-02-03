@@ -1,6 +1,6 @@
 # Datasets
 
-Datasets are stored in the {ref}`Data Manager <api/core/managers/abstract_data_manager>` and the classes below keep track of which datasets are in **ManiVault** at any point in time.
+Datasets are stored in the {doc}`Data Manager <api/core/managers/abstract_data_manager>` and their lifetime is tracked by the model classes below.
 
 ```{toctree}
 :maxdepth: 1
