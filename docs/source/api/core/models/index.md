@@ -2,8 +2,6 @@
  
 Here we present several models.
 
-## Classes
-
 ```{toctree}
 :maxdepth: 1
 

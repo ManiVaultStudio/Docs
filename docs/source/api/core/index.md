@@ -7,7 +7,7 @@ The documentation is organized by functional areas, including managers, utilitie
 Use this section when you need precise information about classes, functions, data structures, and their interactions, or when implementing integrations, plugins, or advanced customizations.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
 plugin/index
 managers/index
