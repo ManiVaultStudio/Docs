@@ -8,6 +8,8 @@
 mv::actions()->...
 ```
 
+More info on the models used in this manager can be found {ref}`here <api/core/models/actions/index>`
+
 **Qualified name:** `mv::AbstractActionsManager`
 
 ```{doxygenclass} mv::AbstractActionsManager
