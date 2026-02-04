@@ -1,8 +1,8 @@
-# AbstractActionsModel
+# RawDataModel
 
-**Qualified name:** `mv::AbstractActionsModel`
+**Qualified name:** `mv::RawDataModel`
 
-```{doxygenclass} mv::AbstractActionsModel
+```{doxygenclass} mv::RawDataModel
 :members:
 :protected-members:
 ```

@@ -1,8 +1,8 @@
-# ActionsFilterModel
+# RawDataFilterModel
 
-**Qualified name:** `mv::ActionsFilterModel`
+**Qualified name:** `mv::RawDataFilterModel`
 
-```{doxygenclass} mv::ActionsFilterModel
+```{doxygenclass} mv::RawDataFilterModel
 :members:
 :protected-members:
 ```
