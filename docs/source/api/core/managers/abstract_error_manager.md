@@ -9,7 +9,7 @@ mv::errors()->...
 ```
 
 ### Related
-- Error {doc}`models <../models/error/index>`
+- Error {doc}`models <../models/errors/index>`
 
 **Qualified name:** `mv::AbstractErrorManager`
 
