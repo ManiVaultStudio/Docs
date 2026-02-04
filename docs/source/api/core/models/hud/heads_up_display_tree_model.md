@@ -1,8 +1,8 @@
-# HeadsUpDisplayListModel
+# HeadsUpDisplayTreeModel
 
-**Qualified name:** `mv::HeadsUpDisplayListModel`
+**Qualified name:** `mv::HeadsUpDisplayTreeModel`
 
-```{doxygenclass} mv::HeadsUpDisplayListModel
+```{doxygenclass} mv::HeadsUpDisplayTreeModel
 :members:
 :protected-members:
 ```
