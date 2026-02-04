@@ -8,7 +8,7 @@
 mv::actions()->...
 ```
 
-More info on the models used in this manager can be found {doc}`here <api/core/models/actions/index>`
+More info on the models used in this manager can be found {doc}`here <../models/actions/index>`
 
 **Qualified name:** `mv::AbstractActionsManager`
 
