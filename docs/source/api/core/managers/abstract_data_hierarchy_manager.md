@@ -9,7 +9,7 @@ mv::dataHierarchy()->...
 ```
 
 ### Related
-- Data hierarchy `models <../models/data_hierarchy/index>`
+- Data hierarchy {doc}`models <../models/data_hierarchy/index>`
 
 **Qualified name:** `mv::AbstractDataHierarchyManager`
 

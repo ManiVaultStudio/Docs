@@ -9,7 +9,7 @@ mv::tasks()->...
 ```
 
 ### Related
-- Tasks `models <../models/tasks/index>`
+- Tasks {doc}`models <../models/tasks/index>`
 
 **Qualified name:** `mv::AbstractTaskManager`
 

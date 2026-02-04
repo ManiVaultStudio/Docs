@@ -9,7 +9,7 @@ mv::theme()->...
 ```
 
 ### Related
-- Color schemes `models <../models/color_schemes/index>`
+- Color schemes {doc}`models <../models/color_schemes/index>`
 
 **Qualified name:** `mv::AbstractThemeManager`
 

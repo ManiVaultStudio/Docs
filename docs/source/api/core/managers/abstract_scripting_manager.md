@@ -9,7 +9,7 @@ mv::scripting()->...
 ```
 
 ### Related
-- Scripts `models <../models/scripts/index>`
+- Scripts {doc}`models <../models/scripts/index>`
 
 **Qualified name:** `mv::AbstractScriptingManager`
 

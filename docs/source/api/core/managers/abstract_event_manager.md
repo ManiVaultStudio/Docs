@@ -9,7 +9,7 @@ mv::events()->...
 ```
 
 ### Related
-- Events `models <../models/events/index>`
+- Events {doc}`models <../models/events/index>`
 
 **Qualified name:** `mv::AbstractEventManager`
 

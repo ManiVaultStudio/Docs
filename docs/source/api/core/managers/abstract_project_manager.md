@@ -9,7 +9,7 @@ mv::project()->...
 ```
 
 ### Related
-- Project `models <../models/project/index>`
+- Project {doc}`models <../models/project/index>`
 
 **Qualified name:** `mv::AbstractProjectManager`
 

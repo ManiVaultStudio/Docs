@@ -9,7 +9,7 @@ mv::actions()->...
 ```
 
 ### Related
-- Actions `models <../models/actions/index>`
+- Actions {doc}`models <../models/actions/index>`
 
 **Qualified name:** `mv::AbstractActionsManager`
 

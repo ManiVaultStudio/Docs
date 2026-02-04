@@ -9,7 +9,7 @@ mv::plugins()->...
 ```
 
 ### Related
-- Plugins `models <../models/plugins/index>`
+- Plugins {doc}`models <../models/plugins/index>`
 
 **Qualified name:** `mv::AbstractPluginManager`
 

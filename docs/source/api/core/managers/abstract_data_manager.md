@@ -9,7 +9,7 @@ mv::data()->...
 ```
 
 ### Related
-- Data `models <../models/data/index>`
+- Data {doc}`models <../models/data/index>`
 
 **Qualified name:** `mv::AbstractDataManager`
 
