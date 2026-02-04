@@ -27,3 +27,12 @@ miscellaneous/index
 point_data/index
 
 ```
+
+## Other
+
+```{toctree}
+:maxdepth: 1
+
+project/index
+
+```
