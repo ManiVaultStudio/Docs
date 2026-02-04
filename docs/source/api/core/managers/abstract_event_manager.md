@@ -8,6 +8,9 @@
 mv::events()->...
 ```
 
+### Related
+- Events `models <../models/events/index>`
+
 **Qualified name:** `mv::AbstractEventManager`
 
 ```{doxygenclass} mv::AbstractEventManager

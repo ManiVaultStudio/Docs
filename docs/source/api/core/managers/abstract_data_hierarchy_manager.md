@@ -8,6 +8,9 @@
 mv::dataHierarchy()->...
 ```
 
+### Related
+- Data hierarchy `models <../models/data_hierarchy/index>`
+
 **Qualified name:** `mv::AbstractDataHierarchyManager`
 
 ```{doxygenclass} mv::AbstractDataHierarchyManager

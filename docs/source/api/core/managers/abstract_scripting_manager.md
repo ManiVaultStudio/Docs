@@ -8,6 +8,9 @@
 mv::scripting()->...
 ```
 
+### Related
+- Scripts `models <../models/scripts/index>`
+
 **Qualified name:** `mv::AbstractScriptingManager`
 
 ```{doxygenclass} mv::AbstractScriptingManager

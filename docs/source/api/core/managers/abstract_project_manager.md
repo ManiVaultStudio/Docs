@@ -8,6 +8,9 @@
 mv::project()->...
 ```
 
+### Related
+- Project `models <../models/project/index>`
+
 **Qualified name:** `mv::AbstractProjectManager`
 
 ```{doxygenclass} mv::AbstractProjectManager

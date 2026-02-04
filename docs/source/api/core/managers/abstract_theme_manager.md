@@ -8,6 +8,9 @@
 mv::theme()->...
 ```
 
+### Related
+- Color schemes `models <../models/color_schemes/index>`
+
 **Qualified name:** `mv::AbstractThemeManager`
 
 ```{doxygenclass} mv::AbstractThemeManager

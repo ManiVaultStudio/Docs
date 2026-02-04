@@ -8,6 +8,9 @@
 mv::data()->...
 ```
 
+### Related
+- Data `models <../models/data/index>`
+
 **Qualified name:** `mv::AbstractDataManager`
 
 ```{doxygenclass} mv::AbstractDataManager

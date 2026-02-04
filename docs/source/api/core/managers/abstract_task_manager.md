@@ -8,6 +8,9 @@
 mv::tasks()->...
 ```
 
+### Related
+- Tasks `models <../models/tasks/index>`
+
 **Qualified name:** `mv::AbstractTaskManager`
 
 ```{doxygenclass} mv::AbstractTaskManager

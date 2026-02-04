@@ -8,6 +8,9 @@
 mv::errors()->...
 ```
 
+### Related
+- Error `models <../models/error/index>`
+
 **Qualified name:** `mv::AbstractErrorManager`
 
 ```{doxygenclass} mv::AbstractErrorManager

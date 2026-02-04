@@ -8,6 +8,9 @@
 mv::plugins()->...
 ```
 
+### Related
+- Plugins `models <../models/plugins/index>`
+
 **Qualified name:** `mv::AbstractPluginManager`
 
 ```{doxygenclass} mv::AbstractPluginManager
