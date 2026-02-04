@@ -1,4 +1,3 @@
-(actions_model)=
 # Actions
  
 Actions are re-usable GUI building blocks. During their lifetime, actions are tracked in a global {cpp:class}`mv::AbstractActionsManager` with the use of dedicated actions models. The classes below are used to store, present and filter actions.
