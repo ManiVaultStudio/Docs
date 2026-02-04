@@ -23,3 +23,4 @@ abstract_scripting_manager
 abstract_settings_manager
 abstract_task_manager
 abstract_theme_manager
+abstract_project_manager
