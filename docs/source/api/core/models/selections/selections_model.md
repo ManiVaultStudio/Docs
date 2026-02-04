@@ -1,8 +1,8 @@
-# AbstractScriptsModel
+# SelectionsModel
 
-**Qualified name:** `mv::AbstractScriptsModel`
+**Qualified name:** `mv::SelectionsModel`
 
-```{doxygenclass} mv::AbstractScriptsModel
+```{doxygenclass} mv::SelectionsModel
 :members:
 :protected-members:
 ```

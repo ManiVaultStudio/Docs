@@ -1,8 +1,8 @@
-# ScriptsFilterModel
+# SelectionsFilterModel
 
-**Qualified name:** `mv::ScriptsFilterModel`
+**Qualified name:** `mv::SelectionsFilterModel`
 
-```{doxygenclass} mv::ScriptsFilterModel
+```{doxygenclass} mv::SelectionsFilterModel
 :members:
 :protected-members:
 ```
