@@ -155,6 +155,8 @@ def render_index_md(
 
     lines.append("")
 
+    lines.append("```{toctree}:maxdepth: 2")
+
     # Each link points into the generated directory
     for r in releases:
         ver = sanitize_version(r.tag_name) or r.tag_name
@@ -169,7 +171,8 @@ def render_index_md(
         else:
             lines.append(f"- [{label}]({rel_path})")
 
-    lines.append("")
+    lines.append("```")
+    
     return "\n".join(lines)
 
 
