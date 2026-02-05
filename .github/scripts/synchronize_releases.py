@@ -179,11 +179,11 @@ def main() -> int:
     repo = os.environ.get("CORE_REPO", "core").strip()
 
     # Generated release notes go here
-    output_dir = os.environ.get("OUTPUT_DIR", "docs/release_notes/generated").strip()
-    prefix = os.environ.get("FILE_PREFIX", "releasenot_").strip()
+    output_dir = os.environ.get("OUTPUT_DIR", "docs/source/release_notes").strip()
+    prefix = os.environ.get("FILE_PREFIX", "release_note_").strip()
 
     # Index file (Markdown) that links to all generated notes
-    index_path = os.environ.get("INDEX_PATH", "docs/release_notes/index.md").strip()
+    index_path = os.environ.get("INDEX_PATH", "docs/source/release_notes/index.md").strip()
     index_title = os.environ.get("INDEX_TITLE", "Release Notes").strip()
 
     include_prereleases = os.environ.get("INCLUDE_PRERELEASES", "false").lower() == "true"
