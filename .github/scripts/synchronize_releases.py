@@ -167,9 +167,7 @@ def render_index_md(
         label = ver
         date_str = format_date(r.published_at)
         if date_str:
-            lines.append(f"- [{label}]({rel_path}) ({date_str})")
-        else:
-            lines.append(f"- [{label}]({rel_path})")
+            lines.append(f"{rel_path} ({date_str})")
 
     lines.append("```")
 
