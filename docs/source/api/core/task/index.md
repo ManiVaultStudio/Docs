@@ -20,6 +20,7 @@ types/background_task
 types/dataset_task
 types/foreground_task
 types/modal_task
+types/application_startup_task
 ```
 
 ## Handlers
