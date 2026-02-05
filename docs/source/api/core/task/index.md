@@ -1,43 +1,44 @@
-# Plugin
- 
-Plugins are the primary extension mechanism in ManiVault. They allow new functionality to be added to the platform without modifying the core application, enabling features such as data loading, analysis, transformation, visualization, and export to be developed and deployed independently.
+# Task
 
-Each plugin follows a common lifecycle defined by the plugin base class and is instantiated through a plugin factory. Depending on their role, plugins are categorized into specific types that determine how they integrate with the application and interact with data and user workflows.
-
-The sections below describe the core building blocks of the plugin system, the available plugin types, and supporting classes used for metadata and shortcut configuration.
-
-## Base class and factory
-
-All **ManiVault** plugins are derived from a generic **plugin** base class and are created by a **plugin factory**.
-
-```{toctree}
-:maxdepth: 1
-
-plugin
-plugin_factory
-```
+### Related
+- Task {doc}`models <../models/tasks/index>`
 
 ## Types
 
-ManiVault plugins are categorized by their primary role within the platform. There are plugins for reading, writing, analyzing, transforming and viewing data. The classes below are all derived from the [plugin base class](plugin).
+The task classes below are derived from the {ref}`task <task>` base class.
 
 ```{toctree}
 :maxdepth: 1
 
-analysis_plugin
-loader_plugin
-transformation_plugin
-view_plugin
-writer_plugin
+types/background_task
+types/dataset_task
+types/foreground_task
+types/modal_task
 ```
 
-## Miscellaneous
+## Handlers
 
-The class below are used to compose a plugin shortcut map and adding plugin metadata.
+Task handlers are responsible for presenting task-related information to the user. For example, they may display progress using a modal dialog, a progress bar in the status bar, or similar UI elements.
 
 ```{toctree}
 :maxdepth: 1
 
-plugin_shortcuts
-plugin_metadata
+handlers/abstract_task_handler
+handlers/background_task_handler
+handlers/dataset_task_handler
+handlers/foreground_task_handler
+handlers/modal_task_handler
+```
+
+## Testing
+
+Below are some auxilliary classes for testing various task types
+```{toctree}
+:maxdepth: 1
+
+testing/abstract_task_tester
+testing/background_task_tester
+testing/foreground_task_tester
+testing/modal_task_tester
+testing/task_tester_runner
 ```
