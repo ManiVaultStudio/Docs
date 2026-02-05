@@ -1,0 +1,45 @@
+name: Sync core release notes
+
+on:
+  workflow_dispatch:
+  schedule:
+    # daily at 06:15 UTC (adjust as you like)
+    - cron: "15 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout docs repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate release notes from ManiVaultStudio/core
+        env:
+          CORE_OWNER: ManiVaultStudio
+          CORE_REPO: core
+          OUTPUT_DIR: docs/release_notes/generated
+          FILE_PREFIX: release_note_
+          INCLUDE_PRERELEASES: "false"
+        run: |
+          python .github/scripts/sync_releases.py
+
+      - name: Commit and push if changed
+        run: |
+          set -e
+          if git status --porcelain | grep -q .; then
+            git config user.name "release-notes-bot"
+            git config user.email "release-notes-bot@users.noreply.github.com"
+            git add docs/release_notes/generated
+            git commit -m "docs: sync core release notes"
+            git push
+          else
+            echo "No changes."
+          fi
