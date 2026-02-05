@@ -1,6 +1,6 @@
 # ProjectCompressionAction
 
-**Qualified name:** `ProjectCompressionAction`
+**Qualified name:** `mv::ProjectCompressionAction`
 
 ```{doxygenclass} ProjectCompressionAction
 :members:
