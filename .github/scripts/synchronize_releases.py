@@ -155,7 +155,7 @@ def render_index_md(
 
     lines.append("")
 
-    lines.append("```{toctree}\n:maxdepth: 2")
+    lines.append("```{toctree}\n:maxdepth: 2\n")
 
     # Each link points into the generated directory
     for r in releases:
