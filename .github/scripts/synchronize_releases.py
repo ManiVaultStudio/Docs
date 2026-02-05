@@ -158,6 +158,8 @@ def main() -> int:
             continue
         if not r.tag_name:
             continue
+        if not r.name.startswith("Release"):
+            continue
         filtered.append(r)
 
     # Write files
