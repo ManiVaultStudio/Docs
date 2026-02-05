@@ -40,10 +40,6 @@ def gh_api_get(url: str, token: str) -> Tuple[List[Dict[str, Any]], Dict[str, st
 
 
 def parse_link_header(link_value: str) -> Dict[str, str]:
-    """
-    GitHub uses RFC5988-ish Link headers:
-      <url1>; rel="next", <url2>; rel="last"
-    """
     links: Dict[str, str] = {}
     for part in link_value.split(","):
         part = part.strip()
@@ -62,10 +58,10 @@ def fetch_all_releases(owner: str, repo: str, token: str) -> List[Release]:
         for r in page:
             releases.append(
                 Release(
-                    tag_name=r.get("tag_name", "").strip(),
+                    tag_name=(r.get("tag_name") or "").strip(),
                     name=(r.get("name") or "").strip(),
                     body=(r.get("body") or "").rstrip(),
-                    html_url=r.get("html_url", "").strip(),
+                    html_url=(r.get("html_url") or "").strip(),
                     published_at=r.get("published_at"),
                     draft=bool(r.get("draft")),
                     prerelease=bool(r.get("prerelease")),
@@ -73,24 +69,36 @@ def fetch_all_releases(owner: str, repo: str, token: str) -> List[Release]:
             )
 
         link = headers.get("link", "")
-        next_url = ""
+        url = ""
         if link:
             links = parse_link_header(link)
-            next_url = links.get("next", "")
-        url = next_url
+            url = links.get("next", "")
 
     return releases
 
 
 def sanitize_version(tag: str) -> str:
-    """
-    Turn tags like:
-      v1.4.2 -> 1.4.2
-      1.4.2  -> 1.4.2
-    """
-    tag = tag.strip()
+    tag = (tag or "").strip()
     tag = re.sub(r"^[vV]", "", tag)
     return tag
+
+
+def parse_semverish(ver: str) -> Tuple[int, int, int, str]:
+    """
+    Parse "1.4.2" -> (1,4,2,"")
+    Parse "1.4"   -> (1,4,0,"")
+    Parse "1.4.2-rc1" -> (1,4,2,"-rc1")  (suffix kept for tie-breaking)
+    Non-matching versions sort low.
+    """
+    ver = (ver or "").strip()
+    m = re.match(r"^(\d+)\.(\d+)(?:\.(\d+))?([\-+].+)?$", ver)
+    if not m:
+        return (-1, -1, -1, ver)
+    major = int(m.group(1))
+    minor = int(m.group(2))
+    patch = int(m.group(3) or 0)
+    suffix = m.group(4) or ""
+    return (major, minor, patch, suffix)
 
 
 def ensure_dir(path: str) -> None:
@@ -100,7 +108,6 @@ def ensure_dir(path: str) -> None:
 def format_date(iso: Optional[str]) -> str:
     if not iso:
         return ""
-    # GitHub uses ISO8601, e.g. 2025-01-18T12:34:56Z
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         return dt.date().isoformat()
@@ -113,19 +120,16 @@ def render_release_md(rel: Release) -> str:
     title = rel.name if rel.name else f"Release {version}"
     date_str = format_date(rel.published_at)
 
-    header_lines = [f"# {title}"]
     meta_lines: List[str] = []
     if date_str:
         meta_lines.append(f"**Published:** {date_str}")
     meta_lines.append(f"**Upstream release:** {rel.html_url}")
 
-    body = rel.body.strip()
-    if not body:
-        body = "_No release notes provided._"
+    body = rel.body.strip() or "_No release notes provided._"
 
     return "\n\n".join(
         [
-            "\n".join(header_lines),
+            f"# {title}",
             "\n".join(meta_lines),
             body,
             "",
@@ -133,12 +137,55 @@ def render_release_md(rel: Release) -> str:
     )
 
 
+def render_index_md(
+    releases: List[Release],
+    output_dir: str,
+    prefix: str,
+    title: str = "Release Notes",
+) -> str:
+    """
+    Generates an index.md that links to all generated release note files.
+    Links are written relative to the index.md location.
+    """
+    lines: List[str] = [f"# {title}", ""]
+    if not releases:
+        lines.append("_No releases found._")
+        lines.append("")
+        return "\n".join(lines)
+
+    lines.append("")
+
+    # Each link points into the generated directory
+    for r in releases:
+        ver = sanitize_version(r.tag_name) or r.tag_name
+        fn = f"{prefix}{ver}.md"
+        # Index is expected to live at docs/release_notes/index.md
+        # and generated files at docs/release_notes/generated/<fn>
+        rel_path = f"generated/{fn}"
+        label = ver
+        date_str = format_date(r.published_at)
+        if date_str:
+            lines.append(f"- [{label}]({rel_path}) — {date_str}")
+        else:
+            lines.append(f"- [{label}]({rel_path})")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
 def main() -> int:
     token = os.environ.get("GH_TOKEN", "").strip()
     owner = os.environ.get("CORE_OWNER", "ManiVaultStudio").strip()
     repo = os.environ.get("CORE_REPO", "core").strip()
+
+    # Generated release notes go here
     output_dir = os.environ.get("OUTPUT_DIR", "docs/release_notes/generated").strip()
     prefix = os.environ.get("FILE_PREFIX", "releasenot_").strip()
+
+    # Index file (Markdown) that links to all generated notes
+    index_path = os.environ.get("INDEX_PATH", "docs/release_notes/index.md").strip()
+    index_title = os.environ.get("INDEX_TITLE", "Release Notes").strip()
+
     include_prereleases = os.environ.get("INCLUDE_PRERELEASES", "false").lower() == "true"
 
     if not token:
@@ -146,10 +193,11 @@ def main() -> int:
         return 2
 
     ensure_dir(output_dir)
+    ensure_dir(os.path.dirname(index_path) or ".")
 
     releases = fetch_all_releases(owner, repo, token)
 
-    # Filter: skip drafts; optionally skip prereleases
+    # Filter: skip drafts; optionally skip prereleases; require a tag; require name starting with "Release"
     filtered: List[Release] = []
     for r in releases:
         if r.draft:
@@ -162,34 +210,58 @@ def main() -> int:
             continue
         filtered.append(r)
 
-    # Write files
-    for r in filtered:
-        version = sanitize_version(r.tag_name)
-        filename = f"{prefix}{version}.md"
+    # Sort newest-first by version (fallback to published_at for ties)
+    def sort_key(r: Release) -> Tuple[Tuple[int, int, int, str], str]:
+        ver = sanitize_version(r.tag_name)
+        return (parse_semverish(ver), r.published_at or "")
+
+    filtered_sorted = sorted(filtered, key=sort_key, reverse=True)
+
+    # Write per-release files
+    desired_files: set[str] = set()
+    for r in filtered_sorted:
+        ver = sanitize_version(r.tag_name)
+        filename = f"{prefix}{ver}.md"
+        desired_files.add(filename)
+
         path = os.path.join(output_dir, filename)
         content = render_release_md(r)
 
-        # Write only if changed (keeps commits clean)
         old = ""
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 old = f.read()
+
         if old != content:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(content)
 
-    # Optional: remove files that no longer correspond to a release tag
+    # Remove generated files no longer matching a release
     existing = {
         fn for fn in os.listdir(output_dir)
         if fn.startswith(prefix) and fn.endswith(".md")
     }
-    desired = {f"{prefix}{sanitize_version(r.tag_name)}.md" for r in filtered}
-    to_remove = sorted(existing - desired)
-
-    for fn in to_remove:
+    for fn in sorted(existing - desired_files):
         os.remove(os.path.join(output_dir, fn))
 
-    print(f"Wrote {len(desired)} release note files to {output_dir}")
+    # Write index.md (only if changed)
+    index_content = render_index_md(
+        releases=filtered_sorted,
+        output_dir=output_dir,
+        prefix=prefix,
+        title=index_title,
+    )
+    old_index = ""
+    if os.path.exists(index_path):
+        with open(index_path, "r", encoding="utf-8") as f:
+            old_index = f.read()
+
+    if old_index != index_content:
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write(index_content)
+
+    print(f"Wrote {len(desired_files)} release note files to {output_dir}")
+    print(f"Wrote index: {index_path}")
     return 0
 
 
