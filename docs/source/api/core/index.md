@@ -11,6 +11,7 @@ Use this section when you need precise information about classes, functions, dat
 
 plugin/index
 managers/index
+graphics/index
 gui/index
 util/index
 models/index
