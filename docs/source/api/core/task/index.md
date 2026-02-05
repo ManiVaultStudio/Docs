@@ -1,11 +1,17 @@
 # Task
 
+Tasks represent long-running operations whose primary purpose is to report execution progress and state to the user. They provide a unified abstraction for tracking operation lifetime, progress, and completion, independent of how the task is presented in the user interface.
+
+In the current design, tasks focus on progress reporting rather than execution itself. Future versions will extend this concept to optionally manage and run worker logic directly, allowing tasks to encapsulate both execution and reporting.
+
+Tasks are closely integrated with the task models, which manage their lifecycle and visibility within the application.
+
 ### Related
 - Task {doc}`models <../models/tasks/index>`
 
 ## Types
 
-The task classes below are derived from the {ref}`task <task>` base class.
+The task classes below are derived from the {doc}`task <task>` base class.
 
 ```{toctree}
 :maxdepth: 1
