@@ -4,7 +4,7 @@ The graphics module provides low-level rendering infrastructure used throughout 
 
 Renderers focus on orchestrating draw calls and rendering logic, while helper classes provide thin, explicit wrappers around graphics primitives such as buffers, shaders, textures, framebuffers, and mathematical types. Together, these components form a minimal and flexible foundation for building higher-level visualizations without imposing a specific rendering strategy.
 
-## Renderer class
+## Renderer classes
 
 Below are renderer classes often used in **ManiVault**, for instance in the [scatterplot plugin](https://github.com/ManiVaultStudio/scatterplot).
 
@@ -12,9 +12,9 @@ Below are renderer classes often used in **ManiVault**, for instance in the [sca
 :maxdepth: 2
 
 renderers/renderer
-helpers/renderer_2d
-helpers/point_renderer
-helpers/density_renderer
+renderers/renderer_2d
+renderers/point_renderer
+renderers/density_renderer
 ```
 
 ## Helper classes
@@ -24,6 +24,7 @@ The helper classes below are used to expedite the renderer development.
 ```{toctree}
 :maxdepth: 2
 
+helpers/navigator_2d
 helpers/bounds
 helpers/buffer_object
 helpers/frame_buffer
