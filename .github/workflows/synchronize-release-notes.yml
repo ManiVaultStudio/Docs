@@ -42,7 +42,7 @@ jobs:
           if git status --porcelain | grep -q .; then
             git config user.name "release-notes-bot"
             git config user.email "release-notes-bot@users.noreply.github.com"
-            git add docs/release_notes/generated
+            git add docs/source/release_notes
             git commit -m "docs: sync core release notes"
             git push
           else
