@@ -164,10 +164,10 @@ def render_index_md(
         # Index is expected to live at docs/release_notes/index.md
         # and generated files at docs/release_notes/generated/<fn>
         rel_path = f"{fn}"
-        label = ver
+        
         date_str = format_date(r.published_at)
         if date_str:
-            lines.append(f"{rel_path} ({date_str})")
+            lines.append(f"{rel_path}")
 
     lines.append("```")
 
