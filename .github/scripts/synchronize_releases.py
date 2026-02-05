@@ -160,7 +160,7 @@ def render_index_md(
     # Each link points into the generated directory
     for r in releases:
         ver = sanitize_version(r.tag_name) or r.tag_name
-        fn = f"{prefix}{ver}.md"
+        fn = f"{prefix}{ver}"
         # Index is expected to live at docs/release_notes/index.md
         # and generated files at docs/release_notes/generated/<fn>
         rel_path = f"{fn}"
