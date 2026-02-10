@@ -54,6 +54,8 @@ Please find below some links to our related IEEE VIS article, OSF listing and ex
 
 ## Contents
 
+The documentation is organized into the following sections.
+
 ### User Guide
 ```{toctree}
 :maxdepth: 2
