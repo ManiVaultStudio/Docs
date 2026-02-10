@@ -38,7 +38,7 @@ Docs/
 
 <details>
 
-<summary>**Modifying the Documentation (Read the Docs)**</summary>
+<summary><strong>Modifying the Documentation (Read the Docs)</strong></summary>
 
 ### 1. Edit or add Markdown files
 
@@ -98,8 +98,6 @@ build/html/index.html
 ```
 
 This preview closely matches what the [ManiVault Read the Docs](https://manivault.readthedocs.io/en/latest/) will look like.
-
-</details>
   
 ---
 
@@ -114,6 +112,8 @@ Important notes:
 - Builds are triggered automatically on pushes and pull requests
 - The default branch is used for the published documentation
 - [Sphinx](https://www.sphinx-doc.org/en/master/) warnings may fail the build, so ensure formatting and **toctree** entries are correct
+
+</details>
 
 ---
 
@@ -135,44 +135,46 @@ Larger examples may include an explicit SPDX identifier:
 // SPDX-License-Identifier: MIT
 ```
 
----
+<details>
 
-## Contributing
+<summary><strong>Contributing</strong></summary>  
 
+#### Content
 Contributions are welcome and appreciated, including:
 - Fixing typos or inaccuracies
 - Improving clarity and explanations
 - Adding tutorials, guides, or reference material
 
-### Contribution workflow
+#### Contribution workflow
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Build the documentation locally to verify correctness
 5. Submit a pull request
 
----
+</details>
 
-## License
+<details>
 
-### Documentation text
+<summary><strong>License</strong></summary>  
+
+#### Documentation text
 All documentation text is dual-licensed under **either**:
 - **Creative Commons Attribution 4.0 International (CC BY 4.0)**, or
 - **MIT License**
 
 You may choose either license.
 
-### Code snippets
+#### Code snippets
 All code snippets and example code are licensed under the **MIT License** only.
 
-### Contributions
+#### Contributions
 By contributing to this repository, you agree that your contributions are licensed under:
 - **CC BY 4.0 OR MIT** (documentation text)
 - **MIT License** (code snippets)
 
 See the **LICENSE** file for full license texts and details.
-
----
+</details>
 
 ## Links
 
