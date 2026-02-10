@@ -51,3 +51,28 @@ Please find below some links to our related IEEE VIS article, OSF listing and ex
   </a>
 
 </div>
+
+# Contents
+
+```{toctree}
+:maxdepth: 1
+:caption: 
+
+user_guide/index
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Development
+
+development/building_plugins/index
+development/building_applications/index
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Reference
+
+api/index
+release_notes/index
+```
