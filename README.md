@@ -4,10 +4,10 @@ This repository contains the official documentation for **ManiVault** and relate
 
 Main sections:
 - **User Guide**  
-  Contains onboarding information and tutorials
+  Contains onboarding information and tutorials  
   *Primarily written for end users*
 - **Development**  
-  Documents how to extend ManiVault with new plugins and how to create bespoke applications built on ManiVault
+  Documents how to extend ManiVault with new plugins and how to create bespoke applications built on ManiVault  
   *This section is geared towards Plugin developers and application designers*
 - **Reference**  
   Contains a curated doxygen reference (for plugin and core developers)
