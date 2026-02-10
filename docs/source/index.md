@@ -56,7 +56,7 @@ Please find below some links to our related IEEE VIS article, OSF listing and ex
 
 ```{toctree}
 :maxdepth: 1
-:caption: 
+:caption: Usage
 
 user_guide/index
 ```
