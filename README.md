@@ -1,7 +1,6 @@
 # ManiVault Documentation
 
-This repository contains the official documentation for **ManiVault** and related tooling.  
-The documentation is published via [Read the Docs](https://about.readthedocs.com/) and built directly from the content in this repository.
+This repository contains the official documentation for **ManiVault** and related tooling. The documentation is published via [Read the Docs](https://about.readthedocs.com/) and built directly from the content in this repository.
 
 Main sections:
 - **User Guide**
