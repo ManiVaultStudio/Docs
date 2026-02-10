@@ -4,6 +4,22 @@ Welcome to ManiVault's documentation!
 Welcome to ManiVault’s documentation!
 ManiVault is a flexible open-source framework designed to help you interactively explore and analyze high-dimensional datasets.
 
+This site will help you:
+- Learn the basics with tutorials and onboarding tools
+- Dive deeper with advanced guides and APIs
+- Build your own extensions using the development documentation
+
+Start with the tutorials to familiarize yourself with ManiVault’s core concepts, then explore reference material as you go.
+
+</div>
+
+```{note}
+This documentation is under active development. If you have any questions or suggestions, please feel free to reach out to us. If you want to contribute to the documentation, please check out our [contribution](https://github.com/ManiVaultStudio/Docs) guidelines.
+```
+
+## External resources
+
+Please find below some links to our related IEEE VIS article, OSF listing and explanatory videos:
 <div style="margin-top: 1em; margin-bottom: 1.5em; display: flex; flex-wrap: wrap; gap: 0.5em;">
 
   <a href="https://ieeexplore.ieee.org/document/10290921"
@@ -36,18 +52,7 @@ ManiVault is a flexible open-source framework designed to help you interactively
 
 </div>
 
-This site will help you:
-- Learn the basics with tutorials and onboarding tools
-- Dive deeper with advanced guides and APIs
-- Build your own extensions using the development documentation
-
-Start with the tutorials to familiarize yourself with ManiVault’s core concepts, then explore reference material as you go.
-
-</div>
-
-```{note}
-This documentation is under active development. If you have any questions or suggestions, please feel free to reach out to us. If you want to contribute to the documentation, please check out our [contribution](https://github.com/ManiVaultStudio/Docs) guidelines.
-```
+## Contents
 
 ```{toctree}
 :maxdepth: 2
