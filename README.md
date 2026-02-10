@@ -36,7 +36,9 @@ Docs/
 
 ---
 
-## Modifying the Documentation (Read the Docs)
+<details>
+
+<summary>**Modifying the Documentation (Read the Docs)**</summary>
 
 ### 1. Edit or add Markdown files
 
@@ -97,6 +99,8 @@ build/html/index.html
 
 This preview closely matches what the [ManiVault Read the Docs](https://manivault.readthedocs.io/en/latest/) will look like.
 
+</details>
+  
 ---
 
 ### 4. Read the Docs build configuration
