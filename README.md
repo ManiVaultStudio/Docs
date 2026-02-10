@@ -17,8 +17,7 @@ Main sections:
 
 ## Documentation Structure
 
-The documentation is written primarily in **Markdown** and organized by topic.  
-The directory structure mirrors what is rendered on Read the Docs.
+The documentation is written primarily in **Markdown** and organized by topic. The directory structure mirrors what is rendered on Read the Docs.
 
 Typical layout:
 ```
@@ -55,8 +54,7 @@ docs/tutorials/my-new-tutorial.md
 
 ### 2. Register new pages in the table of contents
 
-Read the Docs uses **Sphinx** to build the site.  
-For a page to appear in navigation, it must be referenced in a **toctree**.
+Read the Docs uses [Sphinx](https://www.sphinx-doc.org/en/master/) to build the site. For a page to appear in navigation, it must be referenced in a **toctree**.
 
 Edit the relevant index file, for example:
     
