@@ -1,7 +1,8 @@
 # Release Notes
 
+
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 release_note_1.4.2
 release_note_1.4.1
