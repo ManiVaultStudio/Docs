@@ -1,6 +1,6 @@
 # Tutorials
 
-The tutorials below are good starting points for working with **ManiVault (Studio)**:
+The tutorials below are good starting points for working with **ManiVault (Studio)**.
 
 ## Installation
 - [Installing ManiVault Studio](https://www.manivault.studio/tutorials/installing-manivault/)
