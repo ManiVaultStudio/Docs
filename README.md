@@ -1,11 +1,11 @@
 # ManiVault Documentation
 
 This repository contains the official documentation for **ManiVault** and related tooling.  
-The documentation is published via **Read the Docs** and built directly from the content in this repository.
+The documentation is published via [Read the Docs](https://about.readthedocs.com/) and built directly from the content in this repository.
 
 ---
 
-## 📘 Documentation Structure
+## Documentation Structure
 
 The documentation is written primarily in **Markdown** and organized by topic.  
 The directory structure mirrors what is rendered on Read the Docs.
@@ -27,17 +27,17 @@ Docs/
 
 ---
 
-## ✏️ Modifying the Documentation (Read the Docs)
+## Modifying the Documentation (Read the Docs)
 
 ### 1. Edit or add Markdown files
 
 All published documentation content lives under the `docs/` directory.
 
-- Modify existing pages by editing their `.md` files
-- Add new pages by creating new `.md` files in the appropriate subdirectory
+- Modify existing pages by editing their **.md** files
+- Add new pages by creating new **.md** files in the appropriate subdirectory
 
 Example:
-```bash
+```
 docs/tutorials/my-new-tutorial.md
 ```
 
@@ -46,20 +46,19 @@ docs/tutorials/my-new-tutorial.md
 ### 2. Register new pages in the table of contents
 
 Read the Docs uses **Sphinx** to build the site.  
-For a page to appear in navigation, it must be referenced in a `toctree`.
+For a page to appear in navigation, it must be referenced in a **toctree**.
 
 Edit the relevant index file, for example:
-```md
-```{toctree}
-:maxdepth: 2
+    
+    ```{toctree}
+    :maxdepth: 2
 
-installation
-tutorials/my-new-tutorial
-reference/api
-```
-```
+    installation
+    tutorials/my-new-tutorial
+    reference/api
+    ```
 
-If a page is not listed in a `toctree`, it will **not appear** in the rendered documentation.
+If a page is not listed in a **toctree**, it will **not appear** in the rendered documentation.
 
 ---
 
@@ -88,7 +87,7 @@ Open the generated documentation:
 build/html/index.html
 ```
 
-This preview closely matches what Read the Docs will publish.
+This preview closely matches what the [ManiVault Read the Docs](https://manivault.readthedocs.io/en/latest/) will look like.
 
 ---
 
@@ -102,11 +101,11 @@ The Read the Docs build is configured in:
 Important notes:
 - Builds are triggered automatically on pushes and pull requests
 - The default branch is used for the published documentation
-- Sphinx warnings may fail the build, so ensure formatting and `toctree` entries are correct
+- [Sphinx](https://www.sphinx-doc.org/en/master/) warnings may fail the build, so ensure formatting and **toctree** entries are correct
 
 ---
 
-## 🧩 Code Blocks and Examples
+## Code Blocks and Examples
 
 This documentation contains code snippets and example code intended for reuse.
 
@@ -120,7 +119,7 @@ Larger examples may include an explicit SPDX identifier:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome and appreciated, including:
 - Fixing typos or inaccuracies
@@ -136,7 +135,7 @@ Contributions are welcome and appreciated, including:
 
 ---
 
-## 📄 License
+## License
 
 ### Documentation text
 All documentation text is dual-licensed under **either**:
@@ -153,11 +152,11 @@ By contributing to this repository, you agree that your contributions are licens
 - **CC BY 4.0 OR MIT** (documentation text)
 - **MIT License** (code snippets)
 
-See the `LICENSE` file for full license texts and details.
+See the **LICENSE** file for full license texts and details.
 
 ---
 
-## 🔗 Links
+## Links
 
-- Documentation (Read the Docs): add link here
-- ManiVault main repository: add link here
+- Documentation (Read the Docs): https://manivault.readthedocs.io/en/latest/
+- ManiVault main repository: https://github.com/ManiVaultStudio/core
