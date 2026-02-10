@@ -3,13 +3,13 @@
 This repository contains the official documentation for **ManiVault** and related tooling. The documentation is published via [Read the Docs](https://about.readthedocs.com/) and built directly from the content in this repository.
 
 Main sections:
-- **User Guide**
+- **User Guide**  
   Contains onboarding information and tutorials
   *Primarily written for end users*
-- **Development**
+- **Development**  
   Documents how to extend ManiVault with new plugins and how to create bespoke applications built on ManiVault
   *This section is geared towards Plugin developers and application designers*
-- **Reference**
+- **Reference**  
   Contains a curated doxygen reference (for plugin and core developers)
   List of all release notes (intended for all users)
 
