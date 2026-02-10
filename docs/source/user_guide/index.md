@@ -1,8 +1,11 @@
 # User guide
 
-```{toctree}
-   :maxdepth: 1
-   :caption: User Guide
+To get started, begin with the tutorials and use the built-in onboarding tools to familiarize yourself with **ManiVault**.
 
-   learning_center
+```{toctree}
+:maxdepth: 1
+:caption: User Guide
+
+tutorials
+learning_center
 ```
