@@ -3,6 +3,17 @@
 This repository contains the official documentation for **ManiVault** and related tooling.  
 The documentation is published via [Read the Docs](https://about.readthedocs.com/) and built directly from the content in this repository.
 
+Main sections:
+- **User Guide**
+  Contains onboarding information and tutorials
+  *Primarily written for end users*
+- **Development**
+  Documents how to extend ManiVault with new plugins and how to create bespoke applications built on ManiVault
+  *This section is geared towards Plugin developers and application designers*
+- **Reference**
+  Contains a curated doxygen reference (for plugin and core developers)
+  List of all release notes (intended for all users)
+
 ---
 
 ## Documentation Structure
@@ -104,6 +115,12 @@ Important notes:
 - [Sphinx](https://www.sphinx-doc.org/en/master/) warnings may fail the build, so ensure formatting and **toctree** entries are correct
 
 ---
+
+## Doxygen
+Our curated API documentation is based on Doxygen. During the Read the Docs build process, a pre-built doxygen is downloaded from [releases](https://github.com/ManiVaultStudio/Docs/releases/tag/doxygen-xml-latest) to expedite the process. This pre-built doxygen is generated daily with [this](https://github.com/ManiVaultStudio/Docs/blob/main/.github/workflows/update-doxygen-xml.yml) GitHub action.
+
+## Release notes
+A curated list of release notes is generated daily using [this](https://github.com/ManiVaultStudio/Docs/blob/main/.github/workflows/synchronize-release-notes.yml) GitHub action.
 
 ## Code Blocks and Examples
 
