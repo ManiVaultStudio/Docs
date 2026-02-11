@@ -1,4 +1,4 @@
-# Manually
+# Setting up the build IDE Manually
 
 This pages describes how to build **ManiVault** from source.
 

@@ -1,4 +1,4 @@
-## Using the DEV bundle tool
+## DEV bundle build tool
 
 ![DEV Bundle](../../assets/dev_bundle.gif)  
 *The DEV Bundle in action*
