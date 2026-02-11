@@ -12,5 +12,7 @@ The following sections provide guidance for both workflows, outlining their resp
 ```{toctree}
 :maxdepth: 1
 
-   building_plugins/index
-   building_applications/index
+building_manivault/index
+building_plugins/index
+building_applications/index
+```
