@@ -14,7 +14,7 @@ Start with the tutorials to familiarize yourself with ManiVault’s core concept
 </div>
 
 ```{note}
-This documentation is under active development. If you have any questions or suggestions, please feel free to reach out to us. If you want to contribute to the documentation, please check out our [contribution](https://github.com/ManiVaultStudio/Docs) guidelines.
+This documentation is under active development. If you have any questions or suggestions, please feel free to submit an issue to our [documentation Github repository](https://github.com/ManiVaultStudio/Docs). If you want to contribute to the documentation, please check out our [contribution](https://github.com/ManiVaultStudio/Docs) guidelines.
 ```
 
 ## External resources

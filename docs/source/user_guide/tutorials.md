@@ -15,3 +15,4 @@ The tutorials below are good starting points for working with **ManiVault (Studi
 ## Workflows
 - [Hyperspectral image analysis using tSNE dimensionality reduction](https://www.manivault.studio/tutorials/hyperspectral-image-analysis-tsne/)
 - [Hyperspectral image analysis using tSNE dimensionality reduction](https://www.manivault.studio/tutorials/hyperspectral-image-analysis-hsne/)
+- [Viewing image datasets with the image viewer plugin](https://www.manivault.studio/tutorials/image-viewer/)
