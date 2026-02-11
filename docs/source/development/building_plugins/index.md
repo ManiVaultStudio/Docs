@@ -1,5 +1,4 @@
-Building plugins
-==================
+# Building plugins
 
 ```{toctree}
 :maxdepth: 1

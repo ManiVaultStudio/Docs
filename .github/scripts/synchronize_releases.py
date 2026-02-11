@@ -141,7 +141,7 @@ def render_index_md(
     releases: List[Release],
     output_dir: str,
     prefix: str,
-    title: str = "Release Notes",
+    title: str = "Release notes",
 ) -> str:
     """
     Generates an index.md that links to all generated release note files.
@@ -185,7 +185,7 @@ def main() -> int:
 
     # Index file (Markdown) that links to all generated notes
     index_path = os.environ.get("INDEX_PATH", "docs/source/release_notes/index.md").strip()
-    index_title = os.environ.get("INDEX_TITLE", "Release Notes").strip()
+    index_title = os.environ.get("INDEX_TITLE", "Release notes").strip()
 
     include_prereleases = os.environ.get("INCLUDE_PRERELEASES", "false").lower() == "true"
 

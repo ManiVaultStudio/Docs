@@ -1,5 +1,5 @@
-Building Applications
-==================
+# Building applications
+
 This section documents how to configure and package **ManiVault-based applications** using the facilities provided by the core and its plugins.
 
 The pages in this section focus on:
