@@ -8,6 +8,7 @@ We strongly recommend using the {doc}`DEV Bundle <dev_bundle>` tool to set up yo
 If you want to simply download and install the application, you can find an installer [here](https://www.manivault.studio/downloads/).
 ```
 
+
 ```{toctree}
 :maxdepth: 1
 
