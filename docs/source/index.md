@@ -65,6 +65,7 @@ user_guide/index
 :maxdepth: 1
 :caption: Development
 
+development/building_manivault/index
 development/building_plugins/index
 development/building_applications/index
 ```
