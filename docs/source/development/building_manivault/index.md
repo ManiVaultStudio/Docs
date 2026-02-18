@@ -7,3 +7,11 @@ We strongly recommend using the {doc}`DEV Bundle <dev_bundle>` tool to set up yo
 ```{note}
 If you want to simply download and install the application, you can find an installer [here](https://www.manivault.studio/downloads/).
 ```
+
+```{toctree}
+:maxdepth: 1
+
+windows/index
+linux/index
+macos/index
+```
