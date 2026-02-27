@@ -209,6 +209,7 @@ ManiVault's stack-allocation pattern:
 
 We do not refactor the entire codebase to heap allocation.
 
-Instead, we: - Maintain strict containment rules. - Convert only
-high-risk objects to heap allocation. - Ensure teardown is safe against
-queued delivery.
+Instead, we:
+- Maintain strict containment rules.
+- Convert only high-risk objects to heap allocation.
+- Ensure teardown is safe against queued delivery.
