@@ -13,4 +13,5 @@ global_settings
 status_bar
 notifications
 learning_center
+qt_considerations
 actions/index
