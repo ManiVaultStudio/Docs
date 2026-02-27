@@ -15,7 +15,7 @@ unsafe - Why ManiVault uses it - The constraints developers must follow
 
 ------------------------------------------------------------------------
 
-# 1. Qt's Default Ownership Model
+## Qt's Default Ownership Model
 
 In standard Qt practice:
 
@@ -34,9 +34,9 @@ toolbars, etc.)
 
 ------------------------------------------------------------------------
 
-# 2. ManiVault's Allocation Strategy
+## ManiVault's Allocation Strategy
 
-## Design Principle
+### Design Principle
 
 In ManiVault:
 
@@ -55,7 +55,7 @@ private:
 };
 ```
 
-## Why We Do This
+### Why We Do This
 
 The reasons are architectural and deliberate:
 
@@ -79,29 +79,24 @@ thread boundaries - Are fully contained within their owning component
 
 ------------------------------------------------------------------------
 
-# 3. When Stack-Allocated QObjects Are Safe
+## When Stack-Allocated QObjects Are Safe
 
 A `QObject`-derived member object is safe **only if all of the following
 are true**:
 
 ✔ Parent is either: - `this` (the enclosing owner), OR - `nullptr`
 permanently
-
 ✔ It is never reparented
-
 ✔ It is never passed to APIs that assume ownership
-
 Examples of risky APIs: - `QWidget::addAction()` -
 `QMenu::addAction()` - `QToolBar::addAction()` - Any API that may call
 `setParent()`
-
 ✔ It is never deleted via `deleteLater()`
-
 ✔ It does not receive queued signals after derived destruction begins
 
 ------------------------------------------------------------------------
 
-# 4. Common Failure Mode (Linux-only Crashes)
+## Common Failure Mode (Linux-only Crashes)
 
 Typical assertion:
 
@@ -126,7 +121,7 @@ Linux timing makes these more visible than Windows.
 
 ------------------------------------------------------------------------
 
-# 5. Required Teardown Discipline
+## Required Teardown Discipline
 
 When using stack/member QObjects:
 
@@ -146,7 +141,7 @@ If necessary, disconnect in the derived destructor.
 
 ------------------------------------------------------------------------
 
-# 6. When Heap Allocation Is Required
+## When Heap Allocation Is Required
 
 Use heap allocation (`new` + parent) if any of the following apply:
 
@@ -169,7 +164,7 @@ behavior - Destructor ordering hazards
 
 ------------------------------------------------------------------------
 
-# 7. Project Policy
+## Project Policy
 
 ### We do NOT mandate heap allocation for all QObjects.
 
@@ -191,7 +186,7 @@ Prefer heap allocation for:
 
 ------------------------------------------------------------------------
 
-# 8. Decision Rule for Developers
+## Decision Rule for Developers
 
 Before adding a stack-allocated QObject member, ask:
 
@@ -203,7 +198,7 @@ If the answer is **definitively no**, stack allocation is acceptable.
 
 ------------------------------------------------------------------------
 
-# 9. Summary
+## Summary
 
 ManiVault's stack-allocation pattern:
 
