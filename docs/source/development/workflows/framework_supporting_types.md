@@ -1,6 +1,6 @@
-# Workflow utilities
+# Framework supporting types
 
-The workflow directory contains supporting types that keep planning and job code focused on domain work.
+The workflow directory contains supporting types that keep planning and job code focused on domain work. These are framework-level facilities; for the preferred high-level scheduling API, see {doc}`Parallel execution <../parallel_execution/index>`.
 
 ## Configuration value types
 

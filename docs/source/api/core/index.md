@@ -16,4 +16,5 @@ gui/index
 util/index
 models/index
 task/index
+parallel/index
 workflow/index

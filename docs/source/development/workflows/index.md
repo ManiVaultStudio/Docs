@@ -1,16 +1,16 @@
-# Workflow execution framework
+# Advanced workflow framework
 
-The ManiVault workflow execution framework organizes multi-step operations into explicit plans containing stages and jobs. It provides a common execution model for sequential and parallel work, GUI-thread dispatch, nested workflows, progress aggregation, cancellation, diagnostics, metrics, and final results.
+The ManiVault workflow framework organizes multi-step operations into explicit plans containing stages and jobs. It provides the underlying execution model for sequential and parallel work, GUI-thread dispatch, nested workflows, progress aggregation, cancellation, diagnostics, metrics, and final results.
 
-This guide explains the framework as a system: how its parts fit together, which guarantees callers can rely on, and how to choose among the available planning and reporting facilities. For individual types and member signatures, use the {doc}`workflow API reference <../../api/core/workflow/index>`.
+Most developers should begin with the {doc}`high-level parallel execution utilities <../parallel_execution/index>`. This advanced guide is for developers who need to construct custom workflow plans, integrate nested workflows, control execution contexts, or understand the scheduler's detailed behavior. For individual types and member signatures, use the {doc}`workflow API reference <../../api/core/workflow/index>`.
 
 ```{note}
 In this section, *workflow* means the C++ execution framework in `mv::workflow`. It does not mean an informal end-user sequence of actions.
 ```
 
-## Recommended path
+## Advanced path
 
-New users should begin with the overview and concepts, then work through planning, execution, and results. The remaining pages can be read as focused guides when a workflow needs concurrency, nesting, cancellation, metrics, or specialized utilities.
+Begin with the overview and concepts, then work through planning, execution, and results. The remaining pages are focused references for concurrency, nesting, cancellation, metrics, and framework supporting types.
 
 ```{toctree}
 :maxdepth: 2
@@ -25,7 +25,7 @@ nested_workflows
 progress_and_cancellation
 results_and_error_handling
 reporting_and_profiling
-workflow_utilities
+framework_supporting_types
 examples_and_recipes
 testing
 troubleshooting
