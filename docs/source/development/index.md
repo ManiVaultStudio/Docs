@@ -7,12 +7,13 @@ Plugins are the preferred mechanism for adding new functionality to an existing 
 
 Building applications, on the other hand, is intended for scenarios where ManiVault is used as a foundation rather than a host. This approach enables the creation of fully customized executables that embed ManiVault components, apply application-specific branding and configuration, and define a controlled feature set tailored to a particular use case.
 
-The following sections provide guidance for both workflows, outlining their respective build processes, project structures, and recommended practices, so you can choose the approach that best fits your development goals.
+The following sections provide guidance for both approaches, outlining their respective build processes, project structures, and recommended practices. This section also documents core development mechanisms, including the workflow execution framework used to organize long-running and concurrent operations.
 
 ```{toctree}
 :maxdepth: 1
 
-development/building_manivault/index
-development/building_plugins/index
-development/building_applications/index
+building_manivault/index
+building_plugins/index
+building_applications/index
+workflows/index
 ```

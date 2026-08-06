@@ -16,3 +16,4 @@ gui/index
 util/index
 models/index
 task/index
+workflow/index

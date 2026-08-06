@@ -68,6 +68,7 @@ user_guide/index
 development/building_manivault/index
 development/building_plugins/index
 development/building_applications/index
+development/workflows/index
 ```
 
 ```{toctree}
