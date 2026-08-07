@@ -10,6 +10,7 @@ Use this section when you need precise information about classes, functions, dat
 :maxdepth: 3
 
 plugin/index
+data/index
 managers/index
 graphics/index
 gui/index
@@ -18,3 +19,4 @@ models/index
 task/index
 parallel/index
 workflow/index
+```

@@ -5,6 +5,7 @@
 
 types
 structure
+data/index
 plugin_triggers
 drag_and_drop
 icons
@@ -15,3 +16,4 @@ notifications
 learning_center
 qt_considerations
 actions/index
+```

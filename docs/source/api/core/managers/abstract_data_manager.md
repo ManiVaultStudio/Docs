@@ -8,7 +8,9 @@
 mv::data()->...
 ```
 
-### Related
+## Related
+- {doc}`Working with data and datasets <../../../development/building_plugins/data/index>`
+- Core {doc}`data API <../data/index>`
 - Data {doc}`models <../models/datasets/index>`
 
 **Qualified name:** `mv::AbstractDataManager`
@@ -16,3 +18,4 @@ mv::data()->...
 ```{doxygenclass} mv::AbstractDataManager
 :members:
 :protected-members:
+```

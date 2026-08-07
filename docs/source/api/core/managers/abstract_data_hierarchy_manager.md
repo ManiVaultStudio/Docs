@@ -8,7 +8,9 @@
 mv::dataHierarchy()->...
 ```
 
-### Related
+## Related
+- {doc}`Working with data and datasets <../../../development/building_plugins/data/index>`
+- Core {doc}`data API <../data/index>`
 - Data hierarchy {doc}`models <../models/data_hierarchy/index>`
 - Data hierarchy {cpp:class}`item <mv::DataHierarchyItem>`
 
@@ -17,3 +19,4 @@ mv::dataHierarchy()->...
 ```{doxygenclass} mv::AbstractDataHierarchyManager
 :members:
 :protected-members:
+```
