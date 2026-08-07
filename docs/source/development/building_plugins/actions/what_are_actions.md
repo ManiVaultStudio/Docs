@@ -1,14 +1,21 @@
-# What Are Action GUI Building Blocks?
+# What actions are
 
-Action GUI building blocks (simply called “actions”) are the fundamental interactive elements for **ManiVault** plugins. Each action represents a specific type of user interface control combined with logic to handle a parameter or command. Under the hood, actions wrap standard Qt widgets with additional functionality. ManiVault provides a library of built-in actions for common UI needs [1](https://ieeexplore.ieee.org/document/10290921), including:
+An action combines parameter or command state with the ability to create a user-interface representation. Plugins work with the action API; ManiVault supplies the standard Qt widgets and keeps multiple representations synchronized.
 
-- **StringAction** – a text input field (single-line or multi-line) for string parameters.-
-- **DecimalAction** and **IntegralAction** – numeric inputs for floats or integers (with spinboxes, sliders, or both for adjusting values).
-- **OptionsAction** – a drop-down or list selector for choosing among multiple options.
-- **ToggleAction** – a boolean toggle (e.g. a checkbox or switch) for on/off settings.
-- **TriggerAction** – a push-button to trigger an action or event.
-- **ColorAction** / **ColormapAction** – color picker controls (single colors or entire color maps).
-- **FilePickerAction** (and **DirectoryPickerAction**) – file dialog launchers for selecting files or folders.
-- **SelectionAction** – a specialized widget for selecting data points (with modes like brush, lasso, etc., often used in visual analytics)
-- **DimensionPickerAction** – a UI for picking one or multiple data dimensions (e.g. selecting which dimensions of a dataset to use).
-- **GroupAction** – a container that groups other actions under a collapsible panel or section (useful for organizing related controls).
+Common action families include:
+
+- `StringAction` and `StringsAction` for text;
+- `DecimalAction` and `IntegralAction` for numerical values;
+- `OptionAction` and `OptionsAction` for choices;
+- `ToggleAction` for boolean state;
+- `TriggerAction` for commands;
+- color and color-map actions;
+- file and directory picker actions;
+- dataset, plugin, dimension, and dimensions picker actions;
+- group and toolbar actions for composition.
+
+An action has a display title, globally unique ID, serialization name, QObject owner, enabled and visible state, widget configuration, and private or public scope. Concrete action types add their own value, range, options, and typed signals.
+
+Use the narrowest concrete type that represents the setting. This provides suitable validation, serialization, signals, parameter compatibility, and standard widgets without custom plumbing.
+
+The {doc}`actions API reference <../../../api/core/gui/actions/index>` lists the supported concrete types.

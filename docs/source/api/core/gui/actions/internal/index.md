@@ -47,5 +47,4 @@ widget_action_tool_button_menu
 widget_action_tool_button
 widget_action_view_widget
 widget_action_widget
-widget_action
 zoom_margin_action

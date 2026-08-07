@@ -105,7 +105,7 @@ auto globalSettings = new gui::PluginGlobalSettingsGroupAction(
 );
 
 // Add actions to the group
-globalSettings->addAction(new gui::BoolAction(this, "Enable feature"));
+globalSettings->addAction(new gui::ToggleAction(this, "Enable feature"));
 globalSettings->addAction(new gui::DecimalAction(this, "Global threshold"));
 
 // Register the group action
@@ -127,9 +127,9 @@ Not all plugin settings need to be exposed in the global settings UI. For intern
 The preferred API is:
 
 ```cpp
-hdps::Plugin::setSetting(const QString& path, const QVariant& value);
-hdps::Plugin::getSetting(const QString& path,
-                          const QVariant& defaultValue = QVariant());
+mv::plugin::Plugin::setSetting(const QString& path, const QVariant& value);
+mv::plugin::Plugin::getSetting(const QString& path,
+                               const QVariant& defaultValue = QVariant());
 ```
 
 The `path` parameter defines the logical location of the setting. Setting groups are created using forward slashes (`/`).
