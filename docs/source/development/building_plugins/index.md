@@ -6,7 +6,7 @@
 types
 structure
 data/index
-plugin_triggers
+communication/index
 drag_and_drop
 icons
 limit_creation
