@@ -5,11 +5,12 @@
 #include "CoreInterface.h"
 
 // Use this global function to access the project manager
-mv::project()->...
+mv::projects().saveProject(filePath);
 ```
 
-### Related
+## Related
 - Project {doc}`models <../models/projects/index>`
+- {doc}`Project serialization and restoration <../../../development/building_plugins/persistence/index>`
 
 **Qualified name:** `mv::AbstractProjectManager`
 

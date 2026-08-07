@@ -7,6 +7,7 @@ types
 structure
 data/index
 communication/index
+persistence/index
 drag_and_drop
 icons
 limit_creation
