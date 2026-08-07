@@ -19,6 +19,7 @@ mental_model
 dataset_handles
 accessing_data
 creating_datasets
+hierarchy/index
 hierarchy_derived_and_subsets
 selections_and_linked_data
 events/index

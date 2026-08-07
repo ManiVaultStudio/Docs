@@ -1,16 +1,15 @@
-# Data Hierarchy
+# Data hierarchy models
 
-The data hierarchy represents the structured organization of data elements within **ManiVault**, typically exposed as tree or list views in the UI. The classes below are used to store, present, and filter data hierarchy elements.
+These models present and filter the project data hierarchy for specialized Qt item views. Most plugin code should use `Dataset<T>`, `DataHierarchyItem`, and `mv::dataHierarchy()` directly.
 
-```{note}
-This API is **stable** and intended for use by **core developers**. Plugin developers typically do not need to interact with it directly, as it is fully wrapped by the {cpp:class}`mv::AbstractDataHierarchyManager`.
-```
+For guidance on when to use a model and how to avoid duplicating hierarchy state, see {doc}`Building a custom hierarchy view <../../../../development/building_plugins/data/hierarchy/custom_views>`.
 
 ```{toctree}
 :maxdepth: 1
 
 abstract_data_hierarchy_model
 data_hierarchy_tree_model
-data_hierarchy_list_model
 data_hierarchy_filter_model
 ```
+
+`ActionsListModel` is an actions model and is documented separately from the hierarchy model family.

@@ -1,8 +1,8 @@
-# ActionsHierarchyModel
+# Data hierarchy tree model
 
-**Qualified name:** `mv::ActionsHierarchyModel`
+`DataHierarchyTreeModel` represents `DataHierarchyItem` parent-child relationships as a Qt tree model.
 
-```{doxygenclass} mv::ActionsHierarchyModel
+```{doxygenclass} mv::DataHierarchyTreeModel
 :members:
 :protected-members:
 ```

@@ -2,6 +2,8 @@
 
 These concepts describe different relationships and should be chosen deliberately.
 
+For hierarchy selection, visibility, attached actions, and custom views, see {doc}`Interacting with the data hierarchy <hierarchy/index>`.
+
 ## Data hierarchy
 
 Every registered dataset has a `DataHierarchyItem`. The item controls UI parentage, visibility, expansion, hierarchy selection, lock presentation, attached actions, and context-menu content.

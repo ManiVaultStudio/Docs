@@ -1,8 +1,8 @@
-# ActionsFilterModel
+# Data hierarchy filter model
 
-**Qualified name:** `mv::ActionsFilterModel`
+`DataHierarchyFilterModel` filters and sorts a source data-hierarchy model for presentation in a Qt item view.
 
-```{doxygenclass} mv::ActionsFilterModel
+```{doxygenclass} mv::DataHierarchyFilterModel
 :members:
 :protected-members:
 ```

@@ -1,8 +1,8 @@
-# AbstractActionsModel
+# Abstract data hierarchy model
 
-**Qualified name:** `mv::AbstractActionsModel`
+`AbstractDataHierarchyModel` provides the shared roles, columns, item access, and synchronization used by concrete hierarchy models.
 
-```{doxygenclass} mv::AbstractActionsModel
+```{doxygenclass} mv::AbstractDataHierarchyModel
 :members:
 :protected-members:
 ```
