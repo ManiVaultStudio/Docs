@@ -21,7 +21,7 @@ accessing_data
 creating_datasets
 hierarchy_derived_and_subsets
 selections_and_linked_data
-events_and_lifetime
+events/index
 implementing_a_data_type
 ```
 

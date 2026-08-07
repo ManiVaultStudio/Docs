@@ -2,6 +2,8 @@
 
 `EventType` identifies dataset lifecycle and change events. The concrete event classes carry the dataset handle or stable removal information appropriate to each phase.
 
+For a compact payload table and casting example, see {doc}`Event types and payloads <../../../../development/building_plugins/data/events/event_types>`.
+
 ```{doxygenenum} mv::EventType
 ```
 
