@@ -13,7 +13,7 @@ icons
 limit_creation
 global_settings
 status_bar
-notifications
+diagnostics/index
 learning_center
 qt_considerations
 actions/index

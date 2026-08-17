@@ -1,11 +1,12 @@
-# Exception
+# Exceptions
 
-This section documents the base exception types used to represent and handle error conditions within the system.
+ManiVault provides a structured exception for failures that need severity, separate user-facing and technical text, diagnostic details, source context, and stack metadata. Modal exception helpers are presentation facilities for GUI boundaries.
 
-## Classes
+For practical guidance, see {doc}`Exceptions and diagnostic context <../../../../development/building_plugins/diagnostics/exceptions>`.
 
 ```{toctree}
 :maxdepth: 1
 
-base_exception
+mani_vault_exception
+exception_helpers
 ```
