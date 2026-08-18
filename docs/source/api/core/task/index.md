@@ -1,13 +1,24 @@
 # Task
 
-Tasks represent long-running operations whose primary purpose is to report execution progress and state to the user. They provide a unified abstraction for tracking operation lifetime, progress, and completion, independent of how the task is presented in the user interface.
+Tasks report the progress and state of long-running operations to the user. They do not schedule or execute those operations. For substantial new work, prefer the workflow-backed execution facilities and use a task as their GUI progress projection; manage a task directly when execution is owned elsewhere.
 
 In the current design, tasks focus on progress reporting rather than execution itself. Future versions will extend this concept to optionally manage and run worker logic directly, allowing tasks to encapsulate both execution and reporting.
 
 Tasks are closely integrated with the task models, which manage their lifecycle and visibility within the application.
 
-### Related
+For guidance on choosing between high-level parallel execution, custom workflows, and direct task management, see {doc}`Long-running operations and task progress <../../../development/building_plugins/tasks/index>`.
+
+## Related
+
 - Task {doc}`models <../models/tasks/index>`
+
+## Base type
+
+```{toctree}
+:maxdepth: 1
+
+task
+```
 
 ## Types
 

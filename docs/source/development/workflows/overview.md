@@ -27,7 +27,9 @@ The executor owns the scheduling details. Workflow code should express dependenc
 
 ## When to use it
 
-Use a workflow when an operation has multiple observable steps, needs cancellation or progress, crosses thread boundaries, contains independent work, or must return structured diagnostics. A direct function call remains preferable for small, synchronous operations that need none of those facilities.
+Prefer workflow-backed execution for a new long-running operation. Begin with the {doc}`high-level Parallel utilities <../parallel_execution/index>` when the work fits a common operation, collection, mapping, or pipeline shape. Define a custom workflow plan when it has multiple observable steps, needs task-backed progress, crosses thread boundaries, contains independent work, or must return structured diagnostics. A direct function call remains preferable for small synchronous work that needs none of those facilities.
+
+Use a directly managed ManiVault task only when execution is already owned elsewhere and needs progress presentation. A task does not schedule work, preserve structured failure, or replace the workflow result. See {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>`.
 
 ## Public and internal pieces
 

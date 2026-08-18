@@ -6,7 +6,9 @@
 
 Automatic progress is sufficient when a job is an indivisible unit: it becomes complete when the function returns successfully. For long jobs, report intermediate progress or nest a more detailed plan. Keep reported progress monotonic and bounded.
 
-`WorkflowExecutionNotifier` can bridge overall workflow progress into a ManiVault `Task`, while `WorkflowConsoleDashboard` and `WorkflowConsoleFormatter` provide headless-friendly observation.
+An execution context can bridge overall workflow progress into an associated ManiVault `Task`. Asynchronous execution with `options.reporting.progress` lets the current executor create a GUI task; blocking root execution can receive a caller-owned task. `WorkflowExecutionNotifier` is a lower-level Qt-signal bridge, while `WorkflowConsoleDashboard` and `WorkflowConsoleFormatter` provide headless-friendly observation.
+
+The task is not the source of workflow truth. Report job progress through `WorkflowExecutionContext`, then let the root progress tree update the task. Determine the outcome from `WorkflowResult`, which can represent failure even though `Task::Status` cannot. See {doc}`Tasks and workflows <../building_plugins/tasks/tasks_and_workflows>`.
 
 ## Cooperative cancellation
 

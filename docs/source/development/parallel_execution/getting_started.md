@@ -1,5 +1,7 @@
 # Getting started
 
+The high-level `Parallel` API is the normal entry point for workflow-backed execution. It builds and executes workflow plans for common operation shapes without requiring callers to manage stages and execution contexts directly.
+
 Include the high-level API and call the operation that matches the shape of the work:
 
 ```cpp
@@ -37,4 +39,4 @@ Parallel scheduling does not make the callback or the objects it accesses thread
 
 ## Choosing the right level
 
-Stay with `Parallel` when the work is one operation, a homogeneous collection, a transformation, or a straightforward sequence of such phases. Move to the {doc}`advanced workflow framework <../workflows/index>` only when you need custom stage policies, nested workflows, explicit job weights, GUI-thread affinity, published context values, or detailed lifecycle integration.
+Stay with `Parallel` when the work is one operation, a homogeneous collection, a transformation, or a straightforward sequence of such phases. Move to the {doc}`advanced workflow framework <../workflows/index>` when you need custom stage policies, nested workflows, explicit job weights, GUI-thread affinity, published context values, task-backed interactive progress, or detailed lifecycle integration. Manage a standalone task only when execution is owned outside these workflow-backed paths; see {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>`.

@@ -29,4 +29,4 @@ Avoid repeated notifications inside loops, polling callbacks, or rapidly emitted
 
 `StatusAction` represents an info, warning, or error message inside an action-based interface. `PluginStatusBarAction` is for compact plugin-kind state in the application status bar and can appear only while instances of that plugin exist.
 
-Neither is a substitute for task progress. For long-running work, use tasks or workflows so progress, cancellation, completion, and failure share one lifecycle. See {doc}`Status bar integration <../status_bar>`.
+Neither is a substitute for operation progress. For new long-running work, prefer workflow-backed execution and project its progress into a task when GUI feedback is needed. Manage a task directly only when execution is already owned elsewhere. See {doc}`Choosing an execution model <../tasks/choosing_an_execution_model>` and {doc}`Status bar integration <../status_bar>`.

@@ -5,7 +5,8 @@ Use the channel according to what the recipient must do next.
 | Situation | Prefer |
 | --- | --- |
 | Brief outcome the user should notice | Plugin notification |
-| Ongoing progress or cancellable work | Task or workflow progress |
+| New long-running or cancellable operation | Workflow-backed execution with task progress where needed |
+| Existing externally managed operation needs GUI progress | Directly managed task |
 | Persistent lightweight plugin state | Status action or plugin status-bar action |
 | Developer-oriented execution evidence | Qt log message |
 | Operation cannot fulfill its contract | Exception or failed workflow job |
