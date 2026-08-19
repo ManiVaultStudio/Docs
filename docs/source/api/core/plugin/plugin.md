@@ -1,6 +1,6 @@
 # Plugin
 
-All **ManiVault** plugins are descendants of this plugin base class. The [example plugins](https://github.com/ManiVaultStudio/ExamplePlugins/tree/master) repository has several examples that show how to create new plugins.
+All ManiVault plugin instances descend from this base class. For the factory–instance model, initialization order, destruction, and state ownership, see {doc}`Plugin lifecycle <../../../development/building_plugins/fundamentals/lifecycle>`.
 
 **Qualified name:** `mv::plugin::Plugin`
 

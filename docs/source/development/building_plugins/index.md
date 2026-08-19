@@ -3,8 +3,7 @@
 ```{toctree}
 :maxdepth: 1
 
-types
-structure
+fundamentals/index
 data/index
 communication/index
 persistence/index
@@ -18,4 +17,11 @@ diagnostics/index
 learning_center
 qt_considerations
 actions/index
+```
+
+```{toctree}
+:hidden:
+
+types
+structure
 ```

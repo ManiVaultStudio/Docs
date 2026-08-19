@@ -1,8 +1,8 @@
 # PluginFactory
 
-The plugin factory is responsible for creating plugins of a certain type. Each plugin must be accompanied by a factory, the [example plugins](https://github.com/ManiVaultStudio/ExamplePlugins/tree/master) repository contains several examples that show how to achieve this.
+The plugin factory describes and creates instances of one plugin kind. For an implementation skeleton and guidance on factory-owned versus instance-owned state, see {doc}`Factory and plugin instance <../../../development/building_plugins/fundamentals/factory_and_instance>`.
 
-Factories also advertise supported data and provide default or dataset-sensitive creation triggers. For implementation patterns, see {doc}`Dataset-sensitive plugin triggers <../../../development/building_plugins/communication/dataset_triggers>`.
+Factories also advertise supported data and provide default or dataset-sensitive creation triggers. For the relationship between the broad capability declaration and exact selection rules, see {doc}`Creation triggers and inputs <../../../development/building_plugins/fundamentals/triggers_and_inputs>`.
 
 **Qualified name:** `mv::plugin::PluginFactory`
 
