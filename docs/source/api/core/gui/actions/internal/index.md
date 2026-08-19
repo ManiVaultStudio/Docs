@@ -23,7 +23,7 @@ navigation_action
 palette_action
 palette_color_action
 palette_color_role_action
-plugin_learning_center
+plugin_learning_center_action
 plugin_trigger_action
 plugin_trigger_picker_action
 presets_action

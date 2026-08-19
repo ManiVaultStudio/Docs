@@ -2,7 +2,7 @@
 ManiVault contains a comprehensive library of onboarding information for new users such as videos and tutorials. This document is intended to help you understand the learning center so that onboartding becomes as smooth as possible.
 
 ```{note}
-Plugin developers should consult the [(plugin) learning center API documentation](../development/building_plugins/learning_center.md) if they want to make use of it. 
+Plugin developers should consult the {doc}`Learning Center and shortcuts guide <../development/building_plugins/learning_center/index>` to integrate help content into their plugins.
 ```
 ## Global learning center
 There is a dedicated **learning center page** which lists all videos and tutorials available in ManiVault. This page can be accessed in three ways:

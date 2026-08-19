@@ -14,7 +14,7 @@ limit_creation
 global_settings
 status_bar
 diagnostics/index
-learning_center
+learning_center/index
 qt_considerations
 actions/index
 ```
@@ -24,4 +24,5 @@ actions/index
 
 types
 structure
+learning_center
 ```
