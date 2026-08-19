@@ -33,7 +33,7 @@ Construct factory-owned facilities in the factory constructor:
 ExampleViewPluginFactory::ExampleViewPluginFactory() :
     ViewPluginFactory(false)
 {
-    setIconByName("chart-scatter");
+    setIconByName("braille");
     getPluginMetadata().setDescription("Shows an example visualization");
     getPluginMetadata().setSummary(
         "Displays supported point datasets in an interactive view.");

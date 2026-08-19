@@ -2,6 +2,8 @@
 
 This section documents the classes and helper functions used to create, style, and compose icons within the user interface. It covers icon styling infrastructure as well as utility functions for generating composite icons, overlays, and badge-enhanced variants used throughout the application and its plugins.
 
+For guidance on named icons, theme behavior, custom resources, modifiers, and badges, see {doc}`Using icons in plugins <../../../../development/building_plugins/icons>`.
+
 ## Classes
 
 ```{toctree}
@@ -29,7 +31,10 @@ styled_icon_engine
 ```{doxygenfunction} mv::gui::combineIconsHorizontally
 ```
 
-```{doxygenfunction} mv::gui::createNumberBadgeOverlayPixmap
+```{doxygenfunction} mv::gui::createNumberBadgeOverlayPixmap(std::uint32_t, const QColor&, const QColor&)
+```
+
+```{doxygenfunction} mv::gui::createNumberBadgeOverlayPixmap(const util::Badge&)
 ```
 
 ```{doxygenfunction} mv::gui::createIconWithNumberBadgeOverlay
