@@ -15,7 +15,7 @@ global_settings/index
 status_bar/index
 diagnostics/index
 learning_center/index
-qt_considerations
+qt_considerations/index
 actions/index
 ```
 
@@ -28,4 +28,5 @@ learning_center
 drag_and_drop
 global_settings
 status_bar
+qt_considerations
 ```

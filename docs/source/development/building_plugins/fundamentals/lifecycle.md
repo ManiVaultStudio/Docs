@@ -36,3 +36,5 @@ If overriding `init()` in a derived class whose base has an implementation, pres
 Use the core-managed destruction path exposed by `Plugin::destroy()` rather than deleting an instance owned by the plugin manager. Treat pointers to plugins, datasets, widgets, and actions according to their documented ownership. When an object can disappear independently of the observer, prefer guarded Qt references such as `QPointer` and disconnect or invalidate cached state on destruction.
 
 For restoring instance state, ordering, and action serialization, see {doc}`Project persistence <../persistence/index>`.
+
+For QObject parentage, guarded callbacks, thread affinity, and teardown ordering within this lifecycle, see {doc}`Qt plugin considerations <../qt_considerations/index>`.

@@ -70,3 +70,5 @@ mv_handle_plugin_config(${PLUGIN_TARGET})
 ```
 
 Ensure `PluginInfo.json` is part of the target sources when required by the Qt build setup. The complete signatures for runtime metadata are in the {doc}`PluginMetadata API reference <../../../api/core/plugin/plugin_metadata>`.
+
+For `Q_OBJECT`, AUTOMOC discovery, custom meta-types, and Qt binary compatibility, see {doc}`Meta-object and build integration <../qt_considerations/meta_object_and_build>`.

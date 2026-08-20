@@ -37,6 +37,8 @@ ExampleViewPlugin::ExampleViewPlugin(const PluginFactory* factory) :
 
 Passing `this` as the QObject parent ties the actions to the plugin. The action registers with the core action manager when it is constructed in an initialized core and unregisters when destroyed.
 
+These actions are C++ members as well as QObject children. This is an intentional ManiVault pattern with strict non-reparenting and non-deferred-deletion rules; see {doc}`QObject lifetime and ownership <../qt_considerations/qobject_ownership>`.
+
 Avoid temporary actions whose widgets or callbacks outlive them. When an action must be allocated dynamically, give it an appropriate QObject owner and retain a clear path to it.
 
 ## Create widgets in `init()`

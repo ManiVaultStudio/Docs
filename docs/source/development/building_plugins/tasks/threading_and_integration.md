@@ -6,6 +6,8 @@ The task mutation methods detect calls from a thread other than the task's Qt th
 
 Keep the task itself in a stable Qt thread, normally the GUI thread, and ensure it outlives every queued update. All members of a task hierarchy should share the same thread affinity.
 
+The general QObject rules for connection contexts, queued delivery, event loops, and worker teardown are collected in {doc}`Qt plugin considerations <../qt_considerations/index>`.
+
 Task thread-safety does not make plugin data thread-safe. Protect operation state independently and publish dataset changes on the correct thread. See {doc}`Thread safety <../../parallel_execution/thread_safety>`.
 
 Avoid enabling `setAlwaysProcessEvents(true)` for ordinary plugin work. Processing GUI events inside progress updates introduces re-entrancy and is intended for exceptional code paths such as work before the main event loop starts.
