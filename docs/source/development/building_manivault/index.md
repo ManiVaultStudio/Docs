@@ -6,12 +6,14 @@ Building ManiVault produces both the desktop application and the development fil
 
 | Goal | Recommended path |
 |---|---|
-| Build the core and useful plugins together | {doc}`DevBundle <dev_bundle>` |
+| Set up a complete ManiVault development environment | {doc}`DevBundle <dev_bundle>` — recommended |
 | Build the public core repository with standard CMake | {doc}`Manual CMake build <manually>` |
 | Work on the core in an IDE | Follow the manual build, then use the relevant platform page |
 | Use ManiVault without changing its source | Install a published binary release |
 
-DevBundle coordinates compatible repositories and is the most convenient route for developers who have access to its configured binary service. The public manual route needs only the core repository, Qt, CMake, a compiler, and network access for CMake dependencies.
+DevBundle is the primary build path. It coordinates compatible core and plugin revisions, downloads the configured prebuilt dependencies—including Qt—and generates the CMake and runtime paths required by the complete workspace. This avoids independently installing and matching each binary dependency. Access to the project's binary service may require credentials.
+
+The public manual route remains available when you only need the core, want complete control over dependency installations, or cannot use the configured binary service. In that workflow, you install Qt and provide its location to CMake yourself.
 
 ## The build model
 

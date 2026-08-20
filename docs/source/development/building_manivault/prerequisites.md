@@ -2,6 +2,10 @@
 
 The exact tool versions used by ManiVault evolve. Treat the root `CMakeLists.txt`, the DevBundle `config.json`, and the continuous-integration matrix as the source of truth. At the time of writing, the core requires the following baseline.
 
+```{important}
+These are project requirements, but they are not all manual installation steps when you use {doc}`DevBundle <dev_bundle>`. DevBundle normally downloads its configured Qt build and other prebuilt binary dependencies, then supplies their CMake and runtime paths. A DevBundle user still installs the native compiler, platform SDK, Git, Python, CMake, and any required operating-system packages.
+```
+
 | Requirement | Current baseline |
 |---|---|
 | CMake | 3.22 or newer |
@@ -19,9 +23,9 @@ The default CI jobs exercise:
 
 These are tested configurations, not the only possible ones. A compiler with compatible C++20 and Qt support may work, but older combinations require additional validation.
 
-## Install Qt
+## Qt for a manual build
 
-For desktop development, Qt recommends its online installer. Install a desktop kit for your compiler and include these modules:
+Skip this section when using DevBundle's prebuilt Qt package. For a manual build—or when deliberately passing `--skip_binary` for Qt—Qt recommends its online installer. Install a desktop kit for your compiler and include these modules:
 
 - Qt Core and Widgets;
 - Qt OpenGL and OpenGL Widgets;
@@ -40,9 +44,8 @@ C:/Qt/6.10.3/msvc2022_64
 
 Alternatively, set `Qt6_DIR` to that kit's `lib/cmake/Qt6` directory.
 
-## Dependency downloads
+## Source dependencies downloaded by CMake
 
-The core uses CPM/CMake to obtain third-party libraries such as Taskflow, nlohmann/json, QuaZip, zstd, Valijson, and Advanced Docking System. The first configure can therefore take longer and requires access to their upstream repositories. Subsequent configurations normally reuse the local cache.
+The core uses CPM/CMake to obtain source dependencies such as Taskflow, nlohmann/json, QuaZip, zstd, Valijson, and Advanced Docking System. This is separate from the prebuilt binary packages managed by DevBundle. The first CMake configure can therefore still take longer and require access to upstream repositories, even when DevBundle supplied Qt. Subsequent configurations normally reuse the local cache.
 
 Allow sufficient disk space for Qt, the source tree, a build tree, downloaded dependencies, and the installed application. On memory-constrained machines, reduce the number of parallel compiler jobs; see {doc}`troubleshooting`.
-
