@@ -10,6 +10,15 @@ This section documents action types used to group and organize other actions int
 group_action
 ```
 
+## Settings groups
+
+```{toctree}
+:maxdepth: 1
+
+global_settings_group_action
+plugin_global_settings_group_action
+```
+
 ## Horizontal
 
 ```{toctree}

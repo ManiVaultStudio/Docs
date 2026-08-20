@@ -28,7 +28,7 @@ By default, setting the prefix immediately attempts to load existing state. Call
 
 Use a `PluginGlobalSettingsGroupAction` when a preference should be shared by all instances and appear in ManiVault's settings interface. The group is normally owned and registered by the plugin factory, whose lifetime matches the plugin kind rather than one plugin instance.
 
-See {doc}`Plugin-wide global settings <../global_settings>` for setup and registration.
+See {doc}`Global plugin settings <../global_settings/index>` for setup, registration, and the distinction between copied defaults and live policies.
 
 ## Avoid double persistence
 

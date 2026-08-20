@@ -4,6 +4,8 @@ The plugin factory describes and creates instances of one plugin kind. For an im
 
 Factories also advertise supported data and provide default or dataset-sensitive creation triggers. For the relationship between the broad capability declaration and exact selection rules, see {doc}`Creation triggers and inputs <../../../development/building_plugins/fundamentals/triggers_and_inputs>`.
 
+A factory may also own and register one settings group shared by every instance of its plugin kind. See {doc}`Global plugin settings <../../../development/building_plugins/global_settings/index>` for the lifetime and initialization pattern.
+
 **Qualified name:** `mv::plugin::PluginFactory`
 
 ```{doxygenclass} mv::plugin::PluginFactory
