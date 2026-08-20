@@ -13,20 +13,4 @@ Use ManiVault as an extensible host, as the foundation of a customized applicati
 
 Plugins are the normal extension mechanism for functionality that should integrate into an existing installation. Build an application when ManiVault is the foundation for a controlled product with its own identity, configuration, and feature set. The parallel-execution guide is a supporting resource for both routes, not a separate extension model.
 
-## Extend and customize
-
-```{toctree}
-:maxdepth: 1
-
-building_plugins/index
-building_applications/index
-```
-
-## Build and execute
-
-```{toctree}
-:maxdepth: 1
-
-building_manivault/index
-parallel_execution/index
-```
+The main documentation navigation links directly to each route so returning developers can reach it without passing through this overview.
