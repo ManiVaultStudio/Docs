@@ -12,6 +12,8 @@ If you want to simply download and install the application, you can find an inst
 ```{toctree}
 :maxdepth: 1
 
+dev_bundle
+manually
 windows/index
 linux/index
 macos/index

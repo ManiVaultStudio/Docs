@@ -6,6 +6,8 @@ Each plugin follows a common lifecycle defined by the plugin base class and is i
 
 The sections below describe the core building blocks of the plugin system, the available plugin types, and supporting classes used for metadata and shortcut configuration.
 
+For lifecycle, ownership, input, and implementation guidance, start with {doc}`Plugin fundamentals <../../../development/building_plugins/fundamentals/index>`. The pages below are the accompanying API reference.
+
 ## Base class and factory
 
 All **ManiVault** plugins are derived from a generic **plugin** base class and are created by a **plugin factory**.

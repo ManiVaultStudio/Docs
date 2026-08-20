@@ -1,10 +1,12 @@
 # Setting up the build IDE Manually
 
-This pages describes how to build **ManiVault** from source.
+This page describes how to build **ManiVault** from source.
 
 You can download ManiVault's source code from the repository on GitHub in any way you like, but the simplest is:
 
-```git clone git@github.com:ManiVaultStudio/core.git```
+```console
+git clone git@github.com:ManiVaultStudio/core.git
+```
 
 ## Dependencies
 
@@ -15,7 +17,7 @@ The main build dependency that you need to set up is [Qt 6.8.0+](https://www.qt.
 **ManiVault** is written in [C++20](https://en.cppreference.com/w/cpp/20.html) and requires a compatible compiler:
 
 - **Windows**  
-[Visual Studio 2022](app.vssps.visualstudio.com/_signin?realm=my.visualstudio.com&reply_to=https%3A%2F%2Fmy.visualstudio.com%2FDownloads%3Fq%3DVisual%2520Studio%25202022&redirect=1&mkt=nl-NL&protocol=cookieless&context=eyJodCI6MywiaGlkIjoiN2QxNmE5OTUtMDA0Mi1kMGZhLWRhZGQtYTQ4YzUzYWRkYjllIiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90&lltid=821f1bf6-c396-45a9-8def-49b9e346bb59#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ud2luZG93cy5uZXQiLCJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20iXX01)
+[Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 - **Mac**  
 [Xcode 12.4](https://xcodereleases.com/) with [Apple Clang 12](https://releases.llvm.org/12.0.1/tools/clang/docs/ReleaseNotes.html) or newer
 - **Linux**  

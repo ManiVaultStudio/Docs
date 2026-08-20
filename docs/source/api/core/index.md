@@ -6,6 +6,8 @@ The documentation is organized by functional areas, including managers, utilitie
 
 Use this section when you need precise information about classes, functions, data structures, and their interactions, or when implementing integrations, plugins, or advanced customizations.
 
+For task-oriented guidance and complete patterns, begin with {doc}`Building plugins <../../development/building_plugins/index>` or {doc}`Parallel execution <../../development/parallel_execution/index>`, then return here for exact signatures. API pages link back to the relevant practical guide where one exists.
+
 ```{toctree}
 :maxdepth: 3
 
