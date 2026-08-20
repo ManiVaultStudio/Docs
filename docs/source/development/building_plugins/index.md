@@ -12,7 +12,7 @@ drag_and_drop/index
 icons
 limit_creation
 global_settings/index
-status_bar
+status_bar/index
 diagnostics/index
 learning_center/index
 qt_considerations
@@ -27,4 +27,5 @@ structure
 learning_center
 drag_and_drop
 global_settings
+status_bar
 ```

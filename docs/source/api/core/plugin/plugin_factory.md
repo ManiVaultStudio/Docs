@@ -6,6 +6,8 @@ Factories also advertise supported data and provide default or dataset-sensitive
 
 A factory may also own and register one settings group shared by every instance of its plugin kind. See {doc}`Global plugin settings <../../../development/building_plugins/global_settings/index>` for the lifetime and initialization pattern.
 
+Factories can similarly register one plugin-kind status-bar action during startup. See {doc}`Status-bar integration <../../../development/building_plugins/status_bar/index>` for ownership, positioning, and multi-instance behavior.
+
 **Qualified name:** `mv::plugin::PluginFactory`
 
 ```{doxygenclass} mv::plugin::PluginFactory
