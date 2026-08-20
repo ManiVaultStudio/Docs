@@ -8,7 +8,7 @@ data/index
 communication/index
 persistence/index
 tasks/index
-drag_and_drop
+drag_and_drop/index
 icons
 limit_creation
 global_settings
@@ -25,4 +25,5 @@ actions/index
 types
 structure
 learning_center
+drag_and_drop
 ```

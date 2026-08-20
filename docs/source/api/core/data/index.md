@@ -14,6 +14,7 @@ dataset_impl
 dataset_private
 data_type
 data_hierarchy_item
+datasets_mime_data
 ```
 
 ## Data plugins
