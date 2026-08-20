@@ -21,3 +21,7 @@ Ranges are copied or moved into internal storage. This protects the scheduled jo
 ## Oversubscription and resource pressure
 
 One job is created per item. For very large collections or jobs with high memory use, external resource limits, or nested parallelism, the advanced workflow batching facilities may be more appropriate than the simple high-level collection operations.
+
+When a workflow job calls code that uses OpenMP, oneTBB, a threaded numerical library, or another worker pool, both layers may create runnable work. Limit concurrency at one or both layers so that outer workflow jobs multiplied by inner workers do not oversubscribe the machine or multiply per-job memory use. Measure the combined configuration rather than tuning each layer independently.
+
+Workflow cancellation is cooperative at workflow boundaries. It does not automatically stop an inner parallel runtime or third-party kernel; pass cancellation through when that API supports it, or let the kernel finish before the workflow job reaches its terminal state.

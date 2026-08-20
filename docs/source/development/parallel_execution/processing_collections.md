@@ -2,6 +2,8 @@
 
 `Parallel::forEach()` creates one workflow job per item and runs those jobs in a parallel stage.
 
+Use it when an item is a useful operation boundary—for example one file, dataset, image, independent block, or external request. It is not intended to replace a low-overhead parallel loop over individual scalar values. If each callback performs very little work, workflow job creation, reporting, and scheduling may dominate the useful computation; batch items or use a loop-level facility instead.
+
 ```cpp
 const auto result = mv::Parallel::forEach(
     "Export datasets",

@@ -4,6 +4,8 @@ ManiVault provides a small high-level API for scheduling work without manually c
 
 These utilities are the recommended starting point for plugin and application developers. They run on the workflow framework, so callers receive structured results and can configure worker limits, notifications, profiling, and console reporting through `WorkflowOptions`.
 
+The API is intended for **operation-level orchestration**: work whose stages or items are meaningful units such as loading files, processing datasets, producing derived data, or coordinating application services. It is not a drop-in replacement for OpenMP worksharing loops, `oneTBB::parallel_for`, SIMD, or a numerical library's internal threading. See {doc}`Intended scope and granularity <scope_and_granularity>` before choosing it for a hot loop.
+
 ```{note}
 The high-level calls described here are blocking: they return after the scheduled operation has finished. Avoid calling them from a context that must remain responsive unless the surrounding design explicitly permits blocking.
 ```
@@ -16,6 +18,7 @@ Read the getting-started page first, then choose the page matching the operation
 :maxdepth: 2
 
 getting_started
+scope_and_granularity
 running_operations
 processing_collections
 mapping_collections

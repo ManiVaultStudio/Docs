@@ -29,6 +29,8 @@ The executor owns the scheduling details. Workflow code should express dependenc
 
 Prefer workflow-backed execution for a new long-running operation. Begin with the {doc}`high-level Parallel utilities <../parallel_execution/index>` when the work fits a common operation, collection, mapping, or pipeline shape. Define a custom workflow plan when it has multiple observable steps, needs task-backed progress, crosses thread boundaries, contains independent work, or must return structured diagnostics. A direct function call remains preferable for small synchronous work that needs none of those facilities.
 
+“Long-running operation” refers to an application-level unit that benefits from managed lifecycle and observability. It does not imply that every expensive inner loop should become a workflow stage or job. Keep fine-grained numerical parallelism in a suitable kernel-level API and let the workflow coordinate the surrounding operation. See {doc}`Intended scope and granularity <../parallel_execution/scope_and_granularity>`.
+
 Use a directly managed ManiVault task only when execution is already owned elsewhere and needs progress presentation. A task does not schedule work, preserve structured failure, or replace the workflow result. See {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>`.
 
 ## Public and internal pieces

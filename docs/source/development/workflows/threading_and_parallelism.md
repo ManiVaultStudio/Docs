@@ -1,5 +1,7 @@
 # Threading and parallelism
 
+This page describes concurrency between workflow jobs. For the boundary between workflow orchestration and OpenMP-, oneTBB-, SIMD-, or library-level kernel parallelism, see {doc}`Intended scope and granularity <../parallel_execution/scope_and_granularity>`.
+
 ## Thread affinity
 
 Every job declares a `JobThreadAffinity`. Ordinary computational and I/O work should remain on a worker thread. Jobs that access Qt widgets or APIs requiring GUI-thread affinity must explicitly request GUI-thread execution. `WorkflowGuiThreadDispatcher` performs the boundary crossing used by the executor.
