@@ -8,6 +8,8 @@ A factory may also own and register one settings group shared by every instance 
 
 Factories can similarly register one plugin-kind status-bar action during startup. See {doc}`Status-bar integration <../../../development/building_plugins/status_bar/index>` for ownership, positioning, and multi-instance behavior.
 
+Factories also define whether standard interfaces may offer a plugin and how many live instances may coexist. See {doc}`Plugin creation policy and instance limits <../../../development/building_plugins/creation_policy/index>` before using the instance counters or maximum directly.
+
 **Qualified name:** `mv::plugin::PluginFactory`
 
 ```{doxygenclass} mv::plugin::PluginFactory

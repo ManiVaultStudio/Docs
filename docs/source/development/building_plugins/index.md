@@ -10,7 +10,7 @@ persistence/index
 tasks/index
 drag_and_drop/index
 icons
-limit_creation
+creation_policy/index
 global_settings/index
 status_bar/index
 diagnostics/index
@@ -29,4 +29,5 @@ drag_and_drop
 global_settings
 status_bar
 qt_considerations
+limit_creation
 ```

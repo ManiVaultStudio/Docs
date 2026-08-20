@@ -1,5 +1,7 @@
 # AbstractPluginManager
 
+Use the plugin manager to create and destroy managed plugin instances. It applies factory creation policy and performs the surrounding initialization and ownership work. See {doc}`Requesting plugin instances <../../../development/building_plugins/communication/requesting_plugins>` and {doc}`Plugin creation policy and instance limits <../../../development/building_plugins/creation_policy/index>`.
+
 ```cpp
 // The core and its managers are located in this header
 #include "CoreInterface.h"
