@@ -1,5 +1,7 @@
 # Publishing a Project
 
+Publishing is the curated-content stage of {doc}`creating_an_application`. First ensure that the application build contains every plugin used by the project.
+
 In ManiVault-based applications, a **published project** is a special, “baked” variant of a normal project. Published projects are typically used in **tailor-made applications** and viewer distributions, where you want a controlled experience for end users.
 
 An application or viewer will often contain one or more published projects. While publishing is not mandatory, it can be very useful in scenarios where you want to ship a fixed layout and a restricted set of tools.

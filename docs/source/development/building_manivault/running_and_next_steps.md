@@ -19,7 +19,10 @@ cmake -S ExamplePlugins -B examples-build \
 
 Use the same compiler, architecture, Qt kit, and build configuration that you used for ManiVault. See {doc}`../building_plugins/fundamentals/index` for the conceptual plugin-development guide.
 
+## Compose a ManiVault-based application
+
+When your goal is a focused viewer or domain application, continue with {doc}`../building_applications/creating_an_application`. That guide uses DevBundle to turn a selected core and plugin set into a reproducible application, then connects the build to branding, start-page configuration, published projects, and tutorials.
+
 ## Update a source build
 
 Pull changes in each repository, reconfigure CMake, and rebuild `MV_Application`. Reconfiguration is important because dependencies, generated files, and build options can change. For a DevBundle workspace, follow DevBundle's update workflow so that repository revisions remain coordinated.
-

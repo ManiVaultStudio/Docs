@@ -1,5 +1,7 @@
 # App customization
 
+This is the runtime-configuration stage of {doc}`creating_an_application`. Complete the application composition and integrated-build checks before using customization to define the product identity and entry points.
+
 ## Customizing a ManiVault-based Application
 
 A ManiVault “application” (or *viewer*) consists of:
@@ -26,7 +28,7 @@ All app-specific customization lives in the **customization directory**. By defa
 <app_dir>/Customization
 ```
 
-From C++ code, you can query this location via [mv::util::StandardPaths](ManiVault/src/util/StandardPaths.h).
+From C++ code, you can query this location via [`mv::util::StandardPaths`](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/src/util/StandardPaths.h).
 
 The directory layout is:
 
