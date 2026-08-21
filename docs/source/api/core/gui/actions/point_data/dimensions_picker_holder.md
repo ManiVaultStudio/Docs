@@ -1,7 +1,8 @@
 # DimensionsPickerHolder
 
-**Qualified name:** `DimensionsPickerHolder`
+**Qualified name:** `mv::DimensionsPickerHolder`
 
-```{doxygenclass} DimensionsPickerHolder
+```{doxygenclass} mv::DimensionsPickerHolder
 :members:
 :protected-members:
+```

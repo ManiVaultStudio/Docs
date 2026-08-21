@@ -1,8 +1,8 @@
 # ProjectsModelProject
 
-**Qualified name:** `mv::ProjectsModelProject`
+**Qualified name:** `mv::util::ProjectsModelProject`
 
-```{doxygenclass} mv::ProjectsModelProject
+```{doxygenclass} mv::util::ProjectsModelProject
 :members:
 :protected-members:
 ```

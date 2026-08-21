@@ -1,7 +1,8 @@
 # MarkdownDocument
 
-**Qualified name:** `mv::gui::MarkdownDocument`
+**Qualified name:** `mv::util::MarkdownDocument`
 
-```{doxygenclass} mv::gui::MarkdownDocument
+```{doxygenclass} mv::util::MarkdownDocument
 :members:
 :protected-members:
+```

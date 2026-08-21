@@ -2,7 +2,7 @@
 
 **Qualified name:** `mv::ProjectMetaAction`
 
-```{doxygenclass} ProjectMetaAction
+```{doxygenclass} mv::ProjectMetaAction
 :members:
 :protected-members:
 ```

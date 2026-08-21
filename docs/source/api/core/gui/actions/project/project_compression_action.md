@@ -2,7 +2,7 @@
 
 **Qualified name:** `mv::ProjectCompressionAction`
 
-```{doxygenclass} ProjectCompressionAction
+```{doxygenclass} mv::ProjectCompressionAction
 :members:
 :protected-members:
 ```

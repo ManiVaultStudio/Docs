@@ -1,8 +1,8 @@
 # DensityRenderer
 
-**Qualified name:** `mv::DensityRenderer`
+**Qualified name:** `mv::gui::DensityRenderer`
 
-```{doxygenclass} mv::DensityRenderer
+```{doxygenclass} mv::gui::DensityRenderer
 :members:
 :protected-members:
 ```

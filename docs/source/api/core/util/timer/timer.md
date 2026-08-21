@@ -1,7 +1,8 @@
 # Timer
 
-**Qualified name:** `mv::util::Timer`
+**Qualified name:** `Timer`
 
-```{doxygenclass} mv::util::Timer
+```{doxygenclass} Timer
 :members:
 :protected-members:
+```

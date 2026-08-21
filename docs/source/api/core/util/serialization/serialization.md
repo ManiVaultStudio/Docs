@@ -1,28 +1,34 @@
 # Serialization
 
-This section documents utility functions used for serializing and deserializing raw data and Qt variant types, including support for disk-backed storage of large data payloads.
+This section documents utility functions for encoding byte buffers as project blobs, restoring those buffers, and serializing Qt variant maps. Large encode and decode operations can be expressed as workflow plans so that they use the core workflow execution, progress, and cancellation infrastructure.
 
 ## Functions
 
-```{doxygenfunction} mv::util::saveRawDataToBinaryFile
+```{doxygenfunction} mv::util::bytesToBlobVariantMap
 ```
 
-```{doxygenfunction} mv::util::loadRawDataFromBinaryFile
+```{doxygenfunction} mv::util::bytesToBlobVariantMapWorkflow
 ```
 
-```{doxygenfunction} mv::util::rawDataToVariantMap
+```{doxygenfunction} mv::util::populateBytesFromBlobMap
 ```
 
-```{doxygenfunction} mv::util::populateDataBufferFromVariantMap
+```{doxygenfunction} mv::util::populateBytesFromBlobMapWorkflow
+```
+
+```{doxygenfunction} mv::util::bytesFromBlobVariantMap
 ```
 
 ```{doxygenfunction} mv::util::variantMapMustContain
 ```
 
-```{doxygenfunction} mv::util::storeQVariant
+```{doxygenfunction} mv::util::estimateRawBlockTotalSize
 ```
 
-```{doxygenfunction} mv::util::loadQVariant
+```{doxygenfunction} mv::util::serializeVariantMap
+```
+
+```{doxygenfunction} mv::util::deserializeVariantMap
 ```
 
 ```{doxygenfunction} mv::util::storeOnDisk(const QStringList& list)

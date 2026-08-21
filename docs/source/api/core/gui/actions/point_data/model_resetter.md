@@ -1,7 +1,8 @@
 # ModelResetter
 
-**Qualified name:** `ModelResetter`
+**Qualified name:** `mv::ModelResetter`
 
-```{doxygenclass} :ModelResetter
+```{doxygenclass} mv::ModelResetter
 :members:
 :protected-members:
+```

@@ -1,4 +1,4 @@
-# Miscelleaneous
+# Miscellaneous
 
 This section documents a collection of general-purpose utility functions that do not fit into a single functional category. These functions support a wide range of tasks, including formatting, layout manipulation, string processing, image and CSS handling, timing utilities, and data conversion.
 
@@ -64,7 +64,7 @@ This section documents a collection of general-purpose utility functions that do
 ```{doxygenfunction} mv::util::replaceAll
 ```
 
-```{doxygenfunction} mv::util::stripNewLiness
+```{doxygenfunction} mv::util::stripNewLines
 ```
 
 ```{doxygenfunction} mv::util::escapeCssDq

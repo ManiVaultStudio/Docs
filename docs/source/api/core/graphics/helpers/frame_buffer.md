@@ -1,8 +1,8 @@
-# FrameBuffer
+# Framebuffer
 
-**Qualified name:** `mv::FrameBuffer`
+**Qualified name:** `mv::Framebuffer`
 
-```{doxygenclass} mv::FrameBuffer
+```{doxygenclass} mv::Framebuffer
 :members:
 :protected-members:
 ```

@@ -1,7 +1,8 @@
 # MarkdownDialog
 
-**Qualified name:** `mv::gui::MarkdownDialog`
+**Qualified name:** `mv::util::MarkdownDialog`
 
-```{doxygenclass} mv::gui::MarkdownDialog
+```{doxygenclass} mv::util::MarkdownDialog
 :members:
 :protected-members:
+```

@@ -1,7 +1,8 @@
 # DimensionsPickerProxyModel
 
-**Qualified name:** `DimensionsPickerProxyModel`
+**Qualified name:** `mv::DimensionsPickerProxyModel`
 
-```{doxygenclass} DimensionsPickerProxyModel
+```{doxygenclass} mv::DimensionsPickerProxyModel
 :members:
 :protected-members:
+```

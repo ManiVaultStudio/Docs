@@ -1,7 +1,8 @@
-# ColorMapEditor1DHistogramItem
+# ColorMapEditor1DHistogramGraphicsItem
 
-**Qualified name:** `mv::gui::ColorMapEditor1DHistogramItem`
+**Qualified name:** `mv::gui::ColorMapEditor1DHistogramGraphicsItem`
 
-```{doxygenclass} mv::gui::ColorMapEditor1DHistogramItem
+```{doxygenclass} mv::gui::ColorMapEditor1DHistogramGraphicsItem
 :members:
 :protected-members:
+```

@@ -1,8 +1,8 @@
 # PointRenderer
 
-**Qualified name:** `mv::PointRenderer`
+**Qualified name:** `mv::gui::PointRenderer`
 
-```{doxygenclass} mv::PointRenderer
+```{doxygenclass} mv::gui::PointRenderer
 :members:
 :protected-members:
 ```
