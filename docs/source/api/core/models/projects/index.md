@@ -14,6 +14,5 @@ projects_tree_model
 projects_list_model
 projects_filter_model
 projects_model_visibility_controller
-abstract_projects_model
 ```
 

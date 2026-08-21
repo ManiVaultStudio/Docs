@@ -30,4 +30,3 @@ timer/index
 internal/index
 math/index
 miscellaneous/index
-recent_file/index

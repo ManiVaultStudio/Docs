@@ -1,8 +1,8 @@
-# ProjectsTreeModel
+# ProjectsModelVisibilityController
 
-**Qualified name:** `mv::ProjectsTreeModel`
+**Qualified name:** `mv::ProjectsModelVisibilityController`
 
-```{doxygenclass} mv::ProjectsTreeModel
+```{doxygenclass} mv::ProjectsModelVisibilityController
 :members:
 :protected-members:
 ```
