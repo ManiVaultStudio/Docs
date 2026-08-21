@@ -23,14 +23,32 @@ plugin_factory
 
 ManiVault plugins are categorized by their primary role within the platform. There are plugins for reading, writing, analyzing, transforming and viewing data. The classes below are all derived from the [plugin base class](plugin).
 
+Each runtime role has a matching factory specialization. Derive the instance and factory from the same pair, and return the matching instance type from `produce()`. Creation must still be requested through the plugin manager; `produce()` is the factory hook used by that managed path, not a public construction shortcut.
+
+| Role | Instance | Factory |
+| --- | --- | --- |
+| Analysis | {doc}`AnalysisPlugin <analysis_plugin>` | {doc}`AnalysisPluginFactory <analysis_plugin_factory>` |
+| Loader | {doc}`LoaderPlugin <loader_plugin>` | {doc}`LoaderPluginFactory <loader_plugin_factory>` |
+| Transformation | {doc}`TransformationPlugin <transformation_plugin>` | {doc}`TransformationPluginFactory <transformation_plugin_factory>` |
+| View | {doc}`ViewPlugin <view_plugin>` | {doc}`ViewPluginFactory <view_plugin_factory>` |
+| Writer | {doc}`WriterPlugin <writer_plugin>` | {doc}`WriterPluginFactory <writer_plugin_factory>` |
+
+The data-role pair, `RawData` and `RawDataFactory`, is documented with the {doc}`data API <../data/index>` because it defines dataset storage rather than an operation over existing datasets.
+
 ```{toctree}
 :maxdepth: 1
 
 analysis_plugin
+analysis_plugin_factory
 loader_plugin
+loader_plugin_factory
+data_load_exception
 transformation_plugin
+transformation_plugin_factory
 view_plugin
+view_plugin_factory
 writer_plugin
+writer_plugin_factory
 ```
 
 ## Miscellaneous

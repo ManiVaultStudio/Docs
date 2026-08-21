@@ -11,7 +11,7 @@ Choose the runtime type from the plugin's primary responsibility. This determine
 | `Writer` | exports ManiVault datasets to an external representation | `writeData()` |
 | `Data` | implements storage for a data type and creates its `DatasetImpl` objects | `createDataSet()` |
 
-The corresponding pairs are `ViewPlugin`/`ViewPluginFactory`, `AnalysisPlugin`/`AnalysisPluginFactory`, and so on. All pairs ultimately derive from {doc}`Plugin and PluginFactory <../../../api/core/plugin/index>`.
+The corresponding pairs are `ViewPlugin`/`ViewPluginFactory`, `AnalysisPlugin`/`AnalysisPluginFactory`, and so on. All pairs ultimately derive from `Plugin` and `PluginFactory`; the {doc}`plugin API reference <../../../api/core/plugin/index>` links each instance type to its specialized factory.
 
 ## Type boundaries
 

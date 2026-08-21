@@ -23,4 +23,4 @@ testing_and_pitfalls
 - Let the core maintain the live and produced instance counters.
 - Include project restoration in the compatibility analysis before introducing or reducing a limit.
 
-The relevant API entry points are {doc}`PluginFactory <../../../api/core/plugin/plugin_factory>`, {doc}`PluginTriggerAction <../../../api/core/gui/actions/internal/plugin_trigger_action>`, and {doc}`AbstractPluginManager <../../../api/core/managers/abstract_plugin_manager>`.
+The relevant API entry points are {doc}`PluginFactory and its role-specific factories <../../../api/core/plugin/index>`, {doc}`PluginTriggerAction <../../../api/core/gui/actions/internal/plugin_trigger_action>`, and {doc}`AbstractPluginManager <../../../api/core/managers/abstract_plugin_manager>`.

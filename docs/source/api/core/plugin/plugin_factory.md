@@ -10,8 +10,11 @@ Factories can similarly register one plugin-kind status-bar action during startu
 
 Factories also define whether standard interfaces may offer a plugin and how many live instances may coexist. See {doc}`Plugin creation policy and instance limits <../../../development/building_plugins/creation_policy/index>` before using the instance counters or maximum directly.
 
+Derive a concrete factory from the specialization matching its instance type. The {doc}`plugin API overview <index>` lists the analysis, loader, transformation, view, and writer pairs; data-storage factories are documented with the data API.
+
 **Qualified name:** `mv::plugin::PluginFactory`
 
 ```{doxygenclass} mv::plugin::PluginFactory
 :members:
 :protected-members:
+```
