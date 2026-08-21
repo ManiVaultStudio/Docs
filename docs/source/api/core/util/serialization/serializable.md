@@ -7,3 +7,4 @@ For choosing between synchronous and workflow overrides, see {doc}`Synchronous a
 ```{doxygenclass} mv::util::Serializable
 :members:
 :protected-members:
+```

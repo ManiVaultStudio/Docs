@@ -3,6 +3,7 @@
 ```{toctree}
 :maxdepth: 1
 
+codec_settings_action
 dataset_picker_action
 event_action
 image_action
