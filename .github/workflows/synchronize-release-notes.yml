@@ -3,7 +3,6 @@ name: Synchronize core release notes
 on:
   workflow_dispatch:
   schedule:
-    # daily at 06:15 UTC (adjust as you like)
     - cron: "15 6 * * *"
 
 permissions:
@@ -13,12 +12,11 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout docs repo
         uses: actions/checkout@v4
         with:
-          # If you trust GITHUB_TOKEN for same-repo pushes, you can remove "token:".
-          # Keeping DOCS_PUSH_TOKEN makes it robust if you later change the setup.
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
@@ -40,6 +38,7 @@ jobs:
           python .github/scripts/synchronize_releases.py
 
       - name: Create Pull Request if changed
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -50,3 +49,12 @@ jobs:
           commit-message: "docs: sync core release notes"
           add-paths: |
             docs/source/release_notes
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ steps.cpr.outputs.pull-request-number }}" \
+            --squash \
+            --auto
