@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sync:
@@ -19,6 +20,7 @@ jobs:
           # If you trust GITHUB_TOKEN for same-repo pushes, you can remove "token:".
           # Keeping DOCS_PUSH_TOKEN makes it robust if you later change the setup.
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,15 +39,14 @@ jobs:
         run: |
           python .github/scripts/synchronize_releases.py
 
-      - name: Commit and push if changed
-        run: |
-          set -e
-          if git status --porcelain | grep -q .; then
-            git config user.name "release-notes-bot"
-            git config user.email "release-notes-bot@users.noreply.github.com"
-            git add docs/source/release_notes
-            git commit -m "docs: sync core release notes"
-            git push
-          else
-            echo "No changes."
-          fi
+      - name: Create Pull Request if changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: docs/sync-core-release-notes
+          base: main
+          title: "docs: sync core release notes"
+          body: "Automated sync of ManiVaultStudio/core release notes."
+          commit-message: "docs: sync core release notes"
+          add-paths: |
+            docs/source/release_notes
