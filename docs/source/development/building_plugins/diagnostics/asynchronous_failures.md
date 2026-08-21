@@ -24,6 +24,8 @@ Prefer a workflow for substantial new asynchronous operations so progress, failu
 
 Workflow jobs may throw; the executor catches failures at the job boundary and records them in the result. Expected warnings and errors can be reported with `context->warning(...)` and `context->error(...)`, including location and detail fields.
 
+These structured messages can be inspected through the standard {doc}`workflow result dialog and message models <../../../api/core/workflow/reporting/index>`. Unlike general Qt logs, they retain their relationship to the execution and its nested reporting contexts.
+
 An error message alone does not necessarily stop execution. Call `markFailed()` or use the job failure mechanism when the job must fail. Conversely, do not throw merely to report a warning.
 
 Inspect the final workflow result status before consuming dependent output. Completion means execution ended, not that it succeeded. See {doc}`Tasks and workflows <../tasks/tasks_and_workflows>` and {doc}`Workflow results and error handling <../../workflows/results_and_error_handling>`.

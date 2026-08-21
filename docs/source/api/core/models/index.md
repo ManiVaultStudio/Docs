@@ -24,3 +24,5 @@ selections/index
 tasks/index
 common/index
 ```
+
+Models dedicated to structured workflow diagnostics are documented with the {doc}`workflow reporting API <../workflow/reporting/index>`, where their source message and result types are defined.

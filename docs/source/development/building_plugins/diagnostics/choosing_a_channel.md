@@ -8,6 +8,7 @@ Use the channel according to what the recipient must do next.
 | New long-running or cancellable operation | Workflow-backed execution with task progress where needed |
 | Existing externally managed operation needs GUI progress | Directly managed task |
 | Persistent lightweight plugin state | {doc}`Status action or plugin status-bar action <../status_bar/index>` |
+| Warning or diagnostic that belongs to one workflow result | Structured workflow message |
 | Developer-oriented execution evidence | Qt log message |
 | Operation cannot fulfill its contract | Exception or failed workflow job |
 | Failure must be acknowledged immediately | Exception dialog at the UI boundary |

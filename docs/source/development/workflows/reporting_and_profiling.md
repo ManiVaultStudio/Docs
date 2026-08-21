@@ -13,6 +13,10 @@ Use severity consistently:
 - errors describe failed units;
 - fatal errors describe failures that invalidate the overall operation.
 
+Workflow messages remain attached to the resulting execution record and retain identifiers for their reporting hierarchy. The Core API provides a flat `WorkflowMessagesListModel`, a context-preserving `WorkflowMessagesTreeModel`, and a severity-aware `WorkflowMessagesFilterModel` for presentation. `WorkflowResultDialog` combines the tree and filter models into the standard result inspector. See the {doc}`reporting API <../../api/core/workflow/reporting/index>` for exact types.
+
+Do not use workflow messages as a general application log. Use them for diagnostics that should travel with this execution result; use Qt logging for broader developer evidence and notifications for brief user-facing outcomes outside the result view.
+
 ## Metrics
 
 `WorkflowExecutionMetrics` is the thread-safe accumulator used during execution. A `WorkflowMetric` is the immutable display-oriented value included in results and notifications. Metrics have a name, value, unit, and optional metadata.
