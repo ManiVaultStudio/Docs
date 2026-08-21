@@ -11,6 +11,7 @@ For task-oriented guidance and complete patterns, begin with {doc}`Building plug
 ```{toctree}
 :maxdepth: 3
 
+application/index
 plugin/index
 data/index
 managers/index
