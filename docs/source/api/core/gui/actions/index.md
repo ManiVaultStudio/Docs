@@ -19,6 +19,7 @@ numerical/index
 grouping/index
 color/index
 colormap/index
+file/index
 miscellaneous/index
 ```
 
@@ -37,5 +38,6 @@ point_data/index
 :maxdepth: 1
 
 project/index
+internal/index
 
 ```

@@ -8,7 +8,8 @@
 mv::theme()->...
 ```
 
-### Related
+## Related
+
 - Color schemes {doc}`models <../models/color_schemes/index>`
 
 **Qualified name:** `mv::AbstractThemeManager`
@@ -16,3 +17,4 @@ mv::theme()->...
 ```{doxygenclass} mv::AbstractThemeManager
 :members:
 :protected-members:
+```

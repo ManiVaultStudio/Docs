@@ -46,5 +46,6 @@ vertical_toolbar_action
 
 groups_action
 stretch_action
+toolbar_action
 
 ```

@@ -17,6 +17,7 @@ icon_label
 info_overlay_widget
 info_widget
 markdown_dialog
+markdown_document
 multi_select_combobox
 overlay_widget
 plugin_about_dialog

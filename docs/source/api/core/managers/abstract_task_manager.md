@@ -8,7 +8,8 @@
 mv::tasks()->...
 ```
 
-### Related
+## Related
+
 - Tasks {doc}`models <../models/tasks/index>`
 
 **Qualified name:** `mv::AbstractTaskManager`
@@ -16,3 +17,4 @@ mv::tasks()->...
 ```{doxygenclass} mv::AbstractTaskManager
 :members:
 :protected-members:
+```

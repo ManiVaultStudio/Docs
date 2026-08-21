@@ -8,6 +8,7 @@ This section documents action types related to the creation, configuration, and 
 color_map_1d_action
 color_map_2d_action
 color_map_action
+color_map_editor_1d_action
 color_map_editor_1d_node_action
 color_map_settings_1d_action
 color_map_settings_2d_action

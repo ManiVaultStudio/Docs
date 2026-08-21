@@ -8,7 +8,8 @@
 mv::scripting()->...
 ```
 
-### Related
+## Related
+
 - Scripts {doc}`models <../models/scripts/index>`
 
 **Qualified name:** `mv::AbstractScriptingManager`
@@ -16,3 +17,4 @@ mv::scripting()->...
 ```{doxygenclass} mv::AbstractScriptingManager
 :members:
 :protected-members:
+```

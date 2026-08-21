@@ -8,7 +8,8 @@
 mv::actions()->...
 ```
 
-### Related
+## Related
+
 - Actions {doc}`models <../models/actions/index>`
 
 **Qualified name:** `mv::AbstractActionsManager`
@@ -16,3 +17,4 @@ mv::actions()->...
 ```{doxygenclass} mv::AbstractActionsManager
 :members:
 :protected-members:
+```

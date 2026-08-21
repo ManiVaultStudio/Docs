@@ -7,7 +7,7 @@ While these actions are accessible, they should be considered implementation-ori
 ```{toctree}
 :maxdepth: 1
 
-dataset_picker_action
+application_configuration_action
 application_icon_action
 branding_configuration_action
 color_scheme_action

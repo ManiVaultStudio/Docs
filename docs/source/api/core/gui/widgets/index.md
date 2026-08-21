@@ -13,3 +13,5 @@ drop_widget
 opengl_widget
 file_dialog
 elided_label
+web_widget
+internal/index

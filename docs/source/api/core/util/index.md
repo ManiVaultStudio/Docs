@@ -12,6 +12,7 @@ color/index
 badge/index
 exception/index
 file/index
+graphics/index
 heads_up_display_item/index
 network/index
 learning_center/index
