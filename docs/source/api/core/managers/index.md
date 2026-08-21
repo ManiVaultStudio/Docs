@@ -15,6 +15,7 @@ abstract_actions_manager
 abstract_data_hierarchy_manager
 abstract_data_manager
 abstract_error_manager
+abstract_error_logger
 abstract_event_manager
 abstract_help_manager
 abstract_plugin_manager

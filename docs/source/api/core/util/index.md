@@ -18,6 +18,7 @@ network/index
 learning_center/index
 icon/index
 notifications/index
+logging/index
 pixel_selection/index
 widget/index
 serialization/index

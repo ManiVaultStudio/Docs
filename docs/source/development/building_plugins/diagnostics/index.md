@@ -13,4 +13,4 @@ asynchronous_failures
 troubleshooting
 ```
 
-For exact signatures, see {doc}`notifications <../../../api/core/util/notifications/index>`, {doc}`exceptions <../../../api/core/util/exception/index>`, and the {doc}`error manager <../../../api/core/managers/abstract_error_manager>`.
+For exact signatures, see {doc}`notifications <../../../api/core/util/notifications/index>`, {doc}`logging <../../../api/core/util/logging/index>`, {doc}`exceptions <../../../api/core/util/exception/index>`, and the {doc}`error manager <../../../api/core/managers/abstract_error_manager>`.

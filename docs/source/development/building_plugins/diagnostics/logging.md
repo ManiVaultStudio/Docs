@@ -23,3 +23,5 @@ Repeatedly logging the same exception at every catch-and-rethrow point produces 
 Avoid using logs as invisible user feedback. If the user must change an input or retry an action, provide an appropriate notification, validation state, workflow result, or dialog as well.
 
 The logging models expose collected application logs to ManiVault interfaces; plugin code normally writes through Qt rather than manipulating those models directly.
+
+For exact types and ownership, see the {doc}`Core logging API <../../../api/core/util/logging/index>`. Optional handled-exception and crash reporting is a separate, consent-aware application facility described by {doc}`AbstractErrorManager <../../../api/core/managers/abstract_error_manager>` and {doc}`AbstractErrorLogger <../../../api/core/managers/abstract_error_logger>`.
