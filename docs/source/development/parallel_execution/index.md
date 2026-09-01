@@ -24,6 +24,14 @@ Use these pages when an operation is substantial enough that moving work to work
 
 `mv::Parallel` is the concise entry point when the middle level fits. It builds on the workflow engine without requiring developers to construct workflow plans themselves. Its terminal calls are blocking: the work can run on workflow workers, but the call returns only after the operation finishes. Do not use a blocking helper from a context that must remain responsive.
 
+## Explore the built-in examples
+
+On Windows, ManiVault includes a hidden **Dev** menu with workflow test scenarios. Press `Ctrl+Alt+Shift+D` to reveal the menu, then open **Dev → Workflow testing**. You can run an individual scenario or execute the complete scenario set sequentially.
+
+These scenarios provide a quick way to observe workflow scheduling, progress, reporting, and results in the application. They are demonstrations and integration tests, not setup steps or APIs that plugin code must call.
+
+![Revealing the Dev menu and running workflow test scenarios](../../assets/parallel_workflow_examples.gif)
+
 ## Start using the high-level API
 
 Begin with {doc}`Getting started <getting_started>`, then continue with the guide matching the shape of the operation.
