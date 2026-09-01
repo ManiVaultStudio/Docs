@@ -6,25 +6,21 @@ Use these pages when an operation is substantial enough that moving work to work
 
 ## Choose by goal
 
-| I want to… | Start here |
-| --- | --- |
-| Save and restore a few action values | {doc}`Saving and restoring action state <../building_plugins/actions/serialization>` — no parallel API is needed |
-| Optimize expensive, staged, or parallelizable plugin serialization | {doc}`Synchronous and workflow serialization <../building_plugins/persistence/synchronous_and_workflow>` |
-| Schedule one coarse operation and inspect its result while the caller can wait | {doc}`Running an operation <running_operations>` |
-| Apply independent work to files, datasets, images, or blocks | {doc}`Processing collections <processing_collections>` |
-| Transform a collection and return results in input order | {doc}`Mapping collections <mapping_collections>` |
-| Combine preparation, parallel processing, and finalization phases | {doc}`Building execution chains <execution_chains>` |
-| Run kernel-density estimation or another long operation on workers with interactive progress and cancellation | {doc}`Advanced workflow framework <../workflows/index>`, then {doc}`Progress and cancellation <../workflows/progress_and_cancellation>` |
-| Show progress for work already scheduled by another library or service | {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>` |
-| Speed up a tight numerical loop or internally threaded kernel | {doc}`Intended scope and granularity <scope_and_granularity>` before choosing a facility |
+- **Save and restore a few action values:** use {doc}`Saving and restoring action state <../building_plugins/actions/serialization>`. No parallel API is needed.
+- **Optimize expensive, staged, or parallelizable plugin serialization:** start with {doc}`Synchronous and workflow serialization <../building_plugins/persistence/synchronous_and_workflow>`.
+- **Schedule one coarse operation and inspect its result while the caller can wait:** use {doc}`Running an operation <running_operations>`.
+- **Apply independent work to files, datasets, images, or blocks:** use {doc}`Processing collections <processing_collections>`.
+- **Transform a collection and return results in input order:** use {doc}`Mapping collections <mapping_collections>`.
+- **Combine preparation, parallel processing, and finalization phases:** use {doc}`Building execution chains <execution_chains>`.
+- **Run a long operation on workers with interactive progress and cancellation:** start with the {doc}`Advanced workflow framework <../workflows/index>`, then continue with {doc}`Progress and cancellation <../workflows/progress_and_cancellation>`.
+- **Show progress for work already scheduled by another library or service:** see {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>`.
+- **Speed up a tight numerical loop or internally threaded kernel:** read {doc}`Intended scope and granularity <scope_and_granularity>` before choosing a facility.
 
 ## Choose the smallest suitable level
 
-| Level | Use it when… |
-| --- | --- |
-| Direct synchronous code | The work is short, bounded, and does not need execution progress or cancellation |
-| High-level `mv::Parallel` utilities | The caller may wait and the work fits one operation, a collection, a mapping, or a straightforward sequence of stages |
-| Advanced workflow framework | The operation needs asynchronous lifetime, task-backed progress, cancellation, GUI-thread phases, nesting, custom weights, or detailed reporting |
+- **Direct synchronous code:** use it when the work is short, bounded, and does not need execution progress or cancellation.
+- **High-level `mv::Parallel` utilities:** use them when the caller may wait and the work fits one operation, a collection, a mapping, or a straightforward sequence of stages.
+- **Advanced workflow framework:** use it when the operation needs asynchronous lifetime, task-backed progress, cancellation, GUI-thread phases, nesting, custom weights, or detailed reporting.
 
 `mv::Parallel` is the concise entry point when the middle level fits. It builds on the workflow engine without requiring developers to construct workflow plans themselves. Its terminal calls are blocking: the work can run on workflow workers, but the call returns only after the operation finishes. Do not use a blocking helper from a context that must remain responsive.
 

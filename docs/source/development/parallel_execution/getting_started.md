@@ -21,9 +21,9 @@ Use `run()` when one self-contained operation should execute through the workflo
 
 ```cpp
 const auto result = mv::Parallel::run(
-    "Compute density",
+    "Process dataset",
     [&dataset]() {
-        computeKernelDensity(dataset);
+        processDataset(dataset);
     });
 
 if (!result ||
