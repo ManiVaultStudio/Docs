@@ -1,31 +1,58 @@
 # Parallel execution
 
-ManiVault provides a small high-level API for scheduling work without manually constructing workflow plans. `mv::Parallel` covers one-off operations and collection processing, while `mv::ParallelExecutionChain` combines sequential and parallel stages into a readable pipeline.
+Parallel execution is an optional API for scheduling work and running independent operations concurrently. You do not have to use it to build a ManiVault plugin or application. Ordinary synchronous functions, standard action serialization, and other existing Core APIs continue to work without calling `mv::Parallel` or defining a custom workflow.
 
-These utilities are the recommended starting point for plugin and application developers. They run on the workflow framework, so callers receive structured results and can configure worker limits, notifications, profiling, and console reporting through `WorkflowOptions`.
+Use these pages when an operation is substantial enough that moving work to worker threads, processing independent items concurrently, reporting progress, supporting cancellation, or preserving a structured result would improve the implementation or user experience.
 
-The API is intended for **operation-level orchestration**: work whose stages or items are meaningful units such as loading files, processing datasets, producing derived data, or coordinating application services. It is not a drop-in replacement for OpenMP worksharing loops, `oneTBB::parallel_for`, SIMD, or a numerical library's internal threading. See {doc}`Intended scope and granularity <scope_and_granularity>` before choosing it for a hot loop.
+## Choose by goal
 
-```{note}
-The high-level calls described here are blocking: they return after the scheduled operation has finished. Avoid calling them from a context that must remain responsive unless the surrounding design explicitly permits blocking.
-```
+| I want to… | Start here |
+| --- | --- |
+| Save and restore a few action values | {doc}`Saving and restoring action state <../building_plugins/actions/serialization>` — no parallel API is needed |
+| Optimize expensive, staged, or parallelizable plugin serialization | {doc}`Synchronous and workflow serialization <../building_plugins/persistence/synchronous_and_workflow>` |
+| Schedule one coarse operation and inspect its result while the caller can wait | {doc}`Running an operation <running_operations>` |
+| Apply independent work to files, datasets, images, or blocks | {doc}`Processing collections <processing_collections>` |
+| Transform a collection and return results in input order | {doc}`Mapping collections <mapping_collections>` |
+| Combine preparation, parallel processing, and finalization phases | {doc}`Building execution chains <execution_chains>` |
+| Run kernel-density estimation or another long operation on workers with interactive progress and cancellation | {doc}`Advanced workflow framework <../workflows/index>`, then {doc}`Progress and cancellation <../workflows/progress_and_cancellation>` |
+| Show progress for work already scheduled by another library or service | {doc}`Choosing an execution model <../building_plugins/tasks/choosing_an_execution_model>` |
+| Speed up a tight numerical loop or internally threaded kernel | {doc}`Intended scope and granularity <scope_and_granularity>` before choosing a facility |
 
-## Start here
+## Choose the smallest suitable level
 
-Read the getting-started page first, then choose the page matching the operation you need. The advanced workflow framework is available when the high-level API does not express the required scheduling or integration behavior.
+| Level | Use it when… |
+| --- | --- |
+| Direct synchronous code | The work is short, bounded, and does not need execution progress or cancellation |
+| High-level `mv::Parallel` utilities | The caller may wait and the work fits one operation, a collection, a mapping, or a straightforward sequence of stages |
+| Advanced workflow framework | The operation needs asynchronous lifetime, task-backed progress, cancellation, GUI-thread phases, nesting, custom weights, or detailed reporting |
+
+`mv::Parallel` is the concise entry point when the middle level fits. It builds on the workflow engine without requiring developers to construct workflow plans themselves. Its terminal calls are blocking: the work can run on workflow workers, but the call returns only after the operation finishes. Do not use a blocking helper from a context that must remain responsive.
+
+## Start using the high-level API
+
+Begin with {doc}`Getting started <getting_started>`, then continue with the guide matching the shape of the operation.
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 
 getting_started
-scope_and_granularity
 running_operations
 processing_collections
 mapping_collections
 execution_chains
+examples
+```
+
+## Advanced decisions and controls
+
+The following pages explain configuration, safety, granularity, and the point at which a custom workflow becomes appropriate. They are important when the basic utilities fit only partially, but they are not prerequisites for understanding what the API is for.
+
+```{toctree}
+:maxdepth: 1
+
 options_and_cancellation
 thread_safety
-examples
+scope_and_granularity
 ../workflows/index
 ```
 
