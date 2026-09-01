@@ -65,6 +65,7 @@ user_guide/index
 :maxdepth: 1
 :caption: Development
 
+development/index
 development/building_manivault/index
 development/building_plugins/index
 development/building_applications/index
@@ -77,12 +78,4 @@ development/parallel_execution/index
 
 api/index
 release_notes/index
-```
-
-```{toctree}
-:hidden:
-
-development/index
-plugin_development
-application_design
 ```
