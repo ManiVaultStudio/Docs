@@ -23,7 +23,9 @@ Prefer the workflow forms of serialization and blob processing for long-running 
 
 ## Blob encoding pipeline
 
-The blob helpers obtain the current project's codec settings, divide the input into blocks, and create codecs through the registry. Encoded blocks may be stored inline or as project-archive resources, depending on the codec and persistence context. Decoding follows the codec metadata stored with the blob rather than assuming the project's current selection.
+The blob helpers obtain the current project's codec settings, divide the input into blocks, and create codecs through the registry. `BlobStorageLocation` explicitly chooses whether `bytesToBlobVariantMap()` and `bytesToBlobVariantMapWorkflow()` store the encoded blocks as project-archive files or as base64 payloads inside the project JSON. File storage is the default. Decoding recognizes both representations and follows the codec metadata stored with the blob rather than assuming the project's current selection.
+
+For an end-to-end plugin example and guidance on choosing a storage location, see {doc}`Persisting binary data as blob variant maps <../../../../development/building_plugins/persistence/binary_blob_data>`.
 
 `CodecActionBinding` is the ownership bridge between a codec and its GUI settings action. It avoids unsafe cross-thread `QObject` parenting when codec work runs outside the GUI thread.
 

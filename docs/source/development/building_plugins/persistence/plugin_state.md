@@ -27,4 +27,4 @@ void ExampleViewPlugin::fromVariantMap(const QVariantMap& map)
 
 Always call the direct base implementation so framework-owned identity, plugin metadata, view state, and superclass fields survive the round trip.
 
-Do not serialize QWidget pointers, cached rendering output, tasks, transient errors, or values that can be derived cheaply from authoritative state. See {doc}`Saving and restoring action state <../actions/serialization>` for action-specific conventions.
+Do not serialize QWidget pointers, cached rendering output, tasks, transient errors, or values that can be derived cheaply from authoritative state. See {doc}`Saving and restoring action state <../actions/serialization>` for action-specific conventions. When authoritative state contains a binary array or buffer that should not become a large list of ordinary variant values, use a {doc}`blob variant map <binary_blob_data>`.
