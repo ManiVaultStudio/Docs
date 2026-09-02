@@ -2,6 +2,18 @@ name: Update Doxygen XML
 
 on:
   workflow_dispatch:
+    inputs:
+      core_ref:
+        description: Core branch, tag, or commit to document
+        required: false
+        default: main
+      release_tag:
+        description: GitHub release tag that receives the XML archive
+        required: false
+        default: doxygen-xml-latest
+  push:
+    tags:
+      - "v*"
   schedule:
     - cron: "0 3 * * *"   # daily
 
@@ -20,9 +32,35 @@ jobs:
           sudo apt-get install -y doxygen graphviz
 
       - name: Checkout core repo
+        if: github.event_name != 'push'
+        env:
+          CORE_REF: ${{ inputs.core_ref || 'main' }}
         run: |
           mkdir -p external
-          git clone --depth 1 https://github.com/ManiVaultStudio/core.git external/core
+          git init external/core
+          git -C external/core remote add origin https://github.com/ManiVaultStudio/core.git
+          git -C external/core fetch --depth 1 origin "$CORE_REF"
+          git -C external/core checkout --detach FETCH_HEAD
+
+      - name: Checkout pinned core repo for a documentation release
+        if: github.event_name == 'push'
+        run: git submodule update --init --depth 1 external/core
+
+      - name: Select release metadata
+        id: release
+        env:
+          REQUESTED_RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            version="${GITHUB_REF_NAME#v}"
+            echo "tag=doxygen-xml-${version}" >> "$GITHUB_OUTPUT"
+            echo "name=Doxygen XML (${version})" >> "$GITHUB_OUTPUT"
+          else
+            release_tag="${REQUESTED_RELEASE_TAG:-doxygen-xml-latest}"
+            echo "tag=${release_tag}" >> "$GITHUB_OUTPUT"
+            echo "name=Doxygen XML (${release_tag#doxygen-xml-})" >> "$GITHUB_OUTPUT"
+          fi
+          echo "core_commit=$(git -C external/core rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Generate Doxygen XML
         run: |
@@ -40,10 +78,11 @@ jobs:
       - name: Publish/Update GitHub Release asset
         uses: ncipollo/release-action@v1
         with:
-          tag: doxygen-xml-latest
-          name: Doxygen XML (latest)
+          tag: ${{ steps.release.outputs.tag }}
+          name: ${{ steps.release.outputs.name }}
           body: |
             Auto-generated Doxygen XML for Read the Docs.
+            Core commit ${{ steps.release.outputs.core_commit }}.
             Updated from workflow run ${{ github.run_id }}.
           artifacts: doxygen-xml.tar.gz
           artifactErrorsFailBuild: true

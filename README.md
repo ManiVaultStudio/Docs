@@ -118,7 +118,7 @@ Important notes:
 ---
 
 ## Doxygen
-Our curated API documentation is based on Doxygen. During the Read the Docs build process, a pre-built doxygen is downloaded from [releases](https://github.com/ManiVaultStudio/Docs/releases/tag/doxygen-xml-latest) to expedite the process. This pre-built doxygen is generated daily with [this](https://github.com/ManiVaultStudio/Docs/blob/main/.github/workflows/update-doxygen-xml.yml) GitHub action.
+Our curated API documentation is based on Doxygen. During the Read the Docs build process, pre-built Doxygen XML is downloaded from [releases](https://github.com/ManiVaultStudio/Docs/releases/tag/doxygen-xml-latest) to expedite the process. The latest development artifact is generated daily with [this](https://github.com/ManiVaultStudio/Docs/blob/main/.github/workflows/update-doxygen-xml.yml) GitHub action. A versioned Docs tag also publishes a matching, immutable `doxygen-xml-<version>` artifact from its pinned Core submodule so that released documentation does not drift with Core development.
 
 ## Release notes
 A curated list of release notes is generated daily using [this](https://github.com/ManiVaultStudio/Docs/blob/main/.github/workflows/synchronize-release-notes.yml) GitHub action.

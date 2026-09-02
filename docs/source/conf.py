@@ -9,8 +9,8 @@ project = 'ManiVault'
 copyright = '2026, BioVault'
 author = 'BioVault'
 
-release = '1.4'
-version = '1.4.2'
+version = '1.5'
+release = '1.5.1'
 
 # -- General configuration
 
