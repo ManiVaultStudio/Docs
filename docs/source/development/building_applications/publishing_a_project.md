@@ -10,7 +10,7 @@ An application or viewer will often contain one or more published projects. Whil
 
 ## What is a published project?
 
-Conceptually, you can think of a published project as a **read-only, baked project**:
+Conceptually, you can think of a published project as a **baked project that opens read-only by default**:
 
 - The **view layout is fixed**  
   Users cannot freely rearrange or add/remove views (unless explicitly allowed by the viewer).
@@ -108,7 +108,7 @@ After publishing, the resulting project is typically:
   - The viewer opens directly into the published project at startup, or
   - The project appears in a list of available projects on the start page.
 
-- **Treated as read-only**:
+- **Treated as read-only by default**:
   - Users can explore, filter, zoom, and interact, but they cannot overwrite or fundamentally change the underlying published configuration.
 
 - **Optionally restricted in terms of new plugins**:
@@ -117,11 +117,20 @@ After publishing, the resulting project is typically:
 
 How exactly a published project is discovered and presented (start page entries, menu items, etc.) is determined by your application’s configuration (for example, via project DSNs or app-specific configuration files).
 
+## Opening a published project for editing
+
+Authors may occasionally need to inspect, repair, or revise a project after it has been published. When a published project is selected in the **Open Project** dialog, the settings area enables **Allow edit of published project**. Selecting this option clears the read-only state after the project opens successfully.
+
+This is an explicit authoring override. Published projects continue to open read-only when the option is not selected, including normal end-user and viewer workflows. Opening a project directly from a supplied file path does not show the dialog and therefore retains the default read-only behavior.
+
+Core represents the choice with `AbstractProjectManager::ProjectOpenParameters::allowEditOfPublishedProject`. The standard project manager fills that parameter from the Open Project dialog; application integrations that customize project opening should preserve the same default unless editable published content is an intentional part of their workflow.
+
 ---
 
 ## Summary
 
-- A **published project** is a **read-only, baked** variant of a regular project, primarily used in **tailor-made applications**.
+- A **published project** is a **baked variant that opens read-only by default**, primarily used in **tailor-made applications**.
+- Authors can explicitly select **Allow edit of published project** while opening one when revision or repair is intended.
 - Publishing lets you fix:
   - The **view layout**,
   - The **positions of view plugins**,

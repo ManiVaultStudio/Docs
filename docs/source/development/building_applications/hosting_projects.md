@@ -34,7 +34,7 @@ Each entry describes one project:
 | `startup` | | Flags the project as a startup project (for future use)
 | `url`             | ✅ | Provide a (direct download link) |
 | `summary`         | ✅ | HTML formatting is allowed. |
-| `requiredPlugins` | ✅ | If any plugin is not available on the user end, the project will not be listed, see the [Caveats and notes](#Caveats--Notes) section for more info. |
+| `requiredPlugins` | ✅ | If any plugin is not available on the user end, the project will not be listed, see the {ref}`Caveats and notes <hosting-projects-caveats>` section for more info. |
 | `coreVersion`     | ✅ | For more info, see the example. |
 | `tags`     | ✅ | |
 | `date`     | ✅ | |
@@ -92,6 +92,7 @@ When everything is set up:
 
 *The user doesn’t need to know or care that the project was remote—it's seamless, see the teaser **GIF** at the top of this page for a preview of the experience.*
 
+(hosting-projects-caveats)=
 ## Caveats & Notes
 All downloadable files (**projects JSON** file and the project **.mv** files) must be a direct download link: The **URLs** must point directly to the raw file. Avoid links that:
 - Require user login.

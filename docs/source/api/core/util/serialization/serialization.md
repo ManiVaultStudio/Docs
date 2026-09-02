@@ -17,6 +17,9 @@ Both forms use the active project's codec and block-size settings. The restore h
 
 For plugin-oriented examples, see {doc}`Persisting binary data as blob variant maps <../../../../development/building_plugins/persistence/binary_blob_data>`.
 
+```{doxygenenum} mv::util::BlobStorageLocation
+```
+
 ## Functions
 
 ```{doxygenfunction} mv::util::bytesToBlobVariantMap

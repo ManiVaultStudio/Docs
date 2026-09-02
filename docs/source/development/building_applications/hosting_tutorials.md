@@ -30,7 +30,7 @@ Each entry describes one project and should include:
 - `project`, link to optional project file.
 - `summary`, tutorial description (**HTML** is allowed).
 - `fullPost`, the tutorial **HTML** content.
-- `plugins` list (if any plugin is not available on the user end, the tutorial project will not be able to load, see the [Caveats and notes](#Caveats--Notes) section for more info).
+- `plugins` list (if any plugin is not available on the user end, the tutorial project will not be able to load, see the {ref}`Caveats and notes <hosting-tutorials-caveats>` section for more info).
 - `tags`, additional tags (add the `GettingStarted` for the tutorial to show on the start page).
 - `date`, the date the tutorial was published.
 - `minimum-version-major`, the major part of the minimum `ManiVault Studio` version.
@@ -89,6 +89,7 @@ When everything is set up:
 
 *The user doesn’t need to know or care that the tutorial (and its project) was remote—it's seamless, see the teaser **GIF** at the top of this page for a preview of the experience.*
 
+(hosting-tutorials-caveats)=
 ## Caveats & Notes
 All downloadable files (**tutorials JSON** file and the project **.mv** files) must be a direct download link: The **URLs** must point directly to the raw file. Avoid links that:
 - Require user login.
