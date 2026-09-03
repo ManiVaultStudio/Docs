@@ -58,6 +58,13 @@ ogp_image = 'https://manivault.readthedocs.io/en/latest/_static/social-card.png'
 ogp_image_alt = 'ManiVault Studio Documentation'
 ogp_enable_meta_description = True
 
+ogp_custom_meta_tags = [
+    '<meta property="og:image:type" content="image/png" />',
+    '<meta property="og:image:width" content="1200" />',
+    '<meta property="og:image:height" content="630" />',
+    '<meta name="twitter:card" content="summary_large_image" />',
+]
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
