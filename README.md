@@ -22,17 +22,23 @@ The documentation is written primarily in **Markdown** and organized by topic. T
 Typical layout:
 ```
 Docs/
-├── docs/                # Main documentation content
-│   ├── index.md         # Root documentation entry point
-│   ├── installation.md
-│   ├── tutorials/
-│   └── reference/
-├── conf.py              # Sphinx configuration
+├── docs/
+│   ├── source/          # Published documentation content
+│   │   ├── index.md     # Root documentation entry point
+│   │   ├── user_guide/
+│   │   ├── development/
+│   │   ├── api/
+│   │   └── release_notes/
+│   ├── Doxyfile         # Doxygen configuration for the API XML
+│   ├── Makefile
+│   ├── make.bat
+│   └── requirements.txt
+├── external/core/       # Pinned ManiVault Core submodule
 ├── .readthedocs.yaml    # Read the Docs build configuration
 └── README.md
 ```
 
-> **Note:** Only content under `docs/` is rendered on Read the Docs unless explicitly configured otherwise.
+> **Note:** The Sphinx source directory is `docs/source/`. Other files under `docs/` support the build but are not documentation pages.
 
 ---
 
@@ -42,14 +48,14 @@ Docs/
 
 ### 1. Edit or add Markdown files
 
-All published documentation content lives under the `docs/` directory.
+All published documentation content lives under the `docs/source/` directory.
 
 - Modify existing pages by editing their **.md** files
 - Add new pages by creating new **.md** files in the appropriate subdirectory
 
 Example:
 ```
-docs/tutorials/my-new-tutorial.md
+docs/source/user_guide/tutorials/my-new-tutorial.md
 ```
 
 ---
@@ -77,24 +83,45 @@ If a page is not listed in a **toctree**, it will **not appear** in the rendered
 Before submitting a pull request, contributors are encouraged to build the documentation locally.
 
 #### Install dependencies
+
+Read the Docs builds with Python 3.11. From the repository root, install the same Python dependencies locally:
+
 ```bash
-pip install -r requirements.txt
+python -m pip install -r docs/requirements.txt
 ```
 
-If `requirements.txt` is not present, install the minimum dependencies manually:
+#### Prepare the API reference
+
+Sphinx requires pre-built Doxygen XML in `docs/_doxygen/xml`. Download the same archive used by Read the Docs:
+
 ```bash
-pip install sphinx myst-parser sphinx-rtd-theme
+mkdir -p docs/_doxygen
+curl -L -o doxygen-xml.tar.gz https://github.com/ManiVaultStudio/Docs/releases/download/doxygen-xml-latest/doxygen-xml.tar.gz
+tar -xzf doxygen-xml.tar.gz -C docs/_doxygen
+rm doxygen-xml.tar.gz
 ```
+
+Alternatively, initialize the pinned Core submodule and generate the XML locally (requires Doxygen):
+
+```bash
+git submodule update --init external/core
+doxygen docs/Doxyfile
+```
+
+Both methods must produce `docs/_doxygen/xml/index.xml` before Sphinx is run.
 
 #### Build the documentation
 From the repository root:
+
 ```bash
-sphinx-build -b html docs build/html
+sphinx-build -b html docs/source docs/build/html
 ```
+
+Alternatively, run `make html` from `docs/` on Linux or macOS, or `docs\make.bat html` from the repository root on Windows.
 
 Open the generated documentation:
 ```
-build/html/index.html
+docs/build/html/index.html
 ```
 
 This preview closely matches what the [ManiVault Read the Docs](https://manivault.readthedocs.io/en/latest/) will look like.
@@ -111,7 +138,7 @@ The Read the Docs build is configured in:
 Important notes:
 - Builds are triggered automatically on pushes and pull requests
 - The default branch is used for the published documentation
-- [Sphinx](https://www.sphinx-doc.org/en/master/) warnings may fail the build, so ensure formatting and **toctree** entries are correct
+- The hosted build downloads the latest published Doxygen XML archive before running Sphinx
 
 </details>
 
