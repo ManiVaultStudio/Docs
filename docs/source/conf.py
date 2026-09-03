@@ -21,7 +21,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
-    'breathe'
+    'breathe',
+    'sphinxext.opengraph',
 ]
 
 source_suffix = {
@@ -46,6 +47,16 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_static']
+
+# -- Open Graph / social link previews
+
+ogp_site_url = 'https://manivault.readthedocs.io/en/latest/'
+ogp_site_name = 'ManiVault Documentation'
+ogp_type = 'website'
+ogp_image = 'https://manivault.readthedocs.io/en/latest/_static/social-card.png'
+ogp_image_alt = 'ManiVault Studio Documentation'
+ogp_enable_meta_description = True
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
