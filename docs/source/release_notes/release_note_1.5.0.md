@@ -94,3 +94,4 @@ All available installers are listed [here](https://github.com/ManiVaultStudio/Re
 </details>
 
 **Full Changelog**: https://github.com/ManiVaultStudio/core/compare/v1.4.3...v1.5.0
+
