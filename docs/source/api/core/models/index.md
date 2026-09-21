@@ -16,6 +16,7 @@ logging/index
 miscellaneous/index
 plugin_factories/index
 plugins/index
+third_party_licenses
 projects/index
 raw_data/index
 recent_files/index
