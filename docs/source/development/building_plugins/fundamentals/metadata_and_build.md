@@ -13,11 +13,20 @@ Place `PluginInfo.json` beside the plugin target's `CMakeLists.txt` and make it 
     "plugin": "1.0.0"
   },
   "type": "View",
-  "dependencies": []
+  "dependencies": [],
+  "thirdPartyLicenses": [
+    {
+      "name": "Example dependency",
+      "license": "MIT",
+      "url": "https://example.org/license"
+    }
+  ]
 }
 ```
 
-`name` identifies the library, and `version.plugin` is its semantic version. `mv_handle_plugin_config()` requires both values, appends the plugin and ManiVault core versions to the output library name, and uses the optional top-level `type` only to group targets in generators that support folders. `dependencies` records plugin dependencies for the surrounding plugin tooling.
+`name` identifies the library, and `version.plugin` is its semantic version. `mv_handle_plugin_config()` requires both values, appends the plugin and ManiVault core versions to the output library name, and uses the optional top-level `type` only to group targets in generators that support folders. `dependencies` records plugin dependencies for the surrounding plugin tooling. `thirdPartyLicenses` records the third-party libraries shipped or used by the plugin so ManiVault can show their license information together with Core and other available plugins.
+
+Each `thirdPartyLicenses` entry must be an object with a non-empty `name` and `license`; `url` is the link to the dependency or its license information and may be empty when no link is available. The field is optional, and an empty array is valid. Keep one entry per dependency and use the license identifier or name that the dependency publishes (for example, `MIT`, `MPL-2.0`, or `BSD-3-Clause`).
 
 Do not add a manually maintained `version.core` value for `mv_handle_plugin_config()`: the helper obtains the current core version from CMake.
 
@@ -60,6 +69,14 @@ metadata.setLicenseText(
 ```
 
 Override `getRepositoryUrl()`, `getReadmeMarkdownUrl()`, or `getDefaultBranch()` when the plugin supplies external help or source links. Keep the short description suitable for menus and search results; use the summary for the fuller explanation.
+
+### Third-party dependency licenses
+
+`PluginInfo.json` is the preferred place to declare licenses for dependencies that a plugin uses. Core reads the `thirdPartyLicenses` array while loading the plugin factory and copies valid entries into the plugin metadata. The public API also allows a plugin to manage this information at runtime through `PluginMetadata::getThirdPartyLicenses()`, `setThirdPartyLicenses()`, `addThirdPartyLicense()`, and `removeThirdPartyLicense()`. Plugin and factory facades expose the same data through `Plugin::getThirdPartyLicenses()` and `PluginFactory::getThirdPartyLicenses()`.
+
+Use the JSON metadata for licenses that are part of the plugin's normal distribution. If a dependency is selected only in a particular build configuration, keep its entry aligned with the binaries shipped in that configuration. License entries are metadata; they do not replace the dependency's `target_link_libraries()` or runtime installation rules.
+
+The aggregated view is available to users from the Help menu. It combines Core and plugin entries, removes duplicates, retains which plugins use each dependency, and links each entry to its URL. See [core PR #1340](https://github.com/ManiVaultStudio/core/pull/1340), the [Image Loader example](https://github.com/ManiVaultStudio/ImageLoaderPlugin/blob/feature/license-aggregation/PluginInfo.json), and the [t-SNE Analysis examples](https://github.com/ManiVaultStudio/t-SNE-Analysis/commit/67eecce62fa685d750eb6535e847c61c75243fc4) for the API and metadata changes. See the {doc}`Third-party licenses guide <../../../user_guide/third_party_licenses>` for the user workflow.
 
 ## CMake
 
