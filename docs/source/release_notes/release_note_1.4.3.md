@@ -13,3 +13,4 @@ This release includes some backports and minor fixes to fix issues with respect 
 - Fix project manager state update timing issues (#1189)
 
 **Full Changelog**: https://github.com/ManiVaultStudio/core/compare/v1.4.2...v1.4.3
+
