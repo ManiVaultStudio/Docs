@@ -9,4 +9,5 @@ To get started, begin with the tutorials and use the built-in onboarding tools t
 tutorials
 learning_center
 third_party_licenses
+python/index
 ```
