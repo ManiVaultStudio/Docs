@@ -2,6 +2,8 @@
 
 Plugins are ManiVault's primary extension mechanism. A plugin can introduce data storage, loading, analysis, transformation, visualization, or export while relying on the core for datasets, project state, execution, actions, and application integration.
 
+The best practices in this section are implemented in the [ManiVault ExamplePlugins repository](https://github.com/ManiVaultStudio/ExamplePlugins). Use its examples as concrete, buildable companions to these guides when you want to compare a concept with a complete plugin.
+
 ## Choose a starting point
 
 | Goal | Start here |

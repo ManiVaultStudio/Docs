@@ -4,6 +4,8 @@ The factory is the plugin library's long-lived registration object. It advertise
 
 The instance represents one use of the plugin. It owns per-instance actions, widgets, datasets, tasks, and serializable state. Always pass the producing factory to the instance base-class constructor.
 
+The `ExampleViewPlugin` shown below is based on the corresponding [ExampleView implementation in the ManiVault ExamplePlugins repository](https://github.com/ManiVaultStudio/ExamplePlugins/tree/master/ExampleView). The repository provides complete examples for the other plugin types as well.
+
 ```cpp
 class ExampleViewPlugin final : public mv::plugin::ViewPlugin
 {
