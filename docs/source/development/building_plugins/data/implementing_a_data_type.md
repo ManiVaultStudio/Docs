@@ -2,6 +2,8 @@
 
 A data plugin supplies a `plugin::RawData` implementation, a `RawDataFactory`, and one or more concrete `DatasetImpl` classes. This is a framework-extension task; plugins that merely consume existing data types do not need these pieces.
 
+For the wider relationship between the raw-data provider, concrete dataset implementation, data manager, hierarchy item, and `Dataset<T>` handle, see the {doc}`data mental model <mental_model>`.
+
 ## Raw-data plugin
 
 Derive from `plugin::RawData` and associate it with a `DataType`. Implement `createDataSet()` to allocate an unregistered concrete dataset implementation:

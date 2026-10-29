@@ -14,6 +14,15 @@ ManiVault separates data identity, implementation, storage, hierarchy, and selec
 
 `plugin::RawData` and its factory define a concrete data kind and create its `DatasetImpl` instances. Despite its name, a raw-data plugin is the factory-backed provider for one registered dataset kind.
 
+The relationships between these types are summarized below. The data manager owns dataset implementations, the hierarchy manager owns their presentation items, and plugins exchange non-owning `Dataset<T>` handles.
+
+```{figure} /_static/data_model.svg
+:alt: ManiVault data ownership, hierarchy placement, and typed dataset access
+:width: 100%
+
+Data ownership and access relationships
+```
+
 ## Ownership
 
 The data manager owns registered `DatasetImpl` objects. A `Dataset<T>` neither deletes the implementation nor keeps a removed dataset alive. When the core removes a dataset, retained handles are reset and become invalid.

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">ManiVault data ownership and access model</title>
+  <desc id="desc">The data manager owns concrete dataset implementations. The data hierarchy manager manages hierarchy items that position those datasets. Typed Dataset handles access implementations by identifier, and a RawData plugin creates concrete dataset implementations.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#364152"/></marker>
+    <marker id="diamond" viewBox="0 0 12 12" refX="2" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M 1 6 L 6 1 L 11 6 L 6 11 z" fill="#fff" stroke="#364152" stroke-width="1.5"/></marker>
+    <style>
+      .box { fill: #f8fafc; stroke: #364152; stroke-width: 2; }
+      .manager { fill: #e8f1fb; }
+      .implementation { fill: #fff7e6; }
+      .handle { fill: #eaf7ef; }
+      .hierarchy { fill: #f1ebfb; }
+      .title { font: 600 20px monospace; fill: #172033; }
+      .stereotype { font: 15px monospace; fill: #526070; }
+      .note { font: 15px monospace; fill: #364152; }
+      .label { font: 15px monospace; fill: #172033; paint-order: stroke; stroke: #fff; stroke-width: 6px; stroke-linejoin: round; }
+      .line { stroke: #364152; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .owns { stroke: #364152; stroke-width: 2; fill: none; marker-start: url(#diamond); marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="690" fill="white"/>
+
+  <rect class="box manager" x="55" y="75" width="300" height="95" rx="5"/>
+  <text class="title" x="205" y="112" text-anchor="middle">AbstractDataManager</text>
+  <text class="note" x="205" y="143" text-anchor="middle">returned by mv::data()</text>
+
+  <rect class="box manager" x="845" y="75" width="300" height="95" rx="5"/>
+  <text class="title" x="995" y="112" text-anchor="middle">AbstractDataHierarchyManager</text>
+  <text class="note" x="995" y="143" text-anchor="middle">returned by mv::dataHierarchy()</text>
+
+  <rect class="box implementation" x="75" y="395" width="270" height="105" rx="5"/>
+  <text class="stereotype" x="210" y="425" text-anchor="middle">&lt;&lt;RawData&gt;&gt;</text>
+  <text class="title" x="210" y="460" text-anchor="middle">MyRawData</text>
+  <text class="note" x="210" y="485" text-anchor="middle">creates a DatasetImpl</text>
+
+  <rect class="box implementation" x="465" y="395" width="270" height="105" rx="5"/>
+  <text class="stereotype" x="600" y="425" text-anchor="middle">&lt;&lt;DatasetImpl&gt;&gt;</text>
+  <text class="title" x="600" y="460" text-anchor="middle">MyDataset</text>
+  <text class="note" x="600" y="485" text-anchor="middle">core-owned implementation</text>
+
+  <rect class="box handle" x="465" y="555" width="270" height="85" rx="5"/>
+  <text class="title" x="600" y="590" text-anchor="middle">Dataset&lt;T&gt;</text>
+  <text class="note" x="600" y="615" text-anchor="middle">typed, non-owning handle</text>
+
+  <rect class="box hierarchy" x="845" y="395" width="300" height="105" rx="5"/>
+  <text class="title" x="995" y="432" text-anchor="middle">DataHierarchyItem</text>
+  <text class="note" x="995" y="462" text-anchor="middle">positions a dataset in the UI tree</text>
+
+  <path class="owns" d="M 205 170 L 205 395"/>
+  <text class="label" x="220" y="285">owns registered instances</text>
+
+  <path class="owns" d="M 995 170 L 995 395"/>
+  <text class="label" x="1010" y="285">manages hierarchy items</text>
+
+  <path class="line" d="M 345 447 L 465 447"/>
+  <text class="label" x="405" y="430" text-anchor="middle">creates</text>
+
+  <path class="line" d="M 845 447 L 735 447"/>
+  <text class="label" x="790" y="430" text-anchor="middle">positions</text>
+
+  <path class="line" d="M 600 555 L 600 500"/>
+  <text class="label" x="620" y="535">access by ID</text>
+
+  <text class="note" x="600" y="35" text-anchor="middle">ManiVault data ownership, hierarchy placement, and plugin access</text>
+</svg>
