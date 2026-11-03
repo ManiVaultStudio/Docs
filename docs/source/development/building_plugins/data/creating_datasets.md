@@ -18,20 +18,22 @@ The first argument is the registered data-plugin kind. The second is the name di
 The creation path passes through the data manager and the provider registered for the requested kind:
 
 ```mermaid
+%%{init: {"sequence": {"actorMargin": 70, "messageMargin": 38, "mirrorActors": false}, "themeVariables": {"fontSize": "16px"}}}%%
 sequenceDiagram
-    participant Plugin as Consumer plugin
-    participant Manager as AbstractDataManager
-    participant Provider as RawData plugin
-    participant Item as DatasetImpl
-    participant Hierarchy as Data hierarchy
+    autonumber
+    participant P as Calling plugin
+    participant M as Data manager
+    participant R as Raw-data provider
+    participant D as Dataset implementation
+    participant H as Data hierarchy
 
-    Plugin->>Manager: createDataset<Points>(kind, name)
-    Manager->>Provider: create full and selection datasets
-    Provider-->>Manager: return DatasetImpl instances
-    Manager->>Manager: register implementations and assume ownership
-    Manager->>Hierarchy: create hierarchy items and place datasets
-    Manager->>Item: call init() after registration
-    Manager-->>Plugin: return Dataset<T> handle
+    P->>M: createDataset(kind, name)
+    M->>R: create full and selection datasets
+    R-->>M: return implementations
+    M->>M: register and take ownership
+    M->>H: create hierarchy items
+    M->>D: call init() after registration
+    M-->>P: return Dataset handle
 ```
 
 ## Hierarchy parent

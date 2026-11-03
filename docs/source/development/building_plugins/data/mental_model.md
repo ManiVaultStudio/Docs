@@ -17,22 +17,34 @@ ManiVault separates data identity, implementation, storage, hierarchy, and selec
 The relationships between these types are summarized below. The data manager owns dataset implementations, the hierarchy manager owns their presentation items, and plugins exchange non-owning `Dataset<T>` handles.
 
 ```mermaid
-flowchart TB
+%%{init: {"flowchart": {"curve": "linear", "nodeSpacing": 55, "rankSpacing": 75}, "themeVariables": {"fontSize": "17px"}}}%%
+flowchart LR
     subgraph Managers
-        DM["AbstractDataManager<br/>mv::data()"]
-        HM["AbstractDataHierarchyManager<br/>mv::dataHierarchy()"]
+        direction TB
+        DM["Data manager<br/><code>mv::data()</code>"]
+        HM["Hierarchy manager<br/><code>mv::dataHierarchy()</code>"]
     end
 
-    RD["MyRawData<br/>&lt;&lt;RawData&gt;&gt;"]
-    IM["MyDataset<br/>&lt;&lt;DatasetImpl&gt;&gt;"]
-    H["DataHierarchyItem"]
-    Handle["Dataset&lt;T&gt;<br/>typed, non-owning handle"]
+    RD["<b>MyRawData</b><br/>Raw-data provider"]
+    IM["<b>MyDataset</b><br/>Dataset implementation"]
+    H["<b>DataHierarchyItem</b><br/>Hierarchy placement"]
+    Handle["<b>Dataset&lt;T&gt;</b><br/>Typed, non-owning handle"]
 
-    DM -->|owns registered implementation| IM
-    HM -->|manages| H
-    H -->|positions in hierarchy| IM
+    DM ==>|owns| IM
+    HM ==>|manages| H
+    H -.->|positions| IM
     RD -->|creates| IM
-    Handle -->|accesses by dataset ID| IM
+    Handle -.->|accesses by dataset ID| IM
+
+    classDef manager fill:#eaf2ff,stroke:#3f6ea5,color:#17365d,stroke-width:2px;
+    classDef provider fill:#fff3dc,stroke:#c38b2e,color:#573b0b,stroke-width:2px;
+    classDef implementation fill:#e8f5ef,stroke:#4c8a6b,color:#17452f,stroke-width:2px;
+    classDef hierarchy fill:#f2edff,stroke:#8068b2,color:#38295e,stroke-width:2px;
+    class DM,HM manager;
+    class RD provider;
+    class IM implementation;
+    class H hierarchy;
+    class Handle manager;
 ```
 
 ## Ownership

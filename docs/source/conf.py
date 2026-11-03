@@ -38,6 +38,38 @@ myst_enable_extensions = [
 ]
 myst_fence_as_directive = ['mermaid']
 
+mermaid_config = {
+    'theme': 'base',
+    'themeVariables': {
+        'fontFamily': 'Inter, Segoe UI, sans-serif',
+        'fontSize': '16px',
+        'primaryColor': '#edf4ff',
+        'primaryTextColor': '#183153',
+        'primaryBorderColor': '#4b77a8',
+        'lineColor': '#536b84',
+        'secondaryColor': '#e8f5ef',
+        'tertiaryColor': '#fff4df',
+        'background': '#ffffff',
+        'mainBkg': '#edf4ff',
+        'nodeBorder': '#4b77a8',
+        'clusterBkg': '#f5f8fc',
+        'clusterBorder': '#c7d3e0',
+        'edgeLabelBackground': '#ffffff',
+        'actorBkg': '#edf4ff',
+        'actorBorder': '#4b77a8',
+        'actorTextColor': '#183153',
+        'signalColor': '#536b84',
+        'signalTextColor': '#26384a',
+        'labelBoxBkgColor': '#ffffff',
+        'labelBoxBorderColor': '#c7d3e0',
+        'labelTextColor': '#26384a',
+        'loopTextColor': '#26384a',
+        'activationBkgColor': '#e8f5ef',
+        'activationBorderColor': '#62a084',
+        'sequenceNumberColor': '#ffffff',
+    },
+}
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
