@@ -16,11 +16,23 @@ ManiVault separates data identity, implementation, storage, hierarchy, and selec
 
 The relationships between these types are summarized below. The data manager owns dataset implementations, the hierarchy manager owns their presentation items, and plugins exchange non-owning `Dataset<T>` handles.
 
-```{figure} /_static/data_model.svg
-:alt: ManiVault data ownership, hierarchy placement, and typed dataset access
-:width: 100%
+```mermaid
+flowchart TB
+    subgraph Managers
+        DM["AbstractDataManager<br/>mv::data()"]
+        HM["AbstractDataHierarchyManager<br/>mv::dataHierarchy()"]
+    end
 
-Data ownership and access relationships
+    RD["MyRawData<br/>&lt;&lt;RawData&gt;&gt;"]
+    IM["MyDataset<br/>&lt;&lt;DatasetImpl&gt;&gt;"]
+    H["DataHierarchyItem"]
+    Handle["Dataset&lt;T&gt;<br/>typed, non-owning handle"]
+
+    DM -->|owns registered implementation| IM
+    HM -->|manages| H
+    H -->|positions in hierarchy| IM
+    RD -->|creates| IM
+    Handle -->|accesses by dataset ID| IM
 ```
 
 ## Ownership

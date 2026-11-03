@@ -49,6 +49,24 @@ mv::plugin::ViewPlugin* ExampleViewPluginFactory::produce()
 
 `produce()` should allocate the matching concrete instance and return it. Request creation through the plugin manager or a `PluginTriggerAction`; those paths register the instance, assign type-specific inputs, initialize it, update instance counts, and integrate it into the application. Calling `produce()` directly bypasses that work.
 
+The normal creation sequence is managed by the plugin manager:
+
+```mermaid
+sequenceDiagram
+    participant Requester as UI or trigger
+    participant Manager as Plugin manager
+    participant Factory as Plugin factory
+    participant Instance as Plugin instance
+
+    Requester->>Manager: request plugin creation
+    Manager->>Factory: produce()
+    Factory-->>Manager: return new instance
+    Manager->>Manager: register and assign type-specific inputs
+    Manager->>Instance: init()
+    Manager->>Manager: update counts and integrate instance
+    Manager-->>Requester: created plugin
+```
+
 ## Where state belongs
 
 | State or behavior | Owner |

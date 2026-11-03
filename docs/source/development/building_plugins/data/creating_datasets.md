@@ -15,6 +15,25 @@ if (!points.isValid())
 
 The first argument is the registered data-plugin kind. The second is the name displayed to users. Supplying an explicit ID and disabling notification are restoration-oriented facilities; ordinary plugin code should keep their defaults.
 
+The creation path passes through the data manager and the provider registered for the requested kind:
+
+```mermaid
+sequenceDiagram
+    participant Plugin as Consumer plugin
+    participant Manager as AbstractDataManager
+    participant Provider as RawData plugin
+    participant Item as DatasetImpl
+    participant Hierarchy as Data hierarchy
+
+    Plugin->>Manager: createDataset<Points>(kind, name)
+    Manager->>Provider: create full and selection datasets
+    Provider-->>Manager: return DatasetImpl instances
+    Manager->>Manager: register implementations and assume ownership
+    Manager->>Hierarchy: create hierarchy items and place datasets
+    Manager->>Item: call init() after registration
+    Manager-->>Plugin: return Dataset<T> handle
+```
+
 ## Hierarchy parent
 
 Pass a valid parent handle to place the new dataset below that parent:

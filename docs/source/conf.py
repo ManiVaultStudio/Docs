@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
+    'sphinxcontrib.mermaid',
     'breathe',
     'sphinxext.opengraph',
 ]
@@ -35,6 +36,7 @@ myst_enable_extensions = [
     'deflist',       # definition lists
     'linkify',       # auto-links plain URLs
 ]
+myst_fence_as_directive = ['mermaid']
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
