@@ -23,7 +23,7 @@ If you plan to accompany tutorials with example projects, you must place one or 
 - or any location **ManiVault Studio** can reach via **HTTP/HTTPS**.
 
 ### 2. Create a Tutorials JSON File  
-The plugin developer must create a **JSON** file describing the tutorials they want to expose to **ManiVault Studio** users. This file must conform to the [tutorials JSON schema](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/tutorials.schema.json). Each tutorial entry in the JSON can include information about the tutorial and optionally a project download link.
+The plugin developer must create a **JSON** file describing the tutorials they want to expose to **ManiVault Studio** users. This file must conform to the [tutorials JSON schema](https://github.com/ManiVaultStudio/core/blob/master/res/json/tutorials.schema.json). Each tutorial entry in the JSON can include information about the tutorial and optionally a project download link.
 
 Each entry describes one project and should include:
 - `title`, the tutorial title.
@@ -57,7 +57,7 @@ For example:
   ]
 }
 ```
-*You can find other **ManiVault Studio** **JSON schemas** [here](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/).*
+*You can find other **ManiVault Studio** **JSON schemas** [here](https://github.com/ManiVaultStudio/core/tree/master/res/json).*
 
 ### 3. Upload the JSON File  
    Once ready, upload the tutorials JSON file to a web server so ManiVault Studio can locate and download it.
@@ -74,7 +74,7 @@ mv::PluginFactory::getTutorialsDsnsAction().addString("https://example.com/my_pl
 | Step | Action                                                                          |
 |------|----------------------------------------------------------------------------------|
 | 1    | Upload your tutorial project file(s) somewhere downloadable (optional)                               |
-| 2    | Create a **tutorials JSON** file conforming to the [tutorials](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/tutorials.schema.json) schema                    |
+| 2    | Create a **tutorials JSON** file conforming to the [tutorials](https://github.com/ManiVaultStudio/core/blob/master/res/json/tutorials.schema.json) schema                    |
 | 3    | Host the **tutorials JSON** file online                                                       |
 | 4    | Register the **tutorials JSON** file in your plugin via `mv::PluginFactory::getTutorialsDsnsAction().addString("https://example.com/tutorials.json")` |
 | 5    | Users will see the tutorial(s) on the start page and can click to download + open   |

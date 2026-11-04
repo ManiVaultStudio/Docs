@@ -28,7 +28,7 @@ All app-specific customization lives in the **customization directory**. By defa
 <app_dir>/Customization
 ```
 
-From C++ code, you can query this location via [`mv::util::StandardPaths`](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/src/util/StandardPaths.h).
+From C++ code, you can query this location via [`mv::util::StandardPaths`](https://github.com/ManiVaultStudio/core/blob/master/src/lib/util/StandardPaths.h).
 
 The directory layout is:
 

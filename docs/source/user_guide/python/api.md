@@ -27,7 +27,7 @@ All items provide `itemId`, `datasetId`, `name`, `type`, `rawname`, `rawsize`, `
 
 `getPoints` returns a two-dimensional NumPy array. `None` selects an entire axis; supplied row and dimension indices must be one-dimensional, nonnegative integers. Use `np.uint32` for selection IDs. Point arrays passed to creation methods must be C-contiguous.
 
-The upstream API page also lists `setSelection(selectionIDs)`. The current Python source contains an undefined-variable check in that method before it reaches the bridge call, so selection writing should be treated as a known implementation discrepancy and verified against the installed plugin version.
+The upstream API page also lists `setSelection(selectionIDs)`. In the current JupyterPlugin source (`ManiVaultStudio/JupyterPlugin` `main`, checked 2026-11-03), the method validates an undefined variable named `arr` before reaching the bridge call. Selection writing therefore does not match the documented API in this revision; verify this behavior against the installed plugin version before relying on it.
 
 `ClusterItem.cluster` exposes ordered `names`, `indices`, `cluster_guids`, and `colors`. `ImageItem.image` exposes the image array and caches it after the first access.
 

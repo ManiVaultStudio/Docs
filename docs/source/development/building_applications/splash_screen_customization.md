@@ -5,14 +5,14 @@ The ManiVault Studio splash screen is implemented as **HTML**, which makes it ea
 By default, most applications use a standard splash screen template provided by the core:
 
 ```text
-ManiVault/res/html/SplashScreenTemplate.html
+res/html/SplashScreenTemplate.html
 ```
 
 You can use this file as a reference when designing your own splash screen.
 
 ```{note}
 The **customization directory** location can differ per platform or application bundle layout.  
-If you are unsure where it is, query it from C++ using From C++ code, you can query this location via [mv::util::StandardPaths::getCustomizationDirectory()](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/src/util/StandardPaths.h).
+If you are unsure where it is, query it from C++ using [mv::util::StandardPaths::getCustomizationDirectory()](https://github.com/ManiVaultStudio/core/blob/master/src/lib/util/StandardPaths.h).
 ```
 
 ---
@@ -207,7 +207,7 @@ To create your own splash screen:
 4. **Copy the base template**
    - Copy the base HTML shown above into `SplashScreen.html`.
    - Or, copy the built-in template from  
-     `ManiVault/res/html/SplashScreenTemplate.html`  
+     `res/html/SplashScreenTemplate.html`
      and adapt it to your needs.
 
 5. **Add images and other resources**

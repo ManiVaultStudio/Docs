@@ -1,6 +1,6 @@
 # Python script extensions
 
-Python scripts let users add ManiVault operations without writing and compiling a conventional C++ plugin. A script can load data, analyze or transform it, set selections, or write/export results. The JupyterPlugin runs the script in its embedded Python interpreter, so scripts can use the same `mvstudio.data` bridge as notebooks.
+Python scripts let users add ManiVault operations without writing and compiling a conventional C++ plugin. A script can load data, analyze or transform it, set selections, or write/export results. The JupyterPlugin runs the script in its embedded Python interpreter, so scripts can use the same `mvstudio.data` bridge as notebooks. The upstream selection example demonstrates the intended selection workflow, but the current `setSelection()` implementation has a validation error; see the {doc}`API notes <api>` before relying on selection writes.
 
 ## Extension layout
 

@@ -6,6 +6,14 @@ The executable creates this object. Plugins should use `mv::Application::current
 
 The Core pointer exposed by the application is non-owning: `Application` connects to Core lifecycle signals and clears the pointer during teardown. Application startup metadata and actions are application integration concerns rather than ordinary plugin state.
 
+## Temporary directories
+
+`Application` manages temporary files beneath a configurable root. `getTemporaryDirRoot()` returns the configured root, and `getTemporaryDirectoryPath()` returns a session-scoped directory for a category such as project opening, saving, publishing, staged data, or other temporary files. If the configured root is empty or cannot be created, Core falls back to the operating system temporary directory.
+
+Users can change the root in the global **Temporary** settings group. The new root takes effect after restarting ManiVault Studio. The same settings group can scan for and remove stale ManiVault temporary directories; Core checks the session lock before treating a directory as stale.
+
+See the [Application declaration](https://github.com/ManiVaultStudio/core/blob/master/src/lib/Application.h) and [Temporary directories settings implementation](https://github.com/ManiVaultStudio/core/blob/master/src/lib/TemporaryDirectoriesSettingsAction.cpp) for the current details.
+
 **Qualified name:** `mv::Application`
 
 ## Related

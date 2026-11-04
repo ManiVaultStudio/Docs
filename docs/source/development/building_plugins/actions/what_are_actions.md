@@ -11,6 +11,7 @@ Common action families include:
 - `TriggerAction` for commands;
 - color and color-map actions;
 - file and directory picker actions;
+- message-card actions for severity-coded information with optional buttons;
 - dataset, plugin, dimension, and dimensions picker actions;
 - group and toolbar actions for composition.
 

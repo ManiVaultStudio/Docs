@@ -4,6 +4,7 @@
 :maxdepth: 1
 
 codec_settings_action
+message_card_action
 dataset_picker_action
 event_action
 image_action

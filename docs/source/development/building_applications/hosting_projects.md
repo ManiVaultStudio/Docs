@@ -22,7 +22,7 @@ Host your **.mv** project files on a publicly accessible web server. These could
 - or any location **ManiVault Studio** can reach via **HTTPS**.
 
 ### 2. Create a Project Metadata JSON
-Prepare a **JSON** file describing the projects you uploaded. This file must conform to the rules of the [projects JSON schema](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/projects.schema.json).  
+Prepare a **JSON** file describing the projects you uploaded. This file must conform to the rules of the [projects JSON schema](https://github.com/ManiVaultStudio/core/blob/master/res/json/projects.schema.json).
 
 Each entry describes one project:
 | Name | Required | Notes |
@@ -59,7 +59,7 @@ For example:
   }
 ]
 ```
-*You can find **ManiVault Studio** **JSON schemas** [here](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/).*
+*You can find **ManiVault Studio** **JSON schemas** [here](https://github.com/ManiVaultStudio/core/tree/master/res/json).*
 
 ### 3. Upload the JSON File
 Once your **JSON** is ready:
@@ -78,7 +78,7 @@ mv::PluginFactory::getProjectsDsnsAction().addString("https://example.com/my_plu
 | Step | Action                                                                          |
 |------|----------------------------------------------------------------------------------|
 | 1    | Upload your project files somewhere downloadable                                |
-| 2    | Create a **projects JSON** metadata file conforming to the [projects](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/projects.schema.json) schema                    |
+| 2    | Create a **projects JSON** metadata file conforming to the [projects](https://github.com/ManiVaultStudio/core/blob/master/res/json/projects.schema.json) schema                    |
 | 3    | Host the **projects JSON** file online                                                       |
 | 4    | Register the **projects JSON** file in your plugin via `mv::PluginFactory::getProjectsDsnsAction().addString("https://example.com/projects.json")` |
 | 5    | Users will see the project(s) on the start page and can click to download + open   |
@@ -103,5 +103,5 @@ All downloadable files (**projects JSON** file and the project **.mv** files) mu
 
 Make sure:
 - To check the name of the required plugins; the name should be the same as the plugin **JSON** file. If they are not, the project will not be listed on the start page projects section.
-- That the **projects JSON** file adheres to the [projects JSON schema](https://github.com/ManiVaultStudio/core/blob/master/ManiVault/res/json/projects.schema.json). If your projects do not appear on the start page, check the **ManiVault Studio** console output; it will give hints where the problem is located
+- That the **projects JSON** file adheres to the [projects JSON schema](https://github.com/ManiVaultStudio/core/blob/master/res/json/projects.schema.json). If your projects do not appear on the start page, check the **ManiVault Studio** console output; it will give hints where the problem is located
 
